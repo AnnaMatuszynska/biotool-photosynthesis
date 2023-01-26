@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-02 20:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: pages/3 Pflanzengedächtnis.py:36
+msgid "HEADLINE_BRAIN"
+msgstr "# Das Pflanzengedächtnis"
+
+#: pages/3 Pflanzengedächtnis.py:38
+msgid "INTRODUCTION_BRAIN"
+msgstr "Das Modell bietet auch die Möglichkeit, Experimente mit Dunkelphasen zu simulieren. So kann das Kurzzeitgedächtnis \
+        der Pflanzen demonstriert werden. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
+
+#: pages/3 Pflanzengedächtnis.py:40
+msgid "TIP1"
+msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können Sie die Diagramme herunterladen, indem Sie auf die drei Punkte klicken.*"
+
+#: pages/3 Pflanzengedächtnis.py:42
+msgid "TIP2"
+msgstr "***Tipp2:*** *Durch Klicken auf die Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+
+#: pages/3 Pflanzengedächtnis.py:48
+msgid "SLIDER_LIGHT"
+msgstr "Lichtintensität in μmol m⁻² s⁻¹"
+
+#: pages/3 Pflanzengedächtnis.py:53
+msgid "SLIDER_TIME"
+msgstr "Dunkelphase in Minuten"
+
+#: pages/Analyse.py:67
+msgid "SLIDER_ACTIVATION"
+msgstr "Umwandlungsrate zu Zeaxanthin"
+
+#: pages/Analyse.py:72
+msgid "SLIDER_DEACTIVATION"
+msgstr "Umwandlungsrate zu Violaxanthin"
+
+#: pages/3 Pflanzengedächtnis.py:97
+msgid "START_BUTTOM"
+msgstr "Starte den Versuche"
+
+#: pages/3 Pflanzengedächtnis.py:98
+msgid "SPINNER"
+msgstr "Ich rechne kurz für dich :computer:"
+
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE1"
+msgstr "Trainingsphase"
+
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE2"
+msgstr "Dunkelphase"
+
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE3"
+msgstr "Gedächtnisphase"
+
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "AXSIS_TIME"
+msgstr "Zeit [min]"

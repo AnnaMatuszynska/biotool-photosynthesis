@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-02 08:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_ONE"
+msgstr "# The measurement method"
+
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_MEASUREMENT"
+msgstr "###### With the following measurement method, we can assess whether the plant can cope with the given abiotic environmental factors."
+
+#: pages/1 Messmethode.py:34
+msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
+msgstr "We want to look at what effects the changes made have on photosynthetic performance. have. For this purpose, \
+        we exploit the fact that plants to which too much energy is supplied fluoresce."
+
+#: pages/1 Messmethode.py:36
+msgid   "EXPLANATION_MEASUREMENT"
+msgstr  "As a measurement method we use the PAM measurement (Pulse Amplitude Modulated Fluorescence measurement). \
+            First, photochemical quenching must be excluded. For this purpose, the plant is irradiated with pulses of \
+            light of high intensity. The measured fluorescence can be attributed to NPQ if at the starting point the \
+            plant was dark-adapted. The change in fluorescence during light or dark adaptations can be measured."
+
+#: pages/1 Messmethode.py:38
+msgid "EXPLANATION_ATTEMPTS"
+msgstr "**The experiments simulate photosystem 2 in *Arabidopsis thaliana* plants with the following prerequisites:** \
+        The plants are of the wild type (*Arabidopsis thaliana* ecotype Columbia 0: hereafter referred to as Arabidopsis). \
+        These plants grew for three weeks in soil at 23°C and were grown on a cycle of 16h light and 8h night with 90-100 μmol m⁻² s⁻¹ \
+        irradiation. To ensure that the photosystem was not preloaded, the plants were dark-adapted for 12h."
+
+#: pages/1 Messmethode.py:40
+msgid   "HEADLINE_ILLUSTRATION"
+msgstr  "##### The figures"
+
+#: pages/1 Messmethode.py:42
+msgid   "EXPLANATION_ILLUSTRATION_UNITS"
+msgstr  "The fluorescence is plotted on the Y-axis of the figures. This is given in F'ₘ /Fₘ . It is the percentage of \
+            light energy that can be used for photosynthesis."
+
+#: pages/1 Messmethode.py:44
+msgid   "EXPLANATION_ILLUSTRATION"
+msgstr  "The experiments always start with an illumination phase, which is marked in blue in the figures (see Figure 1); \
+            as already mentioned, this is a prerequisite for the PAM measurement. At this point, we can measure Fₘ."
+
+#: pages/1 Messmethode.py:47
+msgid   "CAPTION_ABB1"
+msgstr  "Example illustration of a PAM measurement"
+
+#: pages/1 Messmethode.py:49
+msgid   "LITERATURE"
+msgstr  "Literature"
+
+#: pages/1 Messmethode.py:50
+msgid   "LITERATURE_DECLARATION"
+msgstr  "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."

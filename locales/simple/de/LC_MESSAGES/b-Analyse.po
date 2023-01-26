@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-02 17:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: pages/Analyse.py:23
+msgid "HEADLINE_ANALYSE"
+msgstr "# Die Daten-Analyse"
+
+#: pages/Analyse.py:25
+msgid "INTRODUKTION"
+msgstr "Nachdem Sie die Messmethode zur Überprüfung von NPQ an Pflanzen kennenlernen durftet, werden wir nun Messungen \
+        mit dem Model durchführen, um den Einfluss der abiotischen Einfluss-Faktoren abzuschätzen."
+
+#: pages/Analyse.py:
+msgid "TASK_1"
+msgstr "Aufgabe 1"
+
+#: pages/Analyse.py:
+msgid "TASK_1_EXPLANATION"
+msgstr "Verstellen Sie zunächst einmal nur den Schieber mit der Lichtintensität. Was fällt euch auf?"
+
+#: pages/Analyse.py:
+msgid "TASK_2"
+msgstr "Aufgabe 2"
+
+#: pages/Analyse.py:
+msgid "TASK_2_EXPLANATION"
+msgstr "Ändern Sie nun auch die Schieberegler zur Versuchsdauer und der Anzahl der Pulse. Beschreiben Sie den Verlauf \
+        der Kurve, welche Entsteht, wenn ihr die Spitzen der Pulse verbindet."
+
+#: pages/Analyse.py:
+msgid "TASK_3"
+msgstr "Aufgabe 3"
+
+#: pages/Analyse.py:
+msgid "TASK_3_EXPLANATION"
+msgstr "Vergleicht die Kurve der Impuls-Spitzen mit der Kurve ausserhalb der Impulse."
+
+#: pages/Analyse.py:
+msgid "TASK_4"
+msgstr "Aufgabe 4"
+
+#: pages/Analyse.py:
+msgid "TASK_4_EXPLANATION"
+msgstr "Versucht die Beobachtungen zu interpretieren. Was bedeuten die Veränderungen bei verschiedenen Lichtintensitäten \
+        für die Pflanze?"
+
+#: pages/Analyse.py:
+msgid "TASK_5"
+msgstr "Aufgabe 5"
+
+#: pages/Analyse.py:
+msgid "TASK_5_EXPLANATION"
+msgstr "Mit welcher Lichtintensität kommt die Pflanze am besten zurecht?"
+
+#: pages/Analyse.py:
+msgid "HEADLINE_SLIDER"
+msgstr "##### Verwendung der Schieberegler:"
+
+#: pages/Analyse.py:27
+msgid "EXPLANATNION"
+msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Dann starten Sie die \
+        Berechnung, indem Sie auf den Start-Button klicken. Das berechnete Diagramm wird nach kurzer Zeit angezeigt. \
+        Sobald Sie die Schieberegler wieder bewegen, verschwindet die Grafik und Sie können eine neue Grafik laden."
+
+#: pages/Analyse.py:29
+msgid "TIPP1"
+msgstr "***Tipp 1:*** *Sollten Sie zwei Versuche vergleichen wollen, können die Graphen über die drei Punkte (obenrechts) \
+        herunterladen werden.*"
+
+#: pages/Analyse.py:31
+msgid "TIPP2"
+msgstr "***Tipp 2:*** *Durch einen Klick auf das Stopp oben rechts, neben dem Ladesymbol, kann der Berechnungs-Prozess \
+        jederzeit abgebrochen werden.*"
+
+
+
+
+#: pages/Analyse.py:48
+msgid "SLIDER_LIGHT"
+msgstr "Lichtintensität in μmol m⁻² s⁻¹"
+
+#: pages/Analyse.py:55
+msgid "SLIDER_TIME"
+msgstr "Versuchsdauer in Minuten"
+
+#: pages/Analyse.py:60
+msgid "SLIDER_PULSES"
+msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
+
+#: pages/Analyse.py:72
+msgid "TIME"
+msgstr "Zeit [s]"
+
+#: pages/Analyse.py:83
+msgid "SPINNER"
+msgstr "Ich rechne kurz für Sie :computer:"
+
+#: pages/Analyse.py:123
+msgid "MEASUREMENT_PHASE"
+msgstr "Messphase"
+
+#: pages/Analyse.py:123
+msgid "KONTROLL"
+msgstr "Wissenskontrolle"
+
+#: pages/Analyse.py:123
+msgid "INTRODUCTION_QUESTION"
+msgstr "Beantworten Sie alle Fragen und finden Sie heraus, ob Sie die Diagramme richtig auswerten und die Ergebnisse \
+        richtig interpretieren konnten."
+
+#: pages/Analyse.py:123
+msgid "QUESTION_1"
+msgstr "1. Je höher die Lichtintensität, desto ... das NPQ."
+
+#: pages/Analyse.py:123
+msgid "AW1"
+msgstr "höher"
+
+#: pages/Analyse.py:123
+msgid "AW2"
+msgstr "niedriger"
+
+#: pages/Analyse.py:123
+msgid "RA1"
+msgstr "Leider ist das falsch, schauen Sie sich noch einmal verschiedene Experimente mit höherer und niedrigerer \
+        Lichtintensität an."
+
+#: pages/Analyse.py:123
+msgid "RA2"
+msgstr "Richtig!"
+
+#: pages/Analyse.py:123
+msgid "QUESTION_2"
+msgstr "2. Was passiert im Verlauf des Experimentes mit dem NPQ?"
+
+#: pages/Analyse.py:123
+msgid "AW3"
+msgstr "Sie steigt kontinuierlich"
+
+#: pages/Analyse.py:123
+msgid "AW4"
+msgstr "Es bleibt nach einiger Zeit auf einem Niveau"
+
+#: pages/Analyse.py:123
+msgid "AW5"
+msgstr "Sie fällt kontinuierlich"
+
+#: pages/Analyse.py:123
+msgid "RA3"
+msgstr "Richtig! Das gleichbleibende Niveau nennt man auch den Steady-State."
+
+#: pages/Analyse.py:123
+msgid "RA4"
+msgstr "Das ist leider falsch, schauen Sie sich noch einmal verschiedene Experimente mit mehr Lichtimpulsen an."
+
+#: pages/Analyse.py:123
+msgid "QUESTION_3"
+msgstr "Kann mit einer kurzen Versuchsdauer und einer langen Zeit zwischen zwei Impulsen bereits eine aussagekräftige \
+        Interpretation gelingen?"
+
+#: pages/Analyse.py:123
+msgid "AW6"
+msgstr "Ja!"
+
+#: pages/Analyse.py:123
+msgid "AW7"
+msgstr "Nein!"
+
+#: pages/Analyse.py:123
+msgid "RA5"
+msgstr "Leider nicht!"
+
+#: pages/Analyse.py:123
+msgid "RA6"
+msgstr "Das Stimmt! Erst wenn eine längere Zeit der Steady-State anhält, kann davon ausgegangen werden, dass dieser sich \
+        nicht noch einmal verändert."
+
+#: pages/Analyse.py:123
+msgid "STOPP"
+msgstr "##### **Bitte erst öffnen, nachdem ihr alle Fragen beantwortet habt**"
+
+#: pages/Analyse.py:123
+msgid "RESULTS"
+msgstr "Ergebnisse"
+
+#: pages/Analyse.py:123
+msgid "EXPLANATION_RESULTS"
+msgstr "Sie haben gesehen, dass die Lichtintensität einen bedächtigen Einfuss auf das NPQ der Pflanze hat. "

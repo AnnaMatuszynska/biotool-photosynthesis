@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-02 17:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: pages/2 Daten-Analyse.py:23
+msgid "HEADLINE_ANALYSE"
+msgstr "# Die Daten-Analyse"
+
+#: pages/2 Daten-Analyse.py:25
+msgid "INTRODUKTION"
+msgstr "Matuszynska et al. (2016) entwickelten ein Modell, das die Vorgänge am Fotosysthem II simuliert. Mit Hilfe \
+        dieses Modells können analoge Diagramme erstellt werden, wie sie bei der zuvor beschriebenen Messmethode entstehen."
+
+#: pages/Analyse.py:
+msgid "HEADLINE_SLIDER"
+msgstr "##### Verwendung der Schieberegler:"
+
+#: pages/2 Daten-Analyse.py:27
+msgid "EXPLANATNION"
+msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Starten Sie dann die \
+        Berechnung, indem Sie auf die Schaltfläche klicken. Das berechnete Diagramm wird angezeigt. Sobald Sie die \
+        Schieberegler erneut ändern, verschwindet die Grafik und Sie können eine neue Grafik laden."
+
+#: pages/2 Daten-Analyse.py:29
+msgid "TIPP1"
+msgstr "***Tipp 1:*** *Zum Vergleich zweier Versuche, können Sie die Diagramme, über die drei Punkte (oben rechts) herunterladen.*"
+
+#: pages/2 Daten-Analyse.py:31
+msgid "TIPP2"
+msgstr "***Tipp 2:*** *Durch Klicken auf die Schaltfläche Stopp in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+
+#: pages/2 Daten-Analyse.py:48
+msgid "SLIDER_LIGHT"
+msgstr "Lichtintensität in μmol m⁻² s⁻¹"
+
+#: pages/2 Daten-Analyse.py:55
+msgid "SLIDER_TIME"
+msgstr "Versuchsdauer in Minuten"
+
+#: pages/2 Daten-Analyse.py:60
+msgid "SLIDER_PULSES"
+msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
+
+#: pages/Analyse.py:67
+msgid "SLIDER_ACTIVATION"
+msgstr "Umwandlungsrate zu Zeaxanthin"
+
+#: pages/Analyse.py:72
+msgid "SLIDER_DEACTIVATION"
+msgstr "Umwandlungsrate zu Violaxanthin"
+
+#: pages/Analyse.py:72
+msgid "TIME"
+msgstr "Zeit [s]"
+
+#: pages/2 Daten-Analyse.py:83
+msgid "SPINNER"
+msgstr "Ich rechne kurz für Sie :computer:"
+
+#: pages/2 Daten-Analyse.py:123
+msgid "MEASUREMENT_PHASE"
+msgstr "Messphase"
+

@@ -1,0 +1,197 @@
+# BASE MAIN PAGE.
+# Copyright (C) 2023 ORGANIZATION
+# SARAH PHILIPPS <SARAH.PHILIPPS@RWTH-AACHEN.DE>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-01 21:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: EINFÜHRUNG.py:
+msgid "START"
+msgstr "Einführung"
+
+#: EINFÜHRUNG.py:
+msgid "METHOD"
+msgstr "Messmethode"
+
+#: EINFÜHRUNG.py:
+msgid "DATA"
+msgstr "Daten-Analyse"
+
+#: EINFÜHRUNG.py:
+msgid "BRAIN"
+msgstr "Pflanzengedächtnis"
+
+#: EINFÜHRUNG.py:21
+msgid "HEADLINE_MAIN"
+msgstr "# Herzlich Willkommen!"
+
+#: EINFÜHRUNG.py:22
+msgid "AUTHOR"
+msgstr "##### Autor: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/)"
+
+#: EINFÜHRUNG.py:
+msgid "LANGUAGE"
+msgstr "Sprache"
+
+#: EINFÜHRUNG.py:36
+msgid "CAPTION_ABB1"
+msgstr "Foto einer Pflanze der Gattung Einblatt, in drei verschiedenen Beleuchtungssituationen: Links bei Tageslicht, \
+        in der Mitte mit einer handelsüblichen UV5-Lampe beleuchtet, Rechts ebenfalls mit einer UV5-Lampe beleuchtet, \
+        jedoch durch einen Filter, welcher alle Wellenlängen außer dem roten Lichtes filtert."
+
+#: EINFÜHRUNG.py:24
+msgid "MOTIVATION"
+msgstr "Liebe Schüler*innen, auf dieser Webseite haben Sie die Möglichkeit, mehr über das Thema Fotosynthese zu erfahren. \
+        Ihr werdet dabei auch erfahren, wie sich verschiedenen Lichtintensitäten auf Pflanzen auswirken. Ziel ist es \
+        nicht nur Wissen zu erwerben, sondern auch Ihre Fähigkeiten zur Auswertung von Diagrammen zu verbessern."
+
+#: EINFÜHRUNG.py:26
+msgid "PROCESS"
+msgstr "Dazu lernen Sie zunächst die verwendete Messmethode kennen, mit der wir die Fotosyntheseleistung abschätzen können. \
+        Anschließend können Sie digitale Experimente mit Pflanzen durchführen, um herauszufinden, wie die verschiedenen \
+        Lichtintensitäten auf die Pflanzen wirken."
+
+#: EINFÜHRUNG.py:28
+msgid "CONTINUING_TASK"
+msgstr "In einer weiterführenden Aufgabe wird das Pflanzengedächtnis besprochen und analysiert."
+
+#: EINFÜHRUNG.py:30
+msgid "MOTIVATION_2.0"
+msgstr "Doch wieso ist es eigentlich so wichtig sich mit der Fotosynthese auseinander zu setzen? Ich hoffe diese Frage \
+        könnt ihr mir nach dem Durcharbeiten beantworten!"
+
+#: EINFÜHRUNG.py:32
+msgid "DECLARATION"
+msgstr "Zunächst hier einige wichtige Informationen zu Themen im Bereich der Fotosynthese, sowie zum Thema mathematische \
+        Modelle in den Biologie."
+
+#: EINFÜHRUNG.py:36
+msgid "EXPANDER_PRODUCENTEN"
+msgstr "Konsumenten vs Produzenten"
+
+#: EINFÜHRUNG.py:37
+msgid "EXPANDER_PRODUCENTEN_EXPLANATION"
+msgstr "Unter einem **Konsumenten** versteht man Lebewesen, welche sich von der Biomasse ernähren, die \
+        von anderen Lebewesen produziert wurde. Alle Lebewesen, die Biomasse produzieren können, nennen wir \
+        **Produzenten**. Dazu zählen insbesondere die Pflanzen. Diese können durch beispielsweise Fotosynthese \
+        selbstständig Biomasse herstellen."
+
+#: EINFÜHRUNG.py:39
+msgid "EXPANDER_NUTRIENTS"
+msgstr "Nährstoff-Aufnahme"
+
+#: EINFÜHRUNG.py:40
+msgid "EXPANDER_NUTRIENTS_EXPLANATION"
+msgstr "Damit die Pflanzen Fotosynthese betreiben können, brauchen sie Nährstoffe, welche sie aus der Umwelt aufnehmen. \
+        Hierzu besitzen Pflanzen einerseits die Wurzeln, an welchen Wasser und Nährstoffe aus dem Boden aufgenommen \
+        werden können. Zum anderen besitzen Pflanzen Spaltöffnungen in den Blättern, sogenannte Stomata, durch welche \
+        Pflanzen das CO₂ aus der Luft aufnehmen können. "
+
+#: EINFÜHRUNG.py:40
+msgid "CAPTION_STOMATA_PICTURE"
+msgstr "Mikroskopische Aufnahme eines Stomata des Wildtypes des Modellorganismus Arabidopsis thaliana."
+
+#: EINFÜHRUNG.py:42
+msgid "EXPANDER_PHOTOSYNTHESIS"
+msgstr "Fotosynthese"
+
+#: EINFÜHRUNG.py:43
+msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_1"
+msgstr "Pflanzen benötigen für ihr Wachstum wie auch wir Menschen Nährstoffe. Essentiell sind dabei vor allem Wasser \
+        und Mineralstoffe, aber auch Pflanzen benötigen Fette, Kohlenhydrate und Proteine. Die meisten dieser Nährstoffe \
+        können die Pflanzen über ihre Wurzeln aus dem Boden aufnehmen, jedoch nicht alle. Wie bereits angesprochen sind \
+        Pflanzen Produzenten und können daher Nährstoffe herstellen. Zu diesen Nährstoffen zählen insbesondere die \
+        Kohlenhydrate, welche bei der Fotosynthese entstehen."
+
+#: EINFÜHRUNG.py:43
+msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_2"
+msgstr "Bei der Fotosynthese stellen Pflanzen Biomasse in Form von Glukose her. Dazu benötigen sie CO₂, H₂O \
+        sowie Energie in Form von Licht. [Hier](https://www.planet-schule.de/mm/lebensraum/wald-photosynthese/) könnt \
+        ihr euch über den Ablauf der Fotosynthese informieren."
+
+#: EINFÜHRUNG.py:43
+msgid "CAPTION_FOTOSYNTHESE_PICTURE"
+msgstr "Photosynthese Ablauf"
+
+#: EINFÜHRUNG.py:54
+msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION"
+msgstr "Ort der Fotosynthese"
+
+#: EINFÜHRUNG.py:55
+msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
+msgstr "Die Fotosynthese findet in den Zellen der meist grünen Bestandteile von Pflanzen statt. In diesen Zellen befinden \
+        sich spezialisierte Organellen, die Chloroplasten. Dort findet der Teil der Fotosynthese statt, \
+        welcher als Lichtreaktion bezeichnet wird. In der Membran sitzen die sogenannten Fotosysteme. Das Fotosystem II \
+        (FSII) welches durch die Energie des Lichtes Wasser in Sauerstoff und Wasserstoff aufspaltet ist für uns besonders \
+        Interessant. "
+
+#: EINFÜHRUNG.py:43
+msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
+msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
+
+#: EINFÜHRUNG.py:59
+msgid "EXPANDER_NPQ"
+msgstr "Nicht-photochemisches Quenching (NPQ)"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_NPQ_EXPLANATION"
+msgstr "Was passiert eigentlich wenn zu viel Licht und damit überschüssige Energie auf das Fotosystem II trifft? Geht \
+        dieses kaputt und muss dann von der Zelle erneuert werden? Zum Glück nicht! Stattdessen kann die überschüssige \
+        Energie in Form von Wärme abgegeben oder zur ATP-Synthese benutzt werden. So kann die Zelle geschützt werden. \
+        Die beiden nicht photochemischen Schutzmechanismen werden als NPQ bezeichnet."
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_MATHEMATICAL_MODELLING"
+msgstr "Mathematische Modelle in der Biologie"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"
+msgstr "Mathematische Modellierung, also das entwickeln mathematischer Modelle, findet in sehr vielen Bereichen von \
+        Forschung und Industrie Anwendung. Insbesondere immer dann, wenn Probleme gelöst werden müssen, welche mit \
+        Standard-Testverfahren zu hohe Kosten verursachen würden. Dabei wird das Problem mathematisch beschrieben und \
+        Anschließend das mathematische Problem mit mathematischen Verfahren gelöst. Das Ergebnis muss anschließend auf \
+        die reale Situation, also das Problem angewendet werden und die Lösung kann dann bewertet werden. Ist die Lösung \
+        nicht ausreichend, muss das mathematische Problem überarbeitet werden. Das schlussendlich erfolgreiche mathematische \
+        Beschreibung des Problems wird als mathematisches Modell bezeichnet."
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"
+msgstr "In der Biologie werden mathematische Modelle oft verwendet um Stoffwechselwege zu beschreiben. Dies lässt zu, \
+        Veränderungen auf die Stoffwechselwege simuliert und bewertet werden können. Dazu können unter anderem \
+        Differentialgleichungen verwendet werden."
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS"
+msgstr "Differentialgleichungen"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"
+msgstr "Als eine Differentialgleichung bezeichnet man jegliche Gleichungen, welche aus einer Funktion und einer Ableitung \
+        bestehen. Zum Lösen einer Differentialgleichung muss eine Funktion gefunden werden, welche eingesetzt in die Gleichung, \
+        diese löst."
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_2"
+msgstr "Eine Differenzialgleichung hat in der Regel folgende Gestalt: y'(x)=f(x,y(x))"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"
+msgstr "[Hier](https://www.youtube.com/watch?v=2qQYxam2QGg) gibt es weiterführende Informationen zum Thema \
+        Differentialgleichungen."
+
+#: EINFÜHRUNG.py:64
+msgid "CREDITS_ANNA"
+msgstr "Alle angezeigten Diagramme werden von einem mathematischen Modell erzeugt. Dieses Modell wurde von [Matuszynska \
+        et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub) entwickelt."
+
+#: pages/1 Messmethode.py:50
+msgid   "INTRODUCTION_LITERATURE"
+msgstr  "Folgende Literatur vertieft das Thema Photosynthese, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."

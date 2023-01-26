@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-02 17:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: pages/2 Daten-Analyse.py:23
+msgid "HEADLINE_ANALYSE"
+msgstr "# The data analysis"
+
+#: pages/2 Daten-Analyse.py:25
+msgid "INTRODUKTION"
+msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements \
+        with the model to estimate the influence of the abiotic influence factors."
+
+#: pages/Analyse.py:
+msgid "TASK_1"
+msgstr "Task 1"
+
+#: pages/Analyse.py:
+msgid "TASK_1_EXPLANATION"
+msgstr "First of all, only adjust the slider with the light intensity. What do you notice?"
+
+#: pages/Analyse.py:
+msgid "TASK_2"
+msgstr "Task 2"
+
+#: pages/Analyse.py:
+msgid "TASK_2_EXPLANATION"
+msgstr "Now also changes the sliders for the duration of the experiment and the number of pulses. Describes the course of the \
+        curve, which arises when you connect the peaks of the pulses."
+
+#: pages/Analyse.py:
+msgid "TASK_3"
+msgstr "Aufgabe 3"
+
+#: pages/Analyse.py:
+msgid "TASK_3_EXPLANATION"
+msgstr "Compares the curve of the pulse peaks with the curve outside the pulses."
+
+#: pages/Analyse.py:
+msgid "TASK_4"
+msgstr "Aufgabe 4"
+
+#: pages/Analyse.py:
+msgid "TASK_4_EXPLANATION"
+msgstr "Try to interpret the observations. What do the changes at different light intensities mean \
+        for the plant?"
+
+#: pages/Analyse.py:
+msgid "TASK_5"
+msgstr "Aufgabe 5"
+
+#: pages/Analyse.py:
+msgid "TASK_5_EXPLANATION"
+msgstr "What light intensity does the plant cope best with?"
+
+
+#: pages/Analyse.py:
+msgid "HEADLINE_SLIDER"
+msgstr "##### Use of the sliders:"
+
+#: pages/2 Daten-Analyse.py:27
+msgid "EXPLANATNION"
+msgstr "First change the sliders according to the test you want to simulate. Then start the calculation by clicking on the button. The calculated graph will be displayed. As soon as you change the sliders again, the graph disappears and you can load a new graph."
+
+#: pages/2 Daten-Analyse.py:29
+msgid "TIPP1"
+msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by right clicking on them.*"
+
+#: pages/2 Daten-Analyse.py:31
+msgid "TIPP2"
+msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+
+#: pages/2 Daten-Analyse.py:48
+msgid "SLIDER_LIGHT"
+msgstr "Light intensity in μmol m⁻² s⁻¹"
+
+#: pages/2 Daten-Analyse.py:55
+msgid "SLIDER_TIME"
+msgstr "Test duration in minutes"
+
+#: pages/2 Daten-Analyse.py:60
+msgid "SLIDER_PULSES"
+msgstr "Saturation pulses in the selected intervals in seconds"
+
+#: pages/Analyse.py:72
+msgid "TIME"
+msgstr "Time [s]"
+
+#: pages/2 Daten-Analyse.py:83
+msgid "SPINNER"
+msgstr "I'll do some quick math for you :computer:"
+
+#: pages/2 Daten-Analyse.py:123
+msgid "MEASUREMENT_PHASE"
+msgstr "Measuring phase"
+
+#: pages/Analyse.py:123
+msgid "KONTROLL"
+msgstr "Knowledge check"
+
+#: pages/Analyse.py:123
+msgid "INTRODUCTION_QUESTION"
+msgstr "Answer all the questions and find out if you were able to evaluate the diagrams correctly and interpret results correctly."
+
+#: pages/Analyse.py:123
+msgid "QUESTION_1"
+msgstr "1. The higher the light intensity, the ... the NPQ."
+
+#: pages/Analyse.py:123
+msgid "AW1"
+msgstr "higher"
+
+#: pages/Analyse.py:123
+msgid "AW2"
+msgstr "lower"
+
+#: pages/Analyse.py:123
+msgid "RA1"
+msgstr "Unfortunately this is wrong, look again at different experiments with higher and lower light intensity."
+
+#: pages/Analyse.py:123
+msgid "RA2"
+msgstr "Correct!"
+
+#: pages/Analyse.py:123
+msgid "QUESTION_2"
+msgstr "2. What happens to the NPQ during the experiment?"
+
+#: pages/Analyse.py:123
+msgid "AW3"
+msgstr "It increases continuously"
+
+#: pages/Analyse.py:123
+msgid "AW4"
+msgstr "It remains after some time at a level"
+
+#: pages/Analyse.py:123
+msgid "AW5"
+msgstr "It falls continuously"
+
+#: pages/Analyse.py:123
+msgid "RA3"
+msgstr "Correct! The constant level is also called the steady state."
+
+#: pages/Analyse.py:123
+msgid "RA4"
+msgstr "This is unfortunately wrong, look again at different experiments with more light pulses."
+
+#: pages/Analyse.py:123
+msgid "QUESTION_3"
+msgstr "3. Can a meaningful interpretation already succeed with a short test duration and a long time between two pulses?"
+
+#: pages/Analyse.py:123
+msgid "AW6"
+msgstr "Yes!"
+
+#: pages/Analyse.py:123
+msgid "AW7"
+msgstr "No!"
+
+#: pages/Analyse.py:123
+msgid "RA5"
+msgstr "Unfortunately not!"
+
+#: pages/Analyse.py:123
+msgid "RA6"
+msgstr "That is correct! Only when the steady state lasts for a longer time can it be assumed that it will not change again."

@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-02 08:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_ONE"
+msgstr "# Die Messmethode"
+
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_MEASUREMENT"
+msgstr "###### Mit der folgenden Messmethode können wir abschätzen, ob die Pflanze mit den gegebenen abiotischen \
+        Umwelt-Faktoren zurecht kommt."
+
+#: pages/1 Messmethode.py:34
+msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
+msgstr "Wir wollen uns damit beschäftigen, welche Auswirkungen die durchgeführten Veränderungen auf die \
+        Fotosyntheseleistung haben. Dafür nutzen wir aus, dass Pflanzen, welchen zu viel Energie zugeführt wird, Fluoreszieren."
+
+#: pages/1 Messmethode.py:36
+msgid   "EXPLANATION_MEASUREMENT"
+msgstr  "Als Messmethode nutzen wir die PAM-Messung (Pulse-Amplitude-Modulierten Fluoreszenz Messung). Dabei muss \
+            zunächst das photochemische Quenching ausgeschlossen werden. Hierzu wird die Pflanze mit Pulsen an Licht \
+            mit starker Intensität bestrahlt. Die gemessene Fluoreszenz kann dem NPQ zugeschrieben werden, wenn zum \
+            Startpunkt die Pflanze dunkel-adaptiert war. Es kann nun die Veränderung der Fluoreszenz bei Licht- oder \
+            Dunkeladaptionen gemessen werden."
+
+#: pages/1 Messmethode.py:38
+msgid   "EXPLANATION_ATTEMPTS"
+msgstr  "**Die Versuche simulieren das Photosystem 2 in *Arabidopsis thaliana* Pflanzen mit folgenden Voraussetzungen:** \
+            Es handelt sich um den Pflanzen des Wildtyp (*Arabidopsis thaliana* ecotype Columbia 0: im folgenden \
+            Arabidopsis genannt). Diese Pflanzen sind drei Wochen im Boden bei 23°C gewachsen und wurden in einem \
+            Zyklus von 16h Licht und 8h Nacht mit 90-100 μmol m⁻² s⁻¹ bestrahlt. Damit das Photosystem nicht Vorbelastet ist, \
+            wurden die Pflanzen für 12h dunkeladaptiert."
+
+
+#: pages/1 Messmethode.py:40
+msgid   "CAPTION_THAIANA_PICTURE"
+msgstr  "Das Foto einer Pflanze des Wildtypes des Modellorganismus Arabidopsis thaliana."
+
+#: pages/1 Messmethode.py:40
+msgid   "HEADLINE_ILLUSTRATION"
+msgstr  "##### Die Abbildungen"
+
+#: pages/1 Messmethode.py:42
+msgid   "EXPLANATION_ILLUSTRATION_UNITS"
+msgstr  "Auf der Y-Achse der Abbildungen ist die Fluoreszenz aufgetragen. Diese ist angegeben in F´ₘ /Fₘ . Also wie \
+            viel Prozent der Lichtenergie für die Fotosynthese verwendet werden kann."
+
+#: pages/1 Messmethode.py:44
+msgid   "EXPLANATION_ILLUSTRATION"
+msgstr  "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den Abbildungen blau gekennzeichnet ist \
+            (siehe Abbildung 1), diese ist, wie bereits erwähnt, Voraussetzung für die PAM-Messung. Zu diesem Zeitpunkt \
+            können wir Fₘ messen."
+
+#: pages/1 Messmethode.py:47
+msgid   "CAPTION_ABB1"
+msgstr  "Beispielabbildung einer PAM-Messung"
+
+#: pages/1 Messmethode.py:49
+msgid   "LITERATURE"
+msgstr  "Literatur"
+
+#: pages/1 Messmethode.py:50
+msgid   "LITERATURE_DECLARATION"
+msgstr  "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
