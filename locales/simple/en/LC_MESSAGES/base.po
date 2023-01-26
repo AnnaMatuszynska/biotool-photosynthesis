@@ -31,15 +31,20 @@ msgstr "Plant memory"
 
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
-msgstr "# Welcome!"
+msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
 
 #: EINFÜHRUNG.py:22
 msgid "AUTHOR"
-msgstr "##### Author: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
+msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
 
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
 msgstr "Language"
+
+#: Intro by Anna
+msgid "INTRO"
+msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszynska at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century students. We want to show how computational modeling supports the current research in increasing our understanding how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on the left side Version *Simple* or *Expert*. "
+
 
 #: EINFÜHRUNG.py:36
 msgid "CAPTION_ABB1"
@@ -49,9 +54,7 @@ msgstr "Photo of a plant of the species monocot, in three different lighting sit
 
 #: EINFÜHRUNG.py:24
 msgid "MOTIVATION"
-msgstr "Dear students, on this website you will have the opportunity to deal with the topic of photosynthesis. In \
-        addition, you will deal with the effect of different light intensities on this. The goal is not only to gain \
-        knowledge, but also to improve your skills in analyzing diagrams."
+msgstr "Dear students, on this website you will have the opportunity to learn about photosynthesis. Even though chances are high that you already learnt something about it, we guarantee you that you underestimate how much exciting work is still going on in this topic."
 
 #: EINFÜHRUNG.py:26
 msgid "PROCESS"

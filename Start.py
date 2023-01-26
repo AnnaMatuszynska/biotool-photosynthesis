@@ -50,6 +50,8 @@ show_pages(
 st.markdown(_('HEADLINE_MAIN'))
 st.markdown(_('AUTHOR'))
 
+st.markdown(_('INTRO')) # added by Anna
+
 image1 = Image.open('pictures/Foto-Fluoreszierende_Pflanzen.jpg')
 st.image(image1, caption=_('CAPTION_ABB1'))
 

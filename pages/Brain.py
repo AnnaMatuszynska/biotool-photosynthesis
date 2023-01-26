@@ -69,7 +69,7 @@ st.markdown(_('HEADLINE_BRAIN'))
 
 col1, col2, col3 = st.columns(3)
 with col2:
-    st.image("pictures/Kurzvideo-Pflanzengedächtnis.gif")
+    st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
 st.markdown(_('INTRODUCTION_BRAIN'))
 

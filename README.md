@@ -38,15 +38,15 @@ In order for the new translation to be displayed in the sidebar menu, the langua
 of all pages under 'language'.
 
 After changes first run:  
-    For the Einführung:`msgfmt -o locales/#/*/LC_MESSAGES/base.mo locales/#/*/LC_MESSAGES/base` \
-    For the Messmethode: `msgfmt -o locales/#/*/LC_MESSAGES/b-messmeth.mo locales/#/*/LC_MESSAGES/b-messmeth`\
-    For the Daten-Analyse: `msgfmt -o locales/#/*/LC_MESSAGES/b-Analyse.mo locales/#/*/LC_MESSAGES/b-Analyse`\
-    For the Pflanzengedächtnis: `msgfmt -o locales/#/*/LC_MESSAGES/b-brain.mo locales/#/*/LC_MESSAGES/b-brain`\
+    For the Introduction/Einführung:`msgfmt -o locales/#/*/LC_MESSAGES/base.mo locales/#/*/LC_MESSAGES/base` \
+    For the Methods/Messmethode: `msgfmt -o locales/#/*/LC_MESSAGES/b-messmeth.mo locales/#/*/LC_MESSAGES/b-messmeth`\
+    For the Data analysis/Daten-Analyse: `msgfmt -o locales/#/*/LC_MESSAGES/b-Analyse.mo locales/#/*/LC_MESSAGES/b-Analyse`\
+    For the Plant Memory/Pflanzengedächtnis: `msgfmt -o locales/#/*/LC_MESSAGES/b-brain.mo locales/#/*/LC_MESSAGES/b-brain`\
     with en/de instead of * for the language and simple/expert instead of # to generate the translations
 
 ### Developers
-1. Sarah Philipps: realization of phase 1: working dashboard prototype
-2. Anna Matuszynska: conceptualization, supervision of phase 1
+1. Sarah Philipps: main developer, realization of phase 1: working dashboard prototype
+2. Anna Matuszynska: conceptualization, supervision of phase 1, mathematical content and light memory
 joined after the phase 1
 3. Marvin van Aalst: code clean-up, testing
 4. Tobias Pfennig: provision of teaching videos on fluorescence 

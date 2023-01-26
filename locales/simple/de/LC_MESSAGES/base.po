@@ -31,7 +31,7 @@ msgstr "Pflanzengedächtnis"
 
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
-msgstr "# Herzlich Willkommen!"
+msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung der Photosynthese anhand eines Computermodells."
 
 #: EINFÜHRUNG.py:22
 msgid "AUTHOR"
