@@ -171,6 +171,10 @@ msgstr "A differential equation is any equation consisting of a function and a d
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_2"
+msgstr "A differential equation usually has the following form: y'(x)=f(x,y(x))"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"
 msgstr "[Here](https://studyflix.de/mathematik/gewohnliche-dgl-928) there is further information on the topic \
         Differential equations."
 

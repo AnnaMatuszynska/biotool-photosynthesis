@@ -21,14 +21,14 @@ st.markdown(
 )
 
 # headline sidebar
-st.sidebar.write("## Einstellungen :gear:")
+st.sidebar.write("## Settings :gear:")
 
 # decide which version and language
 version_options = {'simple': 'Simple', 'expert': 'Expert'}
 
 version = st.sidebar.selectbox("⚙ Version 👩‍🎓👩🏼‍🔬", version_options.keys(), format_func=lambda x: version_options[x])
 
-language = st.sidebar.selectbox('⚙ Language 🌍💬', ['German', 'English'])
+language = st.sidebar.selectbox('⚙ Language 🌍💬', ['English', 'German'])
 try:
     localizator = gettext.translation('b-Analyse', localedir=os.path.join('locales', version), languages=[language])
     localizator.install()
@@ -297,13 +297,13 @@ if version == 'simple':
         elif option2 == _('AW7'):
             st.markdown(_('RA6'))
 
+# Text not yet written
+# st.markdown(_('STOPP'))
+# if version == 'simple':
+#     with st.expander(_('RESULTS')):
+#         st.markdown(_('EXPLANATION_RESULTS'))
 
-st.markdown(_('STOPP'))
-if version == 'simple':
-    with st.expander(_('RESULTS')):
-        st.markdown(_('EXPLANATION_RESULTS'))
-
-if version == 'expert':
-    with st.expander(_('RESULTS')):
-        st.markdown(_('EXPLANATION_RESULTS'))
+# if version == 'expert':
+#     with st.expander(_('RESULTS')):
+#         st.markdown(_('EXPLANATION_RESULTS'))
 

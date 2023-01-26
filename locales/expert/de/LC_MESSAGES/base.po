@@ -193,6 +193,10 @@ msgstr "Als eine Differentialgleichung bezeichnet man jegliche Gleichungen, welc
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_2"
+msgstr "Eine Differenzialgleichung hat in der Regel folgende Gestalt: y'(x)=f(x,y(x))"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"
 msgstr "[Hier](https://studyflix.de/mathematik/gewohnliche-dgl-928) gibt es weiterführende Informationen zum Thema \
         Differentialgleichungen."
 

@@ -10,7 +10,7 @@ import gettext
 _ = gettext.gettext
 
 # headline sidebar
-st.sidebar.write("## Einstellungen :gear:")
+st.sidebar.write("## Settings :gear:")
 
 # decide which version and language
 version_options = {'simple': 'Simple', 'expert': 'Expert'}
@@ -18,7 +18,7 @@ version_options = {'simple': 'Simple', 'expert': 'Expert'}
 version = st.sidebar.selectbox("⚙ Version 👩‍🎓👩🏼‍🔬", version_options.keys(), format_func=lambda x: version_options[x])
 
 # language selectbox
-language = st.sidebar.selectbox(_('⚙ Language 🌍💬'), ['German', 'English'], label_visibility="visible")
+language = st.sidebar.selectbox(_('⚙ Language 🌍💬'), ['English', 'German'], label_visibility="visible")
 try:
     localizator = gettext.translation('b-messmeth', localedir=os.path.join('locales', version), languages=[language])
     localizator.install()
