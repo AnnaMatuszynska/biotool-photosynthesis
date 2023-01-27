@@ -9,7 +9,7 @@ dependencies:
   - intel-openmp=2021.4.0=h06a4308_3561
   - libcxx=14.0.6=h9765a3e_0
   - libffi=3.3=hb1e8313_2
-  - mkl=2021.4.0=hecd8cb5_637
+  - mkl=2021.4.0=h06a4308_640
   - mkl-service=2.4.0=py310hca72f7f_0
   - ncurses=6.4=hcec6c5f_0
   - numpy-base=1.23.5=py310ha98c3c9_0
