@@ -10,7 +10,7 @@ With this tool we want to provide an insight into how photosynthesis works and c
 We recommend setting up a virtual environment of your choice, e.g. with conda
 
 ```bash
-conda create -n biotoolenv python=3.10.6
+conda create -n biotoolenv python=3.10.6 assimulo
 conda activate biotoolenv
 ```
 

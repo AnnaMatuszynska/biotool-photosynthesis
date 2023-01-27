@@ -234,7 +234,7 @@ if st.button("Start", type="primary"):
         PAM = changingLight(M16model, y0d, ProtPFDs, tprot)
         F = PAM.get_variable(variable="Fluo")
         Fm, NPQ, tm, Fo, to, PhiPSII = get_NPQ(
-            PAM.get_variable("Fluo"), PAM.get_time(), PAM.get_variable("L"), maxlight=5000
+            PAM.get_variable(variable="Fluo"), PAM.get_time(), PAM.get_variable(variable="L"), maxlight=5000
         )
 
         # maingraph

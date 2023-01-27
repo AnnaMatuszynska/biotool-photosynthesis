@@ -5,6 +5,7 @@ import os.path
 import pandas as pd
 import streamlit as st
 from model import M16model, Simulator
+from modelbase.ode import Model, _Simulate
 
 _ = gettext.gettext
 
@@ -72,10 +73,12 @@ st.markdown(_("TIPP2"))
 
 
 # Function for PAM experiment
-def changingLight(model, y0d, lights, interval):
+def changingLight(
+    model: Model, y0d: dict[str, float], lights: list[float], interval: list[float]
+) -> _Simulate:
     s = Simulator(model)
     s.initialise(y0d)
-    dt = 0
+    dt = 0.0
     for i in range(len(interval)):
         s.update_parameter("PFD", lights[i])
         dt += interval[i]
@@ -177,7 +180,7 @@ if st.button("Start", type="primary"):
         PAM = changingLight(model_copy, y0d, ProtPFDs, tprot)
         F = PAM.get_variable(variable="Fluo")
         Fm, NPQ, tm, Fo, to, PhiPSII = get_NPQ(
-            PAM.get_variable("Fluo"), PAM.get_time(), PAM.get_variable("L"), maxlight=5000
+            PAM.get_variable(variable="Fluo"), PAM.get_time(), PAM.get_variable(variable="L"), maxlight=5000
         )
 
         # maingraph

@@ -34,10 +34,10 @@ except:
 # and icons should be
 show_pages(
     [
-        Page("Start.py", _("Start"), ":house:"),
-        Page("pages/Method.py", _("Method"), ":books:"),
-        Page("pages/Analyse.py", _("First analyses"), ":chart_with_upwards_trend:"),
-        Page("pages/Brain.py", _("Plant memory"), ":chart_with_downwards_trend:"),
+        Page("start.py", _("Start"), ":house:"),
+        Page("pages/method.py", _("Method"), ":books:"),
+        Page("pages/analyse.py", _("First analyses"), ":chart_with_upwards_trend:"),
+        Page("pages/brain.py", _("Plant memory"), ":chart_with_downwards_trend:"),
     ]
 )
 
