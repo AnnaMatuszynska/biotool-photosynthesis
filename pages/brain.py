@@ -5,7 +5,6 @@ import os
 import pandas as pd
 import streamlit as st
 from model import M16model, Simulator
-from PIL import Image
 
 _ = gettext.gettext
 
