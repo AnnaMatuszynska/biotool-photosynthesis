@@ -65,7 +65,7 @@ dependencies:
   - tzdata=2022g=h04d1e81_0
   - urllib3=1.26.14=pyhd8ed1ab_0
   - wheel-0.37.1-pyhd3eb1b0_0
-  - xz-5.2.10-h6c40b1e_1
+  - xz=5.2.6=h166bdaf_0
   - zlib-1.2.13-h4dc903c_0
   - pip:
     - altair==4.2.0
