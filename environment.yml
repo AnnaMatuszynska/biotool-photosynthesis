@@ -5,10 +5,9 @@ dependencies:
   - blas=1.0=mkl
   - bzip2=1.0.8=h7f98852_4
   - ca-certificates=2022.12.7=ha878542_0
-
   - intel-openmp=2021.4.0=h06a4308_3561
   - libffi=3.4.2=h7f98852_5
-  - mkl-service=2.4.0=py310hca72f7f_0
+  - mkl=2021.4.0=h06a4308_640
   - ncurses=6.3=h27087fc_1
   - numpy-base=1.23.5=py310h8e6c178_0
   - openssl=3.0.7=h0b41bf4_1
