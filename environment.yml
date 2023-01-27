@@ -55,7 +55,7 @@ dependencies:
   - python_abi=3.10=3_cp310
   - readline=8.2=hca72f7f_0
   - requests=2.28.2=pyhd8ed1ab_0
-  - setuptools-65.6.3-py310hecd8cb5_0
+  - setuptools=66.1.1=pyhd8ed1ab_0
   - six=1.16.0=pyh6c4a22f_0
   - sqlite-3.40.1-h880c91c_0
   - suitesparse=5.10.1=h9e50725_1
