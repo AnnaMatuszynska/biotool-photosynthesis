@@ -1,0 +1,110 @@
+[tool.black]
+line-length = 110
+target-version = ['py310']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+
+[tool.ruff]
+# Enable Pyflakes `E` and `F` codes by default.
+select = ["E", "F"]
+ignore = []
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "C", "D", "E", "F", "..."]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+per-file-ignores = {}
+
+# Same as Black.
+line-length = 88
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Assume Python 3.10.
+target-version = "py310"
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.isort]
+profile = "black"
+no_sections = true
+honor_noqa = true
+
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+disallow_untyped_defs = true
+plugins = ["numpy.typing.mypy_plugin"]
+
+
+
+[tool.pylint.messages_control]
+max-line-length = 120
+disable = [
+  "no-self-use",
+  "too-many-instance-attributes",
+  "too-many-arguments",
+  "too-many-locals",
+  "too-many-branches",
+  "too-many-public-methods",
+  "too-many-statements",
+  "too-many-ancestors",
+  "too-many-lines",
+  "super-init-not-called",
+  "non-parent-init-called",
+  "arguments-differ",
+  "invalid-name",
+  "import-outside-toplevel",
+  "unspecified-encoding",
+  "protected-access",
+  "wrong-import-order",
+  "inconsistent-return-statements",
+  "no-member",
+  "unused-argument",
+]
+
