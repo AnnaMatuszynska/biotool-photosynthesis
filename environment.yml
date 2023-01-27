@@ -20,7 +20,7 @@ dependencies:
   - setuptools=65.6.3=py310hecd8cb5_0
   - six=1.16.0=pyhd3eb1b0_1
   - sqlite=3.40.1=h880c91c_0
-  - tk=8.6.12=h5d9f67b_0
+  - tk=8.6.12=h27826a3_0
   - wheel=0.37.1=pyhd3eb1b0_0
   - xz=5.2.10=h6c40b1e_1
   - zlib=1.2.13=h4dc903c_0
