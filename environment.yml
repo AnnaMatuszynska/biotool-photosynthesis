@@ -6,7 +6,7 @@ dependencies:
   - bzip2=1.0.8=h1de35cc_0
   - ca-certificates=2022.12.7=ha878542_0
   - certifi=2022.12.7=py310hecd8cb5_0
-  - intel-openmp=2021.4.0=hecd8cb5_3538
+  - intel-openmp=2021.4.0=h06a4308_3561
   - libcxx=14.0.6=h9765a3e_0
   - libffi=3.3=hb1e8313_2
   - mkl=2021.4.0=hecd8cb5_637
@@ -87,3 +87,5 @@ dependencies:
       - validators==0.20.0
       - zipp==3.11.0
 prefix: /opt/anaconda3/envs/biotoolenv
+
+
