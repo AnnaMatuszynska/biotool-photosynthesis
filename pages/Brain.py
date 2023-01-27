@@ -35,7 +35,7 @@ def changingLight(model, y0d, lights, interval):
     for i in range(len(interval)):
         s.update_parameter('PFD', lights[i])
         dt += interval[i]
-        s.simulate(dt, **{"rtol": 1e-16, "atol": 1e-8, "maxnef": 20, "maxncf": 10})
+        s.simulate(dt, **{"rtol": 1e-16, "atol": 1e-8}) # "maxnef": 20, "maxncf": 10})
     return s
 
 
