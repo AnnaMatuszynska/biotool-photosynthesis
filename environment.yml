@@ -10,7 +10,7 @@ dependencies:
   - blas=1.0=mkl
   - brotlipy=0.7.0=py310h5764c6d_1005
   - bzip2=1.0.8=h7f98852_4
-  - ca-certificates=2022.12.7=ha878542_0
+  - ca-certificates=2023.01.10=ha878542_0
   - cffi=1.15.1=py310h255011f_3
   - cryptography=39.0.0=py310h34c0648_0
   - giflib=5.2.1=h36c2ea0_2
