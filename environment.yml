@@ -42,6 +42,7 @@ dependencies:
   - mkl_random=1.2.2=py310h00e6091_0
   - mpfr=4.1.0=h9202a9a_1
   - ncurses=6.3=h27087fc_1
+  - numpy=1.23.5=py310hd5efca6_0
   - numpy-base=1.23.5=py310h8e6c178_0
   - openssl=3.0.7=h0b41bf4_1
   - packaging=23.0=pyhd8ed1ab_0
