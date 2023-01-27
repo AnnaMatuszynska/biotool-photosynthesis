@@ -109,14 +109,16 @@ with st.expander(_("EXPANDER_DIFFERENTIAL_EQUATIONS")):
 
 st.markdown(_("CREDITS_ANNA"))
 
-with st.expander(_("Literatur")):
+with st.expander(_("Literature")):
     st.markdown(_("INTRODUCTION_LITERATURE"))
     if version == "expert":
-        """
-        - Stirbet, A. et al (2020). Photosynthesis: basic, history and modelling. Annals of botany vol 126,4: 511-537: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7489092/
-        """
+        st.markdown(
+            "- Stirbet, A. et al (2020). Photosynthesis: basic, history and modelling."
+            " Annals of botany vol 126,4: 511-537: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7489092/"
+        )
     elif version == "simple":
         if language == "German":
-            """
-            - https://simpleclub.com/lessons/biologie-fotosynthese#:~:text=Bei%20der%20Fotosynthese%20erzeugen%20gr%C3%BCne,als%20Energiequelle%20f%C3%BCr%20die%20Pflanze.
-            """
+            st.markdown(
+                "- https://simpleclub.com/lessons/biologie-fotosynthese#:~:text="
+                "Bei%20der%20Fotosynthese%20erzeugen%20gr%C3%BCne,als%20Energiequelle%20f%C3%BCr%20die%20Pflanze."
+            )
