@@ -201,7 +201,7 @@ if st.button('Start', type="primary"):
             y=alt.value(0),
             y2=alt.value(290),  # pixels from top
             color=alt.Color('Phasen', legend=None),
-            x=alt.X('start', axis=alt.Axis(title=_('TIME'))), # TIME wieder einfügen und in Sprachen prüfen
+            x=alt.X('start', axis=alt.Axis(title=_('TIME'))),
         )
 
         # Einfügen der Phasenbeschriftung
