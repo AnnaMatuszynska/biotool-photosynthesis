@@ -21,7 +21,6 @@ dependencies:
   - ld_impl_linux-64=2.39=hcc3a1bd_1
   - libblas=3.9.0=12_linux64_mkl
   - libcblas=3.9.0=12_linux64_mkl
-  - libcxx=14.0.6=h9765a3e_0
   - libffi=3.3=hb1e8313_2
   - libgcc-ng=12.2.0=h65d4601_19
   - libgfortran-ng=12.2.0=h69a702a_19
