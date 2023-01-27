@@ -7,19 +7,22 @@ With this tool we want to provide an insight into how photosynthesis works and c
 
 ### Setting up
 
-```python
+We recommend setting up a virtual environment of your choice, e.g. with conda
+
+```bash
 conda create -n biotoolenv python=3.10.6
 conda activate biotoolenv
-pip install modelbase==1.2.3
-pip install streamlit==1.14.0
-pip install st-pages==0.3.0
 ```
 
-All dependencies are specified in the environment.yml file.
+and then install all required dependencies via
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Run the web page
 
-To get the web page running, the following command is used: `streamlit run Start.py`
+To get the web page running, the following command is used: `streamlit run start.py`
 
 ### Layout
 
