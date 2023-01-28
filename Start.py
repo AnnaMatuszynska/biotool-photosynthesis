@@ -34,7 +34,7 @@ except:
 # and icons should be
 show_pages(
     [
-        Page("start.py", _("Start"), ":house:"),
+        Page("Start.py", _("Start"), ":house:"),
         Page("pages/method.py", _("Method"), ":books:"),
         Page("pages/analyse.py", _("First analyses"), ":chart_with_upwards_trend:"),
         Page("pages/brain.py", _("Plant memory"), ":chart_with_downwards_trend:"),
