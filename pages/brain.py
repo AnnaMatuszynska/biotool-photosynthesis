@@ -253,6 +253,7 @@ if st.button("Start", type="primary"):
                 "Phasen+1": [" ", _("PHASE1"), _("PHASE2"), _("PHASE3")],
                 "start": [0, 0.53, 14, 20 + slider_time],
                 "stop": [0.53, 14, 20 + slider_time, 30 + slider_time],
+                "color": ["#1c5bc7", "#cf6d0c", "#1c5bc7", "#d10a0d"]
             }
         )
 
@@ -263,7 +264,7 @@ if st.button("Start", type="primary"):
                 x2="stop",
                 y=alt.value(0),
                 y2=alt.value(290),  # pixels from top
-                color=alt.Color("Phasen", legend=None),
+                color=alt.Color("color", scale=None, legend=None),
                 x=alt.X("start", axis=alt.Axis(title=_("AXSIS_TIME"))),
             )
         )
@@ -280,7 +281,7 @@ if st.button("Start", type="primary"):
         left, right = st.columns(2)
 
         if version == "expert":
-            # secound Graph
+            # second Graph
             with left:
                 chart_data1 = pd.DataFrame({"NPQ": NPQ, "Zeit": tm / 60})
 

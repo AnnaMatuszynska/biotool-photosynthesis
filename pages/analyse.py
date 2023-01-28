@@ -202,6 +202,7 @@ if st.button("Start", type="primary"):
                 "Phasen": ["", _("MEASUREMENT_PHASE")],
                 "start": [0, 0.53 * 60],
                 "stop": [0.53 * 60, 0.53 * 60 + slider_time * 60],
+                "color": ["#1c5bc7", "#cf6d0c"]
             }
         )
 
@@ -212,8 +213,8 @@ if st.button("Start", type="primary"):
                 x2="stop",
                 y=alt.value(0),
                 y2=alt.value(290),  # pixels from top
-                color=alt.Color("Phasen", legend=None),
-                x=alt.X("start", axis=alt.Axis(title=_("TIME"))),
+                color=alt.Color("color", scale=None, legend=None),
+                x=alt.X("start",  axis=alt.Axis(title=_("TIME"))),
             )
         )
 
