@@ -1,0 +1,19 @@
+name: biotoolenvironment
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10.6
+  - assimulo
+  - pip=22.3.1
+  - pip:
+      - black
+      - isort
+      - mypy
+      - pre-commit
+      - pip-tools
+      - ruff
+      - modelbase>=1.28.2
+      - streamlit>=1.14.0
+      - st-pages>=0.3.0
+prefix: /opt/anaconda3/envs/biotoolenvironment

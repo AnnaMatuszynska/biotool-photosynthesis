@@ -82,7 +82,7 @@ def changingLight(
     for i in range(len(interval)):
         s.update_parameter("PFD", lights[i])
         dt += interval[i]
-        s.simulate(dt, **{"rtol": 1e-16, "atol": 1e-8}) # "maxnef": 20, "maxncf": 10})
+        s.simulate(dt, **{"rtol": 1e-16, "atol": 1e-8, "maxnef": 20, "maxncf": 10})
     return s
 
 
@@ -229,7 +229,7 @@ if st.button("Start", type="primary"):
         left, right = st.columns(2)
 
         if version == "expert":
-            # secound Graph
+            # second graph
             with left:
                 chart_data1 = pd.DataFrame({"NPQ": NPQ, "Zeit": tm})
 

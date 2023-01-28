@@ -7,3 +7,4 @@ ruff
 modelbase>=1.28.2
 streamlit>=1.14.0
 st-pages>=0.3.0
+tomli>=1.1.0
