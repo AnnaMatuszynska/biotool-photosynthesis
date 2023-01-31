@@ -1,2 +1,4 @@
+# Run streamlit config show to show all available options
+
 [theme]
 base="dark"
