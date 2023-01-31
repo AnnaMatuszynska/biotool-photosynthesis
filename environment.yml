@@ -2,9 +2,9 @@ name: biotoolenvironment
 channels:
   - conda-forge
 dependencies:
-  - python>=3.11
-  - pip=22.3.1
+  - python
+  - pip
   - assimulo
   - pip:
-      - -r requirements.txt
+      - -r _requirements.txt
 prefix: /opt/anaconda3/envs/biotoolenvironment
