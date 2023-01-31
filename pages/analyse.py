@@ -4,8 +4,8 @@ import numpy as np
 import os.path
 import pandas as pd
 import streamlit as st
-from model import M16model, Simulator
-from modelbase.ode import Model, _Simulate
+from model import get_model
+from modelbase.ode import Model, Simulator, _Simulate
 
 _ = gettext.gettext
 
@@ -175,9 +175,9 @@ if st.button("Start", type="primary"):
 
         # plt the graph
         y0d = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
-        model_copy = M16model.copy()
-        model_copy.update_parameters(updated_parameters)
-        PAM = changingLight(model_copy, y0d, ProtPFDs, tprot)
+        model = get_model()
+        model.update_parameters(updated_parameters)
+        PAM = changingLight(model, y0d, ProtPFDs, tprot)
         F = PAM.get_variable(variable="Fluo")
         Fm, NPQ, tm, Fo, to, PhiPSII = get_NPQ(
             PAM.get_variable(variable="Fluo"), PAM.get_time(), PAM.get_variable(variable="L"), maxlight=5000
@@ -202,7 +202,7 @@ if st.button("Start", type="primary"):
                 "Phasen": ["", _("MEASUREMENT_PHASE")],
                 "start": [0, 0.53 * 60],
                 "stop": [0.53 * 60, 0.53 * 60 + slider_time * 60],
-                "color": ["#1c5bc7", "#cf6d0c"]
+                "color": ["#1c5bc7", "#cf6d0c"],
             }
         )
 
@@ -214,7 +214,7 @@ if st.button("Start", type="primary"):
                 y=alt.value(0),
                 y2=alt.value(290),  # pixels from top
                 color=alt.Color("color", scale=None, legend=None),
-                x=alt.X("start",  axis=alt.Axis(title=_("TIME"))),
+                x=alt.X("start", axis=alt.Axis(title=_("TIME"))),
             )
         )
 

@@ -4,7 +4,8 @@ import numpy as np
 import os
 import pandas as pd
 import streamlit as st
-from model import M16model, Simulator
+from model import get_model
+from modelbase.ode import Simulator
 
 _ = gettext.gettext
 
@@ -37,7 +38,7 @@ def changingLight(model, y0d, lights, interval):
     for i in range(len(interval)):
         s.update_parameter("PFD", lights[i])
         dt += interval[i]
-        s.simulate(dt, **{"rtol": 1e-16, "atol": 1e-8}) # "maxnef": 20, "maxncf": 10})
+        s.simulate(dt, **{"rtol": 1e-16, "atol": 1e-8})  # "maxnef": 20, "maxncf": 10})
     return s
 
 
@@ -228,10 +229,9 @@ if st.button("Start", type="primary"):
     with st.spinner(_("SPINNER")):  # loading indicator
         # plt the graph
         y0d = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
-        model_copy = M16model.copy()
-        model_copy.update_parameters(updated_parameters)
-        PAM = changingLight(model_copy, y0d, ProtPFDs, tprot)
-        PAM = changingLight(M16model, y0d, ProtPFDs, tprot)
+        model = get_model()
+        model.update_parameters(updated_parameters)
+        PAM = changingLight(model, y0d, ProtPFDs, tprot)
         F = PAM.get_variable(variable="Fluo")
         Fm, NPQ, tm, Fo, to, PhiPSII = get_NPQ(
             PAM.get_variable(variable="Fluo"), PAM.get_time(), PAM.get_variable(variable="L"), maxlight=5000
@@ -253,7 +253,7 @@ if st.button("Start", type="primary"):
                 "Phasen+1": [" ", _("PHASE1"), _("PHASE2"), _("PHASE3")],
                 "start": [0, 0.53, 14, 20 + slider_time],
                 "stop": [0.53, 14, 20 + slider_time, 30 + slider_time],
-                "color": ["#1c5bc7", "#cf6d0c", "#1c5bc7", "#d10a0d"]
+                "color": ["#1c5bc7", "#cf6d0c", "#1c5bc7", "#d10a0d"],
             }
         )
 
