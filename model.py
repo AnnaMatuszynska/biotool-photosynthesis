@@ -306,10 +306,6 @@ def get_model() -> Model:
     # define the basic model
     model = Model(pars)
 
-    model.add_derived_parameter(
-        parameter_name="KeqQAPQ", function=_KeqQAPQ, parameters=["F", "E0QAQAm", "E0PQPQH2", "pHstroma", "RT"]
-    )
-
     # add compounds
     model.add_compounds(
         [
@@ -327,6 +323,10 @@ def get_model() -> Model:
         parameter_name="RT",
         function=proportional,
         parameters=["R", "T"],
+    )
+
+    model.add_derived_parameter(
+        parameter_name="KeqQAPQ", function=_KeqQAPQ, parameters=["F", "E0QAQAm", "E0PQPQH2", "pHstroma", "RT"]
     )
 
     # add algebraic module
