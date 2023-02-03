@@ -44,6 +44,10 @@ msgstr  "**Die Versuche simulieren das Photosystem 2 in *Arabidopsis thaliana* P
             wurden die Pflanzen für 12h dunkeladaptiert."
 
 #: pages/1 Messmethode.py:40
+msgid   "CAPTION_THAIANA_PICTURE"
+msgstr  "Das Foto einer Pflanze des Wildtypes des Modellorganismus Arabidopsis thaliana."
+
+#: pages/1 Messmethode.py:40
 msgid   "HEADLINE_ILLUSTRATION"
 msgstr  "##### Die Abbildungen"
 

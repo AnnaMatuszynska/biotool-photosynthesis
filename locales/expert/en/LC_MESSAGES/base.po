@@ -35,19 +35,18 @@ msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosyn
 
 #: EINFÜHRUNG.py:22
 msgid "AUTHOR"
-msgstr "##### Author: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
+msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
 
-#: EINFÜHRUNG.py:
-msgid "SuS"
-msgstr "Students"
 
-#: EINFÜHRUNG.py:
-msgid "SCI"
-msgstr "Scientists"
-
-#: EINFÜHRUNG.py:
-msgid "LANGUAGE"
-msgstr "Sprache"
+#: Intro by Anna
+msgid "INTRO"
+msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszynska at the \
+        RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
+        students. We want to show how computational modeling supports the current research in increasing our understanding \
+        how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, \
+        photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at \
+        both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
+        the left side Version *Simple* or *Expert*. "
 
 #: EINFÜHRUNG.py:36
 msgid "CAPTION_ABB1"
@@ -103,6 +102,10 @@ msgid "EXPANDER_NUTRIENTS_EXPLANATION"
 msgstr "In order for plants to photosynthesize, they need nutrients, which they absorb from the environment. For this \
         purpose, plants have, on the one hand, roots that can absorb water and nutrients from the soil. On the other \
         hand, plants have stomata in their leaves, through which plants can absorb CO₂ from the air."
+
+#: EINFÜHRUNG.py:40
+msgid "CAPTION_STOMATA_PICTURE"
+msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
 
 #: EINFÜHRUNG.py:42
 msgid "EXPANDER_PHOTOSYNTHESIS"

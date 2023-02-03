@@ -43,7 +43,13 @@ msgstr "Language"
 
 #: Intro by Anna
 msgid "INTRO"
-msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszynska at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century students. We want to show how computational modeling supports the current research in increasing our understanding how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on the left side Version *Simple* or *Expert*. "
+msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszynska at the \
+        RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
+        students. We want to show how computational modeling supports the current research in increasing our understanding \
+        how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, \
+        photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at \
+        both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
+        the left side Version *Simple* or *Expert*. "
 
 
 #: EINFÜHRUNG.py:36
@@ -54,7 +60,9 @@ msgstr "Photo of a plant of the species monocot, in three different lighting sit
 
 #: EINFÜHRUNG.py:24
 msgid "MOTIVATION"
-msgstr "Dear students, on this website you will have the opportunity to learn about photosynthesis. Even though chances are high that you already learnt something about it, we guarantee you that you underestimate how much exciting work is still going on in this topic."
+msgstr "Dear students, on this website you will have the opportunity to learn about photosynthesis. Even though chances \
+        are high that you already learnt something about it, we guarantee you that you underestimate how much exciting \
+        work is still going on in this topic."
 
 #: EINFÜHRUNG.py:26
 msgid "PROCESS"
@@ -94,6 +102,10 @@ msgid "EXPANDER_NUTRIENTS_EXPLANATION"
 msgstr "In order for plants to photosynthesize, they need nutrients, which they absorb from the environment. For this \
         purpose, plants have, on the one hand, roots that can absorb water and nutrients from the soil. On the other \
         hand, plants have stomata in their leaves, through which plants can absorb CO₂ from the air."
+
+#: EINFÜHRUNG.py:40
+msgid "CAPTION_STOMATA_PICTURE"
+msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
 
 #: EINFÜHRUNG.py:42
 msgid "EXPANDER_PHOTOSYNTHESIS"

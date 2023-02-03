@@ -35,11 +35,19 @@ msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung
 
 #: EINFÜHRUNG.py:22
 msgid "AUTHOR"
-msgstr "##### Autor: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/)"
+msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/)"
 
-#: EINFÜHRUNG.py:
-msgid "LANGUAGE"
-msgstr "Sprache"
+#: Intro by Anna
+msgid "INTRO"
+msgstr "Dies ist ein Lehrmittel für Biologie: ein laufendes Projekt, das von Sarah Philipps und Anna Matuszynska an der \
+        RWTH Aachen, Deutschland, ins Leben gerufen wurde. Unser Ziel ist es, ein Lehrmittel zur Verfügung zu stellen, \
+        das auf die Bedürfnisse der Studierenden des XXI Jahrhunderts zugeschnitten ist. Wir wollen zeigen, wie \
+        computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise \
+        der Welt zu verbessern, und wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. \
+        Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Wir haben dieses interaktive Dashboard \
+        erstellt, das sich sowohl an neugierige Neueinsteiger als auch an fortgeschrittene Lernende richtet. Sie können \
+        wählen, welche Version Sie verwenden möchten, indem Sie auf der linken Seite Version *Einfach* oder *Experte* anklicken."
+
 
 #: EINFÜHRUNG.py:36
 msgid "CAPTION_ABB1"
