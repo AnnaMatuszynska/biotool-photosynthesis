@@ -114,11 +114,25 @@ with st.expander(_("Literature")):
     if version == "expert":
         st.markdown(
             "- Stirbet, A. et al (2020). Photosynthesis: basic, history and modelling."
-            " Annals of botany vol 126,4: 511-537: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7489092/"
+            "Annals of botany vol 126,4: 511-537: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7489092/"
+        )
+        st.markdown(
+            "- Holzner, Steven. Differential equations for dummies. John Wiley & Sons, 2008."
         )
     elif version == "simple":
         if language == "German":
             st.markdown(
                 "- https://simpleclub.com/lessons/biologie-fotosynthese#:~:text="
                 "Bei%20der%20Fotosynthese%20erzeugen%20gr%C3%BCne,als%20Energiequelle%20f%C3%BCr%20die%20Pflanze."
+            )
+        else:
+            st.markdown(
+                "- Fromme, Petra, and Ingo Grotjohann. Overview of photosynthesis. Photosynthetic Protein Complexes: A \
+                Structural Approach (2008): 1-22."
+            )
+            st.markdown(
+                "- Holzner, Steven. Differential equations for dummies. John Wiley & Sons, 2008."
+            )
+            st.markdown(
+                "- May, Elizabeth, and John Kidder. Climate Change for Dummies. John Wiley & Sons, 2022."
             )

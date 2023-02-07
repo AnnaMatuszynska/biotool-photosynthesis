@@ -46,6 +46,41 @@ msgstr "**The experiments simulate photosystem 2 in *Arabidopsis thaliana* plant
 msgid   "CAPTION_THAIANA_PICTURE"
 msgstr  "A photograph of a plant of the wild type of the model organism Arabidopsis thaliana."
 
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISMEN"
+msgstr  "Why is Arabidopsis thaliana a model organism?"
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
+msgstr  "Arabidopsis (Arabidopsis thaliana) is referred to as a model organism because it is often used as a model \
+           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
+msgstr  "1. Small size and fast life cycle: Arabidopsis thaliana has a short life cycle that allows researchers to study \
+        multiple generations in a relatively short period of time."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"
+msgstr  "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
+            study specific developmental processes."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
+msgstr  "3. Genome sequencing: The complete genome of Arabidopsis thaliana was the first plant genome to be sequenced, \
+            which has provided researchers with a wealth of genetic information about the plant."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
+msgstr  "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for Arabidopsis \
+        thaliana, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
+msgstr  "All these factors have made Arabidopsis thaliana an important model organism for studying basic plant biology, \
+        and its insights have contributed to our understanding of the biology of all plants."
+
 #: pages/1 Messmethode.py:40
 msgid   "HEADLINE_ILLUSTRATION"
 msgstr  "##### The figures"

@@ -50,6 +50,43 @@ msgstr  "**Die Versuche simulieren das Photosystem 2 in *Arabidopsis thaliana* P
 msgid   "CAPTION_THAIANA_PICTURE"
 msgstr  "Das Foto einer Pflanze des Wildtypes des Modellorganismus Arabidopsis thaliana."
 
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISMEN"
+msgstr  "Wieso wird Arabidopsis thaliana als Modellorganismus bezeichnet?"
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
+msgstr  "Die Ackerschmalwand (Arabidopsis thaliana) wird als Modellorganismus bezeichnet, da sie häufig als Modellsystem \
+        in der Pflanzenbiologie verwendet wird. Sie hat mehrere Eigenschaften, die sie für Laborstudien gut geeignet machen, darunter:"
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
+msgstr  "1. Geringe Größe und schneller Lebenszyklus: Arabidopsis thaliana hat einen kurzen Lebenszyklus, der es den \
+        Forschern ermöglicht, mehrere Generationen in einem relativ kurzen Zeitraum zu untersuchen."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"
+msgstr  "2. Einfache Anatomie: Die Struktur der Pflanze ist einfach und gut verstanden, was es den Forschern erleichtert, \
+        spezifische Entwicklungsprozesse zu untersuchen."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
+msgstr  "3. Sequenzierung des Genoms: Das vollständige Genom der Ackerschmalwand (Arabidopsis thaliana) war das erste \
+            Pflanzengenom, das sequenziert wurde und den Forschern eine Fülle von genetischen Informationen über die Pflanze lieferte."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
+msgstr  "4. Genetische und molekulare Hilfsmittel: Für Arabidopsis thaliana steht eine große Sammlung genetischer und \
+        molekularer Hilfsmittel zur Verfügung, die es Forschern ermöglicht, die Entwicklung, das Wachstum und die \
+        Stressreaktionen von Pflanzen auf zellulärer und molekularer Ebene zu untersuchen."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
+msgstr  "All diese Faktoren haben Arabidopsis thaliana zu einem wichtigen Modellorganismus für das Untersuchen der \
+        grundlegenden Pflanzenbiologie gemacht, und seine Erkenntnisse haben zu unserem Verständnis der Biologie aller Pflanzen beigetragen."
+
+
 #: pages/1 Messmethode.py:40
 msgid   "HEADLINE_ILLUSTRATION"
 msgstr  "##### Die Abbildungen"

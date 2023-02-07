@@ -44,6 +44,14 @@ col1, col2, col3 = st.columns(3)
 with col2:
     st.image("pictures/Arabidopsis.jpg", caption=_("CAPTION_THAIANA_PICTURE"), width=400)  # Add Caption
 
+with st.expander(_("EXPANDER_MODEL_ORGANISMEN")):
+    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"))
+    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"))
+    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"))
+    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"))
+    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"))
+    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"))
+
 st.markdown(_("HEADLINE_ILLUSTRATION"))
 
 st.markdown(_("EXPLANATION_ILLUSTRATION_UNITS"))
@@ -71,9 +79,21 @@ with st.expander(_("LITERATURE")):
     st.markdown(_("LITERATURE_DECLARATION"))
     if version == "expert":
         """
+        - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
+        """
+        """
         - Nies, T. et al (2021). Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research. https://www.biorxiv.org/content/10.1101/2021.05.12.443801v1.full
         """
     elif version == "simple":
-        """
-        - https://link.springer.com/referenceworkentry/10.1007/978-3-662-53493-9_13-1
-        """
+        if language == "german":
+            """
+            - https://link.springer.com/referenceworkentry/10.1007/978-3-662-53493-9_13-1
+            """
+        else:
+            """
+            - https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
+            """
+            """
+            - https://link.springer.com/chapter/10.1007/978-1-4020-3218-9_11
+            """
+

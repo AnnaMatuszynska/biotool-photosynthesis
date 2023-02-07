@@ -43,7 +43,7 @@ msgstr "Now also changes the sliders for the duration of the experiment and the 
 
 #: pages/Analyse.py:
 msgid "TASK_3"
-msgstr "Aufgabe 3"
+msgstr "Task 3"
 
 #: pages/Analyse.py:
 msgid "TASK_3_EXPLANATION"
@@ -51,7 +51,7 @@ msgstr "Compares the curve of the pulse peaks with the curve outside the pulses.
 
 #: pages/Analyse.py:
 msgid "TASK_4"
-msgstr "Aufgabe 4"
+msgstr "Task 4"
 
 #: pages/Analyse.py:
 msgid "TASK_4_EXPLANATION"
@@ -60,7 +60,7 @@ msgstr "Try to interpret the observations. What do the changes at different ligh
 
 #: pages/Analyse.py:
 msgid "TASK_5"
-msgstr "Aufgabe 5"
+msgstr "Task 5"
 
 #: pages/Analyse.py:
 msgid "TASK_5_EXPLANATION"

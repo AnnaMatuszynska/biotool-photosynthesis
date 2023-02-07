@@ -121,8 +121,8 @@ msgstr "Just like humans, plants need nutrients for their growth. The most essen
 #: EINFÜHRUNG.py:43
 msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_2"
 msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.planet-schule.de/mm/lebensraum/wald-photosynthese/) you can find out more \
-        about the process of photosynthesis."
+        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process \
+        of photosynthesis."
 
 #: EINFÜHRUNG.py:43
 msgid "CAPTION_FOTOSYNTHESE_PICTURE"
@@ -190,7 +190,7 @@ msgstr "A differential equation usually has the following form: y'(x)=f(x,y(x))"
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"
-msgstr "[Here](https://studyflix.de/mathematik/gewohnliche-dgl-928) there is further information on the topic \
+msgstr "[Here](https://www.cuemath.com/calculus/differential-equation/) there is further information on the topic \
         Differential equations."
 
 #: EINFÜHRUNG.py:64
