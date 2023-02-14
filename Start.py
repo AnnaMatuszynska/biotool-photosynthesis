@@ -19,7 +19,7 @@ def make_introduction(text: Callable[[str], str]) -> None:
     st.markdown(text("DECLARATION"))
 
 
-# FIXME: version and language should probably be replaced by _
+# FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
     with st.expander(text("EXPANDER_PRODUCENTEN")):
         st.markdown(text("EXPANDER_PRODUCENTEN_EXPLANATION"))
@@ -63,7 +63,7 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
         st.markdown(text("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"))
 
 
-# FIXME: version & language should probably be replaced by _
+# FIXME: version & language should probably be replaced by text
 def make_credits(text: Callable[[str], str], version: str, language: str) -> None:
     st.markdown(text("CREDITS_ANNA"))
 

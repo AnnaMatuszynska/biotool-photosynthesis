@@ -5,12 +5,12 @@ from typing import Callable
 from utils import get_localised_text
 
 
-# FIXME: language and version probably should be put into _ here
+# FIXME: language and version probably should be put into text here
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_ONE"))
 
-    # FIXME: unused columns
-    col1, col2, col3 = st.columns(3)
+    # FIXME: unused columns, are you trying to center?
+    _, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Messmethode.gif")
 
@@ -20,7 +20,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("EXPLANATION_ATTEMPTS"))
 
     # FIXME: unused columns. Are you trying to center the picture?
-    col1, col2, col3 = st.columns(3)
+    _, col2, _ = st.columns(3)
     with col2:
         st.image(
             "pictures/Arabidopsis.jpg", caption=text("CAPTION_THAIANA_PICTURE"), width=400
@@ -56,7 +56,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.markdown(text("EQUATION_LIST_6"))
 
 
-# FIXME: language and version probably should be put into _ here
+# FIXME: language and version probably should be put into text here
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
         st.markdown(text("LITERATURE_DECLARATION"))

@@ -81,8 +81,7 @@ def simulate(updated_parameters, tprot, ProtPFDs):
     PAM = changingLight(model, y0d, ProtPFDs, tprot)  # type: ignore
     F = PAM.get_variable(variable="Fluo")
 
-    # FIXME: couple of variables are unused
-    Fm, NPQ, tm, Fo, to, PhiPSII = get_NPQ(
+    _, NPQ, tm, _, _, PhiPSII = get_NPQ(
         PAM.get_variable(variable="Fluo"),
         PAM.get_time(),
         PAM.get_variable(variable="L"),

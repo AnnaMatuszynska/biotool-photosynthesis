@@ -246,12 +246,12 @@ def make_expert_plot(NPQ, tm, PhiPSII, areas, text, left, right):
         st.altair_chart(chart2 + text + areas + points2, use_container_width=True)
 
 
-# FIXME: version here should probably be replaced by _
+# FIXME: version here should probably be replaced by text
 def make_page(text: Callable[[str], str], version: str) -> None:
     st.markdown(text("HEADLINE_BRAIN"))
 
     # FIXME: why is col3 unused?
-    col1, col2, col3 = st.columns(3)
+    col1, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
