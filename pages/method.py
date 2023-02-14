@@ -1,77 +1,86 @@
 import streamlit as st
-from pages._sidebar import language, version
+from pages._sidebar import make_sidebar
 from PIL import Image
+from typing import Callable
 from utils import get_localised_text
 
-_ = get_localised_text("b-messmeth", version, language)
 
-st.markdown(_("HEADLINE_ONE"))
+# FIXME: language and version probably should be put into _ here
+def make_page(_: Callable[[str], str], language: str, version: str) -> None:
+    st.markdown(_("HEADLINE_ONE"))
 
-col1, col2, col3 = st.columns(3)
-with col2:
-    st.image("pictures/Kurzvideo-Messmethode.gif")
+    # FIXME: unused columns
+    col1, col2, col3 = st.columns(3)
+    with col2:
+        st.image("pictures/Kurzvideo-Messmethode.gif")
 
-st.markdown(_("INTRODUCTION_MEASUREMENT"))  # (siehe Abbildung)
+    st.markdown(_("INTRODUCTION_MEASUREMENT"))  # (siehe Abbildung)
+    st.markdown(_("EXPLANATION_INTRODUCTION_ATTEMPTS"))
+    st.markdown(_("EXPLANATION_MEASUREMENT"))
+    st.markdown(_("EXPLANATION_ATTEMPTS"))
 
-st.markdown(_("EXPLANATION_INTRODUCTION_ATTEMPTS"))
+    # FIXME: unused columns. Are you trying to center the picture?
+    col1, col2, col3 = st.columns(3)
+    with col2:
+        st.image("pictures/Arabidopsis.jpg", caption=_("CAPTION_THAIANA_PICTURE"), width=400)  # Add Caption
 
-st.markdown(_("EXPLANATION_MEASUREMENT"))
+    with st.expander(_("EXPANDER_MODEL_ORGANISMEN")):
+        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"))
+        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"))
+        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"))
+        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"))
+        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"))
+        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"))
 
-st.markdown(_("EXPLANATION_ATTEMPTS"))
+    st.markdown(_("HEADLINE_ILLUSTRATION"))
+    st.markdown(_("EXPLANATION_ILLUSTRATION_UNITS"))
+    st.markdown(_("EXPLANATION_ILLUSTRATION"))
 
-col1, col2, col3 = st.columns(3)
-with col2:
-    st.image("pictures/Arabidopsis.jpg", caption=_("CAPTION_THAIANA_PICTURE"), width=400)  # Add Caption
+    if language == "German":
+        image1 = Image.open("pictures/Beispielabbildung_de.png")
+        st.image(image1, caption=_("CAPTION_ABB1"))
+    else:
+        image1 = Image.open("pictures/Beispielabbildung_en.png")
+        st.image(image1, caption=_("CAPTION_ABB1"))
 
-with st.expander(_("EXPANDER_MODEL_ORGANISMEN")):
-    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"))
-    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"))
-    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"))
-    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"))
-    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"))
-    st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"))
-
-st.markdown(_("HEADLINE_ILLUSTRATION"))
-
-st.markdown(_("EXPLANATION_ILLUSTRATION_UNITS"))
-
-st.markdown(_("EXPLANATION_ILLUSTRATION"))
-
-if language == "German":
-    image1 = Image.open("pictures/Beispielabbildung_de.png")
-    st.image(image1, caption=_("CAPTION_ABB1"))
-else:
-    image1 = Image.open("pictures/Beispielabbildung_en.png")
-    st.image(image1, caption=_("CAPTION_ABB1"))
-
-if version == "expert":
-    with st.expander(_("EXPANDER_MODEL_EQUATIONS")):
-        st.markdown(_("EXPANDER_MODEL_EQUATIONS_EXPLANATION"))
-        st.markdown(_("EQUATION_LIST_1"))
-        st.markdown(_("EQUATION_LIST_2"))
-        st.markdown(_("EQUATION_LIST_3"))
-        st.markdown(_("EQUATION_LIST_4"))
-        st.markdown(_("EQUATION_LIST_5"))
-        st.markdown(_("EQUATION_LIST_6"))
-
-with st.expander(_("LITERATURE")):
-    st.markdown(_("LITERATURE_DECLARATION"))
     if version == "expert":
-        """
-        - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
-        """
-        """
-        - Nies, T. et al (2021). Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research. https://www.biorxiv.org/content/10.1101/2021.05.12.443801v1.full
-        """
-    elif version == "simple":
-        if language == "german":
+        with st.expander(_("EXPANDER_MODEL_EQUATIONS")):
+            st.markdown(_("EXPANDER_MODEL_EQUATIONS_EXPLANATION"))
+            st.markdown(_("EQUATION_LIST_1"))
+            st.markdown(_("EQUATION_LIST_2"))
+            st.markdown(_("EQUATION_LIST_3"))
+            st.markdown(_("EQUATION_LIST_4"))
+            st.markdown(_("EQUATION_LIST_5"))
+            st.markdown(_("EQUATION_LIST_6"))
+
+
+# FIXME: language and version probably should be put into _ here
+def make_literature(_: Callable[[str], str], language: str, version: str) -> None:
+    with st.expander(_("LITERATURE")):
+        st.markdown(_("LITERATURE_DECLARATION"))
+        if version == "expert":
             """
-            - https://link.springer.com/referenceworkentry/10.1007/978-3-662-53493-9_13-1
-            """
-        else:
-            """
-            - https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
+            - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
             """
             """
-            - https://link.springer.com/chapter/10.1007/978-1-4020-3218-9_11
+            - Nies, T. et al (2021). Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research. https://www.biorxiv.org/content/10.1101/2021.05.12.443801v1.full
             """
+        elif version == "simple":
+            if language == "german":
+                """
+                - https://link.springer.com/referenceworkentry/10.1007/978-3-662-53493-9_13-1
+                """
+            else:
+                """
+                - https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
+                """
+                """
+                - https://link.springer.com/chapter/10.1007/978-1-4020-3218-9_11
+                """
+
+
+if __name__ == "__main__":
+    version, language = make_sidebar()
+    _ = get_localised_text("b-messmeth", version, language)
+    make_page(_, language, version)
+    make_literature(_, language, version)
