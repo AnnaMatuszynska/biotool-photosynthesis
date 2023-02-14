@@ -1,34 +1,13 @@
-import gettext
-import os
 import streamlit as st
+from pages._sidebar import language, version
 from PIL import Image
 from st_pages import Page, show_pages
-
-_ = gettext.gettext
+from utils import get_localised_text
 
 # wide mode on and change page name
 st.set_page_config(layout="wide")
 
-# headline sidebar
-st.sidebar.write("## Settings :gear:")
-
-# decide which version and language
-version_options = {"simple": "Simple", "expert": "Expert"}
-
-version = st.sidebar.selectbox(
-    "⚙ Version 👩‍🎓👩🏼‍🔬", version_options.keys(), format_func=lambda x: version_options[x]
-)
-
-# language selectbox
-language = st.sidebar.selectbox("⚙ Language 🌍💬", ["English", "German"], label_visibility="visible")
-try:
-    localizator = gettext.translation(
-        "base", localedir=os.path.join("locales", version), languages=[language]
-    )
-    localizator.install()
-    _ = localizator.gettext
-except:
-    pass
+_ = get_localised_text("base", version, language)
 
 # Specify what pages should be shown in the sidebar, and what their titles
 # and icons should be
@@ -41,10 +20,8 @@ show_pages(
     ]
 )
 
-##############-Try-Zone-Begin-#############################
 
-
-##############-Try-Zone-End-#############################
+# main page
 
 # ui
 st.markdown(_("HEADLINE_MAIN"))
@@ -116,9 +93,7 @@ with st.expander(_("Literature")):
             "- Stirbet, A. et al (2020). Photosynthesis: basic, history and modelling."
             "Annals of botany vol 126,4: 511-537: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7489092/"
         )
-        st.markdown(
-            "- Holzner, Steven. Differential equations for dummies. John Wiley & Sons, 2008."
-        )
+        st.markdown("- Holzner, Steven. Differential equations for dummies. John Wiley & Sons, 2008.")
     elif version == "simple":
         if language == "German":
             st.markdown(
@@ -130,9 +105,7 @@ with st.expander(_("Literature")):
                 "- Fromme, Petra, and Ingo Grotjohann. Overview of photosynthesis. Photosynthetic Protein Complexes: A \
                 Structural Approach (2008): 1-22."
             )
-            st.markdown(
-                "- Holzner, Steven. Differential equations for dummies. John Wiley & Sons, 2008."
-            )
+            st.markdown("- Holzner, Steven. Differential equations for dummies. John Wiley & Sons, 2008.")
             st.markdown(
                 "- May, Elizabeth, and John Kidder. Climate Change for Dummies. John Wiley & Sons, 2022."
             )

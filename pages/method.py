@@ -1,30 +1,9 @@
-import gettext
-import os
 import streamlit as st
+from pages._sidebar import language, version
 from PIL import Image
+from utils import get_localised_text
 
-_ = gettext.gettext
-
-# headline sidebar
-st.sidebar.write("## Settings :gear:")
-
-# decide which version and language
-version_options = {"simple": "Simple", "expert": "Expert"}
-
-version = st.sidebar.selectbox(
-    "⚙ Version 👩‍🎓👩🏼‍🔬", version_options.keys(), format_func=lambda x: version_options[x]
-)
-
-# language selectbox
-language = st.sidebar.selectbox(_("⚙ Language 🌍💬"), ["English", "German"], label_visibility="visible")
-try:
-    localizator = gettext.translation(
-        "b-messmeth", localedir=os.path.join("locales", version), languages=[language]
-    )
-    localizator.install()
-    _ = localizator.gettext
-except:
-    pass
+_ = get_localised_text("b-messmeth", version, language)
 
 st.markdown(_("HEADLINE_ONE"))
 
@@ -96,4 +75,3 @@ with st.expander(_("LITERATURE")):
             """
             - https://link.springer.com/chapter/10.1007/978-1-4020-3218-9_11
             """
-

@@ -1,37 +1,18 @@
 import altair as alt
-import gettext
 import numpy as np
 import os
 import pandas as pd
 import streamlit as st
 from model import get_model
 from modelbase.ode import Simulator
+from pages._sidebar import language, version
+from utils import get_localised_text
 
-_ = gettext.gettext
-
-# headline sidebar
-st.sidebar.write("## Settings :gear:")
-
-# decide which version and language
-version_options = {"simple": "Simple", "expert": "Expert"}
-
-version = st.sidebar.selectbox(
-    "⚙ Version 👩‍🎓👩🏼‍🔬", version_options.keys(), format_func=lambda x: version_options[x]
-)
-
-language = st.sidebar.selectbox("⚙ Language 🌍💬", ["English", "German"], label_visibility="visible")
-try:
-    localizator = gettext.translation(
-        "b-brain", localedir=os.path.join("locales", version), languages=[language]
-    )
-    localizator.install()
-    _ = localizator.gettext
-except:
-    pass
+_ = get_localised_text("b-brain", version, language)
 
 
 # Function for PAM experiment
-def changingLight(model, y0d, lights, interval):
+def changingLight(model, y0d, lights, interval):  # type: ignore
     s = Simulator(model)
     s.initialise(y0d)
     dt = 0
@@ -42,7 +23,7 @@ def changingLight(model, y0d, lights, interval):
     return s
 
 
-def get_NPQ(F, t, lights, maxlight):
+def get_NPQ(F, t, lights, maxlight):  # type: ignore
     z = []  # container for lists. Each list contains the positions of fluorescence values for one peak
     o = []  # container for position of Fo'
     cnt = 0
@@ -241,8 +222,8 @@ if st.button("Start", type="primary"):
         chart_data = pd.DataFrame({"Fluoreszenz": F / max(F), "Zeit": PAM.get_time() / 60})
 
         chart = (
-            alt.Chart(chart_data)
-            .mark_line(color="#FF4B4B")
+            alt.Chart(chart_data)  # type: ignore
+            .mark_line(color="#FF4B4B")  # type: ignore
             .encode(x="Zeit", y="Fluoreszenz", tooltip="Fluoreszenz")
         )
 
@@ -258,21 +239,21 @@ if st.button("Start", type="primary"):
         )
 
         areas = (
-            alt.Chart(areas_data.reset_index())
-            .mark_rect(opacity=0.3)  # Durchsichtigkeits
+            alt.Chart(areas_data.reset_index())  # type: ignore
+            .mark_rect(opacity=0.3)  # type: ignore
             .encode(
                 x2="stop",
                 y=alt.value(0),
                 y2=alt.value(290),  # pixels from top
-                color=alt.Color("color", scale=None, legend=None),
-                x=alt.X("start", axis=alt.Axis(title=_("AXSIS_TIME"))),
+                color=alt.Color("color", scale=None, legend=None),  # type: ignore
+                x=alt.X("start", axis=alt.Axis(title=_("AXSIS_TIME"))),  # type: ignore
             )
         )
 
         # Einfügen der Phasenbeschriftung
         text = (
-            alt.Chart(areas_data)
-            .mark_text(align="left", baseline="middle", dx=7, dy=-135, size=13)
+            alt.Chart(areas_data)  # type: ignore
+            .mark_text(align="left", baseline="middle", dx=7, dy=-135, size=13)  # type: ignore
             .encode(x="start", x2="stop", text="Phasen+1", color=alt.value("#FAFAFA"))
         )
 
@@ -286,15 +267,15 @@ if st.button("Start", type="primary"):
                 chart_data1 = pd.DataFrame({"NPQ": NPQ, "Zeit": tm / 60})
 
                 chart1 = (
-                    alt.Chart(chart_data1)
-                    .mark_line(color="#FF4B4B")
-                    .encode(x=alt.X("Zeit"), tooltip="NPQ", y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")))
+                    alt.Chart(chart_data1)  # type: ignore
+                    .mark_line(color="#FF4B4B")  # type: ignore
+                    .encode(x=alt.X("Zeit"), tooltip="NPQ", y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")))  # type: ignore
                 )
 
                 points1 = (
-                    alt.Chart(chart_data1)
-                    .mark_point(filled=True, size=65, color="#FF4B4B")
-                    .encode(x=alt.X("Zeit"), tooltip="NPQ", y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")))
+                    alt.Chart(chart_data1)  # type: ignore
+                    .mark_point(filled=True, size=65, color="#FF4B4B")  # type: ignore
+                    .encode(x=alt.X("Zeit"), tooltip="NPQ", y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")))  # type: ignore
                 )
 
                 st.altair_chart(chart1 + text + areas + points1, use_container_width=True)
@@ -304,15 +285,15 @@ if st.button("Start", type="primary"):
                 chart_data2 = pd.DataFrame({"Phi": PhiPSII, "Zeit": tm / 60})
 
                 chart2 = (
-                    alt.Chart(chart_data2)
-                    .mark_line(color="#FF4B4B")
-                    .encode(x="Zeit", tooltip="Phi", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")))
+                    alt.Chart(chart_data2)  # type: ignore
+                    .mark_line(color="#FF4B4B")  # type: ignore
+                    .encode(x="Zeit", tooltip="Phi", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")))  # type: ignore
                 )
 
                 points2 = (
-                    alt.Chart(chart_data2)
-                    .mark_point(filled=True, size=65, color="#FF4B4B")
-                    .encode(x=alt.X("Zeit"), tooltip="Phi", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")))
+                    alt.Chart(chart_data2)  # type: ignore
+                    .mark_point(filled=True, size=65, color="#FF4B4B")  # type: ignore
+                    .encode(x=alt.X("Zeit"), tooltip="Phi", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")))  # type: ignore
                 )
 
                 st.altair_chart(chart2 + text + areas + points2, use_container_width=True)
