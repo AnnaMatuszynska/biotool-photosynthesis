@@ -6,58 +6,60 @@ from utils import get_localised_text
 
 
 # FIXME: language and version probably should be put into _ here
-def make_page(_: Callable[[str], str], language: str, version: str) -> None:
-    st.markdown(_("HEADLINE_ONE"))
+def make_page(text: Callable[[str], str], language: str, version: str) -> None:
+    st.markdown(text("HEADLINE_ONE"))
 
     # FIXME: unused columns
     col1, col2, col3 = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Messmethode.gif")
 
-    st.markdown(_("INTRODUCTION_MEASUREMENT"))  # (siehe Abbildung)
-    st.markdown(_("EXPLANATION_INTRODUCTION_ATTEMPTS"))
-    st.markdown(_("EXPLANATION_MEASUREMENT"))
-    st.markdown(_("EXPLANATION_ATTEMPTS"))
+    st.markdown(text("INTRODUCTION_MEASUREMENT"))  # (siehe Abbildung)
+    st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
+    st.markdown(text("EXPLANATION_MEASUREMENT"))
+    st.markdown(text("EXPLANATION_ATTEMPTS"))
 
     # FIXME: unused columns. Are you trying to center the picture?
     col1, col2, col3 = st.columns(3)
     with col2:
-        st.image("pictures/Arabidopsis.jpg", caption=_("CAPTION_THAIANA_PICTURE"), width=400)  # Add Caption
+        st.image(
+            "pictures/Arabidopsis.jpg", caption=text("CAPTION_THAIANA_PICTURE"), width=400
+        )  # Add Caption
 
-    with st.expander(_("EXPANDER_MODEL_ORGANISMEN")):
-        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"))
-        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"))
-        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"))
-        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"))
-        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"))
-        st.markdown(_("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"))
+    with st.expander(text("EXPANDER_MODEL_ORGANISMEN")):
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"))
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"))
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"))
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"))
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"))
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"))
 
-    st.markdown(_("HEADLINE_ILLUSTRATION"))
-    st.markdown(_("EXPLANATION_ILLUSTRATION_UNITS"))
-    st.markdown(_("EXPLANATION_ILLUSTRATION"))
+    st.markdown(text("HEADLINE_ILLUSTRATION"))
+    st.markdown(text("EXPLANATION_ILLUSTRATION_UNITS"))
+    st.markdown(text("EXPLANATION_ILLUSTRATION"))
 
     if language == "German":
         image1 = Image.open("pictures/Beispielabbildung_de.png")
-        st.image(image1, caption=_("CAPTION_ABB1"))
+        st.image(image1, caption=text("CAPTION_ABB1"))
     else:
         image1 = Image.open("pictures/Beispielabbildung_en.png")
-        st.image(image1, caption=_("CAPTION_ABB1"))
+        st.image(image1, caption=text("CAPTION_ABB1"))
 
     if version == "expert":
-        with st.expander(_("EXPANDER_MODEL_EQUATIONS")):
-            st.markdown(_("EXPANDER_MODEL_EQUATIONS_EXPLANATION"))
-            st.markdown(_("EQUATION_LIST_1"))
-            st.markdown(_("EQUATION_LIST_2"))
-            st.markdown(_("EQUATION_LIST_3"))
-            st.markdown(_("EQUATION_LIST_4"))
-            st.markdown(_("EQUATION_LIST_5"))
-            st.markdown(_("EQUATION_LIST_6"))
+        with st.expander(text("EXPANDER_MODEL_EQUATIONS")):
+            st.markdown(text("EXPANDER_MODEL_EQUATIONS_EXPLANATION"))
+            st.markdown(text("EQUATION_LIST_1"))
+            st.markdown(text("EQUATION_LIST_2"))
+            st.markdown(text("EQUATION_LIST_3"))
+            st.markdown(text("EQUATION_LIST_4"))
+            st.markdown(text("EQUATION_LIST_5"))
+            st.markdown(text("EQUATION_LIST_6"))
 
 
 # FIXME: language and version probably should be put into _ here
-def make_literature(_: Callable[[str], str], language: str, version: str) -> None:
-    with st.expander(_("LITERATURE")):
-        st.markdown(_("LITERATURE_DECLARATION"))
+def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
+    with st.expander(text("LITERATURE")):
+        st.markdown(text("LITERATURE_DECLARATION"))
         if version == "expert":
             """
             - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
@@ -81,6 +83,6 @@ def make_literature(_: Callable[[str], str], language: str, version: str) -> Non
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    _ = get_localised_text("b-messmeth", version, language)
-    make_page(_, language, version)
-    make_literature(_, language, version)
+    text = get_localised_text("b-messmeth", version, language)
+    make_page(text, language, version)
+    make_literature(text, language, version)

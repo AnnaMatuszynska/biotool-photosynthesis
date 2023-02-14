@@ -6,69 +6,69 @@ from typing import Callable
 from utils import get_localised_text
 
 
-def make_introduction(_: Callable[[str], str]) -> None:
-    st.markdown(_("HEADLINE_MAIN"))
-    st.markdown(_("AUTHOR"))
-    st.markdown(_("INTRO"))  # added by Anna
+def make_introduction(text: Callable[[str], str]) -> None:
+    st.markdown(text("HEADLINE_MAIN"))
+    st.markdown(text("AUTHOR"))
+    st.markdown(text("INTRO"))  # added by Anna
     image1 = Image.open("pictures/Foto-Fluoreszierende_Pflanzen.jpg")
-    st.image(image1, caption=_("CAPTION_ABB1"))
-    st.markdown(_("MOTIVATION"))
-    st.markdown(_("PROCESS"))
-    st.markdown(_("CONTINUING_TASK"))
-    st.markdown(_("MOTIVATION_2.0"))
-    st.markdown(_("DECLARATION"))
+    st.image(image1, caption=text("CAPTION_ABB1"))
+    st.markdown(text("MOTIVATION"))
+    st.markdown(text("PROCESS"))
+    st.markdown(text("CONTINUING_TASK"))
+    st.markdown(text("MOTIVATION_2.0"))
+    st.markdown(text("DECLARATION"))
 
 
 # FIXME: version and language should probably be replaced by _
-def make_chapters(_: Callable[[str], str], version: str, language: str) -> None:
-    with st.expander(_("EXPANDER_PRODUCENTEN")):
-        st.markdown(_("EXPANDER_PRODUCENTEN_EXPLANATION"))
+def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
+    with st.expander(text("EXPANDER_PRODUCENTEN")):
+        st.markdown(text("EXPANDER_PRODUCENTEN_EXPLANATION"))
 
-    with st.expander(_("EXPANDER_NUTRIENTS")):
-        st.markdown(_("EXPANDER_NUTRIENTS_EXPLANATION"))
+    with st.expander(text("EXPANDER_NUTRIENTS")):
+        st.markdown(text("EXPANDER_NUTRIENTS_EXPLANATION"))
         image = Image.open("pictures/Stomata1.jpg")
-        st.image(image, caption=_("CAPTION_STOMATA_PICTURE"), width=400)  # make a caption
+        st.image(image, caption=text("CAPTION_STOMATA_PICTURE"), width=400)  # make a caption
 
-    with st.expander(_("EXPANDER_PHOTOSYNTHESIS")):
-        st.markdown(_("EXPANDER_PHOTOSYNTHESIS_EXPLANATION_1"))
-        st.markdown(_("EXPANDER_PHOTOSYNTHESIS_EXPLANATION_2"))
+    with st.expander(text("EXPANDER_PHOTOSYNTHESIS")):
+        st.markdown(text("EXPANDER_PHOTOSYNTHESIS_EXPLANATION_1"))
+        st.markdown(text("EXPANDER_PHOTOSYNTHESIS_EXPLANATION_2"))
         if language == "German":
             image = Image.open("pictures/Fotosynthese.jpg")
-            st.image(image, caption=_("CAPTION_FOTOSYNTHESE_PICTURE"))
+            st.image(image, caption=text("CAPTION_FOTOSYNTHESE_PICTURE"))
         else:
             image = Image.open("pictures/Fotosynthese_eng.jpg")
-            st.image(image, caption=_("CAPTION_FOTOSYNTHESE_PICTURE"))
+            st.image(image, caption=text("CAPTION_FOTOSYNTHESE_PICTURE"))
 
-    with st.expander(_("EXPANDER_PHOTOSYNTHESIS_LOCATION")):
-        st.markdown(_("EXPANDER_PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
+    with st.expander(text("EXPANDER_PHOTOSYNTHESIS_LOCATION")):
+        st.markdown(text("EXPANDER_PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
         if language == "German":
             image = Image.open("pictures/Fotosynthese-Apparat.jpg")
-            st.image(image, caption=_("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), width=600)
+            st.image(image, caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), width=600)
         else:
             image = Image.open("pictures/Fotosynthese-Apparat_eng.jpg")
-            st.image(image, caption=_("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), width=600)
+            st.image(image, caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), width=600)
 
-    with st.expander(_("EXPANDER_NPQ")):
-        st.markdown(_("EXPANDER_NPQ_EXPLANATION"))
+    with st.expander(text("EXPANDER_NPQ")):
+        st.markdown(text("EXPANDER_NPQ_EXPLANATION"))
         if version == "expert":
-            st.markdown(_("EXPANDER_NPQ_VIOLAXIN_EXPLANATION"))
+            st.markdown(text("EXPANDER_NPQ_VIOLAXIN_EXPLANATION"))
 
-    with st.expander(_("EXPANDER_MATHEMATICAL_MODELLING")):
-        st.markdown(_("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"))
-        st.markdown(_("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"))
+    with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING")):
+        st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"))
+        st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"))
 
-    with st.expander(_("EXPANDER_DIFFERENTIAL_EQUATIONS")):
-        st.markdown(_("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"))
-        st.markdown(_("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_2"))
-        st.markdown(_("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"))
+    with st.expander(text("EXPANDER_DIFFERENTIAL_EQUATIONS")):
+        st.markdown(text("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"))
+        st.markdown(text("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_2"))
+        st.markdown(text("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"))
 
 
 # FIXME: version & language should probably be replaced by _
-def make_credits(_: Callable[[str], str], version: str, language: str) -> None:
-    st.markdown(_("CREDITS_ANNA"))
+def make_credits(text: Callable[[str], str], version: str, language: str) -> None:
+    st.markdown(text("CREDITS_ANNA"))
 
-    with st.expander(_("Literature")):
-        st.markdown(_("INTRODUCTION_LITERATURE"))
+    with st.expander(text("Literature")):
+        st.markdown(text("INTRODUCTION_LITERATURE"))
         if version == "expert":
             st.markdown(
                 "- Stirbet, A. et al (2020). Photosynthesis: basic, history and modelling."
@@ -96,18 +96,18 @@ if __name__ == "__main__":
     st.set_page_config(layout="wide")
 
     version, language = make_sidebar()
-    _ = get_localised_text("base", version, language)
+    text = get_localised_text("base", version, language)
 
     # NOTE: this belongs with the sidebar, but works globally
     # so I'd prefer to put it here
     show_pages(
         [
-            Page("Start.py", _("Start"), ":house:"),
-            Page("pages/method.py", _("Method"), ":books:"),
-            Page("pages/first_analysis.py", _("First analyses"), ":chart_with_upwards_trend:"),
-            Page("pages/plant_memory.py", _("Plant memory"), ":chart_with_downwards_trend:"),
+            Page("Start.py", text("Start"), ":house:"),
+            Page("pages/method.py", text("Method"), ":books:"),
+            Page("pages/first_analysis.py", text("First analyses"), ":chart_with_upwards_trend:"),
+            Page("pages/plant_memory.py", text("Plant memory"), ":chart_with_downwards_trend:"),
         ]
     )
-    make_introduction(_)
-    make_chapters(_, version, language)
-    make_credits(_, version, language)
+    make_introduction(text)
+    make_chapters(text, version, language)
+    make_credits(text, version, language)

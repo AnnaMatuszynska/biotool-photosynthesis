@@ -92,10 +92,10 @@ def simulate(updated_parameters, tprot, ProtPFDs):
     return PAM, F, NPQ, tm, PhiPSII
 
 
-def make_plot_meta_data(_, slider_time):
+def make_plot_meta_data(text: Callable[[str], str], slider_time: float):
     areas_data = pd.DataFrame(
         {
-            "Phasen": ["", _("MEASUREMENT_PHASE")],
+            "Phasen": ["", text("MEASUREMENT_PHASE")],
             "start": [0, 0.53 * 60],
             "stop": [0.53 * 60, 0.53 * 60 + slider_time * 60],
             "color": ["#1c5bc7", "#cf6d0c"],
@@ -110,7 +110,7 @@ def make_plot_meta_data(_, slider_time):
             y=alt.value(0),
             y2=alt.value(290),  # pixels from top
             color=alt.Color("color", scale=None, legend=None),  # type: ignore
-            x=alt.X("start", axis=alt.Axis(title=_("TIME"))),  # type: ignore
+            x=alt.X("start", axis=alt.Axis(title=text("TIME"))),  # type: ignore
         )
     )
 
@@ -179,34 +179,34 @@ def expert_plot(NPQ, tm, PhiPSII, areas, text):
         st.altair_chart(chart2 + text + areas + points2, use_container_width=True)
 
 
-def make_page(_: Callable[[str], str]) -> None:
+def make_page(text: Callable[[str], str]) -> None:
     # UI (Mainpage-Website)
-    st.markdown(_("HEADLINE_ANALYSE"))
-    st.markdown(_("INTRODUKTION"))
+    st.markdown(text("HEADLINE_ANALYSE"))
+    st.markdown(text("INTRODUKTION"))
 
     # Assignments
     if version == "simple":
-        with st.expander(_("TASK_1")):
-            st.markdown(_("TASK_1_EXPLANATION"))
-        with st.expander(_("TASK_2")):
-            st.markdown(_("TASK_2_EXPLANATION"))
-        with st.expander(_("TASK_3")):
-            st.markdown(_("TASK_3_EXPLANATION"))
-        with st.expander(_("TASK_4")):
-            st.markdown(_("TASK_4_EXPLANATION"))
-        with st.expander(_("TASK_5")):
-            st.markdown(_("TASK_5_EXPLANATION"))
+        with st.expander(text("TASK_1")):
+            st.markdown(text("TASK_1_EXPLANATION"))
+        with st.expander(text("TASK_2")):
+            st.markdown(text("TASK_2_EXPLANATION"))
+        with st.expander(text("TASK_3")):
+            st.markdown(text("TASK_3_EXPLANATION"))
+        with st.expander(text("TASK_4")):
+            st.markdown(text("TASK_4_EXPLANATION"))
+        with st.expander(text("TASK_5")):
+            st.markdown(text("TASK_5_EXPLANATION"))
 
-    st.markdown(_("HEADLINE_SLIDER"))
-    st.markdown(_("EXPLANATNION"))
-    st.markdown(_("TIPP1"))
-    st.markdown(_("TIPP2"))
+    st.markdown(text("HEADLINE_SLIDER"))
+    st.markdown(text("EXPLANATNION"))
+    st.markdown(text("TIPP1"))
+    st.markdown(text("TIPP2"))
 
 
-def make_sliders(_: Callable[[str], str]) -> None:
+def make_sliders(text: Callable[[str], str]) -> None:
     # slider zum Einstellen in zwei Spalten angeordnet
     slider_light = st.slider(
-        _("SLIDER_LIGHT"),  # Exponenten können reinkopiert werden durch commands
+        text("SLIDER_LIGHT"),  # Exponenten können reinkopiert werden durch commands
         100,
         900,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
     )
@@ -214,25 +214,25 @@ def make_sliders(_: Callable[[str], str]) -> None:
     col1, col2 = st.columns(2)
     with col1:
         slider_time = st.slider(
-            _("SLIDER_TIME"),
+            text("SLIDER_TIME"),
             5,
             30,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
         )
     with col2:
-        slider_pings = st.slider(_("SLIDER_PULSES"), 20, 150, 85)
+        slider_pings = st.slider(text("SLIDER_PULSES"), 20, 150, 85)
 
     if version == "expert":
         col1, col2 = st.columns(2)
         with col1:
             slider_aktivation = st.slider(
-                _("SLIDER_ACTIVATION"),
+                text("SLIDER_ACTIVATION"),
                 -1000,
                 +1000,
                 0,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             )
         with col2:
             slider_deaktivation = st.slider(
-                _("SLIDER_DEACTIVATION"),
+                text("SLIDER_DEACTIVATION"),
                 -1000,
                 +1000,
                 0,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
@@ -250,22 +250,22 @@ def make_sliders(_: Callable[[str], str]) -> None:
         }
 
     if st.button("Start", type="primary"):
-        with st.spinner(_("SPINNER")):
+        with st.spinner(text("SPINNER")):
             tprot, ProtPFDs = make_simulation_data(slider_time, slider_light, slider_pings)
 
             # Simulate
             PAM, F, NPQ, tm, PhiPSII = simulate(updated_parameters, tprot, ProtPFDs)
 
             # coloured areas
-            areas, text = make_plot_meta_data(_, slider_time)
+            areas, text = make_plot_meta_data(text, slider_time)
 
-            simple_plot(_, PAM, F, areas, text)
+            simple_plot(text, PAM, F, areas, text)
 
             if version == "expert":
                 expert_plot(NPQ, tm, PhiPSII, areas, text)
 
 
-def make_quiz(_: Callable[[str], str]) -> None:
+def make_quiz(text: Callable[[str], str]) -> None:
     # delete all first options in st.radio -> no preselected anymore
     st.markdown(
         """ <style>
@@ -278,40 +278,40 @@ def make_quiz(_: Callable[[str], str]) -> None:
     )
 
     if version == "simple":
-        with st.expander(_("KONTROLL")):
-            st.markdown(_("INTRODUCTION_QUESTION"))
-            option1 = st.radio(_("QUESTION_1"), ("None", _("AW1"), _("AW2")), index=0)
-            if option1 == _("AW1"):
-                st.markdown(_("RA1"))
-            elif option1 == _("AW2"):
-                st.markdown(_("RA2"))
+        with st.expander(text("KONTROLL")):
+            st.markdown(text("INTRODUCTION_QUESTION"))
+            option1 = st.radio(text("QUESTION_1"), ("None", text("AW1"), text("AW2")), index=0)
+            if option1 == text("AW1"):
+                st.markdown(text("RA1"))
+            elif option1 == text("AW2"):
+                st.markdown(text("RA2"))
 
-            option2 = st.radio(_("QUESTION_2"), ("None", _("AW3"), _("AW4"), _("AW5")), index=0)
-            if option2 == _("AW4"):
-                st.markdown(_("RA3"))
-            elif option2 == _("AW4") or option2 == _("AW5"):
-                st.markdown(_("RA4"))
+            option2 = st.radio(text("QUESTION_2"), ("None", text("AW3"), text("AW4"), text("AW5")), index=0)
+            if option2 == text("AW4"):
+                st.markdown(text("RA3"))
+            elif option2 == text("AW4") or option2 == text("AW5"):
+                st.markdown(text("RA4"))
 
-            option2 = st.radio(_("QUESTION_3"), ("None", _("AW6"), _("AW7")), index=0)
-            if option2 == _("AW6"):
-                st.markdown(_("RA5"))
-            elif option2 == _("AW7"):
-                st.markdown(_("RA6"))
+            option2 = st.radio(text("QUESTION_3"), ("None", text("AW6"), text("AW7")), index=0)
+            if option2 == text("AW6"):
+                st.markdown(text("RA5"))
+            elif option2 == text("AW7"):
+                st.markdown(text("RA6"))
 
     # Text not yet written
-    # st.markdown(_('STOPP'))
+    # st.markdown(text('STOPP'))
     # if version == 'simple':
-    #     with st.expander(_('RESULTS')):
-    #         st.markdown(_('EXPLANATION_RESULTS'))
+    #     with st.expander(text('RESULTS')):
+    #         st.markdown(text('EXPLANATION_RESULTS'))
 
     # if version == 'expert':
-    #     with st.expander(_('RESULTS')):
-    #         st.markdown(_('EXPLANATION_RESULTS'))
+    #     with st.expander(text('RESULTS')):
+    #         st.markdown(text('EXPLANATION_RESULTS'))
 
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    _ = get_localised_text("b-Analyse", version, language)
-    make_page(_)
-    make_sliders(_)
-    make_quiz(_)
+    text = get_localised_text("b-Analyse", version, language)
+    make_page(text)
+    make_sliders(text)
+    make_quiz(text)

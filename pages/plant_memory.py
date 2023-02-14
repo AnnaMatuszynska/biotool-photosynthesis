@@ -164,11 +164,11 @@ def simulate(updated_parameters, tprot, ProtPFDs):
     return PAM, F, NPQ, tm, PhiPSII
 
 
-def make_plot_meta(_, slider_time):
+def make_plot_meta(text: Callable[[str], str], slider_time: float):
     areas_data = pd.DataFrame(
         {
             "Phasen": ["Dunkelphase", "Trainingsphase", "Dunkelphase", "Gedächtnisphase"],
-            "Phasen+1": [" ", _("PHASE1"), _("PHASE2"), _("PHASE3")],
+            "Phasen+1": [" ", text("PHASE1"), text("PHASE2"), text("PHASE3")],
             "start": [0, 0.53, 14, 20 + slider_time],
             "stop": [0.53, 14, 20 + slider_time, 30 + slider_time],
             "color": ["#1c5bc7", "#cf6d0c", "#1c5bc7", "#d10a0d"],
@@ -183,7 +183,7 @@ def make_plot_meta(_, slider_time):
             y=alt.value(0),
             y2=alt.value(290),  # pixels from top
             color=alt.Color("color", scale=None, legend=None),  # type: ignore
-            x=alt.X("start", axis=alt.Axis(title=_("AXSIS_TIME"))),  # type: ignore
+            x=alt.X("start", axis=alt.Axis(title=text("AXSIS_TIME"))),  # type: ignore
         )
     )
 
@@ -247,49 +247,49 @@ def make_expert_plot(NPQ, tm, PhiPSII, areas, text, left, right):
 
 
 # FIXME: version here should probably be replaced by _
-def make_page(_: Callable[[str], str], version: str) -> None:
-    st.markdown(_("HEADLINE_BRAIN"))
+def make_page(text: Callable[[str], str], version: str) -> None:
+    st.markdown(text("HEADLINE_BRAIN"))
 
     # FIXME: why is col3 unused?
     col1, col2, col3 = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
-    st.markdown(_("INTRODUCTION_BRAIN"))
+    st.markdown(text("INTRODUCTION_BRAIN"))
 
     if version == "simple":
-        with st.expander(_("TASK_1")):
-            st.markdown(_("TASK_1_EXPLANATION"))
+        with st.expander(text("TASK_1")):
+            st.markdown(text("TASK_1_EXPLANATION"))
 
-        with st.expander(_("TASK_2")):
-            st.markdown(_("TASK_2_EXPLANATION"))
+        with st.expander(text("TASK_2")):
+            st.markdown(text("TASK_2_EXPLANATION"))
 
-    st.markdown(_("TIP1"))
+    st.markdown(text("TIP1"))
 
-    st.markdown(_("TIP2"))
+    st.markdown(text("TIP2"))
 
     # slider zum Einstellen in zwei Spalten angeordnet
     col1, col2 = st.columns(2)
     with col1:
         slider_light = st.slider(
-            _("SLIDER_LIGHT"),  # Exponenten können reincopiert werden durch commands
+            text("SLIDER_LIGHT"),  # Exponenten können reincopiert werden durch commands
             100,
             900,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
         )
     with col2:
-        slider_time = st.slider(_("SLIDER_TIME"), 5, 60)
+        slider_time = st.slider(text("SLIDER_TIME"), 5, 60)
     if version == "expert":
         col1, col2 = st.columns(2)
         with col1:
             slider_aktivation = st.slider(
-                _("SLIDER_ACTIVATION"),
+                text("SLIDER_ACTIVATION"),
                 -100,
                 +100,
                 0,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             )
         with col2:
             slider_deaktivation = st.slider(
-                _("SLIDER_DEACTIVATION"),
+                text("SLIDER_DEACTIVATION"),
                 -100,
                 +100,
                 0,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
@@ -312,13 +312,13 @@ def make_page(_: Callable[[str], str], version: str) -> None:
 
     # open everything behind
     if st.button("Start", type="primary"):
-        with st.spinner(_("SPINNER")):  # loading indicator
+        with st.spinner(text("SPINNER")):  # loading indicator
             # plt the graph
             PAM, F, NPQ, tm, PhiPSII = simulate(updated_parameters, tprot, ProtPFDs)
 
             # maingraph
             chart_data = pd.DataFrame({"Fluoreszenz": F / max(F), "Zeit": PAM.get_time() / 60})
-            areas, text = make_plot_meta(_, slider_time)
+            areas, text = make_plot_meta(text, slider_time)
 
             make_simple_plot(chart_data, areas, text)
 
