@@ -104,10 +104,13 @@ if __name__ == "__main__":
         [
             Page("Start.py", text("Start"), ":house:"),
             Page("pages/method.py", text("Method"), ":books:"),
-            Page("pages/first_analysis.py", text("First analyses"), ":chart_with_upwards_trend:"),
-            Page("pages/plant_memory.py", text("Plant memory"), ":chart_with_downwards_trend:"),
+            Page("pages/model_explain.py", text("Model"), ":computer:"),
+            Page("pages/first_analysis.py", text("First analyses"), ":bar_chart:"),
+            Page("pages/plant_memory.py", text("Plant memory"), ":chart_with_upwards_trend:"),
         ]
     )
     make_introduction(text)
     make_chapters(text, version, language)
     make_credits(text, version, language)
+
+

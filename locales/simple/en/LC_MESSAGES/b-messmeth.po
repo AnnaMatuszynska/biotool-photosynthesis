@@ -21,6 +21,50 @@ msgstr "# The measurement method"
 
 #: pages/1 Messmethode.py:32
 msgid "INTRODUCTION_MEASUREMENT"
+msgstr "The previous page told you about the importance of photosynthesis, its processes, and how it relates to \
+        modelling. Because biologists like numbers and measuring things, so they came up with many photosynthesis \
+        measurements. Very commonly, for example, they follow oxygen production or the parallel take up of carbon \
+        dioxide. However, metering gasses can be tricky, especially if you want to do it outside on a field or tree. \
+        Here is where a speciality of plants comes into play: They can glow!"
+
+#: pages/1 Messmethode.py:32
+msgid "PLANT_ARE_SHINING_RED"
+msgstr "When light shines on them, they not only photosynthesise but also release a small fraction of that absorbed \
+        light. Something similar happens, for example, when your white T-shirt glows purple in disco-black light. \
+        Plants, on the other hand, release red light. Now you might think: 'But plants are green, and I have never seen \
+        one glow!'. And you would be, of course, right. The light plants don't absorb and instead reflect is green, \
+        which we see as their primary colour. The red glow, which we call 'fluorescence', is much fainter than that, \
+        and with light coming into our eyes from all other directions, we simply cannot see it. We, therefore, prepared \
+        a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker and will now shine \
+        a strong light on it. The red filter helps us ignore distracting light and focus on the red glow. Now watch what \
+        happens:"
+
+#: pages/1 Messmethode.py:32
+msgid "EXPLANATION_VIDEO"
+msgstr "Did you see the red glow and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
+        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
+        parts not covered by the sticker. So much, in fact, that the plant decided to produce some chemicals acting as \
+        a kind of sunscreen within the cells. After a few seconds, these protected cells received less light and \
+        'fluoresced' less. Now, when we lifted the sticker, suddenly, the cells which did not produce any sunscreen \
+        saw the intense light and fluoresced at full force - right next to their protected neighbours. This sharp \
+        difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells \
+        began to adapt to it, which vanished the picture on the leaf."
+
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_PHI"
+msgstr "This experiment showed you both the glow of plants and how amazingly they can adjust to something simple as \
+        light. But what does this have to do with testing photosynthesis? A lot, actually. Because not only the \
+        'sunscreen' affects leaf fluorescence, but many other factors do, too. If you are interested in how this \
+        happens, look into the [Expert] section, but let's say for now, how strongly the plant photosynthesises also has \
+        an effect. So scientists invented a way to measure this fluorescence and track how it changes over time (you \
+        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
+        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
+        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
+        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
+        is doing photosynthesis more efficiently."
+
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_PAM_MEASUREMENT"
 msgstr "###### With the following measurement method, we can assess whether the plant can cope with the given abiotic environmental factors."
 
 #: pages/1 Messmethode.py:34
@@ -93,7 +137,8 @@ msgstr  "The fluorescence is plotted on the Y-axis of the figures. This is given
 #: pages/1 Messmethode.py:44
 msgid   "EXPLANATION_ILLUSTRATION"
 msgstr  "The experiments always start with an illumination phase, which is marked in blue in the figures (see Figure 1); \
-            as already mentioned, this is a prerequisite for the PAM measurement. At this point, we can measure Fₘ."
+            as already mentioned, this is a prerequisite for the PAM measurement. At this point, we can measure Fₘ.\
+             This was a lot of theory for just a bit of glowing, so try a measurement out for yourself on the next page!"
 
 #: pages/1 Messmethode.py:47
 msgid   "CAPTION_ABB1"

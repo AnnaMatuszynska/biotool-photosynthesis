@@ -188,16 +188,18 @@ def make_plot_meta(text: Callable[[str], str], slider_time: float):
     )
 
     # Einfügen der Phasenbeschriftung
-    text = (
+    chart_labels = (
         alt.Chart(areas_data)  # type: ignore
         .mark_text(align="left", baseline="middle", dx=7, dy=-135, size=13)  # type: ignore
         .encode(x="start", x2="stop", text="Phasen+1", color=alt.value("#FAFAFA"))
     )
 
-    return areas, text
+    return areas, chart_labels
 
 
-def make_simple_plot(chart_data, areas, text):
+
+
+def make_simple_plot(chart_data, areas, chart_labels):
     chart = (
         alt.Chart(chart_data)  # type: ignore
         .mark_line(color="#FF4B4B")  # type: ignore
@@ -206,44 +208,42 @@ def make_simple_plot(chart_data, areas, text):
 
     # coloured areas
 
-    st.altair_chart(areas + chart + text, use_container_width=True)
+    st.altair_chart(areas + chart + chart_labels, use_container_width=True)
 
 
-def make_expert_plot(NPQ, tm, PhiPSII, areas, text, left, right):
+def make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right):
+    left, right = st.columns(2)
+    def create_chart_data(data, x, y):
+        chart_data = pd.DataFrame({x: data[x], y: data[y]})
+        return chart_data
+
+    def create_chart(chart_data, x, y, color):
+        chart = alt.Chart(chart_data).mark_line(color=color).encode(
+            x=x,
+            y=alt.Y(y, axis=alt.Axis(title=y))
+        )
+        return chart
+
+    def create_points(chart_data, x, y, color):
+        points = alt.Chart(chart_data).mark_point(filled=True, size=65, color=color).encode(
+            x=x,
+            y=alt.Y(y, axis=alt.Axis(title=y))
+        )
+        return points
+
+    chart_data1 = create_chart_data({"NPQ": NPQ, "Zeit": tm / 60}, "Zeit", "NPQ")
+    chart_data2 = create_chart_data({"Phi": PhiPSII, "Zeit": tm / 60}, "Zeit", "Phi")
+
+    chart1 = create_chart(chart_data1, "Zeit", "NPQ", "#FF4B4B")
+    points1 = create_points(chart_data1, "Zeit", "NPQ", "#FF4B4B")
+
+    chart2 = create_chart(chart_data2, "Zeit", "Phi", "#FF4B4B")
+    points2 = create_points(chart_data2, "Zeit", "Phi", "#FF4B4B")
+
     with left:
-        chart_data1 = pd.DataFrame({"NPQ": NPQ, "Zeit": tm / 60})
-
-        chart1 = (
-            alt.Chart(chart_data1)  # type: ignore
-            .mark_line(color="#FF4B4B")  # type: ignore
-            .encode(x=alt.X("Zeit"), tooltip="NPQ", y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")))  # type: ignore
-        )
-
-        points1 = (
-            alt.Chart(chart_data1)  # type: ignore
-            .mark_point(filled=True, size=65, color="#FF4B4B")  # type: ignore
-            .encode(x=alt.X("Zeit"), tooltip="NPQ", y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")))  # type: ignore
-        )
-
-        st.altair_chart(chart1 + text + areas + points1, use_container_width=True)
-
-        # third graph
+        st.altair_chart(chart1 + chart_labels + areas + points1, use_container_width=True)
     with right:
-        chart_data2 = pd.DataFrame({"Phi": PhiPSII, "Zeit": tm / 60})
-
-        chart2 = (
-            alt.Chart(chart_data2)  # type: ignore
-            .mark_line(color="#FF4B4B")  # type: ignore
-            .encode(x="Zeit", tooltip="Phi", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")))  # type: ignore
-        )
-
-        points2 = (
-            alt.Chart(chart_data2)  # type: ignore
-            .mark_point(filled=True, size=65, color="#FF4B4B")  # type: ignore
-            .encode(x=alt.X("Zeit"), tooltip="Phi", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")))  # type: ignore
-        )
-
-        st.altair_chart(chart2 + text + areas + points2, use_container_width=True)
+        st.altair_chart(chart2 + chart_labels + areas + points2, use_container_width=True)
 
 
 # FIXME: version here should probably be replaced by text
@@ -318,15 +318,15 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
             # maingraph
             chart_data = pd.DataFrame({"Fluoreszenz": F / max(F), "Zeit": PAM.get_time() / 60})
-            areas, text = make_plot_meta(text, slider_time)
+            areas, chart_labels = make_plot_meta(text, slider_time)
 
-            make_simple_plot(chart_data, areas, text)
+            make_simple_plot(chart_data, areas, chart_labels)
 
             left, right = st.columns(2)
 
             if version == "expert":
                 # second Graph
-                make_expert_plot(NPQ, tm, PhiPSII, areas, text, left, right)
+                make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right)
 
 
 if __name__ == "__main__":

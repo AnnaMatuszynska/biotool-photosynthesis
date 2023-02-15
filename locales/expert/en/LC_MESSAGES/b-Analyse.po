@@ -63,6 +63,11 @@ msgid "SLIDER_DEACTIVATION"
 msgstr "Conversion rate to Violaxanthin"
 
 #: pages/Analyse.py:72
+msgid "FLUO"
+msgstr "Fluorescence [F´ₘ /Fₘ]"
+
+
+#: pages/Analyse.py:72
 msgid "TIME"
 msgstr "Time [s]"
 

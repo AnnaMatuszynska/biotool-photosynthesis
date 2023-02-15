@@ -9,6 +9,18 @@ from utils import get_localised_text
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_ONE"))
 
+    st.markdown(text("INTRODUCTION_MEASUREMENT"))
+    st.markdown(text("PLANT_ARE_SHINING_RED"))
+
+    '''
+    [VIDEO]
+    '''
+
+    st.markdown(text("EXPLANATION_VIDEO"))
+
+    if version == 'simple':
+        st.markdown(text("INTRODUCTION_PHI"))
+
     # FIXME: unused columns, are you trying to center?
     _, col2, _ = st.columns(3)
     with col2:

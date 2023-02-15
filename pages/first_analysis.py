@@ -10,23 +10,23 @@ from typing import Callable
 from utils import get_localised_text
 
 
-def make_simulation_data(slider_time: float, slider_light: int, slider_pings: float) -> tuple[Array, Array]:
-    # Erstellen der passenden Liste
-    n = round(slider_time * 60 / slider_pings)  # n: Pulsintervalle
-    interval: list[float] = [1, 0.8, 30]  # definiere Listen mit den ersten beiden Impulsen
-    light = [0, 5000, 0]
+def make_simulation_data(slider_time: float, slider_light: int, slider_pings: float) -> tuple:
+    # Calculate the number of pulse intervals
+    n_intervals = round(slider_time * 60 / slider_pings)
 
-    for _ in range(n):
-        interval.append(0.8)
-        interval.append(slider_pings - 0.8)
+    # Define the initial pulse intervals and light values
+    intervals = [1, 0.8, 30]
+    light_values = [0, 5000, 0]
 
-    for _ in range(n):
-        light.append(5000)
-        light.append(slider_light)
+    # Append additional pulse intervals and light values
+    for _ in range(n_intervals):
+        intervals.extend([0.8, slider_pings - 0.8])
+        light_values.extend([5000, slider_light])
 
-    # light and interval for the model
-    tprot = np.array(interval)
-    ProtPFDs = np.array(light)
+    # Convert lists to numpy arrays
+    tprot = np.array(intervals)
+    ProtPFDs = np.array(light_values)
+
     return tprot, ProtPFDs
 
 
@@ -113,16 +113,16 @@ def make_plot_meta_data(text: Callable[[str], str], slider_time: float):
         )
     )
 
-    text = (
+    chart_labels = (
         alt.Chart(areas_data)  # type: ignore
         .mark_text(align="left", baseline="middle", dx=7, dy=-135, size=13)  # type: ignore
         .encode(x="start", x2="stop", text="Phasen", color=alt.value("#FAFAFA"))
     )
 
-    return areas, text
+    return areas, chart_labels
 
 
-def simple_plot(_, PAM, F, areas, text):
+def simple_plot(text: Callable[[str], str], PAM, F, areas, chart_labels):
     chart_data = pd.DataFrame({"Fluoreszenz": F / max(F), "Zeit": PAM.get_time()})  # type: ignore
 
     chart = (
@@ -131,52 +131,45 @@ def simple_plot(_, PAM, F, areas, text):
         .encode(
             x="Zeit",
             tooltip="Fluoreszenz",
-            y=alt.Y("Fluoreszenz", axis=alt.Axis(title="Fluoreszenz [F´ₘ /Fₘ]")),  # type: ignore
+            y=alt.Y("Fluoreszenz", axis=alt.Axis(title=text("FLUO"))),  # type: ignore
         )
     )
 
-    st.altair_chart(chart + text + areas, use_container_width=True)
-    return areas, text
+    st.altair_chart(chart + chart_labels + areas, use_container_width=True)
+    return areas, chart_labels
 
 
-def expert_plot(NPQ, tm, PhiPSII, areas, text):
+def expert_plot(NPQ, tm, PhiPSII, areas, chart_labels):
+    # Define the left and right chart columns
     left, right = st.columns(2)
-    # second graph
+
+    # Create the first chart
+    chart_data1 = pd.DataFrame({"NPQ": NPQ, "Zeit": tm})
+    chart1 = alt.Chart(chart_data1).mark_line(color="#FF4B4B").encode(
+        x=alt.X("Zeit"),
+        y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")),
+        tooltip="NPQ"
+    )
+    points1 = chart1.mark_point(filled=True, size=65, color="#FF4B4B")
+
+    # Create the second chart
+    chart_data2 = pd.DataFrame({"Phi": PhiPSII, "Zeit": tm})
+    chart2 = alt.Chart(chart_data2).mark_line(color="#FF4B4B").encode(
+        x="Zeit",
+        y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")),
+        tooltip="Phi"
+    )
+    points2 = chart2.mark_point(filled=True, size=65, color="#FF4B4B")
+
+    # Add the areas and labels
+    chart1 = chart1 + chart_labels + areas + points1
+    chart2 = chart2 + chart_labels + areas + points2
+
+    # Display the charts in their respective columns
     with left:
-        chart_data1 = pd.DataFrame({"NPQ": NPQ, "Zeit": tm})
-
-        chart1 = (
-            alt.Chart(chart_data1)  # type: ignore
-            .mark_line(color="#FF4B4B")  # type: ignore
-            .encode(x=alt.X("Zeit"), tooltip="NPQ", y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")))  # type: ignore
-        )
-
-        points1 = (
-            alt.Chart(chart_data1)  # type: ignore
-            .mark_point(filled=True, size=65, color="#FF4B4B")  # type: ignore
-            .encode(x=alt.X("Zeit"), tooltip="NPQ", y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")))  # type: ignore
-        )
-
-        st.altair_chart(chart1 + text + areas + points1, use_container_width=True)
-
-        # third graph
+        st.altair_chart(chart1, use_container_width=True)
     with right:
-        chart_data2 = pd.DataFrame({"Phi": PhiPSII, "Zeit": tm})
-
-        chart2 = (
-            alt.Chart(chart_data2)  # type: ignore
-            .mark_line(color="#FF4B4B")  # type: ignore
-            .encode(x="Zeit", tooltip="Phi", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")))  # type: ignore
-        )
-
-        points2 = (
-            alt.Chart(chart_data2)  # type: ignore
-            .mark_point(filled=True, size=65, color="#FF4B4B")  # type: ignore
-            .encode(x=alt.X("Zeit"), tooltip="Phi", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")))  # type: ignore
-        )
-
-        st.altair_chart(chart2 + text + areas + points2, use_container_width=True)
-
+        st.altair_chart(chart2, use_container_width=True)
 
 def make_page(text: Callable[[str], str]) -> None:
     # UI (Mainpage-Website)
@@ -256,12 +249,12 @@ def make_sliders(text: Callable[[str], str]) -> None:
             PAM, F, NPQ, tm, PhiPSII = simulate(updated_parameters, tprot, ProtPFDs)
 
             # coloured areas
-            areas, text = make_plot_meta_data(text, slider_time)
+            areas, chart_labels = make_plot_meta_data(text, slider_time)
 
-            simple_plot(text, PAM, F, areas, text)
+            simple_plot(text, PAM, F, areas, chart_labels)
 
             if version == "expert":
-                expert_plot(NPQ, tm, PhiPSII, areas, text)
+                expert_plot(NPQ, tm, PhiPSII, areas, chart_labels)
 
 
 def make_quiz(text: Callable[[str], str]) -> None:

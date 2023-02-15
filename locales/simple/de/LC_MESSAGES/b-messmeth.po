@@ -21,6 +21,54 @@ msgstr "# Die Messmethode"
 
 #: pages/1 Messmethode.py:32
 msgid "INTRODUCTION_MEASUREMENT"
+msgstr "Auf der vorigen Seite haben Sie etwas über die Bedeutung der Fotosynthese, ihre Prozesse und ihren Zusammenhang \
+        mit der Modellierung erfahren. Da Biologen gerne mit Zahlen arbeiten und Dinge messen, haben sie sich viele \
+        Methoden zur Messung der Fotosynthese ausgedacht. Sehr häufig verfolgen sie zum Beispiel die Sauerstoffproduktion \
+        oder die parallele Aufnahme von Kohlendioxid. Die Messung von Gasen kann jedoch knifflig sein, vor allem, wenn \
+        man sie draußen auf einem Feld oder einem Baum durchführen will. Hier kommt eine Besonderheit der Pflanzen ins \
+        Spiel: Sie können leuchten!"
+
+#: pages/1 Messmethode.py:32
+msgid "PLANT_ARE_SHINING_RED"
+msgstr "Wenn Licht auf sie fällt, betreiben sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des \
+        absorbierten Lichts ab. Etwas Ähnliches passiert zum Beispiel, wenn Ihr weißes T-Shirt bei schwarzem Discolicht \
+        lila leuchtet. Pflanzen hingegen geben rotes Licht ab. Nun könnten Sie denken: 'Aber Pflanzen sind doch grün, \
+        und ich habe noch nie eine leuchten sehen!'. Und Sie hättest natürlich recht. Das Licht, das Pflanzen nicht \
+        absorbieren, sondern reflektieren, ist grün, was wir als ihre Grundfarbe sehen. Das rote Leuchten, das wir als \
+        'Fluoreszenz' bezeichnen, ist viel schwächer als das, und da das Licht aus allen anderen Richtungen in unsere \
+        Augen fällt, können wir es einfach nicht sehen. Deshalb haben wir ein kleines Experiment für Sie vorbereitet: \
+        Hier haben wir einen kleinen Teil eines Pflanzenblattes mit einem Aufkleber abgedeckt und werden es jetzt mit \
+        starkem Licht bestrahlen. Der Rotfilter hilft uns, das störende Licht zu ignorieren und uns auf das rote Leuchten \
+        zu konzentrieren. Beobachte nun, was passiert:"
+
+#: pages/1 Messmethode.py:32
+msgid "EXPLANATION_VIDEO"
+msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben \
+        gerade die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an \
+        ihre Umgebung anpassen. Auf die Teile des Blattes, die nicht von dem Aufkleber verdeckt werden, fällt sehr viel \
+        Licht. So viel, dass die Pflanze beschloss, in ihren Zellen einige Chemikalien zu produzieren, die als eine Art \
+        Sonnenschutz dienen. Nach einigen Sekunden empfingen diese geschützten Zellen weniger Licht und 'fluoreszierten' \
+        weniger. Als wir nun den Aufkleber abnahmen, sahen die Zellen, die keinen Sonnenschutz produziert hatten, \
+        plötzlich das intensive Licht und fluoreszierten mit voller Kraft - direkt neben ihren geschützten Nachbarn. \
+        Diesen deutlichen Unterschied in der Fluoreszenz sahen Sie als Abdruck des Aufklebers. Und als wir die Lampe \
+        weiter bestrahlten, begannen sich alle Zellen an das Licht anzupassen, wodurch das Bild auf dem Blatt verschwand."
+
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_PHI"
+msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflanzen als auch, wie erstaunlich sie sich an etwas so \
+        Einfaches wie Licht anpassen können. Aber was hat das mit der Prüfung der Fotosynthese zu tun? Eigentlich eine \
+        ganze Menge. Denn nicht nur der 'Sonnenschutz' beeinflusst die Blattfluoreszenz, sondern auch viele andere \
+        Faktoren. Wenn Sie sich dafür interessieren, wie das geschieht, lesen Sie den Abschnitt [Expert], aber sagen \
+        wir einmal, wie stark die Pflanze Fotosynthese betreibt, hat auch einen Einfluss. Deshalb haben Wissenschaftler \
+        eine Methode erfunden, um diese Fluoreszenz zu messen und zu verfolgen, wie sie sich im Laufe der Zeit verändert \
+        (Sie werden später von dieser 'PAM' hören). Mit ein paar cleveren mathematischen Tricks können sie dann viele \
+        Dinge berechnen, die uns interessieren könnten: Wie gesund das Blatt ist, wie sehr es sich vor dem Licht schützt \
+        und vor allem, wie es Fotosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
+        Buchstaben 'Psi', und Sie werden ihn vielleicht in einigen der Diagramme sehen, die Sie später erstellen werden. \
+        Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
+
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_PAM_MEASUREMENT"
 msgstr "###### Mit der folgenden Messmethode können wir abschätzen, ob die Pflanze mit den gegebenen abiotischen \
         Umwelt-Faktoren zurecht kommt."
 
@@ -100,7 +148,8 @@ msgstr  "Auf der Y-Achse der Abbildungen ist die Fluoreszenz aufgetragen. Diese 
 msgid   "EXPLANATION_ILLUSTRATION"
 msgstr  "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den Abbildungen blau gekennzeichnet ist \
             (siehe Abbildung 1), diese ist, wie bereits erwähnt, Voraussetzung für die PAM-Messung. Zu diesem Zeitpunkt \
-            können wir Fₘ messen."
+            können wir Fₘ messen. Das war eine Menge Theorie für ein bisschen Glühen, also probiere auf der nächsten \
+            Seite selbst eine Messung aus!"
 
 #: pages/1 Messmethode.py:47
 msgid   "CAPTION_ABB1"
