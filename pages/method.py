@@ -10,26 +10,36 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_ONE"))
 
     st.markdown(text("INTRODUCTION_MEASUREMENT"))
-    st.markdown(text("PLANT_ARE_SHINING_RED"))
+    with st.expander(text("GROWING_PLANTS_1")):
+        st.markdown(text("INTRODUCTION_GLOWING"))
+        st.markdown(text("PLANT_ARE_SHINING_RED"))
 
-    '''
-    [VIDEO]
-    '''
+    with st.expander(text("GROWING_PLANTS_2")):
+        st.markdown(text("INTRODUCTION_EXPERIMENT"))
+        '''
+        [VIDEO]
+        '''
 
-    st.markdown(text("EXPLANATION_VIDEO"))
+        st.markdown(text("EXPLANATION_VIDEO"))
 
-    if version == 'simple':
-        st.markdown(text("INTRODUCTION_PHI"))
+    with st.expander(text("MEASURING_FLUORESZENZ")):
+        if version == 'simple':
+            st.markdown(text("EXPLANATION_MEASUREMENT_1"))
+            st.markdown(text("INTRODUCTION_PHI"))
 
     # FIXME: unused columns, are you trying to center?
     _, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Messmethode.gif")
 
-    st.markdown(text("INTRODUCTION_MEASUREMENT"))  # (siehe Abbildung)
-    st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
-    st.markdown(text("EXPLANATION_MEASUREMENT"))
-    st.markdown(text("EXPLANATION_ATTEMPTS"))
+    st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"))
+
+    with st.expander(text("MEASURING_LIGHT_FLUORESCENCE")):
+        st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
+        st.markdown(text("EXPLANATION_MEASUREMENT_2"))
+
+    with st.expander(text("SATURATING_PULSES")):
+        st.markdown(text("EXPLANATION_ATTEMPTS"))
 
     # FIXME: unused columns. Are you trying to center the picture?
     _, col2, _ = st.columns(3)
@@ -56,17 +66,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     else:
         image1 = Image.open("pictures/Beispielabbildung_en.png")
         st.image(image1, caption=text("CAPTION_ABB1"))
-
-    if version == "expert":
-        with st.expander(text("EXPANDER_MODEL_EQUATIONS")):
-            st.markdown(text("EXPANDER_MODEL_EQUATIONS_EXPLANATION"))
-            st.markdown(text("EQUATION_LIST_1"))
-            st.markdown(text("EQUATION_LIST_2"))
-            st.markdown(text("EQUATION_LIST_3"))
-            st.markdown(text("EQUATION_LIST_4"))
-            st.markdown(text("EQUATION_LIST_5"))
-            st.markdown(text("EQUATION_LIST_6"))
-
 
 # FIXME: language and version probably should be put into text here
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
