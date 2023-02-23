@@ -99,6 +99,10 @@ msgstr "Saturation pulses in the selected intervals in seconds"
 msgid "TIME"
 msgstr "Time [s]"
 
+#: pages/Analyse.py:72
+msgid "FLUO"
+msgstr "Fluoreszenz [F´ₘ /Fₘ]"
+
 #: pages/2 Daten-Analyse.py:83
 msgid "SPINNER"
 msgstr "I'll do some quick math for you :computer:"
