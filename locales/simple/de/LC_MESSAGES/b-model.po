@@ -1,0 +1,36 @@
+# BASE MAIN PAGE.
+# Copyright (C) 2023 ORGANIZATION
+# SARAH PHILIPPS <SARAH.PHILIPPS@RWTH-AACHEN.DE>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-01 21:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_MODEL"
+msgstr "# Das Modell"
+
+#: Lisa's introduction
+msgid "INTRODUCTION_CLIMATE_CHANCE"
+msgstr "Da Pflanzen **nicht weglaufen** können, müssen sie sich an ihre veränderten Umweltbedingungen anpassen. Pflanzen \
+        sind die Grundlage des Lebens auf der Erde (Abb. rechts), und die Anpassung von Pflanzen ist entscheidend für eine \
+        funktionierende Welt. Veränderte Bedingungen, wie z. B. veränderte Temperaturen (Hitze und Kälte), Überschwemmungen \
+        und Trockenheit, können zu Stressereignissen bei Pflanzen führen. Diese Faktoren können verschiedene kurz- und \
+        langfristige Auswirkungen auf Pflanzen haben, die in Abb. links zusammengefasst sind. Dennoch empfinden \
+        Pflanzen bei plötzlichen Veränderungen Stress, verfügen aber über einen äußerst *flexiblen Stoffwechsel* zur \
+        Anpassung. *Eine der ersten Reaktionen im pflanzlichen Stoffwechsel ist die Fotosynthese*, die Energie zur \
+        Aufrechterhaltung des Pflanzenlebens liefert. Die Fotosynthese selbst wird direkt und indirekt von veränderten \
+        Umweltbedingungen beeinflusst. Daher ist die Analyse der Fotosynthese und der CO₂-Fixierung durch Pflanzen ein \
+        wichtiges Maß für die **allgemeine Fitness**, **Produktivität** und das **Überleben** der Pflanzen. Folglich ist die \
+        Grundlagenforschung zur Fotosynthese und ihrer Effizienz von entscheidender Bedeutung für die Beurteilung unserer \
+        sich verändernden Welt."
+
+msgid "LITERATURE"
+msgstr "Literatur"
