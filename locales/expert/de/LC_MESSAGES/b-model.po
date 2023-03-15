@@ -1,0 +1,45 @@
+# BASE MAIN PAGE.
+# Copyright (C) 2023 ORGANIZATION
+# SARAH PHILIPPS <SARAH.PHILIPPS@RWTH-AACHEN.DE>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-01 21:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_MODEL"
+msgstr "# Das Modell"
+
+#: Lisa's introduction
+msgid "INTRODUCTION_CLIMATE_CHANCE"
+msgstr "*Das Klima* selbst ist definiert als die durchschnittlichen statistischen Messungen des Wetters über einen \
+        langen Zeitraum an einem bestimmten Ort. *Klimawandel* ist definiert als eine weltweite Veränderung des Klimas. \
+        Es gibt drei Hauptkategorien, die eine Veränderung des Klimas bewirken können:"
+
+#: Lisa's introduction
+msgid "POINT_1"
+msgstr "- Plattentektonik und Vulkanismus"
+
+#: Lisa's introduction
+msgid "POINT_2"
+msgstr "- Übergänge in der Erdumlaufbahn"
+
+#: Lisa's introduction
+msgid "POINT_3"
+msgstr "- Emissionen von wärmeableitenden Gasen"
+
+#: Lisa's introduction
+msgid "END_OF_INTRODUCTION"
+msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten 97 % der Klimaforscher \
+        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden [Cook], und \
+        es ist Forschung erforderlich, um die Auswirkungen des plötzlichen Anstiegs der Erdtemperatur zu verstehen."
+
+msgid "LITERATURE"
+msgstr "Literatur"
