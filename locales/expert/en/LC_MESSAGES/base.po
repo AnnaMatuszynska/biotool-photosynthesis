@@ -40,7 +40,7 @@ msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/c
 
 #: Intro by Anna
 msgid "INTRO"
-msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszynska at the \
+msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszyńska at the \
         RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
         students. We want to show how computational modeling supports the current research in increasing our understanding \
         how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, \
@@ -48,11 +48,11 @@ msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah
         both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
         the left side Version *Simple* or *Expert*. "
 
-#: EINFÜHRUNG.py:36
-msgid "CAPTION_ABB1"
-msgstr "Photo of a plant of the species Spathiphyllum, in three different lighting situations: On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
+
+
+#: EINFÜHRUNG.py:24
+msgid "HEADLINE_USAGE"
+msgstr "#### How to use this website"
 
 #: EINFÜHRUNG.py:24
 msgid "MOTIVATION"
@@ -82,6 +82,35 @@ msgstr "But why do we simulate the whole thing in the computer and not just make
 msgid "DECLARATION"
 msgstr "Another advantage of the model is that one can show the short term plant memory. This is discussed on the \
         Plant memory page."
+
+#: Lisa's introduction
+msgid "EXPANDER_CLIMATE"
+msgstr "Climate change"
+
+#: Lisa's introduction
+msgid "INTRODUCTION_CLIMATE_CHANGE"
+msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a \
+        certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can \
+        induce a change in climate:"
+
+#: Lisa's introduction
+msgid "POINT_1"
+msgstr "- plate tectonics and vulcanism"
+
+#: Lisa's introduction
+msgid "POINT_2"
+msgstr "- earth orbit transitions"
+
+#: Lisa's introduction
+msgid "POINT_3"
+msgstr "- emissions of heat-trapping gasses"
+
+#: Lisa's introduction
+msgid "END_OF_INTRODUCTION"
+msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
+        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
+        impact of the sudden rise of Earth Temperature."
+
 
 #: EINFÜHRUNG.py:36
 msgid "EXPANDER_PRODUCENTEN"

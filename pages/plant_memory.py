@@ -217,17 +217,17 @@ def make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right):
         chart_data = pd.DataFrame({x: data[x], y: data[y]})
         return chart_data
 
-    def create_chart(chart_data, x, y, color):
+    def create_chart(text: Callable[[str], str], chart_data, x, y, color):
         chart = alt.Chart(chart_data).mark_line(color=color).encode(
-            x=x,
-            y=alt.Y(y, axis=alt.Axis(title=y))
+            x=alt.X(x, axis=alt.Axis(title=text("TIME"))),
+            y=alt.Y(y, axis=alt.Axis(title=text("FLUO"))),  # type: ignore
         )
         return chart
 
-    def create_points(chart_data, x, y, color):
+    def create_points(text: Callable[[str], str], chart_data, x, y, color):
         points = alt.Chart(chart_data).mark_point(filled=True, size=65, color=color).encode(
-            x=x,
-            y=alt.Y(y, axis=alt.Axis(title=y))
+            x=alt.X(x, axis=alt.Axis(title=text("TIME"))),
+            y=alt.Y(y, axis=alt.Axis(title=text("FLUO"))),
         )
         return points
 
@@ -328,8 +328,20 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                 # second Graph
                 make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right)
 
+    with st.expander(text("CONCLUSION")):
+        st.markdown(text("BEGIN_OF_CONCLUTION"))
+
+        st.markdown(text("CONCLUTION_POINT_1"))
+        st.markdown(text("CONCLUTION_POINT_2"))
+        st.markdown(text("CONCLUTION_POINT_3"))
+
+        st.markdown(text("END_OF_CONCLUTION"))
+
 
 if __name__ == "__main__":
     version, language = make_sidebar()
     _ = get_localised_text("b-brain", version, language)
     make_page(_, version)
+
+
+

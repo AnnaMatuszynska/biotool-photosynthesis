@@ -191,6 +191,7 @@ def make_page(text: Callable[[str], str]) -> None:
 
     st.markdown(text("HEADLINE_SLIDER"))
     st.markdown(text("EXPLANATNION"))
+    st.video("https://youtu.be/V1X7DEse3gw")
     st.markdown(text("TIPP1"))
     st.markdown(text("TIPP2"))
 

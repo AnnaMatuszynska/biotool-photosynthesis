@@ -10,8 +10,8 @@ def make_introduction(text: Callable[[str], str]) -> None:
     st.markdown(text("HEADLINE_MAIN"))
     st.markdown(text("AUTHOR"))
     st.markdown(text("INTRO"))  # added by Anna
-    image1 = Image.open("pictures/Foto-Fluoreszierende_Pflanzen.jpg")
-    st.image(image1, caption=text("CAPTION_ABB1"))
+    st.video("https://youtu.be/pqFOIhzmGuk")
+    st.markdown(text("HEADLINE_USAGE"))
     st.markdown(text("MOTIVATION"))
     st.markdown(text("PROCESS"))
     st.markdown(text("CONTINUING_TASK"))
@@ -19,10 +19,32 @@ def make_introduction(text: Callable[[str], str]) -> None:
     st.markdown(text("DECLARATION"))
 
 
+
 # FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
-    with st.expander(text("EXPANDER_PRODUCENTEN")):
-        st.markdown(text("EXPANDER_PRODUCENTEN_EXPLANATION"))
+
+
+    with st.expander(text("EXPANDER_CLIMATE")):
+        st.markdown(text("INTRODUCTION_CLIMATE_CHANCE"))
+
+        if version == "expert":
+            st.markdown(text("POINT_1"))
+            st.markdown(text("POINT_2"))
+            st.markdown(text("POINT_3"))
+            st.markdown(text("END_OF_INTRODUCTION"))
+
+        else:
+            col1, col2 = st.columns(2)
+            with col1:
+                if language == "German":
+                    st.image("pictures/pflanzen_grundlagen.jpeg")
+                if language == "English":
+                    st.image("pictures/plants_basics.jpeg")
+            with col2:
+                if language == "German":
+                    st.image("pictures/pflanzen_stress.jpeg")
+                if language == "English":
+                    st.image("pictures/plants_stress.jpeg")
 
     with st.expander(text("EXPANDER_NUTRIENTS")):
         st.markdown(text("EXPANDER_NUTRIENTS_EXPLANATION"))
@@ -48,14 +70,17 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
             image = Image.open("pictures/Fotosynthese-Apparat_eng.jpg")
             st.image(image, caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), width=600)
 
-    with st.expander(text("EXPANDER_NPQ")):
-        st.markdown(text("EXPANDER_NPQ_EXPLANATION"))
-        if version == "expert":
-            st.markdown(text("EXPANDER_NPQ_VIOLAXIN_EXPLANATION"))
+        st.video("https://youtu.be/BU-R724Jyng")
+
+#    with st.expander(text("EXPANDER_NPQ")):
+#        st.markdown(text("EXPANDER_NPQ_EXPLANATION"))
+#        if version == "expert":
+#            st.markdown(text("EXPANDER_NPQ_VIOLAXIN_EXPLANATION"))
 
     with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING")):
         st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"))
         st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"))
+        st.video("https://youtu.be/WU5pUy2wtrk")
 
     with st.expander(text("EXPANDER_DIFFERENTIAL_EQUATIONS")):
         st.markdown(text("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"))
@@ -107,6 +132,7 @@ if __name__ == "__main__":
             Page("pages/model_explain.py", text("Model"), ":computer:"),
             Page("pages/first_analysis.py", text("First analyses"), ":bar_chart:"),
             Page("pages/plant_memory.py", text("Plant memory"), ":chart_with_upwards_trend:"),
+            Page("pages/contact.py", text("Contact"), ":phone:"),
         ]
     )
     make_introduction(text)

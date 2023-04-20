@@ -19,6 +19,15 @@ msgstr ""
 msgid "HEADLINE_ONE"
 msgstr "# The measurement method"
 
+<<<<<<< HEAD
+=======
+#: EINFÜHRUNG.py:36
+msgid "CAPTION_ABB1"
+msgstr "Photo of a plant (Spathiphyllum), a monocot, under three different light treatments: On the left in daylight, \
+        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
+        but through a filter which filters all wavelengths except for the red light."
+
+>>>>>>> 2c8c26c (add videos; add contact page; add pictures; refactoring)
 #: Explanation by Tobias
 msgid "INTRODUCTION_MEASUREMENT"
 msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
@@ -30,6 +39,7 @@ msgstr "On the previous page, you learned about the importance of photosynthesis
 
 #: Explanation by Tobias
 msgid "GROWING_PLANTS_1"
+<<<<<<< HEAD
 msgstr "Glowing Plants?"
 
 #: Explanation by Tobias
@@ -101,6 +111,78 @@ msgstr  "This patterning is essential because we want to measure photosynthesis 
         it. And it is comparable regardless of the outside light - a versatile measurement."
 
 #: Explanation by Tobias
+=======
+msgstr "Shine plants?"
+
+#: Explanation by Tobias
+msgid "INTRODUCTION_GLOWING"
+msgstr "Here is where a specialty of plants comes into play: They can shine! When light shines on them, they not only \
+        photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
+        T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, \
+        this is called 'fluorescence'. And the plant's fluorescence shine is red."
+
+#: Explanation by Tobias
+msgid "PLANT_ARE_SHINING_RED"
+msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
+        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, \
+        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
+
+#: Explanation by Tobias
+msgid "GROWING_PLANTS_2"
+msgstr "Shine plants!"
+
+#: Explanation by Tobias
+msgid "INTRODUCTION_EXPERIMENT"
+msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
+        sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore \
+        distracting light and focus on the red fluorescence. Now watch what happens:"
+
+#: Explanation by Tobias
+msgid "EXPLANATION_VIDEO"
+msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
+        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
+        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
+        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
+        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
+        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
+        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
+        it, vanishing the picture on the leaf."
+
+#: Explanation by Tobias
+msgid "MEASURING_FLUORESZENZ"
+msgstr "Measuring Photosynthesis with Fluorescence"
+
+#: Explanation by Tobias
+msgid "EXPLANATION_MEASUREMENT_1"
+msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
+        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
+        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
+        say for now how strongly the plant photosynthesizes also impacts the shine."
+
+
+#: Explanation by Tobias
+msgid "INTRODUCTION_PHI"
+msgstr "This experiment showed you both the shine of plants and how amazingly they can adjust to something simple as \
+        light. But what does this have to do with testing photosynthesis? A lot, actually. Because not only the \
+        'sunscreen' affects leaf fluorescence, but many other factors do, too. If you are interested in how this \
+        happens, look into the [Expert] section, but let's say for now, how strongly the plant photosynthesises also has \
+        an effect. So scientists invented a way to measure this fluorescence and track how it changes over time (you \
+        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
+        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
+        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
+        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
+        is doing photosynthesis more efficiently."
+
+
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_PAM_MEASUREMENT"
+msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
+        for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
+        for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
+        (intensity) of light flashes."
+
+#: Explanation by Tobias
+>>>>>>> 2c8c26c (add videos; add contact page; add pictures; refactoring)
 msgid   "SATURATING_PULSES"
 msgstr  "Saturating Pulses"
 
@@ -118,7 +200,7 @@ msgstr  "You need to know one more aspect of PAM, the saturating pulses. Our mac
 
 #: pages/1 Messmethode.py:40
 msgid   "CAPTION_THAIANA_PICTURE"
-msgstr  "A photograph of a plant of the wild type of the model organism Arabidopsis thaliana."
+msgstr  "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
 
 #: pages/1 Messmethode.py:40
 msgid   "EXPANDER_MODEL_ORGANISMEN"
@@ -126,12 +208,12 @@ msgstr  "Why is Arabidopsis thaliana a model organism?"
 
 #: pages/1 Messmethode.py:40
 msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
-msgstr  "Arabidopsis (Arabidopsis thaliana) is referred to as a model organism because it is often used as a model \
+msgstr  "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
            system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
 
 #: pages/1 Messmethode.py:40
 msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
-msgstr  "1. Small size and fast life cycle: Arabidopsis thaliana has a short life cycle that allows researchers to study \
+msgstr  "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
         multiple generations in a relatively short period of time."
 
 #: pages/1 Messmethode.py:40
@@ -141,73 +223,37 @@ msgstr  "2. Simple anatomy: The structure of the plant is simple and well-unders
 
 #: pages/1 Messmethode.py:40
 msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
-msgstr  "3. Genome sequencing: The complete genome of Arabidopsis thaliana was the first plant genome to be sequenced, \
+msgstr  "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
             which has provided researchers with a wealth of genetic information about the plant."
 
 #: pages/1 Messmethode.py:40
 msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
-msgstr  "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for Arabidopsis \
-        thaliana, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
+msgstr  "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
+        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
 
 #: pages/1 Messmethode.py:40
 msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
-msgstr  "All these factors have made Arabidopsis thaliana an important model organism for studying basic plant biology, \
+msgstr  "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
         and its insights have contributed to our understanding of the biology of all plants."
 
 
 #: pages/1 Messmethode.py:40
 msgid   "HEADLINE_ILLUSTRATION"
-msgstr  "##### The illustrations"
+msgstr  "##### Visualization of the results"
 
 #: pages/1 Messmethode.py:42
 msgid   "EXPLANATION_ILLUSTRATION_UNITS"
-msgstr  "The fluorescence is plotted on the Y-axis of the figures. This is given in F'ₘ /Fₘ . So how \
-            percentage of the light energy can be used for photosynthesis."
+msgstr  "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in \
+        response to the saturating pulse of light. Each peak is referred to as Fm', with the first one being measured \
+        in the dark referred to  simply as Fm."
 
 #: pages/1 Messmethode.py:44
 msgid   "EXPLANATION_ILLUSTRATION"
-msgstr  "The experiments always start with an illumination phase, which is marked in blue in the figures \
-            (see figure 1), this is, as already mentioned, a prerequisite for the PAM measurement. At this time \
-            we can measure Fₘ."
+msgstr  "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
 
 #: pages/1 Messmethode.py:47
-msgid   "CAPTION_ABB1"
-msgstr  "Example illustration of a PAM measurement"
-
-#: pages/1 Messmethode.py:44
-msgid   "EXPANDER_MODEL_EQUATIONS"
-msgstr  "Equations of the photosynthesis model"
-
-#: pages/1 Messmethode.py:44
-msgid   "EXPANDER_MODEL_EQUATIONS_EXPLANATION"
-msgstr  "The photosynthesis model used consists of 6 differential equations with 41 parameters. These simulate the \
-            processes in photosystem II as a redox reaction. The equations are as follows:"
-
-#: pages/Methode.py:57
-msgid   "EQUATION_LIST_1"
-msgstr  "- Equations that define an approximation to the steady state. These are used to calculate the velocity of the \
-            photosystem II."
-
-#: pages/1 Messmethode.py:44
-msgid   "EQUATION_LIST_2"
-msgstr  " - Reaction rates used in the dynamic description of the system"
-
-#: pages/1 Messmethode.py:44
-msgid   "EQUATION_LIST_3"
-msgstr  "- Reaction rates used to calculate the quenching activity, i.e. the conversion rate from violaxanthin to \
-            zeaxanthin and vice versa."
-
-#: pages/1 Messmethode.py:44
-msgid   "EQUATION_LIST_4"
-msgstr  "- Reaction rates for calculating the total reaction rate"
-
-#: pages/1 Messmethode.py:44
-msgid   "EQUATION_LIST_5"
-msgstr  "- Equations for the steady-state equilibrium of the system"
-
-#: pages/1 Messmethode.py:44
-msgid   "EQUATION_LIST_6"
-msgstr  "- Method to calculate the fluorescence signal"
+msgid   "CAPTION_ABB2"
+msgstr  "Example Graph of a PAM measurement"
 
 
 #: pages/1 Messmethode.py:49

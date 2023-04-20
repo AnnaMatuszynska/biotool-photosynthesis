@@ -17,7 +17,6 @@ conda activate biotoolenvironment
 ```
 
 ### Run the web page
-
 To get the web page running, the following command is used: `streamlit run Start.py`
 
 ### Layout

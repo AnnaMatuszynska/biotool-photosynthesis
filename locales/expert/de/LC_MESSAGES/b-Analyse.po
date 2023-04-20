@@ -56,11 +56,15 @@ msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
 
 #: pages/Analyse.py:67
 msgid "SLIDER_ACTIVATION"
-msgstr "Umwandlungsrate zu Zeaxanthin"
+msgstr "Umwandlungsrate zu Zeaxanthin in Prozent"
 
 #: pages/Analyse.py:72
 msgid "SLIDER_DEACTIVATION"
-msgstr "Umwandlungsrate zu Violaxanthin"
+msgstr "Umwandlungsrate zu Violaxanthin in Prozent"
+
+#: pages/Analyse.py:72
+msgid "FLUO"
+msgstr "Fluoreszenz [F´ₘ /Fₘ]"
 
 #: pages/Analyse.py:72
 msgid "FLUO"

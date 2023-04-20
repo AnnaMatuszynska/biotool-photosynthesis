@@ -9,30 +9,31 @@ from utils import get_localised_text
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_ONE"))
 
-    st.markdown(text("INTRODUCTION_MEASUREMENT"))
+    image1 = Image.open("pictures/Foto-Fluoreszierende_Pflanzen.jpg")
+    st.image(image1, caption=text("CAPTION_ABB1"))
+
+    st.markdown(text("INTRODUCTION_MEASUREMENT"), unsafe_allow_html=True)
     with st.expander(text("GROWING_PLANTS_1")):
-        st.markdown(text("INTRODUCTION_GLOWING"))
-        st.markdown(text("PLANT_ARE_SHINING_RED"))
+        st.markdown(text("INTRODUCTION_GLOWING"), unsafe_allow_html=True)
+        st.markdown(text("PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
 
     with st.expander(text("GROWING_PLANTS_2")):
-        st.markdown(text("INTRODUCTION_EXPERIMENT"))
-        '''
-        [VIDEO]
-        '''
+        st.markdown(text("INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
+        _, col2, _ = st.columns(3)
+        with col2:
+            st.video("https://youtube.com/g3uTNWsDEdo")
 
-        st.markdown(text("EXPLANATION_VIDEO"))
+        st.markdown(text("EXPLANATION_VIDEO"), unsafe_allow_html=True)
 
     with st.expander(text("MEASURING_FLUORESZENZ")):
-        if version == 'simple':
-            st.markdown(text("EXPLANATION_MEASUREMENT_1"))
-            st.markdown(text("INTRODUCTION_PHI"))
+        st.markdown(text("EXPLANATION_MEASUREMENT_1"), unsafe_allow_html=True)
+        st.markdown(text("INTRODUCTION_PHI"), unsafe_allow_html=True)
+        st.video("https://youtu.be/EwXkOlMBl3o")
 
-    # FIXME: unused columns, are you trying to center?
+
     _, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Messmethode.gif")
-
-    st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"))
 
     with st.expander(text("MEASURING_LIGHT_FLUORESCENCE")):
         st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
@@ -40,37 +41,45 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     with st.expander(text("SATURATING_PULSES")):
         st.markdown(text("EXPLANATION_ATTEMPTS"))
+    st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
 
-    # FIXME: unused columns. Are you trying to center the picture?
-    _, col2, _ = st.columns(3)
-    with col2:
-        st.image(
-            "pictures/Arabidopsis.jpg", caption=text("CAPTION_THAIANA_PICTURE"), width=400
-        )  # Add Caption
+    if version == "Expert":
+        with st.expander(text("SATURATING_PULSES")):
+            st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
+
+
 
     with st.expander(text("EXPANDER_MODEL_ORGANISMEN")):
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"))
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"))
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"))
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"))
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"))
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"))
+        _, col2, _ = st.columns(3)
+        with col2:
+            st.image(
+                "pictures/Arabidopsis.jpg", caption=text("CAPTION_THAIANA_PICTURE"), width=400
+            )  # Add Caption
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"), unsafe_allow_html=True)
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"), unsafe_allow_html=True)
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"), unsafe_allow_html=True)
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"), unsafe_allow_html=True)
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"), unsafe_allow_html=True)
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"), unsafe_allow_html=True)
 
-    st.markdown(text("HEADLINE_ILLUSTRATION"))
-    st.markdown(text("EXPLANATION_ILLUSTRATION_UNITS"))
-    st.markdown(text("EXPLANATION_ILLUSTRATION"))
+
+
+    st.markdown(text("HEADLINE_ILLUSTRATION"), unsafe_allow_html=True)
+    st.markdown(text("EXPLANATION_ILLUSTRATION_UNITS"), unsafe_allow_html=True)
+    st.markdown(text("EXPLANATION_ILLUSTRATION"), unsafe_allow_html=True)
 
     if language == "German":
         image1 = Image.open("pictures/Beispielabbildung_de.png")
-        st.image(image1, caption=text("CAPTION_ABB1"))
+        st.image(image1, caption=text("CAPTION_ABB2"))
     else:
         image1 = Image.open("pictures/Beispielabbildung_en.png")
         st.image(image1, caption=text("CAPTION_ABB1"))
+        st.image(image1, caption=text("CAPTION_ABB2"))
 
 # FIXME: language and version probably should be put into text here
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
-        st.markdown(text("LITERATURE_DECLARATION"))
+        st.markdown(text("LITERATURE_DECLARATION"), unsafe_allow_html=True)
         if version == "expert":
             """
             - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
