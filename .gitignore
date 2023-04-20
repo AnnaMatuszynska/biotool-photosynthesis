@@ -47,9 +47,6 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Translations
-*.mo
-*.pot
 
 # Django stuff:
 *.log
@@ -105,6 +102,9 @@ venv.bak/
 
 # vscode
 .vscode/
+
+# pycharm
+.idea
 
 # temporary files and folders
 *temp*

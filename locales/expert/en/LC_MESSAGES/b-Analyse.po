@@ -56,11 +56,16 @@ msgstr "Saturation pulses in the selected intervals in seconds"
 
 #: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
-msgstr "Conversion rate to Zeaxanthin"
+msgstr "Conversion rate to Zeaxanthin in percent"
 
 #: pages/2 Daten-Analyse.py:72
 msgid "SLIDER_DEACTIVATION"
-msgstr "Conversion rate to Violaxanthin"
+msgstr "Conversion rate to Violaxanthin in percent"
+
+#: pages/Analyse.py:72
+msgid "FLUO"
+msgstr "Fluorescence [F´ₘ /Fₘ]"
+
 
 #: pages/Analyse.py:72
 msgid "TIME"

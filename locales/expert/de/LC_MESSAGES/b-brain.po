@@ -42,11 +42,19 @@ msgstr "Dunkelphase in Minuten"
 
 #: pages/Analyse.py:67
 msgid "SLIDER_ACTIVATION"
-msgstr "Umwandlungsrate zu Zeaxanthin"
+msgstr "Umwandlungsrate zu Zeaxanthin in Prozent"
 
 #: pages/Analyse.py:72
 msgid "SLIDER_DEACTIVATION"
-msgstr "Umwandlungsrate zu Violaxanthin"
+msgstr "Umwandlungsrate zu Violaxanthin in Prozent"
+
+#: pages/Analyse.py:72
+msgid "TIME"
+msgstr "Zeit [min]"
+
+#: pages/Analyse.py:72
+msgid "FLUO"
+msgstr "Fluoreszenz [F´ₘ /Fₘ]"
 
 #: pages/3 Pflanzengedächtnis.py:97
 msgid "START_BUTTOM"
@@ -71,3 +79,38 @@ msgstr "Gedächtnisphase"
 #: pages/3 Pflanzengedächtnis.py:122
 msgid "AXSIS_TIME"
 msgstr "Zeit [min]"
+
+#: Conclusion
+msgid "CONCLUSION"
+msgstr "Fazit"
+
+#: Conclusion
+msgid "BEGIN_OF_CONCLUTION"
+msgstr "Wir hoffen, dass du auf dieser Website eine umfassende Einführung in die faszinierende Welt der Pflanzenbiologie \
+        erhalten hast. Durch die Analyse von Diagrammen, die mit Computermodellen erstellt wurden, konntest du etwas \
+        über die Auswirkungen der Lichtintensität auf die Fotosynthese erfahren und das Thema Kurzzeitgedächtnis von \
+        Pflanzen erkunden. Dabei solltest du die folgenden Schlussfolgerungen gezogen haben:"
+
+#: Conclusion
+msgid "CONCLUTION_POINT_1"
+msgstr "- Die Lichtintensität hat einen erheblichen Einfluss auf die Fotosyntheserate von Pflanzen. Mit zunehmender \
+        Lichtintensität nimmt die Fotosyntheserate bis zu einem gewissen Grad zu."
+
+#: Conclusion
+msgid "CONCLUTION_POINT_2"
+msgstr "- Die Beziehung zwischen Lichtintensität und Fotosyntheserate ist nicht linear. Vielmehr folgt sie einer Kurve, \
+        die an einem bestimmten Punkt, dem Sättigungspunkt, ihren Höhepunkt erreicht."
+
+#: Conclusion
+msgid "CONCLUTION_POINT_3"
+msgstr "- Pflanzen haben die Fähigkeit, sich an vergangene Lichteinwirkung zu erinnern und ihre Fotosyntheseraten \
+        entsprechend anzupassen. Dieses Kurzzeitgedächtnis ermöglicht es den Pflanzen, ihren Energieverbrauch zu \
+        optimieren und sich an veränderte Umweltbedingungen anzupassen."
+
+#: Conclusion
+msgid "END_OF_CONCLUTION"
+msgstr "Alles in allem ist die PAM-Messung ein interessanter und effektiver Weg, um etwas über die komplexen \
+        Mechanismen des Pflanzenwachstums und der Entwicklung zu erfahren. Wir möchten dich ermutigen, über diese \
+        Schlussfolgerungen und die breiteren Auswirkungen dieser Erkenntnisse auf unser Verständnis der natürlichen \
+        Welt nachzudenken. Auf diese Weise wirst du die unglaubliche Komplexität und Schönheit des Pflanzenreichs noch \
+        mehr schätzen lernen."

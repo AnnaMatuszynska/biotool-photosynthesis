@@ -43,7 +43,7 @@ msgstr "Language"
 
 #: Intro by Anna
 msgid "INTRO"
-msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszynska at the \
+msgstr "This is a Teaching Tool in Biology: a project launched by Sarah Philipps and Anna Matuszyńska at the \
         RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
         students. We want to show how computational modeling supports the current research in increasing our understanding \
         how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, \
@@ -52,17 +52,16 @@ msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah
         the left side Version *Simple* or *Expert*. "
 
 
-#: EINFÜHRUNG.py:36
-msgid "CAPTION_ABB1"
-msgstr "Photo of a plant of the species monocot, in three different lighting situations: On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
+#: EINFÜHRUNG.py:24
+msgid "HEADLINE_USAGE"
+msgstr "#### How to use this website"
+
 
 #: EINFÜHRUNG.py:24
 msgid "MOTIVATION"
 msgstr "Dear students, on this website you will have the opportunity to learn about photosynthesis. Even though chances \
         are high that you already learnt something about it, we guarantee you that you underestimate how much exciting \
-        work is still going on in this topic."
+        work is still going on in this topic. In *EXPERT* Version you can even create a **digital mutant**."
 
 #: EINFÜHRUNG.py:26
 msgid "PROCESS"
@@ -82,6 +81,23 @@ msgstr "But why is it so important to deal with photosynthesis? I hope you can a
 msgid "DECLARATION"
 msgstr "First, here is some important information on topics in the field of photosynthesis, as well as on the subject of mathematical \
         models in biology."
+
+#: Lisa's introduction
+msgid "EXPANDER_CLIMATE"
+msgstr "Climate change"
+
+#: Lisa's introduction
+msgid "INTRODUCTION_CLIMATE_CHANCE"
+msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of \
+        life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., \
+        changed temperatures (heat and cold), flooding events, and drought can lead to stressful events in plants. Those \
+        factors can have various short- and long-term effects on plants– summarized in Fig. right. Nevertheless, plants \
+        experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first \
+        reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis \
+        itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of \
+        photosynthesis and the fixation of CO2 by plants is an important measure of overall **plant fitness**, **productivity**, \
+        and **survival**. Consequently, basic research on photosynthesis and its efficiency is essential to assess our changing world."
+
 
 #: EINFÜHRUNG.py:36
 msgid "EXPANDER_PRODUCENTEN"

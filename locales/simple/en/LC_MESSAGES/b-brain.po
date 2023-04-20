@@ -55,6 +55,14 @@ msgstr "Light intensity in μmol m⁻² s⁻¹"
 msgid "SLIDER_TIME"
 msgstr "Dark phase in minutes"
 
+#: pages/Analyse.py:72
+msgid "TIME"
+msgstr "Time [s]"
+
+#: pages/Analyse.py:72
+msgid "FLUO"
+msgstr "Fluorescence [F´ₘ /Fₘ]"
+
 #: pages/3 Pflanzengedächtnis.py:97
 msgid "START_BUTTOM"
 msgstr "Start the tests"
@@ -78,3 +86,36 @@ msgstr "Memory phase"
 #: pages/3 Pflanzengedächtnis.py:122
 msgid "AXSIS_TIME"
 msgstr "Time [min]"
+
+#: Conclusion
+msgid "CONCLUSION"
+msgstr "Conclusion"
+
+#: Conclusion
+msgid "BEGIN_OF_CONCLUTION"
+msgstr "We hope you had a comprehensive introduction to the fascinating world of plant biology on this website. By \
+        analyzing diagrams created with computer models, you were able to learn about the effects of light intensity \
+        on photosynthesis and explore the topic of plant short-term memory. In doing so, you should have drawn the \
+        following conclusions:"
+
+#: Conclusion
+msgid "CONCLUTION_POINT_1"
+msgstr "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity \
+        increases, the rate of photosynthesis increases to some degree."
+
+#: Conclusion
+msgid "CONCLUTION_POINT_2"
+msgstr "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve \
+        that peaks at a certain point, the saturation point."
+
+#: Conclusion
+msgid "CONCLUTION_POINT_3"
+msgstr "- Plants have the ability to remember past light exposure and adjust their photosynthetic rates accordingly. \
+        This short-term memory allows plants to optimize their energy consumption and adapt to changing environmental conditions."
+
+#: Conclusion
+msgid "END_OF_CONCLUTION"
+msgstr "All in all, PAM measurement is an interesting and effective way to learn about the complex mechanisms \
+        underlying plant growth and development. We encourage you to think about these conclusions and the broader \
+        implications of these findings for our understanding of the natural world. In doing so, you will come to \
+        appreciate even more the incredible complexity and beauty of the plant kingdom."
