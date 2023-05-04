@@ -101,11 +101,7 @@ msgstr "Time [s]"
 
 #: pages/Analyse.py:72
 msgid "FLUO"
-<<<<<<< HEAD
-msgstr "Fluoreszenz [F´ₘ /Fₘ]"
-=======
 msgstr "Fluorescence [F´ₘ /Fₘ]"
->>>>>>> 2c8c26c (add videos; add contact page; add pictures; refactoring)
 
 #: pages/2 Daten-Analyse.py:83
 msgid "SPINNER"
