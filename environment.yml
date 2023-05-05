@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   # - python=3.10.10
-  # - pip=23.1.2
+  - pip
   - assimulo
   - pip:
       - -r requirements.in
