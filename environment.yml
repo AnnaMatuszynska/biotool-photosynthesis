@@ -5,7 +5,8 @@ dependencies:
   - assimulo
   - modelbase>=1.33.4
   - streamlit
-  - st-pages
   - tomli
   - appnope
+  - pip:
+    - st-pages
 prefix: /opt/anaconda3/envs/biotoolenvironment
