@@ -19,7 +19,11 @@ def changingLight(model, y0d, lights, interval):  # type: ignore
     for i in range(len(interval)):
         s.update_parameter("PFD", lights[i])
         dt += interval[i]
-        s.simulate(dt, **{"rtol": 1e-16, "atol": 1e-8})  # "maxnef": 20, "maxncf": 10})
+        s.simulate(
+            dt,
+            # **{"rtol": 1e-16, "atol": 1e-8},
+            # **{"maxnef": 20, "maxncf": 10}
+        )
     return s
 
 
@@ -197,8 +201,6 @@ def make_plot_meta(text: Callable[[str], str], slider_time: float):
     return areas, chart_labels
 
 
-
-
 def make_simple_plot(chart_data, areas, chart_labels):
     chart = (
         alt.Chart(chart_data)  # type: ignore
@@ -213,21 +215,30 @@ def make_simple_plot(chart_data, areas, chart_labels):
 
 def make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right):
     left, right = st.columns(2)
+
     def create_chart_data(data, x, y):
         chart_data = pd.DataFrame({x: data[x], y: data[y]})
         return chart_data
 
     def create_chart(text: Callable[[str], str], chart_data, x, y, color):
-        chart = alt.Chart(chart_data).mark_line(color=color).encode(
-            x=alt.X(x, axis=alt.Axis(title=text("TIME"))),
-            y=alt.Y(y, axis=alt.Axis(title=text("FLUO"))),  # type: ignore
+        chart = (
+            alt.Chart(chart_data)
+            .mark_line(color=color)
+            .encode(
+                x=alt.X(x, axis=alt.Axis(title=text("TIME"))),
+                y=alt.Y(y, axis=alt.Axis(title=text("FLUO"))),  # type: ignore
+            )
         )
         return chart
 
     def create_points(text: Callable[[str], str], chart_data, x, y, color):
-        points = alt.Chart(chart_data).mark_point(filled=True, size=65, color=color).encode(
-            x=alt.X(x, axis=alt.Axis(title=text("TIME"))),
-            y=alt.Y(y, axis=alt.Axis(title=text("FLUO"))),
+        points = (
+            alt.Chart(chart_data)
+            .mark_point(filled=True, size=65, color=color)
+            .encode(
+                x=alt.X(x, axis=alt.Axis(title=text("TIME"))),
+                y=alt.Y(y, axis=alt.Axis(title=text("FLUO"))),
+            )
         )
         return points
 
@@ -342,6 +353,3 @@ if __name__ == "__main__":
     version, language = make_sidebar()
     _ = get_localised_text("b-brain", version, language)
     make_page(_, version)
-
-
-

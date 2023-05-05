@@ -45,7 +45,7 @@ def changingLight(
         dt += interval[i]
         s.simulate(
             dt,
-            **{"rtol": 1e-16, "atol": 1e-8, "maxnef": 20, "maxncf": 10},
+            # **{"rtol": 1e-16, "atol": 1e-8, "maxnef": 20, "maxncf": 10},
         )  # type: ignore
     return s
 
@@ -145,19 +145,19 @@ def expert_plot(NPQ, tm, PhiPSII, areas, chart_labels):
 
     # Create the first chart
     chart_data1 = pd.DataFrame({"NPQ": NPQ, "Zeit": tm})
-    chart1 = alt.Chart(chart_data1).mark_line(color="#FF4B4B").encode(
-        x=alt.X("Zeit"),
-        y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")),
-        tooltip="NPQ"
+    chart1 = (
+        alt.Chart(chart_data1)
+        .mark_line(color="#FF4B4B")
+        .encode(x=alt.X("Zeit"), y=alt.Y("NPQ", axis=alt.Axis(title="NPQ [a.u.]")), tooltip="NPQ")
     )
     points1 = chart1.mark_point(filled=True, size=65, color="#FF4B4B")
 
     # Create the second chart
     chart_data2 = pd.DataFrame({"Phi": PhiPSII, "Zeit": tm})
-    chart2 = alt.Chart(chart_data2).mark_line(color="#FF4B4B").encode(
-        x="Zeit",
-        y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")),
-        tooltip="Phi"
+    chart2 = (
+        alt.Chart(chart_data2)
+        .mark_line(color="#FF4B4B")
+        .encode(x="Zeit", y=alt.Y("Phi", axis=alt.Axis(title="Φ(PSII)")), tooltip="Phi")
     )
     points2 = chart2.mark_point(filled=True, size=65, color="#FF4B4B")
 
@@ -170,6 +170,7 @@ def expert_plot(NPQ, tm, PhiPSII, areas, chart_labels):
         st.altair_chart(chart1, use_container_width=True)
     with right:
         st.altair_chart(chart2, use_container_width=True)
+
 
 def make_page(text: Callable[[str], str]) -> None:
     # UI (Mainpage-Website)
