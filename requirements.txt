@@ -1,5 +1,4 @@
 appnope
-assimulo
 modelbase>=1.33.4
 streamlit
 tomli
