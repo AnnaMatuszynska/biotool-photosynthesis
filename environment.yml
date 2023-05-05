@@ -2,9 +2,10 @@ name: biotoolenvironment
 channels:
   - conda-forge
 dependencies:
-  # - python=3.10.10
-  - pip
   - assimulo
-  - pip:
-      - -r requirements.in
+  - modelbase>=1.33.4
+  - streamlit
+  - st-pages
+  - tomli
+  - appnope
 prefix: /opt/anaconda3/envs/biotoolenvironment
