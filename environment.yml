@@ -2,8 +2,8 @@ name: biotoolenvironment
 channels:
   - conda-forge
 dependencies:
-  - python=3.10.6
-  - pip=22.3.1
+  - python=3.10.10
+  - pip=23.1.2
   - assimulo
   - pip:
       - -r _requirements.txt
