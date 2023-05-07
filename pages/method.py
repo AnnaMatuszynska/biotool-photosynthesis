@@ -37,7 +37,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     with st.expander(text("MEASURING_LIGHT_FLUORESCENCE")):
         st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
-        st.markdown(text("EXPLANATION_MEASUREMENT_2"))
+        imageAnna = Image.open("pictures/PAMbasics.png")
+    st.image(imageAnna, caption=text("CAPTION_ABB1"))
 
     with st.expander(text("SATURATING_PULSES")):
         st.markdown(text("EXPLANATION_ATTEMPTS"))

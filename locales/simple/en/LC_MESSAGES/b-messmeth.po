@@ -28,8 +28,7 @@ msgstr "Photo of a plant of a plant (*Spathiphyllum*): On the left in daylight, 
 #: Explanation by Tobias
 msgid "INTRODUCTION_MEASUREMENT"
 msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
-        modelling to learn more about it. But biologists don't just like knowledge. They also like numbers and measuring \
-        things. So researchers invented many ways of determining how much a plant is doing photosynthesis. For example, \
+        modelling to learn more about it. But as biology become more and more a quantitative science, researchers invented many ways of determining how much a plant is doing photosynthesis. For example, \
         you heard that plants produce oxygen and take up carbon dioxide. Therefore, photosynthesis can be measured by \
         how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want \
         to do it outside on a tree or in a field."
@@ -40,8 +39,7 @@ msgstr "Shine plants?"
 
 #: Explanation by Tobias
 msgid "INTRODUCTION_GLOWING"
-msgstr "Here is where a specialty of plants comes into play: They can shine! When light shines on them, they not only \
-        photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
+msgstr "Here is where a specialty of plants comes into play: They can re-emit light and in proper conditions shine! When light shines on leaves, they use majority of the light to run complex photochemical reactions of photosynthesis, but a small part of the absorbed light is reemitted. Something similar happens when your white \
         T-shirt shines purple in a disco's black light. When something shine in a different light color when illuminated, \
         this is called 'fluorescence'. And the plant's fluorescence shine is red."
 
@@ -82,16 +80,12 @@ msgid "EXPLANATION_MEASUREMENT_1"
 msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
         help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
         but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
-        say for now how strongly the plant photosynthesizes also impacts the shine."
+        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
 
 
 #: Explanation by Tobias
 msgid "INTRODUCTION_PHI"
-msgstr "This experiment showed you both the shine of plants and how amazingly they can adjust to something simple as \
-        light. But what does this have to do with testing photosynthesis? A lot, actually. Because not only the \
-        'sunscreen' affects leaf fluorescence, but many other factors do, too. If you are interested in how this \
-        happens, look into the [Expert] section, but let's say for now, how strongly the plant photosynthesises also has \
-        an effect. So scientists invented a way to measure this fluorescence and track how it changes over time (you \
+msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
         will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
         we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
         importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
@@ -108,7 +102,7 @@ msgstr "###### Here, we will tell you about an exciting experiment researchers u
 
 #: Explanation by Tobias
 msgid   "SATURATING_PULSES"
-msgstr  "Saturating Pulses"
+msgstr  "Saturating Pulses of light"
 
 #: Explanation by Tobias
 msgid "EXPLANATION_ATTEMPTS"
@@ -186,3 +180,17 @@ msgstr  "Literature"
 #: pages/1 Messmethode.py:50
 msgid   "LITERATURE_DECLARATION"
 msgstr  "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
+
+msgid   "MEASURING_LIGHT_FLUORESCENCE"
+msgstr  "Basic principles of chlorophyll fluorescence"
+
+msgid   "EXPLANATION_INTRODUCTION_ATTEMPTS"
+msgstr  "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky
+diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis
+(photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers
+with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown
+in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
+
+msgid "CAPTION_PAM"
+msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
+
