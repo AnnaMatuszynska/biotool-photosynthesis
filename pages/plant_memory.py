@@ -1,11 +1,12 @@
 import altair as alt
 import numpy as np
-import os
 import pandas as pd
 import streamlit as st
 from model import get_model
-from modelbase.ode import Simulator
+from modelbase.ode import Simulator, _Simulate
+from modelbase.ode.integrators import Scipy
 from modelbase.typing import Array
+from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from typing import Callable
 from utils import get_localised_text
@@ -13,17 +14,14 @@ from utils import get_localised_text
 
 # Function for PAM experiment
 def changingLight(model, y0d, lights, interval):  # type: ignore
-    s = Simulator(model)
+    s: _Simulate = Simulator(model, integrator=Scipy)  # type: ignore
+    s._integrator._simulate = _simulate  # type: ignore
     s.initialise(y0d)
     dt = 0
     for i in range(len(interval)):
         s.update_parameter("PFD", lights[i])
         dt += interval[i]
-        s.simulate(
-            dt,
-            # **{"rtol": 1e-16, "atol": 1e-8},
-            # **{"maxnef": 20, "maxncf": 10}
-        )
+        s.simulate(dt)
     return s
 
 

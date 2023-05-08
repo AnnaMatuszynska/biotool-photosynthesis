@@ -4,7 +4,8 @@ import pandas as pd
 import streamlit as st
 from model import get_model
 from modelbase.ode import Model, Simulator, _Simulate
-from modelbase.typing import Array
+from modelbase.ode.integrators import Scipy
+from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from typing import Callable
 from utils import get_localised_text
@@ -37,16 +38,14 @@ def changingLight(
     lights: list[float],
     interval: list[float],
 ) -> _Simulate:
-    s = Simulator(model)
+    s: _Simulate = Simulator(model, integrator=Scipy)  # type: ignore
+    s._integrator._simulate = _simulate  # type: ignore
     s.initialise(y0d)
     dt = 0.0
     for i in range(len(interval)):
         s.update_parameter("PFD", lights[i])
         dt += interval[i]
-        s.simulate(
-            dt,
-            # **{"rtol": 1e-16, "atol": 1e-8, "maxnef": 20, "maxncf": 10},
-        )  # type: ignore
+        s.simulate(dt)  # type: ignore
     return s
 
 
