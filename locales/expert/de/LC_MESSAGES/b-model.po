@@ -17,29 +17,81 @@ msgstr ""
 msgid "HEADLINE_MODEL"
 msgstr "# Das Modell"
 
-#: Lisa's introduction
-msgid "INTRODUCTION_CLIMATE_CHANCE"
-msgstr "*Das Klima* selbst ist definiert als die durchschnittlichen statistischen Messungen des Wetters über einen \
-        langen Zeitraum an einem bestimmten Ort. *Klimawandel* ist definiert als eine weltweite Veränderung des Klimas. \
-        Es gibt drei Hauptkategorien, die eine Veränderung des Klimas bewirken können:"
+#: Anna's explanation of the model
+msgid "HEADLINE_MODEL_CONSTRUCTION"
+msgstr "### Konstruktion des Modells"
 
-#: Lisa's introduction
-msgid "POINT_1"
-msgstr "- Plattentektonik und Vulkanismus"
+#: Anna's explanation of the model
+msgid "CONSTRUCTION_EXPLANATION"
+msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
+        Elektronenträger, Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im \
+        Gesamtprozess spielt, haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität \
+        angestrebt. Wir haben uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang \
+        mit dem Fotosystem II konzentriert und nur die Prozesse in das Modell aufgenommen, die entweder direkt von der NPQ \
+        betroffen sind oder das Ausmaß der NPQ regulieren. Anstatt also die gesamte Pflanze oder gar den gesamten Chloroplasten \
+        zu modellieren, haben wir einen Reduktionszyklus (siehe Abbildung) angewandt, der auf einem streng reduktionistischen \
+        Ansatz beruht, und es ist uns gelungen, das Modell als ein System von nur sechs gewöhnlichen Differenzialgleichungen \
+        darzustellen! Jede dieser Gleichungen stellt die dynamische Änderungsrate von:"
 
-#: Lisa's introduction
-msgid "POINT_2"
-msgstr "- Übergänge in der Erdumlaufbahn"
+#: Anna's explanation of the model
+msgid "RATES_1"
+msgstr "1) der reduzierte Anteil des Plastochinon-Pools ($PQH_2$),"
 
-#: Lisa's introduction
-msgid "POINT_3"
-msgstr "- Emissionen von wärmeableitenden Gasen"
+#: Anna's explanation of the model
+msgid "RATES_2"
+msgstr "2) die stromale Konzentration von ATP (ATP),"
 
-#: Lisa's introduction
-msgid "END_OF_INTRODUCTION"
-msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten 97 % der Klimaforscher \
-        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden [Cook], und \
-        es ist Forschung erforderlich, um die Auswirkungen des plötzlichen Anstiegs der Erdtemperatur zu verstehen."
+#: Anna's explanation of the model
+msgid "RATES_3"
+msgstr "3) die luminale Protonenkonzentration ($H$),"
+
+#: Anna's explanation of the model
+msgid "RATES_4"
+msgstr "4) der Anteil der nicht protonierten Proteine (PsbS),"
+
+#: Anna's explanation of the model
+msgid "RATES_5"
+msgstr "5) der Anteil von Violaxanthin am Gesamtpool der Xanthophylle (Vx),"
+
+#: Anna's explanation of the model
+msgid "RATES_6"
+msgstr "6) der Anteil des aktiven ATPase-Enzyms (ATPase$^{*}$)."
+
+#: Anna's explanation of the model
+msgid "HEADLINE_IMPLEMENTATION"
+msgstr "### Implementierung"
+
+
+#: Anna's explanation of the model
+msgid "IMPLEMENTATION_DESCRIPTION"
+msgstr "Das mathematische Modell der fotosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
+        (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differenzialgleichungen, Reaktionsraten, dem \
+        Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: \
+        [hier](www.github.com/QTB-HHU/npqmodel)."
+
+#: Anna's explanation of the model
+msgid "HEADLINE_MODEL_EQUATIONS"
+msgstr "### Mathematische Gleichungen"
+
+#: Anna's explanation of the model
+msgid "MODEL_EQUATIONS_INTRODUCTION"
+msgstr "Die sechs gekoppelten gewöhnlichen Differenzialgleichungen (ODE)"
+
+#: Anna's explanation of the model
+msgid "REACTION_RATES"
+msgstr "Reaktionsgeschwindigkeiten"
+
+#: Anna's explanation of the model
+msgid "RATES_DYNAMIC"
+msgstr "###### In der dynamischen Beschreibung des Systems verwendete Reaktionsraten"
+
+#: Anna's explanation of the model
+msgid "RATE_QUENCHER"
+msgstr "###### Reaktionsraten zur Berechnung der Quencheraktivität und der Gesamtrate"
+
+#: pages/1 Messmethode.py:50
+msgid   "INTRODUCTION_LITERATURE"
+msgstr  "Die folgende Literatur vertieft das Thema Fotosynthese oder bietet die Möglichkeit, sich mit den Grundlagen vertraut zu machen."
 
 msgid "LITERATURE"
 msgstr "Literatur"

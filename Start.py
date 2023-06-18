@@ -25,7 +25,7 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
 
 
     with st.expander(text("EXPANDER_CLIMATE")):
-        st.markdown(text("INTRODUCTION_CLIMATE_CHANCE"))
+        st.markdown(text("INTRODUCTION_CLIMATE_CHANGE"))
 
         if version == "expert":
             st.markdown(text("POINT_1"))

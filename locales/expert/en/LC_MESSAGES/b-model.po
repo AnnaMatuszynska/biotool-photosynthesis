@@ -17,33 +17,6 @@ msgstr ""
 msgid "HEADLINE_MODEL"
 msgstr "# The Model"
 
-<<<<<<< HEAD
-#: Lisa's introduction
-msgid "INTRODUCTION_CLIMATE_CHANCE"
-msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a \
-        certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can \
-        induce a change in climate:"
-
-#: Lisa's introduction
-msgid "POINT_1"
-msgstr "- plate tectonics and vulcanism"
-
-#: Lisa's introduction
-msgid "POINT_2"
-msgstr "- earth orbit transitions"
-
-#: Lisa's introduction
-msgid "POINT_3"
-msgstr "- emissions of heat-trapping gasses"
-
-#: Lisa's introduction
-msgid "END_OF_INTRODUCTION"
-msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
-        impact of the sudden rise of Earth Temperature."
-=======
->>>>>>> 2c8c26c (add videos; add contact page; add pictures; refactoring)
-
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
 msgstr "### Model construction"
@@ -83,7 +56,6 @@ msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 msgid "RATES_6"
 msgstr "6) the fraction of active ATPase enzyme (ATPase$^{*}$)."
 
-<<<<<<< HEAD
 #: Anna's explanation of the model
 msgid "HEADLINE_IMPLEMENTATION"
 msgstr "### Implementation"
@@ -94,16 +66,12 @@ msgid "IMPLEMENTATION_DESCRIPTION"
 msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
         language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
         space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
-=======
->>>>>>> 2c8c26c (add videos; add contact page; add pictures; refactoring)
 
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_EQUATIONS"
 msgstr "### Mathematical equations"
 
 #: Anna's explanation of the model
-<<<<<<< HEAD
-=======
 msgid "MODEL_EQUATIONS_INTRODUCTION"
 msgstr "The six coupled ordinary differential equations (ODE)"
 
@@ -118,19 +86,6 @@ msgstr "###### Reaction rates used in the dynamic description of the system"
 #: Anna's explanation of the model
 msgid "RATE_QUENCHER"
 msgstr "###### Reaction rates to calculate the quencher activity and the overall rate"
-
-
-#: Anna's explanation of the model
->>>>>>> 2c8c26c (add videos; add contact page; add pictures; refactoring)
-msgid "HEADLINE_IMPLEMENTATION"
-msgstr "### Implementation"
-
-
-#: Anna's explanation of the model
-msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
-        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
-        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
 
 #: pages/1 Messmethode.py:50
 msgid   "INTRODUCTION_LITERATURE"

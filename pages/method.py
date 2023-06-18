@@ -74,7 +74,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.image(image1, caption=text("CAPTION_ABB2"))
     else:
         image1 = Image.open("pictures/Beispielabbildung_en.png")
-        st.image(image1, caption=text("CAPTION_ABB1"))
         st.image(image1, caption=text("CAPTION_ABB2"))
 
 # FIXME: language and version probably should be put into text here

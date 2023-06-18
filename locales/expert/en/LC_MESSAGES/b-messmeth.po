@@ -19,15 +19,14 @@ msgstr ""
 msgid "HEADLINE_ONE"
 msgstr "# The measurement method"
 
-<<<<<<< HEAD
-=======
+
 #: EINFÜHRUNG.py:36
 msgid "CAPTION_ABB1"
 msgstr "Photo of a plant (Spathiphyllum), a monocot, under three different light treatments: On the left in daylight, \
         in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
         but through a filter which filters all wavelengths except for the red light."
 
->>>>>>> 2c8c26c (add videos; add contact page; add pictures; refactoring)
+
 #: Explanation by Tobias
 msgid "INTRODUCTION_MEASUREMENT"
 msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
@@ -39,7 +38,6 @@ msgstr "On the previous page, you learned about the importance of photosynthesis
 
 #: Explanation by Tobias
 msgid "GROWING_PLANTS_1"
-<<<<<<< HEAD
 msgstr "Glowing Plants?"
 
 #: Explanation by Tobias
@@ -77,6 +75,29 @@ msgstr "Did you see the red glow and the sticker's ghostly imprint on the leaf? 
         it, vanishing the picture on the leaf."
 
 #: Explanation by Tobias
+msgid "MEASURING_FLUORESZENZ"
+msgstr "Measuring Photosynthesis with Fluorescence"
+
+#: Explanation by Tobias
+msgid "EXPLANATION_MEASUREMENT_1"
+msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
+        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
+        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
+        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
+
+
+#: Explanation by Tobias
+msgid "INTRODUCTION_PHI"
+msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
+        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
+        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
+        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
+        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
+        is doing photosynthesis more efficiently."
+
+
+
+#: Explanation by Tobias
 msgid "MEASURING_FLUORESCENCE"
 msgstr "Measuring Photosynthesis with Fluorescence"
 
@@ -111,78 +132,6 @@ msgstr  "This patterning is essential because we want to measure photosynthesis 
         it. And it is comparable regardless of the outside light - a versatile measurement."
 
 #: Explanation by Tobias
-=======
-msgstr "Shine plants?"
-
-#: Explanation by Tobias
-msgid "INTRODUCTION_GLOWING"
-msgstr "Here is where a specialty of plants comes into play: They can shine! When light shines on them, they not only \
-        photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence shine is red."
-
-#: Explanation by Tobias
-msgid "PLANT_ARE_SHINING_RED"
-msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
-
-#: Explanation by Tobias
-msgid "GROWING_PLANTS_2"
-msgstr "Shine plants!"
-
-#: Explanation by Tobias
-msgid "INTRODUCTION_EXPERIMENT"
-msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore \
-        distracting light and focus on the red fluorescence. Now watch what happens:"
-
-#: Explanation by Tobias
-msgid "EXPLANATION_VIDEO"
-msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
-
-#: Explanation by Tobias
-msgid "MEASURING_FLUORESZENZ"
-msgstr "Measuring Photosynthesis with Fluorescence"
-
-#: Explanation by Tobias
-msgid "EXPLANATION_MEASUREMENT_1"
-msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
-        say for now how strongly the plant photosynthesizes also impacts the shine."
-
-
-#: Explanation by Tobias
-msgid "INTRODUCTION_PHI"
-msgstr "This experiment showed you both the shine of plants and how amazingly they can adjust to something simple as \
-        light. But what does this have to do with testing photosynthesis? A lot, actually. Because not only the \
-        'sunscreen' affects leaf fluorescence, but many other factors do, too. If you are interested in how this \
-        happens, look into the [Expert] section, but let's say for now, how strongly the plant photosynthesises also has \
-        an effect. So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
-
-
-#: pages/1 Messmethode.py:32
-msgid "INTRODUCTION_PAM_MEASUREMENT"
-msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
-        for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
-        for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
-        (intensity) of light flashes."
-
-#: Explanation by Tobias
->>>>>>> 2c8c26c (add videos; add contact page; add pictures; refactoring)
 msgid   "SATURATING_PULSES"
 msgstr  "Saturating Pulses"
 
@@ -255,11 +204,14 @@ msgstr  "This was a lot of theory for just a bit of shining, so try a measuremen
 msgid   "CAPTION_ABB2"
 msgstr  "Example Graph of a PAM measurement"
 
-
 #: pages/1 Messmethode.py:49
 msgid   "LITERATURE"
 msgstr  "Literature"
 
 #: pages/1 Messmethode.py:50
 msgid   "LITERATURE_DECLARATION"
-msgstr  "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
+msgstr  "The following literature provides more in-depth information on the subject of PAM measurements, or offers the \
+           opportunity to familiarize oneself with the basics."
+
+msgid   "MEASURING_LIGHT_FLUORESCENCE"
+msgstr  "Basic principles of chlorophyll fluorescence"

@@ -68,13 +68,14 @@ msgstr "### Implementation"
 
 #: Anna's explanation of the model
 msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
-        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
-        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+msgstr "Das mathematische Modell der photosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
+        (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differentialgleichungen, Reaktionsraten, dem \
+        Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: \
+        [hier](www.github.com/QTB-HHU/npqmodel)."
 
 #: Anna's explanation of the model
 msgid "IMPLEMENTATION_TO_EXPERT"
-msgstr "To see the mathematical description Switch to EXPERT mode."
+msgstr "Um die mathematische Beschreibung zu sehen, wechseln Sie in den EXPERT-Modus."
 
 msgid "LITERATURE"
 msgstr "Literature"

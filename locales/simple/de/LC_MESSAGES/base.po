@@ -56,6 +56,10 @@ msgstr "Foto einer Pflanze der Gattung Einblatt, in drei verschiedenen Beleuchtu
         jedoch durch einen Filter, welcher alle Wellenlängen außer dem roten Lichtes filtert."
 
 #: EINFÜHRUNG.py:24
+msgid "HEADLINE_USAGE"
+msgstr "#### Nutzung dieser Website"
+
+#: EINFÜHRUNG.py:24
 msgid "MOTIVATION"
 msgstr "Liebe Schüler*innen, auf dieser Webseite haben Sie die Möglichkeit, mehr über das Thema Fotosynthese zu erfahren. \
         Ihr werdet dabei auch erfahren, wie sich verschiedenen Lichtintensitäten auf Pflanzen auswirken. Ziel ist es \
@@ -80,6 +84,25 @@ msgstr "Doch wieso ist es eigentlich so wichtig sich mit der Fotosynthese ausein
 msgid "DECLARATION"
 msgstr "Zunächst hier einige wichtige Informationen zu Themen im Bereich der Fotosynthese, sowie zum Thema mathematische \
         Modelle in den Biologie."
+
+#: Lisa's introduction
+msgid "EXPANDER_CLIMATE"
+msgstr "Der Klimawandel"
+
+#: Lisa's introduction
+msgid "INTRODUCTION_CLIMATE_CHANGE"
+msgstr "Da Pflanzen **nicht** weglaufen können, müssen sie sich an die veränderten Umweltbedingungen anpassen. Pflanzen \
+        sind die Grundlage des Lebens auf der Erde (Abb. links), und die Anpassung der Pflanzen ist entscheidend für eine \
+        funktionierende Welt. Veränderte Bedingungen, wie z. B. veränderte Temperaturen (Hitze und Kälte), Überschwemmungen \
+        und Trockenheit, können bei Pflanzen zu Stress führen. Diese Faktoren können verschiedene kurz- und langfristige \
+        Auswirkungen auf Pflanzen haben, die in Abb. rechts zusammengefasst sind. Dennoch empfinden Pflanzen bei plötzlichen \
+        Veränderungen Stress, haben aber einen *hochflexiblen Stoffwechsel* zur Anpassung. *Eine der ersten Reaktionen im \
+        pflanzlichen Stoffwechsel ist die Photosynthese*, die **Energie** für die Aufrechterhaltung des Pflanzenlebens \
+        liefert. Die Photosynthese selbst wird direkt und indirekt von veränderten Umweltbedingungen beeinflusst. Daher \
+        ist die Analyse der Photosynthese und der CO₂-Fixierung von Pflanzen ein wichtiges Maß für die allgemeine \
+        **Pflanzenfitness**, **Produktivität** und das **Überleben**. Folglich ist die Grundlagenforschung zur Photosynthese \
+        und ihrer Effizienz unerlässlich, um unsere sich verändernde Welt zu beurteilen."
+
 
 #: EINFÜHRUNG.py:36
 msgid "EXPANDER_PRODUCENTEN"

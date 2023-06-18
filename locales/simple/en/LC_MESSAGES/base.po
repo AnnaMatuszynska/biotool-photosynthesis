@@ -87,7 +87,7 @@ msgid "EXPANDER_CLIMATE"
 msgstr "Climate change"
 
 #: Lisa's introduction
-msgid "INTRODUCTION_CLIMATE_CHANCE"
+msgid "INTRODUCTION_CLIMATE_CHANGE"
 msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of \
         life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., \
         changed temperatures (heat and cold), flooding events, and drought can lead to stressful events in plants. Those \
@@ -95,7 +95,7 @@ msgstr "As plants **cannot run** away, they must adapt to their changed environm
         experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first \
         reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis \
         itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of \
-        photosynthesis and the fixation of CO2 by plants is an important measure of overall **plant fitness**, **productivity**, \
+        photosynthesis and the fixation of CO₂ by plants is an important measure of overall **plant fitness**, **productivity**, \
         and **survival**. Consequently, basic research on photosynthesis and its efficiency is essential to assess our changing world."
 
 

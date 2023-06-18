@@ -17,20 +17,66 @@ msgstr ""
 msgid "HEADLINE_MODEL"
 msgstr "# Das Modell"
 
-#: Lisa's introduction
-msgid "INTRODUCTION_CLIMATE_CHANCE"
-msgstr "Da Pflanzen **nicht weglaufen** können, müssen sie sich an ihre veränderten Umweltbedingungen anpassen. Pflanzen \
-        sind die Grundlage des Lebens auf der Erde (Abb. rechts), und die Anpassung von Pflanzen ist entscheidend für eine \
-        funktionierende Welt. Veränderte Bedingungen, wie z. B. veränderte Temperaturen (Hitze und Kälte), Überschwemmungen \
-        und Trockenheit, können zu Stressereignissen bei Pflanzen führen. Diese Faktoren können verschiedene kurz- und \
-        langfristige Auswirkungen auf Pflanzen haben, die in Abb. links zusammengefasst sind. Dennoch empfinden \
-        Pflanzen bei plötzlichen Veränderungen Stress, verfügen aber über einen äußerst *flexiblen Stoffwechsel* zur \
-        Anpassung. *Eine der ersten Reaktionen im pflanzlichen Stoffwechsel ist die Fotosynthese*, die Energie zur \
-        Aufrechterhaltung des Pflanzenlebens liefert. Die Fotosynthese selbst wird direkt und indirekt von veränderten \
-        Umweltbedingungen beeinflusst. Daher ist die Analyse der Fotosynthese und der CO₂-Fixierung durch Pflanzen ein \
-        wichtiges Maß für die **allgemeine Fitness**, **Produktivität** und das **Überleben** der Pflanzen. Folglich ist die \
-        Grundlagenforschung zur Fotosynthese und ihrer Effizienz von entscheidender Bedeutung für die Beurteilung unserer \
-        sich verändernden Welt."
+
+#: Anna's explanation of the model
+msgid "HEADLINE_MODEL_CONSTRUCTION"
+msgstr "### Konstruktion des Modells"
+
+#: Anna's explanation of the model
+msgid "CONSTRUCTION_EXPLANATION"
+msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, Elektronenträger, \
+        Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im Gesamtprozess spielt, \
+        haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität angestrebt. Wir haben \
+        uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang mit dem Fotosystem II \
+        konzentriert und nur die Prozesse in das Modell aufgenommen, die entweder direkt von der NPQ betroffen sind oder \
+        das Ausmaß der NPQ regulieren. Anstatt also die gesamte Pflanze oder gar den gesamten Chloroplasten zu modellieren, \
+        haben wir einen Reduktionszyklus (siehe Abbildung) angewandt, der auf einem streng reduktionistischen Ansatz beruht, \
+        und es ist uns gelungen, das Modell als ein System von nur sechs gewöhnlichen Differenzialgleichungen darzustellen! \
+        Jede dieser Gleichungen stellt die dynamische Änderungsrate von:"
+
+#: Anna's explanation of the model
+msgid "RATES_1"
+msgstr "1) der reduzierte Anteil des Plastochinon-Pools ($PQH_2$),"
+
+#: Anna's explanation of the model
+msgid "RATES_2"
+msgstr "2) die stromale Konzentration von ATP (ATP),"
+
+#: Anna's explanation of the model
+msgid "RATES_3"
+msgstr "3) die luminale Protonenkonzentration ($H$),"
+
+#: Anna's explanation of the model
+msgid "RATES_4"
+msgstr "4) der Anteil der nicht protonierten Proteine (PsbS),"
+
+#: Anna's explanation of the model
+msgid "RATES_5"
+msgstr "5) der Anteil von Violaxanthin am Gesamtpool der Xanthophylle (Vx),"
+
+#: Anna's explanation of the model
+msgid "RATES_6"
+msgstr "6) der Anteil des aktiven ATPase-Enzyms (ATPase$^{*}$)."
+
+#: Anna's explanation of the model
+msgid "HEADLINE_MODEL_EQUATIONS"
+msgstr "### Mathematische Gleichungen"
+
+#: Anna's explanation of the model
+msgid "HEADLINE_IMPLEMENTATION"
+msgstr "### Implementierung"
+
+
+#: Anna's explanation of the model
+msgid "IMPLEMENTATION_DESCRIPTION"
+msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
+        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
+        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+
+#: Anna's explanation of the model
+msgid "IMPLEMENTATION_TO_EXPERT"
+msgstr "To see the mathematical description Switch to EXPERT mode."
+
 
 msgid "LITERATURE"
 msgstr "Literatur"

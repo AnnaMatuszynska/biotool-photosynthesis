@@ -55,6 +55,10 @@ msgstr "Foto einer Pflanze der Art Spathiphyllum, in drei verschiedenen Beleucht
         jedoch durch einen Filter, welcher alle Wellenlängen, bis auf die des roten Lichtes filtert."
 
 #: EINFÜHRUNG.py:24
+msgid "HEADLINE_USAGE"
+msgstr "#### Nutzung dieser Website"
+
+#: EINFÜHRUNG.py:24
 msgid "MOTIVATION"
 msgstr "Liebe Leser*innen, auf dieser Webseite haben Sie die Möglichkeit ein mathematisches Modell in der Biologie \
         kennen zu lernen. Dabei haben Sie jedoch nicht nur die Möglichkeit das Modell theoretisch kennen zu lernen, \
@@ -81,6 +85,35 @@ msgstr "Doch wieso simulieren wir das Ganze im Computer und machen nicht nur Mes
 msgid "DECLARATION"
 msgstr "Ein weiterer Vorteil des Modells ist, dass man das Kurzeit-Pflanzengedächtnis zeigen kann. Auf dies wird auf der \
         Seite Pflanzengedächtnis eingegangen."
+
+#: Lisa's introduction
+msgid "EXPANDER_CLIMATE"
+msgstr "Der Klimawandel"
+
+#: Lisa's introduction
+msgid "INTRODUCTION_CLIMATE_CHANGE"
+msgstr "Das *Klima* selbst ist definiert als die durchschnittlichen statistischen Messungen des Wetters über einen langen \
+        Zeitraum an einem bestimmten Ort. *Klimawandel* ist definiert als eine weltweite Veränderung des Klimas. Drei \
+        Hauptkategorien können eine Veränderung des Klimas bewirken:"
+
+#: Lisa's introduction
+msgid "POINT_1"
+msgstr "- Plattentektonik und Vulkanismus"
+
+#: Lisa's introduction
+msgid "POINT_2"
+msgstr "- Erdumlaufbahnübergänge"
+
+#: Lisa's introduction
+msgid "POINT_3"
+msgstr "- Emissionen wärmespeichernder Gase"
+
+#: Lisa's introduction
+msgid "END_OF_INTRODUCTION"
+msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten *97 % der Klimaforscher* \
+        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden [Cook], und dass \
+        Forschung erforderlich ist, um die Auswirkungen des plötzlichen Anstiegs der Erdtemperatur zu verstehen."
+
 
 
 #: EINFÜHRUNG.py:36
