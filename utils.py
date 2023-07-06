@@ -1,7 +1,9 @@
+import base64
 import gettext
 import os
 import streamlit as st
 from logging import getLogger
+from pathlib import Path
 from streamlit_extras.switch_page_button import switch_page
 from typing import Callable
 
@@ -37,3 +39,17 @@ def make_prev_next_button(prev: str | None, next: str | None) -> None:
         ):
             if next is not None:
                 switch_page(next)
+
+
+def centered_image(img_path: str) -> None:
+    st.markdown(
+        f"""
+        <p style='text-align: center'>
+            <img
+                src='data:image/png;base64,{base64.b64encode(Path(img_path).read_bytes()).decode()}'
+                class='img-fluid'
+            />
+        </p>
+        """,
+        unsafe_allow_html=True,
+    )

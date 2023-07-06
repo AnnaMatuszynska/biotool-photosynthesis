@@ -3,7 +3,7 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import get_localised_text, make_prev_next_button
+from utils import centered_image, get_localised_text, make_prev_next_button
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -50,8 +50,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         )
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
 
-        st.image(Image.open("pictures/SIR.png"))
+        centered_image("pictures/SIR.png")
         st.caption(text("CAPTION_SIR_RESULTS_PICTURE"))
+
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_cont"))
 
     st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
