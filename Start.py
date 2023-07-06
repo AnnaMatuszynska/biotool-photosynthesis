@@ -69,10 +69,6 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
 
         st.video("https://youtu.be/BU-R724Jyng")
 
-    with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING")):
-        st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"))
-        st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"))
-        st.video("https://youtu.be/WU5pUy2wtrk")
 
     with st.expander(text("EXPANDER_DIFFERENTIAL_EQUATIONS")):
         st.markdown(text("EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"))

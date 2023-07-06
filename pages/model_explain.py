@@ -8,6 +8,20 @@ from utils import get_localised_text
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_MODEL"))
 
+    st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
+    image = Image.open("pictures/Modeling_scheme_eng.jpg")
+    st.image(image, caption=text("CAPTION_MODELLING_PICTURE"), width=600)
+    st.video("https://youtu.be/WU5pUy2wtrk")
+
+    with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE")):
+        st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"))
+        image = Image.open("pictures/SIR.jpg")
+        st.image(image, caption=text("CAPTION_SIR_RESULTS_PICTURE"), width=600)
+        st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_cont"))
+
+
+    st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
+
     st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
 
     st.markdown(text("CONSTRUCTION_EXPLANATION"))

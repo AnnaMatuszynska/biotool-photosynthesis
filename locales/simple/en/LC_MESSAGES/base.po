@@ -155,26 +155,6 @@ msgstr "What actually happens when too much light and thus excess energy hits th
         protective mechanisms are referred to as NPQ."
 
 #: EINFÜHRUNG.py:60
-msgid "EXPANDER_MATHEMATICAL_MODELLING"
-msgstr "Mathematical models in biology"
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"
-msgstr "Mathematical modeling, i.e. the development of mathematical models, is used in many areas of \
-        research and industry. In particular, whenever problems need to be solved that would be too costly to solve using \
-        standard test procedures would cause too high costs. The problem is described mathematically and \
-        Then the mathematical problem is solved with mathematical methods. The result must then be applied to \
-        the real situation, i.e. the problem, and the solution can then be evaluated. If the solution \
-        is not sufficient, the mathematical problem must be revised. The eventual successful mathematical \
-        description of the problem is called a mathematical model."
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"
-msgstr "In biology, mathematical models are often used to describe metabolic pathways. This allows \
-        changes on the metabolic pathways can be simulated and evaluated. Among other things, \
-        differential equations can be used."
-
-#: EINFÜHRUNG.py:60
 msgid "EXPANDER_DIFFERENTIAL_EQUATIONS"
 msgstr "Differential equations"
 
