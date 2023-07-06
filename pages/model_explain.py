@@ -110,7 +110,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("IMPLEMENTATION_TO_EXPERT"))
 
     if version == "expert":
-
         with open(Path(__file__).parent / "assets" / "sir_v1.py") as fp:
             sir_v1 = f"\n```python\n{fp.read()}```\n\n"
 
@@ -177,7 +176,6 @@ Now extending the SIR model to include an additional compartment for deceased in
 which would have been a lot more cumbersome with the manual approach.
             """
         )
-
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:

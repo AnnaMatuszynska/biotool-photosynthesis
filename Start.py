@@ -19,11 +19,8 @@ def make_introduction(text: Callable[[str], str]) -> None:
     st.markdown(text("DECLARATION"))
 
 
-
 # FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
-
-
     with st.expander(text("EXPANDER_CLIMATE")):
         st.markdown(text("INTRODUCTION_CLIMATE_CHANGE"))
 
@@ -72,10 +69,10 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
 
         st.video("https://youtu.be/BU-R724Jyng")
 
-#    with st.expander(text("EXPANDER_NPQ")):
-#        st.markdown(text("EXPANDER_NPQ_EXPLANATION"))
-#        if version == "expert":
-#            st.markdown(text("EXPANDER_NPQ_VIOLAXIN_EXPLANATION"))
+    #    with st.expander(text("EXPANDER_NPQ")):
+    #        st.markdown(text("EXPANDER_NPQ_EXPLANATION"))
+    #        if version == "expert":
+    #            st.markdown(text("EXPANDER_NPQ_VIOLAXIN_EXPLANATION"))
 
     with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING")):
         st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"))
@@ -138,5 +135,3 @@ if __name__ == "__main__":
     make_introduction(text)
     make_chapters(text, version, language)
     make_credits(text, version, language)
-
-

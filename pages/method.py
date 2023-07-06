@@ -30,7 +30,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("INTRODUCTION_PHI"), unsafe_allow_html=True)
         st.video("https://youtu.be/EwXkOlMBl3o")
 
-
     _, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Messmethode.gif")
@@ -48,8 +47,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         with st.expander(text("SATURATING_PULSES")):
             st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
 
-
-
     with st.expander(text("EXPANDER_MODEL_ORGANISMEN")):
         _, col2, _ = st.columns(3)
         with col2:
@@ -63,8 +60,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"), unsafe_allow_html=True)
         st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"), unsafe_allow_html=True)
 
-
-
     st.markdown(text("HEADLINE_ILLUSTRATION"), unsafe_allow_html=True)
     st.markdown(text("EXPLANATION_ILLUSTRATION_UNITS"), unsafe_allow_html=True)
     st.markdown(text("EXPLANATION_ILLUSTRATION"), unsafe_allow_html=True)
@@ -75,6 +70,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     else:
         image1 = Image.open("pictures/Beispielabbildung_en.png")
         st.image(image1, caption=text("CAPTION_ABB2"))
+
 
 # FIXME: language and version probably should be put into text here
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
