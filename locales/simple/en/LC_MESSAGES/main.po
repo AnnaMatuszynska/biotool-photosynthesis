@@ -24,45 +24,41 @@ msgid "INTRODUKTION"
 msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements \
         with the model to estimate the influence of the abiotic influence factors."
 
-#: pages/Analyse.py:
 msgid "TASK_1"
 msgstr "Task 1"
 
-#: pages/Analyse.py:
-msgid "TASK_ANALYSIS_1_EXPLANATION"
-msgstr "First of all, only adjust the slider with the light intensity. What do you notice?"
-
-#: pages/Analyse.py:
 msgid "TASK_2"
 msgstr "Task 2"
 
-#: pages/Analyse.py:
+msgid "TASK_3"
+msgstr "Task 3"
+
+msgid "TASK_4"
+msgstr "Task 4"
+
+msgid "TASK_5"
+msgstr "Task 5"
+
+msgid "TASK_MEMORY_1_EXPLANATION"
+msgstr "What changes with different light intensities?"
+
+msgid "TASK_MEMORY_2_EXPLANATION"
+msgstr "What is the effect of the length of the dark phase?"
+
+msgid "TASK_ANALYSIS_1_EXPLANATION"
+msgstr "First of all, only adjust the slider with the light intensity. What do you notice?"
+
 msgid "TASK_ANALYSIS_2_EXPLANATION"
 msgstr "Now also changes the sliders for the duration of the experiment and the number of pulses. Describes the course of the \
         curve, which arises when you connect the peaks of the pulses."
 
-#: pages/Analyse.py:
-msgid "TASK_3"
-msgstr "Task 3"
-
-#: pages/Analyse.py:
 msgid "TASK_ANALYSIS_3_EXPLANATION"
 msgstr "Compares the curve of the pulse peaks with the curve outside the pulses."
 
-#: pages/Analyse.py:
-msgid "TASK_4"
-msgstr "Task 4"
-
-#: pages/Analyse.py:
 msgid "TASK_ANALYSIS_4_EXPLANATION"
 msgstr "Try to interpret the observations. What do the changes at different light intensities mean \
         for the plant?"
 
-#: pages/Analyse.py:
-msgid "TASK_5"
-msgstr "Task 5"
-
-#: pages/Analyse.py:
 msgid "TASK_ANALYSIS_5_EXPLANATION"
 msgstr "What light intensity does the plant cope best with?"
 
