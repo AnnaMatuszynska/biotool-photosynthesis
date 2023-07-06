@@ -17,25 +17,21 @@ msgstr ""
 
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
-msgstr "# The measurement method"
+msgstr "# Measuring photosynthesis"
 
 #: EINFÜHRUNG.py:36
 msgid "CAPTION_ABB1"
-msgstr "Photo of a plant of a plant (*Spathiphyllum*): On the left in daylight, \
+msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, \
         in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
         but through a filter which filters all wavelengths except for the red light."
 
 #: Explanation by Tobias
 msgid "INTRODUCTION_MEASUREMENT"
-msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
-        modelling to learn more about it. But as biology become more and more a quantitative science, researchers invented many ways of determining how much a plant is doing photosynthesis. For example, \
-        you heard that plants produce oxygen and take up carbon dioxide. Therefore, photosynthesis can be measured by \
-        how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want \
-        to do it outside on a tree or in a field."
+msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page you will learn how can we measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continously becoming a more quantitative science, obviously numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or in a field. Therefore a particularly important characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
 
 #: Explanation by Tobias
 msgid "GROWING_PLANTS_1"
-msgstr "Shine plants?"
+msgstr "Plant shine!"
 
 #: Explanation by Tobias
 msgid "INTRODUCTION_GLOWING"
@@ -48,10 +44,6 @@ msgid "PLANT_ARE_SHINING_RED"
 msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
         Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, \
         however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
-
-#: Explanation by Tobias
-msgid "GROWING_PLANTS_2"
-msgstr "Shine plants!"
 
 #: Explanation by Tobias
 msgid "INTRODUCTION_EXPERIMENT"
@@ -79,7 +71,7 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 msgid "EXPLANATION_MEASUREMENT_1"
 msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
         help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
+        but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's \
         say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
 
 
@@ -91,14 +83,6 @@ msgstr "So scientists invented a way to measure this fluorescence and track how 
         importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
         and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
         is doing photosynthesis more efficiently."
-
-#: Explanation by Tobias
-msgid "INTRODUCTION_PAM_MEASUREMENT"
-msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
-        for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
-        for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
-        (intensity) of light flashes."
-
 
 #: Explanation by Tobias
 msgid   "SATURATING_PULSES"
@@ -120,40 +104,6 @@ msgstr "You need to know one more aspect of PAM, the saturating pulses. Our mach
 msgid   "CAPTION_THAIANA_PICTURE"
 msgstr  "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
 
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISMEN"
-msgstr  "Why is Arabidopsis thaliana a model organism?"
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
-msgstr  "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
-           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
-msgstr  "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
-        multiple generations in a relatively short period of time."
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"
-msgstr  "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
-            study specific developmental processes."
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
-msgstr  "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
-            which has provided researchers with a wealth of genetic information about the plant."
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
-msgstr  "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
-        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
-msgstr  "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
-        and its insights have contributed to our understanding of the biology of all plants."
 
 #: pages/1 Messmethode.py:40
 msgid   "HEADLINE_ILLUSTRATION"
@@ -182,7 +132,7 @@ msgid   "LITERATURE_DECLARATION"
 msgstr  "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
 
 msgid   "MEASURING_LIGHT_FLUORESCENCE"
-msgstr  "Basic principles of chlorophyll fluorescence"
+msgstr  "Basic principles of measuring chlorophyll fluorescence with PAM"
 
 msgid   "EXPLANATION_INTRODUCTION_ATTEMPTS"
 msgstr  "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. \

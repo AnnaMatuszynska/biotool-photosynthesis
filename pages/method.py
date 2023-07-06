@@ -8,16 +8,19 @@ from utils import get_localised_text, make_prev_next_button
 # FIXME: language and version probably should be put into text here
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_ONE"))
-
-    image1 = Image.open("pictures/Foto-Fluoreszierende_Pflanzen.jpg")
-    st.image(image1, caption=text("CAPTION_ABB1"))
+    _, col2, _ = st.columns(3)
+    with col2:
+        st.image("pictures/Kurzvideo-Messmethode.gif")
 
     st.markdown(text("INTRODUCTION_MEASUREMENT"), unsafe_allow_html=True)
-    with st.expander(text("GROWING_PLANTS_1")):
+
+    image1 = Image.open("pictures/Foto-Fluoreszierende_Pflanzen.jpg")
+    st.image(image1)
+    st.caption(text("CAPTION_ABB1"))
+
+    with st.expander(text("GROWING_PLANTS_1"), expanded=True):
         st.markdown(text("INTRODUCTION_GLOWING"), unsafe_allow_html=True)
         st.markdown(text("PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
-
-    with st.expander(text("GROWING_PLANTS_2")):
         st.markdown(text("INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
         _, col2, _ = st.columns(3)
         with col2:
@@ -25,19 +28,15 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         st.markdown(text("EXPLANATION_VIDEO"), unsafe_allow_html=True)
 
-    with st.expander(text("MEASURING_FLUORESZENZ")):
+    with st.expander(text("MEASURING_FLUORESZENZ"), expanded=True):
         st.markdown(text("EXPLANATION_MEASUREMENT_1"), unsafe_allow_html=True)
         st.markdown(text("INTRODUCTION_PHI"), unsafe_allow_html=True)
         st.video("https://youtu.be/EwXkOlMBl3o")
 
-    _, col2, _ = st.columns(3)
-    with col2:
-        st.image("pictures/Kurzvideo-Messmethode.gif")
-
-    with st.expander(text("MEASURING_LIGHT_FLUORESCENCE")):
+    with st.expander(text("MEASURING_LIGHT_FLUORESCENCE"), expanded=True):
         st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
         imageAnna = Image.open("pictures/PAMbasics.png")
-    st.image(imageAnna, caption=text("CAPTION_ABB1"))
+        st.image(imageAnna, caption=text("CAPTION_ABB2"))
 
     with st.expander(text("SATURATING_PULSES")):
         st.markdown(text("EXPLANATION_ATTEMPTS"))
@@ -46,19 +45,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     if version == "Expert":
         with st.expander(text("SATURATING_PULSES")):
             st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
-
-    with st.expander(text("EXPANDER_MODEL_ORGANISMEN")):
-        _, col2, _ = st.columns(3)
-        with col2:
-            st.image(
-                "pictures/Arabidopsis.jpg", caption=text("CAPTION_THAIANA_PICTURE"), width=400
-            )  # Add Caption
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"), unsafe_allow_html=True)
 
     st.markdown(text("HEADLINE_ILLUSTRATION"), unsafe_allow_html=True)
     st.markdown(text("EXPLANATION_ILLUSTRATION_UNITS"), unsafe_allow_html=True)
