@@ -1,13 +1,14 @@
 import streamlit as st
 from pages._sidebar import make_sidebar
 from pathlib import Path
+from PIL import Image
 from typing import Callable
 from utils import get_localised_text, make_prev_next_button
-from PIL import Image
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown("# Hello there")
+
 
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
     st.markdown(text("HEADLINE_CLIMATE"))
@@ -56,10 +57,12 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
         image = Image.open("pictures/Fotosynthese-Apparat_eng.jpg")
         st.image(image, caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), width=600)
 
-    st.video("https://youtu.be/BU-R724Jyng")
+    # Journey into leaf
+    st.video("https://youtu.be/hMCA0bBVoxE")
 
     st.markdown(text("HEADLINE_NPQ"))
     st.markdown(text("NPQ_EXPLANATION"))
+
 
 if __name__ == "__main__":
     version, language = make_sidebar()

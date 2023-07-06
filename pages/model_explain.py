@@ -16,7 +16,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1b"))
 
-    st.video("https://youtu.be/WU5pUy2wtrk")
+    # Making a model
+    st.video("https://youtu.be/oVME5KIHrO8")
 
     with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE")):
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"))
