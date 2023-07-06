@@ -2,7 +2,7 @@ import streamlit as st
 from typing import cast
 
 # FIXME: this should probably be external data?
-VERSION_OPTIONS = {"simple": "Simple", "expert": "Expert"}
+VERSION_OPTIONS = {"simple": "Simple", "expert": "Advanced"}
 
 
 def make_sidebar() -> tuple[str, str]:

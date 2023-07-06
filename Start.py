@@ -70,11 +70,6 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
 
         st.video("https://youtu.be/BU-R724Jyng")
 
-    #    with st.expander(text("EXPANDER_NPQ")):
-    #        st.markdown(text("EXPANDER_NPQ_EXPLANATION"))
-    #        if version == "expert":
-    #            st.markdown(text("EXPANDER_NPQ_VIOLAXIN_EXPLANATION"))
-
     with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING")):
         st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"))
         st.markdown(text("EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"))
