@@ -48,7 +48,8 @@ For the Introduction/Einführung:`msgfmt -o locales/#/*/LC_MESSAGES/base.mo loca
 ### Developers
 
 1. Sarah Philipps: main developer, realization of phase 1: working dashboard prototype
-2. Anna Matuszynska: conceptualization, supervision of phase 1, mathematical content and light memory
-   joined after the phase 1
-3. Marvin van Aalst: code clean-up, testing
-4. Tobias Pfennig: provision of teaching videos on fluorescence
+2. Marvin van Aalst: code clean-up, testing
+3. Tobias Pfennig: provision of teaching videos on fluorescence
+4. Lisa Fürtauer: photosynthesis in the context of climate change, knowledge check
+5. Elouën Corvest: description of available mathematical models,
+6. Anna Matuszyńska: conceptualization, supervision, mathematical content and light memory
