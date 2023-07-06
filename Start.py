@@ -2,9 +2,8 @@ import streamlit as st
 from pages._sidebar import make_sidebar
 from PIL import Image
 from st_pages import Page, show_pages
-from streamlit.components.v1 import html
 from typing import Callable
-from utils import get_localised_text
+from utils import get_localised_text, make_prev_next_button
 
 
 def make_introduction(text: Callable[[str], str]) -> None:
@@ -163,3 +162,4 @@ if __name__ == "__main__":
     make_introduction(text)
     make_chapters(text, version, language)
     make_credits(text, version, language)
+    make_prev_next_button(None, "photosynthesis")
