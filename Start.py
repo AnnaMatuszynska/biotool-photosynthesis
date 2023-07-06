@@ -127,12 +127,41 @@ if __name__ == "__main__":
     # so I'd prefer to put it here
     show_pages(
         [
-            Page("Start.py", text("Start"), ":house:"),
-            Page("pages/method.py", text("Method"), ":books:"),
-            Page("pages/model_explain.py", text("Model"), ":computer:"),
-            Page("pages/first_analysis.py", text("First analyses"), ":bar_chart:"),
-            Page("pages/plant_memory.py", text("Plant memory"), ":chart_with_upwards_trend:"),
-            Page("pages/contact.py", text("Contact"), ":phone:"),
+            Page(
+                "Start.py",
+                text("START"),
+                ":house:",
+            ),
+            Page(
+                "pages/photosynthesis.py",
+                text("PHOTOSYNTHESIS"),
+                ":potted_plant:",
+            ),
+            Page(
+                "pages/method.py",
+                text("METHOD"),
+                ":books:",
+            ),
+            Page(
+                "pages/model_explain.py",
+                text("MODELS"),
+                ":computer:",
+            ),
+            Page(
+                "pages/first_analysis.py",
+                text("EXPERIMENTS"),
+                ":bar_chart:",
+            ),
+            Page(
+                "pages/plant_memory.py",
+                text("MEMORY"),
+                ":chart_with_upwards_trend:",
+            ),
+            Page(
+                "pages/contact.py",
+                text("CONTACT"),
+                ":phone:",
+            ),
         ]
     )
     make_introduction(text)
