@@ -9,7 +9,7 @@ from modelbase.typing import Array
 from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from typing import Callable
-from utils import get_localised_text
+from utils import get_localised_text, make_prev_next_button
 
 
 # Function for PAM experiment
@@ -351,3 +351,4 @@ if __name__ == "__main__":
     version, language = make_sidebar()
     _ = get_localised_text("b-brain", version, language)
     make_page(_, version)
+    make_prev_next_button("experiments in silico", None)

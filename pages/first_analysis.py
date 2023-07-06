@@ -8,7 +8,7 @@ from modelbase.ode.integrators import Scipy
 from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from typing import Callable
-from utils import get_localised_text
+from utils import get_localised_text, make_prev_next_button
 
 
 def make_simulation_data(slider_time: float, slider_light: int, slider_pings: float) -> tuple:
@@ -308,3 +308,4 @@ if __name__ == "__main__":
     make_page(text)
     make_sliders(text)
     make_quiz(text)
+    make_prev_next_button("computational models", "plant light memory")

@@ -1,8 +1,9 @@
 import streamlit as st
 from pages._sidebar import make_sidebar
 from pathlib import Path
+from PIL import Image
 from typing import Callable
-from utils import get_localised_text
+from utils import get_localised_text, make_prev_next_button
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -18,7 +19,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         image = Image.open("pictures/SIR.jpg")
         st.image(image, caption=text("CAPTION_SIR_RESULTS_PICTURE"), width=600)
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_cont"))
-
 
     st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
 
@@ -164,3 +164,4 @@ if __name__ == "__main__":
     text = get_localised_text("b-model", version, language)
     make_page(text, language, version)
     make_literature(text, language, version)
+    make_prev_next_button("measuring method", "experiments in silico")
