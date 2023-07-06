@@ -17,23 +17,18 @@ msgstr ""
 msgid "HEADLINE_MAIN"
 msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
 
-#: EINFÜHRUNG.py:22
-msgid "AUTHOR"
-msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
-
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
 msgstr "Language"
 
 #: Intro by Anna
 msgid "INTRO"
-msgstr "This is a Teaching Tool in Biology: a project launched by Sarah Philipps and Anna Matuszyńska at the \
-        RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
-        students. We want to show how computational modeling supports the current research in increasing our understanding \
-        how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, \
-        photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at \
-        both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
-        the left side Version *Simple* or *Expert*. "
+msgstr "This is a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen \
+        University, Germany. Our goal is to provide a teaching tool applicable to the needs of XXI-century students. We \
+        want to show how computational modeling supports the current research in increasing our understanding of how the \
+        world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably \
+        the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening \
+        about the process of photosynthesis."
 
 
 #: EINFÜHRUNG.py:24
@@ -41,145 +36,38 @@ msgid "HEADLINE_USAGE"
 msgstr "#### How to use this website"
 
 
+
 #: EINFÜHRUNG.py:24
-msgid "MOTIVATION"
-msgstr "Dear students, on this website you will have the opportunity to learn about photosynthesis. Even though chances \
-        are high that you already learnt something about it, we guarantee you that you underestimate how much exciting \
-        work is still going on in this topic. In *EXPERT* Version you can even create a **digital mutant**."
+msgid "USAGE"
+msgstr "We aimed at both curious **newcomers** and more **advanced** learners. At any point of using this website you can choose \
+        which version you want to use by clicking on the left side button: Version and selecting from the drop-down list \
+        *Simple* or *Advanced*."
+
 
 #: EINFÜHRUNG.py:26
-msgid "PROCESS"
-msgstr "To do this, you will first learn the measurement method with which we can estimate the photosynthetic \
-        efficiency. Afterwards, you can perform digital experiments with plants to find out how different light \
-        intensities affect the plants."
+msgid "ADVANCED_USE"
+msgstr "If you do decide to choose the *Advanced* version, you will not only learn about photosynthesis \
+        as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. \
+        You will also learn how to 'genetically modify' your photosynthetic organism to perform new set of experiments, \
+        meaning you will get to create a digital mutant. We call the work performed in computer in silico."
 
 #: EINFÜHRUNG.py:28
-msgid "CONTINUING_TASK"
-msgstr "In a further task, you can then deal with the plant memory."
+msgid "DROP_BOX_INTRO"
+msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
 
-#: EINFÜHRUNG.py:30
-msgid "MOTIVATION_2.0"
-msgstr "But why is it so important to deal with photosynthesis? I hope you can answer this question after working through it!"
+#: EINFÜHRUNG.py:28
+msgid "EXPANDER_IN"
+msgstr "Differences between in vitro, in vivo and in silico"
 
-#: EINFÜHRUNG.py:32
-msgid "DECLARATION"
-msgstr "First, here is some important information on topics in the field of photosynthesis, as well as on the subject of mathematical \
-        models in biology."
+#: EINFÜHRUNG.py:28
+msgid "EXPLANATION_IN_VITRO"
+msgstr "*In vitro* refers to experiments conducted outside a living organism in a controlled laboratory setting."
 
-#: Lisa's introduction
-msgid "EXPANDER_CLIMATE"
-msgstr "Climate change"
-
-#: Lisa's introduction
-msgid "INTRODUCTION_CLIMATE_CHANGE"
-msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of \
-        life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., \
-        changed temperatures (heat and cold), flooding events, and drought can lead to stressful events in plants. Those \
-        factors can have various short- and long-term effects on plants– summarized in Fig. right. Nevertheless, plants \
-        experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first \
-        reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis \
-        itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of \
-        photosynthesis and the fixation of CO₂ by plants is an important measure of overall **plant fitness**, **productivity**, \
-        and **survival**. Consequently, basic research on photosynthesis and its efficiency is essential to assess our changing world."
+#: EINFÜHRUNG.py:28
+msgid "EXPLANATION_IN_VIVO"
+msgstr "In vivo refers to experiments conducted inside a living organism, usually animals or humans."
 
 
-#: EINFÜHRUNG.py:36
-msgid "EXPANDER_PRODUCENTEN"
-msgstr "Consumers vs producers"
-
-#: EINFÜHRUNG.py:37
-msgid "EXPANDER_PRODUCENTEN_EXPLANATION"
-msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings \
-        that can produce biomass are called **producers**. These include, in particular, plants. These can produce \
-        biomass independently through photosynthesis, for example."
-
-#: EINFÜHRUNG.py:39
-msgid "EXPANDER_NUTRIENTS"
-msgstr "Nutrient intake"
-
-#: EINFÜHRUNG.py:40
-msgid "EXPANDER_NUTRIENTS_EXPLANATION"
-msgstr "In order for plants to photosynthesize, they need nutrients, which they absorb from the environment. For this \
-        purpose, plants have, on the one hand, roots that can absorb water and nutrients from the soil. On the other \
-        hand, plants have stomata in their leaves, through which plants can absorb CO₂ from the air."
-
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-
-#: EINFÜHRUNG.py:42
-msgid "EXPANDER_PHOTOSYNTHESIS"
-msgstr "Photosynthesis"
-
-#: EINFÜHRUNG.py:43
-msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_1"
-msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
-        but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
-        through their roots, but not all of them. As already mentioned, plants are producers and can therefore \
-        manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
-
-#: EINFÜHRUNG.py:43
-msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process \
-        of photosynthesis."
-
-#: EINFÜHRUNG.py:43
-msgid "CAPTION_FOTOSYNTHESE_PICTURE"
-msgstr "Photosynthesis process"
-
-#: EINFÜHRUNG.py:54
-msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION"
-msgstr "Place of photosynthesis"
-
-#: EINFÜHRUNG.py:55
-msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
-
-#: EINFÜHRUNG.py:43
-msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
-msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
-
-#: EINFÜHRUNG.py:59
-msgid "EXPANDER_NPQ"
-msgstr "Non-photochemical Quenching (NPQ)"
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_NPQ_EXPLANATION"
-msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
-        and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
-        form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
-        protective mechanisms are referred to as NPQ."
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_DIFFERENTIAL_EQUATIONS"
-msgstr "Differential equations"
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"
-msgstr "A differential equation is any equation consisting of a function and a derivative \
-        is called a differential equation. To solve a differential equation, a function must be found which, when inserted into the equation, \
-        solves it."
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_2"
-msgstr "A differential equation usually has the following form: y'(x)=f(x,y(x))"
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"
-msgstr "[Here](https://www.cuemath.com/calculus/differential-equation/) there is further information on the topic \
-        Differential equations."
-
-#: EINFÜHRUNG.py:64
-msgid "CREDITS_ANNA"
-msgstr "All displayed diagrams are generated by a mathematical model. This model was developed by \
-        [Matuszynska et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub)."
-
-
-#: pages/1 Messmethode.py:50
-msgid   "INTRODUCTION_LITERATURE"
-msgstr  "The following literature will deepen the topic of photosynthesis, or provide an opportunity to familiarize \
-        yourself with the basics."
+#: EINFÜHRUNG.py:28
+msgid "EXPLANATION_IN_SILICO"
+msgstr "In silico refers to computational experiments and simulations performed using computer models and algorithms."
