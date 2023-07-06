@@ -7,7 +7,7 @@ from modelbase.ode import Model, Simulator, _Simulate
 from modelbase.ode.integrators import Scipy
 from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
-from typing import Callable
+from typing import Any, Callable
 from utils import get_localised_text, make_prev_next_button
 
 
@@ -49,7 +49,7 @@ def changingLight(
     return s
 
 
-def get_NPQ(F, t, lights, maxlight):  # type: ignore
+def get_NPQ(F: Any, t: Any, lights: Any, maxlight: Any) -> Any:
     z = []  # container for lists. Each list contains the positions of fluorescence values for one peak
     o = []  # container for position of Fo'
     cnt = 0
@@ -73,7 +73,7 @@ def get_NPQ(F, t, lights, maxlight):  # type: ignore
     return Fm, npq, tm, Fo, to, PhiPSII
 
 
-def simulate(updated_parameters, tprot, ProtPFDs):
+def simulate(updated_parameters: dict[str, float], tprot: Any, ProtPFDs: Any) -> Any:
     y0d = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
     model = get_model()
     model.update_parameters(updated_parameters)
@@ -90,7 +90,7 @@ def simulate(updated_parameters, tprot, ProtPFDs):
     return PAM, F, NPQ, tm, PhiPSII
 
 
-def make_plot_meta_data(text: Callable[[str], str], slider_time: float):
+def make_plot_meta_data(text: Callable[[str], str], slider_time: float) -> Any:
     areas_data = pd.DataFrame(
         {
             "Phasen": ["", text("MEASUREMENT_PHASE")],
@@ -121,7 +121,7 @@ def make_plot_meta_data(text: Callable[[str], str], slider_time: float):
     return areas, chart_labels
 
 
-def simple_plot(text: Callable[[str], str], PAM, F, areas, chart_labels):
+def simple_plot(text: Callable[[str], str], PAM: Any, F: Any, areas: Any, chart_labels: Any) -> Any:
     chart_data = pd.DataFrame({"Fluoreszenz": F / max(F), "Zeit": PAM.get_time()})  # type: ignore
 
     chart = (
@@ -138,7 +138,7 @@ def simple_plot(text: Callable[[str], str], PAM, F, areas, chart_labels):
     return areas, chart_labels
 
 
-def expert_plot(NPQ, tm, PhiPSII, areas, chart_labels):
+def expert_plot(NPQ: Any, tm: Any, PhiPSII: Any, areas: Any, chart_labels: Any) -> Any:
     # Define the left and right chart columns
     left, right = st.columns(2)
 

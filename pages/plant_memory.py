@@ -8,7 +8,7 @@ from modelbase.ode.integrators import Scipy
 from modelbase.typing import Array
 from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
-from typing import Callable
+from typing import Any, Callable
 from utils import get_localised_text, make_prev_next_button
 
 
@@ -150,7 +150,7 @@ def create_simulation_parameters(slider_time: float, slider_light: float) -> tup
     return tprot, ProtPFDs
 
 
-def simulate(updated_parameters, tprot, ProtPFDs):
+def simulate(updated_parameters: dict[str, float], tprot: Any, ProtPFDs: Any) -> Any:
     y0d = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
     model = get_model()
     model.update_parameters(updated_parameters)
@@ -166,7 +166,7 @@ def simulate(updated_parameters, tprot, ProtPFDs):
     return PAM, F, NPQ, tm, PhiPSII
 
 
-def make_plot_meta(text: Callable[[str], str], slider_time: float):
+def make_plot_meta(text: Callable[[str], str], slider_time: float) -> Any:
     areas_data = pd.DataFrame(
         {
             "Phasen": ["Dunkelphase", "Trainingsphase", "Dunkelphase", "Gedächtnisphase"],
@@ -199,7 +199,7 @@ def make_plot_meta(text: Callable[[str], str], slider_time: float):
     return areas, chart_labels
 
 
-def make_simple_plot(chart_data, areas, chart_labels):
+def make_simple_plot(chart_data: Any, areas: Any, chart_labels: Any) -> Any:
     chart = (
         alt.Chart(chart_data)  # type: ignore
         .mark_line(color="#FF4B4B")  # type: ignore
@@ -211,14 +211,16 @@ def make_simple_plot(chart_data, areas, chart_labels):
     st.altair_chart(areas + chart + chart_labels, use_container_width=True)
 
 
-def make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right):
+def make_expert_plot(
+    NPQ: Any, tm: Any, PhiPSII: Any, areas: Any, chart_labels: Any, left: Any, right: Any
+) -> Any:
     left, right = st.columns(2)
 
-    def create_chart_data(data, x, y):
+    def create_chart_data(data: Any, x: Any, y: Any) -> Any:
         chart_data = pd.DataFrame({x: data[x], y: data[y]})
         return chart_data
 
-    def create_chart(text: Callable[[str], str], chart_data, x, y, color):
+    def create_chart(text: Callable[[str], str], chart_data: Any, x: Any, y: Any, color: Any) -> Any:
         chart = (
             alt.Chart(chart_data)
             .mark_line(color=color)
@@ -229,7 +231,7 @@ def make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right):
         )
         return chart
 
-    def create_points(text: Callable[[str], str], chart_data, x, y, color):
+    def create_points(text: Callable[[str], str], chart_data: Any, x: Any, y: Any, color: Any) -> Any:
         points = (
             alt.Chart(chart_data)
             .mark_point(filled=True, size=65, color=color)
@@ -243,11 +245,11 @@ def make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right):
     chart_data1 = create_chart_data({"NPQ": NPQ, "Zeit": tm / 60}, "Zeit", "NPQ")
     chart_data2 = create_chart_data({"Phi": PhiPSII, "Zeit": tm / 60}, "Zeit", "Phi")
 
-    chart1 = create_chart(chart_data1, "Zeit", "NPQ", "#FF4B4B")
-    points1 = create_points(chart_data1, "Zeit", "NPQ", "#FF4B4B")
+    chart1 = create_chart(chart_data1, "Zeit", "NPQ", "#FF4B4B")  # type: ignore
+    points1 = create_points(chart_data1, "Zeit", "NPQ", "#FF4B4B")  # type: ignore
 
-    chart2 = create_chart(chart_data2, "Zeit", "Phi", "#FF4B4B")
-    points2 = create_points(chart_data2, "Zeit", "Phi", "#FF4B4B")
+    chart2 = create_chart(chart_data2, "Zeit", "Phi", "#FF4B4B")  # type: ignore
+    points2 = create_points(chart_data2, "Zeit", "Phi", "#FF4B4B")  # type: ignore
 
     with left:
         st.altair_chart(chart1 + chart_labels + areas + points1, use_container_width=True)
