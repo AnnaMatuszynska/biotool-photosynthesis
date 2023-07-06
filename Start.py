@@ -9,7 +9,9 @@ from utils import get_localised_text, make_prev_next_button
 def make_introduction(text: Callable[[str], str]) -> None:
     st.markdown(text("HEADLINE_MAIN"))
     st.markdown(text("INTRO"))
-    st.video("https://youtu.be/pqFOIhzmGuk")
+
+    # Introduction biotool
+    st.video("https://youtu.be/KvyjIWLD8rU")
     st.markdown(text("HEADLINE_USAGE"))
     st.markdown(text("USAGE"))
     st.markdown(text("ADVANCED_USE"))
