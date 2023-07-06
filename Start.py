@@ -2,6 +2,7 @@ import streamlit as st
 from pages._sidebar import make_sidebar
 from PIL import Image
 from st_pages import Page, show_pages
+from streamlit.components.v1 import html
 from typing import Callable
 from utils import get_localised_text
 
@@ -129,37 +130,37 @@ if __name__ == "__main__":
         [
             Page(
                 "Start.py",
-                text("START"),
+                "Start",
                 ":house:",
             ),
             Page(
                 "pages/photosynthesis.py",
-                text("PHOTOSYNTHESIS"),
+                "Photosynthesis",
                 ":potted_plant:",
             ),
             Page(
                 "pages/method.py",
-                text("METHOD"),
+                "Measuring Method",
                 ":books:",
             ),
             Page(
                 "pages/model_explain.py",
-                text("MODELS"),
+                "Computational Models",
                 ":computer:",
             ),
             Page(
                 "pages/first_analysis.py",
-                text("EXPERIMENTS"),
+                "Experiments in silico",
                 ":bar_chart:",
             ),
             Page(
                 "pages/plant_memory.py",
-                text("MEMORY"),
+                "Plant light memory",
                 ":chart_with_upwards_trend:",
             ),
             Page(
                 "pages/contact.py",
-                text("CONTACT"),
+                "Contact",
                 ":phone:",
             ),
         ]

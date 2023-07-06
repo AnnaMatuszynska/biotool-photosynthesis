@@ -12,3 +12,12 @@ repos:
     hooks:
       - id: flake8
         exclude: pages/assets/
+  - repo: local
+    hooks:
+      - id: translate
+        name: translate
+        files: \.mo$
+        stages: [commit]
+        language: system
+        entry: ./translate.bash
+

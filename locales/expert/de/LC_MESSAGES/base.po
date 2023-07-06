@@ -13,22 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
-#: EINFÜHRUNG.py:
-msgid "START"
-msgstr "Einführung"
-
-#: EINFÜHRUNG.py:
-msgid "METHOD"
-msgstr "Messmethode"
-
-#: EINFÜHRUNG.py:
-msgid "DATA"
-msgstr "Daten-Analyse"
-
-#: EINFÜHRUNG.py:
-msgid "BRAIN"
-msgstr "Pflanzengedächtnis"
-
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
 msgstr "# Herzlich Willkommen!"

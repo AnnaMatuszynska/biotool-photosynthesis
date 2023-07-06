@@ -13,34 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
-#: EINFÜHRUNG.py:
-msgid "START"
-msgstr "Start"
-
-#: EINFÜHRUNG.py:
-msgid "PHOTOSYNTHESIS"
-msgstr "Photosynthesis"
-
-#: EINFÜHRUNG.py:
-msgid "METHOD"
-msgstr "Measuring Method"
-
-#: EINFÜHRUNG.py:
-msgid "MODELS"
-msgstr "Computational Models"
-
-#: EINFÜHRUNG.py:
-msgid "EXPERIMENTS"
-msgstr "Experiments in silico"
-
-#: EINFÜHRUNG.py:
-msgid "MEMORY"
-msgstr "Plant light memory"
-
-#: EINFÜHRUNG.py:
-msgid "CONTACT"
-msgstr "Contact"
-
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
 msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"

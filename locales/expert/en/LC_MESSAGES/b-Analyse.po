@@ -68,11 +68,6 @@ msgstr "Fluorescence [F´ₘ /Fₘ]"
 
 
 #: pages/Analyse.py:72
-msgid "FLUO"
-msgstr "Fluorescence [F´ₘ /Fₘ]"
-
-
-#: pages/Analyse.py:72
 msgid "TIME"
 msgstr "Time [s]"
 

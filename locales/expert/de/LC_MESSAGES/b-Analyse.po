@@ -67,10 +67,6 @@ msgid "FLUO"
 msgstr "Fluoreszenz [F´ₘ /Fₘ]"
 
 #: pages/Analyse.py:72
-msgid "FLUO"
-msgstr "Fluoreszenz [F´ₘ /Fₘ]"
-
-#: pages/Analyse.py:72
 msgid "TIME"
 msgstr "Zeit [s]"
 
