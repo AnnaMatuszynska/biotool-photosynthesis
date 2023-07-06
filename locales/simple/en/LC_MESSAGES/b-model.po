@@ -61,8 +61,7 @@ msgstr "The change of the population of Planet-X using the SIR model (Equations 
 
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_cont"
 msgstr "We have now successfully implemented and used a model of epidemiology.
-Such model has been recently used as a basic of numerous more complex models used to track the expansion of a virus spread in numerous populations across the globe.
-
+Such model has been recently used as a basic of numerous more complex models used to track the expansion of a virus spread in numerous populations across the globe. \
 If you would like to learn now how to implement such model computationally using Python as a programming language please switch to the **Advanced** mode."
 
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
