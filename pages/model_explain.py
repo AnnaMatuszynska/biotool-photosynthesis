@@ -16,7 +16,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE")):
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"))
-        image = Image.open("pictures/SIR.jpg")
+        image = Image.open("pictures/SIR.png")
         st.image(image, caption=text("CAPTION_SIR_RESULTS_PICTURE"), width=600)
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_cont"))
 
