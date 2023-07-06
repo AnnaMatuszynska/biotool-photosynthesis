@@ -18,58 +18,40 @@ msgid "HEADLINE_MODEL"
 msgstr "# Mathematical models"
 
 #: EINFÜHRUNG.py:60
-msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"
-msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is especially useful in situations where traditional testing methods are too expensive and time-consuming. Language of mathematics enables us translation of real processes, situation, and problems into general statements using equations.This translation is not yet one to one and imposes a certain level of simplification. Therefore models are never the precise description including all levels of details, but a simplification created with  rigid methods, for the purpose of a specific study. The problem described using mathematical terms is then solved using mathematical methods, today strongly aided with computational programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way the process of model developing is often not a linear process but rather an iterative cycle, as presented on the figure below. The final successful mathematical description of the problem is known as a mathematical model. In the video below you can listen more about building and using mathematical models in biology."
+msgid "MATHEMATICAL_MODELLING_EXPLANATION_1"
+msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is especially useful in situations where traditional testing methods are too expensive and time-consuming. Language of **mathematics** enables us translation of real processes, situation, and problems into general statements using equations. This translation is not yet one to one and imposes a certain level of **simplification**. Therefore models are never the precise description including all levels of details, but a simplification created with  rigid methods, for the purpose of a specific study. The problem described using mathematical terms is then solved using mathematical methods, today strongly aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way the process of model developing is often not a linear process but rather an iterative cycle, as presented on the figure below." 
+
+msgid "MATHEMATICAL_MODELLING_EXPLANATION_1b"
+msgstr "In the video below you can listen more about building and using mathematical models in biology."
 
 msgid "CAPTION_MODELLING_PICTURE"
 msgstr "Cycle of modelling. To get from an initial problem to a curated mathematical model, often the developer needs to go through several iterations."
 
 msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
-msgstr "# An example of a mathematical model
+msgstr "# An example of a mathematical model"
 
 
 #: EINFÜHRUNG.py:60
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
-msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced
-to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they
-separated their population into three categories, the one that are susceptible to the disease and can get sick at any moment (S), the one that recovered from the infection (R), and the currently infected ones (I). To model the transition between each cathegories we determine the rate of infection (v1) dependant on the number of S and I in the total population (N) and their rate of recovery (v2) solely dependant on the I (Equation 2). They also found out that the R have gained complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try
-a new method they heard from Earth about, namely **mathematical modelling**. To start, you should create a scheme of your problem, in this case the \ac{S} will become \ac{I} at a rate of \ac{v1} and the \ac{I} will become the \ac{R} at a rate of \ac{v2}. 
-\begin{gather}
-    \ce{S ->[\textit{v}1] I ->[\textit{v}_2] R} \label{eq: SIR} \\
-    \begin{aligned}\label{eq: SIR_rates}
-        v_1 &= \alpha \cdot \frac{\mathrm{S}\cdot \mathrm{I}}{\mathrm{N}}\\
-        v_2 &= \beta \cdot \mathrm{I}\\
-    \end{aligned}
-\end{gather}
-With this scheme, you have already successfully modelled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A very useful mathematical tool to depict the chnage of something depending on the change of another specific value, are the so-called \acp{ODE}. If you have never seen what an \ac{ODE} looks like, here is an example:
-\begin{gather} \label{dA/dt}
-    \displaystyle \odv{\mathrm{A}}{t}
-\end{gather}
-This example expresses the change the compound A goes through depending on the change of the variable \(t\), which in most cases depicts the change of time. You can create an \ac{ODE} for every compound in your model that changes depending on your variable, in our case, time. This will create a system of \acp{ODE}, which can be solved using integration. So let's apply this method to our example of Planet-X, first by creating the \ac{ODE} system:
-\begin{gather} \label{eq: SIR_ODE}
-    \ce{S ->[\textit{v}1] I ->[\textit{v}_2] R} \\
-    \begin{aligned}
-        \displaystyle \odv{\mathrm{S}}{t} &= - v_1 \\
-        \displaystyle \odv{\mathrm{I}}{t} &= v_1 - v_2 \\
-        \displaystyle \odv{\mathrm{R}}{t} &=  v_2
-    \end{aligned}
-\end{gather}
-To effectively solve each \ac{ODE}, it is important to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is \(\alpha = 2\) and the recovery rate is \(\beta = 0.2\). With these values and starting populations of \(\mathrm{S} = 900\), \(\mathrm{I} = 100\), \(\mathrm{R} = 0\), and \(\mathrm{N} = \mathrm{S} + \mathrm{I} + \mathrm{R} = 1000\), we can solve our \ac{ODE} system (Equation~\ref{eq: SIR_ODE}). The resulting graph shows that the population of Planet-X will eventually become completely immune."
+msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the one that are susceptible to the disease and can get sick at any moment (S), the one that recovered from the infection (R), and the currently infected ones (I). To model the transition between each cathegories we determine the rate of infection (v1) dependant on the number of S and I in the total population (N) and their rate of recovery (v2) solely dependant on the I (Equation 2). They also found out that the R have gained complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modelling**. To start, you should create a scheme of your problem, in this case the S will become I at a rate of v1 and the I will become the R at a rate of v2."
+
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
+msgstr " With this scheme, you have already successfully modelled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A very useful mathematical tool to depict the chnage of something depending on the change of another specific value, are the so-called Oridinary Differential Equation (ODE). If you have never seen what an ODE looks like, click the box Oridinary Differential Equations. Using differential equations you can describe the relationship between the time and change in the number of people in each of the cathegories, so overall three equations. This set of three equations will is called a system of ODE and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the \ac{ODE} system:"
+
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
+msgstr "To effectively solve each ODE, it is important to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (α= 2) and the recovery rate is ($\beta = 0.2$). With these values and starting populations of (S=900), (I = 100), (R = 0), and ($\\mathrm{N} = \\mathrm{S} + \\mathrm{I} + \\mathrm{R} = 1000$), we can solve our ODE system. The resulting graph shows that the population of Planet-X will eventually become completely immune."
 
 msgid "CAPTION_SIR_RESULTS_PICTURE"
-msgstr "The change of the population of Planet-X using the SIR model (Equations \ref{eq: SIR_rates} and \ref{eq: SIR_ODE}) taken from Earth's scientists~\cite{doi:10.1098/rspa.1927.0118}. The infection rate is set to \(\alpha = 2\) and the recovery rate to \(\beta = 0.2\)".
+msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
 
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_cont"
-msgstr "We have now successfully implemented and used a model of epidemiology.
-Such model has been recently used as a basic of numerous more complex models used to track the expansion of a virus spread in numerous populations across the globe. \
-If you would like to learn now how to implement such model computationally using Python as a programming language please switch to the **Advanced** mode."
+msgstr "We have now successfully implemented and used a model of epidemiology. Such model has been recently used as a basic of numerous more complex models used to track the expansion of a virus spread in numerous populations across the globe. If you would like to learn now how to implement such model computationally using Python as a programming language please switch to the **Advanced** mode."
 
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
-msgstr "# Mathematical models of photosynthesis"
+msgstr "# Models of photosynthesis"
 
 msgid "INTRO_MODEL"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. 
+msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
 
 
 #: Anna's explanation of the model
