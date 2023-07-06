@@ -117,6 +117,9 @@ def make_credits(text: Callable[[str], str], version: str, language: str) -> Non
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
 
+    with open("./.streamlit/custom.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
     version, language = make_sidebar()
     text = get_localised_text("base", version, language)
 
