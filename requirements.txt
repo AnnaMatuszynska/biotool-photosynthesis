@@ -1,6 +1,7 @@
 appnope
 modelbase>=1.33.4
 streamlit
+streamlit-extras
 tomli
 pip
 st-pages
