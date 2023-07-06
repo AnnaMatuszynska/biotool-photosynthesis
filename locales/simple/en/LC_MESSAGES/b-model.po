@@ -19,15 +19,7 @@ msgstr "# Mathematical models"
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"
-msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is especially useful in situations where traditional testing methods are too expensive and time-consuming.
-Language of mathematics enables us translation of real processes, situation, and problems into general statements using equations.This translation is not yet one to one and imposes a certain level of simplification.
-        Therefore models are never the precise description including all levels of details, but a simplification created with  rigid methods, for the purpose of a specific study. 
-The problem described using mathematical terms is then solved using mathematical methods, today strongly aided with computational programs. 
-The resulting solution is then applied to the real-world problem and evaluated. 
-If additional solutions are required, the mathematical model must be revised. 
-That way the process of model developing is often not a linear process but rather an iterative cycle, as presented on the figure below.
-The final successful mathematical description of the problem is known as a mathematical model.
-In the video below you can listen more about building and using mathematical models in biology."
+msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is especially useful in situations where traditional testing methods are too expensive and time-consuming. Language of mathematics enables us translation of real processes, situation, and problems into general statements using equations.This translation is not yet one to one and imposes a certain level of simplification. Therefore models are never the precise description including all levels of details, but a simplification created with  rigid methods, for the purpose of a specific study. The problem described using mathematical terms is then solved using mathematical methods, today strongly aided with computational programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way the process of model developing is often not a linear process but rather an iterative cycle, as presented on the figure below. The final successful mathematical description of the problem is known as a mathematical model. In the video below you can listen more about building and using mathematical models in biology."
 
 msgid "CAPTION_MODELLING_PICTURE"
 msgstr "Cycle of modelling. To get from an initial problem to a curated mathematical model, often the developer needs to go through several iterations."
@@ -40,13 +32,8 @@ msgstr "# An example of a mathematical model
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced
 to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they
-separated their population into three categories, the one that are susceptible to the disease and can get sick at any moment (S), the one that recovered from the infection (R), and the currently infected ones (I). 
-To model the transition between each cathegories we determine the rate of infection (v1) dependant
-on the number of S and I in the total population (N) and their rate of recovery (v2) solely dependant on
-the I (Equation 2). They also found out that the R have gained complete immunity, but the people are
-too stressed to grow their population. To know how their population will look in a few months, they try
-a new method they heard from Earth about, namely **mathematical modelling**.
-To start, you should create a scheme of your problem, in this case the \ac{S} will become \ac{I} at a rate of \ac{v1} and the \ac{I} will become the \ac{R} at a rate of \ac{v2}. 
+separated their population into three categories, the one that are susceptible to the disease and can get sick at any moment (S), the one that recovered from the infection (R), and the currently infected ones (I). To model the transition between each cathegories we determine the rate of infection (v1) dependant on the number of S and I in the total population (N) and their rate of recovery (v2) solely dependant on the I (Equation 2). They also found out that the R have gained complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try
+a new method they heard from Earth about, namely **mathematical modelling**. To start, you should create a scheme of your problem, in this case the \ac{S} will become \ac{I} at a rate of \ac{v1} and the \ac{I} will become the \ac{R} at a rate of \ac{v2}. 
 \begin{gather}
     \ce{S ->[\textit{v}1] I ->[\textit{v}_2] R} \label{eq: SIR} \\
     \begin{aligned}\label{eq: SIR_rates}
