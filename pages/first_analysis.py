@@ -7,6 +7,7 @@ from modelbase.ode import Model, Simulator, _Simulate
 from modelbase.ode.integrators import Scipy
 from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
+from PIL import Image
 from typing import Any, Callable
 from utils import get_localised_text, make_prev_next_button
 
@@ -306,6 +307,10 @@ if __name__ == "__main__":
     version, language = make_sidebar()
     text = get_localised_text("b-Analyse", version, language)
     make_page(text)
+    st.image(
+        Image.open("pictures/slider-default-value.png"),
+        caption="Some really nice text describing what can be seen",
+    )
     make_sliders(text)
     make_quiz(text)
     make_prev_next_button("computational models", "plant light memory")
