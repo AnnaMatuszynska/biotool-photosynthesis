@@ -14,8 +14,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("INTRODUCTION_MEASUREMENT"), unsafe_allow_html=True)
 
-    image1 = Image.open("pictures/Foto-Fluoreszierende_Pflanzen.jpg")
-    st.image(image1)
+    st.image(Image.open("pictures/Foto-Fluoreszierende_Pflanzen.jpg"))
     st.caption(text("CAPTION_ABB1"))
 
     with st.expander(text("GROWING_PLANTS_1"), expanded=True):
@@ -35,8 +34,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     with st.expander(text("MEASURING_LIGHT_FLUORESCENCE"), expanded=True):
         st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
-        imageAnna = Image.open("pictures/PAMbasics.png")
-        st.image(imageAnna, caption=text("CAPTION_ABB2"))
+        st.image(
+            Image.open("pictures/PAMbasics.png"),
+            caption=text("CAPTION_ABB2"),
+        )
 
     with st.expander(text("SATURATING_PULSES")):
         st.markdown(text("EXPLANATION_ATTEMPTS"))
@@ -51,11 +52,15 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("EXPLANATION_ILLUSTRATION"), unsafe_allow_html=True)
 
     if language == "German":
-        image1 = Image.open("pictures/Beispielabbildung_de.png")
-        st.image(image1, caption=text("CAPTION_ABB2"))
+        st.image(
+            Image.open("pictures/Beispielabbildung_de.png"),
+            caption=text("CAPTION_ABB2"),
+        )
     else:
-        image1 = Image.open("pictures/Beispielabbildung_en.png")
-        st.image(image1, caption=text("CAPTION_ABB2"))
+        st.image(
+            Image.open("pictures/Beispielabbildung_en.png"),
+            caption=text("CAPTION_ABB2"),
+        )
 
 
 # FIXME: language and version probably should be put into text here

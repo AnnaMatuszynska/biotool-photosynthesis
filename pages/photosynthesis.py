@@ -34,24 +34,37 @@ def make_page(text: Callable[[str], str], version: str, language: str) -> None:
 
     st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_2"))
     if language == "German":
-        image = Image.open("pictures/Fotosynthese.jpg")
-        st.image(image, caption=text("CAPTION_FOTOSYNTHESE_PICTURE"))
+        st.image(
+            Image.open("pictures/Fotosynthese.jpg"),
+            caption=text("CAPTION_FOTOSYNTHESE_PICTURE"),
+        )
     else:
-        image = Image.open("pictures/Fotosynthese_eng.jpg")
-        st.image(image, caption=text("CAPTION_FOTOSYNTHESE_PICTURE"))
+        st.image(
+            Image.open("pictures/Fotosynthese_eng.jpg"),
+            caption=text("CAPTION_FOTOSYNTHESE_PICTURE"),
+        )
 
     st.markdown(text("NUTRIENTS_EXPLANATION"))
-    image = Image.open("pictures/Stomata1.jpg")
-    st.image(image, caption=text("CAPTION_STOMATA_PICTURE"), width=400)  # make a caption
+    st.image(
+        Image.open("pictures/Stomata1.jpg"),
+        caption=text("CAPTION_STOMATA_PICTURE"),
+        width=400,
+    )  # make a caption
 
     st.markdown(text("HEADLINE_PHOTOSYNTHESIS_LOCATION"))
     st.markdown(text("PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
     if language == "German":
-        image = Image.open("pictures/Fotosynthese-Apparat.jpg")
-        st.image(image, caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), width=600)
+        st.image(
+            Image.open("pictures/Fotosynthese-Apparat.jpg"),
+            caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"),
+            width=600,
+        )
     else:
-        image = Image.open("pictures/Fotosynthese-Apparat_eng.jpg")
-        st.image(image, caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), width=600)
+        st.image(
+            Image.open("pictures/Fotosynthese-Apparat_eng.jpg"),
+            caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"),
+            width=600,
+        )
 
     # Journey into leaf
     st.video("https://youtu.be/hMCA0bBVoxE")
