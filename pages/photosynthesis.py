@@ -5,6 +5,7 @@ from PIL import Image
 from typing import Callable
 from utils import get_localised_text, make_prev_next_button
 
+
 def make_page(text: Callable[[str], str], version: str, language: str) -> None:
     st.markdown(text("HEADLINE_CLIMATE"))
     st.markdown(text("INTRODUCTION_CLIMATE_CHANGE"))
@@ -77,6 +78,6 @@ def make_page(text: Callable[[str], str], version: str, language: str) -> None:
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    text = get_localised_text("b-photosyn", version, language)
+    text = get_localised_text("main", version, language)
     make_page(text, language, version)
     make_prev_next_button("start", "measuring method")

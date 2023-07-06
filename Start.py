@@ -33,7 +33,7 @@ if __name__ == "__main__":
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     version, language = make_sidebar()
-    text = get_localised_text("base", version, language)
+    text = get_localised_text("main", version, language)
 
     # NOTE: this belongs with the sidebar, but works globally
     # so I'd prefer to put it here

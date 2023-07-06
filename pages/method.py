@@ -85,7 +85,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    text = get_localised_text("b-messmeth", version, language)
+    text = get_localised_text("main", version, language)
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("photosynthesis", "computational models")

@@ -270,10 +270,10 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
     if version == "simple":
         with st.expander(text("TASK_1")):
-            st.markdown(text("TASK_1_EXPLANATION"))
+            st.markdown(text("TASK_MEMORY_1_EXPLANATION"))
 
         with st.expander(text("TASK_2")):
-            st.markdown(text("TASK_2_EXPLANATION"))
+            st.markdown(text("TASK_MEMORY_2_EXPLANATION"))
 
     st.markdown(text("TIP1"))
 
@@ -351,6 +351,6 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    _ = get_localised_text("b-brain", version, language)
+    _ = get_localised_text("main", version, language)
     make_page(_, version)
     make_prev_next_button("experiments in silico", None)

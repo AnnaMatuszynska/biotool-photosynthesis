@@ -180,15 +180,15 @@ def make_page(text: Callable[[str], str]) -> None:
     # Assignments
     if version == "simple":
         with st.expander(text("TASK_1")):
-            st.markdown(text("TASK_1_EXPLANATION"))
+            st.markdown(text("TASK_ANALYSIS_1_EXPLANATION"))
         with st.expander(text("TASK_2")):
-            st.markdown(text("TASK_2_EXPLANATION"))
+            st.markdown(text("TASK_ANALYSIS_2_EXPLANATION"))
         with st.expander(text("TASK_3")):
-            st.markdown(text("TASK_3_EXPLANATION"))
+            st.markdown(text("TASK_ANALYSIS_3_EXPLANATION"))
         with st.expander(text("TASK_4")):
-            st.markdown(text("TASK_4_EXPLANATION"))
+            st.markdown(text("TASK_ANALYSIS_4_EXPLANATION"))
         with st.expander(text("TASK_5")):
-            st.markdown(text("TASK_5_EXPLANATION"))
+            st.markdown(text("TASK_ANALYSIS_5_EXPLANATION"))
 
     st.markdown(text("HEADLINE_SLIDER"))
     st.markdown(text("EXPLANATNION"))
@@ -305,7 +305,7 @@ def make_quiz(text: Callable[[str], str]) -> None:
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    text = get_localised_text("b-Analyse", version, language)
+    text = get_localised_text("main", version, language)
     make_page(text)
     st.image(
         Image.open("pictures/slider-default-value.png"),

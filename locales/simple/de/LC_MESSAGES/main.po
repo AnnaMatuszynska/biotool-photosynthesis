@@ -1,0 +1,736 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-02 17:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: pages/Analyse.py:23
+msgid "HEADLINE_ANALYSE"
+msgstr "# Die Daten-Analyse"
+
+#: pages/Analyse.py:25
+msgid "INTRODUKTION"
+msgstr "Nachdem Sie die Messmethode zur Überprüfung von NPQ an Pflanzen kennenlernen durftet, werden wir nun Messungen \
+        mit dem Model durchführen, um den Einfluss der abiotischen Einfluss-Faktoren abzuschätzen."
+
+#: pages/Analyse.py:
+msgid "TASK_1"
+msgstr "Aufgabe 1"
+
+#: pages/Analyse.py:
+msgid "TASK_ANALYSIS_1_EXPLANATION"
+msgstr "Verstellen Sie zunächst einmal nur den Schieber mit der Lichtintensität. Was fällt euch auf?"
+
+#: pages/Analyse.py:
+msgid "TASK_2"
+msgstr "Aufgabe 2"
+
+#: pages/Analyse.py:
+msgid "TASK_ANALYSIS_2_EXPLANATION"
+msgstr "Ändern Sie nun auch die Schieberegler zur Versuchsdauer und der Anzahl der Pulse. Beschreiben Sie den Verlauf \
+        der Kurve, welche Entsteht, wenn ihr die Spitzen der Pulse verbindet."
+
+#: pages/Analyse.py:
+msgid "TASK_3"
+msgstr "Aufgabe 3"
+
+#: pages/Analyse.py:
+msgid "TASK_ANALYSIS_3_EXPLANATION"
+msgstr "Vergleicht die Kurve der Impuls-Spitzen mit der Kurve ausserhalb der Impulse."
+
+#: pages/Analyse.py:
+msgid "TASK_4"
+msgstr "Aufgabe 4"
+
+#: pages/Analyse.py:
+msgid "TASK_ANALYSIS_4_EXPLANATION"
+msgstr "Versucht die Beobachtungen zu interpretieren. Was bedeuten die Veränderungen bei verschiedenen Lichtintensitäten \
+        für die Pflanze?"
+
+#: pages/Analyse.py:
+msgid "TASK_5"
+msgstr "Aufgabe 5"
+
+#: pages/Analyse.py:
+msgid "TASK_ANALYSIS_5_EXPLANATION"
+msgstr "Mit welcher Lichtintensität kommt die Pflanze am besten zurecht?"
+
+#: pages/Analyse.py:
+msgid "HEADLINE_SLIDER"
+msgstr "##### Verwendung der Schieberegler:"
+
+#: pages/Analyse.py:27
+msgid "EXPLANATNION"
+msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Dann starten Sie die \
+        Berechnung, indem Sie auf den Start-Button klicken. Das berechnete Diagramm wird nach kurzer Zeit angezeigt. \
+        Sobald Sie die Schieberegler wieder bewegen, verschwindet die Grafik und Sie können eine neue Grafik laden."
+
+#: pages/Analyse.py:29
+msgid "TIPP1"
+msgstr "***Tipp 1:*** *Sollten Sie zwei Versuche vergleichen wollen, können die Graphen über die drei Punkte (obenrechts) \
+        herunterladen werden.*"
+
+#: pages/Analyse.py:31
+msgid "TIPP2"
+msgstr "***Tipp 2:*** *Durch einen Klick auf das Stopp oben rechts, neben dem Ladesymbol, kann der Berechnungs-Prozess \
+        jederzeit abgebrochen werden.*"
+
+
+
+
+#: pages/Analyse.py:48
+msgid "SLIDER_LIGHT"
+msgstr "Lichtintensität in μmol m⁻² s⁻¹"
+
+#: pages/Analyse.py:55
+msgid "SLIDER_TIME"
+msgstr "Versuchsdauer in Minuten"
+
+#: pages/Analyse.py:60
+msgid "SLIDER_PULSES"
+msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
+
+#: pages/Analyse.py:72
+msgid "FLUO"
+msgstr "Fluoreszenz [F´ₘ /Fₘ]"
+
+#: pages/Analyse.py:72
+msgid "TIME"
+msgstr "Zeit [s]"
+
+#: pages/Analyse.py:83
+msgid "SPINNER"
+msgstr "Ich rechne kurz für Sie :computer:"
+
+#: pages/Analyse.py:123
+msgid "MEASUREMENT_PHASE"
+msgstr "Messphase"
+
+#: pages/Analyse.py:123
+msgid "KONTROLL"
+msgstr "Wissenskontrolle"
+
+#: pages/Analyse.py:123
+msgid "INTRODUCTION_QUESTION"
+msgstr "Beantworten Sie alle Fragen und finden Sie heraus, ob Sie die Diagramme richtig auswerten und die Ergebnisse \
+        richtig interpretieren konnten."
+
+#: pages/Analyse.py:123
+msgid "QUESTION_1"
+msgstr "1. Je höher die Lichtintensität, desto ... das NPQ."
+
+#: pages/Analyse.py:123
+msgid "AW1"
+msgstr "höher"
+
+#: pages/Analyse.py:123
+msgid "AW2"
+msgstr "niedriger"
+
+#: pages/Analyse.py:123
+msgid "RA1"
+msgstr "Leider ist das falsch, schauen Sie sich noch einmal verschiedene Experimente mit höherer und niedrigerer \
+        Lichtintensität an."
+
+#: pages/Analyse.py:123
+msgid "RA2"
+msgstr "Richtig!"
+
+#: pages/Analyse.py:123
+msgid "QUESTION_2"
+msgstr "2. Was passiert im Verlauf des Experimentes mit dem NPQ?"
+
+#: pages/Analyse.py:123
+msgid "AW3"
+msgstr "Sie steigt kontinuierlich"
+
+#: pages/Analyse.py:123
+msgid "AW4"
+msgstr "Es bleibt nach einiger Zeit auf einem Niveau"
+
+#: pages/Analyse.py:123
+msgid "AW5"
+msgstr "Sie fällt kontinuierlich"
+
+#: pages/Analyse.py:123
+msgid "RA3"
+msgstr "Richtig! Das gleichbleibende Niveau nennt man auch den Steady-State."
+
+#: pages/Analyse.py:123
+msgid "RA4"
+msgstr "Das ist leider falsch, schauen Sie sich noch einmal verschiedene Experimente mit mehr Lichtimpulsen an."
+
+#: pages/Analyse.py:123
+msgid "QUESTION_3"
+msgstr "Kann mit einer kurzen Versuchsdauer und einer langen Zeit zwischen zwei Impulsen bereits eine aussagekräftige \
+        Interpretation gelingen?"
+
+#: pages/Analyse.py:123
+msgid "AW6"
+msgstr "Ja!"
+
+#: pages/Analyse.py:123
+msgid "AW7"
+msgstr "Nein!"
+
+#: pages/Analyse.py:123
+msgid "RA5"
+msgstr "Leider nicht!"
+
+#: pages/Analyse.py:123
+msgid "RA6"
+msgstr "Das Stimmt! Erst wenn eine längere Zeit der Steady-State anhält, kann davon ausgegangen werden, dass dieser sich \
+        nicht noch einmal verändert."
+
+#: pages/Analyse.py:123
+msgid "STOPP"
+msgstr "##### **Bitte erst öffnen, nachdem ihr alle Fragen beantwortet habt**"
+
+#: pages/Analyse.py:123
+msgid "RESULTS"
+msgstr "Ergebnisse"
+
+#: pages/Analyse.py:123
+msgid "EXPLANATION_RESULTS"
+msgstr "Sie haben gesehen, dass die Lichtintensität einen bedächtigen Einfuss auf das NPQ der Pflanze hat. "
+
+
+#: EINFÜHRUNG.py:21
+msgid "HEADLINE_MAIN"
+msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung der Photosynthese anhand eines Computermodells."
+
+#: EINFÜHRUNG.py:22
+msgid "AUTHOR"
+msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/)"
+
+#: Intro by Anna
+msgid "INTRO"
+msgstr "Dies ist ein Lehrmittel für Biologie: ein laufendes Projekt, das von Sarah Philipps und Anna Matuszynska an der \
+        RWTH Aachen, Deutschland, ins Leben gerufen wurde. Unser Ziel ist es, ein Lehrmittel zur Verfügung zu stellen, \
+        das auf die Bedürfnisse der Studierenden des XXI Jahrhunderts zugeschnitten ist. Wir wollen zeigen, wie \
+        computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise \
+        der Welt zu verbessern, und wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. \
+        Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Wir haben dieses interaktive Dashboard \
+        erstellt, das sich sowohl an neugierige Neueinsteiger als auch an fortgeschrittene Lernende richtet. Sie können \
+        wählen, welche Version Sie verwenden möchten, indem Sie auf der linken Seite Version *Einfach* oder *Experte* anklicken."
+
+
+#: EINFÜHRUNG.py:36
+msgid "CAPTION_ABB1"
+msgstr "Foto einer Pflanze der Gattung Einblatt, in drei verschiedenen Beleuchtungssituationen: Links bei Tageslicht, \
+        in der Mitte mit einer handelsüblichen UV5-Lampe beleuchtet, Rechts ebenfalls mit einer UV5-Lampe beleuchtet, \
+        jedoch durch einen Filter, welcher alle Wellenlängen außer dem roten Lichtes filtert."
+
+#: EINFÜHRUNG.py:24
+msgid "HEADLINE_USAGE"
+msgstr "#### Nutzung dieser Website"
+
+#: EINFÜHRUNG.py:24
+msgid "MOTIVATION"
+msgstr "Liebe Schüler*innen, auf dieser Webseite haben Sie die Möglichkeit, mehr über das Thema Fotosynthese zu erfahren. \
+        Ihr werdet dabei auch erfahren, wie sich verschiedenen Lichtintensitäten auf Pflanzen auswirken. Ziel ist es \
+        nicht nur Wissen zu erwerben, sondern auch Ihre Fähigkeiten zur Auswertung von Diagrammen zu verbessern."
+
+#: EINFÜHRUNG.py:26
+msgid "PROCESS"
+msgstr "Dazu lernen Sie zunächst die verwendete Messmethode kennen, mit der wir die Fotosyntheseleistung abschätzen können. \
+        Anschließend können Sie digitale Experimente mit Pflanzen durchführen, um herauszufinden, wie die verschiedenen \
+        Lichtintensitäten auf die Pflanzen wirken."
+
+#: EINFÜHRUNG.py:28
+msgid "CONTINUING_TASK"
+msgstr "In einer weiterführenden Aufgabe wird das Pflanzengedächtnis besprochen und analysiert."
+
+#: EINFÜHRUNG.py:30
+msgid "MOTIVATION_2.0"
+msgstr "Doch wieso ist es eigentlich so wichtig sich mit der Fotosynthese auseinander zu setzen? Ich hoffe diese Frage \
+        könnt ihr mir nach dem Durcharbeiten beantworten!"
+
+#: EINFÜHRUNG.py:32
+msgid "DECLARATION"
+msgstr "Zunächst hier einige wichtige Informationen zu Themen im Bereich der Fotosynthese, sowie zum Thema mathematische \
+        Modelle in den Biologie."
+
+#: Lisa's introduction
+msgid "EXPANDER_CLIMATE"
+msgstr "Der Klimawandel"
+
+#: Lisa's introduction
+msgid "INTRODUCTION_CLIMATE_CHANGE"
+msgstr "Da Pflanzen **nicht** weglaufen können, müssen sie sich an die veränderten Umweltbedingungen anpassen. Pflanzen \
+        sind die Grundlage des Lebens auf der Erde (Abb. links), und die Anpassung der Pflanzen ist entscheidend für eine \
+        funktionierende Welt. Veränderte Bedingungen, wie z. B. veränderte Temperaturen (Hitze und Kälte), Überschwemmungen \
+        und Trockenheit, können bei Pflanzen zu Stress führen. Diese Faktoren können verschiedene kurz- und langfristige \
+        Auswirkungen auf Pflanzen haben, die in Abb. rechts zusammengefasst sind. Dennoch empfinden Pflanzen bei plötzlichen \
+        Veränderungen Stress, haben aber einen *hochflexiblen Stoffwechsel* zur Anpassung. *Eine der ersten Reaktionen im \
+        pflanzlichen Stoffwechsel ist die Photosynthese*, die **Energie** für die Aufrechterhaltung des Pflanzenlebens \
+        liefert. Die Photosynthese selbst wird direkt und indirekt von veränderten Umweltbedingungen beeinflusst. Daher \
+        ist die Analyse der Photosynthese und der CO₂-Fixierung von Pflanzen ein wichtiges Maß für die allgemeine \
+        **Pflanzenfitness**, **Produktivität** und das **Überleben**. Folglich ist die Grundlagenforschung zur Photosynthese \
+        und ihrer Effizienz unerlässlich, um unsere sich verändernde Welt zu beurteilen."
+
+
+#: EINFÜHRUNG.py:36
+msgid "EXPANDER_PRODUCENTEN"
+msgstr "Konsumenten vs Produzenten"
+
+#: EINFÜHRUNG.py:37
+msgid "EXPANDER_PRODUCENTEN_EXPLANATION"
+msgstr "Unter einem **Konsumenten** versteht man Lebewesen, welche sich von der Biomasse ernähren, die \
+        von anderen Lebewesen produziert wurde. Alle Lebewesen, die Biomasse produzieren können, nennen wir \
+        **Produzenten**. Dazu zählen insbesondere die Pflanzen. Diese können durch beispielsweise Fotosynthese \
+        selbstständig Biomasse herstellen."
+
+#: EINFÜHRUNG.py:39
+msgid "EXPANDER_NUTRIENTS"
+msgstr "Nährstoff-Aufnahme"
+
+#: EINFÜHRUNG.py:40
+msgid "EXPANDER_NUTRIENTS_EXPLANATION"
+msgstr "Damit die Pflanzen Fotosynthese betreiben können, brauchen sie Nährstoffe, welche sie aus der Umwelt aufnehmen. \
+        Hierzu besitzen Pflanzen einerseits die Wurzeln, an welchen Wasser und Nährstoffe aus dem Boden aufgenommen \
+        werden können. Zum anderen besitzen Pflanzen Spaltöffnungen in den Blättern, sogenannte Stomata, durch welche \
+        Pflanzen das CO₂ aus der Luft aufnehmen können. "
+
+#: EINFÜHRUNG.py:40
+msgid "CAPTION_STOMATA_PICTURE"
+msgstr "Mikroskopische Aufnahme eines Stomata des Wildtypes des Modellorganismus Arabidopsis thaliana."
+
+#: EINFÜHRUNG.py:42
+msgid "EXPANDER_PHOTOSYNTHESIS"
+msgstr "Fotosynthese"
+
+#: EINFÜHRUNG.py:43
+msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_1"
+msgstr "Pflanzen benötigen für ihr Wachstum wie auch wir Menschen Nährstoffe. Essentiell sind dabei vor allem Wasser \
+        und Mineralstoffe, aber auch Pflanzen benötigen Fette, Kohlenhydrate und Proteine. Die meisten dieser Nährstoffe \
+        können die Pflanzen über ihre Wurzeln aus dem Boden aufnehmen, jedoch nicht alle. Wie bereits angesprochen sind \
+        Pflanzen Produzenten und können daher Nährstoffe herstellen. Zu diesen Nährstoffen zählen insbesondere die \
+        Kohlenhydrate, welche bei der Fotosynthese entstehen."
+
+#: EINFÜHRUNG.py:43
+msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_2"
+msgstr "Bei der Fotosynthese stellen Pflanzen Biomasse in Form von Glukose her. Dazu benötigen sie CO₂, H₂O \
+        sowie Energie in Form von Licht. [Hier](https://www.planet-schule.de/mm/lebensraum/wald-photosynthese/) könnt \
+        ihr euch über den Ablauf der Fotosynthese informieren."
+
+#: EINFÜHRUNG.py:43
+msgid "CAPTION_FOTOSYNTHESE_PICTURE"
+msgstr "Photosynthese Ablauf"
+
+#: EINFÜHRUNG.py:54
+msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION"
+msgstr "Ort der Fotosynthese"
+
+#: EINFÜHRUNG.py:55
+msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
+msgstr "Die Fotosynthese findet in den Zellen der meist grünen Bestandteile von Pflanzen statt. In diesen Zellen befinden \
+        sich spezialisierte Organellen, die Chloroplasten. Dort findet der Teil der Fotosynthese statt, \
+        welcher als Lichtreaktion bezeichnet wird. In der Membran sitzen die sogenannten Fotosysteme. Das Fotosystem II \
+        (FSII) welches durch die Energie des Lichtes Wasser in Sauerstoff und Wasserstoff aufspaltet ist für uns besonders \
+        Interessant. "
+
+#: EINFÜHRUNG.py:43
+msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
+msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
+
+#: EINFÜHRUNG.py:59
+msgid "EXPANDER_NPQ"
+msgstr "Nicht-photochemisches Quenching (NPQ)"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_NPQ_EXPLANATION"
+msgstr "Was passiert eigentlich wenn zu viel Licht und damit überschüssige Energie auf das Fotosystem II trifft? Geht \
+        dieses kaputt und muss dann von der Zelle erneuert werden? Zum Glück nicht! Stattdessen kann die überschüssige \
+        Energie in Form von Wärme abgegeben oder zur ATP-Synthese benutzt werden. So kann die Zelle geschützt werden. \
+        Die beiden nicht photochemischen Schutzmechanismen werden als NPQ bezeichnet."
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_MATHEMATICAL_MODELLING"
+msgstr "Mathematische Modelle in der Biologie"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"
+msgstr "Mathematische Modellierung, also das entwickeln mathematischer Modelle, findet in sehr vielen Bereichen von \
+        Forschung und Industrie Anwendung. Insbesondere immer dann, wenn Probleme gelöst werden müssen, welche mit \
+        Standard-Testverfahren zu hohe Kosten verursachen würden. Dabei wird das Problem mathematisch beschrieben und \
+        Anschließend das mathematische Problem mit mathematischen Verfahren gelöst. Das Ergebnis muss anschließend auf \
+        die reale Situation, also das Problem angewendet werden und die Lösung kann dann bewertet werden. Ist die Lösung \
+        nicht ausreichend, muss das mathematische Problem überarbeitet werden. Das schlussendlich erfolgreiche mathematische \
+        Beschreibung des Problems wird als mathematisches Modell bezeichnet."
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"
+msgstr "In der Biologie werden mathematische Modelle oft verwendet um Stoffwechselwege zu beschreiben. Dies lässt zu, \
+        Veränderungen auf die Stoffwechselwege simuliert und bewertet werden können. Dazu können unter anderem \
+        Differentialgleichungen verwendet werden."
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS"
+msgstr "Differentialgleichungen"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"
+msgstr "Als eine Differentialgleichung bezeichnet man jegliche Gleichungen, welche aus einer Funktion und einer Ableitung \
+        bestehen. Zum Lösen einer Differentialgleichung muss eine Funktion gefunden werden, welche eingesetzt in die Gleichung, \
+        diese löst."
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_2"
+msgstr "Eine Differenzialgleichung hat in der Regel folgende Gestalt: y'(x)=f(x,y(x))"
+
+#: EINFÜHRUNG.py:60
+msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"
+msgstr "[Hier](https://www.youtube.com/watch?v=2qQYxam2QGg) gibt es weiterführende Informationen zum Thema \
+        Differentialgleichungen."
+
+#: EINFÜHRUNG.py:64
+msgid "CREDITS_ANNA"
+msgstr "Alle angezeigten Diagramme werden von einem mathematischen Modell erzeugt. Dieses Modell wurde von [Matuszynska \
+        et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub) entwickelt."
+
+#: pages/1 Messmethode.py:50
+msgid   "INTRODUCTION_LITERATURE"
+msgstr  "Folgende Literatur vertieft das Thema Photosynthese, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
+
+#: pages/3 Pflanzengedächtnis.py:36
+msgid "HEADLINE_BRAIN"
+msgstr "# Das Pflanzengedächtnis"
+
+#: pages/3 Pflanzengedächtnis.py:38
+msgid "INTRODUCTION_BRAIN"
+msgstr "Nachdem Sie herausgefunden haben, wie Pflanzen auf unterschiedliche Lichtintensitäten reagieren. Sie können \
+        sich nun mit dem Gedächtnis der Pflanzen beschäftigen. Dies ist eine interessante Tatsache, die sich mit dem \
+        Modell sehr schön modellieren lässt. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
+
+#: pages/3 Pflanzengedächtnis.py:40
+msgid "TIP1"
+msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können Sie die Diagramme herunterladen, indem Sie auf die drei Punkte klicken.*"
+
+#: pages/3 Pflanzengedächtnis.py:42
+msgid "TIP2"
+msgstr "***Tipp2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+
+#: pages/3 Pflanzengedächtnis.py:97
+msgid "START_BUTTOM"
+msgstr "Starte den Versuche"
+
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE1"
+msgstr "Trainingsphase"
+
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE2"
+msgstr "Dunkelphase"
+
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE3"
+msgstr "Gedächtnisphase"
+
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "AXSIS_TIME"
+msgstr "Zeit [min]"
+
+#: Conclusion
+msgid "CONCLUSION"
+msgstr "Fazit"
+
+#: Conclusion
+msgid "BEGIN_OF_CONCLUTION"
+msgstr "Wir hoffen, dass du auf dieser Website eine umfassende Einführung in die faszinierende Welt der Pflanzenbiologie \
+        erhalten hast. Durch die Analyse von Diagrammen, die mit Computermodellen erstellt wurden, konntest du etwas \
+        über die Auswirkungen der Lichtintensität auf die Fotosynthese erfahren und das Thema Kurzzeitgedächtnis von \
+        Pflanzen erkunden. Dabei solltest du die folgenden Schlussfolgerungen gezogen haben:"
+
+#: Conclusion
+msgid "CONCLUTION_POINT_1"
+msgstr "- Die Lichtintensität hat einen erheblichen Einfluss auf die Fotosyntheserate von Pflanzen. Mit zunehmender \
+        Lichtintensität nimmt die Fotosyntheserate bis zu einem gewissen Grad zu."
+
+#: Conclusion
+msgid "CONCLUTION_POINT_2"
+msgstr "- Die Beziehung zwischen Lichtintensität und Fotosyntheserate ist nicht linear. Vielmehr folgt sie einer Kurve, \
+        die an einem bestimmten Punkt, dem Sättigungspunkt, ihren Höhepunkt erreicht."
+
+#: Conclusion
+msgid "CONCLUTION_POINT_3"
+msgstr "- Pflanzen haben die Fähigkeit, sich an vergangene Lichteinwirkung zu erinnern und ihre Fotosyntheseraten \
+        entsprechend anzupassen. Dieses Kurzzeitgedächtnis ermöglicht es den Pflanzen, ihren Energieverbrauch zu \
+        optimieren und sich an veränderte Umweltbedingungen anzupassen."
+
+#: Conclusion
+msgid "END_OF_CONCLUTION"
+msgstr "Alles in allem ist die PAM-Messung ein interessanter und effektiver Weg, um etwas über die komplexen \
+        Mechanismen des Pflanzenwachstums und der Entwicklung zu erfahren. Wir möchten dich ermutigen, über diese \
+        Schlussfolgerungen und die breiteren Auswirkungen dieser Erkenntnisse auf unser Verständnis der natürlichen \
+        Welt nachzudenken. Auf diese Weise wirst du die unglaubliche Komplexität und Schönheit des Pflanzenreichs noch \
+        mehr schätzen lernen."
+
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_ONE"
+msgstr "# Die Messmethode"
+
+#: Explanation by Tobias
+msgid "INTRODUCTION_MEASUREMENT"
+msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
+        mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
+        Zahlen und das Messen von Dingen. Deshalb haben Forscher viele Methoden erfunden, um zu bestimmen, wie viel \
+        Fotosynthese eine Pflanze betreibt. Du hast zum Beispiel gehört, dass Pflanzen Sauerstoff produzieren und \
+        Kohlendioxid aufnehmen. Daher kann die Fotosynthese daran gemessen werden, wie schnell diese Gase produziert \
+        oder verbraucht werden. Die Messung von Gasen kann jedoch schwierig sein, vor allem, wenn man sie draußen an \
+        einem Baum oder auf einem Feld durchführen will."
+
+#: Explanation by Tobias
+msgid "GROWING_PLANTS_1"
+msgstr "Leuchtende Pflanzen?"
+
+#: Explanation by Tobias
+msgid "INTRODUCTION_GLOWING"
+msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchten! Wenn Licht auf sie fällt, betreiben \
+        sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
+        passiert, wenn dein weißes T-Shirt im Schwarzlicht einer Disco lila leuchtet. Wenn etwas bei Beleuchtung in \
+        einer anderen Lichtfarbe leuchtet, nennt man das 'Fluoreszenz'. Und das Fluoreszenzlicht der Pflanze ist rot."
+
+#: Explanation by Tobias
+msgid "PLANT_ARE_SHINING_RED"
+msgstr "Jetzt werden Sie vielleicht denken: 'Aber Pflanzen sind doch grün, und ich habe noch nie eine fluoreszierende \
+        Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren \
+        es, was wir als ihre Grundfarbe sehen. Ihr rotes Leuchten ist jedoch viel schwächer, und da aus allen Richtungen \
+        stärkeres Licht in unsere Augen fällt, können wir es einfach nicht sehen."
+
+#: Explanation by Tobias
+msgid "GROWING_PLANTS_2"
+msgstr "Leuchtende Pflanzen!"
+
+#: Explanation by Tobias
+msgid "INTRODUCTION_EXPERIMENT"
+msgstr "Deshalb haben wir ein kleines Experiment für Sie vorbereitet: Hier haben wir einen kleinen Teil des Blattes \
+        einer Pflanze mit einem Aufkleber abgedeckt und werden ihn nun mit starkem Licht bestrahlen. Der Rotfilter der \
+        Kamera hilft uns, ablenkendes Licht zu ignorieren und uns auf die rote Fluoreszenz zu konzentrieren. Beobachten \
+        Sie nun, was passiert:"
+
+#: Explanation by Tobias
+msgid "EXPLANATION_VIDEO"
+msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben gerade \
+        die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre \
+        Umgebung anpassen. Auf die Teile des Blattes, die nicht von dem Aufkleber bedeckt sind, fällt sehr viel Licht. \
+        Da dieses Licht schädlich sein könnte, produzierte die Pflanze schnell einige Chemikalien, die als eine Art \
+        Sonnenschutzmittel in den Zellen wirken. Nach ein paar Sekunden waren diese Zellen geschützt und empfingen \
+        weniger Licht und fluoreszierten weniger. Doch als wir den Aufkleber abnahmen, hatten die Zellen darunter keinen \
+        Sonnenschutz produziert. Sie sahen das intensive Licht und fluoreszierten mit voller Kraft - direkt neben ihren \
+        geschützten Nachbarn. Diesen deutlichen Unterschied in der Fluoreszenz sahen Sie als Nachbild des Aufklebers. \
+        Als wir die Lampe weiter bestrahlten, passten sich alle Zellen dem Licht an und das Bild auf dem Blatt verschwand."
+
+#: Explanation by Tobias
+msgid "MEASURING_FLUORESZENZ"
+msgstr "Messung der Fotosynthese mit Fluoreszenz"
+
+#: Explanation by Tobias
+msgid "EXPLANATION_MEASUREMENT_1"
+msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
+        können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
+        beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn Sie sich dafür interessieren, wie das \
+        geschieht, schauen Sie sich den Abschnitt [Experte] an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
+        Pflanze wirkt sich auch auf die Leuchtkraft aus."
+
+#: Explanation by Tobias
+msgid "INTRODUCTION_PHI"
+msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflanzen als auch, wie erstaunlich sie sich an etwas so \
+        Einfaches wie Licht anpassen können. Aber was hat das mit der Prüfung der Fotosynthese zu tun? Eigentlich eine \
+        ganze Menge. Denn nicht nur der 'Sonnenschutz' beeinflusst die Blattfluoreszenz, sondern auch viele andere \
+        Faktoren. Wenn Sie sich dafür interessieren, wie das geschieht, lesen Sie den Abschnitt [Expert], aber sagen \
+        wir einmal, wie stark die Pflanze Fotosynthese betreibt, hat auch einen Einfluss. Deshalb haben Wissenschaftler \
+        eine Methode erfunden, um diese Fluoreszenz zu messen und zu verfolgen, wie sie sich im Laufe der Zeit verändert \
+        (Sie werden später von dieser 'PAM' hören). Mit ein paar cleveren mathematischen Tricks können sie dann viele \
+        Dinge berechnen, die uns interessieren könnten: Wie gesund das Blatt ist, wie sehr es sich vor dem Licht schützt \
+        und vor allem, wie es Fotosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
+        Buchstaben 'Psi', und Sie werden ihn vielleicht in einigen der Diagramme sehen, die Sie später erstellen werden. \
+        Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
+
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_PAM_MEASUREMENT"
+msgstr "###### Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
+        Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
+        'PAM'. Aus dem Namen können Sie schon ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der \
+        Lichtblitze 'modulieren' (steuern)."
+
+#: Explanation by Tobias
+msgid "MEASURING_LIGHT_FLUORESCENCE"
+msgstr "Messung von Licht und Fluoreszenz"
+
+#: Explanation by Tobias
+msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
+msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
+        diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
+        für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
+        wir mit jedem Blitz Fluoreszenz erzeugen, ist das resultierende Signal genau wie das Messlicht gemustert (moduliert)."
+
+#: Explanation by Tobias
+msgid   "EXPLANATION_MEASUREMENT_2"
+msgstr  "Diese Strukturierung ist wichtig, weil wir die Fotosynthese unter natürlichen Bedingungen messen wollen, also \
+        im Freien und bei unterschiedlicher Bestrahlung, wenn die Pflanze bereits fluoresziert. Normalerweise wären wir \
+        nicht in der Lage, die vom Außen- und Messlicht erzeugte Fluoreszenz zu unterscheiden. Da unser Messlicht und \
+        die daraus resultierende Fluoreszenz jedoch moduliert sind, können wir mit ein wenig Mathematik berechnen, wie \
+        viel Fluoreszenz allein durch unser Messlicht verursacht wurde. Und da alle Blitze gleich waren, haben wir den \
+        Anteil des Lichts gemessen, der in Fluoreszenz umgewandelt wurde - eine Fluoreszenzausbeute. Diese Ausbeute ist \
+        das, was Sie in den Modellgrafiken sehen werden. Sie nimmt ab, wenn die Fotosynthese der Pflanze effizienter ist, \
+        mit stärkerem Lichtschutz, und viele weitere Faktoren wirken sich ebenfalls auf sie aus. Und sie ist unabhängig \
+        vom Außenlicht vergleichbar - eine vielseitige Messung."
+
+#: Explanation by Tobias
+msgid   "SATURATING_PULSES"
+msgstr  "Sättigungsimpulse"
+
+#: Explanation by Tobias
+msgid   "EXPLANATION_ATTEMPTS"
+msgstr  "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
+        paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
+        Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute 'Fm'. \
+        Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fm nicht der Fall. \
+        Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb der \
+        Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
+        verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ϕPSII-, NPQ- und viele andere Werte berechnen. \
+        Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass Sie verstehen, dass wir vergleichen, \
+        welcher Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen \
+        über die Zeit und die Bedingungen verändern."
+
+
+#: pages/1 Messmethode.py:40
+msgid   "CAPTION_THAIANA_PICTURE"
+msgstr  "Das Foto einer Pflanze des Wildtypes des Modellorganismus Arabidopsis thaliana."
+
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISMEN"
+msgstr  "Wieso wird Arabidopsis thaliana als Modellorganismus bezeichnet?"
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
+msgstr  "Die Ackerschmalwand (Arabidopsis thaliana) wird als Modellorganismus bezeichnet, da sie häufig als Modellsystem \
+        in der Pflanzenbiologie verwendet wird. Sie hat mehrere Eigenschaften, die sie für Laborstudien gut geeignet machen, darunter:"
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
+msgstr  "1. Geringe Größe und schneller Lebenszyklus: Arabidopsis thaliana hat einen kurzen Lebenszyklus, der es den \
+        Forschern ermöglicht, mehrere Generationen in einem relativ kurzen Zeitraum zu untersuchen."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"
+msgstr  "2. Einfache Anatomie: Die Struktur der Pflanze ist einfach und gut verstanden, was es den Forschern erleichtert, \
+        spezifische Entwicklungsprozesse zu untersuchen."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
+msgstr  "3. Sequenzierung des Genoms: Das vollständige Genom der Ackerschmalwand (Arabidopsis thaliana) war das erste \
+            Pflanzengenom, das sequenziert wurde und den Forschern eine Fülle von genetischen Informationen über die Pflanze lieferte."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
+msgstr  "4. Genetische und molekulare Hilfsmittel: Für Arabidopsis thaliana steht eine große Sammlung genetischer und \
+        molekularer Hilfsmittel zur Verfügung, die es Forschern ermöglicht, die Entwicklung, das Wachstum und die \
+        Stressreaktionen von Pflanzen auf zellulärer und molekularer Ebene zu untersuchen."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
+msgstr  "All diese Faktoren haben Arabidopsis thaliana zu einem wichtigen Modellorganismus für das Untersuchen der \
+        grundlegenden Pflanzenbiologie gemacht, und seine Erkenntnisse haben zu unserem Verständnis der Biologie aller Pflanzen beigetragen."
+
+
+#: pages/1 Messmethode.py:40
+msgid   "HEADLINE_ILLUSTRATION"
+msgstr  "##### Die Abbildungen"
+
+#: pages/1 Messmethode.py:42
+msgid   "EXPLANATION_ILLUSTRATION_UNITS"
+msgstr  "Auf der Y-Achse der Abbildungen ist die Fluoreszenz aufgetragen. Diese ist angegeben in F´ₘ /Fₘ . Also wie \
+            viel Prozent der Lichtenergie für die Fotosynthese verwendet werden kann."
+
+#: pages/1 Messmethode.py:44
+msgid   "EXPLANATION_ILLUSTRATION"
+msgstr  "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den Abbildungen blau gekennzeichnet ist \
+            (siehe Abbildung 1), diese ist, wie bereits erwähnt, Voraussetzung für die PAM-Messung. Zu diesem Zeitpunkt \
+            können wir Fₘ messen. Das war eine Menge Theorie für ein bisschen Glühen, also probiere auf der nächsten \
+            Seite selbst eine Messung aus!"
+
+#: pages/1 Messmethode.py:49
+msgid   "LITERATURE"
+msgstr  "Literatur"
+
+#: pages/1 Messmethode.py:50
+msgid   "LITERATURE_DECLARATION"
+msgstr  "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
+
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_MODEL"
+msgstr "# Das Modell"
+
+
+#: Anna's explanation of the model
+msgid "HEADLINE_MODEL_CONSTRUCTION"
+msgstr "### Konstruktion des Modells"
+
+#: Anna's explanation of the model
+msgid "CONSTRUCTION_EXPLANATION"
+msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, Elektronenträger, \
+        Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im Gesamtprozess spielt, \
+        haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität angestrebt. Wir haben \
+        uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang mit dem Fotosystem II \
+        konzentriert und nur die Prozesse in das Modell aufgenommen, die entweder direkt von der NPQ betroffen sind oder \
+        das Ausmaß der NPQ regulieren. Anstatt also die gesamte Pflanze oder gar den gesamten Chloroplasten zu modellieren, \
+        haben wir einen Reduktionszyklus (siehe Abbildung) angewandt, der auf einem streng reduktionistischen Ansatz beruht, \
+        und es ist uns gelungen, das Modell als ein System von nur sechs gewöhnlichen Differenzialgleichungen darzustellen! \
+        Jede dieser Gleichungen stellt die dynamische Änderungsrate von:"
+
+#: Anna's explanation of the model
+msgid "RATES_1"
+msgstr "1) der reduzierte Anteil des Plastochinon-Pools ($PQH_2$),"
+
+#: Anna's explanation of the model
+msgid "RATES_2"
+msgstr "2) die stromale Konzentration von ATP (ATP),"
+
+#: Anna's explanation of the model
+msgid "RATES_3"
+msgstr "3) die luminale Protonenkonzentration ($H$),"
+
+#: Anna's explanation of the model
+msgid "RATES_4"
+msgstr "4) der Anteil der nicht protonierten Proteine (PsbS),"
+
+#: Anna's explanation of the model
+msgid "RATES_5"
+msgstr "5) der Anteil von Violaxanthin am Gesamtpool der Xanthophylle (Vx),"
+
+#: Anna's explanation of the model
+msgid "RATES_6"
+msgstr "6) der Anteil des aktiven ATPase-Enzyms (ATPase$^{*}$)."
+
+#: Anna's explanation of the model
+msgid "HEADLINE_MODEL_EQUATIONS"
+msgstr "### Mathematische Gleichungen"
+
+#: Anna's explanation of the model
+msgid "HEADLINE_IMPLEMENTATION"
+msgstr "### Implementierung"
+
+
+#: Anna's explanation of the model
+msgid "IMPLEMENTATION_DESCRIPTION"
+msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
+        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
+        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+
+#: Anna's explanation of the model
+msgid "IMPLEMENTATION_TO_EXPERT"
+msgstr "To see the mathematical description Switch to EXPERT mode."
