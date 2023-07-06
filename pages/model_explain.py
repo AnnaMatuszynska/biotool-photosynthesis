@@ -10,10 +10,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_MODEL"))
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
-    
+
     image = Image.open("pictures/Modeling_scheme_eng.jpg")
     st.image(image, caption=text("CAPTION_MODELLING_PICTURE"), width=600)
-    
+
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1b"))
 
     st.video("https://youtu.be/WU5pUy2wtrk")
@@ -22,26 +22,33 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"))
         st.latex(
             r"""
-        \ce{S ->[\textit{v}1] I ->[\textit{v}_2] R} \label{eq: SIR} \\
-        \begin{aligned}\label{eq: SIR_rates}
-        v_1 &= \alpha \cdot \frac{\mathrm{S}\cdot \mathrm{I}}{\mathrm{N}}\\
-        v_2 &= \beta \cdot \mathrm{I}\\
-        \end{aligned}
-        """
+            S \xrightarrow{\textit{v}_1} I \xrightarrow{\textit{v}_2} R
+            """
+        )
+        st.latex(
+            r"""
+            \begin{aligned}
+                v_1 &= \alpha \cdot \frac{\mathrm{S}\cdot \mathrm{I}}{\mathrm{N}} \\
+                v_2 &= \beta \cdot \mathrm{I} \\
+            \end{aligned}
+            """
         )
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_2"))
         st.latex(
             r"""
-            \ce{S ->[\textit{v}1] I ->[\textit{v}_2] R} \\
-    \begin{aligned}
-        \frac{\mathrm{S}}{t} &= - v_1 \\
-        \frac{\mathrm{I}}{t} &= v_1 - v_2 \\
-        \frac{\mathrm{R}}{t} &=  v_2
-    \end{aligned}
-        """
+            S \xrightarrow{\textit{v}_1} I \xrightarrow{\textit{v}_2} R
+            """
+        )
+        st.latex(
+            r"""
+            \begin{aligned}
+                \frac{\mathrm{S}}{t} &= - v_1 \\
+                \frac{\mathrm{I}}{t} &= v_1 - v_2 \\
+                \frac{\mathrm{R}}{t} &=  v_2
+            \end{aligned}
+            """
         )
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
-
 
         image = Image.open("pictures/SIR.png")
         st.image(image, caption=text("CAPTION_SIR_RESULTS_PICTURE"), width=600)
