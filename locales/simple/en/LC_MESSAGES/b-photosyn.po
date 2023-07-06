@@ -46,9 +46,7 @@ msgstr "#### Nutrient intake"
 
 #: EINFÜHRUNG.py:40
 msgid "NUTRIENTS_EXPLANATION"
-msgstr "In order for plants to photosynthesize, they need nutrients, which they absorb from the environment. For this \
-        purpose, plants have, on the one hand, roots that can absorb water and nutrients from the soil. On the other \
-        hand, plants have stomata in their leaves, through which plants can absorb CO₂ from the air."
+msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
 
 #: EINFÜHRUNG.py:40
 msgid "CAPTION_STOMATA_PICTURE"
@@ -92,7 +90,7 @@ msgstr "Complexes within the thylakoid membrane, which are necessary for photosy
 
 #: EINFÜHRUNG.py:59
 msgid "HEADLINE_NPQ"
-msgstr "#### Non-photochemical Quenching (NPQ)"
+msgstr "#### How to deal with too much light?"
 
 #: EINFÜHRUNG.py:60
 msgid "NPQ_EXPLANATION"
@@ -100,3 +98,49 @@ msgstr "What actually happens when too much light and thus excess energy hits th
         and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
         form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
         protective mechanisms are referred to as NPQ."
+
+#: pages/1 Messmethode.py:40
+msgid   "HEADER_MODEL_ORGANISMEN"
+msgstr  "#### One plant to rule them all"
+
+#: pages/1 Messmethode.py:40
+msgid   "MODEL_ORGANISMEN_EXPLANATION"
+msgstr  "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis Thaliana*, a 'model organism'."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISMEN"
+msgstr  "Why is Arabidopsis thaliana a model organism?"
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
+msgstr  "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
+           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
+msgstr  "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
+        multiple generations in a relatively short period of time."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"
+msgstr  "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
+            study specific developmental processes."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
+msgstr  "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
+            which has provided researchers with a wealth of genetic information about the plant."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
+msgstr  "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
+        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
+
+#: pages/1 Messmethode.py:40
+msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
+msgstr  "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
+        and its insights have contributed to our understanding of the biology of all plants."
+
+#: pages/1 Messmethode.py:40
+msgid   "CAPTION_THAIANA_PICTURE"
+msgstr  "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
