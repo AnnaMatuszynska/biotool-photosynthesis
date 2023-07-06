@@ -22,7 +22,7 @@ def make_sidebar() -> tuple[str, str]:
         str,
         st.sidebar.selectbox(
             "⚙ Language 🌍💬",
-            ["English", "German", "Polish"],
+            ["English", "German", "Polish", "French", "Spanish"],
             label_visibility="visible",
         ),
     )
