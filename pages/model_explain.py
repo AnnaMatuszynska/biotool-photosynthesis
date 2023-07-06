@@ -11,8 +11,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
 
-    image = Image.open("pictures/Modeling_scheme_eng.jpg")
-    st.image(image, caption=text("CAPTION_MODELLING_PICTURE"), width=600)
+    st.image(Image.open("pictures/Modeling_scheme_eng.png"))
+    st.caption(text("CAPTION_MODELLING_PICTURE"))
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1b"))
 
@@ -50,8 +50,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         )
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
 
-        image = Image.open("pictures/SIR.png")
-        st.image(image, caption=text("CAPTION_SIR_RESULTS_PICTURE"), width=600)
+        st.image(Image.open("pictures/SIR.png"))
+        st.caption(text("CAPTION_SIR_RESULTS_PICTURE"))
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_cont"))
 
     st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
