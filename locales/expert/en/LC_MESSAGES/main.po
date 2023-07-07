@@ -556,7 +556,43 @@ msgstr  "Basic principles of chlorophyll fluorescence"
 
 #: pages/model_explain.py:10
 msgid "HEADLINE_MODEL"
-msgstr "# The Model"
+msgstr "# Mathematical models"
+
+#: pages/model_explain.py:12
+msgid "MATHEMATICAL_MODELLING_EXPLANATION_1"
+msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never the precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
+
+# pages/model_explain.py:15
+msgid "CAPTION_MODELLING_PICTURE"
+msgstr "The cycle of modeling. The developer often needs to go through several iterations to get from an initial problem to a curated mathematical model."
+
+# pages/model.explain.py:17
+msgid "MATHEMATICAL_MODELLING_EXPLANATION_1b"
+msgstr "In the video below, you can listen more about building and using mathematical models in biology."
+
+# pages/model.explain.py:22
+msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
+msgstr "# An example of a mathematical model"
+
+#: pages/model.explain.py:23
+msgid "MATHEMATICAL_MODELLING_EXAMPLE"
+msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v1) dependent on the number of S and I in the total population (N) and their rate of recovery (v2) solely reliant on the I (Equation 2). They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v1, and the I will become R at a rate of v2."
+
+#: pages/model.explain.py:37
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
+msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and change in the number of people in each category, so overall, three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
+
+#: pages/model.explain.py:52
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
+msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000, we can solve our ODE system. The resulting graph shows that the population of Planet-X will eventually become completely immune."
+
+#: pages/model.explain.py:55
+msgid "CAPTION_SIR_RESULTS_PICTURE"
+msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2)."
+
+#: pages/model.explain.py:61
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
+msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example, makes it possible to be solved on pen and paper. However, we have used the programming language Python to make our lives easier. So here is how we did it:"
 
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
