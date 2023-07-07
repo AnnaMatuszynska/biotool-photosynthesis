@@ -552,7 +552,9 @@ msgstr  "The following literature provides more in-depth information on the subj
 msgid   "MEASURING_LIGHT_FLUORESCENCE"
 msgstr  "Basic principles of chlorophyll fluorescence"
 
-#: pages/1 Messmethode.py:30
+# COMPUTATIONAL MODELS
+
+#: pages/model_explain.py:10
 msgid "HEADLINE_MODEL"
 msgstr "# The Model"
 
