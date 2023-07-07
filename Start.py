@@ -47,7 +47,7 @@ if __name__ == "__main__":
             Page(
                 "pages/photosynthesis.py",
                 "Photosynthesis",
-                ":potted_plant:",
+                ":leaves:",
             ),
             Page(
                 "pages/method.py",
