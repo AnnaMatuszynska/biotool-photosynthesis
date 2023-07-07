@@ -59,14 +59,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         if version == "expert":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
-        
 
     st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
 
     st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
 
     st.markdown(text("CONSTRUCTION_EXPLANATION"))
-    st.markdown(text("RATES_1"))
+    st.markdown(text("RATES_1"), unsafe_allow_html= True)
     st.markdown(text("RATES_2"))
     st.markdown(text("RATES_3"))
     st.markdown(text("RATES_4"))
@@ -79,12 +78,12 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.latex(
             r"""
             \begin{aligned}
-                \frac{d\mathrm{PQH_2}}{dt} &= v_\mathrm{PSII} - v_\mathrm{PQ_{ox}} \\
-                \frac{d\mathrm{ATP}}{dt} &= v_\mathrm{ATPsynthase} - v_\mathrm{ATPconsumption} \\
-                \frac{d\mathrm{ATPase^{*}}}{dt} &= F k_\mathrm{actATPase} \cdot \mathrm{H}(\mathrm{PFD}) \cdot \mathrm{ATPase} - k_\mathrm{deactATPase} \cdot (1 - \mathrm{H}(\mathrm{PFD})) \cdot \mathrm{ATPase^{*}} \\
-                b_\mathrm{H}\cdot\frac{dH}{dt} &= 2 v_\mathrm{PSII} + 4 v_\mathrm{PQ_{ox}} -\frac{14}{3} v_\mathrm{ATPsynthase} - v_\mathrm{leak} \\
-                \frac{d\mathrm{PsbS}}{dt} &= -v_\mathrm{Psbs^{p}} \\
-                \frac{d\mathrm{Vx}}{dt} &= -v_\mathrm{Xcyc} \\
+                \frac{\mathrm{dPQH_2}}{\mathrm{d}t} &= v_\mathrm{PSII} - v_\mathrm{PQ_{ox}} \\
+                \frac{\mathrm{dATP}}{\mathrm{d}t} &= v_\mathrm{ATPsynthase} - v_\mathrm{ATPconsumption} \\
+                \frac{\mathrm{dATPase^{*}}}{\mathrm{d}t} &= F k_\mathrm{actATPase} \cdot \mathrm{H}(\mathrm{PFD}) \cdot \mathrm{ATPase} - k_\mathrm{deactATPase} \cdot (1 - \mathrm{H}(\mathrm{PFD})) \cdot \mathrm{ATPase^{*}} \\
+                b_\mathrm{H}\cdot\frac{\mathrm{dH}}{\mathrm{d}t} &= 2 v_\mathrm{PSII} + 4 v_\mathrm{PQ_{ox}} -\frac{14}{3} v_\mathrm{ATPsynthase} - v_\mathrm{leak} \\
+                \frac{\mathrm{dPsbS}}{\mathrm{d}t} &= -v_\mathrm{Psbs^{p}} \\
+                \frac{\mathrm{dVx}}{\mathrm{d}t} &= -v_\mathrm{Xcyc} \\
             \end{aligned}
         """
         )
@@ -99,7 +98,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     v_\mathrm{ATPsynthase} &= \mathrm{ATPase}^* \cdot k_\mathrm{ATPsynthase}\cdot \left(AP^{tot}-\mathrm{ATP} - \frac{\mathrm{ATP}}{K_\mathrm{eq,ATPsynthase}(H)} \right) \\
                     v_\mathrm{ATPactivity} &= k_\mathrm{actATPase} \cdot \mathrm{H}(\mathrm{PFD}) \cdot \mathrm{ATPase} - k_\mathrm{deactATPase} \cdot (1 - \mathrm{H}(\mathrm{PFD})) \cdot \mathrm{ATPase^{*}} \\
                     v_\mathrm{Leak} &= k_\mathrm{leak} \cdot (H - pH_{\mathrm{inv}}(\mathrm{pH_{stroma}})) \\
-                    v_\mathrm{ATP_{consumption}} &= k_\mathrm{ATPconsumption} \cdot \mathrm{ATP} \\
+                    v_\mathrm{ATPconsumption} &= k_\mathrm{ATPconsumption} \cdot \mathrm{ATP} \\
                 \end{aligned}
                 """
             )
