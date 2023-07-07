@@ -1,3 +1,4 @@
 s = Simulator(sir)
-s.initialise({"s": 0.9, "i": 0.1, "r": 0})
-res = s.simulate(t_end=100)
+s.initialise({"S": 900, "I": 100, "R": 0})
+res = s.simulate(t_end=20)
+fig, ax = s.plot(xlabel="Time / months", ylabel="Population size")

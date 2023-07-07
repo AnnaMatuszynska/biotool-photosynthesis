@@ -1,3 +1,3 @@
 sir = Model()
-sir.add_compounds(["s", "i", "r"])
-sir.add_parameters({"beta": 1, "gamma": 0.1})
+sir.add_compounds(["S", "I", "R"])
+sir.add_parameters({"alpha": 2, "beta": 0.5})

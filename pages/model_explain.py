@@ -121,9 +121,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         with open(Path(__file__).parent / "assets" / "sir_v1.py") as fp:
             sir_v1 = f"\n```python\n{fp.read()}```\n\n"
 
-        # with open(Path(__file__).parent / "assets" / "sir_v2.py") as fp:
-        #     sir_v2 = f"\n```python\n{fp.read()}```\n\n"
-
         with open(Path(__file__).parent / "assets" / "sir_v2_rate_fns.py") as fp:
             sir_v2_rate_fns = f"\n```python\n{fp.read()}```\n\n"
 
@@ -132,6 +129,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         with open(Path(__file__).parent / "assets" / "sir_v2_reactions.py") as fp:
             sir_v2_reactions = f"\n```python\n{fp.read()}```\n\n"
+
+        with open(Path(__file__).parent / "assets" / "sir_v2_simulation.py") as fp:
+            sir_v2_simulation = f"\n```python\n{fp.read()}```\n\n"
 
         with open(Path(__file__).parent / "assets" / "sird.py") as fp:
             sird = f"\n```python\n{fp.read()}```\n\n"
@@ -176,8 +176,14 @@ From this modelbase will automatically assemble a system of ODEs ready to be stu
 In order to help minimise minor oversights, modelbase will check for various common
 inconsistencies during this process and will display appropriate warnings.
 
-Now extending the SIR model to include an additional compartment for deceased individuals
-(also refered to as a SIRD model) is as easy as adding a new variable, parameter and reaction:
+You can then easily simulate and the plot the system like this
+
+{sir_v2_simulation}
+
+The real power of this approach is in how easy extending models is.
+Let's add an additional compartment for deceased individuals to the SIR model
+(also refered to as a SIRD model).
+This is as easy as adding a new variable, parameter and reaction:
 
 {sird}
 

@@ -1,2 +1,2 @@
-sir.add_reaction_from_args("infection", infection, {"s": -1, "i": 1}, ["beta", "s", "i", "r"])
-sir.add_reaction_from_args("recovery", proportional, {"i": -1, "r": 1}, ["gamma", "i"])
+sir.add_reaction_from_args("infection", infection, {"S": -1, "I": 1}, ["alpha", "S", "I", "R"])
+sir.add_reaction_from_args("recovery", recovery, {"I": -1, "R": 1}, ["beta", "I"])

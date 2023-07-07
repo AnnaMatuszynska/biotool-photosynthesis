@@ -1,6 +1,6 @@
-def infection(beta, s, i, r):
-    return beta * s * i / (s + i + r)
+def infection(alpha, s, i, r):
+    return alpha * s * i / (s + i + r)
 
 
-def proportional(k, x):
-    return k * x
+def recovery(beta, x):
+    return beta * x
