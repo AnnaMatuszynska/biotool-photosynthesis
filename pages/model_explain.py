@@ -53,8 +53,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         centered_image("pictures/SIR.png")
         st.caption(text("CAPTION_SIR_RESULTS_PICTURE"))
+        
+        if version == "simple":
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"))
 
-        st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_cont"))
+        if version == "expert":
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
+        
 
     st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
 
