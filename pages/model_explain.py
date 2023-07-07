@@ -43,9 +43,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.latex(
             r"""
             \begin{aligned}
-                \frac{\mathrm{S}}{t} &= - v_1 \\
-                \frac{\mathrm{I}}{t} &= v_1 - v_2 \\
-                \frac{\mathrm{R}}{t} &=  v_2
+                \frac{\mathrm{d}\mathrm{S}}{\mathrm{d}t} &= - v_1 \\
+                \frac{\mathrm{d}\mathrm{I}}{\mathrm{d}t} &= v_1 - v_2 \\
+                \frac{\mathrm{d}\mathrm{R}}{\mathrm{d}t} &=  v_2
             \end{aligned}
             """
         )
