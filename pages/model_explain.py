@@ -29,8 +29,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.latex(
             r"""
             \begin{aligned}
-                v_1 &= \alpha \cdot \frac{\mathrm{S}\cdot \mathrm{I}}{\mathrm{N}} \\
-                v_2 &= \beta \cdot \mathrm{I} \\
+                v_1 &= \beta \cdot \frac{\mathrm{S}\cdot \mathrm{I}}{\mathrm{N}} \\
+                v_2 &= \gamma \cdot \mathrm{I} \\
             \end{aligned}
             """
         )
