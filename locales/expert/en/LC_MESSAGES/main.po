@@ -562,15 +562,15 @@ msgstr "# Mathematical models"
 msgid "MATHEMATICAL_MODELLING_EXPLANATION_1"
 msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never the precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
 
-# pages/model_explain.py:15
+#: pages/model_explain.py:15
 msgid "CAPTION_MODELLING_PICTURE"
 msgstr "The cycle of modeling. The developer often needs to go through several iterations to get from an initial problem to a curated mathematical model."
 
-# pages/model.explain.py:17
+#: pages/model.explain.py:17
 msgid "MATHEMATICAL_MODELLING_EXPLANATION_1b"
 msgstr "In the video below, you can listen more about building and using mathematical models in biology."
 
-# pages/model.explain.py:22
+#: pages/model.explain.py:22
 msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr "# An example of a mathematical model"
 
@@ -584,7 +584,7 @@ msgstr "With this scheme, you have already successfully modeled your problem; yo
 
 #: pages/model.explain.py:52
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
-msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000, we can solve our ODE system. The resulting graph shows that the population of Planet-X will eventually become completely immune."
+msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000, we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
 
 #: pages/model.explain.py:55
 msgid "CAPTION_SIR_RESULTS_PICTURE"
