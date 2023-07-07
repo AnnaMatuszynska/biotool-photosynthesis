@@ -11,7 +11,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
 
-    st.image(Image.open("pictures/Modeling_scheme_eng.png"))
+    centered_image("pictures/Modeling_scheme_eng.png")
     st.caption(text("CAPTION_MODELLING_PICTURE"))
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1b"))
