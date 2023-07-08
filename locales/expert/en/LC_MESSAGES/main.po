@@ -626,12 +626,12 @@ msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 msgid "RATES_6"
 msgstr "6) the fraction of active ATPase enzyme (ATPase$^{*}$)."
 
-#: Anna's explanation of the model
+#: pages/model.explain.py:117
 msgid "HEADLINE_IMPLEMENTATION"
 msgstr "### Implementation"
 
 
-#: Anna's explanation of the model
+#: pages/model.explain.py:119
 msgid "IMPLEMENTATION_DESCRIPTION"
 msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
         language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
