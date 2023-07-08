@@ -175,47 +175,43 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         with st.expander(text("SIR_IMPLEMENTATION_MODELBASE")):
             
             st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_1"))
-        st.markdown(
-            f"""
 
+            st.markdown(f"{sir_v2_rate_fns}")
 
-First, we are going to factor out the rate functions `infection` and `recovery` as
-plain Python functions.
+            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_2"))
 
-{sir_v2_rate_fns}
+            st.markdown(f"{sir_v2_model}")
 
-Next, we can build the model.
-For this we supply all our system variables using `add_compounds`
-and parameters as a dictionary using `add_parameters`.
+            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_3"))
 
-{sir_v2_model}
+            st.markdown(f"{sir_v2_reactions}")
 
-Lastly, we add the transitions using `add_reaction_from_args`, supplying
-- a name for the transition
-- a reference to the rate function
-- stoichiometries, encoding how the rate affects the system variables
-- the arguments for the rate function
+            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_4"))
 
-{sir_v2_reactions}
+            col1, col2 = st.columns(spec = 2, gap = "small")
 
-From this modelbase will automatically assemble a system of ODEs ready to be studied.
-In order to help minimise minor oversights, modelbase will check for various common
-inconsistencies during this process and will display appropriate warnings.
+            with col1:
+                st.markdown(f"{sir_v2_simulation}")
 
-You can then easily simulate and the plot the system like this
+            with col2:
+                centered_image("pictures/SIR_modelbase.png")
 
-{sir_v2_simulation}
+                st.write(
 
-The real power of this approach is in how easy extending models is.
-Let's add an additional compartment for deceased individuals to the SIR model
-(also refered to as a SIRD model).
-This is as easy as adding a new variable, parameter and reaction:
+                    """<style>
+                    [data-testid="stHorizontalBlock"] {
+                        align-items: center;
+                    }
+                    </style>
+                    """,
+                    unsafe_allow_html=True
+                )
 
-{sird}
+            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_5"))
 
-which would have been a lot more cumbersome with the manual approach.
-            """
-        )
+            st.markdown(f"{sird}")
+
+            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_6"))
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
