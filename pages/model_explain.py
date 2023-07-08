@@ -65,12 +65,12 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
 
     st.markdown(text("CONSTRUCTION_EXPLANATION"))
-    st.markdown(text("RATES_1"), unsafe_allow_html= True)
+    st.markdown(text("RATES_1"), unsafe_allow_html = True)
     st.markdown(text("RATES_2"))
     st.markdown(text("RATES_3"))
     st.markdown(text("RATES_4"))
     st.markdown(text("RATES_5"))
-    st.markdown(text("RATES_6"))
+    st.markdown(text("RATES_6"), unsafe_allow_html = True)
 
     if version == "expert":
         st.markdown(text("HEADLINE_MODEL_EQUATIONS"))
@@ -118,7 +118,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
 
-    if version == "Simple":
+    if version == "simple":
         st.markdown(text("IMPLEMENTATION_TO_EXPERT"))
 
     if version == "expert":
