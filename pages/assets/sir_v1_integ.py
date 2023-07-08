@@ -1,4 +1,6 @@
 from scipy.integrate import solve_ivp
+import matplotlib.pyplot as plt
+from cycler import cycler
 
 
 def sir(t, y, alpha, beta):
@@ -14,7 +16,9 @@ def sir(t, y, alpha, beta):
 
 res = solve_ivp(
     sir,
-    t_span=(0, 100),
+    t_span=(0, 20),
     y0=(900, 100, 0),  # needs to match s, i, r unpacking order
     args=(2, 0.5),  # needs to match fn argument order
 )
+
+
