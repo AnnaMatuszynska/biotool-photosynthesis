@@ -433,7 +433,7 @@ In the bottom panel you see results of the PAM experiments. Take a good look, ca
 msgid	"CAPTION_PAM"
 msgstr	"Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
 
-# COMPUTATIONAL MODELS
+################################### COMPUTATIONAL MODELS #####################################
 
 #: pages/model_explain.py:10
 msgid "HEADLINE_MODEL"
@@ -479,61 +479,50 @@ msgstr "We have now successfully implemented and used a model of epidemiology. S
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
 msgstr "# Models of photosynthesis"
 
-msgid "INTRO_MODEL"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more."
-
-
-#: Anna's explanation of the model
+#: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
 msgstr "### Model construction"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:67
 msgid "CONSTRUCTION_EXPLANATION"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays a vital role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, We have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ. So instead of modeling the whole plant, or even the entire chloroplast, we applied a cycle of reduction (see figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
+msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that are directly affected by or regulate the extent of NPQ. So instead of modeling the whole plant or chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:68
 msgid "RATES_1"
 msgstr "1) the reduced fraction of the plastoquinone pool (PQH<sub>2</sub>)"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:69
 msgid "RATES_2"
 msgstr "2) the stromal concentration of ATP (ATP),"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:70
 msgid "RATES_3"
 msgstr "3) the luminal proton concentration (H),"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:71
 msgid "RATES_4"
 msgstr "4) the fraction of nonprotonated proteins (PsbS),"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:72
 msgid "RATES_5"
 msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:73
 msgid "RATES_6"
-msgstr "6) the fraction of active ATPase enzyme (ATPase$^{*}$)."
+msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>*</sup>)."
 
-#: Anna's explanation of the model
-msgid "HEADLINE_MODEL_EQUATIONS"
-msgstr "### Mathematical equations"
-
-#: Anna's explanation of the model
+#: pages/model_explain.py:117
 msgid "HEADLINE_IMPLEMENTATION"
 msgstr "### Implementation"
 
+#: pages/model_explain.py:119
+msgid "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
 
-#: Anna's explanation of the model
-msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "Das mathematische Modell der photosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
-        (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differentialgleichungen, Reaktionsraten, dem \
-        Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: \
-        [hier](www.github.com/QTB-HHU/npqmodel)."
-
-#: Anna's explanation of the model
+#: pages/model_explain.py:122
 msgid "IMPLEMENTATION_TO_EXPERT"
-msgstr "Um die mathematische Beschreibung zu sehen, wechseln Sie in den EXPERT-Modus."
+msgstr "To see the mathematical implementation of the model, switch to the **Advanced** mode"
+
+##############################################################################################
 
 #: Lisa's introduction
 msgid "HEADLINE_CLIMATE"

@@ -566,113 +566,146 @@ msgstr "Mathematical modeling involves creating mathematical models for use in v
 msgid "CAPTION_MODELLING_PICTURE"
 msgstr "The cycle of modeling. The developer often needs to go through several iterations to get from an initial problem to a curated mathematical model."
 
-#: pages/model.explain.py:17
+#: pages/model_explain.py:17
 msgid "MATHEMATICAL_MODELLING_EXPLANATION_1b"
 msgstr "In the video below, you can listen more about building and using mathematical models in biology."
 
-#: pages/model.explain.py:22
+#: pages/model_explain.py:22
 msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr "# An example of a mathematical model"
 
-#: pages/model.explain.py:23
+#: pages/model_explain.py:23
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v1) dependent on the number of S and I in the total population (N) and their rate of recovery (v2) solely reliant on the I (Equation 2). They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v1, and the I will become R at a rate of v2."
 
-#: pages/model.explain.py:37
+#: pages/model_explain.py:37
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
 msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and change in the number of people in each category, so overall, three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 
-#: pages/model.explain.py:52
+#: pages/model_explain.py:52
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
 msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000, we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
 
-#: pages/model.explain.py:55
+#: pages/model_explain.py:55
 msgid "CAPTION_SIR_RESULTS_PICTURE"
 msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2)."
 
-#: pages/model.explain.py:61
+#: pages\model_explain.py:61
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
 msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example, makes it possible to be solved on pen and paper. However, we have used the programming language Python to make our lives easier. You can find it down below in the **Implementation** section."
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:63
+msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
+msgstr "# Models of photosynthesis"
+
+#: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
 msgstr "### Model construction"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:67
 msgid "CONSTRUCTION_EXPLANATION"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more. Although each play an important role in the overall process, for the purpose of the light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
+msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that are directly affected by or regulate the extent of NPQ. So instead of modeling the whole plant or chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:68
 msgid "RATES_1"
 msgstr "1) the reduced fraction of the plastoquinone pool (PQH<sub>2</sub>)"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:69
 msgid "RATES_2"
 msgstr "2) the stromal concentration of ATP (ATP),"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:70
 msgid "RATES_3"
 msgstr "3) the luminal proton concentration (H),"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:71
 msgid "RATES_4"
 msgstr "4) the fraction of nonprotonated proteins (PsbS),"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:72
 msgid "RATES_5"
 msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:73
 msgid "RATES_6"
-msgstr "6) the fraction of active ATPase enzyme (ATPase$^{*}$)."
+msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>*</sup>)."
 
-#: pages/model.explain.py:117
-msgid "HEADLINE_IMPLEMENTATION"
-msgstr "### Implementation"
-
-
-#: pages/model.explain.py:119
-msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
-
-#: pages/model.explain.py:143
-msgid "SIR_IMPLEMENTATION_1"
-msgstr "The model has been implemented using the modelbase package, which allows for a modular construction of ODE models. To see why this is beneficial, compare the manually constructed SIR model to the modelbase version in the Dropdown boxes below:"
-
-#: pages/model.explain.py:145
-msgid "SIR_IMPLEMENTATION_MANUAL"
-msgstr "Manual implementation of the SIR model"
-
-#: pages/model.explain.py:149
-msgid "SIR_IMPLEMENTATION_MANUAL_1"
-msgstr "Great care needs to be taken in order for the `y0` vector to align with the unpacked variable names, as well as the respective differential equations. The same holds true for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
-
-#: pages/model.explain.py:158
-msgid "SIR_IMPLEMENTATION_MANUAL_2"
-msgstr "Clearly this way of writing models is very error-prone and hard to modularise. That's why we can improve on the situation by using `modelbase`."
-
-#: pages/model.explain.py:177
-msgid "SIR_IMPLEMENTATION_MODELBASE_1"
-msgstr "First, we are going to factor out the rate functions `infection` and `recovery` as plain Python functions."
-
-#: Anna's explanation of the model
+#: pages/model_explain.py:76
 msgid "HEADLINE_MODEL_EQUATIONS"
 msgstr "### Mathematical equations"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:77
 msgid "MODEL_EQUATIONS_INTRODUCTION"
 msgstr "The six coupled ordinary differential equations (ODE)"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:91
 msgid "REACTION_RATES"
 msgstr "Reaction rates"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:92
 msgid "RATES_DYNAMIC"
 msgstr "###### Reaction rates used in the dynamic description of the system"
 
-#: Anna's explanation of the model
+#: pages/model_explain.py:106
 msgid "RATE_QUENCHER"
 msgstr "###### Reaction rates to calculate the quencher activity and the overall rate"
+
+#: pages/model_explain.py:117
+msgid "HEADLINE_IMPLEMENTATION"
+msgstr "### Implementation"
+
+#: pages/model_explain.py:119
+msgid "IMPLEMENTATION_DESCRIPTION"
+msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+
+#: pages/model_explain.py:143
+msgid "SIR_IMPLEMENTATION_1"
+msgstr "The model has been implemented using the modelbase package, which allows for a modular construction of ODE models. To see why this is beneficial, compare the manually constructed SIR model to the modelbase version in the Dropdown boxes below:"
+
+#: pages/model_explain.py:145
+msgid "SIR_IMPLEMENTATION_MANUAL"
+msgstr "Manual implementation of the SIR model"
+
+#: pages/model_explain.py:149
+msgid "SIR_IMPLEMENTATION_MANUAL_1"
+msgstr "Great care needs to be taken in order for the `y0` vector to align with the unpacked variable names, as well as the respective differential equations. The same holds true for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
+
+#: pages/model_explain.py:158
+msgid "SIR_IMPLEMENTATION_MANUAL_2"
+msgstr "Clearly this way of writing models is very error-prone and hard to modularise. That's why we can improve on the situation by using `modelbase`."
+
+#: pages/model_explain.py:175
+msgid "SIR_IMPLEMENTATION_MODELBASE"
+msgstr "Modelbase implementation of the SIR model"
+
+#: pages/model_explain.py:177
+msgid "SIR_IMPLEMENTATION_MODELBASE_1"
+msgstr "First, we are going to factor out the rate functions `infection` and `recovery` as plain Python functions."
+
+#: pages/model_explain.py:181
+msgid "SIR_IMPLEMENTATION_MODELBASE_2"
+msgstr "Next, we can build the model. For this we supply all our system variables using `add_compounds` and parameters as a dictionary using `add_parameters`"
+
+#: pages/model_explain.py:181
+msgid "SIR_IMPLEMENTATION_MODELBASE_3"
+msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying:\n"
+"1. a name for the transition\n"
+"2. a reference to the rate function\n"
+"3. stoichiometries, encoding how the rate affects the system variables\n"
+"4. the arguments for the rate function"
+
+#: pages/model_explain.py:189
+msgid "SIR_IMPLEMENTATION_MODELBASE_4"
+msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimise minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
+"\n"
+"You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
+
+#: pages/model_explain.py:210
+msgid "SIR_IMPLEMENTATION_MODELBASE_5"
+msgstr "The approach's strength lies in its simplicity of extending models. For instance, we can add a compartment for deceased individuals to the SIR model, also known as the SIRD model, by introducing a new variable, parameter, and reaction:"
+
+#: pages/model_explain.py:214
+msgid "SIR_IMPLEMENTATION_MODELBASE_6"
+msgstr "Which would have been a lot more cumbersome with the manual approach."
 
 
