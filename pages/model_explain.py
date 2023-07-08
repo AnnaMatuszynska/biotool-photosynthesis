@@ -51,7 +51,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         )
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
 
-        centered_image("pictures/SIR.png")
+        centered_image("pictures/SIR_modelbase.png")
         st.caption(text("CAPTION_SIR_RESULTS_PICTURE"))
         
         if version == "simple":
@@ -122,8 +122,11 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("IMPLEMENTATION_TO_EXPERT"))
 
     if version == "expert":
-        with open(Path(__file__).parent / "assets" / "sir_v1.py") as fp:
-            sir_v1 = f"\n```python\n{fp.read()}```\n\n"
+        with open(Path(__file__).parent / "assets" / "sir_v1_integ.py") as fp:
+            sir_v1_integ = f"\n```python\n{fp.read()}```\n\n"
+
+        with open(Path(__file__).parent / "assets" / "sir_v1_plot.py") as fp:
+            sir_v1_plot = f"\n```python\n{fp.read()}```\n\n"
 
         with open(Path(__file__).parent / "assets" / "sir_v2_rate_fns.py") as fp:
             sir_v2_rate_fns = f"\n```python\n{fp.read()}```\n\n"
@@ -139,23 +142,42 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         with open(Path(__file__).parent / "assets" / "sird.py") as fp:
             sird = f"\n```python\n{fp.read()}```\n\n"
+        
+        st.markdown(text("SIR_IMPLEMENTATION_1"))
 
+        with st.expander(text("SIR_IMPLEMENTATION_MANUAL")):
+
+            st.markdown(f"{sir_v1_integ}")
+
+            st.markdown(text("SIR_IMPLEMENTATION_MANUAL_1"))
+
+            col1, col2 = st.columns(spec = 2, gap = "small")
+
+            with col1:
+                st.markdown(f"{sir_v1_plot}")
+
+            with col2:
+                centered_image("pictures/SIR_manual.png")
+
+                st.write(
+
+                    """<style>
+                    [data-testid="stHorizontalBlock"] {
+                        align-items: center;
+                    }
+                    </style>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            st.markdown(text("SIR_IMPLEMENTATION_MANUAL_2"))
+
+        with st.expander(text("SIR_IMPLEMENTATION_MODELBASE")):
+            
+            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_1"))
         st.markdown(
             f"""
-The model has been implemented using the modelbase package,
-which allows for a modular construction of ODE models.
-To see why this is beneficial, take a look at this manually
-constructed SIR model.
 
-{sir_v1}
-
-Great care needs to be taken in order for the `y0` vector to align
-with the unpacked variable names, as well as the respective differential
-equations. The same holds true for the order of the parameters `beta` and
-`gamma`.
-
-Clearly this way of writing models is very error-prone and hard to modularise.
-Let's improve on the situation using `modelbase`.
 
 First, we are going to factor out the rate functions `infection` and `recovery` as
 plain Python functions.
