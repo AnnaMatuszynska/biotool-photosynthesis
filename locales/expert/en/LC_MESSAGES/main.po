@@ -633,9 +633,27 @@ msgstr "### Implementation"
 
 #: pages/model.explain.py:119
 msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
-        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
-        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+
+#: pages/model.explain.py:143
+msgid "SIR_IMPLEMENTATION_1"
+msgstr "The model has been implemented using the modelbase package, which allows for a modular construction of ODE models. To see why this is beneficial, compare the manually constructed SIR model to the modelbase version in the Dropdown boxes below:"
+
+#: pages/model.explain.py:145
+msgid "SIR_IMPLEMENTATION_MANUAL"
+msgstr "Manual implementation of the SIR model"
+
+#: pages/model.explain.py:149
+msgid "SIR_IMPLEMENTATION_MANUAL_1"
+msgstr "Great care needs to be taken in order for the `y0` vector to align with the unpacked variable names, as well as the respective differential equations. The same holds true for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
+
+#: pages/model.explain.py:158
+msgid "SIR_IMPLEMENTATION_MANUAL_2"
+msgstr "Clearly this way of writing models is very error-prone and hard to modularise. That's why we can improve on the situation by using `modelbase`."
+
+#: pages/model.explain.py:177
+msgid "SIR_IMPLEMENTATION_MODELBASE_1"
+msgstr "First, we are going to factor out the rate functions `infection` and `recovery` as plain Python functions."
 
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_EQUATIONS"
