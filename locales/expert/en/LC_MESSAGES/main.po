@@ -592,7 +592,7 @@ msgstr "The change in the population of Planet-X using the SIR model taken from 
 
 #: pages/model.explain.py:61
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
-msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example, makes it possible to be solved on pen and paper. However, we have used the programming language Python to make our lives easier. You can find down below in the **Implementation** section."
+msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example, makes it possible to be solved on pen and paper. However, we have used the programming language Python to make our lives easier. You can find it down below in the **Implementation** section."
 
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
