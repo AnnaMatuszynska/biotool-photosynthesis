@@ -552,7 +552,7 @@ msgstr  "The following literature provides more in-depth information on the subj
 msgid   "MEASURING_LIGHT_FLUORESCENCE"
 msgstr  "Basic principles of chlorophyll fluorescence"
 
-# COMPUTATIONAL MODELS
+################################### COMPUTATIONAL MODELS #####################################
 
 #: pages/model_explain.py:10
 msgid "HEADLINE_MODEL"
@@ -708,4 +708,4 @@ msgstr "The approach's strength lies in its simplicity of extending models. For 
 msgid "SIR_IMPLEMENTATION_MODELBASE_6"
 msgstr "Which would have been a lot more cumbersome with the manual approach."
 
-
+###############################################################################################
