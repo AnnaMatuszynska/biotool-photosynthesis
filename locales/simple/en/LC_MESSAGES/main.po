@@ -516,7 +516,8 @@ msgid "HEADLINE_IMPLEMENTATION"
 msgstr "### Implementation"
 
 #: pages/model_explain.py:119
-msgid "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+msgid "IMPLEMENTATION_DESCRIPTION"
+msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
 
 #: pages/model_explain.py:122
 msgid "IMPLEMENTATION_TO_EXPERT"
