@@ -31,7 +31,6 @@ def make_page(text: Callable[[str], str],language: str, version: str) -> None:
 
     st.markdown(text("HEADLINE_PHOTOSYNTHESIS"))
     st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_1"))
-
     st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_2"))
 
     if language == "German":
@@ -45,6 +44,7 @@ def make_page(text: Callable[[str], str],language: str, version: str) -> None:
             caption=text("CAPTION_FOTOSYNTHESE_PICTURE"),
         )
 
+    st.markdown(text("HEADLINE_NUTRIENTS"))
     st.markdown(text("NUTRIENTS_EXPLANATION"))
 
     st.image(
