@@ -3,7 +3,7 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import get_localised_text, make_prev_next_button
+from utils import get_localised_text, make_prev_next_button, centered_image
 
 
 def make_page(text: Callable[[str], str],language: str, version: str) -> None:
@@ -20,14 +20,14 @@ def make_page(text: Callable[[str], str],language: str, version: str) -> None:
         col1, col2 = st.columns(2)
         with col1:
             if language == "German":
-                st.image("pictures/pflanzen_grundlagen.jpeg")
+                centered_image("pictures/pflanzen_grundlagen.jpeg")
             if language == "English":
-                st.image("pictures/plants_basics.jpeg")
+                centered_image("pictures/plants_basics.jpeg")
         with col2:
             if language == "German":
-                st.image("pictures/pflanzen_stress.jpeg")
+                centered_image("pictures/pflanzen_stress.jpeg")
             if language == "English":
-                st.image("pictures/plants_stress.jpeg")
+                centered_image("pictures/plants_stress.jpeg")
 
     st.markdown(text("HEADLINE_PHOTOSYNTHESIS"))
     st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_1"))
