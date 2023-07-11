@@ -33,6 +33,7 @@ def make_page(text: Callable[[str], str],language: str, version: str) -> None:
     st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_1"))
 
     st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_2"))
+
     if language == "German":
         st.image(
             Image.open("pictures/Fotosynthese.jpg"),
@@ -45,6 +46,7 @@ def make_page(text: Callable[[str], str],language: str, version: str) -> None:
         )
 
     st.markdown(text("NUTRIENTS_EXPLANATION"))
+
     st.image(
         Image.open("pictures/Stomata1.jpg"),
         caption=text("CAPTION_STOMATA_PICTURE"),
@@ -53,6 +55,7 @@ def make_page(text: Callable[[str], str],language: str, version: str) -> None:
 
     st.markdown(text("HEADLINE_PHOTOSYNTHESIS_LOCATION"))
     st.markdown(text("PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
+
     if language == "German":
         st.image(
             Image.open("pictures/Fotosynthese-Apparat.jpg"),
@@ -81,12 +84,7 @@ def make_page(text: Callable[[str], str],language: str, version: str) -> None:
             st.image(
                 "pictures/Arabidopsis.jpg", caption=text("CAPTION_THAIANA_PICTURE"), width=400
             )  # Add Caption
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_1"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"), unsafe_allow_html=True)
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION_2"), unsafe_allow_html=True)
+        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION"), unsafe_allow_html=True)
 
 
 if __name__ == "__main__":

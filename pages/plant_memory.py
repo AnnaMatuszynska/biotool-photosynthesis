@@ -340,13 +340,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                 make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right)
 
     with st.expander(text("CONCLUSION")):
-        st.markdown(text("BEGIN_OF_CONCLUTION"))
-
-        st.markdown(text("CONCLUTION_POINT_1"))
-        st.markdown(text("CONCLUTION_POINT_2"))
-        st.markdown(text("CONCLUTION_POINT_3"))
-
-        st.markdown(text("END_OF_CONCLUTION"))
+        st.markdown(text("CONCLUSION_TEXT"))
 
 
 if __name__ == "__main__":

@@ -18,9 +18,11 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.caption(text("CAPTION_ABB1"))
 
     with st.expander(text("GROWING_PLANTS_1"), expanded=True):
+
         st.markdown(text("INTRODUCTION_GLOWING"), unsafe_allow_html=True)
         st.markdown(text("PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
         st.markdown(text("INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
+
         _, col2, _ = st.columns(3)
         with col2:
             st.video("https://youtube.com/g3uTNWsDEdo")
@@ -38,12 +40,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             Image.open("pictures/PAMbasics.png"),
             caption=text("CAPTION_ABB2"),
         )
-
-    with st.expander(text("SATURATING_PULSES")):
-        st.markdown(text("EXPLANATION_ATTEMPTS"))
+        
     st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
 
-    if version == "Expert":
+    if version == "expert":
         with st.expander(text("SATURATING_PULSES")):
             st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
 
