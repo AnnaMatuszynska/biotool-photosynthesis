@@ -181,33 +181,26 @@ msgstr "That is correct! Only when the steady state lasts for a longer time can 
 
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
-msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
+msgstr "# Fotosynteza *in silico*: interaktywny panel do badania fotosyntezy przy użyciu modelu obliczeniowego i symulacji komputerowych"
 
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
-msgstr "Language"
+msgstr "Język"
 
 #: Intro by Anna
 msgid "INTRO"
-msgstr "This is a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen \
-        University, Germany. Our goal is to provide a teaching tool applicable to the needs of XXI-century students. We \
-        want to show how computational modeling supports the current research in increasing our understanding of how the \
-        world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably \
-        the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening \
-        about the process of photosynthesis."
+msgstr "To jest narzędzie do nauczania biologii, projekt uruchomiony przez **Computational Life Science Lab** na Politechnice w Akwizgranie, w Niemczech. Naszym celem jest dostarczenie narzędzia dydaktycznego dostosowanego do potrzeb uczniów XXI wieku. Naszym celem jest pokazać w jaki sposób modelowanie komputerowe wspiera obecne badania naukowe zwiększając nasz stopień zrozumienia otaczającego nas świata. Wybraliśmy fotosyntezę jako proces, aby to zademonstrować. W końcu fotosynteza jest prawdopodobnie najważniejszym procesem na Ziemi! Proponujemy, żeby Twoja przygoda z tą stroną zaczęła się od obejrzenia krótkiego filmiku o fotosyntezie."
 
 
 #: EINFÜHRUNG.py:24
 msgid "HEADLINE_USAGE"
-msgstr "#### How to use this website"
+msgstr "#### Jak używać tej strony?"
 
 
 
 #: EINFÜHRUNG.py:24
 msgid "USAGE"
-msgstr "We aimed at both curious **newcomers** and more **advanced** learners. At any point of using this website you can choose \
-        which version you want to use by clicking on the left side button: Version and selecting from the drop-down list \
-        *Simple* or *Advanced*."
+msgstr "Naszym celem jest dotrzeć zarówno do **początkujących** jak i bardziej **zaawansowanych** czytelników. Dlatego też w dowolnym momencie użytkowania tej strony, używając panelu po lewej stronie, możesz zmienić wersję wzbierając z listy **Początkujący** lub **Zaawansowany**."
 
 
 #: EINFÜHRUNG.py:26
