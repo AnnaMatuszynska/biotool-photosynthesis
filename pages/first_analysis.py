@@ -305,7 +305,7 @@ def make_quiz(text: Callable[[str], str]) -> None:
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    text = get_localised_text("main", version, language)
+    text = get_localised_text(version, language)
     make_page(text)
     st.image(
         Image.open("pictures/slider-default-value.png"),

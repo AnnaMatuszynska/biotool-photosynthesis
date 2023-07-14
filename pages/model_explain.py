@@ -53,7 +53,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         centered_image("pictures/SIR_modelbase.png")
         st.caption(text("CAPTION_SIR_RESULTS_PICTURE"))
-        
+
         if version == "simple":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"))
 
@@ -65,12 +65,12 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
 
     st.markdown(text("CONSTRUCTION_EXPLANATION"))
-    st.markdown(text("RATES_1"), unsafe_allow_html = True)
+    st.markdown(text("RATES_1"), unsafe_allow_html=True)
     st.markdown(text("RATES_2"))
     st.markdown(text("RATES_3"))
     st.markdown(text("RATES_4"))
     st.markdown(text("RATES_5"))
-    st.markdown(text("RATES_6"), unsafe_allow_html = True)
+    st.markdown(text("RATES_6"), unsafe_allow_html=True)
 
     if version == "expert":
         st.markdown(text("HEADLINE_MODEL_EQUATIONS"))
@@ -142,16 +142,15 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         with open(Path(__file__).parent / "assets" / "sird.py") as fp:
             sird = f"\n```python\n{fp.read()}```\n\n"
-        
+
         st.markdown(text("SIR_IMPLEMENTATION_1"))
 
         with st.expander(text("SIR_IMPLEMENTATION_MANUAL")):
-
             st.markdown(f"{sir_v1_integ}")
 
             st.markdown(text("SIR_IMPLEMENTATION_MANUAL_1"))
 
-            col1, col2 = st.columns(spec = 2, gap = "small")
+            col1, col2 = st.columns(spec=2, gap="small")
 
             with col1:
                 st.markdown(f"{sir_v1_plot}")
@@ -160,20 +159,18 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 centered_image("pictures/SIR_manual.png")
 
                 st.write(
-
                     """<style>
                     [data-testid="stHorizontalBlock"] {
                         align-items: center;
                     }
                     </style>
                     """,
-                    unsafe_allow_html=True
+                    unsafe_allow_html=True,
                 )
 
             st.markdown(text("SIR_IMPLEMENTATION_MANUAL_2"))
 
         with st.expander(text("SIR_IMPLEMENTATION_MODELBASE")):
-            
             st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_1"))
 
             st.markdown(f"{sir_v2_rate_fns}")
@@ -188,7 +185,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
             st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_4"))
 
-            col1, col2 = st.columns(spec = 2, gap = "small")
+            col1, col2 = st.columns(spec=2, gap="small")
 
             with col1:
                 st.markdown(f"{sir_v2_simulation}")
@@ -197,14 +194,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 centered_image("pictures/SIR_modelbase.png")
 
                 st.write(
-
                     """<style>
                     [data-testid="stHorizontalBlock"] {
                         align-items: center;
                     }
                     </style>
                     """,
-                    unsafe_allow_html=True
+                    unsafe_allow_html=True,
                 )
 
             st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_5"))
@@ -225,7 +221,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    text = get_localised_text("main", version, language)
+    text = get_localised_text(version, language)
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("measuring method", "experiments in silico")

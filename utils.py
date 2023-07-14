@@ -8,13 +8,13 @@ from streamlit_extras.switch_page_button import switch_page
 from typing import Callable
 
 
-def get_localised_text(domain: str, version: str, language: str) -> Callable[[str], str]:
+def get_localised_text(version: str, language: str) -> Callable[[str], str]:
+    version = version.lower()
     try:
         localizator = gettext.translation(
-            domain, localedir=os.path.join("locales", version), languages=[language]
+            "main", localedir=os.path.join("locales", version), languages=[language]
         )
         localizator.install()
-        getLogger().warning(f"Using locale {language} and version {version}")
         return localizator.gettext
     except:
         getLogger().warning(f"Could not find locale for language {language} and version {version}")
