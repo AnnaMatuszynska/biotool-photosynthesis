@@ -10,7 +10,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_CLIMATE"))
     st.markdown(text("INTRODUCTION_CLIMATE_CHANGE"))
 
-    if version == "expert":
+    if version == "Advanced":
         st.markdown(text("POINT_1"))
         st.markdown(text("POINT_2"))
         st.markdown(text("POINT_3"))

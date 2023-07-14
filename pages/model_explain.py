@@ -55,10 +55,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         centered_image("pictures/SIR_modelbase.png")
         st.caption(text("CAPTION_SIR_RESULTS_PICTURE"))
 
-        if version == "simple":
+        if version == "Simple":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"))
 
-        if version == "expert":
+        if version == "Advanced":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
 
     st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
@@ -70,7 +70,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         st.markdown(text("FVCB_1"))
 
-        if version == "expert":
+        if version == "Advanced":
             st.latex(
                 r"""
                 \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
@@ -96,7 +96,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("RATES_5"))
     st.markdown(text("RATES_6"), unsafe_allow_html=True)
 
-    if version == "expert":
+    if version == "Advanced":
         st.markdown(text("HEADLINE_MODEL_EQUATIONS"))
         st.markdown(text("MODEL_EQUATIONS_INTRODUCTION"))
         st.latex(
@@ -142,10 +142,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
 
-    if version == "simple":
+    if version == "Simple":
         st.markdown(text("IMPLEMENTATION_TO_EXPERT"))
 
-    if version == "expert":
+    if version == "Advanced":
         with open(Path(__file__).parent / "assets" / "sir_v1_integ.py") as fp:
             sir_v1_integ = f"\n```python\n{fp.read()}```\n\n"
 
@@ -236,13 +236,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
-        if version == "simple":
+        if version == "Simple":
             """
             - Von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
             - Farquhar G D, von Caemmerer S, Berry J A (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species
             """
 
-        if version == "expert":
+        if version == "Advanced":
             """
             - Von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
             - Farquhar G D, von Caemmerer S, Berry J A (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species

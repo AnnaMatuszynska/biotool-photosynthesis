@@ -42,7 +42,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
 
-    if version == "expert":
+    if version == "Advanced":
         with st.expander(text("SATURATING_PULSES")):
             st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
 
@@ -66,14 +66,14 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
         st.markdown(text("LITERATURE_DECLARATION"), unsafe_allow_html=True)
-        if version == "expert":
+        if version == "Advanced":
             """
             - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
             """
             """
             - Nies, T. et al (2021). Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research. https://www.biorxiv.org/content/10.1101/2021.05.12.443801v1.full
             """
-        elif version == "simple":
+        elif version == "Simple":
             if language == "German":
                 """
                 - https://link.springer.com/referenceworkentry/10.1007/978-3-662-53493-9_13-1
