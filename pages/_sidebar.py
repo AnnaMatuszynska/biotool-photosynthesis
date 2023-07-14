@@ -1,29 +1,34 @@
 import streamlit as st
 from typing import cast
 
-# FIXME: this should probably be external data?
-VERSION_OPTIONS = {"simple": "Simple", "expert": "Advanced"}
+# from utils import get_localised_text
 
 
 def make_sidebar() -> tuple[str, str]:
     st.sidebar.write("## Settings :gear:")
 
-    version: str = cast(
+    # Versions selectbox
+    versions = ["Simple", "Advanced"]
+    version_to_idx = dict(zip(versions, range(len(versions))))
+    version = cast(
         str,
         st.sidebar.selectbox(
-            "⚙ Version 👩‍🎓👩🏼‍🔬",
-            VERSION_OPTIONS.keys(),
-            format_func=lambda x: VERSION_OPTIONS[x],
+            label="⚙ Version 👩‍🎓👩🏼‍🔬",
+            options=versions,
+            index=version_to_idx[st.session_state["version"]],
         ),
     )
 
     # language selectbox
-    language: str = cast(
+    languages = ["English", "German", "Polish", "French", "Spanish"]
+    language_to_idx = dict(zip(languages, range(len(languages))))
+    language = cast(
         str,
         st.sidebar.selectbox(
-            "⚙ Language 🌍💬",
-            ["English", "German", "Polish", "French", "Spanish"],
-            label_visibility="visible",
+            label="⚙ Language 🌍💬",
+            options=languages,
+            index=language_to_idx[st.session_state["language"]],
+            # label_visibility="visible",
         ),
     )
     return version, language

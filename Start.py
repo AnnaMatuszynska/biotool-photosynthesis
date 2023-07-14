@@ -28,12 +28,16 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
-
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+    version = st.session_state.setdefault("version", "Simple")
+    language = st.session_state.setdefault("language", "English")
+
     version, language = make_sidebar()
-    text = get_localised_text("main", version, language)
+    st.session_state.update({"version": version})
+    st.session_state.update({"language": language})
+    text = get_localised_text(version, language)
 
     # NOTE: this belongs with the sidebar, but works globally
     # so I'd prefer to put it here

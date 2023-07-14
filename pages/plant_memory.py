@@ -345,6 +345,6 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    _ = get_localised_text("main", version, language)
+    _ = get_localised_text(version, language)
     make_page(_, version)
     make_prev_next_button("experiments in silico", None)

@@ -18,7 +18,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.caption(text("CAPTION_ABB1"))
 
     with st.expander(text("GROWING_PLANTS_1"), expanded=True):
-
         st.markdown(text("INTRODUCTION_GLOWING"), unsafe_allow_html=True)
         st.markdown(text("PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
         st.markdown(text("INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
@@ -40,7 +39,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             Image.open("pictures/PAMbasics.png"),
             caption=text("CAPTION_ABB2"),
         )
-        
+
     st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
 
     if version == "expert":
@@ -90,7 +89,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 if __name__ == "__main__":
     version, language = make_sidebar()
-    text = get_localised_text("main", version, language)
+    text = get_localised_text(version, language)
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("photosynthesis", "computational models")
