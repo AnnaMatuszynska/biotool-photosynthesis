@@ -267,6 +267,11 @@ def make_page(text: Callable[[str], str], version: str) -> None:
         st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
     st.markdown(text("INTRODUCTION_BRAIN"))
+    
+    col1, col2, _ = st.columns(3)
+    with col2:
+        st.image("pictures/memory_protocol.png")
+
 
     if version == "simple":
         with st.expander(text("TASK_1")):

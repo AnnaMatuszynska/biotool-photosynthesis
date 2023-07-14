@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR ORGANIZATION
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# PHOTOSYNTHESIS IN SILICO.
+# Copyright (C) 2023 Computational Life Science RWTH Aachen
+# Sarah Philipps et al., 2023.
 #
 msgid ""
 msgstr ""
@@ -61,11 +61,11 @@ msgstr "#### How to use this website"
 
 #: Start.py:16
 msgid "USAGE"
-msgstr "We aimed at both curious **newcomers** and more **advanced** learners. At any point of using this website you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *Simple* or *Advanced*."
+msgstr "We aimed at both curious **newcomers** and more :blue[**advanced**] learners. At any point of using this website you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *Simple* or :blue[*Advanced*]."
 
 #: Start.py:17
 msgid "ADVANCED_USE"
-msgstr "If you do decide to choose the *Advanced* version, you will not only learn about photosynthesis as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
+msgstr "If you do decide to choose the :blue[Advanced] version, you will not only learn about photosynthesis as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
 
 #: Start.py:18
 msgid "DROP_BOX_INTRO"
@@ -300,7 +300,7 @@ msgstr "The change in the population of Planet-X using the SIR model taken from 
 
 #: pages/model.explain.py:58
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
-msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. If you want to learn how to implement such a model computationally using Python as a programming language, please switch to the **Advanced** mode."
+msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. If you want to learn how to implement such a model computationally using Python as a programming language, please switch to the :blue[Advanced] mode."
 
 #: pages/model_explain.py:63
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
@@ -312,11 +312,11 @@ msgstr "### The Farquhar, von Caemmerer and Berry model"
 
 #: pages/model_explain.py:71
 msgid "FVCB_1"
-msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C3 plants by calculating their carbon assimilation (A). It was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry [2] and has since undergone many different variations and updates. The most basic version uses four equations, that each depicts the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is very important as it gives life to the model, and by varying these, you vary the results of the model. To see these equations, please use the **Advanced** mode."
+msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C3 plants by calculating their carbon assimilation (A). C3 you may ask? Actually, plants can perform their photosynthesis in a slightly different manner. Check the box below if you want to know more about the different forms of photosynthesis. The model was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry [2] and has since undergone many different variations and updates. The most basic version uses four equations, that each depicts the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is very important as it gives life to the model, and by varying these, you vary the results of the model. To see these equations, please use the :blue[Advanced] mode."
 
 #: pages/model_explain.py:87
 msgid "FVCB_2"
-msgstr "This model is widely popular among scientists, as it is fairly simple and uses no complicated mathematical methods like integrations. As you may have guessed, this type of model is not the same as the SIR model we explained earlier. It doesn’t use any ODEs and therefore cannot show the change in time. It only shows the A specific for the parameter values chosen and therefore depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still regarded as one of the best due to its simplicity."
+msgstr "This model is widely popular among scientists, as despite its simplicity is quite accurate in capturing the rate of carbon assimilation. As you may have guessed, this type of model is not the same as the SIR model we explained earlier. It doesn’t use any ODEs and therefore cannot show the change in time. It only shows the A specific for the parameter values chosen and therefore depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still regarded as one of the best due to its simplicity."
 
 #: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
@@ -356,11 +356,11 @@ msgstr "### Implementation"
 
 #: pages/model_explain.py:119
 msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. It is our in-house developed package that ease construction of biological models, in particular models of biochemical networks. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel) from where you can download it and further investigate."
 
 #: pages/model_explain.py:122
 msgid "IMPLEMENTATION_TO_EXPERT"
-msgstr "To see the mathematical implementation of the model, switch to the **Advanced** mode"
+msgstr "To see the mathematical implementation of the model, including the differential equations derived to describe the dynamics of photoprotection, switch to the :blue[Advanced] mode."
 
 ##############################################################################################
 
@@ -372,11 +372,11 @@ msgstr "Measuring phase"
 
 #: pages/first_analysis.py:177
 msgid "HEADLINE_ANALYSE"
-msgstr "# The data analysis"
+msgstr "# Experiments **in silico**"
 
 #: pages/first_analysis.py:178
 msgid "INTRODUKTION"
-msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors."
+msgstr "Now that you have been introduced to the experimental method of measuring photosynthetic fluorescence you probably would like to take such measurements yourself. And you can! On this site you we will carry out measurements with the model, meaning **in silico**, to estimate the influence of the **abiotic** (meaning physical rather than biological, like light intensity) influence factors. To make your work as easy as possible, all you need to run the model is to provide the light intensity for which you want to run your experiment, length of this experiment (in minutes) and what is the time in between the saturating pulses of light. You can do it using sliders."
 
 #: pages/first_analysis.py:182 pages/plant_memory.py:272
 msgid "TASK_1"
@@ -557,7 +557,7 @@ msgstr "# The plant memory"
 
 #: pages/plant_memory.py:269
 msgid "INTRODUCTION_BRAIN"
-msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to play even more, click the **Expert** version on the left."
+msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the :blue[Expert] version on the left. There you can also create your mutated version of the plant and see if can *forget* the light sooner."
 
 #: pages/plant_memory.py:273
 msgid "TASK_MEMORY_1_EXPLANATION"
