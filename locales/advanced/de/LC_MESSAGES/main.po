@@ -13,6 +13,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
+# SIDEBAR
+msgid "SIMPLE"
+msgstr "Einfach"
+
+msgid "ADVANCED"
+msgstr "Fortgeschritten"
+
 
 #: pages/2 Daten-Analyse.py:23
 msgid "HEADLINE_ANALYSE"
