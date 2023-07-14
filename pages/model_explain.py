@@ -63,6 +63,29 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
 
+    tab1, tab2, tab3 = st.tabs(["FvCB", "e-photosynthesis", "Bellassio"])
+
+    with tab1:
+        st.markdown(text("HEADLINE_FVCB"))
+
+        st.markdown(text("FVCB_1"))
+
+        if version == "expert":
+            st.latex(
+                r"""
+                \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
+                \newcommand{\indexnig}[2]{\mathit{#1} _{\mathrm{#2}}}
+                \begin{aligned}
+                    \indexni{A}{c} &= \frac{(\indexni{C}{c} - \indexnig{\Gamma}{*}) \cdot \indexni{V}{cmax}}{\indexni{C}{c} + \indexni{K}{c} \cdot \left (1+ \dfrac{O}{\indexni{K}{o}}\right )} - \indexni{R}{d}\\
+                    \indexni{A}{j} &= \dfrac{\left (\indexni{C}{c} - \indexnig{\Gamma}{*}\right )\cdot J}{4 \cdot \indexni{C}{c} + 8\cdot\indexnig{\Gamma}{*}} - \indexni{R}{d}\\
+                    \indexni{A}{p} &= 3\cdot \indexni{T}{p} - \indexni{R}{d}\\
+                    A &= \mathrm{min}\left(\indexni{A}{c},\ \indexni{A}{j},\ \indexni{A}{p}\right)
+                \end{aligned}
+                """
+            )
+
+        st.markdown(text("FVCB_2"), unsafe_allow_html = True)
+
     st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
 
     st.markdown(text("CONSTRUCTION_EXPLANATION"))
