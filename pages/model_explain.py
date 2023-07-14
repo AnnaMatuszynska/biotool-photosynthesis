@@ -19,6 +19,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     # Making a model
     include_ytvideo("https://youtu.be/oVME5KIHrO8")
 
+    st.markdown(text("EXAMPLE_MATHEMATICAL_MODEL"))
     with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE")):
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"))
         st.latex(
