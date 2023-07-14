@@ -53,3 +53,19 @@ def centered_image(img_path: str) -> None:
         """,
         unsafe_allow_html=True,
     )
+
+def include_ytvideo(yt_url: str, vid_width : float = 0.5) -> None:
+
+    if vid_width > 1 or vid_width < 0:
+        raise Exception('vid_width has to be between 0 and 1')
+    
+    if vid_width != 1:
+
+        nonvid_width = (1 - vid_width)/2
+        _, col2, _ = st.columns([nonvid_width, vid_width, nonvid_width])
+
+        with col2:
+            st.video(yt_url)
+
+    else:
+        st.video(yt_url)
