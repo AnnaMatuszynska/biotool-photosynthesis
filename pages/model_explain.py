@@ -24,7 +24,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"))
         st.latex(
             r"""
-            S \xrightarrow{\textit{v}_1} I \xrightarrow{\textit{v}_2} R
+            \mathrm{S} \xrightarrow{\textit{v}_1} \mathrm{I} \xrightarrow{\textit{v}_2} \mathrm{R}
             """
         )
         st.latex(
