@@ -3,7 +3,7 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import centered_image, get_localised_text, make_prev_next_button
+from utils import centered_image, get_localised_text, make_prev_next_button, include_ytvideo
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
