@@ -274,9 +274,13 @@ msgstr "The cycle of modeling. The developer often needs to go through several i
 msgid "MATHEMATICAL_MODELLING_EXPLANATION_1b"
 msgstr "In the video below, you can listen more about building and using mathematical models in biology."
 
-#: pages/model.explain.py:22
+#: pages/model_explain.py:22
+msgid "EXAMPLE_MATHEMATICAL_MODEL"
+msgstr "### An example of a mathematical model"
+
+#: pages/model_explain.py:23
 msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
-msgstr "# An example of a mathematical model"
+msgstr "The SIR model"
 
 #: pages/model.explain.py:23
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
