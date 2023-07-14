@@ -240,8 +240,16 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
+        if version == "simple":
+            """
+            - Von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
+            - Farquhar G D, von Caemmerer S, Berry J A (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species
+            """
+
         if version == "expert":
             """
+            - Von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
+            - Farquhar G D, von Caemmerer S, Berry J A (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species
             - Cook J, Oreskes N, Doran PT, Anderegg WR, Verheggen B, Maibach EW, Carlton JS, Lewandowsky S, Skuce AG, Green SA (2016) Consensus on consensus: a synthesis of consensus estimates on human-caused global warming. J Environmental Research Letters 11: 048002
             - van Aalst M, Ebenhöh O, and Matuszyńska A (2020). Constructing and analysing dynamic models with modelbase v1.2.3 - a software update. BioMed Central
             """
