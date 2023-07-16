@@ -68,105 +68,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         if version == "Advanced":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
 
-    st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
-
-    tab1, tab2, tab3 = st.tabs(["FvCB", "e-photosynthesis", "Bellassio"])
-
-    with tab1:
-        st.markdown(text("HEADLINE_FVCB"))
-
-        st.markdown(text("FVCB_1"))
-
-        if version == "Advanced":
-            st.latex(
-                r"""
-                \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
-                \newcommand{\indexnig}[2]{\mathit{#1} _{\mathrm{#2}}}
-                \begin{aligned}
-                    \indexni{A}{c} &= \frac{(\indexni{C}{c} - \indexnig{\Gamma}{*}) \cdot \indexni{V}{cmax}}{\indexni{C}{c} + \indexni{K}{c} \cdot \left (1+ \dfrac{O}{\indexni{K}{o}}\right )} - \indexni{R}{d}\\
-                    \indexni{A}{j} &= \dfrac{\left (\indexni{C}{c} - \indexnig{\Gamma}{*}\right )\cdot J}{4 \cdot \indexni{C}{c} + 8\cdot\indexnig{\Gamma}{*}} - \indexni{R}{d}\\
-                    \indexni{A}{p} &= 3\cdot \indexni{T}{p} - \indexni{R}{d}\\
-                    A &= \mathrm{min}\left(\indexni{A}{c},\ \indexni{A}{j},\ \indexni{A}{p}\right)
-                \end{aligned}
-                """
-            )
-
-        st.markdown(text("FVCB_2"), unsafe_allow_html = True)
-
-    with tab2:
-        st.markdown(text("HEADLINE_E_PHOTOSYNTHESIS"))
-
-        st.markdown(text("E_PHOTOSYNTHESIS_1"), unsafe_allow_html= True)
-
-        if version == "Advanced":
-            st.latex(
-                r"""
-                \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
-                A = \indexni{V}{c}-\indexni{v}{131}
-                """
-            )
-
-        st.markdown(text("E_PHOTOSYNTHESIS_2"))
-
-    st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
-
-    st.markdown(text("CONSTRUCTION_EXPLANATION"))
-    st.markdown(text("RATES_1"), unsafe_allow_html=True)
-    st.markdown(text("RATES_2"))
-    st.markdown(text("RATES_3"))
-    st.markdown(text("RATES_4"))
-    st.markdown(text("RATES_5"))
-    st.markdown(text("RATES_6"), unsafe_allow_html=True)
-
-    if version == "Advanced":
-        st.markdown(text("HEADLINE_MODEL_EQUATIONS"))
-        st.markdown(text("MODEL_EQUATIONS_INTRODUCTION"))
-        st.latex(
-            r"""
-            \begin{aligned}
-                \frac{\mathrm{dPQH_2}}{\mathrm{d}t} &= v_\mathrm{PSII} - v_\mathrm{PQ_{ox}} \\
-                \frac{\mathrm{dATP}}{\mathrm{d}t} &= v_\mathrm{ATPsynthase} - v_\mathrm{ATPconsumption} \\
-                \frac{\mathrm{dATPase^{*}}}{\mathrm{d}t} &= F k_\mathrm{actATPase} \cdot \mathrm{H}(\mathrm{PFD}) \cdot \mathrm{ATPase} - k_\mathrm{deactATPase} \cdot (1 - \mathrm{H}(\mathrm{PFD})) \cdot \mathrm{ATPase^{*}} \\
-                b_\mathrm{H}\cdot\frac{\mathrm{dH}}{\mathrm{d}t} &= 2 v_\mathrm{PSII} + 4 v_\mathrm{PQ_{ox}} -\frac{14}{3} v_\mathrm{ATPsynthase} - v_\mathrm{leak} \\
-                \frac{\mathrm{dPsbS}}{\mathrm{d}t} &= -v_\mathrm{Psbs^{p}} \\
-                \frac{\mathrm{dVx}}{\mathrm{d}t} &= -v_\mathrm{Xcyc} \\
-            \end{aligned}
-        """
-        )
-
-        with st.expander(text("REACTION_RATES")):
-            st.markdown(text("RATES_DYNAMIC"))
-            st.latex(
-                r"""
-                \begin{aligned}
-                    v_{\mathrm{PSII}} &= k_2 \cdot 0.5 \cdot B_1 \\
-                    v_{PQ_{ox}} 7 &= \left(\frac{k_{Cyt_{b6f}} \cdot \mathrm{PFD} \cdot K_\mathrm{eq,cytb6f}(\mathrm{pH})}{K_\mathrm{eq,cytb6f}(\mathrm{pH}) + 1} + k_\mathrm{PTOX}\right) \cdot \mathrm{PQH_2} - \frac{k_\mathrm{PFD}}{K_\mathrm{eq,cytb6f}(\mathrm{pH}) + 1} \cdot \mathrm{PQ} \\
-                    v_\mathrm{ATPsynthase} &= \mathrm{ATPase}^* \cdot k_\mathrm{ATPsynthase}\cdot \left(AP^{tot}-\mathrm{ATP} - \frac{\mathrm{ATP}}{K_\mathrm{eq,ATPsynthase}(H)} \right) \\
-                    v_\mathrm{ATPactivity} &= k_\mathrm{actATPase} \cdot \mathrm{H}(\mathrm{PFD}) \cdot \mathrm{ATPase} - k_\mathrm{deactATPase} \cdot (1 - \mathrm{H}(\mathrm{PFD})) \cdot \mathrm{ATPase^{*}} \\
-                    v_\mathrm{Leak} &= k_\mathrm{leak} \cdot (H - pH_{\mathrm{inv}}(\mathrm{pH_{stroma}})) \\
-                    v_\mathrm{ATPconsumption} &= k_\mathrm{ATPconsumption} \cdot \mathrm{ATP} \\
-                \end{aligned}
-                """
-            )
-
-            st.markdown(text("RATE_QUENCHER"))
-            st.latex(
-                r"""
-                \begin{aligned}
-                    v_\mathrm{Xcyc} &= k_\mathrm{DeepoxV} \cdot \frac{H^\mathrm{nH_X}}{H^\mathrm{nH_X} + pH_{\mathrm{inv}}(K_\mathrm{phSat})^\mathrm{nH_X}} \cdot \mathrm{Vx} - k_\mathrm{EpoxZ} \cdot (\mathrm{X^{tot}} - \mathrm{Vx}) \\
-                    v_\mathrm{Psbs^{p}} &= k_\mathrm{ProtonationL} \cdot \frac{H^\mathrm{nH_L}} {H^\mathrm{nH_L} + pH_{\mathrm{inv}}(K_\mathrm{phSatLHC})^\mathrm{nH_L}} \cdot \mathrm{PsbS} - k_\mathrm{Deprotonation} \cdot \mathrm{PsbS^p} \\
-                    Q &= \gamma_0 \cdot (1-\frac{\mathrm{Zx}}{\mathrm{Zx}+K_\mathrm{{ZSat}}})\cdot\mathrm{PsbS}+ \gamma_1\cdot(1-\frac{\mathrm{Zx}}{\mathrm{Zx}+K_\mathrm{{ZSat}}})\cdot\mathrm{PsbS^p} + \gamma_2\cdot \frac{\mathrm{Zx}}{\mathrm{Zx}+K_\mathrm{{ZSat}}}\cdot\mathrm{PsbS^p} + \gamma_3\cdot \frac{\mathrm{Zx}}{\mathrm{Zx}+K_\mathrm{{ZSat}}}\cdot\mathrm{PsbS} \\
-                \end{aligned}
-                """
-            )
-
-    st.markdown(text("HEADLINE_IMPLEMENTATION"))
-
-    st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
-
-    if version == "Simple":
-        st.markdown(text("IMPLEMENTATION_TO_EXPERT"))
-
     if version == "Advanced":
         with open(Path(__file__).parent / "assets" / "sir_v1_integ.py") as fp:
             sir_v1_integ = f"\n```python\n{fp.read()}```\n\n"
@@ -253,6 +154,64 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
             st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_6"))
 
+    st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
+
+    tab1, tab2, tab3 = st.tabs(["FvCB", "e-photosynthesis", "Bellassio"])
+
+    with tab1:
+        st.markdown(text("HEADLINE_FVCB"))
+
+        st.markdown(text("FVCB_1"))
+
+        if version == "Advanced":
+            st.latex(
+                r"""
+                \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
+                \newcommand{\indexnig}[2]{\mathit{#1} _{\mathrm{#2}}}
+                \begin{aligned}
+                    \indexni{A}{c} &= \frac{(\indexni{C}{c} - \indexnig{\Gamma}{*}) \cdot \indexni{V}{cmax}}{\indexni{C}{c} + \indexni{K}{c} \cdot \left (1+ \dfrac{O}{\indexni{K}{o}}\right )} - \indexni{R}{d}\\
+                    \indexni{A}{j} &= \dfrac{\left (\indexni{C}{c} - \indexnig{\Gamma}{*}\right )\cdot J}{4 \cdot \indexni{C}{c} + 8\cdot\indexnig{\Gamma}{*}} - \indexni{R}{d}\\
+                    \indexni{A}{p} &= 3\cdot \indexni{T}{p} - \indexni{R}{d}\\
+                    A &= \mathrm{min}\left(\indexni{A}{c},\ \indexni{A}{j},\ \indexni{A}{p}\right)
+                \end{aligned}
+                """
+            )
+
+        st.markdown(text("FVCB_2"), unsafe_allow_html=True)
+
+    with tab2:
+        st.markdown(text("HEADLINE_E_PHOTOSYNTHESIS"))
+
+        st.markdown(text("E_PHOTOSYNTHESIS_1"), unsafe_allow_html=True)
+
+        if version == "Advanced":
+            st.latex(
+                r"""
+                \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
+                A = \indexni{V}{c}-\indexni{v}{131}
+                """
+            )
+
+        st.markdown(text("E_PHOTOSYNTHESIS_2"))
+
+    with tab3:
+        st.markdown(text("HEADLINE_BELLASIO"))
+
+        st.markdown(text("BELLASIO_1"), unsafe_allow_html=True)
+
+        if version == "Advanced":
+            st.latex(
+                r"""
+                \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
+                A = \indexni{V}{c} - 0.5 \cdot \indexni{V}{o} - \indexni{R}{d}
+                """
+            )
+
+        st.markdown(text("BELLASIO_2"))
+
+    with st.expander(text("EXPANDER_C3C4CAM")):
+        st.markdown(text("C3C4CAM_1"))
+
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
@@ -261,6 +220,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
             - Farquhar GD, von Caemmerer S, Berry JA (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species. Planta 149
             - Zhu XG, Wang Y, Ort DR, Long SP (2013) e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: From light capture to sucrose synthesis. Plant, Cell and Environment 36
+            - Bellasio C (2019) A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research 141
             """
 
         if version == "Advanced":
@@ -270,6 +230,9 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - Zhu XG, Govindjee G, Baker NR, de Sturler E, Ort DR, Long SP (2005) Chlorophyll a fluorescence induction kinetics in leaves predicted from a model describing each discrete step of excitation energy and electron transfer associated with Photosystem II. Planta 223
             - Zhu XG, de Sturler E, Long SP (2007) Optimizing the Distribution of Resources between Enzymes of Carbon Metabolism Can Dramatically Increase Photosynthetic Rate: A Numerical Simulation Using an Evolutionary Algorithm. Plant Physiology 145
             - Zhu XG, Wang Y, Ort DR, Long SP (2013) e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: From light capture to sucrose synthesis. Plant, Cell and Environment 36
+            - Bellasio C (2019) A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research 141
+            - Yin X, vyn Oijen M, Schapendonk AHCM (2004) Extension of a biochemical model for the generalized stoichiometry of electron transport limited C3 photosynthesis. Plant, Cell and Environment 27
+            - Bellasio C, Quirk J, Buckley TN, Beerling DJ (2017) A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C 4 Photosynthesis Plant Physiology 175
             - Cook J, Oreskes N, Doran PT, Anderegg WR, Verheggen B, Maibach EW, Carlton JS, Lewandowsky S, Skuce AG, Green SA (2016) Consensus on consensus: a synthesis of consensus estimates on human-caused global warming. J Environmental Research Letters 11: 048002
             - van Aalst M, Ebenhöh O, and Matuszyńska A (2020). Constructing and analysing dynamic models with modelbase v1.2.3 - a software update. BioMed Central
             """

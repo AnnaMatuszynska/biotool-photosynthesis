@@ -337,6 +337,18 @@ msgstr "The *e*-photosynthesis model aims to provide a realistic representation 
 msgid "E_PHOTOSYNTHESIS_2"
 msgstr "Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler models that are more user-friendly or that focus on specific aspects of photosynthesis."
 
+#: pages/model_explain.py:105
+msgid "HEADLINE_BELLASIO"
+msgstr "### The Bellasio model"
+
+#: pages/model_explain.py:107
+msgid "BELLASIO_1"
+msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behaviour. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. It combines various elements from models, such as the FvCB and *e*-photosynthesis models, while simplifying certain aspects to make it also suitable for non-experienced computational biologists. To have a more detailed overview on what this model includes, switch to the :blue[Advanced] mode."
+
+#: pages/model_explain.py:109
+msgid "BELLASIO_2"
+msgstr "The model includes the major reactions of photosynthesis and is simple enough to be modelled in a spreadsheet program like Microsoft&reg; Excel&reg;, which has also been kindly provided by the author themselves. Overall, this model serves as an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
+
 #: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
 msgstr "### Model construction"
