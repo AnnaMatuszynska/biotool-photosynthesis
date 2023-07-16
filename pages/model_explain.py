@@ -86,6 +86,21 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         st.markdown(text("FVCB_2"), unsafe_allow_html = True)
 
+    with tab2:
+        st.markdown(text("HEADLINE_E_PHOTOSYNTHESIS"))
+
+        st.markdown(text("E_PHOTOSYNTHESIS_1"), unsafe_allow_html= True)
+
+        if version == "Advanced":
+            st.latex(
+                r"""
+                \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
+                A = \indexni{V}{c}-\indexni{v}{131}
+                """
+            )
+
+        st.markdown(text("E_PHOTOSYNTHESIS_2"))
+
     st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
 
     st.markdown(text("CONSTRUCTION_EXPLANATION"))
@@ -238,14 +253,18 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
     with st.expander(text("LITERATURE")):
         if version == "Simple":
             """
-            - Von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
-            - Farquhar G D, von Caemmerer S, Berry J A (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species
+            - von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
+            - Farquhar GD, von Caemmerer S, Berry JA (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species. Planta 149
+            - Zhu XG, Wang Y, Ort DR, Long SP (2013) e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: From light capture to sucrose synthesis. Plant, Cell and Environment 36
             """
 
         if version == "Advanced":
             """
-            - Von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
-            - Farquhar G D, von Caemmerer S, Berry J A (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species
+            - von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
+            - Farquhar GD, von Caemmerer S, Berry JA (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species. Planta 149.1
+            - Zhu XG, Govindjee G, Baker NR, de Sturler E, Ort DR, Long SP (2005) Chlorophyll a fluorescence induction kinetics in leaves predicted from a model describing each discrete step of excitation energy and electron transfer associated with Photosystem II. Planta 223
+            - Zhu XG, de Sturler E, Long SP (2007) Optimizing the Distribution of Resources between Enzymes of Carbon Metabolism Can Dramatically Increase Photosynthetic Rate: A Numerical Simulation Using an Evolutionary Algorithm. Plant Physiology 145
+            - Zhu XG, Wang Y, Ort DR, Long SP (2013) e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: From light capture to sucrose synthesis. Plant, Cell and Environment 36
             - Cook J, Oreskes N, Doran PT, Anderegg WR, Verheggen B, Maibach EW, Carlton JS, Lewandowsky S, Skuce AG, Green SA (2016) Consensus on consensus: a synthesis of consensus estimates on human-caused global warming. J Environmental Research Letters 11: 048002
             - van Aalst M, Ebenhöh O, and Matuszyńska A (2020). Constructing and analysing dynamic models with modelbase v1.2.3 - a software update. BioMed Central
             """

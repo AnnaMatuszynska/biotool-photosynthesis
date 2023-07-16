@@ -345,6 +345,19 @@ msgid "FVCB_2"
 msgstr "These rates use an epitome of parameters that have to be measured or determined beforehand. The model uses the chloroplast CO<sub>2</sub> partial pressure (C<sub>c</sub>), the chloroplast O<sub>2</sub> partial pressure (O), the C<sub>c</sub> where A = −R<sub>d</sub> (Γ<sub>&midast;</sub>), the maximal rate of carboxylation (V<sub>cmax</sub>), the Michaelis-Menten constants of carboxylation and oxygenation (K<sub>c</sub> and K<sub>o</sub> respectively), the potential electron transport rate (J) and the rate of inorganic phosphate supply to the chloroplast (T<sub>p</sub>) to calculate the three rates. The day respiration (R<sub>d</sub>) is subtracted to portray the respective assimilation rates. It is to be noted that this model is limited to a C<sub>c</sub> that is larger than Γ<sub>&midast;</sub>. \n"
 "\n This model is widely popular among scientists, as it is fairly simple and uses no complicated mathematical methods like integrations. As you may have guessed, this type of model is not the same as the SIR model we explained earlier. It doesn’t use any ODEs and therefore cannot show the change in time. It only shows the A specific for the parameter values chosen and therefore depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still regarded as one of the best due to its simplicity."
 
+#: pages/model_explain.py:90
+msgid "HEADLINE_E_PHOTOSYNTHESIS"
+msgstr "### The *e*-photosynthesis model"
+
+#: pages/model_explain.py:92
+msgid "E_PHOTOSYNTHESIS_1"
+msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Just like the SIR model, it uses an ODE system, but with a more complicated set of equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most of its components while also simplifying where necessary. It builds upon previous works by Zhu et al., incorporating the reactions that are associated with light absorption, excitation energy transfer, charge separation, and electron transfer around PSII from their fluorescence induction model. Additionally, it introduces analogous reactions for PSI and includes reactions from their carbon metabolism model, such as those involved in the C3 cycle, sucrose and starch synthesis, and photorespiration. The model further accounts for ion transfer between the lumen and stroma, ATP and NADPH synthesis, RuBisCO activation by RuBisCO activase, NPQ by luminal pH and the xanthophyll cycle, and regulation of enzyme activities by the ferredoxin (Fd) thioredoxin system.\n"
+"\n Even though this model is very complex it still introduces some simplifications, for example, the steps between the electron transfer of the chlorophyll *a* molecule and Fd are ignored. Furthermore, to calculate the A, this model uses the rate of carboxylation (V<sub>c</sub>) and the rate of glycine decarboxylase (v<sub>131</sub>). While the equation below may be simple, it is dependent on a dynamic system containing a total of 294 equations."
+
+#: pages/model_explain.py:102
+msgid "E_PHOTOSYNTHESIS_2"
+msgstr "Overall, 113 of these equations can be attributed to a system of ODEs, which indicates this model's complexity. Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler models that are more user-friendly or that focus on specific aspects of photosynthesis."
+
 #: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
 msgstr "### Model construction"
