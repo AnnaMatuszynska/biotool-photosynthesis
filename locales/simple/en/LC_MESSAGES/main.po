@@ -285,8 +285,8 @@ msgstr "In the video below, you can listen more about building and using mathema
 msgid "EXAMPLE_MATHEMATICAL_MODEL"
 msgstr "### An example of a mathematical model"
 
-#: pages/model_explain.py:23
-msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
+#: pages/model_explain.py:25
+msgid "TAB_SIR"
 msgstr "The SIR model"
 
 #: pages/model.explain.py:23

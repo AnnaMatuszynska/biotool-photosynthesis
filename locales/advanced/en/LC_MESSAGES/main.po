@@ -304,9 +304,17 @@ msgstr "In the video below, you can listen more about building and using mathema
 msgid "EXAMPLE_MATHEMATICAL_MODEL"
 msgstr "### An example of a mathematical model"
 
-#: pages/model_explain.py:23
-msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
+#: pages/model_explain.py:28
+msgid "TAB_SIR"
 msgstr "The SIR model"
+
+#: pages/model_explain.py:28
+msgid "TAB_MANUAL"
+msgstr "Manual implementation"
+
+#: pages/model_explain.py:28
+msgid "TAB_MODELBASE"
+msgstr "Modelbase implementation"
 
 #: pages/model_explain.py:23
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
@@ -326,7 +334,7 @@ msgstr "The change in the population of Planet-X using the SIR model taken from 
 
 #: pages\model_explain.py:61
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
-msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example, makes it possible to be solved on pen and paper. However, we have used the programming language Python to make our lives easier. You can find it down below in the **Implementation** section."
+msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example, makes it possible to be solved on pen and paper. However, we have used the programming language Python to make our lives easier. You can find it in the other tabs over this section."
 
 #: pages/model_explain.py:63
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
@@ -418,14 +426,6 @@ msgstr "### Implementation"
 msgid "IMPLEMENTATION_DESCRIPTION"
 msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
 
-#: pages/model_explain.py:143
-msgid "SIR_IMPLEMENTATION_1"
-msgstr "The model has been implemented using the modelbase package, which allows for a modular construction of ODE models. To see why this is beneficial, compare the manually constructed SIR model to the modelbase version in the Dropdown boxes below:"
-
-#: pages/model_explain.py:145
-msgid "SIR_IMPLEMENTATION_MANUAL"
-msgstr "Manual implementation of the SIR model"
-
 #: pages/model_explain.py:149
 msgid "SIR_IMPLEMENTATION_MANUAL_1"
 msgstr "Great care needs to be taken in order for the `y0` vector to align with the unpacked variable names, as well as the respective differential equations. The same holds true for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
@@ -433,10 +433,6 @@ msgstr "Great care needs to be taken in order for the `y0` vector to align with 
 #: pages/model_explain.py:158
 msgid "SIR_IMPLEMENTATION_MANUAL_2"
 msgstr "Clearly this way of writing models is very error-prone and hard to modularise. That's why we can improve on the situation by using `modelbase`."
-
-#: pages/model_explain.py:175
-msgid "SIR_IMPLEMENTATION_MODELBASE"
-msgstr "Modelbase implementation of the SIR model"
 
 #: pages/model_explain.py:177
 msgid "SIR_IMPLEMENTATION_MODELBASE_1"

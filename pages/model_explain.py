@@ -20,7 +20,14 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     include_ytvideo("https://youtu.be/oVME5KIHrO8")
 
     st.markdown(text("EXAMPLE_MATHEMATICAL_MODEL"))
-    with st.expander(text("EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE")):
+
+    if version == "Simple":
+        tab1, tab2 = st.tabs([text("TAB_SIR"), " "])
+
+    if version == "Advanced":
+        tab1, tab2, tab3 = st.tabs([text("TAB_SIR"), text("TAB_MANUAL"), text("TAB_MODELBASE")])
+
+    with tab1:
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"))
         st.latex(
             r"""
@@ -182,9 +189,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         with open(Path(__file__).parent / "assets" / "sird.py") as fp:
             sird = f"\n```python\n{fp.read()}```\n\n"
 
-        st.markdown(text("SIR_IMPLEMENTATION_1"))
-
-        with st.expander(text("SIR_IMPLEMENTATION_MANUAL")):
+        with tab2:
             st.markdown(f"{sir_v1_integ}")
 
             st.markdown(text("SIR_IMPLEMENTATION_MANUAL_1"))
@@ -209,7 +214,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
             st.markdown(text("SIR_IMPLEMENTATION_MANUAL_2"))
 
-        with st.expander(text("SIR_IMPLEMENTATION_MODELBASE")):
+        with tab3:
             st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_1"))
 
             st.markdown(f"{sir_v2_rate_fns}")
