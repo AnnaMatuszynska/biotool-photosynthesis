@@ -3,7 +3,7 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import centered_image, get_localised_text, make_prev_next_button, include_ytvideo
+from utils import centered_image, get_localised_text, make_prev_next_button, include_ytvideo, include_image
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -11,8 +11,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
 
-    centered_image("pictures/Modeling_scheme_eng.png")
-    st.caption(text("CAPTION_MODELLING_PICTURE"))
+    include_image(path="pictures/Modeling_scheme_eng.png", img_width=0.5, caption=text("CAPTION_MODELLING_PICTURE"))
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1b"))
 
@@ -59,8 +58,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         )
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
 
-        centered_image("pictures/SIR_modelbase.png")
-        st.caption(text("CAPTION_SIR_RESULTS_PICTURE"))
+        include_image("pictures/SIR_modelbase.png", img_width=0.35, caption=text("CAPTION_SIR_RESULTS_PICTURE"))
 
         if version == "Simple":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"))

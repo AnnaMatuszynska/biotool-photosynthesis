@@ -54,7 +54,7 @@ def centered_image(img_path: str) -> None:
         unsafe_allow_html=True,
     )
 
-def include_ytvideo(yt_url: str, vid_width : float = 0.5) -> None:
+def include_ytvideo(yt_url: str, vid_width: float = 0.5) -> None:
 
     if vid_width > 1 or vid_width < 0:
         raise Exception('vid_width has to be between 0 and 1')
@@ -69,3 +69,31 @@ def include_ytvideo(yt_url: str, vid_width : float = 0.5) -> None:
 
     else:
         st.video(yt_url)
+
+def include_image(path: str, img_width: float = 0.5, caption: str = None) -> None:
+    """Function to include image in streamlit page with specific width and caption
+
+    Args:
+        path (str): Path to the image
+        img_width (float, optional): Value between 0 and 1 for the percentage the img takes. Defaults to 0.5.
+        caption (str, optional): Text for the caption in format text("EXAMPLE"). Defaults to None.
+    """
+    if img_width > 1 or img_width < 0:
+        raise Exception('img_width has to be between 0 and 1')
+    
+    if img_width != 1:
+
+        nonimg_width = (1 - img_width)/2
+        _, col2, _ = st.columns([nonimg_width, img_width, nonimg_width])
+
+        with col2:
+            st.image(path, use_column_width=True)
+
+            if caption is not None:
+                st.caption(caption, unsafe_allow_html=True)
+
+    else:
+        st.image(path, use_column_width=True)
+
+        if caption is not None:
+                st.caption(caption, unsafe_allow_html=True)
