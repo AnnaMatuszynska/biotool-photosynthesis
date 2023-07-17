@@ -28,7 +28,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         tab1, tab2, tab3 = st.tabs([text("TAB_SIR"), text("TAB_MANUAL"), text("TAB_MODELBASE")])
 
     with tab1:
-        st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"))
+        st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
         st.latex(
             r"""
             \mathrm{S} \xrightarrow{\textit{v}_1} \mathrm{I} \xrightarrow{\textit{v}_2} \mathrm{R}
@@ -161,7 +161,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     with tab1:
         st.markdown(text("HEADLINE_FVCB"))
 
-        st.markdown(text("FVCB_1"))
+        st.markdown(text("FVCB_1"), unsafe_allow_html=True)
 
         if version == "Advanced":
             st.latex(
