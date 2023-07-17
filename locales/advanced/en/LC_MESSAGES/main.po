@@ -378,6 +378,34 @@ msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that 
 msgid "BELLASIO_2"
 msgstr "The parameters are based on averaged literature values for typical parameters, and the few parameters created for this model are derived from the original equations or assigned plausible values. The model includes the major reactions of photosynthesis and is simple enough to be modelled in a spreadsheet program like Microsoft&reg; Excel&reg;, which has also been kindly provided by the author themselves. Overall, this model serves as an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
 
+#: pages/model_explain.py:210
+msgid "EXPANDER_C3C4CAM"
+msgstr "The difference between C3, C4 and CAM plants"
+
+#: pages/model_explain.py:211
+msgid "HEADLINE_C3"
+msgstr "### C<sub>3</sub> Plants"
+
+#: pages/model_explain.py:212
+msgid "C3_1"
+msgstr "Most plants are C<sub>3</sub> plants, meaning the first stable compound produced during carbon fixation is a three-carbon molecule called 3-phosphoglycerate (3-PGA). This process takes place in the mesophyll cells of plant leaves and involves a chain of biochemical reactions that transform carbon dioxide (CO<sub>2</sub>) into carbohydrates like glucose."
+
+#: pages/model_explain.py:214
+msgid "HEADLINE_C4"
+msgstr "### C<sub>4</sub> Plants"
+
+#: pages/model_explain.py:215
+msgid "C4_1"
+msgstr "In certain plants, C<sub>4</sub> photosynthesis is an alternative process that developed to adapt to hot and dry environments. Unlike C<sub>3</sub> photosynthesis, C<sub>4</sub> photosynthesis boosts the efficiency of carbon fixation by concentrating CO<sub>2</sub> near RuBisCO in the bundle sheath cells. This separation lowers photorespiration, a wasteful process that can occur in C<sub>3</sub> plants under high temperatures and low CO<sub>2</sub> concentrations. C<sub>4</sub> photosynthesis can be found in various plant families, such as grasses (e.g. maize, sugarcane) and certain dicots (e.g. Amaranthaceae, Chenopodiaceae). It is an adaptation that permits plants to flourish in environments with high temperatures, intense sunlight, and limited water availability."
+
+#: pages/model_explain.py:217
+msgid "HEADLINE_CAM"
+msgstr "### CAM Plants"
+
+#: pages/model_explain.py:218
+msgid "CAM_1"
+msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants that have adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
+
 #: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
 msgstr "### Model construction"

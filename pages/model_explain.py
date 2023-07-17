@@ -208,7 +208,14 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("BELLASIO_2"))
 
     with st.expander(text("EXPANDER_C3C4CAM")):
-        st.markdown(text("C3C4CAM_1"))
+        st.markdown(text("HEADLINE_C3"), unsafe_allow_html=True)
+        st.markdown(text("C3_1"), unsafe_allow_html=True)
+
+        st.markdown(text("HEADLINE_C4"), unsafe_allow_html=True)
+        st.markdown(text("C4_1"), unsafe_allow_html=True)
+
+        st.markdown(text("HEADLINE_CAM"), unsafe_allow_html=True)
+        st.markdown(text("CAM_1"), unsafe_allow_html=True)
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
@@ -219,10 +226,13 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - Farquhar GD, von Caemmerer S, Berry JA (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species. Planta 149
             - Zhu XG, Wang Y, Ort DR, Long SP (2013) e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: From light capture to sucrose synthesis. Plant, Cell and Environment 36
             - Bellasio C (2019) A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research 141
+            - Taiz L, Zeiger E, Møller IM, Murphy A (2018) Fundamentals of Plant Physiology. Sinauer Associates 
             """
 
         if version == "Advanced":
             """
+            - Cook J, Oreskes N, Doran PT, Anderegg WR, Verheggen B, Maibach EW, Carlton JS, Lewandowsky S, Skuce AG, Green SA (2016) Consensus on consensus: a synthesis of consensus estimates on human-caused global warming. J Environmental Research Letters 11: 048002
+            - van Aalst M, Ebenhöh O, and Matuszyńska A (2020). Constructing and analysing dynamic models with modelbase v1.2.3 - a software update. BioMed Central
             - von Caemmerer S (2013) Steady-state models of photosynthesis. Plant, Cell and Environment
             - Farquhar GD, von Caemmerer S, Berry JA (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species. Planta 149.1
             - Zhu XG, Govindjee G, Baker NR, de Sturler E, Ort DR, Long SP (2005) Chlorophyll a fluorescence induction kinetics in leaves predicted from a model describing each discrete step of excitation energy and electron transfer associated with Photosystem II. Planta 223
@@ -231,8 +241,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - Bellasio C (2019) A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research 141
             - Yin X, vyn Oijen M, Schapendonk AHCM (2004) Extension of a biochemical model for the generalized stoichiometry of electron transport limited C3 photosynthesis. Plant, Cell and Environment 27
             - Bellasio C, Quirk J, Buckley TN, Beerling DJ (2017) A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C 4 Photosynthesis Plant Physiology 175
-            - Cook J, Oreskes N, Doran PT, Anderegg WR, Verheggen B, Maibach EW, Carlton JS, Lewandowsky S, Skuce AG, Green SA (2016) Consensus on consensus: a synthesis of consensus estimates on human-caused global warming. J Environmental Research Letters 11: 048002
-            - van Aalst M, Ebenhöh O, and Matuszyńska A (2020). Constructing and analysing dynamic models with modelbase v1.2.3 - a software update. BioMed Central
+            - Taiz L, Zeiger E, Møller IM, Murphy A (2018) Fundamentals of Plant Physiology. Sinauer Associates 
             """
 
 
