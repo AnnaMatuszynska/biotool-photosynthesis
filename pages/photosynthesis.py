@@ -44,15 +44,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             caption=text("CAPTION_FOTOSYNTHESE_PICTURE"),
         )
 
-    st.markdown(text("HEADLINE_NUTRIENTS"))
-    st.markdown(text("NUTRIENTS_EXPLANATION"))
-
-    st.image(
-        Image.open("pictures/Stomata1.jpg"),
-        caption=text("CAPTION_STOMATA_PICTURE"),
-        width=400,
-    )  # make a caption
-
     st.markdown(text("HEADLINE_PHOTOSYNTHESIS_LOCATION"))
     st.markdown(text("PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
 
