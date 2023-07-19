@@ -80,7 +80,7 @@ msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *
 
 #: Start.py:23
 msgid "EXPANDER_IN"
-msgstr "Differences between in vitro, in vivo and in silico"
+msgstr "Differences between _in vitro_, _in vivo_ and _in silico_"
 
 #: Start.py:24
 msgid "EXPLANATION_IN_VITRO"
@@ -88,11 +88,42 @@ msgstr "*In vitro* refers to experiments conducted outside a living organism in 
 
 #: Start.py:25
 msgid "EXPLANATION_IN_VIVO"
-msgstr "In vivo refers to experiments conducted inside a living organism, usually animals or humans."
+msgstr "*In vivo* refers to experiments conducted inside a living organism, usually animals or humans."
 
 #: Start.py:26
 msgid "EXPLANATION_IN_SILICO"
-msgstr "In silico refers to computational experiments and simulations performed using computer models and algorithms."
+msgstr "*In silico* refers to computational experiments and simulations performed using computer models and algorithms."
+
+
+#: pages/1 Messmethode.py:50
+msgid "HEADLINE_PAGES"
+msgstr "#### Abstract of the pages"
+
+#: pages/1 Messmethode.py:50
+msgid "INTRODUCTION_PAGES"
+msgstr "In the following we will give you a short overview of what you can expect on the following pages. In :blue[Advanced]\
+        you will find the overview of what additional information you will get in the :blue[Advanced] versions."
+
+#: pages/1 Messmethode.py:50
+msgid "PHOTOSYNTHESIS"
+msgstr "On the **photosynthesis page** you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is needed on the following pages."
+
+#: pages/1 Messmethode.py:50
+msgid "METHOD"
+msgstr "In order for us to measure the photosynthetic performance of plants, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
+
+#: pages/1 Messmethode.py:50
+msgid "MODEL"
+msgstr "As the headline already told you, we work *in silico*, i.e. with mathematical models. On the **computational models page** you will learn something about mathematical models in general, as well as something about photosynthesis models."
+
+#: pages/1 Messmethode.py:50
+msgid "EXPERIMENT"
+msgstr "On the page **experiments** ***in silico*** you will get to know the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterwards, you can directly use it yourself to perform your first measurements."
+
+#: pages/1 Messmethode.py:50
+msgid "MEMORY"
+msgstr "Last but not least, you will get to know the plant light memory on the **plant light memory page** and can prove its existence independently with experiments."
+
 
 ##############################################################################################
 
@@ -616,7 +647,7 @@ msgstr "# The plant memory"
 
 #: pages/plant_memory.py:269
 msgid "INTRODUCTION_BRAIN"
-msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the :blue[Expert] version on the left. There you can also create your mutated version of the plant and see if can *forget* the light sooner."
+msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the :blue[Advanced] version on the left. There you can also create your mutated version of the plant and see if can *forget* the light sooner."
 
 #: pages/plant_memory.py:273
 msgid "TASK_MEMORY_1_EXPLANATION"

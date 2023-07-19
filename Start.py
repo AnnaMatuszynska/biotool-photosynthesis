@@ -25,6 +25,14 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
         st.markdown(text("EXPLANATION_IN_VIVO"))
         st.markdown(text("EXPLANATION_IN_SILICO"))
 
+    st.markdown(text("HEADLINE_PAGES"))
+    st.markdown(text("INTRODUCTION_PAGES"))
+    st.markdown(text("PHOTOSYNTHESIS"))
+    st.markdown(text("METHOD"))
+    st.markdown(text("MODEL"))
+    st.markdown(text("EXPERIMENT"))
+    st.markdown(text("MEMORY"))
+
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")

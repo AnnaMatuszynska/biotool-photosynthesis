@@ -274,7 +274,7 @@ def make_sliders(text: Callable[[str], str]) -> None:
     with col2:
         slider_pings = st.slider(text("SLIDER_PULSES"), 20, 150, 85)
 
-    if version == "expert":
+    if version == "Advanced":
         col1, col2 = st.columns(2)
         with col1:
             slider_aktivation = st.slider(
@@ -314,7 +314,7 @@ def make_sliders(text: Callable[[str], str]) -> None:
 
             simple_plot(text, PAM, F, areas, chart_labels)
 
-            if version == "expert":
+            if version == "Advanced":
                 expert_plot(NPQ, tm, PhiPSII, areas, chart_labels)
 
 
@@ -357,7 +357,7 @@ def make_quiz(text: Callable[[str], str]) -> None:
     #     with st.expander(text('RESULTS')):
     #         st.markdown(text('EXPLANATION_RESULTS'))
 
-    # if version == 'expert':
+    # if version == 'Advanced':
     #     with st.expander(text('RESULTS')):
     #         st.markdown(text('EXPLANATION_RESULTS'))
 

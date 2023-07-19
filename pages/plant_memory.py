@@ -294,7 +294,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
         )
     with col2:
         slider_time = st.slider(text("SLIDER_TIME"), 5, 60)
-    if version == "expert":
+    if version == "Advanced":
         col1, col2 = st.columns(2)
         with col1:
             slider_aktivation = st.slider(
@@ -340,7 +340,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
             left, right = st.columns(2)
 
-            if version == "expert":
+            if version == "Advanced":
                 # second Graph
                 make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right)
 
