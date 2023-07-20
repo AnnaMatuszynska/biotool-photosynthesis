@@ -11,7 +11,12 @@ from utils import (
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("HEADLINE_CONCLUSION"))
 
-    st.markdown(text("CONCLUSION_TEXT"))
+    st.markdown(text("CONCLUSION_TEXT_ONE"))
+
+    st.image("pictures/photosynthesis_productivity.gif")
+
+    st.markdown(text("CONCLUSION_TEXT_TWO"))
+
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
