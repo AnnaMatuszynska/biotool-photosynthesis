@@ -9,7 +9,7 @@ from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from PIL import Image
 from typing import Any, Callable
-from utils import get_localised_text, make_prev_next_button
+from utils import get_localised_text, make_prev_next_button, include_ytvideo, include_image
 
 
 def make_simulation_data(slider_time: float, slider_light: int, slider_pings: float) -> tuple:
@@ -237,7 +237,7 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("INTRODUKTION"))
 
     # Assignments
-    if version == "simple":
+    if version == "Simple":
         with st.expander(text("TASK_1")):
             st.markdown(text("TASK_ANALYSIS_1_EXPLANATION"))
         with st.expander(text("TASK_2")):
@@ -251,7 +251,7 @@ def make_page(text: Callable[[str], str]) -> None:
 
     st.markdown(text("HEADLINE_SLIDER"))
     st.markdown(text("EXPLANATNION"))
-    st.video("https://youtu.be/zxGZKeopEDw")
+    include_ytvideo("https://youtu.be/zxGZKeopEDw", 0.5)
     st.markdown(text("TIPP1"))
     st.markdown(text("TIPP2"))
 
