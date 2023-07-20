@@ -12,8 +12,9 @@ You can check out the online version [here](https://annamatuszynska-biotool-phot
 We recommend setting up a virtual environment of your choice, e.g. with conda
 
 ```bash
-conda env create -f environment.yml
+conda create -n biotoolenvironment pip
 conda activate biotoolenvironment
+pip install -r requirements.txt 
 ```
 
 ### Run the web page
@@ -28,22 +29,23 @@ config.toml file.
 
 ### Translations and Texts
 
-Texts and the translations are adapted in the .po files in the locals folder. There are the folders with the language \
+Texts and the translations are adapted in `allversion.po` file in the locals folder and distributed into subfolders using translate.bash. There are the folders with the language \
 versions for the two versions. In each subfolder you can find the texts of each page.
 
-To insert a new language, a subfolder with the abbreviation for the language must be inserted in each of the two \
-version folders. Copies of the .po files from one of the other language subfolders are then inserted into this folder. \
-These can then be filled with the translations.
+To insert a new language, a subfolder with the abbreviation for the language must be created in each of the two \
+version folders. Then add the new version abbreviation (e.g. `simple-en`) under `# TEXT VERSIONS` and the translation for each text snippet under the respective msgid in the form
+```po
+<version_abbr> msgstr "<translation>"
+```
 
 In order for the new translation to be displayed in the sidebar menu, the language must be added to the Python files \
 of all pages under 'language'.
 
 After changes first run:
-For the Introduction/Einführung:`msgfmt -o locales/#/*/LC_MESSAGES/base.mo locales/#/*/LC_MESSAGES/base` \
- For the Methods/Messmethode: `msgfmt -o locales/#/*/LC_MESSAGES/b-messmeth.mo locales/#/*/LC_MESSAGES/b-messmeth`\
- For the Data analysis/Daten-Analyse: `msgfmt -o locales/#/*/LC_MESSAGES/b-Analyse.mo locales/#/*/LC_MESSAGES/b-Analyse`\
- For the Plant Memory/Pflanzengedächtnis: `msgfmt -o locales/#/*/LC_MESSAGES/b-brain.mo locales/#/*/LC_MESSAGES/b-brain`\
- with en/de instead of \* for the language and simple/expert instead of # to generate the translations
+```bash
+./translate.bash
+```
+to generate the translations
 
 ### Developers
 

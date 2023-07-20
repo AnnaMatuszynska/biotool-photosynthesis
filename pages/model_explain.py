@@ -13,6 +13,8 @@ from utils import (
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
+    st.markdown(text("HEADLINE_COMPUTATIONAL_MODELS"))
+
     st.markdown(text("HEADLINE_MODEL"))
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
