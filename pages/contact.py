@@ -1,44 +1,65 @@
 import streamlit as st
-
-st.header(":mailbox: Contact Us!")
-
-st.markdown(
-    "We welcome your feedback and questions about our project! Here are the best ways to get in touch with our team members:"
+from pages._sidebar import make_sidebar
+from pathlib import Path
+from PIL import Image
+from typing import Callable
+from utils import (
+    get_localised_text,
+    make_prev_next_button,
 )
+def make_page(text: Callable[[str], str], language: str, version: str) -> None:
+    st.header(":mailbox: Contact Us!")
 
-st.markdown("### Sarah Philipps")
+    st.markdown(
+        "We welcome your feedback and questions about our project! Here are the best ways to get in touch with our team members:"
+    )
 
-st.markdown("- Email: sarah.philipps@rwth-aachen.de")
+    st.markdown("### Sarah Philipps")
 
-st.markdown("### Anna Matuszyńska")
+    st.markdown("- Email: sarah.philipps@rwth-aachen.de")
 
-st.markdown("- Email: anna.matuszynska@rwth-aachen.de")
-st.markdown(
-    "- Website: [Link](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~ywkwc/Anna-Matuszy-324-ska/)"
-)
+    st.markdown("### Anna Matuszyńska")
 
-st.markdown("### Marvin van Aalst")
+    st.markdown("- Email: anna.matuszynska@rwth-aachen.de")
+    st.markdown(
+        "- Website: [Link](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~ywkwc/Anna-Matuszy-324-ska/)"
+    )
 
-st.markdown("- Email: marvin.van.aalst@hhu.de")
-st.markdown(
-    "- Website: [Link](https://www.qtb.hhu.de/qtb-team/qtb-team-details?tt_address%5Bfunktion%5D=26702&tt_address%5Bperson%5D=21874&cHash=9ebb911fc0f89ce42ec1fd253420bca6)"
-)
+    st.markdown("### Marvin van Aalst")
 
-st.markdown("### Tobias Pfennig")
+    st.markdown("- Email: marvin.van.aalst@hhu.de")
+    st.markdown(
+        "- Website: [Link](https://www.qtb.hhu.de/qtb-team/qtb-team-details?tt_address%5Bfunktion%5D=26702&tt_address%5Bperson%5D=21874&cHash=9ebb911fc0f89ce42ec1fd253420bca6)"
+    )
 
-st.markdown("- Email: tobias.pfennig@rwth-aachen.de")
-st.markdown(
-    "- Website: [Link](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljpm/Tobias-Pfennig/)"
-)
+    st.markdown("### Tobias Pfennig")
 
-st.markdown(
-    "Please note that our team members may have different response times due to their schedules and \
-                responsibilities. We will do our best to respond to your messages as soon as possible."
-)
+    st.markdown("- Email: tobias.pfennig@rwth-aachen.de")
+    st.markdown(
+        "- Website: [Link](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljpm/Tobias-Pfennig/)"
+    )
 
-st.markdown("Thank you for your interest in our project!")
+    st.markdown("### Elouen Corvest")
+
+    st.markdown("- Email: elouen.corvest@rwth-aachen.de")
+    st.markdown(
+        "- Website: [Link](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljuk/Elouen-Corvest/)"
+    )
+
+    st.markdown(
+        "Please note that our team members may have different response times due to their schedules and responsibilities. We will do our best to respond to your messages as soon as possible."
+    )
+
+    st.markdown("Thank you for your interest in our project!")
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+    version, language = make_sidebar()
+    text = get_localised_text(version, language)
+    make_page(text, language, version)
+    make_prev_next_button("take home messages", None)
+
+    
