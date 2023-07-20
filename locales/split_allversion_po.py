@@ -35,7 +35,7 @@ def split_allversion_po(file):
             # Get the lines that should be deleted
             # Lines may be broken and extended by "\"
             others = np.array([bool(re.search(f"(?<!{version})\s+msgstr", x)) for x in _po])
-            breaks = np.array([bool(re.search("\\\s*$", x)) for x in _po])
+            breaks = np.array([bool(re.search("\\\\\s*\n$|\\\\n\s*[\'\"]$", x)) for x in _po])
             extended = np.logical_and(others, breaks)
 
             if any(extended):

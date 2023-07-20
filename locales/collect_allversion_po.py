@@ -50,12 +50,23 @@ def read_single_po(file, version="", entries=None, add_header=False, verbose=Fal
                 # Check if the next line has the right structure
                 if not re.search("^msgstr", po[id+1]):
                     raise ValueError(fr"the msgstr following msgid '{nam}' in line {id} has the wrong format")
-                entries[nam][version] = re.sub("[\"\']?\s*\n$","",re.sub("^msgstr\s*[\"\']", "", po[id+1]))
+
+                # Remove the prefix and, if it is not multiline, the suffix
+                string = re.sub("^msgstr\s*[\"\']", "", po[id+1])
+                if not re.search("\\\\n\s*[\'\"]$", po[id+1]):
+                    string = re.sub("[\"\']?\s*\n$","", string)
+                entries[nam][version] = string
+
                 for i in range(1,len(po)-id):
-                    if re.search("\\\s*$", po[id+i]):
+                    if re.search("\\\\\s*\n$", po[id+i]):
                         if i == 1:
                             entries[nam][version] += "\n"
                         entries[nam][version] += re.sub('[\'\"][\s\n]*$',"", po[id+i+1])
+                    elif re.search("\\\\n\s*[\'\"]$", po[id+i]):
+                        string = po[id+i+1]
+                        if not re.search("\\\\n\s*[\'\"]$", string):
+                            string = re.sub('[\'\"][\s\n]*$',"", string)
+                        entries[nam][version] += string
                     else:
                         break
         versions = entries.get("_versions_",[])
@@ -72,10 +83,6 @@ def make_allversion_po(po, versions=None):
         if nam in ["_versions_"]:
             continue
         else:
-            try:
-                items["header"]
-            except:
-                print(nam)
             text += "".join(items["header"]) + f'msgid "{nam}"\n'
             for vers in versions:
                 text += f'{vers} msgstr "{items.get(vers, "")}"\n'
