@@ -457,6 +457,18 @@ msgstr ""
 msgid "TAB_MODELBASE"
 msgstr ""
 
+#: pages/model_explain.py:40
+msgid "HEADLINE_SIR"
+msgstr ""
+
+#: pages/model_explain.py:28
+msgid "HEADLINE_MANUAL"
+msgstr ""
+
+#: pages/model_explain.py:28
+msgid "HEADLINE_MODELBASE"
+msgstr ""
+
 #: pages/model_explain.py:23
 #: pages/model.explain.py:23
 #: EINFÜHRUNG.py:60

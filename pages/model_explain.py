@@ -37,6 +37,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         tab1, tab2, tab3 = st.tabs([text("TAB_SIR"), text("TAB_MANUAL"), text("TAB_MODELBASE")])
 
     with tab1:
+        st.markdown(text("HEADLINE_SIR"))
+
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
         st.latex(
             r"""
@@ -101,6 +103,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             sird = f"\n```python\n{fp.read()}```\n\n"
 
         with tab2:
+            st.markdown(text("HEADLINE_MANUAL"))
             st.markdown(f"{sir_v1_integ}")
 
             st.markdown(text("SIR_IMPLEMENTATION_MANUAL_1"))
@@ -126,6 +129,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.markdown(text("SIR_IMPLEMENTATION_MANUAL_2"))
 
         with tab3:
+            st.markdown(text("HEADLINE_MODELBASE"))
+
             st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_1"))
 
             st.markdown(f"{sir_v2_rate_fns}")

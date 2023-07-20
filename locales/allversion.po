@@ -1627,6 +1627,45 @@ simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
 
+#: pages/model_explain.py:40
+msgid "HEADLINE_SIR"
+advanced-en msgstr "#### The SIR Model"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "#### The SIR Model"
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/model_explain.py:28
+msgid "HEADLINE_MANUAL"
+advanced-en msgstr "#### Manual implementation"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/model_explain.py:28
+msgid "HEADLINE_MODELBASE"
+advanced-en msgstr "#### Modelbase implementation"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
 #: pages/model_explain.py:23
 #: pages/model.explain.py:23
 #: EINFÜHRUNG.py:60
