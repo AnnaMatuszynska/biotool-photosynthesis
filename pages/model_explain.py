@@ -18,7 +18,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
 
     include_image(
-        path="pictures/Modeling_scheme_eng.png", img_width=0.5, caption=text("CAPTION_MODELLING_PICTURE")
+        path="pictures/Modeling_scheme_eng.png", img_width=0.8, caption=text("CAPTION_MODELLING_PICTURE")
     )
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1b"))
@@ -67,7 +67,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
 
         include_image(
-            "pictures/SIR_modelbase.png", img_width=0.35, caption=text("CAPTION_SIR_RESULTS_PICTURE")
+            "pictures/SIR_modelbase.png", img_width=0.6, caption=text("CAPTION_SIR_RESULTS_PICTURE")
         )
 
         if version == "Simple":
