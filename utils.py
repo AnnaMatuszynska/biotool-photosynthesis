@@ -48,20 +48,20 @@ def centered_image(img_path: str) -> None:
             <img
                 src='data:image/png;base64,{base64.b64encode(Path(img_path).read_bytes()).decode()}'
                 class='img-fluid'
+                style='max-width: 100%'
             />
         </p>
         """,
         unsafe_allow_html=True,
     )
 
+
 def include_ytvideo(yt_url: str, vid_width: float = 0.5) -> None:
-
     if vid_width > 1 or vid_width < 0:
-        raise Exception('vid_width has to be between 0 and 1')
-    
-    if vid_width != 1:
+        raise Exception("vid_width has to be between 0 and 1")
 
-        nonvid_width = (1 - vid_width)/2
+    if vid_width != 1:
+        nonvid_width = (1 - vid_width) / 2
         _, col2, _ = st.columns([nonvid_width, vid_width, nonvid_width])
 
         with col2:
@@ -69,6 +69,7 @@ def include_ytvideo(yt_url: str, vid_width: float = 0.5) -> None:
 
     else:
         st.video(yt_url)
+
 
 def include_image(path: str, img_width: float = 0.5, caption: str = None) -> None:
     """Function to include image in streamlit page with specific width and caption
@@ -79,11 +80,10 @@ def include_image(path: str, img_width: float = 0.5, caption: str = None) -> Non
         caption (str, optional): Text for the caption in format text("EXAMPLE"). Defaults to None.
     """
     if img_width > 1 or img_width < 0:
-        raise Exception('img_width has to be between 0 and 1')
-    
-    if img_width != 1:
+        raise Exception("img_width has to be between 0 and 1")
 
-        nonimg_width = (1 - img_width)/2
+    if img_width != 1:
+        nonimg_width = (1 - img_width) / 2
         _, col2, _ = st.columns([nonimg_width, img_width, nonimg_width])
 
         with col2:
@@ -96,4 +96,4 @@ def include_image(path: str, img_width: float = 0.5, caption: str = None) -> Non
         st.image(path, use_column_width=True)
 
         if caption is not None:
-                st.caption(caption, unsafe_allow_html=True)
+            st.caption(caption, unsafe_allow_html=True)
