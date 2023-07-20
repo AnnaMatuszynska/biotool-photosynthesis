@@ -539,7 +539,7 @@ msgstr ""
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "### Model construction"
+msgstr "# Model construction"
 
 #: pages/model_explain.py:67
 #: Anna's explanation of the model
@@ -581,7 +581,7 @@ msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 #: pages/model_explain.py:73
 #: Anna's explanation of the model
 msgid "RATES_6"
-msgstr "6) the fraction of active ATPase enzyme (ATPase$^{*}$)."
+msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>&midast;</sup>)."
 
 #: pages/model_explain.py:76
 #: Anna's explanation of the model
@@ -1201,6 +1201,10 @@ msgstr ""
 #: pages/first_analysis.py:247
 #: pages/Analyse.py:123
 msgid "RA6"
+msgstr ""
+
+#: pages/first_analysis.py:247
+msgid "CAPTION_DEFAULT_SLIDERS"
 msgstr ""
 
 #: pages/plant_memory.py:273

@@ -558,7 +558,7 @@ msgstr ""
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "### Konstruktion des Modells"
+msgstr "# Konstruktion des Modells"
 
 #: pages/model_explain.py:67
 #: Anna's explanation of the model
@@ -601,7 +601,7 @@ msgstr "5) der Anteil von Violaxanthin am Gesamtpool der Xanthophylle (Vx),"
 #: pages/model_explain.py:73
 #: Anna's explanation of the model
 msgid "RATES_6"
-msgstr "6) der Anteil des aktiven ATPase-Enzyms (ATPase$^{*}$)."
+msgstr "6) der Anteil des aktiven ATPase-Enzyms (ATPase<sup>&midast;</sup>)."
 
 #: pages/model_explain.py:76
 #: Anna's explanation of the model
@@ -1233,6 +1233,10 @@ msgstr "Leider nicht!"
 msgid "RA6"
 msgstr "Das Stimmt! Erst wenn eine längere Zeit der Steady-State anhält, kann davon ausgegangen werden, dass dieser sich \
         nicht noch einmal verändert."
+
+#: pages/first_analysis.py:247
+msgid "CAPTION_DEFAULT_SLIDERS"
+msgstr ""
 
 #: pages/plant_memory.py:273
 

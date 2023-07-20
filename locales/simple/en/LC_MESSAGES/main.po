@@ -494,7 +494,7 @@ msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metab
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "### Model construction"
+msgstr "# Model construction"
 
 #: pages/model_explain.py:67
 #: Anna's explanation of the model
@@ -529,7 +529,7 @@ msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 #: pages/model_explain.py:73
 #: Anna's explanation of the model
 msgid "RATES_6"
-msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>*</sup>)."
+msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>&midast;</sup>)."
 
 #: pages/model_explain.py:76
 #: Anna's explanation of the model
@@ -608,7 +608,7 @@ msgstr "Measuring phase"
 #: pages/2 Daten-Analyse.py:23
 #: pages/Analyse.py:23
 msgid "HEADLINE_ANALYSE"
-msgstr "# Experiments **in silico**"
+msgstr "# The data analysis"
 
 #: pages/first_analysis.py:178
 #: pages/2 Daten-Analyse.py:25
@@ -1089,6 +1089,10 @@ msgstr "Unfortunately not!"
 #: pages/Analyse.py:123
 msgid "RA6"
 msgstr "That is correct! Only when the steady state lasts for a longer time can it be assumed that it will not change again."
+
+#: pages/first_analysis.py:247
+msgid "CAPTION_DEFAULT_SLIDERS"
+msgstr "Some really nice text describing what can be seen"
 
 #: pages/plant_memory.py:273
 

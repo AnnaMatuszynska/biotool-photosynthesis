@@ -490,7 +490,7 @@ msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metab
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "### Model construction"
+msgstr "# Model construction"
 
 #: pages/model_explain.py:67
 #: Anna's explanation of the model
@@ -525,7 +525,7 @@ msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 #: pages/model_explain.py:73
 #: Anna's explanation of the model
 msgid "RATES_6"
-msgstr "6) the fraction of active ATPase enzyme (ATPaseΓ<sup>&midast;</sup>)."
+msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>&midast;</sup>)."
 
 #: pages/model_explain.py:76
 #: Anna's explanation of the model
@@ -589,8 +589,7 @@ msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying
 #: pages/model_explain.py:189
 msgid "SIR_IMPLEMENTATION_MODELBASE_4"
 msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimise minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
-"\n"
-"You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
+"\n You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
 
 #: pages/model_explain.py:210
 msgid "SIR_IMPLEMENTATION_MODELBASE_5"
@@ -1091,6 +1090,10 @@ msgstr ""
 #: pages/Analyse.py:123
 msgid "RA6"
 msgstr ""
+
+#: pages/first_analysis.py:247
+msgid "CAPTION_DEFAULT_SLIDERS"
+msgstr "Some really nice text describing what can be seen"
 
 #: pages/plant_memory.py:273
 
