@@ -3,11 +3,9 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import (
-    get_localised_text,
-    make_prev_next_button,
-)
-def make_page(text: Callable[[str], str], language: str, version: str) -> None:
+from utils import centered_image, get_localised_text, make_prev_next_button
+
+def make_page(text: Callable[[str], str], language: str, version: str):
     st.header(":mailbox: Contact Us!")
 
     st.markdown(
@@ -39,15 +37,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         "- Website: [Link](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljpm/Tobias-Pfennig/)"
     )
 
-    st.markdown("### Elouen Corvest")
-
-    st.markdown("- Email: elouen.corvest@rwth-aachen.de")
     st.markdown(
-        "- Website: [Link](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljuk/Elouen-Corvest/)"
-    )
-
-    st.markdown(
-        "Please note that our team members may have different response times due to their schedules and responsibilities. We will do our best to respond to your messages as soon as possible."
+        "Please note that our team members may have different response times due to their schedules and \
+                    responsibilities. We will do our best to respond to your messages as soon as possible."
     )
 
     st.markdown("Thank you for your interest in our project!")
