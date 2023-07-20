@@ -71,7 +71,7 @@ def include_ytvideo(yt_url: str, vid_width: float = 0.5) -> None:
         st.video(yt_url)
 
 
-def include_image(path: str, img_width: float = 0.5, caption: str = None) -> None:
+def include_image(path: str, img_width: float = 0.5, caption: str = None, center_caption: bool=False) -> None:
     """Function to include image in streamlit page with specific width and caption
 
     Args:
@@ -90,10 +90,30 @@ def include_image(path: str, img_width: float = 0.5, caption: str = None) -> Non
             st.image(path, use_column_width=True)
 
             if caption is not None:
-                st.caption(caption, unsafe_allow_html=True)
+                if center_caption == True:
+                    st.caption(
+                        f"""
+                        <p style='text-align: center'>
+                            {caption}
+                        </p>
+                        """,
+                        unsafe_allow_html=True
+                    )
+                else:
+                    st.caption(caption, unsafe_allow_html=True)
 
     else:
         st.image(path, use_column_width=True)
 
         if caption is not None:
-            st.caption(caption, unsafe_allow_html=True)
+                if center_caption == True:
+                    st.caption(
+                        f"""
+                        <p style='text-align: center'>
+                            {caption}
+                        </p>
+                        """,
+                        unsafe_allow_html=True
+                    )
+                else:
+                    st.caption(caption, unsafe_allow_html=True)

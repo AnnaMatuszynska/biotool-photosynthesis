@@ -372,7 +372,7 @@ if __name__ == "__main__":
     version, language = make_sidebar()
     text = get_localised_text(version, language)
     make_page(text)
-    include_image("pictures/slider-default-value.png", 0.6, text("CAPTION_DEFAULT_SLIDERS"))
+    include_image("pictures/slider-default-value.png", 0.6, text("CAPTION_DEFAULT_SLIDERS"), center_caption=True)
     make_sliders(text)
     make_quiz(text)
     make_prev_next_button("computational models", "plant light memory")

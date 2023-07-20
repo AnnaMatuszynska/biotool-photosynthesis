@@ -3,7 +3,7 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import centered_image, get_localised_text, make_prev_next_button
+from utils import centered_image, get_localised_text, make_prev_next_button, include_image
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -36,31 +36,17 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_2"))
 
     if language == "German":
-        st.image(
-            Image.open("pictures/Fotosynthese.jpg"),
-            caption=text("CAPTION_FOTOSYNTHESE_PICTURE"),
-        )
+        include_image("pictures/Fotosynthese.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
     else:
-        st.image(
-            Image.open("pictures/Fotosynthese_eng.jpg"),
-            caption=text("CAPTION_FOTOSYNTHESE_PICTURE"),
-        )
+        include_image("pictures/Fotosynthese_eng.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
 
     st.markdown(text("HEADLINE_PHOTOSYNTHESIS_LOCATION"))
     st.markdown(text("PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
 
     if language == "German":
-        st.image(
-            Image.open("pictures/Fotosynthese-Apparat.jpg"),
-            caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"),
-            width=600,
-        )
+        include_image("pictures/Fotosynthese-Apparat.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
     else:
-        st.image(
-            Image.open("pictures/Fotosynthese-Apparat_eng.jpg"),
-            caption=text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"),
-            width=600,
-        )
+        include_image("pictures/Fotosynthese-Apparat_eng.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
 
     # Journey into leaf
     st.video("https://youtu.be/hMCA0bBVoxE")
