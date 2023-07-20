@@ -875,7 +875,11 @@ msgid "HEADLINE_CONCLUSION"
 msgstr "# Fazit"
 
 #: pages/conclusion.py:12
-msgid "CONCLUSION_TEXT"
+msgid "CONCLUSION_TEXT_ONE"
+msgstr ""
+
+msgid "CONCLUSION_TEXT_TWO"
+"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom."
 msgstr ""
 
 #: pages/Analyse.py:72

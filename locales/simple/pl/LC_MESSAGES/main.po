@@ -859,11 +859,17 @@ msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can 
 #: pages/conclusion.py:12
 #: Conclusion
 msgid "HEADLINE_CONCLUSION"
-msgstr "# Conclusion"
+msgstr "# Podsumowanie"
 
 #: pages/conclusion.py:12
-msgid "CONCLUSION_TEXT"
+msgid "CONCLUSION_TEXT_ONE"
 msgstr ""
+
+msgid "CONCLUSION_TEXT_TWO"
+"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom."
+msgstr "- Rośliny mogą przypomnieć sobie poprzednią ekspozycję na światło i odpowiednio dostosować swoje tempo fotosyntezy. Ta krótkotrwała pamięć pozwala im efektywnie zużywać energię i dostosowywać się do różnych warunków środowiskowych. \n"
+"- Uważamy, że pomiar PAM jest ekscytującą i skuteczną metodą poznania skomplikowanych mechanizmów leżących u podstaw wzrostu i rozwoju roślin.\n"
+"- W koncu, prosimy o rozważenie przedstawionych tutaj odkryć i ich szerszych implikacji dla naszego zrozumienia świata przyrody. W ten sposób będziesz w stanie rozpoznać i podziwiać niezwykłą złożoność i wspaniałość królestwa roślin."
 
 #: pages/Analyse.py:72
 msgid "SLIDER_DEACTIVATION"

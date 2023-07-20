@@ -804,12 +804,15 @@ msgid "HEADLINE_CONCLUSION"
 msgstr "# Take Home Messages"
 
 #: pages/conclusion.py:12
-msgid "CONCLUSION_TEXT"
-msgstr "We hope you have received a thorough introduction to the captivating realm of plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. Consequently, you should have arrived at the following conclusions:\n"
+msgid "CONCLUSION_TEXT_ONE"
+msgstr "We hope you have received a thorough introduction to the captivating realm of (computational) plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. Consequently, you should have arrived at the following conclusions:\n"
 "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
-"- The relationship between light intensity and photosynthetic rate is not linear Rather, it follows a curve that peaks at a certain point, the saturation point.\n"
-"- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to consume energy and adapt to various environmental conditions efficiently.\n"
-"\n We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development. Please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom."
+"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain point, the saturation point, like on the figure below."
+
+msgid "CONCLUSION_TEXT_TWO"
+msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to consume energy and adapt to various environmental conditions efficiently.\n"
+"\n We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development." 
+"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom."
 
 #: pages/Analyse.py:72
 msgid "SLIDER_DEACTIVATION"
