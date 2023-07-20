@@ -923,7 +923,7 @@ msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 
 #: EINFÜHRUNG.py:59
 msgid "EXPANDER_NPQ"

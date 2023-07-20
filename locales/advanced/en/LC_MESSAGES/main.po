@@ -129,10 +129,6 @@ msgstr "On the page **experiments** ***in silico*** you will get to know the pho
 msgid "MEMORY"
 msgstr "Last but not least, you will get to know the plant light memory on the **plant light memory page** and can prove its existence independently with experiments."
 
-#: pages/1 Messmethode.py:50
-msgid "HEADLINE_PHOTOSYNTHESIS_MAIN"
-msgstr "# Photosynthesis :leaves:"
-
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
 msgid "HEADLINE_CLIMATE"
@@ -166,7 +162,7 @@ msgstr "In the history of the Earth, several times climate changes occurred. In 
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
 msgid "HEADLINE_PHOTOSYNTHESIS"
-msgstr "#### Photosynthesis"
+msgstr "# Photosynthesis"
 
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
@@ -176,7 +172,7 @@ msgstr "Just like humans, plants need nutrients for their growth. The most essen
 #: pages/photosynthesis.py:34
 #: EINFÜHRUNG.py:43
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process of photosynthesis."
+msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in the form of light."
 
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
@@ -206,7 +202,7 @@ msgstr "#### Place of photosynthesis"
 #: pages/photosynthesis.py:57
 #: EINFÜHRUNG.py:55
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 
 #: pages/photosynthesis.py:68
 #: EINFÜHRUNG.py:43
@@ -255,7 +251,7 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
-msgstr "# Measuring Photosynthesis :books:"
+msgstr "# Measuring photosynthesis"
 
 #: pages/method.py:15
 #: Explanation by Tobias
@@ -353,10 +349,6 @@ msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible p
 #: pages/1 Messmethode.py:44
 msgid "EXPLANATION_ILLUSTRATION"
 msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
-
-#: pages/1 Messmethode.py:30
-msgid "HEADLINE_COMPUTATIONAL_MODELS"
-msgstr "# Computational Models :computer:"
 
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
@@ -494,10 +486,6 @@ msgstr "### CAM Plants"
 #: pages/model_explain.py:218
 msgid "CAM_1"
 msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants that have adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
-
-#: pages/model_explain.py:65
-msgid "HEADLINE_EXPERIMENTS"
-msgstr "# Experiments *in silico* :bar_chart:"
 
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
@@ -766,7 +754,7 @@ msgstr "Fluorescence [F´ₘ /Fₘ]"
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
 msgid "HEADLINE_BRAIN"
-msgstr "# The Plant Light Memory :chart_with_upwards_trend:"
+msgstr "# The plant memory"
 
 #: pages/plant_memory.py:269
 #: pages/3 Pflanzengedächtnis.py:38
