@@ -21,4 +21,4 @@ if __name__ == "__main__":
     version, language = make_sidebar()
     text = get_localised_text(version, language)
     make_page(text, language, version)
-    make_prev_next_button("measuring method", "experiments in silico")
+    make_prev_next_button("plant light memory", "contact")
