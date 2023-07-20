@@ -5,6 +5,24 @@ import numpy as np
 from pathlib import Path
 from warnings import warn
 
+default_header = """
+# PHOTOSYNTHESIS IN SILICO.
+# Copyright (C) 2023 Computational Life Science RWTH Aachen
+# Sarah Philipps et al., 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-12-02 17:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"""
+
 def _get_header_and_version(po):
     # Extract the header
     header_end = np.where(np.array([bool(re.match("# TEXT VERSIONS\n", x)) for x in po]))[0][0]

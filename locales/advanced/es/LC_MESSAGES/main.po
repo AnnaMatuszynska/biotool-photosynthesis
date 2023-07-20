@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR ORGANIZATION
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# PHOTOSYNTHESIS IN SILICO.
+# Copyright (C) 2023 Computational Life Science RWTH Aachen
+# Sarah Philipps et al., 2023.
 #
 msgid ""
 msgstr ""
@@ -14,72 +14,50 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
+
 # SIDEBAR
 msgid "SIMPLE"
 msgstr "Simple"
 
+
 msgid "ADVANCED"
 msgstr "Advanced"
 
+#: EINFÜHRUNG.py:
+msgid "LANGUAGE"
+msgstr ""
 
-#: pages/2 Daten-Analyse.py:23
-msgid "HEADLINE_ANALYSE"
-msgstr "# The data analysis"
+#: pages/3 Pflanzengedächtnis.py:97
+msgid "START_BUTTOM"
+msgstr "Start the tests"
 
-#: pages/2 Daten-Analyse.py:25
-msgid "INTRODUKTION"
-msgstr "Matuszynska et al. (2016) developed a model that simulates the processes at Photosysthem II. With the help \
-        of this model, analogous diagrams can be created as they arise in the previously described measurement method."
+#: pages/1 Messmethode.py:49
+msgid "LITERATURE"
+msgstr ""
 
-#: pages/Analyse.py:
-msgid "HEADLINE_SLIDER"
-msgstr "##### Use of the sliders:"
-
-#: pages/2 Daten-Analyse.py:27
-msgid "EXPLANATNION"
-msgstr "First, change the sliders according to the test you want to simulate. Then start the calculation by clicking \
-        on the button. The calculated diagram will be displayed. As soon as you change the sliders again, the graph \
-        disappears and you can load a new graph."
-
-#: pages/2 Daten-Analyse.py:29
-msgid "TIPP1"
-msgstr "***Tip 1:*** *For comparison of two tests, you can download the diagrams, via the three dots (top right).*"
-
-#: pages/2 Daten-Analyse.py:31
-msgid "TIPP2"
-msgstr "***Tip 2:*** *By clicking the Stop button in the upper right corner you can cancel the calculation process.*"
-
-#: pages/2 Daten-Analyse.py:48
-msgid "SLIDER_LIGHT"
-msgstr "Light intensity in μmol m⁻² s⁻¹"
-
-#: pages/2 Daten-Analyse.py:60
-msgid "SLIDER_PULSES"
-msgstr "Saturation pulses in the selected intervals in seconds"
-
-#: pages/2 Daten-Analyse.py:67
-msgid "SLIDER_ACTIVATION"
-msgstr "Conversion rate to Zeaxanthin in percent"
+#: pages/1 Messmethode.py:50
+msgid "LITERATURE_DECLARATION"
+msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the \
+           opportunity to familiarize oneself with the basics."
 
 
-#: pages/2 Daten-Analyse.py:83
-msgid "SPINNER"
-msgstr "I'll do some quick math for you :computer:"
+msgid "CAPTION_PAM"
+msgstr ""
 
-#: pages/2 Daten-Analyse.py:123
-msgid "MEASUREMENT_PHASE"
-msgstr "Measuring phase"
+#: EINFÜHRUNG.py:36
+msgid "HEADLINE_PRODUCENTEN"
+msgstr ""
 
+#: EINFÜHRUNG.py:37
+msgid "PRODUCENTEN_EXPLANATION"
+msgstr ""
 
+#: Start.py:10
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
 msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model."
 
-#: EINFÜHRUNG.py:22
-msgid "AUTHOR"
-msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
-
-
+#: Start.py:11
 #: Intro by Anna
 msgid "INTRO"
 msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszyńska at the \
@@ -90,18 +68,788 @@ msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah
         both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
         the left side Version *Simple* or *Expert*. "
 
-
-
+#: Start.py:15
 #: EINFÜHRUNG.py:24
 msgid "HEADLINE_USAGE"
 msgstr "#### How to use this website"
+
+#: Start.py:16
+#: EINFÜHRUNG.py:24
+msgid "USAGE"
+msgstr ""
+
+#: Start.py:17
+#: EINFÜHRUNG.py:26
+msgid "ADVANCED_USE"
+msgstr ""
+
+#: Start.py:18
+#: EINFÜHRUNG.py:28
+msgid "DROP_BOX_INTRO"
+msgstr ""
+
+#: Start.py:23
+#: EINFÜHRUNG.py:28
+msgid "EXPANDER_IN"
+msgstr ""
+
+#: Start.py:24
+#: EINFÜHRUNG.py:28
+msgid "EXPLANATION_IN_VITRO"
+msgstr ""
+
+#: Start.py:25
+#: EINFÜHRUNG.py:28
+msgid "EXPLANATION_IN_VIVO"
+msgstr ""
+
+#: Start.py:26
+#: EINFÜHRUNG.py:28
+msgid "EXPLANATION_IN_SILICO"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "HEADLINE_PAGES"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "INTRODUCTION_PAGES"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "PHOTOSYNTHESIS"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "METHOD"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "MODEL"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "EXPERIMENT"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "MEMORY"
+msgstr ""
+
+#: pages/photosynthesis.py:10
+#: Lisa's introduction
+msgid "HEADLINE_CLIMATE"
+msgstr ""
+
+#: pages/photosynthesis.py:11
+#: Lisa's introduction
+msgid "INTRODUCTION_CLIMATE_CHANGE"
+msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a \
+        certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can \
+        induce a change in climate:"
+
+#: pages/photosynthesis.py:14
+#: Lisa's introduction
+msgid "POINT_1"
+msgstr "- plate tectonics and vulcanism"
+
+#: pages/photosynthesis.py:15
+#: Lisa's introduction
+msgid "POINT_2"
+msgstr "- earth orbit transitions"
+
+#: pages/photosynthesis.py:16
+#: Lisa's introduction
+msgid "POINT_3"
+msgstr "- emissions of heat-trapping gasses"
+
+#: pages/photosynthesis.py:17
+#: Lisa's introduction
+msgid "END_OF_INTRODUCTION"
+msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
+        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
+        impact of the sudden rise of Earth Temperature."
+
+#: pages/photosynthesis.py:32
+#: EINFÜHRUNG.py:42
+msgid "HEADLINE_PHOTOSYNTHESIS"
+msgstr ""
+
+#: pages/photosynthesis.py:33
+#: EINFÜHRUNG.py:43
+msgid "PHOTOSYNTHESIS_EXPLANATION_1"
+msgstr ""
+
+#: pages/photosynthesis.py:34
+#: EINFÜHRUNG.py:43
+msgid "PHOTOSYNTHESIS_EXPLANATION_2"
+msgstr ""
+
+#: pages/photosynthesis.py:44
+#: EINFÜHRUNG.py:43
+msgid "CAPTION_FOTOSYNTHESE_PICTURE"
+msgstr "Photosynthesis process"
+
+#: pages/photosynthesis.py:47
+#: EINFÜHRUNG.py:39
+msgid "HEADLINE_NUTRIENTS"
+msgstr ""
+
+#: pages/photosynthesis.py:48
+#: EINFÜHRUNG.py:40
+msgid "NUTRIENTS_EXPLANATION"
+msgstr ""
+
+#: pages/photosynthesis.py:52
+#: EINFÜHRUNG.py:40
+msgid "CAPTION_STOMATA_PICTURE"
+msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
+
+#: pages/photosynthesis.py:56
+#: EINFÜHRUNG.py:54
+msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
+msgstr ""
+
+#: pages/photosynthesis.py:57
+#: EINFÜHRUNG.py:55
+msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
+msgstr ""
+
+#: pages/photosynthesis.py:68
+#: EINFÜHRUNG.py:43
+msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
+msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
+
+#: pages/photosynthesis.py:75
+#: EINFÜHRUNG.py:59
+msgid "HEADLINE_NPQ"
+msgstr ""
+
+#: pages/photosynthesis.py:76
+#: EINFÜHRUNG.py:60
+msgid "NPQ_EXPLANATION"
+msgstr ""
+
+#: pages/photosynthesis.py:78
+#: pages/1 Messmethode.py:40
+msgid "HEADER_MODEL_ORGANISMEN"
+msgstr ""
+
+#: pages/photosynthesis.py:79
+#: pages/1 Messmethode.py:40
+msgid "MODEL_ORGANISMEN_EXPLANATION"
+msgstr ""
+
+#: pages/photosynthesis.py:81
+#: pages/1 Messmethode.py:40
+msgid "EXPANDER_MODEL_ORGANISMEN"
+msgstr "Why is Arabidopsis thaliana a model organism?"
+
+#: pages/photosynthesis.py:85
+#: pages/1 Messmethode.py:40
+msgid "CAPTION_THAIANA_PICTURE"
+msgstr "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
+
+#: pages/photosynthesis.py:87
+msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
+msgstr ""
+
+#: pages/method.py:10
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_ONE"
+msgstr "# The measurement method"
+
+#: pages/method.py:15
+#: Explanation by Tobias
+msgid "INTRODUCTION_MEASUREMENT"
+msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
+        modelling to learn more about it. But biologists don't just like knowledge. They also like numbers and measuring \
+        things. So researchers invented many ways of determining how much a plant is doing photosynthesis. For example, \
+        you heard that plants produce oxygen and take up carbon dioxide. Therefore, photosynthesis can be measured by \
+        how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want \
+        to do it outside on a tree or in a field. "
+
+#: pages/method.py:18
+#: EINFÜHRUNG.py:36
+msgid "CAPTION_ABB1"
+msgstr "Photo of a plant (Spathiphyllum), a monocot, under three different light treatments: On the left in daylight, \
+        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
+        but through a filter which filters all wavelengths except for the red light."
+
+#: pages/method.py:20
+#: Explanation by Tobias
+msgid "GROWING_PLANTS_1"
+msgstr "Glowing Plants?"
+
+#: pages/method.py:22
+#: Explanation by Tobias
+msgid "INTRODUCTION_GLOWING"
+msgstr "Here is where a specialty of plants comes into play: They can glow! When light shines on them, they not only \
+        photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
+        T-shirt shines purple in a disco's black light. When something glows in a different light color when illuminated, \
+        this is called 'fluorescence'. And the plant's fluorescence glow is red."
+
+#: pages/method.py:23
+#: Explanation by Tobias
+msgid "PLANT_ARE_SHINING_RED"
+msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
+        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red glow, \
+        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
+
+#: pages/method.py:24
+#: Explanation by Tobias
+msgid "INTRODUCTION_EXPERIMENT"
+msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
+        sticker and will now shine a strong light on it. The camera's red filter helps us ignore distracting light and \
+        focus on the red fluorescence. Now watch what happens:"
+
+#: pages/method.py:30
+#: Explanation by Tobias
+msgid "EXPLANATION_VIDEO"
+msgstr "Did you see the red glow and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
+        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
+        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
+        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
+        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
+        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
+        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
+        it, vanishing the picture on the leaf."
+
+#: pages/method.py:32
+#: Explanation by Tobias
+msgid "MEASURING_FLUORESZENZ"
+msgstr "Measuring Photosynthesis with Fluorescence"
+
+#: pages/method.py:33
+#: Explanation by Tobias
+msgid "EXPLANATION_MEASUREMENT_1"
+msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
+        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
+        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
+        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
+
+#: pages/method.py:34
+#: Explanation by Tobias
+msgid "INTRODUCTION_PHI"
+msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
+        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
+        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
+        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
+        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
+        is doing photosynthesis more efficiently."
+
+#: pages/method.py:37
+#: Explanation by Tobias
+
+msgid "MEASURING_LIGHT_FLUORESCENCE"
+msgstr "Basic principles of chlorophyll fluorescence"
+
+#: pages/method.py:38
+#: Explanation by Tobias
+
+msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
+msgstr "Indeed, we shine a very tight series of short and weak light flashes on the plant, over a thousand each second! \
+        With this flashing, we measure the plant performance and call it 'measuring light'. The measuring light is too \
+        weak to be used for photosynthesis, but strong enough to get the plant to fluoresce. And, since we produce \
+        fluorescence with each flash, the resulting signal is patterned (modulated), just like the measuring light."
+
+#: pages/method.py:41 pages/method.py:61
+#: pages/1 Messmethode.py:47
+msgid "CAPTION_ABB2"
+msgstr "Example Graph of a PAM measurement"
+
+#: pages/method.py:43
+#: pages/1 Messmethode.py:32
+msgid "INTRODUCTION_PAM_MEASUREMENT"
+msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
+        for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
+        for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
+        (intensity) of light flashes."
+
+#: pages/method.py:46
+#: Explanation by Tobias
+msgid "SATURATING_PULSES"
+msgstr "Saturating Pulses"
+
+#: pages/method.py:47
+#: Explanation by Tobias
+msgid "EXPLANATION_ATTEMPTS"
+msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light \
+        pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully \
+        converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
+        yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
+        tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
+        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
+        many other values. But how that is done goes much too far. Most important is that you understand that we compare \
+        what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
+        over time and conditions."
+
+#: pages/method.py:49
+#: pages/1 Messmethode.py:40
+msgid "HEADLINE_ILLUSTRATION"
+msgstr "##### Visualization of the results"
+
+#: pages/method.py:50
+#: pages/1 Messmethode.py:42
+msgid "EXPLANATION_ILLUSTRATION_UNITS"
+msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in \
+        response to the saturating pulse of light. Each peak is referred to as Fm', with the first one being measured \
+        in the dark referred to  simply as Fm."
+
+#: pages/method.py:51
+#: pages/1 Messmethode.py:44
+msgid "EXPLANATION_ILLUSTRATION"
+msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
+
+#: pages/model_explain.py:10
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_MODEL"
+msgstr "# The Model"
+
+#: pages/model_explain.py:12
+#: EINFÜHRUNG.py:60
+msgid "MATHEMATICAL_MODELLING_EXPLANATION_1"
+msgstr ""
+
+#: pages/model_explain.py:15
+
+msgid "CAPTION_MODELLING_PICTURE"
+msgstr ""
+
+#: pages/model_explain.py:17
+#: pages/model.explain.py:17
+
+msgid "MATHEMATICAL_MODELLING_EXPLANATION_1b"
+msgstr ""
+
+#: pages/model_explain.py:22
+msgid "EXAMPLE_MATHEMATICAL_MODEL"
+msgstr ""
+
+#: pages/model_explain.py:28
+#: pages/model_explain.py:25
+msgid "TAB_SIR"
+msgstr ""
+
+#: pages/model_explain.py:28
+msgid "TAB_MANUAL"
+msgstr ""
+
+#: pages/model_explain.py:28
+msgid "TAB_MODELBASE"
+msgstr ""
+
+#: pages/model_explain.py:23
+#: pages/model.explain.py:23
+#: EINFÜHRUNG.py:60
+msgid "MATHEMATICAL_MODELLING_EXAMPLE"
+msgstr ""
+
+#: pages/model_explain.py:37
+#: pages/model.explain.py:37
+
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
+msgstr ""
+
+#: pages/model_explain.py:52
+#: pages/model.explain.py:52
+
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
+msgstr ""
+
+#: pages/model_explain.py:55
+#: pages/model.explain.py:55
+
+msgid "CAPTION_SIR_RESULTS_PICTURE"
+msgstr ""
+
+#: pages\model_explain.py:61
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
+msgstr ""
+
+#: pages/model_explain.py:63
+
+msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
+msgstr ""
+
+#: pages/model_explain.py:69
+msgid "HEADLINE_FVCB"
+msgstr ""
+
+#: pages/model_explain.py:71
+msgid "FVCB_1"
+msgstr ""
+
+#: pages/model_explain.py:87
+msgid "FVCB_2"
+msgstr ""
+
+#: pages/model_explain.py:90
+msgid "HEADLINE_E_PHOTOSYNTHESIS"
+msgstr ""
+
+#: pages/model_explain.py:92
+msgid "E_PHOTOSYNTHESIS_1"
+msgstr ""
+
+#: pages/model_explain.py:102
+msgid "E_PHOTOSYNTHESIS_2"
+msgstr ""
+
+#: pages/model_explain.py:105
+msgid "HEADLINE_BELLASIO"
+msgstr ""
+
+#: pages/model_explain.py:107
+msgid "BELLASIO_1"
+msgstr ""
+
+#: pages/model_explain.py:109
+msgid "BELLASIO_2"
+msgstr ""
+
+#: pages/model_explain.py:210
+msgid "EXPANDER_C3C4CAM"
+msgstr ""
+
+#: pages/model_explain.py:211
+msgid "HEADLINE_C3"
+msgstr ""
+
+#: pages/model_explain.py:212
+msgid "C3_1"
+msgstr ""
+
+#: pages/model_explain.py:214
+msgid "HEADLINE_C4"
+msgstr ""
+
+#: pages/model_explain.py:215
+msgid "C4_1"
+msgstr ""
+
+#: pages/model_explain.py:217
+msgid "HEADLINE_CAM"
+msgstr ""
+
+#: pages/model_explain.py:218
+msgid "CAM_1"
+msgstr ""
+
+#: pages/model_explain.py:65
+#: Anna's explanation of the model
+msgid "HEADLINE_MODEL_CONSTRUCTION"
+msgstr "### Model construction"
+
+#: pages/model_explain.py:67
+#: Anna's explanation of the model
+msgid "CONSTRUCTION_EXPLANATION"
+msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
+        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
+        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
+        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
+        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
+        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
+        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
+        Each of the equations represents the dynamic rate of change in:"
+
+#: pages/model_explain.py:68
+#: Anna's explanation of the model
+msgid "RATES_1"
+msgstr "1) the reduced fraction of the plastoquinone pool ($PQH_2$),"
+
+#: pages/model_explain.py:69
+#: Anna's explanation of the model
+msgid "RATES_2"
+msgstr "2) the stromal concentration of ATP (ATP),"
+
+#: pages/model_explain.py:70
+#: Anna's explanation of the model
+msgid "RATES_3"
+msgstr "3) the luminal proton concentration ($H$),"
+
+#: pages/model_explain.py:71
+#: Anna's explanation of the model
+msgid "RATES_4"
+msgstr "4) the fraction of nonprotonated proteins (PsbS),"
+
+#: pages/model_explain.py:72
+#: Anna's explanation of the model
+msgid "RATES_5"
+msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
+
+#: pages/model_explain.py:73
+#: Anna's explanation of the model
+msgid "RATES_6"
+msgstr "6) the fraction of active ATPase enzyme (ATPase$^{*}$)."
+
+#: pages/model_explain.py:76
+#: Anna's explanation of the model
+msgid "HEADLINE_MODEL_EQUATIONS"
+msgstr "### Mathematical equations"
+
+#: pages/model_explain.py:77
+#: Anna's explanation of the model
+msgid "MODEL_EQUATIONS_INTRODUCTION"
+msgstr "The six coupled ordinary differential equations (ODE)"
+
+#: pages/model_explain.py:91
+#: Anna's explanation of the model
+msgid "REACTION_RATES"
+msgstr "Reaction rates"
+
+#: pages/model_explain.py:92
+#: Anna's explanation of the model
+msgid "RATES_DYNAMIC"
+msgstr "###### Reaction rates used in the dynamic description of the system"
+
+#: pages/model_explain.py:106
+#: Anna's explanation of the model
+msgid "RATE_QUENCHER"
+msgstr "###### Reaction rates to calculate the quencher activity and the overall rate"
+
+#: pages/model_explain.py:117
+#: Anna's explanation of the model
+msgid "HEADLINE_IMPLEMENTATION"
+msgstr "### Implementation"
+
+#: pages/model_explain.py:119
+#: Anna's explanation of the model
+msgid "IMPLEMENTATION_DESCRIPTION"
+msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
+        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
+        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+
+#: pages/model_explain.py:149
+msgid "SIR_IMPLEMENTATION_MANUAL_1"
+msgstr ""
+
+#: pages/model_explain.py:158
+msgid "SIR_IMPLEMENTATION_MANUAL_2"
+msgstr ""
+
+#: pages/model_explain.py:177
+msgid "SIR_IMPLEMENTATION_MODELBASE_1"
+msgstr ""
+
+#: pages/model_explain.py:181
+msgid "SIR_IMPLEMENTATION_MODELBASE_2"
+msgstr ""
+
+#: pages/model_explain.py:181
+msgid "SIR_IMPLEMENTATION_MODELBASE_3"
+msgstr ""
+
+#: pages/model_explain.py:189
+msgid "SIR_IMPLEMENTATION_MODELBASE_4"
+msgstr ""
+
+#: pages/model_explain.py:210
+msgid "SIR_IMPLEMENTATION_MODELBASE_5"
+msgstr ""
+
+#: pages/model_explain.py:214
+msgid "SIR_IMPLEMENTATION_MODELBASE_6"
+msgstr ""
+
+#: pages/first_analysis.py:97
+#: pages/2 Daten-Analyse.py:123
+#: pages/Analyse.py:123
+msgid "MEASUREMENT_PHASE"
+msgstr "Measuring phase"
+
+#: pages/first_analysis.py:177
+#: pages/2 Daten-Analyse.py:23
+#: pages/Analyse.py:23
+msgid "HEADLINE_ANALYSE"
+msgstr "# The data analysis"
+
+#: pages/first_analysis.py:178
+#: pages/2 Daten-Analyse.py:25
+#: pages/Analyse.py:25
+msgid "INTRODUKTION"
+msgstr "Matuszynska et al. (2016) developed a model that simulates the processes at Photosysthem II. With the help \
+        of this model, analogous diagrams can be created as they arise in the previously described measurement method."
+
+#: pages/first_analysis.py:182 pages/plant_memory.py:272
+
+msgid "TASK_1"
+msgstr ""
+
+#: pages/first_analysis.py:182
+
+msgid "TASK_ANALYSIS_1_EXPLANATION"
+msgstr ""
+
+#: pages/first_analysis.py:184 pages/plant_memory.py:275
+
+msgid "TASK_2"
+msgstr ""
+
+#: pages/first_analysis.py:185
+
+msgid "TASK_ANALYSIS_2_EXPLANATION"
+msgstr ""
+
+#: pages/first_analysis.py:186
+
+msgid "TASK_3"
+msgstr ""
+
+#: pages/first_analysis.py:187
+
+msgid "TASK_ANALYSIS_3_EXPLANATION"
+msgstr ""
+
+#: pages/first_analysis.py:188
+
+msgid "TASK_4"
+msgstr ""
+
+#: pages/first_analysis.py:189
+
+msgid "TASK_ANALYSIS_4_EXPLANATION"
+msgstr ""
+
+#: pages/first_analysis.py:190
+
+msgid "TASK_5"
+msgstr ""
+
+#: pages/first_analysis.py:191
+
+msgid "TASK_ANALYSIS_5_EXPLANATION"
+msgstr ""
+
+#: pages/first_analysis.py:193
+#: pages/Analyse.py:
+msgid "HEADLINE_SLIDER"
+msgstr "##### Use of the sliders:"
+
+#: pages/first_analysis.py:194
+#: pages/2 Daten-Analyse.py:27
+#: pages/Analyse.py:27
+msgid "EXPLANATNION"
+msgstr "First, change the sliders according to the test you want to simulate. Then start the calculation by clicking \
+        on the button. The calculated diagram will be displayed. As soon as you change the sliders again, the graph \
+        disappears and you can load a new graph."
+
+#: pages/first_analysis.py:196
+#: pages/2 Daten-Analyse.py:29
+#: pages/Analyse.py:29
+msgid "TIPP1"
+msgstr "***Tip 1:*** *For comparison of two tests, you can download the diagrams, via the three dots (top right).*"
+
+#: pages/first_analysis.py:197
+#: pages/2 Daten-Analyse.py:31
+#: pages/Analyse.py:31
+msgid "TIPP2"
+msgstr "***Tip 2:*** *By clicking the Stop button in the upper right corner you can cancel the calculation process.*"
+
+#: pages/first_analysis.py:203 pages/plant_memory.py:286
+#: pages/2 Daten-Analyse.py:48
+#: pages/Analyse.py:48
+msgid "SLIDER_LIGHT"
+msgstr "Light intensity in μmol m⁻² s⁻¹"
+
+#: pages/first_analysis.py:211 pages/plant_memory.py:291
+#: pages/2 Daten-Analyse.py:55
+#: pages/3 Pflanzengedächtnis.py:53
+#: pages/Analyse.py:55
+msgid "SLIDER_TIME"
+msgstr "Dark phase in minutes"
+
+#: pages/first_analysis.py:216
+#: pages/2 Daten-Analyse.py:60
+#: pages/Analyse.py:60
+msgid "SLIDER_PULSES"
+msgstr "Saturation pulses in the selected intervals in seconds"
+
+#: pages/first_analysis.py:222
+#: pages/Analyse.py:67
+#: pages/2 Daten-Analyse.py:67
+msgid "SLIDER_ACTIVATION"
+msgstr "Conversion rate to Zeaxanthin in percent"
+
+#: pages/first_analysis.py:247 pages/plant_memory.py:326
+#: pages/2 Daten-Analyse.py:83
+#: pages/Analyse.py:83
+msgid "SPINNER"
+msgstr "I'll do some quick math for you :computer:"
+
+#: pages/plant_memory.py:173
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE1"
+msgstr "Training phase"
+
+#: pages/plant_memory.py:173
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE2"
+msgstr "Dark phase"
+
+#: pages/plant_memory.py:173
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "PHASE3"
+msgstr "Memory phase"
+
+#: pages/plant_memory.py:188
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "AXSIS_TIME"
+msgstr "Time [min]"
+
+#: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
+#: pages/Analyse.py:72
+msgid "TIME"
+msgstr "Time [min]"
+
+#: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
+#: pages/Analyse.py:72
+msgid "FLUO"
+msgstr ""
+
+#: pages/plant_memory.py:262
+#: pages/3 Pflanzengedächtnis.py:36
+msgid "HEADLINE_BRAIN"
+msgstr "# The plant memory"
+
+#: pages/plant_memory.py:269
+#: pages/3 Pflanzengedächtnis.py:38
+msgid "INTRODUCTION_BRAIN"
+msgstr "The model also offers the possibility to simulate experiments with dark phases. In this way, the short-term \
+        memory of plants can be demonstrated. You can simulate different scenarios with the two sliders."
+
+#: pages/plant_memory.py:278
+#: pages/3 Pflanzengedächtnis.py:40
+msgid "TIP1"
+msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+
+#: pages/plant_memory.py:280
+#: pages/3 Pflanzengedächtnis.py:42
+msgid "TIP2"
+msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+
+#: pages/plant_memory.py:342
+#: Conclusion
+msgid "CONCLUSION"
+msgstr "Conclusion"
+
+#: pages/plant_memory.py:343
+msgid "CONCLUSION_TEXT"
+msgstr ""
+
+#: pages/Analyse.py:72
+msgid "SLIDER_DEACTIVATION"
+msgstr ""
+
+#: EINFÜHRUNG.py:22
+msgid "AUTHOR"
+msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
 
 #: EINFÜHRUNG.py:24
 msgid "MOTIVATION"
 msgstr "Dear users, on this website you have the opportunity to get to know a mathematical model in biology \
         to get to know. However, you will not only have the opportunity to get to know the model theoretically,\
         but also the possibility to work actively with the model."
-
 
 #: EINFÜHRUNG.py:26
 msgid "PROCESS"
@@ -129,31 +877,6 @@ msgstr "Another advantage of the model is that one can show the short term plant
 msgid "EXPANDER_CLIMATE"
 msgstr "Climate change"
 
-#: Lisa's introduction
-msgid "INTRODUCTION_CLIMATE_CHANGE"
-msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a \
-        certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can \
-        induce a change in climate:"
-
-#: Lisa's introduction
-msgid "POINT_1"
-msgstr "- plate tectonics and vulcanism"
-
-#: Lisa's introduction
-msgid "POINT_2"
-msgstr "- earth orbit transitions"
-
-#: Lisa's introduction
-msgid "POINT_3"
-msgstr "- emissions of heat-trapping gasses"
-
-#: Lisa's introduction
-msgid "END_OF_INTRODUCTION"
-msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
-        impact of the sudden rise of Earth Temperature."
-
-
 #: EINFÜHRUNG.py:36
 msgid "EXPANDER_PRODUCENTEN"
 msgstr "Consumers vs producers"
@@ -174,10 +897,6 @@ msgstr "In order for plants to photosynthesize, they need nutrients, which they 
         purpose, plants have, on the one hand, roots that can absorb water and nutrients from the soil. On the other \
         hand, plants have stomata in their leaves, through which plants can absorb CO₂ from the air."
 
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-
 #: EINFÜHRUNG.py:42
 msgid "EXPANDER_PHOTOSYNTHESIS"
 msgstr "Photosynthesis"
@@ -195,10 +914,6 @@ msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do 
         the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
         about the process of photosynthesis."
 
-#: EINFÜHRUNG.py:43
-msgid "CAPTION_FOTOSYNTHESE_PICTURE"
-msgstr "Photosynthesis process"
-
 #: EINFÜHRUNG.py:54
 msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION"
 msgstr "Place of photosynthesis"
@@ -209,10 +924,6 @@ msgstr "Photosynthesis takes place in the cells of the mostly green components o
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
         which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
-
-#: EINFÜHRUNG.py:43
-msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
-msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
 
 #: EINFÜHRUNG.py:59
 msgid "EXPANDER_NPQ"
@@ -269,68 +980,15 @@ msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"
 msgstr "[Here](https://www.cuemath.com/calculus/differential-equation/) there is further information on the topic \
         Differential equations."
 
-
 #: EINFÜHRUNG.py:64
 msgid "CREDITS_ANNA"
 msgstr "All displayed diagrams are generated by a mathematical model. This model was developed by \
         [Matuszynska et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub)."
 
 #: pages/1 Messmethode.py:50
-msgid   "INTRODUCTION_LITERATURE"
-msgstr  "The following literature will deepen the topic of photosynthesis, or provide an opportunity to familiarize \
+msgid "INTRODUCTION_LITERATURE"
+msgstr "The following literature will deepen the topic of photosynthesis, or provide an opportunity to familiarize \
         yourself with the basics."
-
-
-#: pages/3 Pflanzengedächtnis.py:36
-msgid "HEADLINE_BRAIN"
-msgstr "# The plant memory"
-
-#: pages/3 Pflanzengedächtnis.py:38
-msgid "INTRODUCTION_BRAIN"
-msgstr "The model also offers the possibility to simulate experiments with dark phases. In this way, the short-term \
-        memory of plants can be demonstrated. You can simulate different scenarios with the two sliders."
-
-#: pages/3 Pflanzengedächtnis.py:40
-msgid "TIP1"
-msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-
-#: pages/3 Pflanzengedächtnis.py:42
-msgid "TIP2"
-msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-
-
-#: pages/3 Pflanzengedächtnis.py:53
-msgid "SLIDER_TIME"
-msgstr "Dark phase in minutes"
-
-#: pages/Analyse.py:72
-msgid "TIME"
-msgstr "Time [min]"
-
-#: pages/3 Pflanzengedächtnis.py:97
-msgid "START_BUTTOM"
-msgstr "Start the tests"
-
-
-#: pages/3 Pflanzengedächtnis.py:122
-msgid "PHASE1"
-msgstr "Training phase"
-
-#: pages/3 Pflanzengedächtnis.py:122
-msgid "PHASE2"
-msgstr "Dark phase"
-
-#: pages/3 Pflanzengedächtnis.py:122
-msgid "PHASE3"
-msgstr "Memory phase"
-
-#: pages/3 Pflanzengedächtnis.py:122
-msgid "AXSIS_TIME"
-msgstr "Time [min]"
-
-#: Conclusion
-msgid "CONCLUSION"
-msgstr "Conclusion"
 
 #: Conclusion
 msgid "BEGIN_OF_CONCLUTION"
@@ -361,114 +1019,13 @@ msgstr "All in all, PAM measurement is an interesting and effective way to learn
         implications of these findings for our understanding of the natural world. In doing so, you will come to \
         appreciate even more the incredible complexity and beauty of the plant kingdom."
 
-#: pages/1 Messmethode.py:30
-msgid "HEADLINE_ONE"
-msgstr "# The measurement method"
-
-
-#: EINFÜHRUNG.py:36
-msgid "CAPTION_ABB1"
-msgstr "Photo of a plant (Spathiphyllum), a monocot, under three different light treatments: On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
-
-
-#: Explanation by Tobias
-msgid "INTRODUCTION_MEASUREMENT"
-msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
-        modelling to learn more about it. But biologists don't just like knowledge. They also like numbers and measuring \
-        things. So researchers invented many ways of determining how much a plant is doing photosynthesis. For example, \
-        you heard that plants produce oxygen and take up carbon dioxide. Therefore, photosynthesis can be measured by \
-        how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want \
-        to do it outside on a tree or in a field. "
-
-#: Explanation by Tobias
-msgid "GROWING_PLANTS_1"
-msgstr "Glowing Plants?"
-
-#: Explanation by Tobias
-msgid "INTRODUCTION_GLOWING"
-msgstr "Here is where a specialty of plants comes into play: They can glow! When light shines on them, they not only \
-        photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something glows in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence glow is red."
-
-#: Explanation by Tobias
-msgid "PLANT_ARE_SHINING_RED"
-msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red glow, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
-
 #: Explanation by Tobias
 msgid "GROWING_PLANTS_2"
 msgstr "Glowing Plants!"
 
 #: Explanation by Tobias
-msgid "INTRODUCTION_EXPERIMENT"
-msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker and will now shine a strong light on it. The camera's red filter helps us ignore distracting light and \
-        focus on the red fluorescence. Now watch what happens:"
-
-#: Explanation by Tobias
-msgid "EXPLANATION_VIDEO"
-msgstr "Did you see the red glow and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
-
-#: Explanation by Tobias
-msgid "MEASURING_FLUORESZENZ"
-msgstr "Measuring Photosynthesis with Fluorescence"
-
-#: Explanation by Tobias
-msgid "EXPLANATION_MEASUREMENT_1"
-msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
-        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
-
-
-#: Explanation by Tobias
-msgid "INTRODUCTION_PHI"
-msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
-
-
-
-#: Explanation by Tobias
-msgid "MEASURING_FLUORESCENCE"
-msgstr "Measuring Photosynthesis with Fluorescence"
-
-
-#: pages/1 Messmethode.py:32
-msgid "INTRODUCTION_PAM_MEASUREMENT"
-msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
-        for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
-        for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
-        (intensity) of light flashes."
-
-#: Explanation by Tobias
-msgid "MEASURING_LIGHT_FLUORESZENZ"
-msgstr "Measuring Light and Fluoreszenz"
-
-#: Explanation by Tobias
-msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
-msgstr "Indeed, we shine a very tight series of short and weak light flashes on the plant, over a thousand each second! \
-        With this flashing, we measure the plant performance and call it 'measuring light'. The measuring light is too \
-        weak to be used for photosynthesis, but strong enough to get the plant to fluoresce. And, since we produce \
-        fluorescence with each flash, the resulting signal is patterned (modulated), just like the measuring light."
-
-#: Explanation by Tobias
-msgid   "EXPLANATION_MEASUREMENT_2"
-msgstr  "This patterning is essential because we want to measure photosynthesis under natural conditions, outside and in \
+msgid "EXPLANATION_MEASUREMENT_2"
+msgstr "This patterning is essential because we want to measure photosynthesis under natural conditions, outside and in \
         different irradiation when the plant already fluoresces. Typically, we would not be able to tell apart the \
         fluorescence produced by the outside and the measuring light. But, because our measuring light and its resulting \
         fluorescence are -modulated-, with some clever math, we can calculate how much fluorescence was caused by just \
@@ -477,160 +1034,206 @@ msgstr  "This patterning is essential because we want to measure photosynthesis 
         plant's photosynthesis is more efficient, with more powerful light protection, and many more factors also affect \
         it. And it is comparable regardless of the outside light - a versatile measurement."
 
-#: Explanation by Tobias
-msgid   "SATURATING_PULSES"
-msgstr  "Saturating Pulses"
-
-#: Explanation by Tobias
-msgid   "EXPLANATION_ATTEMPTS"
-msgstr  "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light \
-        pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully \
-        converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
-        yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
-        tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
-        many other values. But how that is done goes much too far. Most important is that you understand that we compare \
-        what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
-        over time and conditions."
-
 #: pages/1 Messmethode.py:40
-msgid   "CAPTION_THAIANA_PICTURE"
-msgstr  "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISMEN"
-msgstr  "Why is Arabidopsis thaliana a model organism?"
-
-#: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
-msgstr  "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
+msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
+msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
            system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
 
 #: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
-msgstr  "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
+msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
+msgstr "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
         multiple generations in a relatively short period of time."
 
 #: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"
-msgstr  "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
+msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"
+msgstr "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
             study specific developmental processes."
 
 #: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
-msgstr  "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
+msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
+msgstr "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
             which has provided researchers with a wealth of genetic information about the plant."
 
 #: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
-msgstr  "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
+msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
+msgstr "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
         , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
 
 #: pages/1 Messmethode.py:40
-msgid   "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
-msgstr  "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
+msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
+msgstr "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
         and its insights have contributed to our understanding of the biology of all plants."
 
-
-#: pages/1 Messmethode.py:40
-msgid   "HEADLINE_ILLUSTRATION"
-msgstr  "##### Visualization of the results"
-
-#: pages/1 Messmethode.py:42
-msgid   "EXPLANATION_ILLUSTRATION_UNITS"
-msgstr  "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in \
-        response to the saturating pulse of light. Each peak is referred to as Fm', with the first one being measured \
-        in the dark referred to  simply as Fm."
+#: pages/1 Messmethode.py:44
+msgid "EXPANDER_MODEL_EQUATIONS"
+msgstr ""
 
 #: pages/1 Messmethode.py:44
-msgid   "EXPLANATION_ILLUSTRATION"
-msgstr  "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
+msgid "EXPANDER_MODEL_EQUATIONS_EXPLANATION"
+msgstr ""
 
-#: pages/1 Messmethode.py:47
-msgid   "CAPTION_ABB2"
-msgstr  "Example Graph of a PAM measurement"
+#: pages/1 Messmethode.py:44
+msgid "EQUATION_LIST_1"
+msgstr ""
 
+#: pages/1 Messmethode.py:44
+msgid "EQUATION_LIST_2"
+msgstr ""
 
-#: pages/1 Messmethode.py:50
-msgid   "LITERATURE_DECLARATION"
-msgstr  "The following literature provides more in-depth information on the subject of PAM measurements, or offers the \
-           opportunity to familiarize oneself with the basics."
+#: pages/1 Messmethode.py:44
+msgid "EQUATION_LIST_3"
+msgstr ""
 
-msgid   "MEASURING_LIGHT_FLUORESCENCE"
-msgstr  "Basic principles of chlorophyll fluorescence"
+#: pages/1 Messmethode.py:44
+msgid "EQUATION_LIST_4"
+msgstr ""
 
-#: pages/1 Messmethode.py:30
-msgid "HEADLINE_MODEL"
-msgstr "# The Model"
+#: pages/1 Messmethode.py:44
+msgid "EQUATION_LIST_5"
+msgstr ""
 
+#: pages/1 Messmethode.py:44
+msgid "EQUATION_LIST_6"
+msgstr ""
+
+#: Explanation by Tobias
+msgid "MEASURING_FLUORESCENCE"
+msgstr "Measuring Photosynthesis with Fluorescence"
+
+#: Explanation by Tobias
+msgid "MEASURING_LIGHT_FLUORESZENZ"
+msgstr "Measuring Light and Fluoreszenz"
+
+#: pages/model.explain.py:58
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
+msgstr ""
+
+#: pages/model_explain.py:122
 #: Anna's explanation of the model
-msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "### Model construction"
+msgid "IMPLEMENTATION_TO_EXPERT"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "CONSTRUCTION_EXPLANATION"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
-        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
-        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
-        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
-        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
-        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
-        Each of the equations represents the dynamic rate of change in:"
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "KONTROLL"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "RATES_1"
-msgstr "1) the reduced fraction of the plastoquinone pool ($PQH_2$),"
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "INTRODUCTION_QUESTION"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "RATES_2"
-msgstr "2) the stromal concentration of ATP (ATP),"
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "QUESTION_1"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "RATES_3"
-msgstr "3) the luminal proton concentration ($H$),"
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "AW1"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "RATES_4"
-msgstr "4) the fraction of nonprotonated proteins (PsbS),"
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "AW2"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "RATES_5"
-msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "RA1"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "RATES_6"
-msgstr "6) the fraction of active ATPase enzyme (ATPase$^{*}$)."
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "RA2"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "HEADLINE_IMPLEMENTATION"
-msgstr "### Implementation"
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "QUESTION_2"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "AW3"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "AW4"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "AW5"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "RA3"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "RA4"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "QUESTION_3"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "AW6"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "AW7"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "RA5"
+msgstr ""
+
+#: pages/first_analysis.py:247
+#: pages/Analyse.py:123
+msgid "RA6"
+msgstr ""
+
+#: pages/plant_memory.py:273
+
+msgid "TASK_MEMORY_1_EXPLANATION"
+msgstr ""
+
+#: pages/plant_memory.py:276
+
+msgid "TASK_MEMORY_2_EXPLANATION"
+msgstr ""
+
+#: pages/Analyse.py:123
+msgid "STOPP"
+msgstr ""
+
+#: pages/Analyse.py:123
+msgid "RESULTS"
+msgstr ""
+
+#: pages/Analyse.py:123
+msgid "EXPLANATION_RESULTS"
+msgstr ""
 
 
-#: Anna's explanation of the model
-msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
-        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
-        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "HEADLINE_MODEL_EQUATIONS"
-msgstr "### Mathematical equations"
 
-#: Anna's explanation of the model
-msgid "MODEL_EQUATIONS_INTRODUCTION"
-msgstr "The six coupled ordinary differential equations (ODE)"
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_cont"
+msgstr ""
 
-#: Anna's explanation of the model
-msgid "REACTION_RATES"
-msgstr "Reaction rates"
 
-#: Anna's explanation of the model
-msgid "RATES_DYNAMIC"
-msgstr "###### Reaction rates used in the dynamic description of the system"
-
-#: Anna's explanation of the model
-msgid "RATE_QUENCHER"
-msgstr "###### Reaction rates to calculate the quencher activity and the overall rate"
-
+msgid "INTRO_MODEL"
+msgstr ""
 

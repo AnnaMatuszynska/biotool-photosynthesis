@@ -7,6 +7,23 @@ from warnings import warn
 from collections import defaultdict
 import glob
 
+po_file_header = """# PHOTOSYNTHESIS IN SILICO.
+# Copyright (C) 2023 Computational Life Science RWTH Aachen
+# Sarah Philipps et al., 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\\n"
+"POT-Creation-Date: 2022-12-02 17:21+0100\\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n"
+"Language-Team: LANGUAGE <LL@li.org>\\n"
+"MIME-Version: 1.0\\n"
+"Content-Type: text/plain; charset=UTF-8\\n"
+"Content-Transfer-Encoding: 8bit\\n"
+"Generated-By: pygettext.py 1.5\\n"
+"""
+
 def _get_header_and_version(po):
     # Extract the header
     header_end = np.where(np.array([bool(re.match("# TEXT VERSIONS\n", x)) for x in po]))[0][0]
@@ -74,11 +91,11 @@ def read_single_po(file, version="", entries=None, add_header=False, verbose=Fal
             entries["_versions_"] = list(entries.get("_versions_",[]) + [version])
     return entries
 
-def make_allversion_po(po, versions=None):
+def make_allversion_po(po, file_header = "\n", versions=None):
     if versions is None:
         versions = po["_versions_"]
 
-    text = "\n\n\n# TEXT VERSIONS\n" + "# " + "\n# ".join(versions) + "\n\n"
+    text = file_header + "\n# TEXT VERSIONS\n" + "# " + "\n# ".join(versions) + "\n\n"
     for nam, items in po.items():
         if nam in ["_versions_"]:
             continue
@@ -89,8 +106,8 @@ def make_allversion_po(po, versions=None):
             text += "\n"
     return text
 
-def write_allversion_po(po, path = Path("allversion.po"), versions=None):
-    text = make_allversion_po(po, versions)
+def write_allversion_po(po, path = Path("allversion.po"), file_header="\n", versions=None):
+    text = make_allversion_po(po, file_header, versions)
     with open(path, "w") as f:
         f.write(text)
 
@@ -102,6 +119,6 @@ if __name__ == "__main__":
     po = defaultdict(_default_entry)
     for file, version in zip(pos, versions):
         po = read_single_po(file, version, entries=po)
-    write_allversion_po(po)
+    write_allversion_po(po, file_header=po_file_header)
 
 
