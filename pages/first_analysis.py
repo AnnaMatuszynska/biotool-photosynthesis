@@ -173,6 +173,8 @@ def expert_plot(NPQ: Any, tm: Any, PhiPSII: Any, areas: Any, chart_labels: Any) 
 
 
 def make_page(text: Callable[[str], str]) -> None:
+    st.markdown(text("HEADLINE_EXPERIMENTS"))
+
     st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
 
     st.markdown(text("CONSTRUCTION_EXPLANATION"))

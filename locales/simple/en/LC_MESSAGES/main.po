@@ -130,6 +130,11 @@ msgstr "On the page **experiments** ***in silico*** you will get to know the pho
 msgid "MEMORY"
 msgstr "Last but not least, you will get to know the plant light memory on the **plant light memory page** and can prove its existence independently with experiments."
 
+#: pages/1 Messmethode.py:50
+msgid "HEADLINE_PHOTOSYNTHESIS_MAIN"
+msgstr "# Photosynthesis :leaves:"
+
+
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
 msgid "HEADLINE_CLIMATE"
@@ -193,7 +198,7 @@ msgstr "Plants take up the necessary CO₂ for photosynthesis from the air throu
 #: pages/photosynthesis.py:52
 #: EINFÜHRUNG.py:40
 msgid "CAPTION_STOMATA_PICTURE"
-msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
+msgstr "Microscopic image of a stomatal of the wild type of the model organism _Arabidopsis thaliana_."
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
@@ -236,12 +241,12 @@ msgstr "Often, when you try to find out something about plants in general, like 
 #: pages/photosynthesis.py:81
 #: pages/1 Messmethode.py:40
 msgid "EXPANDER_MODEL_ORGANISMEN"
-msgstr "Why is Arabidopsis thaliana a model organism?"
+msgstr "Why is _Arabidopsis thaliana_ a model organism?"
 
 #: pages/photosynthesis.py:85
 #: pages/1 Messmethode.py:40
 msgid "CAPTION_THAIANA_PICTURE"
-msgstr "A photograph of a plant of the wild type of the model organism **Arabidopsis thaliana**."
+msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 
 #: pages/photosynthesis.py:87
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
@@ -255,7 +260,7 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
-msgstr "# Measuring photosynthesis"
+msgstr "# Measuring Photosynthesis :books:"
 
 #: pages/method.py:15
 #: Explanation by Tobias
@@ -355,6 +360,11 @@ msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible p
 #: pages/1 Messmethode.py:44
 msgid "EXPLANATION_ILLUSTRATION"
 msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
+
+#: pages/model_explain.py:10
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_COMPUTATIONAL_MODELS"
+msgstr "# Computational Models :computer:"
 
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
@@ -491,6 +501,9 @@ msgstr "### CAM Plants"
 msgid "CAM_1"
 msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants that have adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
 
+msgid "HEADLINE_EXPERIMENTS"
+msgstr "# Experiments *in silico* :bar_chart:"
+
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
@@ -604,11 +617,6 @@ msgstr ""
 msgid "MEASUREMENT_PHASE"
 msgstr "Measuring phase"
 
-#: pages/first_analysis.py:177
-#: pages/2 Daten-Analyse.py:23
-#: pages/Analyse.py:23
-msgid "HEADLINE_ANALYSE"
-msgstr "# Experiments **in silico**"
 
 #: pages/first_analysis.py:178
 #: pages/2 Daten-Analyse.py:25
@@ -753,7 +761,7 @@ msgstr "Fluorescence [F´ₘ /Fₘ]"
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
 msgid "HEADLINE_BRAIN"
-msgstr "# The plant memory"
+msgstr "# The Plant Light Memory :chart_with_upwards_trend:"
 
 #: pages/plant_memory.py:269
 #: pages/3 Pflanzengedächtnis.py:38

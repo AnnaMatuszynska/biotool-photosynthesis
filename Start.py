@@ -75,7 +75,7 @@ if __name__ == "__main__":
             ),
             Page(
                 "pages/plant_memory.py",
-                "Plant light memory",
+                "Plant Light Memory",
                 ":chart_with_upwards_trend:",
             ),
             Page(
