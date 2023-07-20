@@ -71,7 +71,7 @@ msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah
 #: Start.py:15
 #: EINFÜHRUNG.py:24
 msgid "HEADLINE_USAGE"
-msgstr "#### How to use this website"
+msgstr "## How to use this website"
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
@@ -134,6 +134,11 @@ msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
+msgstr ""
+
+#: pages/photosynthesis.py:10
+#: Lisa's introduction
+msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
 msgstr ""
 
 #: pages/photosynthesis.py:10
@@ -387,7 +392,7 @@ msgstr "You need to know one more aspect of PAM, the saturating pulses. Our mach
 #: pages/method.py:49
 #: pages/1 Messmethode.py:40
 msgid "HEADLINE_ILLUSTRATION"
-msgstr "##### Visualization of the results"
+msgstr "## Visualization of the results"
 
 #: pages/method.py:50
 #: pages/1 Messmethode.py:42
@@ -401,10 +406,15 @@ msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible p
 msgid "EXPLANATION_ILLUSTRATION"
 msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
 
+#: pages/model_explain.py:16
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_COMPUTATIONAL_MODELS"
+msgstr "# "
+
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_MODEL"
-msgstr "# The Model"
+msgstr "# "
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
@@ -538,8 +548,13 @@ msgstr ""
 
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
+msgid "HEADLINE_EXPERIMENTS"
+msgstr ""
+
+#: pages/model_explain.py:65
+#: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "# Model construction"
+msgstr "## Model construction"
 
 #: pages/model_explain.py:67
 #: Anna's explanation of the model
@@ -662,7 +677,7 @@ msgstr "Measuring phase"
 #: pages/2 Daten-Analyse.py:23
 #: pages/Analyse.py:23
 msgid "HEADLINE_ANALYSE"
-msgstr "# The data analysis"
+msgstr "## The data analysis"
 
 #: pages/first_analysis.py:178
 #: pages/2 Daten-Analyse.py:25

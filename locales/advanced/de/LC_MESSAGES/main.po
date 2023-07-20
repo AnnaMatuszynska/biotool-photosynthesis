@@ -71,7 +71,7 @@ msgstr "Dies ist ein Lehrmittel für Biologie: ein laufendes Projekt, das von Sa
 #: Start.py:15
 #: EINFÜHRUNG.py:24
 msgid "HEADLINE_USAGE"
-msgstr "#### Nutzung dieser Website"
+msgstr "## Nutzung dieser Website"
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
@@ -134,6 +134,11 @@ msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
+msgstr ""
+
+#: pages/photosynthesis.py:10
+#: Lisa's introduction
+msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
 msgstr ""
 
 #: pages/photosynthesis.py:10
@@ -398,7 +403,7 @@ msgstr "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sättigungsim
 #: pages/method.py:49
 #: pages/1 Messmethode.py:40
 msgid "HEADLINE_ILLUSTRATION"
-msgstr "##### Die Abbildungen"
+msgstr "## Die Abbildungen"
 
 #: pages/method.py:50
 #: pages/1 Messmethode.py:42
@@ -413,10 +418,15 @@ msgstr "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den
             (siehe Abbildung 1), diese ist, wie bereits erwähnt, Voraussetzung für die PAM-Messung. Zu diesem Zeitpunkt \
             können wir Fₘ messen."
 
+#: pages/model_explain.py:16
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_COMPUTATIONAL_MODELS"
+msgstr "# "
+
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_MODEL"
-msgstr "# Das Modell"
+msgstr "# "
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
@@ -550,8 +560,13 @@ msgstr ""
 
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
+msgid "HEADLINE_EXPERIMENTS"
+msgstr ""
+
+#: pages/model_explain.py:65
+#: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "# Konstruktion des Modells"
+msgstr "## Konstruktion des Modells"
 
 #: pages/model_explain.py:67
 #: Anna's explanation of the model
@@ -676,7 +691,7 @@ msgstr "Messphase"
 #: pages/2 Daten-Analyse.py:23
 #: pages/Analyse.py:23
 msgid "HEADLINE_ANALYSE"
-msgstr "# Die Daten-Analyse"
+msgstr "## Die Daten-Analyse"
 
 #: pages/first_analysis.py:178
 #: pages/2 Daten-Analyse.py:25

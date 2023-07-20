@@ -64,7 +64,7 @@ msgstr "This is a Teaching Tool in Biology, a project launched by the **Computat
 #: Start.py:15
 #: EINFÜHRUNG.py:24
 msgid "HEADLINE_USAGE"
-msgstr "#### How to use this website"
+msgstr "## How to use this website"
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
@@ -103,7 +103,7 @@ msgstr "*In silico* refers to computational experiments and simulations performe
 
 #: pages/1 Messmethode.py:50
 msgid "HEADLINE_PAGES"
-msgstr "#### Abstract of the pages"
+msgstr "## Abstract of the pages"
 
 #: pages/1 Messmethode.py:50
 msgid "INTRODUCTION_PAGES"
@@ -132,8 +132,13 @@ msgstr "Last but not least, you will get to know the plant light memory on the *
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
+msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
+msgstr "# Photosynthesis"
+
+#: pages/photosynthesis.py:10
+#: Lisa's introduction
 msgid "HEADLINE_CLIMATE"
-msgstr "#### Climate change"
+msgstr "## Climate Change"
 
 #: pages/photosynthesis.py:11
 #: Lisa's introduction
@@ -163,7 +168,7 @@ msgstr ""
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
 msgid "HEADLINE_PHOTOSYNTHESIS"
-msgstr "# Photosynthesis"
+msgstr "## Process of Photosynthesis"
 
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
@@ -198,7 +203,7 @@ msgstr "Microscopic image of a stomatal of the wild type of the model organism A
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
 msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
-msgstr "#### Place of photosynthesis"
+msgstr "## Place of photosynthesis"
 
 #: pages/photosynthesis.py:57
 #: EINFÜHRUNG.py:55
@@ -216,7 +221,7 @@ msgstr "Complexes within the thylakoid membrane, which are necessary for photosy
 #: pages/photosynthesis.py:75
 #: EINFÜHRUNG.py:59
 msgid "HEADLINE_NPQ"
-msgstr "#### How to deal with too much light?"
+msgstr "## How to deal with too much light?"
 
 #: pages/photosynthesis.py:76
 #: EINFÜHRUNG.py:60
@@ -226,7 +231,7 @@ msgstr "What actually happens when too much light and thus excess energy hits th
 #: pages/photosynthesis.py:78
 #: pages/1 Messmethode.py:40
 msgid "HEADER_MODEL_ORGANISMEN"
-msgstr "#### One plant to rule them all"
+msgstr "## One plant to rule them all"
 
 #: pages/photosynthesis.py:79
 #: pages/1 Messmethode.py:40
@@ -255,7 +260,7 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
-msgstr "# Measuring photosynthesis"
+msgstr "# Measuring method"
 
 #: pages/method.py:15
 #: Explanation by Tobias
@@ -344,7 +349,7 @@ msgstr ""
 #: pages/method.py:49
 #: pages/1 Messmethode.py:40
 msgid "HEADLINE_ILLUSTRATION"
-msgstr "##### Visualization of the results"
+msgstr "## Visualization of the results"
 
 #: pages/method.py:50
 #: pages/1 Messmethode.py:42
@@ -356,10 +361,15 @@ msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible p
 msgid "EXPLANATION_ILLUSTRATION"
 msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
 
+#: pages/model_explain.py:16
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_COMPUTATIONAL_MODELS"
+msgstr "# Computational models"
+
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_MODEL"
-msgstr "# Mathematical models"
+msgstr "## Mathematical models"
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
@@ -425,7 +435,7 @@ msgstr ""
 #: pages/model_explain.py:63
 
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
-msgstr "# Models of photosynthesis"
+msgstr "## Models of photosynthesis"
 
 #: pages/model_explain.py:69
 msgid "HEADLINE_FVCB"
@@ -493,8 +503,13 @@ msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metab
 
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
+msgid "HEADLINE_EXPERIMENTS"
+msgstr "# Experiments *in silico*"
+
+#: pages/model_explain.py:65
+#: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "# Model construction"
+msgstr "## Model construction"
 
 #: pages/model_explain.py:67
 #: Anna's explanation of the model
@@ -608,7 +623,7 @@ msgstr "Measuring phase"
 #: pages/2 Daten-Analyse.py:23
 #: pages/Analyse.py:23
 msgid "HEADLINE_ANALYSE"
-msgstr "# The data analysis"
+msgstr "## The data analysis"
 
 #: pages/first_analysis.py:178
 #: pages/2 Daten-Analyse.py:25
@@ -753,7 +768,7 @@ msgstr "Fluorescence [F´ₘ /Fₘ]"
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
 msgid "HEADLINE_BRAIN"
-msgstr "# The plant memory"
+msgstr "# Plant Light Memory"
 
 #: pages/plant_memory.py:269
 #: pages/3 Pflanzengedächtnis.py:38

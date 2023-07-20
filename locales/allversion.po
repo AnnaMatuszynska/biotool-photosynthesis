@@ -225,16 +225,16 @@ simple-es msgstr "This is a Teaching Tool in Biology, a project launched by the 
 #: Start.py:15
 #: EINFÜHRUNG.py:24
 msgid "HEADLINE_USAGE"
-advanced-en msgstr "#### How to use this website"
-advanced-de msgstr "#### Nutzung dieser Website"
-advanced-fr msgstr "#### How to use this website"
-advanced-pl msgstr "#### How to use this website"
-advanced-es msgstr "#### How to use this website"
-simple-en msgstr "#### How to use this website"
-simple-de msgstr "#### Nutzung dieser Website"
-simple-fr msgstr "#### How to use this website"
-simple-pl msgstr "#### Jak używać tej strony?"
-simple-es msgstr "#### How to use this website"
+advanced-en msgstr "## How to use this website"
+advanced-de msgstr "## Nutzung dieser Website"
+advanced-fr msgstr "## How to use this website"
+advanced-pl msgstr "## How to use this website"
+advanced-es msgstr "## How to use this website"
+simple-en msgstr "## How to use this website"
+simple-de msgstr "## Nutzung dieser Website"
+simple-fr msgstr "## How to use this website"
+simple-pl msgstr "## Jak używać tej strony?"
+simple-es msgstr "## How to use this website"
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
@@ -349,12 +349,12 @@ simple-es msgstr "In silico refers to computational experiments and simulations 
 
 #: pages/1 Messmethode.py:50
 msgid "HEADLINE_PAGES"
-advanced-en msgstr "#### Abstract of the pages"
+advanced-en msgstr "## Abstract of the pages"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "#### Abstract of the pages"
+simple-en msgstr "## Abstract of the pages"
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -441,17 +441,31 @@ simple-es msgstr ""
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
-msgid "HEADLINE_CLIMATE"
-advanced-en msgstr "#### Climate change"
+msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
+advanced-en msgstr "# Photosynthesis"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "#### Climate change"
+simple-en msgstr "# Photosynthesis"
 simple-de msgstr ""
-simple-fr msgstr "#### Climate change"
-simple-pl msgstr "#### Climate change"
-simple-es msgstr "#### Climate change"
+simple-fr msgstr "# Photosynthesis"
+simple-pl msgstr "# Photosynthesis"
+simple-es msgstr "# Photosynthesis"
+
+#: pages/photosynthesis.py:10
+#: Lisa's introduction
+msgid "HEADLINE_CLIMATE"
+advanced-en msgstr "## Climate Change"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "## Climate Change"
+simple-de msgstr ""
+simple-fr msgstr "## Climate change"
+simple-pl msgstr "## Climate change"
+simple-es msgstr "## Climate change"
 
 #: pages/photosynthesis.py:11
 #: Lisa's introduction
@@ -576,12 +590,12 @@ simple-es msgstr ""
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
 msgid "HEADLINE_PHOTOSYNTHESIS"
-advanced-en msgstr "# Photosynthesis"
+advanced-en msgstr "## Process of Photosynthesis"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "# Photosynthesis"
+simple-en msgstr "## Process of Photosynthesis"
 simple-de msgstr ""
 simple-fr msgstr "# Photosynthesis"
 simple-pl msgstr "# Photosynthesis"
@@ -686,16 +700,16 @@ simple-es msgstr "Microscopic image of a stomatal of the wild type of the model 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
 msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
-advanced-en msgstr "#### Place of photosynthesis"
+advanced-en msgstr "## Place of photosynthesis"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "#### Place of photosynthesis"
+simple-en msgstr "## Place of photosynthesis"
 simple-de msgstr ""
-simple-fr msgstr "#### Place of photosynthesis"
-simple-pl msgstr "#### Place of photosynthesis"
-simple-es msgstr "#### Place of photosynthesis"
+simple-fr msgstr "## Place of photosynthesis"
+simple-pl msgstr "## Place of photosynthesis"
+simple-es msgstr "## Place of photosynthesis"
 
 #: pages/photosynthesis.py:57
 #: EINFÜHRUNG.py:55
@@ -740,16 +754,16 @@ simple-es msgstr "Complexes within the thylakoid membrane, which are necessary f
 #: pages/photosynthesis.py:75
 #: EINFÜHRUNG.py:59
 msgid "HEADLINE_NPQ"
-advanced-en msgstr "#### How to deal with too much light?"
+advanced-en msgstr "## How to deal with too much light?"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "#### How to deal with too much light?"
+simple-en msgstr "## How to deal with too much light?"
 simple-de msgstr ""
-simple-fr msgstr "#### How to deal with too much light?"
-simple-pl msgstr "#### How to deal with too much light?"
-simple-es msgstr "#### How to deal with too much light?"
+simple-fr msgstr "## How to deal with too much light?"
+simple-pl msgstr "## How to deal with too much light?"
+simple-es msgstr "## How to deal with too much light?"
 
 #: pages/photosynthesis.py:76
 #: EINFÜHRUNG.py:60
@@ -777,16 +791,16 @@ simple-es msgstr "What actually happens when too much light and thus excess ener
 #: pages/photosynthesis.py:78
 #: pages/1 Messmethode.py:40
 msgid "HEADER_MODEL_ORGANISMEN"
-advanced-en msgstr "#### One plant to rule them all"
+advanced-en msgstr "## One plant to rule them all"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "#### One plant to rule them all"
+simple-en msgstr "## One plant to rule them all"
 simple-de msgstr ""
-simple-fr msgstr "#### One plant to rule them all"
-simple-pl msgstr "#### One plant to rule them all"
-simple-es msgstr "#### One plant to rule them all"
+simple-fr msgstr "## One plant to rule them all"
+simple-pl msgstr "## One plant to rule them all"
+simple-es msgstr "## One plant to rule them all"
 
 #: pages/photosynthesis.py:79
 #: pages/1 Messmethode.py:40
@@ -856,12 +870,12 @@ simple-es msgstr ""
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
-advanced-en msgstr "# Measuring photosynthesis"
+advanced-en msgstr "# Measuring method"
 advanced-de msgstr "# Die Messmethode"
 advanced-fr msgstr "# The measurement method"
 advanced-pl msgstr "# The measurement method"
 advanced-es msgstr "# The measurement method"
-simple-en msgstr "# Measuring photosynthesis"
+simple-en msgstr "# Measuring method"
 simple-de msgstr "# Die Messmethode"
 simple-fr msgstr "# Measuring photosynthesis"
 simple-pl msgstr "# Measuring photosynthesis"
@@ -1431,16 +1445,16 @@ simple-es msgstr "You need to know one more aspect of PAM, the saturating pulses
 #: pages/method.py:49
 #: pages/1 Messmethode.py:40
 msgid "HEADLINE_ILLUSTRATION"
-advanced-en msgstr "##### Visualization of the results"
-advanced-de msgstr "##### Die Abbildungen"
-advanced-fr msgstr "##### Visualization of the results"
-advanced-pl msgstr "##### Visualization of the results"
-advanced-es msgstr "##### Visualization of the results"
-simple-en msgstr "##### Visualization of the results"
-simple-de msgstr "##### Die Abbildungen"
-simple-fr msgstr "##### Visualization of the results"
-simple-pl msgstr "##### Visualization of the results"
-simple-es msgstr "##### Visualization of the results"
+advanced-en msgstr "## Visualization of the results"
+advanced-de msgstr "## Die Abbildungen"
+advanced-fr msgstr "## Visualization of the results"
+advanced-pl msgstr "## Visualization of the results"
+advanced-es msgstr "## Visualization of the results"
+simple-en msgstr "## Visualization of the results"
+simple-de msgstr "## Die Abbildungen"
+simple-fr msgstr "## Visualization of the results"
+simple-pl msgstr "## Visualization of the results"
+simple-es msgstr "## Visualization of the results"
 
 #: pages/method.py:50
 #: pages/1 Messmethode.py:42
@@ -1489,15 +1503,29 @@ simple-fr msgstr "This was a lot of theory for just a bit of shining, so try a m
 simple-pl msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
 simple-es msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
 
+#: pages/model_explain.py:16
+#: pages/1 Messmethode.py:30
+msgid "HEADLINE_COMPUTATIONAL_MODELS"
+advanced-en msgstr "# Computational models"
+advanced-de msgstr "# "
+advanced-fr msgstr "# "
+advanced-pl msgstr "# "
+advanced-es msgstr "# "
+simple-en msgstr "# Computational models"
+simple-de msgstr "# Das Modell"
+simple-fr msgstr "# Mathematical models"
+simple-pl msgstr "# Mathematical models"
+simple-es msgstr "# Mathematical models"
+
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_MODEL"
-advanced-en msgstr "# Mathematical models"
-advanced-de msgstr "# Das Modell"
-advanced-fr msgstr "# The Model"
-advanced-pl msgstr "# The Model"
-advanced-es msgstr "# The Model"
-simple-en msgstr "# Mathematical models"
+advanced-en msgstr "## Mathematical models"
+advanced-de msgstr "# "
+advanced-fr msgstr "# "
+advanced-pl msgstr "# "
+advanced-es msgstr "# "
+simple-en msgstr "## Mathematical models"
 simple-de msgstr "# Das Modell"
 simple-fr msgstr "# Mathematical models"
 simple-pl msgstr "# Mathematical models"
@@ -1675,16 +1703,16 @@ simple-es msgstr ""
 #: pages/model_explain.py:63
 
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
-advanced-en msgstr "# Models of photosynthesis"
+advanced-en msgstr "## Models of photosynthesis"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "# Models of photosynthesis"
+simple-en msgstr "## Models of photosynthesis"
 simple-de msgstr ""
-simple-fr msgstr "# Models of photosynthesis"
-simple-pl msgstr "# Models of photosynthesis"
-simple-es msgstr "# Models of photosynthesis"
+simple-fr msgstr "## Models of photosynthesis"
+simple-pl msgstr "## Models of photosynthesis"
+simple-es msgstr "## Models of photosynthesis"
 
 #: pages/model_explain.py:69
 msgid "HEADLINE_FVCB"
@@ -1898,17 +1926,31 @@ simple-es msgstr ""
 
 #: pages/model_explain.py:65
 #: Anna's explanation of the model
+msgid "HEADLINE_EXPERIMENTS"
+advanced-en msgstr "# Experiments *in silico*"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "# Experiments *in silico*"
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/model_explain.py:65
+#: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-advanced-en msgstr "# Model construction"
-advanced-de msgstr "# Konstruktion des Modells"
-advanced-fr msgstr "# Model construction"
-advanced-pl msgstr "# Model construction"
-advanced-es msgstr "# Model construction"
-simple-en msgstr "# Model construction"
-simple-de msgstr "# Konstruktion des Modells"
-simple-fr msgstr "# Model construction"
-simple-pl msgstr "# Model construction"
-simple-es msgstr "# Model construction"
+advanced-en msgstr "## Model construction"
+advanced-de msgstr "## Konstruktion des Modells"
+advanced-fr msgstr "## Model construction"
+advanced-pl msgstr "## Model construction"
+advanced-es msgstr "## Model construction"
+simple-en msgstr "## Model construction"
+simple-de msgstr "## Konstruktion des Modells"
+simple-fr msgstr "## Model construction"
+simple-pl msgstr "## Model construction"
+simple-es msgstr "## Model construction"
 
 #: pages/model_explain.py:67
 #: Anna's explanation of the model
@@ -2310,16 +2352,16 @@ simple-es msgstr "Measuring phase"
 #: pages/2 Daten-Analyse.py:23
 #: pages/Analyse.py:23
 msgid "HEADLINE_ANALYSE"
-advanced-en msgstr "# The data analysis"
-advanced-de msgstr "# Die Daten-Analyse"
-advanced-fr msgstr "# The data analysis"
-advanced-pl msgstr "# The data analysis"
-advanced-es msgstr "# The data analysis"
-simple-en msgstr "# The data analysis"
-simple-de msgstr "# Die Daten-Analyse"
-simple-fr msgstr "# The data analysis"
-simple-pl msgstr "# The data analysis"
-simple-es msgstr "# The data analysis"
+advanced-en msgstr "## The data analysis"
+advanced-de msgstr "## Die Daten-Analyse"
+advanced-fr msgstr "## The data analysis"
+advanced-pl msgstr "## The data analysis"
+advanced-es msgstr "## The data analysis"
+simple-en msgstr "## The data analysis"
+simple-de msgstr "## Die Daten-Analyse"
+simple-fr msgstr "## The data analysis"
+simple-pl msgstr "## The data analysis"
+simple-es msgstr "## The data analysis"
 
 #: pages/first_analysis.py:178
 #: pages/2 Daten-Analyse.py:25
@@ -2726,12 +2768,12 @@ simple-es msgstr "Fluorescence [F´ₘ /Fₘ]"
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
 msgid "HEADLINE_BRAIN"
-advanced-en msgstr "# The plant memory"
+advanced-en msgstr "# Plant Light Memory"
 advanced-de msgstr "# Das Pflanzengedächtnis"
 advanced-fr msgstr "# The plant memory"
 advanced-pl msgstr "# The plant memory"
 advanced-es msgstr "# The plant memory"
-simple-en msgstr "# The plant memory"
+simple-en msgstr "# Plant Light Memory"
 simple-de msgstr "# Das Pflanzengedächtnis"
 simple-fr msgstr "# The plant memory"
 simple-pl msgstr "# The plant memory"
