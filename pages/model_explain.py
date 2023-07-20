@@ -3,7 +3,13 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import centered_image, get_localised_text, make_prev_next_button, include_ytvideo, include_image
+from utils import (
+    centered_image,
+    get_localised_text,
+    include_image,
+    include_ytvideo,
+    make_prev_next_button,
+)
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -11,7 +17,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
 
-    include_image(path="pictures/Modeling_scheme_eng.png", img_width=0.5, caption=text("CAPTION_MODELLING_PICTURE"))
+    include_image(
+        path="pictures/Modeling_scheme_eng.png", img_width=0.5, caption=text("CAPTION_MODELLING_PICTURE")
+    )
 
     st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1b"))
 
@@ -58,7 +66,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         )
         st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
 
-        include_image("pictures/SIR_modelbase.png", img_width=0.35, caption=text("CAPTION_SIR_RESULTS_PICTURE"))
+        include_image(
+            "pictures/SIR_modelbase.png", img_width=0.35, caption=text("CAPTION_SIR_RESULTS_PICTURE")
+        )
 
         if version == "Simple":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"))
@@ -226,7 +236,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - Farquhar GD, von Caemmerer S, Berry JA (1980) A Biochemical model of photosynthentic CO2 assimilation in leaves of C3 species. Planta 149
             - Zhu XG, Wang Y, Ort DR, Long SP (2013) e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: From light capture to sucrose synthesis. Plant, Cell and Environment 36
             - Bellasio C (2019) A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research 141
-            - Taiz L, Zeiger E, Møller IM, Murphy A (2018) Fundamentals of Plant Physiology. Sinauer Associates 
+            - Taiz L, Zeiger E, Møller IM, Murphy A (2018) Fundamentals of Plant Physiology. Sinauer Associates
             """
 
         if version == "Advanced":
@@ -241,11 +251,15 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - Bellasio C (2019) A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research 141
             - Yin X, vyn Oijen M, Schapendonk AHCM (2004) Extension of a biochemical model for the generalized stoichiometry of electron transport limited C3 photosynthesis. Plant, Cell and Environment 27
             - Bellasio C, Quirk J, Buckley TN, Beerling DJ (2017) A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C 4 Photosynthesis Plant Physiology 175
-            - Taiz L, Zeiger E, Møller IM, Murphy A (2018) Fundamentals of Plant Physiology. Sinauer Associates 
+            - Taiz L, Zeiger E, Møller IM, Murphy A (2018) Fundamentals of Plant Physiology. Sinauer Associates
             """
 
 
 if __name__ == "__main__":
+    st.set_page_config(layout="wide")
+    with open("./.streamlit/custom.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
     version, language = make_sidebar()
     text = get_localised_text(version, language)
     make_page(text, language, version)

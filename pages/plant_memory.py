@@ -267,11 +267,10 @@ def make_page(text: Callable[[str], str], version: str) -> None:
         st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
     st.markdown(text("INTRODUCTION_BRAIN"))
-    
+
     col1, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/memory_protocol.png")
-
 
     if version == "simple":
         with st.expander(text("TASK_1")):
@@ -349,6 +348,10 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
 
 if __name__ == "__main__":
+    st.set_page_config(layout="wide")
+    with open("./.streamlit/custom.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
     version, language = make_sidebar()
     _ = get_localised_text(version, language)
     make_page(_, version)

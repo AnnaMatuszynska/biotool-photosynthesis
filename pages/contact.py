@@ -37,3 +37,8 @@ st.markdown(
 )
 
 st.markdown("Thank you for your interest in our project!")
+
+if __name__ == "__main__":
+    st.set_page_config(layout="wide")
+    with open("./.streamlit/custom.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)

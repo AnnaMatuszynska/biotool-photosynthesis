@@ -6,8 +6,8 @@ from utils import get_localised_text
 def make_sidebar() -> tuple[str, str]:
     st.sidebar.write("## Settings :gear:")
 
-    version: str = st.session_state["version"]
-    language: str = st.session_state["language"]
+    version: str = st.session_state.setdefault("version", "Simple")
+    language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
 
     # Versions selectbox

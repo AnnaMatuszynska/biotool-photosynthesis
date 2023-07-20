@@ -2,8 +2,17 @@
     max-width: 900px;
 }
 
+
+[data-testid="stHorizontalBlock"] {
+    flex-direction: column;
+}
+
 @media only screen and (min-width: 1500px) {
     .block-container {
         max-width: 60vw;
+    }
+
+    [data-testid="stHorizontalBlock"] {
+        flex-direction: row;
     }
 }

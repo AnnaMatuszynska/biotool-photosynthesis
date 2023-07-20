@@ -39,9 +39,6 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version = st.session_state.setdefault("version", "Simple")
-    language = st.session_state.setdefault("language", "English")
-
     version, language = make_sidebar()
     st.session_state.update({"version": version})
     st.session_state.update({"language": language})
