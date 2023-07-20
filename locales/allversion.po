@@ -576,16 +576,16 @@ simple-es msgstr ""
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
 msgid "HEADLINE_PHOTOSYNTHESIS"
-advanced-en msgstr "#### Photosynthesis"
+advanced-en msgstr "# Photosynthesis"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "#### Photosynthesis"
+simple-en msgstr "# Photosynthesis"
 simple-de msgstr ""
-simple-fr msgstr "#### Photosynthesis"
-simple-pl msgstr "#### Photosynthesis"
-simple-es msgstr "#### Photosynthesis"
+simple-fr msgstr "# Photosynthesis"
+simple-pl msgstr "# Photosynthesis"
+simple-es msgstr "# Photosynthesis"
 
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
@@ -613,22 +613,19 @@ simple-es msgstr "Just like humans, plants need nutrients for their growth. The 
 #: pages/photosynthesis.py:34
 #: EINFÜHRUNG.py:43
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
-advanced-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process of photosynthesis."
+advanced-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in the form of light."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process of photosynthesis."
+simple-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in the form of light."
 simple-de msgstr ""
 simple-fr msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process \
-        of photosynthesis."
+        the form of light."
 simple-pl msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process \
-        of photosynthesis."
+        the form of light."
 simple-es msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process \
-        of photosynthesis."
+        the form of light."
 
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
@@ -703,7 +700,7 @@ simple-es msgstr "#### Place of photosynthesis"
 #: pages/photosynthesis.py:57
 #: EINFÜHRUNG.py:55
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-advanced-en msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+advanced-en msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -711,20 +708,20 @@ advanced-es msgstr ""
 simple-en msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 simple-de msgstr ""
 simple-fr msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 simple-pl msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 simple-es msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 
 #: pages/photosynthesis.py:68
 #: EINFÜHRUNG.py:43
@@ -3131,15 +3128,15 @@ advanced-de msgstr "Die Fotosynthese findet in den Zellen der meist grünen Best
 advanced-fr msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 advanced-pl msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 advanced-es msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 simple-en msgstr ""
 simple-de msgstr "Die Fotosynthese findet in den Zellen der meist grünen Bestandteile von Pflanzen statt. In diesen Zellen befinden \
         sich spezialisierte Organellen, die Chloroplasten. Dort findet der Teil der Fotosynthese statt, \

@@ -7,7 +7,7 @@ from utils import centered_image, get_localised_text, make_prev_next_button
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
-    st.markdown(text("HEADLINE_PHOTOSYNTHESIS_MAIN"))
+    st.markdown(text("HEADLINE_PHOTOSYNTHESIS"))
 
     st.markdown(text("HEADLINE_CLIMATE"))
     st.markdown(text("INTRODUCTION_CLIMATE_CHANGE"))

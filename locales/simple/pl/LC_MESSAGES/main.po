@@ -175,7 +175,7 @@ msgstr ""
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
 msgid "HEADLINE_PHOTOSYNTHESIS"
-msgstr "#### Photosynthesis"
+msgstr "# Photosynthesis"
 
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
@@ -189,8 +189,7 @@ msgstr "Just like humans, plants need nutrients for their growth. The most essen
 #: EINFÜHRUNG.py:43
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
 msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more about the process \
-        of photosynthesis."
+        the form of light."
 
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
@@ -223,7 +222,7 @@ msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
         is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and hydrogen, is of particular interest to us. "
+        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 
 #: pages/photosynthesis.py:68
 #: EINFÜHRUNG.py:43
