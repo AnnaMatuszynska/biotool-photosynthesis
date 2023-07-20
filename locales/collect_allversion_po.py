@@ -50,10 +50,12 @@ def read_single_po(file, version="", entries=None, add_header=False, verbose=Fal
                 # Check if the next line has the right structure
                 if not re.search("^msgstr", po[id+1]):
                     raise ValueError(fr"the msgstr following msgid '{nam}' in line {id} has the wrong format")
-                entries[nam][version] = re.sub("^msgstr\s*[\"\'](.*)[\"\']\s*\n", "\g<1>", po[id+1])
+                entries[nam][version] = re.sub("[\"\']?\s*\n$","",re.sub("^msgstr\s*[\"\']", "", po[id+1]))
                 for i in range(1,len(po)-id):
                     if re.search("\\\s*$", po[id+i]):
-                        entries[nam][version] += po[id+i+1] + "\n"
+                        if i == 1:
+                            entries[nam][version] += "\n"
+                        entries[nam][version] += re.sub('[\'\"][\s\n]*$',"", po[id+i+1])
                     else:
                         break
         versions = entries.get("_versions_",[])

@@ -27,7 +27,6 @@ def split_allversion_po(file):
         # Split the different version texts
         texts = {}
         ns = {}
-
         for version in versions:
             _po = np.array(po, dtype=str)
             ns[version] = np.sum([bool(re.search(f"^{version}\s+msgstr", x)) for x in _po])
@@ -37,7 +36,15 @@ def split_allversion_po(file):
             # Lines may be broken and extended by "\"
             others = np.array([bool(re.search(f"(?<!{version})\s+msgstr", x)) for x in _po])
             breaks = np.array([bool(re.search("\\\s*$", x)) for x in _po])
-            
+            extended = np.logical_and(others, breaks)
+
+            if any(extended):
+                for i in np.where(extended)[0]:
+                    for j in range(i, len(_po)):
+                        if breaks[j]:
+                            others[j+1] = True
+                        else:
+                            break            
 
             texts[version] = header + list(_po[np.invert(others)])
     ns_val = np.array(list(ns.values()))
