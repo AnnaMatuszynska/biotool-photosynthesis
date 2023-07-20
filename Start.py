@@ -79,6 +79,11 @@ if __name__ == "__main__":
                 ":chart_with_upwards_trend:",
             ),
             Page(
+                "pages/conclusion.py",
+                "Take Home Messages",
+                ":heavy_check_mark:",
+            ),
+            Page(
                 "pages/contact.py",
                 "Contact",
                 ":phone:",

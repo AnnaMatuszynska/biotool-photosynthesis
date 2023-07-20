@@ -837,12 +837,12 @@ msgstr "***Tip 1:*** *If you want to compare two experiments, you can download t
 msgid "TIP2"
 msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
-#: pages/plant_memory.py:342
+#: pages/conclusion.py:12
 #: Conclusion
-msgid "CONCLUSION"
-msgstr "Conclusion"
+msgid "HEADLINE_CONCLUSION"
+msgstr "# Conclusion"
 
-#: pages/plant_memory.py:343
+#: pages/conclusion.py:12
 msgid "CONCLUSION_TEXT"
 msgstr ""
 
