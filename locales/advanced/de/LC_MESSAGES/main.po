@@ -842,12 +842,12 @@ msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können S
 msgid "TIP2"
 msgstr "***Tipp2:*** *Durch Klicken auf die Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
 
-#: pages/plant_memory.py:342
+#: pages/conclusion.py:12
 #: Conclusion
-msgid "CONCLUSION"
-msgstr "Fazit"
+msgid "HEADLINE_CONCLUSION"
+msgstr "# Fazit"
 
-#: pages/plant_memory.py:343
+#: pages/conclusion.py:12
 msgid "CONCLUSION_TEXT"
 msgstr ""
 
