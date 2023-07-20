@@ -46,7 +46,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     if language == "German":
         include_image("pictures/Fotosynthese-Apparat.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
     else:
-        include_image("pictures/Fotosynthese-Apparat_eng.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
+        include_image("pictures/BioTool-photosynthesis.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
 
     # Journey into leaf
     st.video("https://youtu.be/hMCA0bBVoxE")
