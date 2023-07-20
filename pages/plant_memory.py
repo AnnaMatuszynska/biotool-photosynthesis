@@ -343,9 +343,6 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                 # second Graph
                 make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right)
 
-    with st.expander(text("CONCLUSION")):
-        st.markdown(text("CONCLUSION_TEXT"))
-
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
