@@ -4137,6 +4137,19 @@ simple-fr msgstr "That is correct! Only when the steady state lasts for a longer
 simple-pl msgstr "That is correct! Only when the steady state lasts for a longer time can it be assumed that it will not change again."
 simple-es msgstr "That is correct! Only when the steady state lasts for a longer time can it be assumed that it will not change again."
 
+#: pages/first_analysis.py:247
+msgid "CAPTION_DEFAULT_SLIDERS"
+advanced-en msgstr "Some really nice text describing what can be seen"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "Some really nice text describing what can be seen"
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
 #: pages/plant_memory.py:273
 
 msgid "TASK_MEMORY_1_EXPLANATION"
