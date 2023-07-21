@@ -1131,7 +1131,7 @@ msgstr "We can address the last two issues in one code by starting each phase wi
 "\n - The brightness level of the dark and light phases, as well as the saturating pulses\n"
 "\n - The length of the dark phase\n"
 "\n - The number of saturating pulses we want during the light phase.\n"
-"\n The code below displays our selected values, but feel free to use your preferred values and observe the outcome. This is what this website also makes more straightforward for you at the bottom of the page.\n" 
+"\n The code below displays our selected values, but feel free to use your preferred values and observe the outcome. This is what this website also makes more straightforward for you at the bottom of the page." 
 
 #: pages/model_explain.py:428
 msgid "SIMULATION_PRETTY_HEADER"

@@ -1257,6 +1257,7 @@ msgstr ""
 
 #: pages/model_explain.py:405
 msgid "SIMULATION_PHASES_1"
+msgstr ""
 
 #: pages/model_explain.py:428
 msgid "SIMULATION_PRETTY_HEADER"
