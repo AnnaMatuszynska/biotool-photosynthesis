@@ -15,6 +15,10 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
+#: This can be copied to add new text entries with translations
+msgid "INSERT_PLACEHOLDER_HERE"
+msgstr ""
+
 # SIDEBAR
 msgid "SIMPLE"
 msgstr "Simple"
@@ -26,6 +30,14 @@ msgstr "Advanced"
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
 msgstr "Language"
+
+#: This can be copied to add new text entries with translations
+msgid "EXPANDER_ABOUT"
+msgstr ""
+
+#: This can be copied to add new text entries with translations
+msgid "EXPLANATION_ABOUT"
+msgstr ""
 
 #: pages/3 Pflanzengedächtnis.py:97
 msgid "START_BUTTOM"

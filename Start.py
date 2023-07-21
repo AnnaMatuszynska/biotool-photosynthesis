@@ -10,6 +10,9 @@ def make_introduction(text: Callable[[str], str]) -> None:
     st.markdown(text("HEADLINE_MAIN"))
     st.markdown(text("INTRO"))
 
+    with st.expander(text("EXPANDER_ABOUT")):
+        st.markdown(text("EXPLANATION_ABOUT"))
+
     # Introduction biotool
     st.video("https://youtu.be/KvyjIWLD8rU")
     st.markdown(text("HEADLINE_USAGE"))
