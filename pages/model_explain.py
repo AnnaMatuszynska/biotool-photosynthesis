@@ -114,7 +114,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 st.markdown(f"{sir_v1_plot}")
 
             with col2:
-                centered_image("pictures/SIR_manual.png")
+                include_image("pictures/SIR_manual.png", 1)
 
                 st.write(
                     """<style>
@@ -151,7 +151,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 st.markdown(f"{sir_v2_simulation}")
 
             with col2:
-                centered_image("pictures/SIR_modelbase.png")
+                include_image("pictures/SIR_modelbase.png", 1)
 
                 st.write(
                     """<style>

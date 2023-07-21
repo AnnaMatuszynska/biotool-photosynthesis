@@ -6,6 +6,7 @@ from typing import Callable
 from utils import (
     get_localised_text,
     make_prev_next_button,
+    include_image
 )
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -13,7 +14,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("CONCLUSION_TEXT_ONE"))
 
-    st.image("pictures/photosynthesis_productivity.gif")
+    include_image("pictures/photosynthesis_productivity.gif", 0.7)
 
     st.markdown(text("CONCLUSION_TEXT_TWO"))
 
