@@ -48,6 +48,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     else:
         include_image("pictures/BioTool-photosynthesis.png", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
 
+    st.markdown(text("PHOTOSYNTHESIS_LOCATION_CONTINUE"))
+
     # Journey into leaf
     st.video("https://youtu.be/hMCA0bBVoxE")
 
@@ -61,8 +63,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         _, col2, _ = st.columns(3)
         with col2:
             st.image(
-                "pictures/Arabidopsis.jpg", caption=text("CAPTION_THAIANA_PICTURE"), width=400
+                "pictures/Arabidopsis.jpg", width=400
             )  # Add Caption
+            st.caption(text("CAPTION_THAIANA_PICTURE"))
         st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION"), unsafe_allow_html=True)
 
 

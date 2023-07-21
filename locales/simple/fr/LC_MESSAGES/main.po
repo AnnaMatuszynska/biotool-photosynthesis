@@ -233,13 +233,17 @@ msgstr "## Place of photosynthesis"
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
+        is called the light reaction. The so-called photosystems are located in the inner membranes (called thylakoid membranes). Photosystem II (PSII), \
         which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 
 #: pages/photosynthesis.py:68
 #: EINFÜHRUNG.py:43
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
+
+#: pages/photosynthesis.py:51
+msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
+msgstr ""
 
 #: pages/photosynthesis.py:75
 #: EINFÜHRUNG.py:59
@@ -272,7 +276,7 @@ msgstr "Why is Arabidopsis thaliana a model organism?"
 #: pages/photosynthesis.py:85
 #: pages/1 Messmethode.py:40
 msgid "CAPTION_THAIANA_PICTURE"
-msgstr "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
+msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 
 #: pages/photosynthesis.py:87
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
@@ -392,7 +396,7 @@ msgstr "You need to know one more aspect of PAM, the saturating pulses. Our mach
         converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
         yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
         tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
+        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
         many other values. But how that is done goes much too far. Most important is that you understand that we compare \
         what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
         over time and conditions."
@@ -708,7 +712,6 @@ msgstr "Now that you have been introduced to the measurement method for checking
         with the model to estimate the influence of the abiotic influence factors."
 
 #: pages/first_analysis.py:182 pages/plant_memory.py:272
-
 msgid "TASK_1"
 msgstr "Task 1"
 
@@ -861,7 +864,7 @@ msgstr "***Tip 1:*** *If you want to compare two experiments, you can download t
 #: pages/plant_memory.py:280
 #: pages/3 Pflanzengedächtnis.py:42
 msgid "TIP2"
-msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
 #: pages/conclusion.py:12
 #: Conclusion
@@ -874,7 +877,6 @@ msgstr ""
 
 #: pages/conclusion.py:18       
 msgid "CONCLUSION_TEXT_TWO"
-"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom."
 msgstr ""
 
 #: pages/Analyse.py:72
