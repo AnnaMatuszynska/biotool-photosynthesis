@@ -2,6 +2,7 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
+from pathlib import Path
 from model import get_model
 from modelbase.ode import Model, Simulator, _Simulate
 from modelbase.ode.integrators import Scipy
@@ -227,6 +228,111 @@ def make_page(text: Callable[[str], str]) -> None:
                 """
             )
 
+        with st.expander(text("MODEL_CODE_EXPANDER")):
+            st.markdown(
+                r"""
+                    Here you will able to read a step-by-step guide on the implementation of the model used on this website. We will use the package `modelbase`, as it will make everything simpler, than using a python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.
+
+                    The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:
+                """
+            )
+            with open(Path(__file__).parent / "assets" / "model" / "model_define.py") as fp:
+                model_define = f"{fp.read()}"
+
+            st.code(model_define, "python")
+
+            st.markdown(
+                """
+                    Now, we need to look at the **reaction rates** and the **ODEs** we want to implement into our model. With them we will be able to decide which **parameteres** and **compounds** we need. We have to define them in a `dict` and `list` respectively. It is also good practice to use comments after each value to briefly explain what that variable represents and, if present, the unit.
+                """
+            )
+            
+            tab1, tab2 = st.tabs(['Parameters', 'Compounds'])
+
+            with tab1:
+                with open(Path(__file__).parent / "assets" / "model" / "model_parameters.py") as fp:
+                    model_parameters = f"{fp.read()}"
+
+                st.code(model_parameters, "python")
+
+            with tab2:
+                with open(Path(__file__).parent / "assets" / "model" / "model_comps.py") as fp:
+                    model_comps = f"{fp.read()}"
+
+                st.code(model_comps, "python")
+
+            st.markdown(
+                """
+                    The defined model has integrated functions to add the parameters and compounds easily:
+                """
+            )
+            with open(Path(__file__).parent / "assets" / "model" / "model_addcompspars.py") as fp:
+                model_addcompspars = f"{fp.read()}"
+
+            st.code(model_addcompspars, "python")
+
+            st.markdown(
+                """
+                    This model also uses some **parameters** that is derived from other parameters. Furthermore, some information is also hidden behind the connection between compounds, which is not possible to be summarised as parameters. However, `modelbase` has some tricks up its sleeves to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We first have to define the calculations as functions and then add them to the model.
+                """
+            )
+
+            tab1, tab2 = st.tabs(["Derived parameters", "Algebraic modules"])
+
+            with tab1:
+
+                with open(Path(__file__).parent / "assets" / "model" / "model_derivedparameters.py") as fp:
+                    model_derivedparameters = f"{fp.read()}"
+
+                st.code(model_derivedparameters, "python")
+
+            with tab2:
+
+                with open(Path(__file__).parent / "assets" / "model" / "model_algebraicmodules.py") as fp:
+                    model_algebraicmodules = f"{fp.read()}"
+
+                st.code(model_algebraicmodules, "python")
+
+            st.markdown(
+                """
+                    We now have given the model all the building blocks it needs, but it doesn't know what to do with them. For that it needs instructions. To make these instructions we have to translate the reaction rates into `functions`. You will see that some of these functions also call other functions. These are only to make the code more legible or to eliminate the same calculations.
+                """
+            )
+
+            tab1, tab2 = st.tabs(["Rate reactions", "Other functions"])
+
+            with tab1:
+
+                with open(Path(__file__).parent / "assets" / "model" / "model_reactions.py") as fp:
+                    model_reactions = f"{fp.read()}"
+
+                st.code(model_reactions, "python")
+
+            with tab2:
+
+                with open(Path(__file__).parent / "assets" / "model" / "model_otherfunctions.py") as fp:
+                    model_otherfunctions = f"{fp.read()}"
+
+                st.code(model_otherfunctions, "python")
+
+            st.markdown(
+                """
+                    The model now has all the building blocks and the instructions it needs. The problem is now that we have not told it what building block corresponds to which in the instructions. Furthermore it needs to know how each instruction connects to each other. For that we have to additionally look at the ODEs and define the stochiometry.
+                """
+            )
+
+            with open(Path(__file__).parent / "assets" / "model" / "model_addreactions.py") as fp:
+                model_addreactions = f"{fp.read()}"
+
+            st.code(model_addreactions, "python")
+
+            st.markdown(
+                """
+                    We now should have a working model. To test it we will have to simulate it. First, we have to define a `simulator` object from our model.
+                """
+            )
+
+                    
     st.markdown(text("HEADLINE_IMPLEMENTATION"))
 
     st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
