@@ -1147,6 +1147,90 @@ msgstr ""
 msgid "IMPLEMENTATION_TO_EXPERT"
 msgstr ""
 
+#: pages/model_explain.py:240
+msgid "MODEL_CODE_EXPANDER"
+msgstr ""
+
+#: pages/model_explain.py:241
+msgid "CONSTRUCTION_HEADER"
+msgstr ""
+
+#: pages/model_explain.py:
+msgid "CONSTRUCTION_1"
+msgstr ""
+
+#: pages/model_explain.py:249
+msgid "CONSTRUCTION_2"
+msgstr ""
+
+#: pages/model_explain.py:265
+msgid "CONSTRUCTION_3"
+msgstr ""
+
+#: pages/model_explain.py:272
+msgid "CONSTRUCTION_4"
+msgstr ""
+
+#: pages/model_explain.py:290
+msgid "CONSTRUCTION_5"
+msgstr ""
+
+#: pages/model_explain.py:308
+msgid "CONSTRUCTION_6"
+msgstr ""
+
+#: pages/model_explain.py:315
+msgid "CONSTRUCTION_7"
+msgstr ""
+
+#: pages/model_explain.py:317
+msgid "SIMULATION_HEADER"
+msgstr ""
+
+#: pages/model_explain.py:319
+msgid "SIMULATION_1"
+msgstr ""
+
+#: pages/model_explain.py:326
+msgid "SIMULATION_2"
+msgstr ""
+
+#: pages/model_explain.py:326
+msgid "SIMULATION_3"
+msgstr ""
+
+#: pages/model_explain.py:356
+msgid "SIMULATION_4"
+msgstr ""
+
+#: pages/model_explain.py:357
+msgid "SIMULATION_FLOURESCENCE_HEADER"
+msgstr ""
+
+#: pages/model_explain.py:358
+msgid "SIMULATION_FLOURESCENCE_1"
+msgstr ""
+
+#: pages/model_explain.py:381
+msgid "SIMULATION_FLOURESCENCE_2"
+msgstr ""
+
+#: pages/model_explain.py:404
+msgid "SIMULATION_PHASES_HEADER"
+msgstr ""
+
+#: pages/model_explain.py:405
+msgid "SIMULATION_PHASES_1"
+msgstr ""
+
+#: pages/model_explain.py:428
+msgid "SIMULATION_PRETTY_HEADER"
+msgstr ""
+
+#: pages/model_explain.py:429
+msgid "SIMULATION_PRETTY_1"
+msgstr ""
+
 #: pages/first_analysis.py:247
 #: pages/Analyse.py:123
 msgid "KONTROLL"

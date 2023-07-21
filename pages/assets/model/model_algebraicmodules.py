@@ -118,7 +118,7 @@ model.add_algebraic_module_from_args(
     module_name="Fluorescence",
     function=Fluorescence,
     derived_compounds=["Fluo"],
-    args=["P", "Q", "B0", "B2", "PFD", "PQtot", "kPQred", "KeqQAPQ", "kH", "kF", "kP", "PSIItot"],
+    args=["Q", "B0", "B2","kH", "kF", "kP"],
 )
 
 ## Mock module to get Light vector over all simulated time points

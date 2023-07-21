@@ -228,24 +228,25 @@ def make_page(text: Callable[[str], str]) -> None:
                 """
             )
 
-        with st.expander(text("MODEL_CODE_EXPANDER")):
-            st.markdown(
-                r"""
-                    Here you will able to read a step-by-step guide on the implementation of the model used on this website. We will use the package `modelbase`, as it will make everything simpler, than using a python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.
 
-                    The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:
-                """
-            )
+    st.markdown(text("HEADLINE_IMPLEMENTATION"))
+
+    st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
+
+    if version == "Simple":
+        st.markdown(text("IMPLEMENTATION_TO_EXPERT"))
+
+    if version == "Advanced":
+        with st.expander(text("MODEL_CODE_EXPANDER")):
+            st.markdown(text("CONSTRUCTION_HEADER"))
+            st.markdown(text("CONSTRUCTION_1"))
+
             with open(Path(__file__).parent / "assets" / "model" / "model_define.py") as fp:
                 model_define = f"{fp.read()}"
 
             st.code(model_define, "python")
 
-            st.markdown(
-                """
-                    Now, we need to look at the **reaction rates** and the **ODEs** we want to implement into our model. With them we will be able to decide which **parameteres** and **compounds** we need. We have to define them in a `dict` and `list` respectively. It is also good practice to use comments after each value to briefly explain what that variable represents and, if present, the unit.
-                """
-            )
+            st.markdown(text("CONSTRUCTION_2"))
             
             tab1, tab2 = st.tabs(['Parameters', 'Compounds'])
 
@@ -261,21 +262,14 @@ def make_page(text: Callable[[str], str]) -> None:
 
                 st.code(model_comps, "python")
 
-            st.markdown(
-                """
-                    The defined model has integrated functions to add the parameters and compounds easily:
-                """
-            )
+            st.markdown(text("CONSTRUCTION_3"))
+
             with open(Path(__file__).parent / "assets" / "model" / "model_addcompspars.py") as fp:
                 model_addcompspars = f"{fp.read()}"
 
             st.code(model_addcompspars, "python")
 
-            st.markdown(
-                """
-                    This model also uses some **parameters** that is derived from other parameters. Furthermore, some information is also hidden behind the connection between compounds, which is not possible to be summarised as parameters. However, `modelbase` has some tricks up its sleeves to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We first have to define the calculations as functions and then add them to the model.
-                """
-            )
+            st.markdown(text("CONSTRUCTION_4"))
 
             tab1, tab2 = st.tabs(["Derived parameters", "Algebraic modules"])
 
@@ -293,11 +287,7 @@ def make_page(text: Callable[[str], str]) -> None:
 
                 st.code(model_algebraicmodules, "python")
 
-            st.markdown(
-                """
-                    We now have given the model all the building blocks it needs, but it doesn't know what to do with them. For that it needs instructions. To make these instructions we have to translate the reaction rates into `functions`. You will see that some of these functions also call other functions. These are only to make the code more legible or to eliminate the same calculations.
-                """
-            )
+            st.markdown(text("CONSTRUCTION_5"))
 
             tab1, tab2 = st.tabs(["Rate reactions", "Other functions"])
 
@@ -315,30 +305,135 @@ def make_page(text: Callable[[str], str]) -> None:
 
                 st.code(model_otherfunctions, "python")
 
-            st.markdown(
-                """
-                    The model now has all the building blocks and the instructions it needs. The problem is now that we have not told it what building block corresponds to which in the instructions. Furthermore it needs to know how each instruction connects to each other. For that we have to additionally look at the ODEs and define the stochiometry.
-                """
-            )
+            st.markdown(text("CONSTRUCTION_6"))
 
             with open(Path(__file__).parent / "assets" / "model" / "model_addreactions.py") as fp:
                 model_addreactions = f"{fp.read()}"
 
             st.code(model_addreactions, "python")
 
-            st.markdown(
-                """
-                    We now should have a working model. To test it we will have to simulate it. First, we have to define a `simulator` object from our model.
-                """
-            )
+            st.markdown(text("CONSTRUCTION_7"))
 
-                    
-    st.markdown(text("HEADLINE_IMPLEMENTATION"))
+            st.markdown(text("SIMULATION_HEADER"))
 
-    st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
+            st.markdown(text("SIMULATION_1"))
 
-    if version == "Simple":
-        st.markdown(text("IMPLEMENTATION_TO_EXPERT"))
+            with open(Path(__file__).parent / "assets" / "model" / "model_definesim.py") as fp:
+                model_definesim = f"{fp.read()}"
+            
+            st.code(model_definesim, "python")
+
+            st.markdown(text("SIMULATION_2"))
+
+            with open(Path(__file__).parent / "assets" / "model" / "model_initialisesim.py") as fp:
+                model_initialisesim = f"{fp.read()}"
+            
+            st.code(model_initialisesim, "python")
+
+            st.markdown(text("SIMULATION_3"))
+
+            col1, col2 = st.columns([1,1])
+
+            with col1:
+                with open(Path(__file__).parent / "assets" / "model" / "model_basicplot.py") as fp:
+                    model_basicplot = f"{fp.read()}"
+            
+                st.code(model_basicplot, "python")
+
+                st.write(
+                    """<style>
+                    [data-testid="stHorizontalBlock"] {
+                        align-items: center;
+                    }
+                    </style>
+                    """,
+                    unsafe_allow_html=True,
+                )
+
+            with col2:
+                include_image("pictures/basic_plot.png", 1)
+
+            st.markdown(text("SIMULATION_4"))
+            st.markdown(text("SIMULATION_FLOURESCENCE_HEADER"))
+            st.markdown(text("SIMULATION_FLOURESCENCE_1"))
+
+            col1, col2 = st.columns([1,1])
+
+            with col1:
+                with open(Path(__file__).parent / "assets" / "model" / "model_onlyflou.py") as fp:
+                    model_onlyflou = f"{fp.read()}"
+            
+                st.code(model_onlyflou, "python")
+
+                st.write(
+                    """<style>
+                    [data-testid="stHorizontalBlock"] {
+                        align-items: center;
+                    }
+                    </style>
+                    """,
+                    unsafe_allow_html=True,
+                )
+
+            with col2:
+                include_image("pictures/only_flou.png", 1)
+
+            st.markdown(text("SIMULATION_FLOURESCENCE_2"))
+
+            col1, col2 = st.columns([1,1])
+
+            with col1:
+                with open(Path(__file__).parent / "assets" / "model" / "model_relativeflou.py") as fp:
+                    model_relativeflou = f"{fp.read()}"
+            
+                st.code(model_relativeflou, "python")
+
+                st.write(
+                    """<style>
+                    [data-testid="stHorizontalBlock"] {
+                        align-items: center;
+                    }
+                    </style>
+                    """,
+                    unsafe_allow_html=True,
+                )
+
+            with col2:
+                include_image("pictures/relative_flou.png", 1)
+
+            st.markdown(text("SIMULATION_PHASES_HEADER"))
+            st.markdown(text("SIMULATION_PHASES_1"))
+
+            col1, col2 = st.columns([1,1])
+
+            with col1:
+                with open(Path(__file__).parent / "assets" / "model" / "model_phases.py") as fp:
+                    model_phases = f"{fp.read()}"
+            
+                st.code(model_phases, "python")
+
+                st.write(
+                    """<style>
+                    [data-testid="stHorizontalBlock"] {
+                        align-items: center;
+                    }
+                    </style>
+                    """,
+                    unsafe_allow_html=True,
+                )
+
+            with col2:
+                include_image("pictures/phases.png", 1)
+
+            st.markdown(text("SIMULATION_PRETTY_HEADER"))
+            st.markdown(text("SIMULATION_PRETTY_1"))
+
+            include_image("pictures/complete_mockup.png", 1)
+
+            with open(Path(__file__).parent / "assets" / "model" / "model_complemockup.py") as fp:
+                model_complemockup = f"{fp.read()}"
+            
+            st.code(model_complemockup, "python")
 
     # UI (Mainpage-Website)
     st.markdown(text("HEADLINE_ANALYSE"))

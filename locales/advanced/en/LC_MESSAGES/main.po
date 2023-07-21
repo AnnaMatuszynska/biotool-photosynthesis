@@ -591,7 +591,7 @@ msgstr "### Implementation"
 #: pages/model_explain.py:119
 #: Anna's explanation of the model
 msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
+msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel). In the dropdown below, you can also look at a step-by-step guide on how to implement it yourself."
 
 #: pages/model_explain.py:149
 msgid "SIR_IMPLEMENTATION_MANUAL_1"
@@ -1034,6 +1034,100 @@ msgstr ""
 #: Anna's explanation of the model
 msgid "IMPLEMENTATION_TO_EXPERT"
 msgstr ""
+
+#: pages/model_explain.py:240
+msgid "MODEL_CODE_EXPANDER"
+msgstr "Step-by-Step Guide of Implementation"
+
+#: pages/model_explain.py:241
+msgid "CONSTRUCTION_HEADER"
+msgstr "#### Model Construction"
+
+#: pages/model_explain.py:
+msgid "CONSTRUCTION_1"
+msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilising a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n" 
+"\n If you want to follow along, you can just copy each code block and paste them one after another in a Python IDE. At the end you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
+
+#: pages/model_explain.py:249
+msgid "CONSTRUCTION_2"
+msgstr "We must look at the **reaction rates** and the **ODEs** we want to implement into our model. With them, we can decide which **parameters** and **compounds** we need. We must define them in a `dict` and `list`, respectively. It is also good practice to use comments after each value to briefly explain what that variable represents and, if present, the unit." 
+
+#: pages/model_explain.py:265
+msgid "CONSTRUCTION_3"
+msgstr "The defined model has integrated functions to add the parameters and compounds easily:" 
+
+#: pages/model_explain.py:272
+msgid "CONSTRUCTION_4"
+msgstr "This model also uses some **parameters** that are derived from other parameters. Furthermore, some information is hidden behind the connection between compounds, which cannot be summarised as parameters. However, `modelbase` has some tricks to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We must first define the calculations as functions and then add them to the model." 
+
+#: pages/model_explain.py:290
+msgid "CONSTRUCTION_5"
+msgstr "We now have given the model all the building blocks it needs, but it needs to know what to do with them. For that, it needs instructions. We must translate the reaction rates into `functions` to make these instructions. You will see that some of these functions also call other functions. These are only to make the code more legible or to eliminate the same calculations." 
+
+#: pages/model_explain.py:308
+msgid "CONSTRUCTION_6"
+msgstr "The model has all the necessary components and instructions. Still, we must now specify which building block corresponds to each instruction and how they are connected. To accomplish this, we need to examine the ODEs and establish the stoichiometry." 
+
+#: pages/model_explain.py:315
+msgid "CONSTRUCTION_7"
+msgstr "We have now successfully created a functional model. However, to test it, we need to simulate it. This section will guide you through the process step by step to generate the plot with the default values listed further down on this page. This part may be more complicated than the modeling part, requiring some trial and error. We will explain our thought process so that you can follow along. Still, we suggest you read through this section carefully to create the plot successfully." 
+
+#: pages/model_explain.py:317
+msgid "SIMULATION_HEADER"
+msgstr "#### Model Simulation" 
+
+#: pages/model_explain.py:319
+msgid "SIMULATION_1"
+msgstr "First, let's check if our plot is functional. To do so, we will generate a `simulator` object by utilizing the `Simulator()` class from `modelbase`." 
+
+#: pages/model_explain.py:326
+msgid "SIMULATION_2"
+msgstr "The model requires a starting point for its calculations. The parameters have been defined during the model creation, so we now need to specify the initial concentrations or quantities of the compounds." 
+
+#: pages/model_explain.py:326
+msgid "SIMULATION_3"
+msgstr "We can begin the simulations now. Let's select a random time point for the model to simulate to. We can visualize the results after the simulation and check for implementation errors. This test is straightforward, as an empty or non-existent plot indicates a problem. Our preferred plotting tool is `matplotlib`, which is also integrated into `modelbase`." 
+
+#: pages/model_explain.py:356
+msgid "SIMULATION_4"
+msgstr "We have successfully simulated our model and created a basic plot. However, the plot must include important details that we need to define. These aspects include:\n"
+"\n - Displaying changes in fluorescence over time\n"
+"\n - Including an initial dark phase followed by a light phase\n"
+"\n - Showing saturating light pulses at the beginning of each phase and at specific intervals during the light phase\n"
+"\n To address these issues, we will tackle each one individually. We recommend replacing the code at each new step that includes the `matplotlib` import at the top if you follow this guide. You will notice many similarities throughout the process." 
+
+#: pages/model_explain.py:357
+msgid "SIMULATION_FLOURESCENCE_HEADER"
+msgstr "##### Showing Fluorescence" 
+
+#: pages/model_explain.py:358
+msgid "SIMULATION_FLOURESCENCE_1"
+msgstr "When using `modelbase` for simulations, it tends to display the compounds in the default plots. However, in our situation, we need to showcase the change of Fluorescence, which we did not incorporate as a compound but as an algebraic module. Hence, we must choose that change specifically." 
+
+#: pages/model_explain.py:381
+msgid "SIMULATION_FLOURESCENCE_2"
+msgstr "We will relativise the fluorescence values to their maximum to simplify the chart reading process. Unfortunately, this will result in a more complex code. We will demonstrate how to achieve this by extracting the simulation data from `modelbase`. However, there are several methods to accomplish this. It is worth noting that the graph will appear slightly different due to `modelbase` modifying certain plot aspects for faster processing. Nonetheless, we will ensure the diagram is aesthetically pleasing in the end." 
+
+#: pages/model_explain.py:404
+msgid "SIMULATION_PHASES_HEADER"
+msgstr "##### Different Phases and Saturating Pulses" 
+
+#: pages/model_explain.py:405
+msgid "SIMULATION_PHASES_1"
+msgstr "We can address the last two issues in one code by starting each phase with a saturating pulse. However, we need to make some decisions regarding:\n"
+"\n - The duration of our simulation\n"
+"\n - The brightness level of the dark and light phases, as well as the saturating pulses\n"
+"\n - The length of the dark phase\n"
+"\n - The number of saturating pulses we want during the light phase.\n"
+"\n The code below displays our selected values, but feel free to use your preferred values and observe the outcome. This is what this website also makes more straightforward for you at the bottom of the page.\n" 
+
+#: pages/model_explain.py:428
+msgid "SIMULATION_PRETTY_HEADER"
+msgstr "##### Making It Pretty" 
+
+#: pages/model_explain.py:429
+msgid "SIMULATION_PRETTY_1"
+msgstr "The simulation currently displays all the desired information. To enhance its visual appeal and comprehension, we can utilize the `matplotlib` library to create a polished graph resembling the one at the bottom of the page. While we won't provide a detailed walkthrough, you can still view the code we used." 
 
 #: pages/first_analysis.py:247
 #: pages/Analyse.py:123
