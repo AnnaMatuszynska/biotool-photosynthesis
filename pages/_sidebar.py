@@ -6,8 +6,8 @@ from utils import get_localised_text
 def make_sidebar() -> tuple[str, str]:
     st.sidebar.write("## Settings :gear:")
 
-    version: str = st.session_state.setdefault("version", "Simple")
-    language: str = st.session_state.setdefault("language", "English")
+    version: str = st.session_state.version
+    language: str = st.session_state.language
     text = get_localised_text(version, language)
 
     # Versions selectbox
@@ -21,6 +21,7 @@ def make_sidebar() -> tuple[str, str]:
             options=versions,
             format_func=lambda x: version_display[x],
             index=version_to_idx[st.session_state["version"]],
+            key="version",
         ),
     )
 
@@ -33,9 +34,10 @@ def make_sidebar() -> tuple[str, str]:
             label="⚙ Language 🌍💬",
             options=languages,
             index=language_to_idx[st.session_state["language"]],
+            key="language",
         ),
     )
-    return version, language
+    # return version, language
 
 
 if __name__ == "__main__":

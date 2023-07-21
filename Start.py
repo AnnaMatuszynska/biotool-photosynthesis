@@ -42,9 +42,9 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version, language = make_sidebar()
-    st.session_state.update({"version": version})
-    st.session_state.update({"language": language})
+    version: str = st.session_state.setdefault("version", "Simple")
+    language: str = st.session_state.setdefault("language", "English")
+
     text = get_localised_text(version, language)
 
     # NOTE: this belongs with the sidebar, but works globally
@@ -96,3 +96,5 @@ if __name__ == "__main__":
     make_introduction(text)
     make_chapters(text, version, language)
     make_prev_next_button(None, "photosynthesis")
+
+    make_sidebar()
