@@ -26,6 +26,19 @@ msgstr ""
 # simple-pl
 # simple-es
 
+#: This can be copied to add new text entries with translations
+msgid "INSERT_PLACEHOLDER_HERE"
+advanced-en msgstr ""
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
 # SIDEBAR
 msgid "SIMPLE"
 advanced-en msgstr "Simple"
@@ -64,6 +77,32 @@ simple-de msgstr ""
 simple-fr msgstr "Language"
 simple-pl msgstr "Język"
 simple-es msgstr "Language"
+
+#: This can be copied to add new text entries with translations
+msgid "EXPANDER_ABOUT"
+advanced-en msgstr "About this Website"
+advanced-de msgstr "Über diese Webseite"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "About this Website"
+simple-de msgstr "Über diese Webseite"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: This can be copied to add new text entries with translations
+msgid "EXPLANATION_ABOUT"
+advanced-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/3 Pflanzengedächtnis.py:97
 msgid "START_BUTTOM"
