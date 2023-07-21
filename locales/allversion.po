@@ -714,7 +714,7 @@ simple-es msgstr "## Place of photosynthesis"
 #: pages/photosynthesis.py:57
 #: EINFÜHRUNG.py:55
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-advanced-en msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
+advanced-en msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the inner membranes (called thylakoid membranes). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -726,7 +726,7 @@ simple-en msgstr "Photosynthesis takes place in the cells of the mostly green co
 simple-de msgstr ""
 simple-fr msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
+        is called the light reaction. The so-called photosystems are located in the inner membranes (called thylakoid membranes). Photosystem II (PSII), \
         which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
 simple-pl msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
@@ -750,6 +750,19 @@ simple-de msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotos
 simple-fr msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
 simple-pl msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
 simple-es msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
+
+#: pages/photosynthesis.py:51
+msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
+advanced-en msgstr "After light is taken up by the chloroplast, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail we have created a short video for you:"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "After light is taken up by the chloroplast, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail we have created a short video for you:"
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/photosynthesis.py:75
 #: EINFÜHRUNG.py:59
@@ -833,16 +846,16 @@ simple-es msgstr "Why is Arabidopsis thaliana a model organism?"
 #: pages/photosynthesis.py:85
 #: pages/1 Messmethode.py:40
 msgid "CAPTION_THAIANA_PICTURE"
-advanced-en msgstr "A photograph of a plant of the wild type of the model organism **Arabidopsis thaliana**."
-advanced-de msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus Arabidopsis thaliana."
-advanced-fr msgstr "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
-advanced-pl msgstr "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
-advanced-es msgstr "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
-simple-en msgstr "A photograph of a plant of the wild type of the model organism **Arabidopsis thaliana**."
-simple-de msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus Arabidopsis thaliana."
-simple-fr msgstr "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
-simple-pl msgstr "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
-simple-es msgstr "A photograph of a plant of the wild type of the model organism <em>Arabidopsis thaliana</em>."
+advanced-en msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
+advanced-de msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis thaliana_."
+advanced-fr msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
+advanced-pl msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
+advanced-es msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
+simple-en msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
+simple-de msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis thaliana_."
+simple-fr msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
+simple-pl msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
+simple-es msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 
 #: pages/photosynthesis.py:87
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
@@ -1276,7 +1289,7 @@ simple-es msgstr "Basic principles of measuring chlorophyll fluorescence with PA
 #: Explanation by Tobias
 
 msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
-advanced-en msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
+advanced-en msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. Using these fluorescence features, we can then calculate the values quantifying photosynthesis, e.g. the amount of NPQ. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
 advanced-de msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
         diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
         für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
@@ -1293,7 +1306,7 @@ advanced-es msgstr "Indeed, we shine a very tight series of short and weak light
         With this flashing, we measure the plant performance and call it 'measuring light'. The measuring light is too \
         weak to be used for photosynthesis, but strong enough to get the plant to fluoresce. And, since we produce \
         fluorescence with each flash, the resulting signal is patterned (modulated), just like the measuring light."
-simple-en msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
+simple-en msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. Using these fluorescence features, we can then calculate the values quantifying photosynthesis, e.g. the amount of NPQ.\n\n So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1 in the left diagram, which is called a simplified 'Jablonsky diagram'). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra. That means that the fluorescence light is redder (at higher wavelengths in the left axis) than the light absorbed (upper panel on the right). This, in turn, means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
 simple-de msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
         diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
         für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
@@ -1365,14 +1378,14 @@ simple-es msgstr "Saturating Pulses of light"
 #: pages/method.py:47
 #: Explanation by Tobias
 msgid "EXPLANATION_ATTEMPTS"
-advanced-en msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
+advanced-en msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
 advanced-de msgstr "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
         paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
         Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute \
         'Fm'. Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fm nicht der \
         Fall. Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb \
         der Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
-        verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ϕPSII-, NPQ- und viele andere Werte berechnen. \
+        verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
         Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass Sie verstehen, dass wir vergleichen, welcher \
         Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen über die \
         Zeit und die Bedingungen verändern."
@@ -1381,7 +1394,7 @@ advanced-fr msgstr "You need to know one more aspect of PAM, the saturating puls
         converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
         yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
         tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
+        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
         many other values. But how that is done goes much too far. Most important is that you understand that we compare \
         what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
         over time and conditions."
@@ -1390,7 +1403,7 @@ advanced-pl msgstr "You need to know one more aspect of PAM, the saturating puls
         converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
         yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
         tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
+        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
         many other values. But how that is done goes much too far. Most important is that you understand that we compare \
         what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
         over time and conditions."
@@ -1399,7 +1412,7 @@ advanced-es msgstr "You need to know one more aspect of PAM, the saturating puls
         converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
         yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
         tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
+        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
         many other values. But how that is done goes much too far. Most important is that you understand that we compare \
         what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
         over time and conditions."
@@ -1410,7 +1423,7 @@ simple-de msgstr "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sä
         Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fm nicht der Fall. \
         Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb der \
         Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
-        verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ϕPSII-, NPQ- und viele andere Werte berechnen. \
+        verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
         Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass Sie verstehen, dass wir vergleichen, \
         welcher Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen \
         über die Zeit und die Bedingungen verändern."
@@ -1419,7 +1432,7 @@ simple-fr msgstr "You need to know one more aspect of PAM, the saturating pulses
         converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
         yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
         tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
+        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
         many other values. But how that is done goes much too far. Most important is that you understand that we compare \
         what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
         over time and conditions."
@@ -1428,7 +1441,7 @@ simple-pl msgstr "You need to know one more aspect of PAM, the saturating pulses
         converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
         yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
         tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
+        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
         many other values. But how that is done goes much too far. Most important is that you understand that we compare \
         what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
         over time and conditions."
@@ -1437,7 +1450,7 @@ simple-es msgstr "You need to know one more aspect of PAM, the saturating pulses
         converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
         yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
         tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and \
+        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
         many other values. But how that is done goes much too far. Most important is that you understand that we compare \
         what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
         over time and conditions."
@@ -2406,7 +2419,7 @@ simple-es msgstr "## The data analysis"
 #: pages/2 Daten-Analyse.py:25
 #: pages/Analyse.py:25
 msgid "INTRODUKTION"
-advanced-en msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors."
+advanced-en msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors. In the following the model can be rerun with different parameters using the sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal. With the sliders, you can adjust the light instensity during the light phase, for how long the simulation will run, how far apart in time the saturation pulses will be, and how fast the activation and deactivation rates of the NPQ adaption process are."
 advanced-de msgstr "Matuszynska et al. (2016) entwickelten ein Modell, das die Vorgänge am Fotosysthem II simuliert. Mit Hilfe \
         dieses Modells können analoge Diagramme erstellt werden, wie sie bei der zuvor beschriebenen Messmethode entstehen."
 advanced-fr msgstr "Matuszynska et al. (2016) developed a model that simulates the processes at Photosysthem II. With the help \
@@ -2415,7 +2428,7 @@ advanced-pl msgstr "Matuszynska et al. (2016) developed a model that simulates t
         of this model, analogous diagrams can be created as they arise in the previously described measurement method."
 advanced-es msgstr "Matuszynska et al. (2016) developed a model that simulates the processes at Photosysthem II. With the help \
         of this model, analogous diagrams can be created as they arise in the previously described measurement method."
-simple-en msgstr "Now that you have been introduced to the experimental method of measuring photosynthetic fluorescence you probably would like to take such measurements yourself. And you can! On this site you we will carry out measurements with the model, meaning **in silico**, to estimate the influence of the **abiotic** (meaning physical rather than biological, like light intensity) influence factors. To make your work as easy as possible, all you need to run the model is to provide the light intensity for which you want to run your experiment, length of this experiment (in minutes) and what is the time in between the saturating pulses of light. You can do it using sliders."
+simple-en msgstr "Now that you have been introduced to the experimental method of measuring photosynthetic fluorescence you probably would like to take such measurements yourself. And you can! On this site you we will carry out measurements with the model, meaning **in silico**, to estimate the influence of the **abiotic** (meaning physical rather than biological, like light intensity) influence factors. To make your work as easy as possible, all you need to run the model is to provide the light intensity for which you want to run your experiment, length of this experiment (in minutes) and what is the time in between the saturating pulses of light. You can do it using sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal."
 simple-de msgstr "Nachdem Sie die Messmethode zur Überprüfung von NPQ an Pflanzen kennenlernen durftet, werden wir nun Messungen \
         mit dem Model durchführen, um den Einfluss der abiotischen Einfluss-Faktoren abzuschätzen."
 simple-fr msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements \
@@ -2426,7 +2439,6 @@ simple-es msgstr "Now that you have been introduced to the measurement method fo
         with the model to estimate the influence of the abiotic influence factors."
 
 #: pages/first_analysis.py:182 pages/plant_memory.py:272
-
 msgid "TASK_1"
 advanced-en msgstr "Task 1"
 advanced-de msgstr ""
@@ -2694,11 +2706,11 @@ simple-es msgstr "Saturation pulses in the selected intervals in seconds"
 #: pages/Analyse.py:67
 #: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
-advanced-en msgstr "Conversion rate to Zeaxanthin in percent"
-advanced-de msgstr "Umwandlungsrate zu Zeaxanthin in Prozent"
-advanced-fr msgstr "Conversion rate to Zeaxanthin in percent"
-advanced-pl msgstr "Conversion rate to Zeaxanthin in percent"
-advanced-es msgstr "Conversion rate to Zeaxanthin in percent"
+advanced-en msgstr "Conversion rate to Zeaxanthin in ± percent of default"
+advanced-de msgstr "Umwandlungsrate zu Zeaxanthin in ± Prozent Standardwert"
+advanced-fr msgstr "Conversion rate to Zeaxanthin in ± percent of default"
+advanced-pl msgstr "Conversion rate to Zeaxanthin in ± percent of default"
+advanced-es msgstr "Conversion rate to Zeaxanthin in ± percent of default"
 simple-en msgstr ""
 simple-de msgstr ""
 simple-fr msgstr ""
@@ -2855,16 +2867,16 @@ simple-es msgstr "***Tip 1:*** *If you want to compare two experiments, you can 
 #: pages/plant_memory.py:280
 #: pages/3 Pflanzengedächtnis.py:42
 msgid "TIP2"
-advanced-en msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-advanced-de msgstr "***Tipp2:*** *Durch Klicken auf die Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
-advanced-fr msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-advanced-pl msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-advanced-es msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-simple-en msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-simple-de msgstr "***Tipp2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
-simple-fr msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-simple-pl msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-simple-es msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+advanced-en msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+advanced-de msgstr "***Tipp 2:*** *Durch Klicken auf die Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+advanced-fr msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+advanced-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+advanced-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+simple-en msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+simple-de msgstr "***Tipp 2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+simple-fr msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+simple-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+simple-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
 #: pages/conclusion.py:12
 #: Conclusion
@@ -2918,8 +2930,8 @@ simple-es msgstr ""
 
 #: pages/Analyse.py:72
 msgid "SLIDER_DEACTIVATION"
-advanced-en msgstr ""
-advanced-de msgstr "Umwandlungsrate zu Violaxanthin in Prozent"
+advanced-en msgstr "Conversion rate to Violaxanthin in ± percent of default"
+advanced-de msgstr "Umwandlungsrate zu Violaxanthin in ± Prozent Standardwert"
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
@@ -4231,12 +4243,12 @@ simple-es msgstr "That is correct! Only when the steady state lasts for a longer
 
 #: pages/first_analysis.py:247
 msgid "CAPTION_DEFAULT_SLIDERS"
-advanced-en msgstr "Some really nice text describing what can be seen"
+advanced-en msgstr "Simulation graph with default values."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Some really nice text describing what can be seen"
+simple-en msgstr "This is how the graph will look with default sliders."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""

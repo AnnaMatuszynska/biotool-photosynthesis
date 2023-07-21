@@ -231,6 +231,10 @@ msgstr ""
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
 
+#: pages/photosynthesis.py:51
+msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
+msgstr ""
+
 #: pages/photosynthesis.py:75
 #: EINFÜHRUNG.py:59
 msgid "HEADLINE_NPQ"
@@ -259,7 +263,7 @@ msgstr "Wieso wird Arabidopsis thaliana als Modellorganismus bezeichnet?"
 #: pages/photosynthesis.py:85
 #: pages/1 Messmethode.py:40
 msgid "CAPTION_THAIANA_PICTURE"
-msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus Arabidopsis thaliana."
+msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis thaliana_."
 
 #: pages/photosynthesis.py:87
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
@@ -401,7 +405,7 @@ msgstr "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sättigungsim
         Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fm nicht der Fall. \
         Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb der \
         Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
-        verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ϕPSII-, NPQ- und viele andere Werte berechnen. \
+        verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
         Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass Sie verstehen, dass wir vergleichen, \
         welcher Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen \
         über die Zeit und die Bedingungen verändern."
@@ -717,7 +721,6 @@ msgstr "Nachdem Sie die Messmethode zur Überprüfung von NPQ an Pflanzen kennen
         mit dem Model durchführen, um den Einfluss der abiotischen Einfluss-Faktoren abzuschätzen."
 
 #: pages/first_analysis.py:182 pages/plant_memory.py:272
-
 msgid "TASK_1"
 msgstr "Aufgabe 1"
 
@@ -876,7 +879,7 @@ msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können S
 #: pages/plant_memory.py:280
 #: pages/3 Pflanzengedächtnis.py:42
 msgid "TIP2"
-msgstr "***Tipp2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+msgstr "***Tipp 2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
 
 #: pages/conclusion.py:12
 #: Conclusion
@@ -889,7 +892,6 @@ msgstr ""
 
 #: pages/conclusion.py:18       
 msgid "CONCLUSION_TEXT_TWO"
-"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom."
 msgstr ""
 
 #: pages/Analyse.py:72

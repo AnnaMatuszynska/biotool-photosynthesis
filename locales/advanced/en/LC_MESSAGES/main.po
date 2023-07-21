@@ -207,12 +207,16 @@ msgstr "## Place of photosynthesis"
 #: pages/photosynthesis.py:57
 #: EINFÜHRUNG.py:55
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
+msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the inner membranes (called thylakoid membranes). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 
 #: pages/photosynthesis.py:68
 #: EINFÜHRUNG.py:43
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
+
+#: pages/photosynthesis.py:51
+msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
+msgstr "After light is taken up by the chloroplast, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail we have created a short video for you:"
 
 #: pages/photosynthesis.py:75
 #: EINFÜHRUNG.py:59
@@ -242,7 +246,7 @@ msgstr "Why is Arabidopsis thaliana a model organism?"
 #: pages/photosynthesis.py:85
 #: pages/1 Messmethode.py:40
 msgid "CAPTION_THAIANA_PICTURE"
-msgstr "A photograph of a plant of the wild type of the model organism **Arabidopsis thaliana**."
+msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 
 #: pages/photosynthesis.py:87
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
@@ -318,7 +322,7 @@ msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 #: Explanation by Tobias
 
 msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
-msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
+msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. Using these fluorescence features, we can then calculate the values quantifying photosynthesis, e.g. the amount of NPQ. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
 
 #: pages/method.py:41 pages/method.py:61
 #: pages/1 Messmethode.py:47
@@ -338,7 +342,7 @@ msgstr "Saturating Pulses"
 #: pages/method.py:47
 #: Explanation by Tobias
 msgid "EXPLANATION_ATTEMPTS"
-msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then also apply protocols of differently colored lights, you can calculate the previously mentioned ϕPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
+msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
 
 #: pages/method.py:49
 #: pages/1 Messmethode.py:40
@@ -642,10 +646,9 @@ msgstr "## The data analysis"
 #: pages/2 Daten-Analyse.py:25
 #: pages/Analyse.py:25
 msgid "INTRODUKTION"
-msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors."
+msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors. In the following the model can be rerun with different parameters using the sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal. With the sliders, you can adjust the light instensity during the light phase, for how long the simulation will run, how far apart in time the saturation pulses will be, and how fast the activation and deactivation rates of the NPQ adaption process are."
 
 #: pages/first_analysis.py:182 pages/plant_memory.py:272
-
 msgid "TASK_1"
 msgstr "Task 1"
 
@@ -740,7 +743,7 @@ msgstr "Saturation pulses in the selected intervals in seconds"
 #: pages/Analyse.py:67
 #: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
-msgstr "Conversion rate to Zeaxanthin in percent"
+msgstr "Conversion rate to Zeaxanthin in ± percent of default"
 
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
 #: pages/2 Daten-Analyse.py:83
@@ -796,7 +799,7 @@ msgstr "***Tip 1:*** *If you want to compare two experiments, you can download t
 #: pages/plant_memory.py:280
 #: pages/3 Pflanzengedächtnis.py:42
 msgid "TIP2"
-msgstr "***Tip2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
 #: pages/conclusion.py:12
 #: Conclusion
@@ -805,19 +808,19 @@ msgstr "# Take Home Messages"
 
 #: pages/conclusion.py:12
 msgid "CONCLUSION_TEXT_ONE"
-msgstr "We hope you have received a thorough introduction to the captivating realm of (computational) plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. Consequently, you should have arrived at the following conclusions:\n"
+msgstr "We hope you have received a thorough introduction to the captivating realm of (computational) plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. We hope we could show you the following:\n"
 "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
 "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain point, the saturation point, like on the figure below."
 
 #: pages/conclusion.py:18       
 msgid "CONCLUSION_TEXT_TWO"
-msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to consume energy and adapt to various environmental conditions efficiently.\n"
-"- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development." 
-"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom."
+msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to efficiently take up light energy and adapt to various environmental conditions.\n"
+"- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
+"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines and even considring only photoynthesis models we have barly scratched the surface of what is out there. Hopefully this small course has shown you how interesting and useful modelling can be and for a problem in the future you will think '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want give us some feedback and tell others about your experience. Have a great day!**"
 
 #: pages/Analyse.py:72
 msgid "SLIDER_DEACTIVATION"
-msgstr ""
+msgstr "Conversion rate to Violaxanthin in ± percent of default"
 
 #: EINFÜHRUNG.py:22
 msgid "AUTHOR"
@@ -1124,7 +1127,7 @@ msgstr ""
 
 #: pages/first_analysis.py:247
 msgid "CAPTION_DEFAULT_SLIDERS"
-msgstr "Some really nice text describing what can be seen"
+msgstr "Simulation graph with default values."
 
 #: pages/plant_memory.py:273
 
