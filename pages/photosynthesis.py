@@ -3,20 +3,20 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import centered_image, get_localised_text, make_prev_next_button, include_image
+from utils import centered_image, get_localised_text, make_prev_next_button, include_image, resetting_click_detector_setup, markdown_click
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
-    st.markdown(text("HEADLINE_PHOTOSYNTHESIS_PAGE"))
+    markdown_click("HEADLINE_PHOTOSYNTHESIS_PAGE", text)
 
-    st.markdown(text("HEADLINE_CLIMATE"))
-    st.markdown(text("INTRODUCTION_CLIMATE_CHANGE"))
+    markdown_click("HEADLINE_CLIMATE", text)
+    markdown_click("INTRODUCTION_CLIMATE_CHANGE", text)
 
     if version == "Advanced":
-        st.markdown(text("POINT_1"))
-        st.markdown(text("POINT_2"))
-        st.markdown(text("POINT_3"))
-        st.markdown(text("END_OF_INTRODUCTION"))
+        markdown_click("POINT_1", text)
+        markdown_click("POINT_2", text)
+        markdown_click("POINT_3", text)
+        markdown_click("END_OF_INTRODUCTION", text)
 
     else:
         col1, col2 = st.columns(2)
@@ -31,33 +31,33 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             if language == "English":
                 centered_image("pictures/plants_stress.jpeg")
 
-    st.markdown(text("HEADLINE_PHOTOSYNTHESIS"))
-    st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_1"))
-    st.markdown(text("PHOTOSYNTHESIS_EXPLANATION_2"))
+    markdown_click("HEADLINE_PHOTOSYNTHESIS", text)
+    markdown_click("PHOTOSYNTHESIS_EXPLANATION_1", text)
+    markdown_click("PHOTOSYNTHESIS_EXPLANATION_2", text)
 
     if language == "German":
         include_image("pictures/Fotosynthese.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
     else:
         include_image("pictures/Fotosynthese_eng.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
 
-    st.markdown(text("HEADLINE_PHOTOSYNTHESIS_LOCATION"))
-    st.markdown(text("PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
+    markdown_click("HEADLINE_PHOTOSYNTHESIS_LOCATION", text)
+    markdown_click("PHOTOSYNTHESIS_LOCATION_EXPLANATION", text)
 
     if language == "German":
         include_image("pictures/Fotosynthese-Apparat.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
     else:
         include_image("pictures/BioTool-photosynthesis.png", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
 
-    st.markdown(text("PHOTOSYNTHESIS_LOCATION_CONTINUE"))
+    markdown_click("PHOTOSYNTHESIS_LOCATION_CONTINUE", text)
 
     # Journey into leaf
     st.video("https://youtu.be/hMCA0bBVoxE")
 
-    st.markdown(text("HEADLINE_NPQ"))
-    st.markdown(text("NPQ_EXPLANATION"))
+    markdown_click("HEADLINE_NPQ", text)
+    markdown_click("NPQ_EXPLANATION", text)
 
-    st.markdown(text("HEADER_MODEL_ORGANISMEN"))
-    st.markdown(text("MODEL_ORGANISMEN_EXPLANATION"))
+    markdown_click("HEADER_MODEL_ORGANISMEN", text)
+    markdown_click("MODEL_ORGANISMEN_EXPLANATION", text)
 
     with st.expander(text("EXPANDER_MODEL_ORGANISMEN")):
         _, col2, _ = st.columns(3)
@@ -78,6 +78,7 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
 
     text = get_localised_text(version, language)
+    resetting_click_detector_setup()
     make_page(text, language, version)
     make_prev_next_button("start", "measuring method")
     make_sidebar()

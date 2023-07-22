@@ -3,38 +3,38 @@ from pages._sidebar import make_sidebar
 from PIL import Image
 from st_pages import Page, show_pages
 from typing import Callable
-from utils import get_localised_text, make_prev_next_button
-
+from utils import get_localised_text, make_prev_next_button, resetting_click_detector_setup, markdown_click
+import re
 
 def make_introduction(text: Callable[[str], str]) -> None:
-    st.markdown(text("HEADLINE_MAIN"))
-    st.markdown(text("INTRO"))
+    markdown_click("HEADLINE_MAIN", text)
+    markdown_click("INTRO", text)
 
     with st.expander(text("EXPANDER_ABOUT")):
-        st.markdown(text("EXPLANATION_ABOUT"))
+        markdown_click("EXPLANATION_ABOUT", text)
 
     # Introduction biotool
     st.video("https://youtu.be/KvyjIWLD8rU")
-    st.markdown(text("HEADLINE_USAGE"))
-    st.markdown(text("USAGE"))
-    st.markdown(text("ADVANCED_USE"))
-    st.markdown(text("DROP_BOX_INTRO"))
+    markdown_click("HEADLINE_USAGE", text)
+    markdown_click("USAGE", text)
+    markdown_click("ADVANCED_USE", text)
+    markdown_click("DROP_BOX_INTRO", text)
 
 
 # FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
     with st.expander(text("EXPANDER_IN")):
-        st.markdown(text("EXPLANATION_IN_VITRO"))
-        st.markdown(text("EXPLANATION_IN_VIVO"))
-        st.markdown(text("EXPLANATION_IN_SILICO"))
+        markdown_click("EXPLANATION_IN_VITRO", text)
+        markdown_click("EXPLANATION_IN_VIVO", text)
+        markdown_click("EXPLANATION_IN_SILICO", text)
 
-    st.markdown(text("HEADLINE_PAGES"))
-    st.markdown(text("INTRODUCTION_PAGES"))
-    st.markdown(text("PHOTOSYNTHESIS"))
-    st.markdown(text("METHOD"))
-    st.markdown(text("MODEL"))
-    st.markdown(text("EXPERIMENT"))
-    st.markdown(text("MEMORY"))
+    markdown_click("HEADLINE_PAGES", text)
+    markdown_click("INTRODUCTION_PAGES", text)
+    markdown_click("PHOTOSYNTHESIS", text)
+    markdown_click("METHOD", text)
+    markdown_click("MODEL", text)
+    markdown_click("EXPERIMENT", text)
+    markdown_click("MEMORY", text)
 
 
 if __name__ == "__main__":
@@ -93,6 +93,7 @@ if __name__ == "__main__":
             ),
         ]
     )
+    resetting_click_detector_setup()
     make_introduction(text)
     make_chapters(text, version, language)
     make_prev_next_button(None, "photosynthesis")
