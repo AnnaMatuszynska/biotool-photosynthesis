@@ -349,7 +349,9 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version, language = make_sidebar()
+    version: str = st.session_state.setdefault("version", "Simple")
+    language: str = st.session_state.setdefault("language", "English")
     _ = get_localised_text(version, language)
     make_page(_, version)
     make_prev_next_button("experiments in silico", "take home messages")
+    make_sidebar()
