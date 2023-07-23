@@ -123,7 +123,7 @@ msgstr "In the following we will give you a short overview of what you can expec
 
 #: pages/1 Messmethode.py:50
 msgid "PHOTOSYNTHESIS"
-msgstr "On the **photosynthesis page** you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is needed on the following pages. In the <a href='#' id='Advanced'>Advanced</a> Version there is more in-depth information on climate change."
+msgstr "On the <b>photosynthesis page</b> you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is needed on the following pages. In the <a href='#' id='Advanced'>Advanced</a> Version there is more in-depth information on climate change."
 
 #: pages/1 Messmethode.py:50
 msgid "METHOD"
@@ -131,11 +131,11 @@ msgstr "In order for us to measure the photosynthetic performance of plants, we 
 
 #: pages/1 Messmethode.py:50
 msgid "MODEL"
-msgstr "As the headline already told you, we work *in silico*, i.e. with mathematical models. On the **computational models page** you will learn something about mathematical models in general, as well as something about photosynthesis models. In the <a href='#' id='Advanced'>Advanced</a> version you can additionally learn about the implementation of a mathematical model."
+msgstr "As the headline already told you, we work <i>in silico</i>, i.e. with mathematical models. On the <b>computational models page</b> you will learn something about mathematical models in general, as well as something about photosynthesis models. In the <a href='#' id='Advanced'>Advanced</a> version you can additionally learn about the implementation of a mathematical model."
 
 #: pages/1 Messmethode.py:50
 msgid "EXPERIMENT"
-msgstr "On the page **experiments** ***in silico*** you will get to know the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterwards, you can directly use it yourself to perform your first measurements. In the <a href='#' id='Advanced'>Advanced</a> version there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
+msgstr "On the page <b>experiments</b> <b><i>in silico</i></b> you will get to know the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterwards, you can directly use it yourself to perform your first measurements. In the <a href='#' id='Advanced'>Advanced</a> version there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"

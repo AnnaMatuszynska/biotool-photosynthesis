@@ -415,7 +415,7 @@ simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "PHOTOSYNTHESIS"
-advanced-en msgstr "On the **photosynthesis page** you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is needed on the following pages. In the <a href='#' id='Advanced'>Advanced</a> Version there is more in-depth information on climate change."
+advanced-en msgstr "On the <b>photosynthesis page</b> you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is needed on the following pages. In the <a href='#' id='Advanced'>Advanced</a> Version there is more in-depth information on climate change."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -441,7 +441,7 @@ simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "MODEL"
-advanced-en msgstr "As the headline already told you, we work *in silico*, i.e. with mathematical models. On the **computational models page** you will learn something about mathematical models in general, as well as something about photosynthesis models. In the <a href='#' id='Advanced'>Advanced</a> version you can additionally learn about the implementation of a mathematical model."
+advanced-en msgstr "As the headline already told you, we work <i>in silico</i>, i.e. with mathematical models. On the <b>computational models page</b> you will learn something about mathematical models in general, as well as something about photosynthesis models. In the <a href='#' id='Advanced'>Advanced</a> version you can additionally learn about the implementation of a mathematical model."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -454,7 +454,7 @@ simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "EXPERIMENT"
-advanced-en msgstr "On the page **experiments** ***in silico*** you will get to know the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterwards, you can directly use it yourself to perform your first measurements. In the <a href='#' id='Advanced'>Advanced</a> version there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
+advanced-en msgstr "On the page <b>experiments</b> <b><i>in silico</i></b> you will get to know the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterwards, you can directly use it yourself to perform your first measurements. In the <a href='#' id='Advanced'>Advanced</a> version there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
