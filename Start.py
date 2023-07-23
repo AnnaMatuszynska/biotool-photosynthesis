@@ -3,7 +3,7 @@ from pages._sidebar import make_sidebar
 from PIL import Image
 from st_pages import Page, show_pages
 from typing import Callable
-from utils import get_localised_text, make_prev_next_button
+from utils import get_localised_text, make_prev_next_button, icons
 
 
 def make_introduction(text: Callable[[str], str]) -> None:
@@ -54,42 +54,42 @@ if __name__ == "__main__":
             Page(
                 "Start.py",
                 "Start",
-                ":house:",
+                icons["house"],
             ),
             Page(
                 "pages/photosynthesis.py",
                 "Photosynthesis",
-                ":leaves:",
+                icons["leaves"],
             ),
             Page(
                 "pages/method.py",
                 "Measuring Method",
-                ":books:",
+                icons["books"],
             ),
             Page(
                 "pages/model_explain.py",
                 "Computational Models",
-                ":computer:",
+                icons["computer"],
             ),
             Page(
                 "pages/first_analysis.py",
                 "Experiments in silico",
-                ":bar_chart:",
+                icons["bar_chart"],
             ),
             Page(
                 "pages/plant_memory.py",
                 "Plant Light Memory",
-                ":chart_with_upwards_trend:",
+                icons["chart_with_upwards_trend"],
             ),
             Page(
                 "pages/conclusion.py",
                 "Take Home Messages",
-                ":heavy_check_mark:",
+                icons["heavy_check_mark"],
             ),
             Page(
                 "pages/contact.py",
                 "Contact",
-                ":phone:",
+                icons["phone"],
             ),
         ]
     )

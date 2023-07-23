@@ -6,6 +6,7 @@ from logging import getLogger
 from pathlib import Path
 from streamlit_extras.switch_page_button import switch_page
 from typing import Callable
+import json
 
 
 def get_localised_text(version: str, language: str) -> Callable[[str], str]:
@@ -117,3 +118,9 @@ def include_image(path: str, img_width: float = 0.5, caption: str = None, center
                     )
                 else:
                     st.caption(caption, unsafe_allow_html=True)
+
+def js_r(filename: str):
+    with open(filename) as f_in:
+        return json.load(f_in)
+
+icons = js_r("assets/emoji.json")
