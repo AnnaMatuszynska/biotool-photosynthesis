@@ -181,15 +181,9 @@ advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
 simple-de msgstr ""
-simple-fr msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings \
-        that can produce biomass are called **producers**. These include, in particular, plants. These can produce \
-        biomass independently through photosynthesis, for example."
-simple-pl msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings \
-        that can produce biomass are called **producers**. These include, in particular, plants. These can produce \
-        biomass independently through photosynthesis, for example."
-simple-es msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings \
-        that can produce biomass are called **producers**. These include, in particular, plants. These can produce \
-        biomass independently through photosynthesis, for example."
+simple-fr msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
+simple-pl msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
+simple-es msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
 
 #: Start.py:10
 #: EINFÜHRUNG.py:21
@@ -207,8 +201,9 @@ simple-es msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Stud
 
 #: Start.py:11
 #: Intro by Anna
+# Grammarly checked
 msgid "INTRO"
-advanced-en msgstr "This is a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of XXI-century students. We want to show how computational modeling supports the current research in increasing our understanding of how the world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening about the process of photosynthesis."
+advanced-en msgstr "Welcome to a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of 21st-century students. We want to show how computational modeling supports the current research in increasing our understanding of how the world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening to the process of photosynthesis."
 advanced-de msgstr "Dies ist ein Lehrmittel für Biologie: ein laufendes Projekt, das von Sarah Philipps und Anna Matuszynska an der \
         RWTH Aachen, Deutschland, ins Leben gerufen wurde. Unser Ziel ist es, ein Lehrmittel zur Verfügung zu stellen, \
         das auf die Bedürfnisse der Studierenden des XXI Jahrhunderts zugeschnitten ist. Wir wollen zeigen, wie \
@@ -238,7 +233,7 @@ advanced-es msgstr "This is a Teaching Tool in Biology: an ongoing project launc
         photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at \
         both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
         the left side Version *Simple* or *Expert*. "
-simple-en msgstr "This is a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of XXI-century students. We want to show how computational modeling supports the current research in increasing our understanding of how the world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening about the process of photosynthesis."
+simple-en msgstr "Welcome to a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of 21st-century students. We want to show how computational modeling supports the current research in increasing our understanding of how the world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening to the process of photosynthesis."
 simple-de msgstr "Dies ist ein Lehrmittel für Biologie: ein laufendes Projekt, das von Sarah Philipps und Anna Matuszynska an der \
         RWTH Aachen, Deutschland, ins Leben gerufen wurde. Unser Ziel ist es, ein Lehrmittel zur Verfügung zu stellen, \
         das auf die Bedürfnisse der Studierenden des XXI Jahrhunderts zugeschnitten ist. Wir wollen zeigen, wie \
@@ -263,6 +258,7 @@ simple-es msgstr "This is a Teaching Tool in Biology, a project launched by the 
 
 #: Start.py:15
 #: EINFÜHRUNG.py:24
+# Grammarly checked
 msgid "HEADLINE_USAGE"
 advanced-en msgstr "## How to use this website"
 advanced-de msgstr "## Nutzung dieser Website"
@@ -277,13 +273,14 @@ simple-es msgstr "## How to use this website"
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
+# Grammarly checked
 msgid "USAGE"
-advanced-en msgstr "We aimed at both curious **newcomers** and more :blue[Advanced] learners. At any point of using this website you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *Simple* or *:blue[Advanced]*."
+advanced-en msgstr "We aimed at both curious **newcomers** and more :blue[Advanced] learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *Simple* or *:blue[Advanced]*."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "We aimed at both curious **newcomers** and more :blue[**advanced**] learners. At any point of using this website you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *Simple* or :blue[*Advanced*]."
+simple-en msgstr "We aimed at both curious **newcomers** and more :blue[**advanced**] learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *Simple* or :blue[*Advanced*]."
 simple-de msgstr ""
 simple-fr msgstr "We aimed at both curious **newcomers** and more **advanced** learners. At any point of using this website you can choose \
         which version you want to use by clicking on the left side button: Version and selecting from the drop-down list \
@@ -295,13 +292,14 @@ simple-es msgstr "We aimed at both curious **newcomers** and more **advanced** l
 
 #: Start.py:17
 #: EINFÜHRUNG.py:26
+# Grammarly checked
 msgid "ADVANCED_USE"
-advanced-en msgstr "If you do decide to choose the :blue[Advanced] version, you will not only learn about photosynthesis as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
+advanced-en msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "If you do decide to choose the :blue[Advanced] version, you will not only learn about photosynthesis as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
+simple-en msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico.."
 simple-de msgstr ""
 simple-fr msgstr "If you do decide to choose the *Advanced* version, you will not only learn about photosynthesis \
         as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. \
@@ -319,12 +317,12 @@ simple-es msgstr "If you do decide to choose the *Advanced* version, you will no
 #: Start.py:18
 #: EINFÜHRUNG.py:28
 msgid "DROP_BOX_INTRO"
-advanced-en msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
+advanced-en msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
+simple-en msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 simple-de msgstr ""
 simple-fr msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
 simple-pl msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
@@ -400,27 +398,28 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "INTRODUCTION_PAGES"
-advanced-en msgstr "In the following we will give you a short overview of what you can expect on the following pages."
+advanced-en msgstr "In the following, we will give you a short overview of what you can expect on the following pages."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "In the following we will give you a short overview of what you can expect on the following pages. In :blue[Advanced]\
-        you will find the overview of what additional information you will get in the :blue[Advanced] versions."
+simple-en msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In :blue[Advanced] you will find the overview of what additional information you will get in the :blue[Advanced] versions."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "PHOTOSYNTHESIS"
-advanced-en msgstr "On the **photosynthesis page** you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is needed on the following pages. In the :blue[Advanced] Version there is more in-depth information on climate change."
+advanced-en msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is required on the following pages. In the :blue[Advanced] Version, there is more in-depth information on climate change."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "On the **photosynthesis page** you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is needed on the following pages."
+simple-en msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is required on the following pages."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -428,38 +427,40 @@ simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "METHOD"
-advanced-en msgstr "In order for us to measure the photosynthetic performance of plants, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
+advanced-en msgstr "To measure plants' photosynthetic performance, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "In order for us to measure the photosynthetic performance of plants, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
+simple-en msgstr "For us to measure plants' photosynthetic performance, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "MODEL"
-advanced-en msgstr "As the headline already told you, we work *in silico*, i.e. with mathematical models. On the **computational models page** you will learn something about mathematical models in general, as well as something about photosynthesis models. In the :blue[Advanced] version you can additionally learn about the implementation of a mathematical model."
+advanced-en msgstr "As the headline already told you, we work *in silico*, i.e., with mathematical models. On the **computational models page**, you will learn something about mathematical models in general, as well as something about photosynthesis models. In the :blue[Advanced] version, you can also learn about implementing a mathematical model."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "As the headline already told you, we work *in silico*, i.e. with mathematical models. On the **computational models page** you will learn something about mathematical models in general, as well as something about photosynthesis models."
+simple-en msgstr "As the headline already told you, we work *in silico*, i.e., with mathematical models. On the **computational models page**, you will learn something about mathematical models in general, as well as something about photosynthesis models."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "EXPERIMENT"
-advanced-en msgstr "On the page **experiments** ***in silico*** you will get to know the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterwards, you can directly use it yourself to perform your first measurements. In the :blue[Advanced] version there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
+advanced-en msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements. In the :blue[Advanced] version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "On the page **experiments** ***in silico*** you will get to know the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterwards, you can directly use it yourself to perform your first measurements."
+simple-en msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -508,8 +509,9 @@ simple-es msgstr "## Climate change"
 
 #: pages/photosynthesis.py:11
 #: Lisa's introduction
+# Grammarly checked
 msgid "INTRODUCTION_CLIMATE_CHANGE"
-advanced-en msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can induce a change in climate:"
+advanced-en msgstr "*Climate* is defined as the average statistical measurements of the weather over a long period in a specific place. *Climate change* is defined as a worldwide change in the climate. Three main categories can induce a change in the climate:"
 advanced-de msgstr "Das *Klima* selbst ist definiert als die durchschnittlichen statistischen Messungen des Wetters über einen langen \
         Zeitraum an einem bestimmten Ort. *Klimawandel* ist definiert als eine weltweite Veränderung des Klimas. Drei \
         Hauptkategorien können eine Veränderung des Klimas bewirken:"
@@ -522,7 +524,7 @@ advanced-pl msgstr "*Climate* itself is defined as the average statistical measu
 advanced-es msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a \
         certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can \
         induce a change in climate:"
-simple-en msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., changed temperatures (heat and cold), flooding events, and drought can lead to stressful events in plants. Those factors can have various short- and long-term effects on plants– summarized in Fig. right. Nevertheless, plants experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of photosynthesis and the fixation of CO₂ by plants is an important measure of overall **plant fitness**, **productivity**, and **survival**. Consequently, basic research on photosynthesis and its efficiency is essential to assess our changing world."
+simple-en msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, e.g., changed temperatures (heat and cold), flooding events, and drought, can lead to stressful events in plants. As summarized in the Figure on the right, those factors can have various short- and long-term effects on plants. Nevertheless, plants experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of photosynthesis and the fixation of CO₂ by plants is an essential measure of overall **plant fitness**, **productivity**, and **survival**. Consequently, basic research on photosynthesis and its efficiency is vital to assess our changing world."
 simple-de msgstr "Da Pflanzen **nicht** weglaufen können, müssen sie sich an die veränderten Umweltbedingungen anpassen. Pflanzen \
         sind die Grundlage des Lebens auf der Erde (Abb. links), und die Anpassung der Pflanzen ist entscheidend für eine \
         funktionierende Welt. Veränderte Bedingungen, wie z. B. veränderte Temperaturen (Hitze und Kälte), Überschwemmungen \
@@ -606,6 +608,7 @@ simple-es msgstr ""
 
 #: pages/photosynthesis.py:17
 #: Lisa's introduction
+# Grammarly checked
 msgid "END_OF_INTRODUCTION"
 advanced-en msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the impact of the sudden rise of Earth Temperature."
 advanced-de msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten *97 % der Klimaforscher* \
@@ -642,13 +645,14 @@ simple-es msgstr "# Photosynthesis"
 
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_1"
-advanced-en msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil through their roots, but not all of them. As already mentioned, plants are producers and can therefore manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
+advanced-en msgstr "Just like humans, plants need nutrients for their growth. The most essential is water and minerals, but plants also need fats, carbohydrates, and proteins. Most of these nutrients plants can absorb from the soil through their roots, but not all of them. As already mentioned, plants are producers and can, therefore, manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil through their roots, but not all of them. As already mentioned, plants are producers and can therefore manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
+simple-en msgstr "Just like humans, plants need nutrients for their growth. The most essential is water and minerals, but plants also need fats, carbohydrates, and proteins. Most of these nutrients plants can absorb from the soil through their roots, but not all of them. As already mentioned, plants are producers and can, therefore, manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
 simple-de msgstr ""
 simple-fr msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
         but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
@@ -666,12 +670,12 @@ simple-es msgstr "Just like humans, plants need nutrients for their growth. The 
 #: pages/photosynthesis.py:34
 #: EINFÜHRUNG.py:43
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
-advanced-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in the form of light."
+advanced-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O, and energy in the form of light."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in the form of light."
+simple-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O, and energy in the form of light."
 simple-de msgstr ""
 simple-fr msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
         the form of light."
@@ -738,6 +742,7 @@ simple-es msgstr "Microscopic image of a stomatal of the wild type of the model 
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
+# Grammarly checked
 msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
 advanced-en msgstr "## Place of photosynthesis"
 advanced-de msgstr ""
@@ -752,16 +757,14 @@ simple-es msgstr "## Place of photosynthesis"
 
 #: pages/photosynthesis.py:57
 #: EINFÜHRUNG.py:55
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-advanced-en msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which is called the light reaction. The so-called photosystems are located in the inner membranes (called thylakoid membranes). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
+advanced-en msgstr "Photosynthesis takes place in the cells of the primarily green components of plants. In these cells are specialized organelles, the chloroplasts. There, the part of photosynthesis called the light reaction takes place. The so-called photosystems are in the inner membranes (called thylakoid membranes). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
+simple-en msgstr "Photosynthesis takes place in the cells of the primarily green components of plants. In these cells are specialized organelles, the chloroplasts. There, the part of photosynthesis called the light reaction takes place. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 simple-de msgstr ""
 simple-fr msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
@@ -778,6 +781,7 @@ simple-es msgstr "Photosynthesis takes place in the cells of the mostly green co
 
 #: pages/photosynthesis.py:68
 #: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 advanced-en msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
 advanced-de msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
@@ -791,13 +795,14 @@ simple-pl msgstr "Complexes within the thylakoid membrane, which are necessary f
 simple-es msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
 
 #: pages/photosynthesis.py:51
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
-advanced-en msgstr "After light is taken up by the chloroplast, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail we have created a short video for you:"
+advanced-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail, we have created a short video for you:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "After light is taken up by the chloroplast, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail we have created a short video for you:"
+simple-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail, we have created a short video for you:"
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -819,13 +824,14 @@ simple-es msgstr "## How to deal with too much light?"
 
 #: pages/photosynthesis.py:76
 #: EINFÜHRUNG.py:60
+# Grammarly checked
 msgid "NPQ_EXPLANATION"
-advanced-en msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
+advanced-en msgstr "What happens when too much light and, thus, excess energy hits Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released as heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
+simple-en msgstr "What happens when too much light and, thus, excess energy hits Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released as heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
 simple-de msgstr ""
 simple-fr msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
         and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
@@ -856,6 +862,7 @@ simple-es msgstr "## One plant to rule them all"
 
 #: pages/photosynthesis.py:79
 #: pages/1 Messmethode.py:40
+# Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
 advanced-en msgstr "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis Thaliana*, a 'model organism'."
 advanced-de msgstr ""
@@ -870,6 +877,7 @@ simple-es msgstr "Often, when you try to find out something about plants in gene
 
 #: pages/photosynthesis.py:81
 #: pages/1 Messmethode.py:40
+# Grammarly checked
 msgid "EXPANDER_MODEL_ORGANISMEN"
 advanced-en msgstr "Why is Arabidopsis thaliana a model organism?"
 advanced-de msgstr "Wieso wird Arabidopsis thaliana als Modellorganismus bezeichnet?"
@@ -884,6 +892,7 @@ simple-es msgstr "Why is Arabidopsis thaliana a model organism?"
 
 #: pages/photosynthesis.py:85
 #: pages/1 Messmethode.py:40
+# Grammarly checked
 msgid "CAPTION_THAIANA_PICTURE"
 advanced-en msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 advanced-de msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis thaliana_."
@@ -897,23 +906,24 @@ simple-pl msgstr "A photograph of a plant of the wild type of the model organism
 simple-es msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 
 #: pages/photosynthesis.py:87
+# Grammarly checked
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
-advanced-en msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:\n"
+advanced-en msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model system in plant biology. It has several characteristics that make it well-suited for laboratory studies, including:\n"
 "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study multiple generations in a relatively short period of time.\n"
 "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to study specific developmental processes.\n"
 "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, which has provided researchers with a wealth of genetic information about the plant.\n"
 "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
-"\nAll these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
+"\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:\n"
+simple-en msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model system in plant biology. It has several characteristics that make it well-suited for laboratory studies, including:\n"
 "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study multiple generations in a relatively short period of time.\n"
 "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to study specific developmental processes.\n"
 "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, which has provided researchers with a wealth of genetic information about the plant.\n"
 "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
-"\nAll these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
+"\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -935,8 +945,9 @@ simple-es msgstr "# Measuring photosynthesis"
 
 #: pages/method.py:15
 #: Explanation by Tobias
+# Grammarly checked
 msgid "INTRODUCTION_MEASUREMENT"
-advanced-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page you will learn how can we measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continously becoming a more quantitative science, obviously numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or in a field. Therefore a particularly important characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
+advanced-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
 advanced-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
         mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
         Zahlen und das Messen von Dingen. Deshalb haben Forscher viele Methoden erfunden, um zu bestimmen, wie viel \
@@ -962,7 +973,7 @@ advanced-es msgstr "On the previous page, you learned about the importance of ph
         you heard that plants produce oxygen and take up carbon dioxide. Therefore, photosynthesis can be measured by \
         how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want \
         to do it outside on a tree or in a field. "
-simple-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page you will learn how can we measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continously becoming a more quantitative science, obviously numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or in a field. Therefore a particularly important characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
+simple-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
 simple-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
         mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
         Zahlen und das Messen von Dingen. Deshalb haben Forscher viele Methoden erfunden, um zu bestimmen, wie viel \
@@ -976,6 +987,7 @@ simple-es msgstr "On the previous page, you learned about the importance of phot
 
 #: pages/method.py:18
 #: EINFÜHRUNG.py:36
+# Grammarly checked
 msgid "CAPTION_ABB1"
 advanced-en msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
 advanced-de msgstr "Foto einer Pflanze der Art Spathiphyllum, in drei verschiedenen Beleuchtungssituationen: Links in Tageslicht, \
@@ -1020,8 +1032,9 @@ simple-es msgstr "Plant shine!"
 
 #: pages/method.py:22
 #: Explanation by Tobias
+# Grammarly checked
 msgid "INTRODUCTION_GLOWING"
-advanced-en msgstr "Here is where a specialty of plants comes into play: They can re-emit light and in proper conditions shine! When light shines on leaves, they use majority of the light to run complex photochemical reactions of photosynthesis, but a small part of the absorbed light is reemitted. Something similar happens when your white T-shirt shines purple in a disco's black light. When something shine in a different light color when illuminated, this is called 'fluorescence'. And the plant's fluorescence shine is red."
+advanced-en msgstr "Here is where a specialty of plants comes into play: They can reemit light and, in proper conditions, shine! When light shines on leaves, they use most of the light to run complex photochemical reactions of photosynthesis. Still, a small part of the absorbed light is reemitted. Something similar happens when your white T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, this is called 'fluorescence'. And the plant's fluorescence shine is red."
 advanced-de msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchten! Wenn Licht auf sie fällt, betreiben \
         sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
         passiert, wenn dein weißes T-Shirt im Schwarzlicht einer Disco lila leuchtet. Wenn etwas bei Beleuchtung in \
@@ -1038,9 +1051,7 @@ advanced-es msgstr "Here is where a specialty of plants comes into play: They ca
         photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
         T-shirt shines purple in a disco's black light. When something glows in a different light color when illuminated, \
         this is called 'fluorescence'. And the plant's fluorescence glow is red."
-simple-en msgstr "Here is where a specialty of plants comes into play: They can re-emit light and in proper conditions shine! When light shines on leaves, they use majority of the light to run complex photochemical reactions of photosynthesis, but a small part of the absorbed light is reemitted. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something shine in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence shine is red."
+simple-en msgstr "Here is where a specialty of plants comes into play: They can reemit light and, in proper conditions, shine! When light shines on leaves, they use most of the light to run complex photochemical reactions of photosynthesis. Still, a small part of the absorbed light is reemitted. Something similar happens when your white T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, this is called 'fluorescence'. And the plant's fluorescence shine is red."
 simple-de msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchten! Wenn Licht auf sie fällt, betreiben \
         sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
         passiert, wenn dein weißes T-Shirt im Schwarzlicht einer Disco lila leuchtet. Wenn etwas bei Beleuchtung in \
@@ -1057,8 +1068,9 @@ simple-es msgstr "Here is where a specialty of plants comes into play: They can 
 
 #: pages/method.py:23
 #: Explanation by Tobias
+# Grammarly checked
 msgid "PLANT_ARE_SHINING_RED"
-advanced-en msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
+advanced-en msgstr "You might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. Plants don't absorb green light but reflect it, which we see as their primary color. Their red shine, however, is much fainter than that, and with stronger light coming into our eyes from all directions, we can't see it."
 advanced-de msgstr "Jetzt werden Sie vielleicht denken: 'Aber Pflanzen sind doch grün, und ich habe noch nie eine fluoreszierende \
         Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren \
         es, was wir als ihre Grundfarbe sehen. Ihr rotes Leuchten ist jedoch viel schwächer, und da aus allen Richtungen \
@@ -1072,7 +1084,7 @@ advanced-pl msgstr "Now you might think: 'But plants are green, and I have never
 advanced-es msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
         Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red glow, \
         however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
-simple-en msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
+simple-en msgstr "You might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. Plants don't absorb green light but reflect it, which we see as their primary color. Their red shine, however, is much fainter than that, and with stronger light coming into our eyes from all directions, we can't see it."
 simple-de msgstr "Jetzt werden Sie vielleicht denken: 'Aber Pflanzen sind doch grün, und ich habe noch nie eine fluoreszierende \
         Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren \
         es, was wir als ihre Grundfarbe sehen. Ihr rotes Leuchten ist jedoch viel schwächer, und da aus allen Richtungen \
@@ -1089,8 +1101,9 @@ simple-es msgstr "Now you might think: 'But plants are green, and I have never s
 
 #: pages/method.py:24
 #: Explanation by Tobias
+# Grammarly checked
 msgid "INTRODUCTION_EXPERIMENT"
-advanced-en msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore distracting light and focus on the red fluorescence. Now watch what happens:"
+advanced-en msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker with the RWTH letters and will now shine an intense light on it. The camera's red filter helps us ignore distracting light and focus on the red fluorescence. Now watch what happens:"
 advanced-de msgstr "Deshalb haben wir ein kleines Experiment für Sie vorbereitet: Hier haben wir einen kleinen Teil des Blattes \
         einer Pflanze mit einem Aufkleber abgedeckt und werden ihn nun mit starkem Licht bestrahlen. Der Rotfilter der \
         Kamera hilft uns, ablenkendes Licht zu ignorieren und uns auf die rote Fluoreszenz zu konzentrieren. Beobachten \
@@ -1104,7 +1117,7 @@ advanced-pl msgstr "We, therefore, prepared a small experiment for you: Here, we
 advanced-es msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
         sticker and will now shine a strong light on it. The camera's red filter helps us ignore distracting light and \
         focus on the red fluorescence. Now watch what happens:"
-simple-en msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore distracting light and focus on the red fluorescence. Now watch what happens:"
+simple-en msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker with the RWTH letters and will now shine an intense light on it. The camera's red filter helps us ignore distracting light and focus on the red fluorescence. Now watch what happens:"
 simple-de msgstr "Deshalb haben wir ein kleines Experiment für Sie vorbereitet: Hier haben wir einen kleinen Teil des Blattes \
         einer Pflanze mit einem Aufkleber abgedeckt und werden ihn nun mit starkem Licht bestrahlen. Der Rotfilter der \
         Kamera hilft uns, ablenkendes Licht zu ignorieren und uns auf die rote Fluoreszenz zu konzentrieren. Beobachten \
@@ -1121,8 +1134,9 @@ simple-es msgstr "We, therefore, prepared a small experiment for you: Here, we c
 
 #: pages/method.py:30
 #: Explanation by Tobias
+# Grammarly checked
 msgid "EXPLANATION_VIDEO"
-advanced-en msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to it, vanishing the picture on the leaf."
+advanced-en msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals acting as 'sunscreen' within the cells. After a few seconds, these cells were protected and received less light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to it, vanishing the picture on the leaf."
 advanced-de msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben gerade \
         die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre \
         Umgebung anpassen. Auf die Teile des Blattes, die nicht von dem Aufkleber bedeckt sind, fällt sehr viel Licht. \
@@ -1156,7 +1170,7 @@ advanced-es msgstr "Did you see the red glow and the sticker's ghostly imprint o
         the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
         in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
         it, vanishing the picture on the leaf."
-simple-en msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to it, vanishing the picture on the leaf."
+simple-en msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals acting as 'sunscreen' within the cells. After a few seconds, these cells were protected and received less light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to it, vanishing the picture on the leaf."
 simple-de msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben gerade \
         die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre \
         Umgebung anpassen. Auf die Teile des Blattes, die nicht von dem Aufkleber bedeckt sind, fällt sehr viel Licht. \
@@ -1207,8 +1221,9 @@ simple-es msgstr "Measuring Photosynthesis with Fluorescence"
 
 #: pages/method.py:33
 #: Explanation by Tobias
+# Grammarly checked
 msgid "EXPLANATION_MEASUREMENT_1"
-advanced-en msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
+advanced-en msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the reemitted light signal."
 advanced-de msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
         können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn Sie sich dafür interessieren, wie das \
@@ -1226,7 +1241,7 @@ advanced-es msgstr "This experiment showed you the shine of plants and how amazi
         help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
         but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
         say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
-simple-en msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
+simple-en msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the reemitted light signal."
 simple-de msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
         können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn Sie sich dafür interessieren, wie das \
@@ -1247,8 +1262,9 @@ simple-es msgstr "This experiment showed you the shine of plants and how amazing
 
 #: pages/method.py:34
 #: Explanation by Tobias
+# Grammarly checked
 msgid "INTRODUCTION_PHI"
-advanced-en msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant is doing photosynthesis more efficiently."
+advanced-en msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you will hear about this 'PAM' later). With some clever maths behind it, they can then calculate many things we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the Greek letter 'Psi'; you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant does photosynthesis more efficiently."
 advanced-de msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflanzen als auch, wie erstaunlich sie sich an etwas so \
         Einfaches wie Licht anpassen können. Aber was hat das mit der Prüfung der Fotosynthese zu tun? Eigentlich eine \
         ganze Menge. Denn nicht nur der 'Sonnenschutz' beeinflusst die Blattfluoreszenz, sondern auch viele andere \
@@ -1278,7 +1294,7 @@ advanced-es msgstr "So scientists invented a way to measure this fluorescence an
         importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
         and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
         is doing photosynthesis more efficiently."
-simple-en msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant is doing photosynthesis more efficiently."
+simple-en msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you will hear about this 'PAM' later). With some clever maths behind it, they can then calculate many things we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the Greek letter 'Psi'; you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant does photosynthesis more efficiently."
 simple-de msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflanzen als auch, wie erstaunlich sie sich an etwas so \
         Einfaches wie Licht anpassen können. Aber was hat das mit der Prüfung der Fotosynthese zu tun? Eigentlich eine \
         ganze Menge. Denn nicht nur der 'Sonnenschutz' beeinflusst die Blattfluoreszenz, sondern auch viele andere \
@@ -1326,9 +1342,9 @@ simple-es msgstr "Basic principles of measuring chlorophyll fluorescence with PA
 
 #: pages/method.py:38
 #: Explanation by Tobias
-
+# Grammarly checked
 msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
-advanced-en msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. Using these fluorescence features, we can then calculate the values quantifying photosynthesis, e.g. the amount of NPQ. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
+advanced-en msgstr "In this one figure, the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel, you see the results of the PAM experiments. Take a good look because, in a few minutes, you will produce similar results not with the help of a fluorometer but with your computer! So, what do we see in this graph? It results from a unique light protocol, where a dark-adapted plant is exposed to very weak actinic light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. We can use these fluorescence features to calculate the values quantifying photosynthesis, e.g., the amount of NPQ. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most crucial part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This means that the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the light that we shine on the plants. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. It took us a long time to summarize everything on one figure only, and this figure originates from our previous work (Nies et al. 2021)."
 advanced-de msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
         diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
         für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
@@ -1345,7 +1361,7 @@ advanced-es msgstr "Indeed, we shine a very tight series of short and weak light
         With this flashing, we measure the plant performance and call it 'measuring light'. The measuring light is too \
         weak to be used for photosynthesis, but strong enough to get the plant to fluoresce. And, since we produce \
         fluorescence with each flash, the resulting signal is patterned (modulated), just like the measuring light."
-simple-en msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. Using these fluorescence features, we can then calculate the values quantifying photosynthesis, e.g. the amount of NPQ.\n\n So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1 in the left diagram, which is called a simplified 'Jablonsky diagram'). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra. That means that the fluorescence light is redder (at higher wavelengths in the left axis) than the light absorbed (upper panel on the right). This, in turn, means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
+simple-en msgstr "In this one figure, the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel, you see the results of the PAM experiments. Take a good look because, in a few minutes, you will produce similar results, not with the help of a fluorometer but with your computer! So, what do we see in this graph? It results from a unique light protocol, where a dark-adapted plant is exposed to very weak actinic light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. We can use these fluorescence features to calculate the values quantifying photosynthesis, e.g., the amount of NPQ.\n\n So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1 in the left diagram, a simplified 'Jablonsky diagram'). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most crucial part: the fluorescence emission spectra are red-shifted from the absorption spectra. That means the fluorescence light is redder (at higher wavelengths in the left axis) than the light absorbed (upper panel on the right). This, in turn, means that the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the light that we shine on the plants. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. It took us a long time to summarize everything on one figure only, and this figure originates from our previous work (Nies et al. 2021)."
 simple-de msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
         diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
         für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
@@ -1373,8 +1389,9 @@ simple-es msgstr "Example Graph of a PAM measurement"
 
 #: pages/method.py:43
 #: pages/1 Messmethode.py:32
+# Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
-advanced-en msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
+advanced-en msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
 advanced-de msgstr "###### Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
         Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
         'PAM'. Aus dem Namen können Sie schon ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der \
@@ -1391,7 +1408,7 @@ advanced-es msgstr "###### Here, we will tell you about an exciting experiment r
         for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
         for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
         (intensity) of light flashes."
-simple-en msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
+simple-en msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
 simple-de msgstr "###### Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
         Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
         'PAM'. Aus dem Namen können Sie schon ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der \
@@ -1416,8 +1433,9 @@ simple-es msgstr "Saturating Pulses of light"
 
 #: pages/method.py:47
 #: Explanation by Tobias
+# Grammarly checked
 msgid "EXPLANATION_ATTEMPTS"
-advanced-en msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
+advanced-en msgstr "You need to know one more aspect of PAM: the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside photosynthesis, for example, the plant's light protection. When you also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
 advanced-de msgstr "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
         paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
         Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute \
@@ -1456,43 +1474,10 @@ advanced-es msgstr "You need to know one more aspect of PAM, the saturating puls
         what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
         over time and conditions."
 simple-en msgstr ""
-simple-de msgstr "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
-        paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
-        Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute 'Fm'. \
-        Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fm nicht der Fall. \
-        Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb der \
-        Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
-        verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
-        Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass Sie verstehen, dass wir vergleichen, \
-        welcher Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen \
-        über die Zeit und die Bedingungen verändern."
-simple-fr msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light \
-        pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully \
-        converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
-        yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
-        tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
-        many other values. But how that is done goes much too far. Most important is that you understand that we compare \
-        what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
-        over time and conditions."
-simple-pl msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light \
-        pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully \
-        converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
-        yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
-        tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
-        many other values. But how that is done goes much too far. Most important is that you understand that we compare \
-        what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
-        over time and conditions."
-simple-es msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light \
-        pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully \
-        converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
-        yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
-        tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
-        many other values. But how that is done goes much too far. Most important is that you understand that we compare \
-        what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
-        over time and conditions."
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:49
 #: pages/1 Messmethode.py:40
@@ -1510,8 +1495,9 @@ simple-es msgstr "## Visualization of the results"
 
 #: pages/method.py:50
 #: pages/1 Messmethode.py:42
+# Grammarly checked
 msgid "EXPLANATION_ILLUSTRATION_UNITS"
-advanced-en msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fm', with the first one being measured in the dark referred to  simply as Fm."
+advanced-en msgstr "The fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fm', with the first being measured in the dark as Fm."
 advanced-de msgstr "Auf der Y-Achse der Abbildungen ist die Fluoreszenz aufgetragen. Diese ist angegeben in F´ₘ /Fₘ . Also wie \
             viel Prozent der Lichtenergie für die Fotosynthese verwendet werden kann."
 advanced-fr msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in \
@@ -1523,7 +1509,7 @@ advanced-pl msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis
 advanced-es msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in \
         response to the saturating pulse of light. Each peak is referred to as Fm', with the first one being measured \
         in the dark referred to  simply as Fm."
-simple-en msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fm', with the first one being measured in the dark referred to  simply as Fm."
+simple-en msgstr "The fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fm', with the first being measured in the dark as Fm."
 simple-de msgstr "Auf der Y-Achse der Abbildungen ist die Fluoreszenz aufgetragen. Diese ist angegeben in F´ₘ /Fₘ . Also wie \
             viel Prozent der Lichtenergie für die Fotosynthese verwendet werden kann."
 simple-fr msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in \
@@ -1538,8 +1524,9 @@ simple-es msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis).
 
 #: pages/method.py:51
 #: pages/1 Messmethode.py:44
+# Grammarly checked
 msgid "EXPLANATION_ILLUSTRATION"
-advanced-en msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
+advanced-en msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the **Experiments *in silico* ** page!"
 advanced-de msgstr "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den Abbildungen blau gekennzeichnet ist \
             (siehe Abbildung 1), diese ist, wie bereits erwähnt, Voraussetzung für die PAM-Messung. Zu diesem Zeitpunkt \
             können wir Fₘ messen."
@@ -1571,6 +1558,7 @@ simple-es msgstr "# Mathematical models"
 
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
+# Grammarly checked
 msgid "HEADLINE_MODEL"
 advanced-en msgstr "## Mathematical models"
 advanced-de msgstr "# "
@@ -1585,17 +1573,18 @@ simple-es msgstr "# Mathematical models"
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXPLANATION_1"
-advanced-en msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never the precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
+advanced-en msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never a precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never the precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
+simple-en msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never a precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
 simple-de msgstr ""
-simple-fr msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is especially useful in situations where traditional testing methods are too expensive and time-consuming. Language of **mathematics** enables us translation of real processes, situation, and problems into general statements using equations. This translation is not yet one to one and imposes a certain level of **simplification**. Therefore models are never the precise description including all levels of details, but a simplification created with  rigid methods, for the purpose of a specific study. The problem described using mathematical terms is then solved using mathematical methods, today strongly aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way the process of model developing is often not a linear process but rather an iterative cycle, as presented on the figure below."
-simple-pl msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is especially useful in situations where traditional testing methods are too expensive and time-consuming. Language of **mathematics** enables us translation of real processes, situation, and problems into general statements using equations. This translation is not yet one to one and imposes a certain level of **simplification**. Therefore models are never the precise description including all levels of details, but a simplification created with  rigid methods, for the purpose of a specific study. The problem described using mathematical terms is then solved using mathematical methods, today strongly aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way the process of model developing is often not a linear process but rather an iterative cycle, as presented on the figure below."
-simple-es msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is especially useful in situations where traditional testing methods are too expensive and time-consuming. Language of **mathematics** enables us translation of real processes, situation, and problems into general statements using equations. This translation is not yet one to one and imposes a certain level of **simplification**. Therefore models are never the precise description including all levels of details, but a simplification created with  rigid methods, for the purpose of a specific study. The problem described using mathematical terms is then solved using mathematical methods, today strongly aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way the process of model developing is often not a linear process but rather an iterative cycle, as presented on the figure below."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/model_explain.py:15
 
@@ -1721,36 +1710,37 @@ simple-es msgstr ""
 #: pages/model_explain.py:23
 #: pages/model.explain.py:23
 #: EINFÜHRUNG.py:60
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
-advanced-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>."
+advanced-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>."
+simple-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>."
 simple-de msgstr ""
-simple-fr msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the one that are susceptible to the disease and can get sick at any moment (S), the one that recovered from the infection (R), and the currently infected ones (I). To model the transition between each cathegories we determine the rate of infection (v1) dependant on the number of S and I in the total population (N) and their rate of recovery (v2) solely dependant on the I (Equation 2). They also found out that the R have gained complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modelling**. To start, you should create a scheme of your problem, in this case the S will become I at a rate of v1 and the I will become the R at a rate of v2."
-simple-pl msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the one that are susceptible to the disease and can get sick at any moment (S), the one that recovered from the infection (R), and the currently infected ones (I). To model the transition between each cathegories we determine the rate of infection (v1) dependant on the number of S and I in the total population (N) and their rate of recovery (v2) solely dependant on the I (Equation 2). They also found out that the R have gained complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modelling**. To start, you should create a scheme of your problem, in this case the S will become I at a rate of v1 and the I will become the R at a rate of v2."
-simple-es msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the one that are susceptible to the disease and can get sick at any moment (S), the one that recovered from the infection (R), and the currently infected ones (I). To model the transition between each cathegories we determine the rate of infection (v1) dependant on the number of S and I in the total population (N) and their rate of recovery (v2) solely dependant on the I (Equation 2). They also found out that the R have gained complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modelling**. To start, you should create a scheme of your problem, in this case the S will become I at a rate of v1 and the I will become the R at a rate of v2."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/model_explain.py:37
 #: pages/model.explain.py:37
-
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
-advanced-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and change in the number of people in each category, so overall, three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
+advanced-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and change in the number of people in each category, so overall, three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 simple-de msgstr ""
-simple-fr msgstr " With this scheme, you have already successfully modelled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A very useful mathematical tool to depict the chnage of something depending on the change of another specific value, are the so-called Oridinary Differential Equation (ODE). If you have never seen what an ODE looks like, click the box Oridinary Differential Equations. Using differential equations you can describe the relationship between the time and change in the number of people in each of the cathegories, so overall three equations. This set of three equations will is called a system of ODE and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the \ac{ODE} system:"
-simple-pl msgstr " With this scheme, you have already successfully modelled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A very useful mathematical tool to depict the chnage of something depending on the change of another specific value, are the so-called Oridinary Differential Equation (ODE). If you have never seen what an ODE looks like, click the box Oridinary Differential Equations. Using differential equations you can describe the relationship between the time and change in the number of people in each of the cathegories, so overall three equations. This set of three equations will is called a system of ODE and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the \ac{ODE} system:"
-simple-es msgstr " With this scheme, you have already successfully modelled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A very useful mathematical tool to depict the chnage of something depending on the change of another specific value, are the so-called Oridinary Differential Equation (ODE). If you have never seen what an ODE looks like, click the box Oridinary Differential Equations. Using differential equations you can describe the relationship between the time and change in the number of people in each of the cathegories, so overall three equations. This set of three equations will is called a system of ODE and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the \ac{ODE} system:"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/model_explain.py:52
 #: pages/model.explain.py:52
-
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
 advanced-en msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
 advanced-de msgstr ""
@@ -1759,13 +1749,13 @@ advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
 simple-de msgstr ""
-simple-fr msgstr "To effectively solve each ODE, it is important to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (α= 2) and the recovery rate is ($\beta = 0.2$). With these values and starting populations of (S=900), (I = 100), (R = 0), and ($\\mathrm{N} = \\mathrm{S} + \\mathrm{I} + \\mathrm{R} = 1000$), we can solve our ODE system. The resulting graph shows that the population of Planet-X will eventually become completely immune."
-simple-pl msgstr "To effectively solve each ODE, it is important to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (α= 2) and the recovery rate is ($\beta = 0.2$). With these values and starting populations of (S=900), (I = 100), (R = 0), and ($\\mathrm{N} = \\mathrm{S} + \\mathrm{I} + \\mathrm{R} = 1000$), we can solve our ODE system. The resulting graph shows that the population of Planet-X will eventually become completely immune."
-simple-es msgstr "To effectively solve each ODE, it is important to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (α= 2) and the recovery rate is ($\beta = 0.2$). With these values and starting populations of (S=900), (I = 100), (R = 0), and ($\\mathrm{N} = \\mathrm{S} + \\mathrm{I} + \\mathrm{R} = 1000$), we can solve our ODE system. The resulting graph shows that the population of Planet-X will eventually become completely immune."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/model_explain.py:55
 #: pages/model.explain.py:55
-
+# Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
 advanced-en msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2)."
 advanced-de msgstr ""
@@ -1779,8 +1769,9 @@ simple-pl msgstr "The change of the population of Planet-X using the SIR model t
 simple-es msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
 
 #: pages\model_explain.py:61
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
-advanced-en msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example, makes it possible to be solved on pen and paper. However, we have used the programming language Python to make our lives easier. You can find it in the other tabs over this section."
+advanced-en msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example makes it possible to be solved on pen and paper. However, we have used Python to make our lives easier. You can find it in the other tabs over this section."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -1792,7 +1783,6 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:63
-
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
 advanced-en msgstr "## Models of photosynthesis"
 advanced-de msgstr ""
@@ -1820,12 +1810,12 @@ simple-es msgstr ""
 
 #: pages/model_explain.py:71
 msgid "FVCB_1"
-advanced-en msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). It was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, that each depicts the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is very important as it gives life to the model, and by varying these, you vary the results of the model."
+advanced-en msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). It was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). C<sub>3</sub> you may ask? Actually, plants can perform their photosynthesis in a slightly different manner. Check the box below if you want to know more about the different forms of photosynthesis. The model was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, that each depicts the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is very important as it gives life to the model, and by varying these, you vary the results of the model. To see these equations, please use the :blue[Advanced] mode."
+simple-en msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). C<sub>3</sub> you may ask? Actually, plants can perform their photosynthesis in a slightly different manner. Check the box below to learn more about the various forms of photosynthesis. The model was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results. Please use the :blue[Advanced] mode to see these equations."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1834,12 +1824,12 @@ simple-es msgstr ""
 #: pages/model_explain.py:87
 msgid "FVCB_2"
 advanced-en msgstr "These rates use an epitome of parameters that have to be measured or determined beforehand. The model uses the chloroplast CO<sub>2</sub> partial pressure (C<sub>c</sub>), the chloroplast O<sub>2</sub> partial pressure (O), the C<sub>c</sub> where A = −R<sub>d</sub> (Γ<sub>&midast;</sub>), the maximal rate of carboxylation (V<sub>cmax</sub>), the Michaelis-Menten constants of carboxylation and oxygenation (K<sub>c</sub> and K<sub>o</sub> respectively), the potential electron transport rate (J) and the rate of inorganic phosphate supply to the chloroplast (T<sub>p</sub>) to calculate the three rates. The day respiration (R<sub>d</sub>) is subtracted to portray the respective assimilation rates. It is to be noted that this model is limited to a C<sub>c</sub> that is larger than Γ<sub>&midast;</sub>. \n"
-"\n This model is widely popular among scientists, as it is fairly simple and uses no complicated mathematical methods like integrations. As you may have guessed, this type of model is not the same as the SIR model we explained earlier. It doesn’t use any ODEs and therefore cannot show the change in time. It only shows the A specific for the parameter values chosen and therefore depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still regarded as one of the best due to its simplicity."
+"\n This model is widely popular among scientists, as it is relatively simple and uses no complicated mathematical methods like integrations. As you may have guessed, this model type differs from the SIR model we explained earlier. It doesn’t use any ODEs and, therefore, cannot show the change in time. It only shows the A specific for the parameter values chosen. It thus depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still considered one of the best due to its simplicity."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "This model is widely popular among scientists, as despite its simplicity is quite accurate in capturing the rate of carbon assimilation. As you may have guessed, this type of model is not the same as the SIR model we explained earlier. It doesn’t use any ODEs and therefore cannot show the change in time. It only shows the A specific for the parameter values chosen and therefore depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still regarded as one of the best due to its simplicity."
+simple-en msgstr "This model is widely popular among scientists as, despite its simplicity, it accurately captures the carbon assimilation rate. As you may have guessed, this model type differs from the SIR model we explained earlier. It doesn’t use any ODEs and, therefore, cannot show the change in time. It only shows the A specific for the parameter values chosen. It, thus, depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still considered one of the best due to its simplicity."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1859,14 +1849,15 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:92
+# Grammarly checked
 msgid "E_PHOTOSYNTHESIS_1"
-advanced-en msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Just like the SIR model, it uses an ODE system, but with a more complicated set of equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most of its components while also simplifying where necessary. It builds upon previous works by Zhu et al., incorporating the reactions that are associated with light absorption, excitation energy transfer, charge separation, and electron transfer around PSII from their fluorescence induction model. Additionally, it introduces analogous reactions for PSI and includes reactions from their carbon metabolism model, such as those involved in the C<sub>3</sub> cycle, sucrose and starch synthesis, and photorespiration. The model further accounts for ion transfer between the lumen and stroma, ATP and NADPH synthesis, RuBisCO activation by RuBisCO activase, NPQ by luminal pH and the xanthophyll cycle, and regulation of enzyme activities by the ferredoxin (Fd) thioredoxin system.\n"
-"\n Even though this model is very complex it still introduces some simplifications, for example, the steps between the electron transfer of the chlorophyll *a* molecule and Fd are ignored. Furthermore, to calculate the A, this model uses the rate of carboxylation (V<sub>c</sub>) and the rate of glycine decarboxylase (v<sub>131</sub>). While the equation below may be simple, it is dependent on a dynamic system containing a total of 294 equations."
+advanced-en msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It builds upon previous works by Zhu et al., incorporating the reactions associated with light absorption, excitation energy transfer, charge separation, and electron transfer around PSII from their fluorescence induction model. Additionally, it introduces analogous reactions for PSI and includes reactions from their carbon metabolism model, such as those involved in the C<sub>3</sub> cycle, sucrose and starch synthesis, and photorespiration. The model further accounts for ion transfer between the lumen and stroma, ATP and NADPH synthesis, RuBisCO activation by RuBisCO activase, NPQ by luminal pH and the xanthophyll cycle, and regulation of enzyme activities by the ferredoxin (Fd) thioredoxin system.\n"
+"\n Even though this model is very complex, it still introduces some simplifications; for example, the steps between the electron transfer of the chlorophyll *a* molecule and Fd are ignored. Furthermore, to calculate the A, this model uses the rate of carboxylation (V<sub>c</sub>) and the rate of glycine decarboxylase (v<sub>131</sub>). While the equation below may be simple, it depends on a dynamic system containing 294 equations."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Just like the SIR model, it uses an ODE system, but with a more complicated set of equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most of its components while also simplifying where necessary. It uses many different components from other models and brings them all together to create one of the most complete dynamical models of photosyntheis. To have a small glimpse at what this models entails, switch to the :blue[Advanced] mode"
+simple-en msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It uses many different elements from other models and brings them all together to create one of the most complete dynamic models of photosynthesis. To have a small glimpse at what this model entails, switch to the :blue[Advanced] mode"
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1874,12 +1865,12 @@ simple-es msgstr ""
 
 #: pages/model_explain.py:102
 msgid "E_PHOTOSYNTHESIS_2"
-advanced-en msgstr "Overall, 113 of these equations can be attributed to a system of ODEs, which indicates this model's complexity. Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler models that are more user-friendly or that focus on specific aspects of photosynthesis."
+advanced-en msgstr "Overall, 113 of these equations can be attributed to a system of ODEs, which indicates this model's complexity. Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler, more user-friendly models or focusing on specific photosynthesis aspects."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler models that are more user-friendly or that focus on specific aspects of photosynthesis."
+simple-en msgstr "Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler, more user-friendly models or focusing on specific photosynthesis aspects."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1899,26 +1890,28 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:107
+# Grammarly checked
 msgid "BELLASIO_1"
-advanced-en msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behaviour. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. The model is an aggregation of three specific models, which have been modified and simplified. The light reactions are based on Yin et al.'s work, the dark reactions on Zhu et al.'s carbon metabolism model, and the stomatal conductance of Bellasio et al.'s hydro-mechanical formulation. It simplifies the intercellular space and mesophyll as uniform, calculates CO<sub>2</sub> diffusion, dissolution, and hydration mechanistically, and does not implement the restriction caused by metabolite diffusion. Furthermore, it uses the simple FvCB Formula to calculate A."
+advanced-en msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behavior. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. The model aggregates three specific models, which have been modified and simplified. The light reactions are based on Yin et al.'s work, the dark reactions on Zhu et al.'s carbon metabolism model, and the stomatal conductance of Bellasio et al.'s hydro-mechanical formulation. It simplifies the intercellular space and mesophyll as uniform, calculates CO<sub>2</sub> diffusion, dissolution, and hydration mechanistically, and does not implement the restriction caused by metabolite diffusion. Furthermore, it uses the simple FvCB Formula to calculate A."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behaviour. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. It combines various elements from models, such as the FvCB and *e*-photosynthesis models, while simplifying certain aspects to make it also suitable for non-experienced computational biologists. To have a more detailed overview on what this model includes, switch to the :blue[Advanced] mode."
+simple-en msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behavior. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. It combines various elements from models, such as the FvCB and *e*-photosynthesis models, while simplifying certain aspects to make it suitable for non-experienced computational biologists. For a more detailed overview of what this model includes, switch to the :blue[Advanced] mode."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:109
+# Grammarly checked
 msgid "BELLASIO_2"
-advanced-en msgstr "The parameters are based on averaged literature values for typical parameters, and the few parameters created for this model are derived from the original equations or assigned plausible values. The model includes the major reactions of photosynthesis and is simple enough to be modelled in a spreadsheet program like Microsoft&reg; Excel&reg;, which has also been kindly provided by the author themselves. Overall, this model serves as an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
+advanced-en msgstr "The parameters are based on averaged literature values for typical parameters, and the few parameters created for this model are derived from the original equations or assigned plausible values. The model includes the major reactions of photosynthesis and is simple enough to be modeled in a spreadsheet program like Microsoft&reg; Excel&reg;, which the author kindly provided. Overall, this model is an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "The model includes the major reactions of photosynthesis and is simple enough to be modelled in a spreadsheet program like Microsoft&reg; Excel&reg;, which has also been kindly provided by the author themselves. Overall, this model serves as an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
+simple-en msgstr "The model includes the major reactions of photosynthesis and is simple enough to be modeled in a spreadsheet program like Microsoft&reg; Excel&reg;, which the author kindly provided. Overall, this model is an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1951,6 +1944,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:212
+# Grammarly checked
 msgid "C3_1"
 advanced-en msgstr "Most plants are C<sub>3</sub> plants, meaning the first stable compound produced during carbon fixation is a three-carbon molecule called 3-phosphoglycerate (3-PGA). This process takes place in the mesophyll cells of plant leaves and involves a chain of biochemical reactions that transform carbon dioxide (CO<sub>2</sub>) into carbohydrates like glucose."
 advanced-de msgstr ""
@@ -1977,13 +1971,14 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:215
+# Grammarly checked
 msgid "C4_1"
-advanced-en msgstr "In certain plants, C<sub>4</sub> photosynthesis is an alternative process that developed to adapt to hot and dry environments. Unlike C<sub>3</sub> photosynthesis, C<sub>4</sub> photosynthesis boosts the efficiency of carbon fixation by concentrating CO<sub>2</sub> near RuBisCO in the bundle sheath cells. This separation lowers photorespiration, a wasteful process that can occur in C<sub>3</sub> plants under high temperatures and low CO<sub>2</sub> concentrations. C<sub>4</sub> photosynthesis can be found in various plant families, such as grasses (e.g. maize, sugarcane) and certain dicots (e.g. Amaranthaceae, Chenopodiaceae). It is an adaptation that permits plants to flourish in environments with high temperatures, intense sunlight, and limited water availability."
+advanced-en msgstr "In certain plants, C<sub>4</sub> photosynthesis is an alternative process that developed to adapt to hot and dry environments. Unlike C<sub>3</sub> photosynthesis, C<sub>4</sub> photosynthesis boosts the efficiency of carbon fixation by concentrating CO<sub>2</sub> near RuBisCO in the bundle sheath cells. This separation lowers photorespiration, a wasteful process that can occur in C<sub>3</sub> plants under high temperatures and low CO<sub>2</sub> concentrations. C<sub>4</sub> photosynthesis can be found in various plant families, such as grasses (e.g., maize, sugarcane) and certain dicots (e.g., Amaranthaceae, Chenopodiaceae). It is an adaptation that permits plants to flourish in environments with high temperatures, intense sunlight, and limited water availability."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "In certain plants, C<sub>4</sub> photosynthesis is an alternative process that developed to adapt to hot and dry environments. Unlike C<sub>3</sub> photosynthesis, C<sub>4</sub> photosynthesis boosts the efficiency of carbon fixation by concentrating CO<sub>2</sub> near RuBisCO in the bundle sheath cells. This separation lowers photorespiration, a wasteful process that can occur in C<sub>3</sub> plants under high temperatures and low CO<sub>2</sub> concentrations. C<sub>4</sub> photosynthesis can be found in various plant families, such as grasses (e.g. maize, sugarcane) and certain dicots (e.g. Amaranthaceae, Chenopodiaceae). It is an adaptation that permits plants to flourish in environments with high temperatures, intense sunlight, and limited water availability."
+simple-en msgstr "In certain plants, C<sub>4</sub> photosynthesis is an alternative process that developed to adapt to hot and dry environments. Unlike C<sub>3</sub> photosynthesis, C<sub>4</sub> photosynthesis boosts the efficiency of carbon fixation by concentrating CO<sub>2</sub> near RuBisCO in the bundle sheath cells. This separation lowers photorespiration, a wasteful process that can occur in C<sub>3</sub> plants under high temperatures and low CO<sub>2</sub> concentrations. C<sub>4</sub> photosynthesis can be found in various plant families, such as grasses (e.g., maize, sugarcane) and certain dicots (e.g., Amaranthaceae, Chenopodiaceae). It is an adaptation that permits plants to flourish in environments with high temperatures, intense sunlight, and limited water availability."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -2003,20 +1998,20 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:218
+# Grammarly checked
 msgid "CAM_1"
-advanced-en msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants that have adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
+advanced-en msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants that have adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
+simple-en msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:65
-#: Anna's explanation of the model
 msgid "HEADLINE_EXPERIMENTS"
 advanced-en msgstr "# Experiments *in silico*"
 advanced-de msgstr ""
@@ -2030,7 +2025,6 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:65
-#: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
 advanced-en msgstr "## Model construction"
 advanced-de msgstr "## Konstruktion des Modells"
@@ -2044,9 +2038,9 @@ simple-pl msgstr "## Model construction"
 simple-es msgstr "## Model construction"
 
 #: pages/model_explain.py:67
-#: Anna's explanation of the model
+#: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION"
-advanced-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that are directly affected by or regulate the extent of NPQ. So instead of modeling the whole plant or chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
+advanced-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ. So, instead of modeling the whole plant or chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
 advanced-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
         Elektronenträger, Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im \
         Gesamtprozess spielt, haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität \
@@ -2056,31 +2050,10 @@ advanced-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreich
         zu modellieren, haben wir einen Reduktionszyklus (siehe Abbildung) angewandt, der auf einem streng reduktionistischen \
         Ansatz beruht, und es ist uns gelungen, das Modell als ein System von nur sechs gewöhnlichen Differenzialgleichungen \
         darzustellen! Jede dieser Gleichungen stellt die dynamische Änderungsrate von:"
-advanced-fr msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
-        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
-        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
-        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
-        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
-        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
-        Each of the equations represents the dynamic rate of change in:"
-advanced-pl msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
-        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
-        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
-        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
-        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
-        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
-        Each of the equations represents the dynamic rate of change in:"
-advanced-es msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
-        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
-        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
-        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
-        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
-        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
-        Each of the equations represents the dynamic rate of change in:"
-simple-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that are directly affected by or regulate the extent of NPQ. So instead of modeling the whole plant or chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ. So, instead of modeling the whole plant or chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
 simple-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, Elektronenträger, \
         Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im Gesamtprozess spielt, \
         haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität angestrebt. Wir haben \
@@ -2090,30 +2063,9 @@ simple-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche 
         haben wir einen Reduktionszyklus (siehe Abbildung) angewandt, der auf einem streng reduktionistischen Ansatz beruht, \
         und es ist uns gelungen, das Modell als ein System von nur sechs gewöhnlichen Differenzialgleichungen darzustellen! \
         Jede dieser Gleichungen stellt die dynamische Änderungsrate von:"
-simple-fr msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
-        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
-        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
-        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
-        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
-        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
-        Each of the equations represents the dynamic rate of change in:"
-simple-pl msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
-        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
-        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
-        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
-        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
-        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
-        Each of the equations represents the dynamic rate of change in:"
-simple-es msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
-        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
-        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
-        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
-        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
-        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
-        Each of the equations represents the dynamic rate of change in:"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/model_explain.py:68
 #: Anna's explanation of the model
@@ -2284,40 +2236,26 @@ simple-pl msgstr "### Implementation"
 simple-es msgstr "### Implementation"
 
 #: pages/model_explain.py:119
-#: Anna's explanation of the model
+#: Grammarly checked
 msgid "IMPLEMENTATION_DESCRIPTION"
-advanced-en msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel). In the dropdown below, you can also look at a step-by-step guide on how to implement it yourself."
+advanced-en msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object-oriented language (OOL) Python using the modelbase package. The code containing differential equations, reaction rates, parameter space, and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel). In the dropdown below, you can also look at a step-by-step guide on implementing it yourself."
 advanced-de msgstr "Das mathematische Modell der fotosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
         (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differenzialgleichungen, Reaktionsraten, dem \
         Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: \
         [hier](www.github.com/QTB-HHU/npqmodel)."
-advanced-fr msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
-        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
-        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
-advanced-pl msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
-        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
-        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
-advanced-es msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented \
-        language (OOL) Python using modelbase package. The code containing differential equations, reaction rates, parameter \
-        space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel)."
-simple-en msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object oriented language (OOL) Python using modelbase package. It is our in-house developed package that ease construction of biological models, in particular models of biochemical networks. The code containing differential equations, reaction rates, parameter space and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel) from where you can download it and further investigate."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object-oriented language (OOL) Python using the modelbase package. Our in-house developed package eases the construction of biological models, particularly models of biochemical networks. The code containing differential equations, reaction rates, parameter space, and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel) from where you can download it and further investigate."
 simple-de msgstr "Das mathematische Modell der photosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differentialgleichungen, Reaktionsraten, dem Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: [hier](www.github.com/QTB-HHU/npqmodel)."
-simple-fr msgstr "Das mathematische Modell der photosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
-        (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differentialgleichungen, Reaktionsraten, dem \
-        Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: \
-        [hier](www.github.com/QTB-HHU/npqmodel)."
-simple-pl msgstr "Das mathematische Modell der photosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
-        (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differentialgleichungen, Reaktionsraten, dem \
-        Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: \
-        [hier](www.github.com/QTB-HHU/npqmodel)."
-simple-es msgstr "Das mathematische Modell der photosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
-        (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differentialgleichungen, Reaktionsraten, dem \
-        Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: \
-        [hier](www.github.com/QTB-HHU/npqmodel)."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/model_explain.py:149
+# Grammarly checked
 msgid "SIR_IMPLEMENTATION_MANUAL_1"
-advanced-en msgstr "Great care needs to be taken in order for the `y0` vector to align with the unpacked variable names, as well as the respective differential equations. The same holds true for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
+advanced-en msgstr "Great care needs to be taken for the `y0` vector to align with the unpacked variable names and the respective differential equations. The same holds for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -2368,12 +2306,13 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:181
+# Grammarly checked
 msgid "SIR_IMPLEMENTATION_MODELBASE_3"
 advanced-en msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying:\n"
-"1. a name for the transition\n"
-"2. a reference to the rate function\n"
-"3. stoichiometries, encoding how the rate affects the system variables\n"
-"4. the arguments for the rate function"
+"1. A name for the transition\n"
+"2. A reference to the rate function\n"
+"3. Stoichiometries, encoding how the rate affects the system variables\n"
+"4. The arguments for the rate function"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -2385,8 +2324,9 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:189
+# Grammarly checked
 msgid "SIR_IMPLEMENTATION_MODELBASE_4"
-advanced-en msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimise minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
+advanced-en msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
 "\n You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
@@ -2399,6 +2339,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:210
+# Grammarly checked
 msgid "SIR_IMPLEMENTATION_MODELBASE_5"
 advanced-en msgstr "The approach's strength lies in its simplicity of extending models. For instance, we can add a compartment for deceased individuals to the SIR model, also known as the SIRD model, by introducing a new variable, parameter, and reaction:"
 advanced-de msgstr ""
@@ -2455,27 +2396,20 @@ simple-pl msgstr "## The data analysis"
 simple-es msgstr "## The data analysis"
 
 #: pages/first_analysis.py:178
-#: pages/2 Daten-Analyse.py:25
-#: pages/Analyse.py:25
+# Grammarly checked
 msgid "INTRODUKTION"
 advanced-en msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors. In the following the model can be rerun with different parameters using the sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal. With the sliders, you can adjust the light instensity during the light phase, for how long the simulation will run, how far apart in time the saturation pulses will be, and how fast the activation and deactivation rates of the NPQ adaption process are."
 advanced-de msgstr "Matuszynska et al. (2016) entwickelten ein Modell, das die Vorgänge am Fotosysthem II simuliert. Mit Hilfe \
         dieses Modells können analoge Diagramme erstellt werden, wie sie bei der zuvor beschriebenen Messmethode entstehen."
-advanced-fr msgstr "Matuszynska et al. (2016) developed a model that simulates the processes at Photosysthem II. With the help \
-        of this model, analogous diagrams can be created as they arise in the previously described measurement method."
-advanced-pl msgstr "Matuszynska et al. (2016) developed a model that simulates the processes at Photosysthem II. With the help \
-        of this model, analogous diagrams can be created as they arise in the previously described measurement method."
-advanced-es msgstr "Matuszynska et al. (2016) developed a model that simulates the processes at Photosysthem II. With the help \
-        of this model, analogous diagrams can be created as they arise in the previously described measurement method."
-simple-en msgstr "Now that you have been introduced to the experimental method of measuring photosynthetic fluorescence you probably would like to take such measurements yourself. And you can! On this site you we will carry out measurements with the model, meaning **in silico**, to estimate the influence of the **abiotic** (meaning physical rather than biological, like light intensity) influence factors. To make your work as easy as possible, all you need to run the model is to provide the light intensity for which you want to run your experiment, length of this experiment (in minutes) and what is the time in between the saturating pulses of light. You can do it using sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "Now that you have been introduced to the experimental method of measuring photosynthetic fluorescence, you probably would like to take such measurements yourself. And you can! On this site, you will carry out measurements with the model, meaning **in silico**, to estimate the influence of the **abiotic** (representing physical rather than biological, like light intensity) influence factors. To make your work as easy as possible, all you need to run the model is to provide the light intensity for which you want to run your experiment, the length of this experiment (in minutes), and the time between the saturating pulses of light. You can do it using sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal."
 simple-de msgstr "Nachdem Sie die Messmethode zur Überprüfung von NPQ an Pflanzen kennenlernen durftet, werden wir nun Messungen \
         mit dem Model durchführen, um den Einfluss der abiotischen Einfluss-Faktoren abzuschätzen."
-simple-fr msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements \
-        with the model to estimate the influence of the abiotic influence factors."
-simple-pl msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements \
-        with the model to estimate the influence of the abiotic influence factors."
-simple-es msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements \
-        with the model to estimate the influence of the abiotic influence factors."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/first_analysis.py:182 pages/plant_memory.py:272
 msgid "TASK_1"
