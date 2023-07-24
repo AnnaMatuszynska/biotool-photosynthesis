@@ -439,19 +439,6 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("HEADLINE_ANALYSE"))
     st.markdown(text("INTRODUKTION"))
 
-    # Assignments
-    if version == "Simple":
-        with st.expander(text("TASK_1")):
-            st.markdown(text("TASK_ANALYSIS_1_EXPLANATION"))
-        with st.expander(text("TASK_2")):
-            st.markdown(text("TASK_ANALYSIS_2_EXPLANATION"))
-        with st.expander(text("TASK_3")):
-            st.markdown(text("TASK_ANALYSIS_3_EXPLANATION"))
-        with st.expander(text("TASK_4")):
-            st.markdown(text("TASK_ANALYSIS_4_EXPLANATION"))
-        with st.expander(text("TASK_5")):
-            st.markdown(text("TASK_ANALYSIS_5_EXPLANATION"))
-
     st.markdown(text("HEADLINE_SLIDER"))
     st.markdown(text("EXPLANATNION"))
     include_ytvideo("https://youtu.be/zxGZKeopEDw", 0.5)
