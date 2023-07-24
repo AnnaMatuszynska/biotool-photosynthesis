@@ -2426,10 +2426,9 @@ simple-pl msgstr "##### Use of the sliders:"
 simple-es msgstr "##### Use of the sliders:"
 
 #: pages/first_analysis.py:194
-#: pages/2 Daten-Analyse.py:27
-#: pages/Analyse.py:27
+# Grammarly checked
 msgid "EXPLANATNION"
-advanced-en msgstr "First change the sliders according to the test you want to simulate. Then start the calculation by clicking on the button. The calculated graph will be displayed. As soon as you change the sliders again, the graph disappears and you can load a new graph."
+advanced-en msgstr "First, change the sliders according to the test you want to simulate. Then, start the calculation by clicking on the button. The calculated graph will be displayed. When you change the sliders again, the graph disappears, and you can load a new graph."
 advanced-de msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Starten Sie dann die \
         Berechnung, indem Sie auf die Schaltfläche klicken. Das berechnete Diagramm wird angezeigt. Sobald Sie die \
         Schieberegler erneut ändern, verschwindet die Grafik und Sie können eine neue Grafik laden."
@@ -2442,7 +2441,7 @@ advanced-pl msgstr "First, change the sliders according to the test you want to 
 advanced-es msgstr "First, change the sliders according to the test you want to simulate. Then start the calculation by clicking \
         on the button. The calculated diagram will be displayed. As soon as you change the sliders again, the graph \
         disappears and you can load a new graph."
-simple-en msgstr "First change the sliders according to the test you want to simulate. Then start the calculation by clicking on the button. The calculated graph will be displayed. As soon as you change the sliders again, the graph disappears and you can load a new graph."
+simple-en msgstr "First, change the sliders according to the test you want to simulate. Then, start the calculation by clicking on the button. The calculated graph will be displayed. When you change the sliders again, the graph disappears, and you can load a new graph."
 simple-de msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Dann starten Sie die \
         Berechnung, indem Sie auf den Start-Button klicken. Das berechnete Diagramm wird nach kurzer Zeit angezeigt. \
         Sobald Sie die Schieberegler wieder bewegen, verschwindet die Grafik und Sie können eine neue Grafik laden."
@@ -2657,9 +2656,9 @@ simple-pl msgstr "# The plant memory"
 simple-es msgstr "# The plant memory"
 
 #: pages/plant_memory.py:269
-#: pages/3 Pflanzengedächtnis.py:38
+# Grammarly checked
 msgid "INTRODUCTION_BRAIN"
-advanced-en msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to play even more, click the **Expert** version on the left."
+advanced-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be trained to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own **memory experiments**. Go ahead; you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to play even more, click the **Expert** version on the left."
 advanced-de msgstr "Das Modell bietet auch die Möglichkeit, Experimente mit Dunkelphasen zu simulieren. So kann das Kurzzeitgedächtnis \
         der Pflanzen demonstriert werden. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
 advanced-fr msgstr "The model also offers the possibility to simulate experiments with dark phases. In this way, the short-term \
@@ -2668,7 +2667,7 @@ advanced-pl msgstr "The model also offers the possibility to simulate experiment
         memory of plants can be demonstrated. You can simulate different scenarios with the two sliders."
 advanced-es msgstr "The model also offers the possibility to simulate experiments with dark phases. In this way, the short-term \
         memory of plants can be demonstrated. You can simulate different scenarios with the two sliders."
-simple-en msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the :blue[Advanced] version on the left. There you can also create your mutated version of the plant and see if can *forget* the light sooner."
+simple-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own **memory experiments**. Go ahead; you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the :blue[Advanced] version on the left. You can also create your mutated version of the plant and see if you can *forget* the light sooner."
 simple-de msgstr "Nachdem Sie herausgefunden haben, wie Pflanzen auf unterschiedliche Lichtintensitäten reagieren. Sie können \
         sich nun mit dem Gedächtnis der Pflanzen beschäftigen. Dies ist eine interessante Tatsache, die sich mit dem \
         Modell sehr schön modellieren lässt. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
@@ -2719,34 +2718,36 @@ simple-pl msgstr "# Podsumowanie"
 simple-es msgstr "# Conclusion"
 
 #: pages/conclusion.py:12
+# Grammarly checked
 msgid "CONCLUSION_TEXT_ONE"
 advanced-en msgstr "We hope you have received a thorough introduction to the captivating realm of (computational) plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. We hope we could show you the following:\n"
-"- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
-"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain point, the saturation point, like on the figure below."
+"- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
+"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point, like in the figure below."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "We hope you have received a thorough introduction to the captivating realm of plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. Consequently, you should have arrived at the following conclusions:\n"
-"- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
-"- The relationship between light intensity and photosynthetic rate is not linear Rather, it follows a curve that peaks at a certain point, the saturation point."
+"- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
+"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
 
-#: pages/conclusion.py:18       
+#: pages/conclusion.py:18
+# Grammarly checked     
 msgid "CONCLUSION_TEXT_TWO"
-advanced-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to efficiently take up light energy and adapt to various environmental conditions.\n"
+advanced-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
 "- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
-"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines and even considring only photoynthesis models we have barly scratched the surface of what is out there. Hopefully this small course has shown you how interesting and useful modelling can be and for a problem in the future you will think '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want give us some feedback and tell others about your experience. Have a great day!**"
+"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to efficiently take up light energy and adapt to various environmental conditions.\n"
+simple-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
 "- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
-"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines and even considring only photoynthesis models we have barly scratched the surface of what is out there. Hopefully this small course has shown you how interesting and useful modelling can be and for a problem in the future you will think '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want give us some feedback and tell others about your experience. Have a great day!**"
+"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr "- Rośliny mogą przypomnieć sobie poprzednią ekspozycję na światło i odpowiednio dostosować swoje tempo fotosyntezy. Ta krótkotrwała pamięć pozwala im efektywnie zużywać energię i dostosowywać się do różnych warunków środowiskowych. \n"
@@ -3785,6 +3786,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model.explain.py:58
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
 advanced-en msgstr ""
 advanced-de msgstr ""
@@ -3839,8 +3841,9 @@ simple-es msgstr ""
 
 #: pages/model_explain.py:
 msgid "CONSTRUCTION_1"
-advanced-en msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilising a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n" 
-"\n If you want to follow along, you can just copy each code block and paste them one after another in a Python IDE. At the end you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
+# Grammarly checked
+advanced-en msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilizing a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n" 
+"\n If you want to follow along, you can copy each code block and paste them into a Python IDE. At the end, you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -3852,6 +3855,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:249
+# Grammarly checked
 msgid "CONSTRUCTION_2"
 advanced-en msgstr "We must look at the **reaction rates** and the **ODEs** we want to implement into our model. With them, we can decide which **parameters** and **compounds** we need. We must define them in a `dict` and `list`, respectively. It is also good practice to use comments after each value to briefly explain what that variable represents and, if present, the unit." 
 advanced-de msgstr ""
@@ -3865,6 +3869,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:265
+# Grammarly checked
 msgid "CONSTRUCTION_3"
 advanced-en msgstr "The defined model has integrated functions to add the parameters and compounds easily:" 
 advanced-de msgstr ""
@@ -3878,6 +3883,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:272
+# Grammarly checked
 msgid "CONSTRUCTION_4"
 advanced-en msgstr "This model also uses some **parameters** that are derived from other parameters. Furthermore, some information is hidden behind the connection between compounds, which cannot be summarised as parameters. However, `modelbase` has some tricks to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We must first define the calculations as functions and then add them to the model." 
 advanced-de msgstr ""
@@ -3891,6 +3897,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:290
+# Grammarly checked
 msgid "CONSTRUCTION_5"
 advanced-en msgstr "We now have given the model all the building blocks it needs, but it needs to know what to do with them. For that, it needs instructions. We must translate the reaction rates into `functions` to make these instructions. You will see that some of these functions also call other functions. These are only to make the code more legible or to eliminate the same calculations." 
 advanced-de msgstr ""
@@ -3904,8 +3911,9 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:308
+# Grammarly checked
 msgid "CONSTRUCTION_6"
-advanced-en msgstr "The model has all the necessary components and instructions. Still, we must now specify which building block corresponds to each instruction and how they are connected. To accomplish this, we need to examine the ODEs and establish the stoichiometry." 
+advanced-en msgstr "The model has all the necessary components and instructions. Still, we must specify which building block corresponds to each instruction and how they are connected. We need to examine the ODEs and establish the stoichiometry to accomplish this." 
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -3917,8 +3925,9 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:315
+# Grammarly checked
 msgid "CONSTRUCTION_7"
-advanced-en msgstr "We have now successfully created a functional model. However, to test it, we need to simulate it. This section will guide you through the process step by step to generate the plot with the default values listed further down on this page. This part may be more complicated than the modeling part, requiring some trial and error. We will explain our thought process so that you can follow along. Still, we suggest you read through this section carefully to create the plot successfully." 
+advanced-en msgstr "We have now successfully created a functional model. However, to test it, we need to simulate it. This section will guide you through the step-by-step process of generating the plot with the default values listed at the bottom of this page. This part may be more complicated than the modeling part, requiring some trial and error. We will explain our thought process so that you can follow along. Still, we suggest you carefully read this section to create the plot successfully." 
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -3956,6 +3965,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:326
+# Grammarly checked
 msgid "SIMULATION_2"
 advanced-en msgstr "The model requires a starting point for its calculations. The parameters have been defined during the model creation, so we now need to specify the initial concentrations or quantities of the compounds." 
 advanced-de msgstr ""
@@ -3969,6 +3979,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:326
+# Grammarly checked
 msgid "SIMULATION_3"
 advanced-en msgstr "We can begin the simulations now. Let's select a random time point for the model to simulate to. We can visualize the results after the simulation and check for implementation errors. This test is straightforward, as an empty or non-existent plot indicates a problem. Our preferred plotting tool is `matplotlib`, which is also integrated into `modelbase`." 
 advanced-de msgstr ""
@@ -3982,6 +3993,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:356
+# Grammarly checked
 msgid "SIMULATION_4"
 advanced-en msgstr "We have successfully simulated our model and created a basic plot. However, the plot must include important details that we need to define. These aspects include:\n"
 "\n - Displaying changes in fluorescence over time\n"
@@ -4012,6 +4024,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:358
+# Grammarly checked
 msgid "SIMULATION_FLOURESCENCE_1"
 advanced-en msgstr "When using `modelbase` for simulations, it tends to display the compounds in the default plots. However, in our situation, we need to showcase the change of Fluorescence, which we did not incorporate as a compound but as an algebraic module. Hence, we must choose that change specifically." 
 advanced-de msgstr ""
@@ -4025,8 +4038,9 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:381
+# Grammarly checked
 msgid "SIMULATION_FLOURESCENCE_2"
-advanced-en msgstr "We will relativise the fluorescence values to their maximum to simplify the chart reading process. Unfortunately, this will result in a more complex code. We will demonstrate how to achieve this by extracting the simulation data from `modelbase`. However, there are several methods to accomplish this. It is worth noting that the graph will appear slightly different due to `modelbase` modifying certain plot aspects for faster processing. Nonetheless, we will ensure the diagram is aesthetically pleasing in the end." 
+advanced-en msgstr "To simplify the chart reading process, we will relativize the fluorescence values to their maximum. Unfortunately, this will result in a more complex code. We will demonstrate how to achieve this by extracting the simulation data from `modelbase`. However, there are several methods to accomplish this. It is worth noting that the graph will appear slightly different due to `modelbase` modifying certain plot aspects for faster processing. Nonetheless, we will ensure the diagram is aesthetically pleasing in the end." 
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -4051,6 +4065,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:405
+# Grammarly checked
 msgid "SIMULATION_PHASES_1"
 advanced-en msgstr "We can address the last two issues in one code by starting each phase with a saturating pulse. However, we need to make some decisions regarding:\n"
 "\n - The duration of our simulation\n"
@@ -4082,6 +4097,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:429
+# Grammarly checked
 msgid "SIMULATION_PRETTY_1"
 advanced-en msgstr "The simulation currently displays all the desired information. To enhance its visual appeal and comprehension, we can utilize the `matplotlib` library to create a polished graph resembling the one at the bottom of the page. While we won't provide a detailed walkthrough, you can still view the code we used." 
 advanced-de msgstr ""
