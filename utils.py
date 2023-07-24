@@ -120,7 +120,7 @@ def include_image(path: str, img_width: float = 0.5, caption: str = None, center
                     st.caption(caption, unsafe_allow_html=True)
 
 def js_r(filename: str):
-    with open(filename) as f_in:
+    with open(filename, encoding='utf8') as f_in:
         return json.load(f_in)
 
 icons = js_r("assets/emoji.json")
