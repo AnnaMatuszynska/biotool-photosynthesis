@@ -3840,8 +3840,8 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:
-msgid "CONSTRUCTION_1"
 # Grammarly checked
+msgid "CONSTRUCTION_1"
 advanced-en msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilizing a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n" 
 "\n If you want to follow along, you can copy each code block and paste them into a Python IDE. At the end, you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
 advanced-de msgstr ""

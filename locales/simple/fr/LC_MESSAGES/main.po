@@ -61,9 +61,7 @@ msgstr "#### Consumers vs producers"
 
 #: EINFÜHRUNG.py:37
 msgid "PRODUCENTEN_EXPLANATION"
-msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings \
-        that can produce biomass are called **producers**. These include, in particular, plants. These can produce \
-        biomass independently through photosynthesis, for example."
+msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
 
 #: Start.py:10
 #: EINFÜHRUNG.py:21
@@ -72,6 +70,7 @@ msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosyn
 
 #: Start.py:11
 #: Intro by Anna
+# Grammarly checked
 msgid "INTRO"
 msgstr "This is a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen \
         University, Germany. Our goal is to provide a teaching tool applicable to the needs of XXI-century students. We \
@@ -82,11 +81,13 @@ msgstr "This is a Teaching Tool in Biology, a project launched by the **Computat
 
 #: Start.py:15
 #: EINFÜHRUNG.py:24
+# Grammarly checked
 msgid "HEADLINE_USAGE"
 msgstr "## How to use this website"
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
+# Grammarly checked
 msgid "USAGE"
 msgstr "We aimed at both curious **newcomers** and more **advanced** learners. At any point of using this website you can choose \
         which version you want to use by clicking on the left side button: Version and selecting from the drop-down list \
@@ -94,6 +95,7 @@ msgstr "We aimed at both curious **newcomers** and more **advanced** learners. A
 
 #: Start.py:17
 #: EINFÜHRUNG.py:26
+# Grammarly checked
 msgid "ADVANCED_USE"
 msgstr "If you do decide to choose the *Advanced* version, you will not only learn about photosynthesis \
         as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. \
@@ -130,10 +132,12 @@ msgid "HEADLINE_PAGES"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "INTRODUCTION_PAGES"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "PHOTOSYNTHESIS"
 msgstr ""
 
@@ -142,10 +146,12 @@ msgid "METHOD"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "MODEL"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "EXPERIMENT"
 msgstr ""
 
@@ -165,6 +171,7 @@ msgstr "## Climate change"
 
 #: pages/photosynthesis.py:11
 #: Lisa's introduction
+# Grammarly checked
 msgid "INTRODUCTION_CLIMATE_CHANGE"
 msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of \
         life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., \
@@ -193,6 +200,7 @@ msgstr ""
 
 #: pages/photosynthesis.py:17
 #: Lisa's introduction
+# Grammarly checked
 msgid "END_OF_INTRODUCTION"
 msgstr ""
 
@@ -203,6 +211,7 @@ msgstr "# Photosynthesis"
 
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_1"
 msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
         but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
@@ -237,11 +246,13 @@ msgstr "Microscopic image of a stomatal of the wild type of the model organism A
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
+# Grammarly checked
 msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
 msgstr "## Place of photosynthesis"
 
 #: pages/photosynthesis.py:57
 #: EINFÜHRUNG.py:55
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
         specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
@@ -250,10 +261,12 @@ msgstr "Photosynthesis takes place in the cells of the mostly green components o
 
 #: pages/photosynthesis.py:68
 #: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
 
 #: pages/photosynthesis.py:51
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
@@ -264,6 +277,7 @@ msgstr "## How to deal with too much light?"
 
 #: pages/photosynthesis.py:76
 #: EINFÜHRUNG.py:60
+# Grammarly checked
 msgid "NPQ_EXPLANATION"
 msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
         and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
@@ -277,20 +291,24 @@ msgstr "## One plant to rule them all"
 
 #: pages/photosynthesis.py:79
 #: pages/1 Messmethode.py:40
+# Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
 msgstr "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis Thaliana*, a 'model organism'."
 
 #: pages/photosynthesis.py:81
 #: pages/1 Messmethode.py:40
+# Grammarly checked
 msgid "EXPANDER_MODEL_ORGANISMEN"
 msgstr "Why is Arabidopsis thaliana a model organism?"
 
 #: pages/photosynthesis.py:85
 #: pages/1 Messmethode.py:40
+# Grammarly checked
 msgid "CAPTION_THAIANA_PICTURE"
 msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 
 #: pages/photosynthesis.py:87
+# Grammarly checked
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
@@ -301,11 +319,13 @@ msgstr "# Measuring photosynthesis"
 
 #: pages/method.py:15
 #: Explanation by Tobias
+# Grammarly checked
 msgid "INTRODUCTION_MEASUREMENT"
 msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page you will learn how can we measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continously becoming a more quantitative science, obviously numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or in a field. Therefore a particularly important characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
 
 #: pages/method.py:18
 #: EINFÜHRUNG.py:36
+# Grammarly checked
 msgid "CAPTION_ABB1"
 msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, \
         in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
@@ -318,6 +338,7 @@ msgstr "Plant shine!"
 
 #: pages/method.py:22
 #: Explanation by Tobias
+# Grammarly checked
 msgid "INTRODUCTION_GLOWING"
 msgstr "Here is where a specialty of plants comes into play: They can re-emit light and in proper conditions shine! When light shines on leaves, they use majority of the light to run complex photochemical reactions of photosynthesis, but a small part of the absorbed light is reemitted. Something similar happens when your white \
         T-shirt shines purple in a disco's black light. When something shine in a different light color when illuminated, \
@@ -325,6 +346,7 @@ msgstr "Here is where a specialty of plants comes into play: They can re-emit li
 
 #: pages/method.py:23
 #: Explanation by Tobias
+# Grammarly checked
 msgid "PLANT_ARE_SHINING_RED"
 msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
         Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, \
@@ -332,6 +354,7 @@ msgstr "Now you might think: 'But plants are green, and I have never seen one fl
 
 #: pages/method.py:24
 #: Explanation by Tobias
+# Grammarly checked
 msgid "INTRODUCTION_EXPERIMENT"
 msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
         sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore \
@@ -339,6 +362,7 @@ msgstr "We, therefore, prepared a small experiment for you: Here, we covered a s
 
 #: pages/method.py:30
 #: Explanation by Tobias
+# Grammarly checked
 msgid "EXPLANATION_VIDEO"
 msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
         action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
@@ -356,6 +380,7 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 
 #: pages/method.py:33
 #: Explanation by Tobias
+# Grammarly checked
 msgid "EXPLANATION_MEASUREMENT_1"
 msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
         help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
@@ -364,6 +389,7 @@ msgstr "This experiment showed you the shine of plants and how amazingly they ca
 
 #: pages/method.py:34
 #: Explanation by Tobias
+# Grammarly checked
 msgid "INTRODUCTION_PHI"
 msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
         will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
@@ -380,7 +406,7 @@ msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 
 #: pages/method.py:38
 #: Explanation by Tobias
-
+# Grammarly checked
 msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
 msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. \
 In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
@@ -392,6 +418,7 @@ msgstr "Example Graph of a PAM measurement"
 
 #: pages/method.py:43
 #: pages/1 Messmethode.py:32
+# Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
 msgstr ""
 
@@ -402,16 +429,9 @@ msgstr "Saturating Pulses of light"
 
 #: pages/method.py:47
 #: Explanation by Tobias
+# Grammarly checked
 msgid "EXPLANATION_ATTEMPTS"
-msgstr "You need to know one more aspect of PAM, the saturating pulses. Our machine gives the plant a very intense light \
-        pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully \
-        converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence \
-        yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can \
-        tell apart changes in and outside of photosynthesis, for example, the plant's light protection. When you then \
-        also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and \
-        many other values. But how that is done goes much too far. Most important is that you understand that we compare \
-        what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change \
-        over time and conditions."
+msgstr ""
 
 #: pages/method.py:49
 #: pages/1 Messmethode.py:40
@@ -420,6 +440,7 @@ msgstr "## Visualization of the results"
 
 #: pages/method.py:50
 #: pages/1 Messmethode.py:42
+# Grammarly checked
 msgid "EXPLANATION_ILLUSTRATION_UNITS"
 msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in \
         response to the saturating pulse of light. Each peak is referred to as Fm', with the first one being measured \
@@ -427,6 +448,7 @@ msgstr "Fluorescence signal (y-axis) is plotted against time (x-axis). Visible p
 
 #: pages/method.py:51
 #: pages/1 Messmethode.py:44
+# Grammarly checked
 msgid "EXPLANATION_ILLUSTRATION"
 msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
 
@@ -437,13 +459,15 @@ msgstr "# Mathematical models"
 
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
+# Grammarly checked
 msgid "HEADLINE_MODEL"
 msgstr "# Mathematical models"
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXPLANATION_1"
-msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is especially useful in situations where traditional testing methods are too expensive and time-consuming. Language of **mathematics** enables us translation of real processes, situation, and problems into general statements using equations. This translation is not yet one to one and imposes a certain level of **simplification**. Therefore models are never the precise description including all levels of details, but a simplification created with  rigid methods, for the purpose of a specific study. The problem described using mathematical terms is then solved using mathematical methods, today strongly aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way the process of model developing is often not a linear process but rather an iterative cycle, as presented on the figure below."
+msgstr ""
 
 #: pages/model_explain.py:15
 
@@ -488,33 +512,34 @@ msgstr ""
 #: pages/model_explain.py:23
 #: pages/model.explain.py:23
 #: EINFÜHRUNG.py:60
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
-msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories, the one that are susceptible to the disease and can get sick at any moment (S), the one that recovered from the infection (R), and the currently infected ones (I). To model the transition between each cathegories we determine the rate of infection (v1) dependant on the number of S and I in the total population (N) and their rate of recovery (v2) solely dependant on the I (Equation 2). They also found out that the R have gained complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modelling**. To start, you should create a scheme of your problem, in this case the S will become I at a rate of v1 and the I will become the R at a rate of v2."
+msgstr ""
 
 #: pages/model_explain.py:37
 #: pages/model.explain.py:37
-
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
-msgstr " With this scheme, you have already successfully modelled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A very useful mathematical tool to depict the chnage of something depending on the change of another specific value, are the so-called Oridinary Differential Equation (ODE). If you have never seen what an ODE looks like, click the box Oridinary Differential Equations. Using differential equations you can describe the relationship between the time and change in the number of people in each of the cathegories, so overall three equations. This set of three equations will is called a system of ODE and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the \ac{ODE} system:"
+msgstr ""
 
 #: pages/model_explain.py:52
 #: pages/model.explain.py:52
-
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
-msgstr "To effectively solve each ODE, it is important to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (α= 2) and the recovery rate is ($\beta = 0.2$). With these values and starting populations of (S=900), (I = 100), (R = 0), and ($\\mathrm{N} = \\mathrm{S} + \\mathrm{I} + \\mathrm{R} = 1000$), we can solve our ODE system. The resulting graph shows that the population of Planet-X will eventually become completely immune."
+msgstr ""
 
 #: pages/model_explain.py:55
 #: pages/model.explain.py:55
-
+# Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
 msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
 
 #: pages\model_explain.py:61
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
 msgstr ""
 
 #: pages/model_explain.py:63
-
 msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
 msgstr "## Models of photosynthesis"
 
@@ -535,6 +560,7 @@ msgid "HEADLINE_E_PHOTOSYNTHESIS"
 msgstr ""
 
 #: pages/model_explain.py:92
+# Grammarly checked
 msgid "E_PHOTOSYNTHESIS_1"
 msgstr ""
 
@@ -547,10 +573,12 @@ msgid "HEADLINE_BELLASIO"
 msgstr ""
 
 #: pages/model_explain.py:107
+# Grammarly checked
 msgid "BELLASIO_1"
 msgstr ""
 
 #: pages/model_explain.py:109
+# Grammarly checked
 msgid "BELLASIO_2"
 msgstr ""
 
@@ -563,6 +591,7 @@ msgid "HEADLINE_C3"
 msgstr ""
 
 #: pages/model_explain.py:212
+# Grammarly checked
 msgid "C3_1"
 msgstr ""
 
@@ -571,6 +600,7 @@ msgid "HEADLINE_C4"
 msgstr ""
 
 #: pages/model_explain.py:215
+# Grammarly checked
 msgid "C4_1"
 msgstr ""
 
@@ -579,30 +609,22 @@ msgid "HEADLINE_CAM"
 msgstr ""
 
 #: pages/model_explain.py:218
+# Grammarly checked
 msgid "CAM_1"
 msgstr ""
 
 #: pages/model_explain.py:65
-#: Anna's explanation of the model
 msgid "HEADLINE_EXPERIMENTS"
 msgstr ""
 
 #: pages/model_explain.py:65
-#: Anna's explanation of the model
 msgid "HEADLINE_MODEL_CONSTRUCTION"
 msgstr "## Model construction"
 
 #: pages/model_explain.py:67
-#: Anna's explanation of the model
+#: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, \
-        ion channels and many more. Although each play an important role in the overall process, for the purpose of the \
-        light-memory study we aimed at maximal reduction of the model complexity. We have therefore focused solely on \
-        the pH regulated, non-photochemical processes associated with photosystem II and we included into the model only \
-        those processes that are either directly affected by, or are regulating the extent of NPQ. So instead of modelling \
-        the whole plant, or even the whole chloroplast, we applied a cycle of reduction (see Figure) based on a strict \
-        reductionist approach, and managed to represent the model as a system of only six ordinary differential equations! \
-        Each of the equations represents the dynamic rate of change in:"
+msgstr ""
 
 #: pages/model_explain.py:68
 #: Anna's explanation of the model
@@ -665,14 +687,12 @@ msgid "HEADLINE_IMPLEMENTATION"
 msgstr "### Implementation"
 
 #: pages/model_explain.py:119
-#: Anna's explanation of the model
+#: Grammarly checked
 msgid "IMPLEMENTATION_DESCRIPTION"
-msgstr "Das mathematische Modell der photosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
-        (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differentialgleichungen, Reaktionsraten, dem \
-        Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: \
-        [hier](www.github.com/QTB-HHU/npqmodel)."
+msgstr ""
 
 #: pages/model_explain.py:149
+# Grammarly checked
 msgid "SIR_IMPLEMENTATION_MANUAL_1"
 msgstr ""
 
@@ -689,14 +709,17 @@ msgid "SIR_IMPLEMENTATION_MODELBASE_2"
 msgstr ""
 
 #: pages/model_explain.py:181
+# Grammarly checked
 msgid "SIR_IMPLEMENTATION_MODELBASE_3"
 msgstr ""
 
 #: pages/model_explain.py:189
+# Grammarly checked
 msgid "SIR_IMPLEMENTATION_MODELBASE_4"
 msgstr ""
 
 #: pages/model_explain.py:210
+# Grammarly checked
 msgid "SIR_IMPLEMENTATION_MODELBASE_5"
 msgstr ""
 
@@ -717,62 +740,9 @@ msgid "HEADLINE_ANALYSE"
 msgstr "## The data analysis"
 
 #: pages/first_analysis.py:178
-#: pages/2 Daten-Analyse.py:25
-#: pages/Analyse.py:25
+# Grammarly checked
 msgid "INTRODUKTION"
-msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements \
-        with the model to estimate the influence of the abiotic influence factors."
-
-#: pages/first_analysis.py:182 pages/plant_memory.py:272
-msgid "TASK_1"
-msgstr "Task 1"
-
-#: pages/first_analysis.py:182
-
-msgid "TASK_ANALYSIS_1_EXPLANATION"
-msgstr "First of all, only adjust the slider with the light intensity. What do you notice?"
-
-#: pages/first_analysis.py:184 pages/plant_memory.py:275
-
-msgid "TASK_2"
-msgstr "Task 2"
-
-#: pages/first_analysis.py:185
-
-msgid "TASK_ANALYSIS_2_EXPLANATION"
-msgstr "Now also changes the sliders for the duration of the experiment and the number of pulses. Describes the course of the \
-        curve, which arises when you connect the peaks of the pulses."
-
-#: pages/first_analysis.py:186
-
-msgid "TASK_3"
-msgstr "Task 3"
-
-#: pages/first_analysis.py:187
-
-msgid "TASK_ANALYSIS_3_EXPLANATION"
-msgstr "Compares the curve of the pulse peaks with the curve outside the pulses."
-
-#: pages/first_analysis.py:188
-
-msgid "TASK_4"
-msgstr "Task 4"
-
-#: pages/first_analysis.py:189
-
-msgid "TASK_ANALYSIS_4_EXPLANATION"
-msgstr "Try to interpret the observations. What do the changes at different light intensities mean \
-        for the plant?"
-
-#: pages/first_analysis.py:190
-
-msgid "TASK_5"
-msgstr "Task 5"
-
-#: pages/first_analysis.py:191
-
-msgid "TASK_ANALYSIS_5_EXPLANATION"
-msgstr "What light intensity does the plant cope best with?"
+msgstr ""
 
 #: pages/first_analysis.py:193
 #: pages/Analyse.py:
@@ -780,8 +750,7 @@ msgid "HEADLINE_SLIDER"
 msgstr "##### Use of the sliders:"
 
 #: pages/first_analysis.py:194
-#: pages/2 Daten-Analyse.py:27
-#: pages/Analyse.py:27
+# Grammarly checked
 msgid "EXPLANATNION"
 msgstr "First change the sliders according to the test you want to simulate. Then start the calculation by clicking on the button. The calculated graph will be displayed. As soon as you change the sliders again, the graph disappears and you can load a new graph."
 
@@ -864,7 +833,7 @@ msgid "HEADLINE_BRAIN"
 msgstr "# The plant memory"
 
 #: pages/plant_memory.py:269
-#: pages/3 Pflanzengedächtnis.py:38
+# Grammarly checked
 msgid "INTRODUCTION_BRAIN"
 msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to play even more, click the **Expert** version on the left."
 
@@ -884,10 +853,12 @@ msgid "HEADLINE_CONCLUSION"
 msgstr "# Conclusion"
 
 #: pages/conclusion.py:12
+# Grammarly checked
 msgid "CONCLUSION_TEXT_ONE"
 msgstr ""
 
-#: pages/conclusion.py:18       
+#: pages/conclusion.py:18
+# Grammarly checked     
 msgid "CONCLUSION_TEXT_TWO"
 msgstr ""
 
@@ -1115,6 +1086,7 @@ msgid "MEASURING_LIGHT_FLUORESZENZ"
 msgstr ""
 
 #: pages/model.explain.py:58
+# Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
 msgstr ""
 
@@ -1132,30 +1104,37 @@ msgid "CONSTRUCTION_HEADER"
 msgstr ""
 
 #: pages/model_explain.py:
+# Grammarly checked
 msgid "CONSTRUCTION_1"
 msgstr ""
 
 #: pages/model_explain.py:249
+# Grammarly checked
 msgid "CONSTRUCTION_2"
 msgstr ""
 
 #: pages/model_explain.py:265
+# Grammarly checked
 msgid "CONSTRUCTION_3"
 msgstr ""
 
 #: pages/model_explain.py:272
+# Grammarly checked
 msgid "CONSTRUCTION_4"
 msgstr ""
 
 #: pages/model_explain.py:290
+# Grammarly checked
 msgid "CONSTRUCTION_5"
 msgstr ""
 
 #: pages/model_explain.py:308
+# Grammarly checked
 msgid "CONSTRUCTION_6"
 msgstr ""
 
 #: pages/model_explain.py:315
+# Grammarly checked
 msgid "CONSTRUCTION_7"
 msgstr ""
 
@@ -1168,14 +1147,17 @@ msgid "SIMULATION_1"
 msgstr ""
 
 #: pages/model_explain.py:326
+# Grammarly checked
 msgid "SIMULATION_2"
 msgstr ""
 
 #: pages/model_explain.py:326
+# Grammarly checked
 msgid "SIMULATION_3"
 msgstr ""
 
 #: pages/model_explain.py:356
+# Grammarly checked
 msgid "SIMULATION_4"
 msgstr ""
 
@@ -1184,10 +1166,12 @@ msgid "SIMULATION_FLOURESCENCE_HEADER"
 msgstr ""
 
 #: pages/model_explain.py:358
+# Grammarly checked
 msgid "SIMULATION_FLOURESCENCE_1"
 msgstr ""
 
 #: pages/model_explain.py:381
+# Grammarly checked
 msgid "SIMULATION_FLOURESCENCE_2"
 msgstr ""
 
@@ -1196,6 +1180,7 @@ msgid "SIMULATION_PHASES_HEADER"
 msgstr ""
 
 #: pages/model_explain.py:405
+# Grammarly checked
 msgid "SIMULATION_PHASES_1"
 msgstr ""
 
@@ -1204,6 +1189,7 @@ msgid "SIMULATION_PRETTY_HEADER"
 msgstr ""
 
 #: pages/model_explain.py:429
+# Grammarly checked
 msgid "SIMULATION_PRETTY_1"
 msgstr ""
 
