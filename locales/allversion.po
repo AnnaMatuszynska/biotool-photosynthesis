@@ -44,12 +44,12 @@ msgid "SIMPLE"
 advanced-en msgstr "Simple"
 advanced-de msgstr "Einfach"
 advanced-fr msgstr "Simple"
-advanced-pl msgstr "Simple"
+advanced-pl msgstr "Podstawowy"
 advanced-es msgstr "Simple"
 simple-en msgstr "Simple"
 simple-de msgstr "Einfach"
 simple-fr msgstr "Simple"
-simple-pl msgstr "Simple"
+simple-pl msgstr "Podstawowy"
 simple-es msgstr "Simple"
 
 
@@ -57,23 +57,23 @@ msgid "ADVANCED"
 advanced-en msgstr "Advanced"
 advanced-de msgstr "Fortgeschritten"
 advanced-fr msgstr "Advanced"
-advanced-pl msgstr "Advanced"
+advanced-pl msgstr "Zaawansowany"
 advanced-es msgstr "Advanced"
 simple-en msgstr "Advanced"
 simple-de msgstr "Fortgeschritten"
 simple-fr msgstr "Advanced"
-simple-pl msgstr "Advanced"
+simple-pl msgstr "Zaawansowany"
 simple-es msgstr "Advanced"
 
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
 advanced-en msgstr "Language"
-advanced-de msgstr ""
+advanced-de msgstr "Sprache"
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "Język"
 advanced-es msgstr ""
 simple-en msgstr "Language"
-simple-de msgstr ""
+simple-de msgstr "Sprache"
 simple-fr msgstr "Language"
 simple-pl msgstr "Język"
 simple-es msgstr "Language"
@@ -83,12 +83,12 @@ msgid "EXPANDER_ABOUT"
 advanced-en msgstr "About this Website"
 advanced-de msgstr "Über diese Webseite"
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "O naszej stronie"
 advanced-es msgstr ""
 simple-en msgstr "About this Website"
 simple-de msgstr "Über diese Webseite"
 simple-fr msgstr ""
-simple-pl msgstr ""
+simple-pl msgstr "O naszej stronie"
 simple-es msgstr ""
 
 #: This can be copied to add new text entries with translations
@@ -96,12 +96,12 @@ msgid "EXPLANATION_ABOUT"
 advanced-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
 advanced-de msgstr ""
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
 advanced-es msgstr ""
 simple-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
 simple-de msgstr ""
 simple-fr msgstr ""
-simple-pl msgstr ""
+simple-pl msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
 simple-es msgstr ""
 
 #: pages/3 Pflanzengedächtnis.py:97
@@ -109,12 +109,12 @@ msgid "START_BUTTOM"
 advanced-en msgstr "Start the tests"
 advanced-de msgstr "Starte den Versuche"
 advanced-fr msgstr "Start the tests"
-advanced-pl msgstr "Start the tests"
+advanced-pl msgstr "Rozpocznij testy"
 advanced-es msgstr "Start the tests"
 simple-en msgstr "Start the tests"
 simple-de msgstr "Starte den Versuche"
 simple-fr msgstr "Start the tests"
-simple-pl msgstr "Start the tests"
+simple-pl msgstr "Rozpocznij testy"
 simple-es msgstr "Start the tests"
 
 #: pages/1 Messmethode.py:49
@@ -122,12 +122,12 @@ msgid "LITERATURE"
 advanced-en msgstr "Literature"
 advanced-de msgstr "Literatur"
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "Literatura"
 advanced-es msgstr ""
 simple-en msgstr "Literature"
 simple-de msgstr "Literatur"
 simple-fr msgstr "Literature"
-simple-pl msgstr "Literature"
+simple-pl msgstr "Literatura"
 simple-es msgstr "Literature"
 
 #: pages/1 Messmethode.py:50
@@ -136,14 +136,13 @@ advanced-en msgstr "The following literature provides more in-depth information 
 advanced-de msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
 advanced-fr msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the \
            opportunity to familiarize oneself with the basics."
-advanced-pl msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the \
-           opportunity to familiarize oneself with the basics."
+advanced-pl msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
 advanced-es msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the \
            opportunity to familiarize oneself with the basics."
 simple-en msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
 simple-de msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
 simple-fr msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
-simple-pl msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
+simple-pl msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
 simple-es msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
 
 
@@ -151,12 +150,12 @@ msgid "CAPTION_PAM"
 advanced-en msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
 advanced-de msgstr ""
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 advanced-es msgstr ""
 simple-en msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
 simple-de msgstr ""
 simple-fr msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
-simple-pl msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
+simple-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 simple-es msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
 
 #: EINFÜHRUNG.py:36
@@ -191,7 +190,7 @@ msgid "HEADLINE_MAIN"
 advanced-en msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
 advanced-de msgstr "# Herzlich Willkommen!"
 advanced-fr msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model."
-advanced-pl msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model."
+advanced-pl msgstr "# Fotosynteza *in silico*: interaktywny panel do badania fotosyntezy przy użyciu modelu obliczeniowego i symulacji komputerowych."
 advanced-es msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model."
 simple-en msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
 simple-de msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung der Photosynthese anhand eines Computermodells."
@@ -219,13 +218,7 @@ advanced-fr msgstr "This is a Teaching Tool in Biology: an ongoing project launc
         photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at \
         both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
         the left side Version *Simple* or *Expert*. "
-advanced-pl msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszyńska at the \
-        RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
-        students. We want to show how computational modeling supports the current research in increasing our understanding \
-        how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, \
-        photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at \
-        both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
-        the left side Version *Simple* or *Expert*. "
+advanced-pl msgstr "To jest narzędzie do nauczania biologii, projekt uruchomiony przez **Computational Life Science Lab** na Politechnice w Akwizgranie, w Niemczech. Naszym celem jest dostarczenie narzędzia dydaktycznego dostosowanego do potrzeb uczniów XXI wieku. Naszym celem jest pokazać w jaki sposób modelowanie komputerowe wspiera obecne badania naukowe zwiększając nasz stopień zrozumienia otaczającego nas świata. Wybraliśmy fotosyntezę jako proces, aby to zademonstrować. W końcu fotosynteza jest prawdopodobnie najważniejszym procesem na Ziemi! Proponujemy, żeby Twoja przygoda z tą stroną zaczęła się od obejrzenia krótkiego filmiku o fotosyntezie."
 advanced-es msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszyńska at the \
         RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
         students. We want to show how computational modeling supports the current research in increasing our understanding \
@@ -263,7 +256,7 @@ msgid "HEADLINE_USAGE"
 advanced-en msgstr "## How to use this website"
 advanced-de msgstr "## Nutzung dieser Website"
 advanced-fr msgstr "## How to use this website"
-advanced-pl msgstr "## How to use this website"
+advanced-pl msgstr "## Jak używać tej strony?"
 advanced-es msgstr "## How to use this website"
 simple-en msgstr "## How to use this website"
 simple-de msgstr "## Nutzung dieser Website"
@@ -320,12 +313,12 @@ msgid "DROP_BOX_INTRO"
 advanced-en msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 advanced-de msgstr ""
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "Jeśli chcesz poznać różnicę między *in vitro*, *in vivo* i *in silico*, otwórz poniższe pole rozwijane."
 advanced-es msgstr ""
 simple-en msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 simple-de msgstr ""
 simple-fr msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
-simple-pl msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
+simple-pl msgstr "Jeśli chcesz poznać różnicę między *in vitro*, *in vivo* i *in silico*, otwórz poniższe pole rozwijane."
 simple-es msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
 
 #: Start.py:23
@@ -334,12 +327,12 @@ msgid "EXPANDER_IN"
 advanced-en msgstr "Differences between _in vitro_, _in vivo_ and _in silico_"
 advanced-de msgstr ""
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "Różnica między *in vitro*, *in vivo* i *in silico*"
 advanced-es msgstr ""
 simple-en msgstr "Differences between _in vitro_, _in vivo_ and _in silico_"
 simple-de msgstr ""
 simple-fr msgstr "Differences between in vitro, in vivo and in silico"
-simple-pl msgstr "Differences between in vitro, in vivo and in silico"
+simple-pl msgstr "Różnica między *in vitro*, *in vivo* i *in silico*"
 simple-es msgstr "Differences between in vitro, in vivo and in silico"
 
 #: Start.py:24
@@ -697,6 +690,20 @@ simple-de msgstr "Photosynthese Ablauf"
 simple-fr msgstr "Photosynthesis process"
 simple-pl msgstr "Photosynthesis process"
 simple-es msgstr "Photosynthesis process"
+
+#: pages/photosynthesis.py:47
+#: PHOTOSYNTHESIS.py:39
+msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
+advanced-en msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO$_2$ and sugar production."
+advanced-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO$_2$ und die Zuckerproduktion verwendet wird."
+advanced-fr msgstr ""
+advanced-pl msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO$_2$ i produkcji cukru."
+advanced-es msgstr ""
+simple-en msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO$_2$ and sugar production."
+simple-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO$_2$ und die Zuckerproduktion verwendet wird."
+simple-fr msgstr ""
+simple-pl msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO$_2$ i produkcji cukru."
+simple-es msgstr ""
 
 #: pages/photosynthesis.py:47
 #: EINFÜHRUNG.py:39
@@ -3145,12 +3152,12 @@ msgid "EXPANDER_MATHEMATICAL_MODELLING"
 advanced-en msgstr ""
 advanced-de msgstr "Mathematische Modelle in der Biologie"
 advanced-fr msgstr "Mathematical models in biology"
-advanced-pl msgstr "Mathematical models in biology"
+advanced-pl msgstr "Modele matematyczne w biologii"
 advanced-es msgstr "Mathematical models in biology"
 simple-en msgstr ""
 simple-de msgstr "Mathematische Modelle in der Biologie"
 simple-fr msgstr ""
-simple-pl msgstr ""
+simple-pl msgstr "Modele matematyczne w biologii"
 simple-es msgstr ""
 
 #: EINFÜHRUNG.py:60
@@ -3170,13 +3177,7 @@ advanced-fr msgstr "Mathematical modeling, i.e. the development of mathematical 
         the real situation, i.e. the problem, and the solution can then be evaluated. If the solution \
         is not sufficient, the mathematical problem must be revised. The eventual successful mathematical \
         description of the problem is called a mathematical model."
-advanced-pl msgstr "Mathematical modeling, i.e. the development of mathematical models, is used in many areas of \
-        research and industry. In particular, whenever problems need to be solved that would be too costly to solve using \
-        standard test procedures would cause too high costs. The problem is described mathematically and \
-        Then the mathematical problem is solved with mathematical methods. The result must then be applied to \
-        the real situation, i.e. the problem, and the solution can then be evaluated. If the solution \
-        is not sufficient, the mathematical problem must be revised. The eventual successful mathematical \
-        description of the problem is called a mathematical model."
+advanced-pl msgstr "Modelowanie matematyczne, w tym tworzenie nowych modeli matematycznych, jest wykorzystywane w wielu dziedzinach badań i przemysłu. W szczególności, gdy trzeba rozwiązać problemy, których rozwiązanie przy użyciu standardowych procedur testowych byłoby zbyt kosztowne. Problem jest opisywany matematycznie, a jest rozwiązywany przy u←yciu metod matematycznych i obliczeniowych. Wynik należy następnie zastosować do rzeczywistej sytuacji, tj. problemu, a następnie można ocenić rozwiązanie. Jeśli rozwiązanie nie jest wystarczające, tj. nie spełnia naszych kryteriów, problem matematyczny musi zostać poprawiony. Ostatecznie udany matematyczny opis problemu nazywany jest modelem matematycznym."
 advanced-es msgstr "Mathematical modeling, i.e. the development of mathematical models, is used in many areas of \
         research and industry. In particular, whenever problems need to be solved that would be too costly to solve using \
         standard test procedures would cause too high costs. The problem is described mathematically and \
@@ -3193,7 +3194,7 @@ simple-de msgstr "Mathematische Modellierung, also das entwickeln mathematischer
         nicht ausreichend, muss das mathematische Problem überarbeitet werden. Das schlussendlich erfolgreiche mathematische \
         Beschreibung des Problems wird als mathematisches Modell bezeichnet."
 simple-fr msgstr ""
-simple-pl msgstr ""
+simple-pl msgstr "Modelowanie matematyczne, w tym tworzenie nowych modeli matematycznych, jest wykorzystywane w wielu dziedzinach badań i przemysłu. W szczególności, gdy trzeba rozwiązać problemy, których rozwiązanie przy użyciu standardowych procedur testowych byłoby zbyt kosztowne. Problem jest opisywany matematycznie, a jest rozwiązywany przy u←yciu metod matematycznych i obliczeniowych. Wynik należy następnie zastosować do rzeczywistej sytuacji, tj. problemu, a następnie można ocenić rozwiązanie. Jeśli rozwiązanie nie jest wystarczające, tj. nie spełnia naszych kryteriów, problem matematyczny musi zostać poprawiony. Ostatecznie udany matematyczny opis problemu nazywany jest modelem matematycznym."
 simple-es msgstr ""
 
 #: EINFÜHRUNG.py:60
@@ -3224,12 +3225,12 @@ msgid "EXPANDER_DIFFERENTIAL_EQUATIONS"
 advanced-en msgstr ""
 advanced-de msgstr "Differentialgleichungen"
 advanced-fr msgstr "Differential equations"
-advanced-pl msgstr "Differential equations"
+advanced-pl msgstr "Równania różniczkowe"
 advanced-es msgstr "Differential equations"
 simple-en msgstr ""
 simple-de msgstr "Differentialgleichungen"
 simple-fr msgstr ""
-simple-pl msgstr ""
+simple-pl msgstr "Równania różniczkowe"
 simple-es msgstr ""
 
 #: EINFÜHRUNG.py:60

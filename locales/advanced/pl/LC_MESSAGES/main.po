@@ -21,40 +21,39 @@ msgstr ""
 
 # SIDEBAR
 msgid "SIMPLE"
-msgstr "Simple"
+msgstr "Podstawowy"
 
 
 msgid "ADVANCED"
-msgstr "Advanced"
+msgstr "Zaawansowany"
 
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
-msgstr ""
+msgstr "Język"
 
 #: This can be copied to add new text entries with translations
 msgid "EXPANDER_ABOUT"
-msgstr ""
+msgstr "O naszej stronie"
 
 #: This can be copied to add new text entries with translations
 msgid "EXPLANATION_ABOUT"
-msgstr ""
+msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
 
 #: pages/3 Pflanzengedächtnis.py:97
 msgid "START_BUTTOM"
-msgstr "Start the tests"
+msgstr "Rozpocznij testy"
 
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
-msgstr ""
+msgstr "Literatura"
 
 #: pages/1 Messmethode.py:50
 msgid "LITERATURE_DECLARATION"
-msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the \
-           opportunity to familiarize oneself with the basics."
+msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
 
 
 msgid "CAPTION_PAM"
-msgstr ""
+msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 
 #: EINFÜHRUNG.py:36
 msgid "HEADLINE_PRODUCENTEN"
@@ -67,25 +66,19 @@ msgstr ""
 #: Start.py:10
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
-msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model."
+msgstr "# Fotosynteza *in silico*: interaktywny panel do badania fotosyntezy przy użyciu modelu obliczeniowego i symulacji komputerowych."
 
 #: Start.py:11
 #: Intro by Anna
 # Grammarly checked
 msgid "INTRO"
-msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszyńska at the \
-        RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
-        students. We want to show how computational modeling supports the current research in increasing our understanding \
-        how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, \
-        photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at \
-        both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
-        the left side Version *Simple* or *Expert*. "
+msgstr "To jest narzędzie do nauczania biologii, projekt uruchomiony przez **Computational Life Science Lab** na Politechnice w Akwizgranie, w Niemczech. Naszym celem jest dostarczenie narzędzia dydaktycznego dostosowanego do potrzeb uczniów XXI wieku. Naszym celem jest pokazać w jaki sposób modelowanie komputerowe wspiera obecne badania naukowe zwiększając nasz stopień zrozumienia otaczającego nas świata. Wybraliśmy fotosyntezę jako proces, aby to zademonstrować. W końcu fotosynteza jest prawdopodobnie najważniejszym procesem na Ziemi! Proponujemy, żeby Twoja przygoda z tą stroną zaczęła się od obejrzenia krótkiego filmiku o fotosyntezie."
 
 #: Start.py:15
 #: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "HEADLINE_USAGE"
-msgstr "## How to use this website"
+msgstr "## Jak używać tej strony?"
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
@@ -102,12 +95,12 @@ msgstr ""
 #: Start.py:18
 #: EINFÜHRUNG.py:28
 msgid "DROP_BOX_INTRO"
-msgstr ""
+msgstr "Jeśli chcesz poznać różnicę między *in vitro*, *in vivo* i *in silico*, otwórz poniższe pole rozwijane."
 
 #: Start.py:23
 #: EINFÜHRUNG.py:28
 msgid "EXPANDER_IN"
-msgstr ""
+msgstr "Różnica między *in vitro*, *in vivo* i *in silico*"
 
 #: Start.py:24
 #: EINFÜHRUNG.py:28
@@ -217,6 +210,11 @@ msgstr ""
 #: EINFÜHRUNG.py:43
 msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthesis process"
+
+#: pages/photosynthesis.py:47
+#: PHOTOSYNTHESIS.py:39
+msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
+msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO$_2$ i produkcji cukru."
 
 #: pages/photosynthesis.py:47
 #: EINFÜHRUNG.py:39
@@ -973,17 +971,11 @@ msgstr "The NPQ can be attributed to the fact that violaxanthin epoxidizes to ze
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_MATHEMATICAL_MODELLING"
-msgstr "Mathematical models in biology"
+msgstr "Modele matematyczne w biologii"
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"
-msgstr "Mathematical modeling, i.e. the development of mathematical models, is used in many areas of \
-        research and industry. In particular, whenever problems need to be solved that would be too costly to solve using \
-        standard test procedures would cause too high costs. The problem is described mathematically and \
-        Then the mathematical problem is solved with mathematical methods. The result must then be applied to \
-        the real situation, i.e. the problem, and the solution can then be evaluated. If the solution \
-        is not sufficient, the mathematical problem must be revised. The eventual successful mathematical \
-        description of the problem is called a mathematical model."
+msgstr "Modelowanie matematyczne, w tym tworzenie nowych modeli matematycznych, jest wykorzystywane w wielu dziedzinach badań i przemysłu. W szczególności, gdy trzeba rozwiązać problemy, których rozwiązanie przy użyciu standardowych procedur testowych byłoby zbyt kosztowne. Problem jest opisywany matematycznie, a jest rozwiązywany przy u←yciu metod matematycznych i obliczeniowych. Wynik należy następnie zastosować do rzeczywistej sytuacji, tj. problemu, a następnie można ocenić rozwiązanie. Jeśli rozwiązanie nie jest wystarczające, tj. nie spełnia naszych kryteriów, problem matematyczny musi zostać poprawiony. Ostatecznie udany matematyczny opis problemu nazywany jest modelem matematycznym."
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"
@@ -993,7 +985,7 @@ msgstr "In biology, mathematical models are often used to describe metabolic pat
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_DIFFERENTIAL_EQUATIONS"
-msgstr "Differential equations"
+msgstr "Równania różniczkowe"
 
 #: EINFÜHRUNG.py:60
 msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"

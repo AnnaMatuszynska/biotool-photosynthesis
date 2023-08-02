@@ -29,7 +29,7 @@ msgstr "Fortgeschritten"
 
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
-msgstr ""
+msgstr "Sprache"
 
 #: This can be copied to add new text entries with translations
 msgid "EXPANDER_ABOUT"
@@ -217,6 +217,11 @@ msgstr ""
 #: EINFÜHRUNG.py:43
 msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthese Ablauf"
+
+#: pages/photosynthesis.py:47
+#: PHOTOSYNTHESIS.py:39
+msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
+msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO$_2$ und die Zuckerproduktion verwendet wird."
 
 #: pages/photosynthesis.py:47
 #: EINFÜHRUNG.py:39

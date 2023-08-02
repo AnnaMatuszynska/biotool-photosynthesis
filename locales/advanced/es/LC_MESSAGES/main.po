@@ -219,6 +219,11 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthesis process"
 
 #: pages/photosynthesis.py:47
+#: PHOTOSYNTHESIS.py:39
+msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
+msgstr ""
+
+#: pages/photosynthesis.py:47
 #: EINFÜHRUNG.py:39
 msgid "HEADLINE_NUTRIENTS"
 msgstr ""

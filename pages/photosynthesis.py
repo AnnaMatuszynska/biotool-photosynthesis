@@ -42,6 +42,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("HEADLINE_PHOTOSYNTHESIS_LOCATION"))
     st.markdown(text("PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
+    include_image("pictures/phot_place_upper.PNG", 0.6, text("CAPTION_FOTOSYNTHESE_LEAF_ZOOM"), True)
 
     if language == "German":
         include_image("pictures/Fotosynthese-Apparat.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
