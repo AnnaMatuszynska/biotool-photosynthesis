@@ -797,15 +797,10 @@ msgstr "***Tipp 2:*** *Durch einen Klick auf das Stopp oben rechts, neben dem La
         jederzeit abgebrochen werden.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
-#: pages/2 Daten-Analyse.py:48
-#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-msgstr "Lichtintensität in μmol m⁻² s⁻¹"
+msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
-#: pages/2 Daten-Analyse.py:55
-#: pages/3 Pflanzengedächtnis.py:53
-#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 msgstr "Versuchsdauer in Minuten"
 
@@ -813,12 +808,18 @@ msgstr "Versuchsdauer in Minuten"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
+msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
 
 #: pages/first_analysis.py:222
-#: pages/Analyse.py:67
-#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
+msgstr ""
+
+#: pages/first_analysis.py:168
+msgid "SLIDER_DARKLENGTH"
+msgstr ""
+
+#: pages/first_analysis.py:181
+msgid "SLIDER_SATURATE"
 msgstr ""
 
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
@@ -844,18 +845,26 @@ msgstr "Gedächtnisphase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXSIS_TIME"
+msgid "AXIS_TIME_MIN"
 msgstr "Zeit [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "TIME"
+msgid "AXIS_TIME_S"
 msgstr "Zeit [s]"
 
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
 msgstr "Fluoreszenz [F´ₘ /Fₘ]"
+
+#: pages/first_analysis.py:217
+msgid "AXIS_NPQ"
+msgstr ""
+
+#: pages/first_analysis.py:230
+msgid "AXIS_PHIPSII"
+msgstr ""
 
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36

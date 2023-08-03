@@ -775,15 +775,10 @@ msgid "TIPP2"
 msgstr "***Tip 2:*** *By clicking the Stop button in the upper right corner you can cancel the calculation process.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
-#: pages/2 Daten-Analyse.py:48
-#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-msgstr "Light intensity in μmol m⁻² s⁻¹"
+msgstr ""
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
-#: pages/2 Daten-Analyse.py:55
-#: pages/3 Pflanzengedächtnis.py:53
-#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 msgstr "Dark phase in minutes"
 
@@ -791,13 +786,19 @@ msgstr "Dark phase in minutes"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-msgstr "Saturation pulses in the selected intervals in seconds"
+msgstr ""
 
 #: pages/first_analysis.py:222
-#: pages/Analyse.py:67
-#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
 msgstr "Conversion rate to Zeaxanthin in ± percent of default"
+
+#: pages/first_analysis.py:168
+msgid "SLIDER_DARKLENGTH"
+msgstr ""
+
+#: pages/first_analysis.py:181
+msgid "SLIDER_SATURATE"
+msgstr ""
 
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
 #: pages/2 Daten-Analyse.py:83
@@ -822,17 +823,25 @@ msgstr "Memory phase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXSIS_TIME"
+msgid "AXIS_TIME_MIN"
 msgstr "Time [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "TIME"
-msgstr "Time [min]"
+msgid "AXIS_TIME_S"
+msgstr ""
 
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
+msgstr ""
+
+#: pages/first_analysis.py:217
+msgid "AXIS_NPQ"
+msgstr ""
+
+#: pages/first_analysis.py:230
+msgid "AXIS_PHIPSII"
 msgstr ""
 
 #: pages/plant_memory.py:262
