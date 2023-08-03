@@ -29,7 +29,7 @@ msgstr "Advanced"
 
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
-msgstr ""
+msgstr "Langue"
 
 #: This can be copied to add new text entries with translations
 msgid "EXPANDER_ABOUT"

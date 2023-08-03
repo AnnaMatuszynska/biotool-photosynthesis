@@ -208,6 +208,11 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthesis process"
 
 #: pages/photosynthesis.py:47
+#: PHOTOSYNTHESIS.py:39
+msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
+msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO$_2$ and sugar production."
+
+#: pages/photosynthesis.py:47
 #: EINFÜHRUNG.py:39
 msgid "HEADLINE_NUTRIENTS"
 msgstr "#### Nutrient intake"
