@@ -619,7 +619,11 @@ msgstr "## Konstrukcja modelu"
 #: pages/model_explain.py:67
 #: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION_1"
-msgstr ""
+msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: Białka, enzymy, nośniki elektronów, \
+        pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa ważną rolę w całym procesie, \
+        dążyliśmy do maksymalnego zmniejszenia złożoności naszego modelu, który został stworzony w celu badania wpływu intensywnego światła na fotosyntezę. Skupiliśmy się więc wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II \
+        i uwzględniliśmy w modelu tylko te procesy, na które NPQ ma bezpośredni wpływ lub \
+        regulują zakres NPQ."
 
 #: pages/model_explain.py:67
 #: 

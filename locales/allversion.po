@@ -2026,7 +2026,7 @@ advanced-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreich
         mit dem Fotosystem II konzentriert und nur die Prozesse in das Modell aufgenommen, die entweder direkt von der NPQ \
         betroffen sind oder das Ausmaß der NPQ regulieren. "
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: białka, enzymy, nośniki elektronów, pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa istotną rolę w całym procesie, naszym celem było maksymalne zmniejszenie złożoności modelu do badania pamięci światła. Dlatego skupiliśmy się wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II. Uwzględniliśmy tylko te procesy, które bezpośrednio wpływają lub regulują zakres NPQ, jak pokazano na poniższym schemacie."
 advanced-es msgstr ""
 simple-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below."
 simple-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, Elektronenträger, \
@@ -2036,7 +2036,11 @@ simple-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche 
         konzentriert und nur die Prozesse in das Modell aufgenommen, die entweder direkt von der NPQ betroffen sind oder \
         das Ausmaß der NPQ regulieren."
 simple-fr msgstr ""
-simple-pl msgstr ""
+simple-pl msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: Białka, enzymy, nośniki elektronów, \
+        pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa ważną rolę w całym procesie, \
+        dążyliśmy do maksymalnego zmniejszenia złożoności naszego modelu, który został stworzony w celu badania wpływu intensywnego światła na fotosyntezę. Skupiliśmy się więc wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II \
+        i uwzględniliśmy w modelu tylko te procesy, na które NPQ ma bezpośredni wpływ lub \
+        regulują zakres NPQ."
 simple-es msgstr ""
 
 #: pages/model_explain.py:67
