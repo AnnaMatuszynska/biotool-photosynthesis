@@ -26,7 +26,7 @@ def make_sidebar() -> tuple[str, str]:
     )
 
     # language selectbox
-    languages = ["English", "German", "Polish", "French", "Spanish"]
+    languages = ["English", "German", "Polish"] #, "French", "Spanish"]
     language_to_idx = dict(zip(languages, range(len(languages))))
     language = cast(
         str,
