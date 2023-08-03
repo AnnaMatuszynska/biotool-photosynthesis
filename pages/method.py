@@ -33,6 +33,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("INTRODUCTION_PHI"), unsafe_allow_html=True)
         st.video("https://youtu.be/EwXkOlMBl3o")
 
+
+    st.markdown(text("HEADLINE_PAM_MEASUREMENT"), unsafe_allow_html=True)
+    st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
+
     with st.expander(text("MEASURING_LIGHT_FLUORESCENCE"), expanded=True):
         st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
         st.image(
@@ -40,11 +44,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             caption=text("CAPTION_ABB2"),
         )
 
-    st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
-
-    if version == "Advanced":
-        with st.expander(text("SATURATING_PULSES")):
-            st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
+    # if version == "Advanced":
+    #     with st.expander(text("SATURATING_PULSES")):
+    #         st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
 
     st.markdown(text("HEADLINE_ILLUSTRATION"), unsafe_allow_html=True)
     st.markdown(text("EXPLANATION_ILLUSTRATION_UNITS"), unsafe_allow_html=True)

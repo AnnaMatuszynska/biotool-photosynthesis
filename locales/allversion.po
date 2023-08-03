@@ -925,7 +925,7 @@ simple-es msgstr ""
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_MEASUREMENT"
-advanced-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
+advanced-en msgstr "To quantitatively measure the photosynthetic acitivity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are difficult to perform in the field, fluorescence measurements can be performed on plants of various sizes and in various environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the european space agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
 advanced-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
         mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
         Zahlen und das Messen von Dingen. Deshalb haben Forscher viele Methoden erfunden, um zu bestimmen, wie viel \
@@ -997,22 +997,22 @@ simple-es msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in 
 #: pages/method.py:20
 #: Explanation by Tobias
 msgid "GROWING_PLANTS_1"
-advanced-en msgstr "Plant shine!"
+advanced-en msgstr "Chlorophyll fluorescence"
 advanced-de msgstr "Leuchtende Pflanzen?"
 advanced-fr msgstr "Glowing Plants?"
 advanced-pl msgstr "Glowing Plants?"
 advanced-es msgstr "Glowing Plants?"
-simple-en msgstr "Plant shine!"
+simple-en msgstr "Plants shine!"
 simple-de msgstr "Leuchtende Pflanzen?"
-simple-fr msgstr "Plant shine!"
-simple-pl msgstr "Plant shine!"
-simple-es msgstr "Plant shine!"
+simple-fr msgstr "Plants shine!"
+simple-pl msgstr "Plants shine!"
+simple-es msgstr "Plants shine!"
 
 #: pages/method.py:22
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_GLOWING"
-advanced-en msgstr "Here is where a specialty of plants comes into play: They can reemit light and, in proper conditions, shine! When light shines on leaves, they use most of the light to run complex photochemical reactions of photosynthesis. Still, a small part of the absorbed light is reemitted. Something similar happens when your white T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, this is called 'fluorescence'. And the plant's fluorescence shine is red."
+advanced-en msgstr "Fluorescence measurements of plants are based on the properties of excited chlorophyll. While a significant fraction of light energy is used for photochemistry, excitations can also be dissipated as heat or fluorescence in the red wavelength spectrum."
 advanced-de msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchten! Wenn Licht auf sie fällt, betreiben \
         sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
         passiert, wenn dein weißes T-Shirt im Schwarzlicht einer Disco lila leuchtet. Wenn etwas bei Beleuchtung in \
@@ -1048,7 +1048,7 @@ simple-es msgstr "Here is where a specialty of plants comes into play: They can 
 #: Explanation by Tobias
 # Grammarly checked
 msgid "PLANT_ARE_SHINING_RED"
-advanced-en msgstr "You might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. Plants don't absorb green light but reflect it, which we see as their primary color. Their red shine, however, is much fainter than that, and with stronger light coming into our eyes from all directions, we can't see it."
+advanced-en msgstr "Stray environmental light, especially the green fraction reflected by the leaf, usually masks the fluorescence from observation.  Therefore, one way to overcome this limitation is by inducing strong fluorescence and reducing the stray light."
 advanced-de msgstr "Jetzt werden Sie vielleicht denken: 'Aber Pflanzen sind doch grün, und ich habe noch nie eine fluoreszierende \
         Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren \
         es, was wir als ihre Grundfarbe sehen. Ihr rotes Leuchten ist jedoch viel schwächer, und da aus allen Richtungen \
@@ -1081,7 +1081,7 @@ simple-es msgstr "Now you might think: 'But plants are green, and I have never s
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_EXPERIMENT"
-advanced-en msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker with the RWTH letters and will now shine an intense light on it. The camera's red filter helps us ignore distracting light and focus on the red fluorescence. Now watch what happens:"
+advanced-en msgstr "In the following example, we used a powerful UV light source for chlorophyll excitation and covered the camera with a red-pass filter to limit light detection to the fluorescence range. We, also, initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
 advanced-de msgstr "Deshalb haben wir ein kleines Experiment für Sie vorbereitet: Hier haben wir einen kleinen Teil des Blattes \
         einer Pflanze mit einem Aufkleber abgedeckt und werden ihn nun mit starkem Licht bestrahlen. Der Rotfilter der \
         Kamera hilft uns, ablenkendes Licht zu ignorieren und uns auf die rote Fluoreszenz zu konzentrieren. Beobachten \
@@ -1114,7 +1114,7 @@ simple-es msgstr "We, therefore, prepared a small experiment for you: Here, we c
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_VIDEO"
-advanced-en msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals acting as 'sunscreen' within the cells. After a few seconds, these cells were protected and received less light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to it, vanishing the picture on the leaf."
+advanced-en msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. Upon removal of the sticker, however, the covered tissue without induced light protection received intense illumination, producing a strong fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualises both chlorophyll fluorescence and the leaf adaption to light."
 advanced-de msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben gerade \
         die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre \
         Umgebung anpassen. Auf die Teile des Blattes, die nicht von dem Aufkleber bedeckt sind, fällt sehr viel Licht. \
@@ -1201,7 +1201,7 @@ simple-es msgstr "Measuring Photosynthesis with Fluorescence"
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_MEASUREMENT_1"
-advanced-en msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the reemitted light signal."
+advanced-en msgstr "The above experiment also visualised the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centres where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
 advanced-de msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
         können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn Sie sich dafür interessieren, wie das \
@@ -1242,7 +1242,7 @@ simple-es msgstr "This experiment showed you the shine of plants and how amazing
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_PHI"
-advanced-en msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you will hear about this 'PAM' later). With some clever maths behind it, they can then calculate many things we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the Greek letter 'Psi'; you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant does photosynthesis more efficiently."
+advanced-en msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalised to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). By relating measurements within a PAM protocol and observing the fluorescence dynamics, photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified."
 advanced-de msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflanzen als auch, wie erstaunlich sie sich an etwas so \
         Einfaches wie Licht anpassen können. Aber was hat das mit der Prüfung der Fotosynthese zu tun? Eigentlich eine \
         ganze Menge. Denn nicht nur der 'Sonnenschutz' beeinflusst die Blattfluoreszenz, sondern auch viele andere \
@@ -1322,7 +1322,7 @@ simple-es msgstr "Basic principles of measuring chlorophyll fluorescence with PA
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
-advanced-en msgstr "In this one figure, the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel, you see the results of the PAM experiments. Take a good look because, in a few minutes, you will produce similar results not with the help of a fluorometer but with your computer! So, what do we see in this graph? It results from a unique light protocol, where a dark-adapted plant is exposed to very weak actinic light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. We can use these fluorescence features to calculate the values quantifying photosynthesis, e.g., the amount of NPQ. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most crucial part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This means that the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the light that we shine on the plants. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. It took us a long time to summarize everything on one figure only, and this figure originates from our previous work (Nies et al. 2021)."
+advanced-en msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualises the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behaviour of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. This summary figure is reproduced from Nies et al. (2021)."
 advanced-de msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
         diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
         für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
@@ -1368,26 +1368,41 @@ simple-es msgstr "Example Graph of a PAM measurement"
 #: pages/method.py:43
 #: pages/1 Messmethode.py:32
 # Grammarly checked
+msgid "HEADLINE_PAM_MEASUREMENT"
+advanced-en msgstr "### PAM Experiments"
+advanced-de msgstr "### PAM Experimente"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "### PAM Experiments"
+simple-de msgstr "### PAM Experimente"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/method.py:43
+#: pages/1 Messmethode.py:32
+# Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
-advanced-en msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
-advanced-de msgstr "###### Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
+advanced-en msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For more a in-depth overview, please consider the literature at the bottom of the page."
+advanced-de msgstr "Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
         Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
         'PAM'. Aus dem Namen können Sie schon ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der \
         Lichtblitze 'modulieren' (steuern)."
-advanced-fr msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
+advanced-fr msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
         for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
         for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
         (intensity) of light flashes."
-advanced-pl msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
+advanced-pl msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
         for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
         for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
         (intensity) of light flashes."
-advanced-es msgstr "###### Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
+advanced-es msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
         for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
         for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
         (intensity) of light flashes."
 simple-en msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
-simple-de msgstr "###### Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
+simple-de msgstr "Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
         Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
         'PAM'. Aus dem Namen können Sie schon ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der \
         Lichtblitze 'modulieren' (steuern)."
