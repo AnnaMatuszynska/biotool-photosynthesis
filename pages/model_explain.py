@@ -9,6 +9,8 @@ from utils import (
     include_image,
     include_ytvideo,
     make_prev_next_button,
+    resetting_click_detector_setup,
+    markdown_click
 )
 
 
@@ -75,7 +77,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         )
 
         if version == "Simple":
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"))
+            markdown_click("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
 
         if version == "Advanced":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
@@ -176,7 +178,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     with tab1:
         st.markdown(text("HEADLINE_FVCB"))
 
-        st.markdown(text("FVCB_1"), unsafe_allow_html=True)
+        markdown_click("FVCB_1",text)
 
         if version == "Advanced":
             st.latex(
@@ -197,7 +199,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     with tab2:
         st.markdown(text("HEADLINE_E_PHOTOSYNTHESIS"))
 
-        st.markdown(text("E_PHOTOSYNTHESIS_1"), unsafe_allow_html=True)
+        markdown_click("E_PHOTOSYNTHESIS_1", text)
 
         if version == "Advanced":
             st.latex(
@@ -212,7 +214,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     with tab3:
         st.markdown(text("HEADLINE_BELLASIO"))
 
-        st.markdown(text("BELLASIO_1"), unsafe_allow_html=True)
+        markdown_click("BELLASIO_1", text)
 
         if version == "Advanced":
             st.latex(
@@ -270,6 +272,7 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "Simple")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
+    resetting_click_detector_setup()
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("measuring method", "experiments in silico")

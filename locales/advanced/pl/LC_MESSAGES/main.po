@@ -86,7 +86,7 @@ msgstr "Naszym celem jest dotrzeć zarówno do **początkujących** jak i bardzi
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "Załóżmy, że wybierzesz wersję :blue[Zaawansowany]. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy **in silico**."
+msgstr "Załóżmy, że wybierzesz wersję <a href='#' id='Advanced'>Zaawansowany</a>. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy <i>in silico</i>."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -125,7 +125,7 @@ msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodzie
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "PHOTOSYNTHESIS"
-msgstr "Na stronie **fotosynteza** dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony. W tej wersji :blue[Zaawansowany] znajduje się więcej szczegółowych informacji na temat zmian klimatycznych, a także molekularny opis mechanizmu fotoprotekcji."
+msgstr "Na stronie <b>fotosynteza</b> dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony. W tej wersji <a href='#' id='Advanced'>Zaawansowany</a> znajduje się więcej szczegółowych informacji na temat zmian klimatycznych, a także molekularny opis mechanizmu fotoprotekcji."
 
 #: pages/1 Messmethode.py:50
 msgid "METHOD"
@@ -134,12 +134,12 @@ msgstr "Aby zmierzyć wydajność fotosyntetyczną roślin, potrzebujemy określ
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "MODEL"
-msgstr "Jak już powiedziano w nagłówku, pracujemy *in silico*, tj. z modelami matematycznymi. Na stronie **modele obliczeniowe** dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy. W wersji :blue[Advanced] można również dowiedzieć się o implementacji modelu matematycznego w jęyzku programowania Python."
+msgstr "Jak już powiedziano w nagłówku, pracujemy <i>in silico</i>, tj. z modelami matematycznymi. Na stronie <b>modele obliczeniowe</b> dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy. W wersji <a href='#' id='Advanced'>Advanced</a> można również dowiedzieć się o implementacji modelu matematycznego w jęyzku programowania Python."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji :blue[Advanced] istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
+msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='Advanced'>Advanced</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
@@ -862,17 +862,17 @@ msgstr ""
 msgid "SLIDER_MEMORY"
 msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_TRAINING"
-#  advanced-pl msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_TRAINING"
+msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_RELAXATION"
-#  advanced-pl msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_RELAXATION"
+msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_MEMORY"
-#  advanced-pl msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_MEMORY"
+msgstr ""
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40

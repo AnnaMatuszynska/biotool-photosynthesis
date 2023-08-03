@@ -86,7 +86,7 @@ msgstr "Naszym celem jest dotrzeć zarówno do **początkujących** jak i bardzi
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "Załóżmy, że wybierzesz wersję :blue[Zaawansowany]. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy *in silico*."
+msgstr "Załóżmy, że wybierzesz wersję <a href='#' id='Advanced'>Zaawansowany</a>. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy <i>in silico</i>."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -120,7 +120,7 @@ msgstr "## Streszczenia stron"
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "INTRODUCTION_PAGES"
-msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji :blue[Advanced] znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach :blue[Zaawansowany]."
+msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji <a href='#' id='Advanced'>Advanced</a> znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach <a href='#' id='Advanced'>Zaawansowany</a>."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
@@ -364,7 +364,7 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 msgid "EXPLANATION_MEASUREMENT_1"
 msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
         help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's \
+        but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='Advanced'>Advanced</a> section. Let's \
         say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
 
 #: pages/method.py:34
@@ -858,17 +858,17 @@ msgstr ""
 msgid "SLIDER_MEMORY"
 msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_TRAINING"
-#  simple-pl msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_TRAINING"
+msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_RELAXATION"
-#  simple-pl msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_RELAXATION"
+msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_MEMORY"
-#  simple-pl msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_MEMORY"
+msgstr ""
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40

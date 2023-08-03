@@ -80,13 +80,13 @@ msgstr "## How to use this website"
 #: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
-msgstr "We aimed at both curious **newcomers** and more :blue[Advanced] learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *Simple* or *:blue[Advanced]*."
+msgstr "We aimed at both curious <b>newcomers</b> and more <b>advanced</b> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>Simple</i> or <a href='#' id='Advanced'>Advanced</a>."
 
 #: Start.py:17
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "In this :blue[Advanced] version we will explain in detail an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating *in silico* mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex *in silico* mutants, and more outputs will be generated."
+msgstr "In this <a href='#' id='Advanced'>Advanced</a> version we will explain in detail an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -823,17 +823,17 @@ msgstr "Relaxation phase in minutes"
 msgid "SLIDER_MEMORY"
 msgstr "Memory phase in minutes"
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_TRAINING"
-#  advanced-en msgstr "Training"
+#: pages/plant_memory.py:95
+msgid "ANNO_TRAINING"
+msgstr "Training"
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_RELAXATION"
-#  advanced-en msgstr "Relaxation"
+#: pages/plant_memory.py:95
+msgid "ANNO_RELAXATION"
+msgstr "Relaxation"
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_MEMORY"
-#  advanced-en msgstr "Memory"
+#: pages/plant_memory.py:95
+msgid "ANNO_MEMORY"
+msgstr "Memory"
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40

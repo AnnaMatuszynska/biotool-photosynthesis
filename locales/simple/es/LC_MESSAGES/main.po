@@ -366,7 +366,7 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 msgid "EXPLANATION_MEASUREMENT_1"
 msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
         help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's \
+        but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='Advanced'>Advanced</a> section. Let's \
         say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
 
 #: pages/method.py:34
@@ -856,17 +856,17 @@ msgstr ""
 msgid "SLIDER_MEMORY"
 msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_TRAINING"
-#  simple-es msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_TRAINING"
+msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_RELAXATION"
-#  simple-es msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_RELAXATION"
+msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_MEMORY"
-#  simple-es msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_MEMORY"
+msgstr ""
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40

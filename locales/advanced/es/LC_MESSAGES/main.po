@@ -868,17 +868,17 @@ msgstr ""
 msgid "SLIDER_MEMORY"
 msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_TRAINING"
-#  advanced-es msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_TRAINING"
+msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_RELAXATION"
-#  advanced-es msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_RELAXATION"
+msgstr ""
 
-#  #: pages/plant_memory.py:95
-#  msgid "ANNO_MEMORY"
-#  advanced-es msgstr ""
+#: pages/plant_memory.py:95
+msgid "ANNO_MEMORY"
+msgstr ""
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40
