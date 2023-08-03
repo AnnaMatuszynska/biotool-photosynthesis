@@ -104,19 +104,6 @@ simple-fr msgstr ""
 simple-pl msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
 simple-es msgstr ""
 
-#: pages/3 Pflanzengedächtnis.py:97
-msgid "START_BUTTOM"
-advanced-en msgstr "Start the tests"
-advanced-de msgstr "Starte den Versuche"
-advanced-fr msgstr ""
-advanced-pl msgstr "Rozpocznij testy"
-advanced-es msgstr ""
-simple-en msgstr "Start the tests"
-simple-de msgstr "Starte den Versuche"
-simple-fr msgstr ""
-simple-pl msgstr "Rozpocznij testy"
-simple-es msgstr ""
-
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 advanced-en msgstr "Literature"
@@ -267,12 +254,12 @@ simple-es msgstr "We aimed at both curious **newcomers** and more **advanced** l
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-advanced-en msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
+advanced-en msgstr "In this :blue[Advanced] version we will explain in detail an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating *in silico* mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex *in silico* mutants, and more outputs will be generated."
 advanced-de msgstr "Nehmen wir an, Sie wählen die :blue[Fortgeschritten]-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit *in silico*."
 advanced-fr msgstr ""
 advanced-pl msgstr "Załóżmy, że wybierzesz wersję :blue[Zaawansowany]. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy **in silico**."
 advanced-es msgstr ""
-simple-en msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer *in silico.*"
+simple-en msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer *in silico*."
 simple-de msgstr "Nehmen wir an, Sie wählen die :blue[Fortgeschritten]-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit *in silico*."
 simple-fr msgstr ""
 simple-pl msgstr "Załóżmy, że wybierzesz wersję :blue[Zaawansowany]. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy *in silico*."
@@ -378,7 +365,7 @@ simple-es msgstr ""
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "PHOTOSYNTHESIS"
-advanced-en msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis to take full use of the following pages. In this :blue[Advanced] Version, there is more in-depth information on climate change as well as molecular description of the photoprotective mechanism."
+advanced-en msgstr "The **photosynthesis page** will give a short summary of the fundamental mechanisms of photosynthesis, in-depth information on climate change as well as a molecular description of the photoprotective mechanism."
 advanced-de msgstr "Auf der Seite **Photosynthese** erfahren Sie alles, was Sie über die Photosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können. In dieser :blue[Fortgeschrittenen]-Version gibt es ausführlichere Informationen über den Klimawandel sowie eine molekulare Beschreibung des Photoprotektionsmechanismus."
 advanced-fr msgstr ""
 advanced-pl msgstr "Na stronie **fotosynteza** dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony. W tej wersji :blue[Zaawansowany] znajduje się więcej szczegółowych informacji na temat zmian klimatycznych, a także molekularny opis mechanizmu fotoprotekcji."
@@ -391,7 +378,7 @@ simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "METHOD"
-advanced-en msgstr "To measure plants' photosynthetic performance, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible. In this :blue[Advanced] Version we additionally provide links to specialised literature where you can learn more in depth about the fluorescence measurements."
+advanced-en msgstr "The **measuring method page** will explain a state-of-the-art method of measuring photosynthetic parameters using non-invasive fluorescence. Literature for further reading is also provided."
 advanced-de msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir eine spezielle Messmethode. Diese wird auf der Seite **Messmethode** vorgestellt. Darüber hinaus gehen wir darauf ein, wie wir unsere Messungen sichtbar machen können. In dieser :blue[Fortgeschrittenen]-Version bieten wir zusätzlich Links zu Fachliteratur, in der Sie mehr über die Fluoreszenzmessungen erfahren können."
 advanced-fr msgstr ""
 advanced-pl msgstr "Aby zmierzyć wydajność fotosyntetyczną roślin, potrzebujemy określonej metody pomiaru. Została ona przedstawiona na stronie **metody pomiarowe**. Ponadto omawiamy, w jaki sposób możemy uwidocznić nasze pomiary. W tej :niebieskiej[Zaawansowanej] wersji dodatkowo podajemy linki do specjalistycznej literatury, w której można dowiedzieć się więcej na temat pomiarów fluorescencji."
@@ -405,7 +392,7 @@ simple-es msgstr ""
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "MODEL"
-advanced-en msgstr "As the headline already told you, we work *in silico*, i.e., with mathematical models. On the **computational models page**, you will learn something about mathematical models in general, as well as something about photosynthesis models. In the :blue[Advanced] version, you can also learn about implementing a mathematical model in a programming language Python."
+advanced-en msgstr "Mathematical modelling therory and examples of popular models be presented on the **computational models page**. Additionally, we demonstrate the implementation of mathematical model in a programming language Python."
 advanced-de msgstr "Wie die Überschrift schon sagt, arbeiten wir *in silico*, d.h. mit mathematischen Modellen. Auf der Seite **Computermodelle** erfahren Sie etwas über mathematische Modelle im Allgemeinen und etwas über Photosynthesemodelle. In der :blue[Advanced]-Version können Sie auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
 advanced-fr msgstr ""
 advanced-pl msgstr "Jak już powiedziano w nagłówku, pracujemy *in silico*, tj. z modelami matematycznymi. Na stronie **modele obliczeniowe** dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy. W wersji :blue[Advanced] można również dowiedzieć się o implementacji modelu matematycznego w jęyzku programowania Python."
@@ -419,12 +406,12 @@ simple-es msgstr ""
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-advanced-en msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements. In the :blue[Advanced] version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
+advanced-en msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained and simple simulations performed, including the editing of model parameters."
 advanced-de msgstr "Auf der Seite **Experimente** ***in silico*** lernen Sie das von uns verwendete und von Anna Matuszyńska mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der :blue[Advanced]-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
 advanced-fr msgstr ""
 advanced-pl msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji :blue[Advanced] istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
 advanced-es msgstr ""
-simple-en msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements."
+simple-en msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements. In the :blue[Advanced] version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 simple-de msgstr "Auf der Seite **Experimente** ***in silico*** lernen Sie das von uns verwendete und von Anna Matuszyńska mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen."
 simple-fr msgstr ""
 simple-pl msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów."
@@ -432,7 +419,7 @@ simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
-advanced-en msgstr "Last but not least, you will get to know the plant light memory on the **plant light memory page** and can prove its existence independently with experiments."
+advanced-en msgstr "Lastly, the **plant light memory page** will explain how the plant non-photochemical quenching mechanism leads to a memory effect of light conditions and how the mathematical model can be used for investigation."
 advanced-de msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das pflanzliche Lichtgedächtnis kennen und können dessen Existenz selbständig mit Experimenten nachweisen."
 advanced-fr msgstr ""
 advanced-pl msgstr "Wreszcie, poznasz pamięć światła roślin na stronie **pamięć światła roślin** i możesz udowodnić jej istnienie niezależnie za pomocą eksperymentów."
@@ -447,12 +434,12 @@ simple-es msgstr ""
 #: Lisa's introduction
 msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
 advanced-en msgstr "# Photosynthesis"
-advanced-de msgstr ""
+advanced-de msgstr "# Fotosynthese"
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "# Photosynthesis"
-simple-de msgstr ""
+simple-de msgstr "# Fotosynthese"
 simple-fr msgstr "# Photosynthesis"
 simple-pl msgstr "# Photosynthesis"
 simple-es msgstr "# Photosynthesis"
@@ -461,12 +448,12 @@ simple-es msgstr "# Photosynthesis"
 #: Lisa's introduction
 msgid "HEADLINE_CLIMATE"
 advanced-en msgstr "## Climate Change"
-advanced-de msgstr ""
+advanced-de msgstr "## Klimawandel"
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "## Climate Change"
-simple-de msgstr ""
+simple-de msgstr "## Klimawandel"
 simple-fr msgstr "## Climate change"
 simple-pl msgstr "## Climate change"
 simple-es msgstr "## Climate change"
@@ -574,18 +561,18 @@ simple-es msgstr ""
 #: Lisa's introduction
 # Grammarly checked
 msgid "END_OF_INTRODUCTION"
-advanced-en msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the impact of the sudden rise of Earth Temperature."
+advanced-en msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the impact of the sudden rise of Earth Temperature."
 advanced-de msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten *97 % der Klimaforscher* \
-        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden [Cook], und dass \
+        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden (Cook et al., 2016), und dass \
         Forschung erforderlich ist, um die Auswirkungen des plötzlichen Anstiegs der Erdtemperatur zu verstehen."
 advanced-fr msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
+        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
         impact of the sudden rise of Earth Temperature."
 advanced-pl msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
+        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
         impact of the sudden rise of Earth Temperature."
 advanced-es msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
+        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
         impact of the sudden rise of Earth Temperature."
 simple-en msgstr ""
 simple-de msgstr ""
@@ -611,7 +598,7 @@ simple-es msgstr ""
 #: EINFÜHRUNG.py:43
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_1"
-advanced-en msgstr "Just like humans, plants need nutrients for their growth. The most essential is water and minerals, but plants also need fats, carbohydrates, and proteins. Most of these nutrients plants can absorb from the soil through their roots, but not all of them. As already mentioned, plants are producers and can, therefore, manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
+advanced-en msgstr "Plants are autotrophic and can thus produce complex organic compounds like sugars, lipids, and proteins from simple nutrients."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -634,7 +621,7 @@ simple-es msgstr "Just like humans, plants need nutrients for their growth. The 
 #: pages/photosynthesis.py:34
 #: EINFÜHRUNG.py:43
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
-advanced-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O, and energy in the form of light."
+advanced-en msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolised into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus resulting in the production of molecular oxygen."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -651,7 +638,7 @@ simple-es msgstr "In photosynthesis, plants produce biomass in the form of gluco
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
 msgid "CAPTION_FOTOSYNTHESE_PICTURE"
-advanced-en msgstr "Photosynthesis process"
+advanced-en msgstr "Simplified photosynthesis process"
 advanced-de msgstr "Photosynthese Ablauf"
 advanced-fr msgstr "Photosynthesis process"
 advanced-pl msgstr "Proces fotosyntezy"
@@ -665,7 +652,7 @@ simple-es msgstr "Photosynthesis process"
 #: pages/photosynthesis.py:47
 #: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-advanced-en msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
+advanced-en msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures which delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic cariers uses light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
 advanced-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
 advanced-fr msgstr ""
 advanced-pl msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
@@ -675,48 +662,6 @@ simple-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Me
 simple-fr msgstr ""
 simple-pl msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
 simple-es msgstr ""
-
-#: pages/photosynthesis.py:47
-#: EINFÜHRUNG.py:39
-msgid "HEADLINE_NUTRIENTS"
-advanced-en msgstr "#### Nutrient intake"
-advanced-de msgstr ""
-advanced-fr msgstr ""
-advanced-pl msgstr ""
-advanced-es msgstr ""
-simple-en msgstr "#### Nutrient intake"
-simple-de msgstr ""
-simple-fr msgstr "#### Nutrient intake"
-simple-pl msgstr "#### Nutrient intake"
-simple-es msgstr "#### Nutrient intake"
-
-#: pages/photosynthesis.py:48
-#: EINFÜHRUNG.py:40
-msgid "NUTRIENTS_EXPLANATION"
-advanced-en msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-advanced-de msgstr ""
-advanced-fr msgstr ""
-advanced-pl msgstr ""
-advanced-es msgstr ""
-simple-en msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-simple-de msgstr ""
-simple-fr msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-simple-pl msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-simple-es msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-
-#: pages/photosynthesis.py:52
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-advanced-en msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-advanced-de msgstr "Mikroskopische Aufnahme eines Stomata des Wildtypes des Modellorganismus Arabidopsis thaliana."
-advanced-fr msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-advanced-pl msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-advanced-es msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-simple-en msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-simple-de msgstr "Mikroskopische Aufnahme eines Stomata des Wildtypes des Modellorganismus Arabidopsis thaliana."
-simple-fr msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-simple-pl msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-simple-es msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
@@ -737,7 +682,7 @@ simple-es msgstr "## Place of photosynthesis"
 #: EINFÜHRUNG.py:55
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-advanced-en msgstr "Photosynthesis takes place in the cells of the primarily green components of plants. In these cells are specialized organelles, the chloroplasts. There, the part of photosynthesis called the light reaction takes place. The so-called photosystems are in the inner membranes (called thylakoid membranes). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
+advanced-en msgstr "Photosynthesis takes place in the cells of the primarily green components of plants, mainly within mesophyl cells. Chloroplast organelles within these cells perform the conversion of light energy into chemical energy equivalents, which is commonly called 'light reaction'. Within the series of protein complexes used for this energy conversion, two types of photosystems exist. Both contain chlorophyll reaction centers, which, upon light absorption, are able to oxise compounds with high redox potential (e.g. H₂O) and reduce acceptors with low redox potential (e.g. NADP⁺). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -775,7 +720,7 @@ simple-es msgstr "Complexes within the thylakoid membrane, which are necessary f
 #: pages/photosynthesis.py:51
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
-advanced-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail, we have created a short video for you:"
+advanced-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product 3-phosphoglycerate, which is then further metabolised into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the comples Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyses the first CO₂-fixation step.\nThe following video visualises the different macromolecular scales of photosynthesis in a very simplified manner:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -804,7 +749,7 @@ simple-es msgstr "## How to deal with too much light?"
 #: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "NPQ_EXPLANATION"
-advanced-en msgstr "What happens when too much light and, thus, excess energy hits Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released as heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
+advanced-en msgstr "If the photosystems absorb too much light energy, protein breakdown and cellular damage by producing radical oxygen species can ensue. Therefore, multiple preventive mechanisms exist to reduce high light damage, ranging from the adaption of the photosystems to the movement of chloroplasts and whole leaves. Processes on the scale of the photosystems are acting the fastest and usually result in light energy being directly emitted as heat. Such processes are collectively called non-photochemical quenching (NPQ). The following pages will present the model representing the plant 'Xanthophyll cycle', where the enzymatic interconversion of carotenoids leads to a system with tunable light absorption for dissipation as heat."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -842,7 +787,7 @@ simple-es msgstr "## One plant to rule them all"
 #: pages/1 Messmethode.py:40
 # Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
-advanced-en msgstr "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis Thaliana*, a 'model organism'."
+advanced-en msgstr "While the presented methods and models are applicable for a wide range of plants, most were developed for the model plant *Arabidopsis Thaliana*."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -902,6 +847,20 @@ simple-en msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referr
 "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, which has provided researchers with a wealth of genetic information about the plant.\n"
 "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
 "\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "LITERATURE_PHOTOSYNTHESIS"
+advanced-en msgstr "References on this page:\n"
+"- Cook, J., Oreskes, N., Doran, P. T., Anderegg, W. R. L., Verheggen, B., Maibach, E. W., Carlton, J. S., Lewandowsky, S., Skuce, A. G., Green, S. A., Nuccitelli, D., Jacobs, P., Richardson, M., Winkler, B., Painting, R., & Rice, K. (2016). Consensus on consensus: A synthesis of consensus estimates on human-caused global warming. Environmental Research Letters, 11(4), 048002. https://doi.org/10.1088/1748-9326/11/4/048002"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1354,15 +1313,15 @@ In the bottom panel you see results of the PAM experiments. Take a good look, ca
 #: pages/method.py:41 pages/method.py:61
 #: pages/1 Messmethode.py:47
 msgid "CAPTION_ABB2"
-advanced-en msgstr "Example Graph of a PAM measurement"
+advanced-en msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 advanced-de msgstr ""
 advanced-fr msgstr "Example Graph of a PAM measurement"
-advanced-pl msgstr "Example Graph of a PAM measurement"
+advanced-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 advanced-es msgstr "Example Graph of a PAM measurement"
-simple-en msgstr "Example Graph of a PAM measurement"
+simple-en msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 simple-de msgstr ""
 simple-fr msgstr "Example Graph of a PAM measurement"
-simple-pl msgstr "Example Graph of a PAM measurement"
+simple-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 simple-es msgstr "Example Graph of a PAM measurement"
 
 #: pages/method.py:43
@@ -1544,25 +1503,25 @@ advanced-fr msgstr "# "
 advanced-pl msgstr "# "
 advanced-es msgstr "# "
 simple-en msgstr "# Computational models"
-simple-de msgstr "# Das Modell"
-simple-fr msgstr "# Mathematical models"
-simple-pl msgstr "# Mathematical models"
-simple-es msgstr "# Mathematical models"
+simple-de msgstr "# "
+simple-fr msgstr "# "
+simple-pl msgstr "# "
+simple-es msgstr "# "
 
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 # Grammarly checked
 msgid "HEADLINE_MODEL"
-advanced-en msgstr "## Mathematical models"
+advanced-en msgstr "## What are mathematical models?"
 advanced-de msgstr "# "
 advanced-fr msgstr "# "
 advanced-pl msgstr "# "
 advanced-es msgstr "# "
-simple-en msgstr "## Mathematical models"
-simple-de msgstr "# Das Modell"
-simple-fr msgstr "# Mathematical models"
-simple-pl msgstr "# Mathematical models"
-simple-es msgstr "# Mathematical models"
+simple-en msgstr "## What are mathematical models?"
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
@@ -1705,12 +1664,12 @@ simple-es msgstr ""
 #: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
-advanced-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>."
+advanced-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>."
+simple-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1720,12 +1679,12 @@ simple-es msgstr ""
 #: pages/model.explain.py:37
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
-advanced-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
+advanced-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and change in the number of people in each category, so overall, three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
+simple-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1750,12 +1709,12 @@ simple-es msgstr ""
 #: pages/model.explain.py:55
 # Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
-advanced-en msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2)."
+advanced-en msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2)."
+simple-en msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 simple-de msgstr ""
 simple-fr msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
 simple-pl msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
@@ -2507,24 +2466,19 @@ simple-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corne
 simple-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
-#: pages/2 Daten-Analyse.py:48
-#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-advanced-en msgstr "Light intensity in μmol m⁻² s⁻¹"
-advanced-de msgstr "Lichtintensität in μmol m⁻² s⁻¹"
-advanced-fr msgstr "Light intensity in μmol m⁻² s⁻¹"
-advanced-pl msgstr "Light intensity in μmol m⁻² s⁻¹"
-advanced-es msgstr "Light intensity in μmol m⁻² s⁻¹"
-simple-en msgstr "Light intensity in μmol m⁻² s⁻¹"
-simple-de msgstr "Lichtintensität in μmol m⁻² s⁻¹"
-simple-fr msgstr "Light intensity in μmol m⁻² s⁻¹"
-simple-pl msgstr "Light intensity in μmol m⁻² s⁻¹"
-simple-es msgstr "Light intensity in μmol m⁻² s⁻¹"
+advanced-en msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
+advanced-de msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
+simple-de msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
-#: pages/2 Daten-Analyse.py:55
-#: pages/3 Pflanzengedächtnis.py:53
-#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 advanced-en msgstr "Test duration in minutes"
 advanced-de msgstr "Versuchsdauer in Minuten"
@@ -2541,26 +2495,50 @@ simple-es msgstr "Test duration in minutes"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-advanced-en msgstr "Saturation pulses in the selected intervals in seconds"
-advanced-de msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
-advanced-fr msgstr "Saturation pulses in the selected intervals in seconds"
-advanced-pl msgstr "Saturation pulses in the selected intervals in seconds"
-advanced-es msgstr "Saturation pulses in the selected intervals in seconds"
-simple-en msgstr "Saturation pulses in the selected intervals in seconds"
-simple-de msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
-simple-fr msgstr "Saturation pulses in the selected intervals in seconds"
-simple-pl msgstr "Saturation pulses in the selected intervals in seconds"
-simple-es msgstr "Saturation pulses in the selected intervals in seconds"
+advanced-en msgstr "Seconds between saturating pulse during light phase"
+advanced-de msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "Seconds between saturating pulse during light phase"
+simple-de msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/first_analysis.py:222
-#: pages/Analyse.py:67
-#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
 advanced-en msgstr "Conversion rate to Zeaxanthin in ± percent of default"
 advanced-de msgstr "Umwandlungsrate zu Zeaxanthin in ± Prozent Standardwert"
 advanced-fr msgstr "Conversion rate to Zeaxanthin in ± percent of default"
 advanced-pl msgstr "Conversion rate to Zeaxanthin in ± percent of default"
 advanced-es msgstr "Conversion rate to Zeaxanthin in ± percent of default"
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/first_analysis.py:168
+msgid "SLIDER_DARKLENGTH"
+advanced-en msgstr "Length of the dark phase in seconds"
+advanced-de msgstr "Dauer der Dunkelphase in Sekunden"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/first_analysis.py:181
+msgid "SLIDER_SATURATE"
+advanced-en msgstr "Light intensity of saturating pulse in μmol m⁻² s⁻¹"
+advanced-de msgstr "Lichtintensität des Sättigungsimpulses in μmol m⁻² s⁻¹"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr ""
 simple-de msgstr ""
 simple-fr msgstr ""
@@ -2626,7 +2604,7 @@ simple-es msgstr "Memory phase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXSIS_TIME"
+msgid "AXIS_TIME_MIN"
 advanced-en msgstr "Time [min]"
 advanced-de msgstr "Zeit [min]"
 advanced-fr msgstr "Time [min]"
@@ -2640,12 +2618,12 @@ simple-es msgstr "Time [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "TIME"
+msgid "AXIS_TIME_S"
 advanced-en msgstr "Time [s]"
 advanced-de msgstr "Zeit [s]"
-advanced-fr msgstr "Time [min]"
-advanced-pl msgstr "Time [min]"
-advanced-es msgstr "Time [min]"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "Time [s]"
 simple-de msgstr "Zeit [s]"
 simple-fr msgstr "Time [s]"
@@ -2665,6 +2643,32 @@ simple-de msgstr "Fluoreszenz [F´ₘ /Fₘ]"
 simple-fr msgstr "Fluorescence [F´ₘ /Fₘ]"
 simple-pl msgstr "Fluorescence [F´ₘ /Fₘ]"
 simple-es msgstr "Fluorescence [F´ₘ /Fₘ]"
+
+#: pages/first_analysis.py:217
+msgid "AXIS_NPQ"
+advanced-en msgstr "NPQ [a.u.]"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/first_analysis.py:230
+msgid "AXIS_PHIPSII"
+advanced-en msgstr "Φ(PSII)"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
