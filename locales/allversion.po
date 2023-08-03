@@ -548,18 +548,18 @@ simple-es msgstr ""
 #: Lisa's introduction
 # Grammarly checked
 msgid "END_OF_INTRODUCTION"
-advanced-en msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the impact of the sudden rise of Earth Temperature."
+advanced-en msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the impact of the sudden rise of Earth Temperature."
 advanced-de msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten *97 % der Klimaforscher* \
-        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden [Cook], und dass \
+        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden (Cook et al., 2016), und dass \
         Forschung erforderlich ist, um die Auswirkungen des plötzlichen Anstiegs der Erdtemperatur zu verstehen."
 advanced-fr msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
+        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
         impact of the sudden rise of Earth Temperature."
 advanced-pl msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
+        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
         impact of the sudden rise of Earth Temperature."
 advanced-es msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
+        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
         impact of the sudden rise of Earth Temperature."
 simple-en msgstr ""
 simple-de msgstr ""
@@ -585,7 +585,7 @@ simple-es msgstr ""
 #: EINFÜHRUNG.py:43
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_1"
-advanced-en msgstr "Just like humans, plants need nutrients for their growth. The most essential is water and minerals, but plants also need fats, carbohydrates, and proteins. Most of these nutrients plants can absorb from the soil through their roots, but not all of them. As already mentioned, plants are producers and can, therefore, manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
+advanced-en msgstr "Plants are autotrophic and can thus produce complex organic compounds like sugars, lipids, and proteins from simple nutrients."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -608,7 +608,7 @@ simple-es msgstr "Just like humans, plants need nutrients for their growth. The 
 #: pages/photosynthesis.py:34
 #: EINFÜHRUNG.py:43
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
-advanced-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O, and energy in the form of light."
+advanced-en msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolised into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus resulting in the production of molecular oxygen."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -625,7 +625,7 @@ simple-es msgstr "In photosynthesis, plants produce biomass in the form of gluco
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
 msgid "CAPTION_FOTOSYNTHESE_PICTURE"
-advanced-en msgstr "Photosynthesis process"
+advanced-en msgstr "Simplified photosynthesis process"
 advanced-de msgstr "Photosynthese Ablauf"
 advanced-fr msgstr "Photosynthesis process"
 advanced-pl msgstr "Proces fotosyntezy"
@@ -639,7 +639,7 @@ simple-es msgstr "Photosynthesis process"
 #: pages/photosynthesis.py:47
 #: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-advanced-en msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
+advanced-en msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures which delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic cariers uses light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
 advanced-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
 advanced-fr msgstr ""
 advanced-pl msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
@@ -649,48 +649,6 @@ simple-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Me
 simple-fr msgstr ""
 simple-pl msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
 simple-es msgstr ""
-
-#: pages/photosynthesis.py:47
-#: EINFÜHRUNG.py:39
-msgid "HEADLINE_NUTRIENTS"
-advanced-en msgstr "#### Nutrient intake"
-advanced-de msgstr ""
-advanced-fr msgstr ""
-advanced-pl msgstr ""
-advanced-es msgstr ""
-simple-en msgstr "#### Nutrient intake"
-simple-de msgstr ""
-simple-fr msgstr "#### Nutrient intake"
-simple-pl msgstr "#### Nutrient intake"
-simple-es msgstr "#### Nutrient intake"
-
-#: pages/photosynthesis.py:48
-#: EINFÜHRUNG.py:40
-msgid "NUTRIENTS_EXPLANATION"
-advanced-en msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-advanced-de msgstr ""
-advanced-fr msgstr ""
-advanced-pl msgstr ""
-advanced-es msgstr ""
-simple-en msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-simple-de msgstr ""
-simple-fr msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-simple-pl msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-simple-es msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-
-#: pages/photosynthesis.py:52
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-advanced-en msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-advanced-de msgstr "Mikroskopische Aufnahme eines Stomata des Wildtypes des Modellorganismus Arabidopsis thaliana."
-advanced-fr msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-advanced-pl msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-advanced-es msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-simple-en msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-simple-de msgstr "Mikroskopische Aufnahme eines Stomata des Wildtypes des Modellorganismus Arabidopsis thaliana."
-simple-fr msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-simple-pl msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-simple-es msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
@@ -711,7 +669,7 @@ simple-es msgstr "## Place of photosynthesis"
 #: EINFÜHRUNG.py:55
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-advanced-en msgstr "Photosynthesis takes place in the cells of the primarily green components of plants. In these cells are specialized organelles, the chloroplasts. There, the part of photosynthesis called the light reaction takes place. The so-called photosystems are in the inner membranes (called thylakoid membranes). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
+advanced-en msgstr "Photosynthesis takes place in the cells of the primarily green components of plants, mainly within mesophyl cells. Chloroplast organelles within these cells perform the conversion of light energy into chemical energy equivalents, which is commonly called 'light reaction'. Within the series of protein complexes used for this energy conversion, two types of photosystems exist. Both contain chlorophyll reaction centers, which, upon light absorption, are able to oxise compounds with high redox potential (e.g. H₂O) and reduce acceptors with low redox potential (e.g. NADP⁺). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -749,7 +707,7 @@ simple-es msgstr "Complexes within the thylakoid membrane, which are necessary f
 #: pages/photosynthesis.py:51
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
-advanced-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce sugar. This is a multi-step process called the Calvin cycle with its main protein-actor: RuBisCO.\nIf you want to see this journey into the chloroplast in more detail, we have created a short video for you:"
+advanced-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product 3-phosphoglycerate, which is then further metabolised into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the comples Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyses the first CO₂-fixation step.\nThe following video visualises the different macromolecular scales of photosynthesis in a very simplified manner:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -778,7 +736,7 @@ simple-es msgstr "## How to deal with too much light?"
 #: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "NPQ_EXPLANATION"
-advanced-en msgstr "What happens when too much light and, thus, excess energy hits Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released as heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
+advanced-en msgstr "If the photosystems absorb too much light energy, protein breakdown and cellular damage by producing radical oxygen species can ensue. Therefore, multiple preventive mechanisms exist to reduce high light damage, ranging from the adaption of the photosystems to the movement of chloroplasts and whole leaves. Processes on the scale of the photosystems are acting the fastest and usually result in light energy being directly emitted as heat. Such processes are collectively called non-photochemical quenching (NPQ). The following pages will present the model representing the plant 'Xanthophyll cycle', where the enzymatic interconversion of carotenoids leads to a system with tunable light absorption for dissipation as heat."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -816,7 +774,7 @@ simple-es msgstr "## One plant to rule them all"
 #: pages/1 Messmethode.py:40
 # Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
-advanced-en msgstr "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis Thaliana*, a 'model organism'."
+advanced-en msgstr "While the presented methods and models are applicable for a wide range of plants, most were developed for the model plant *Arabidopsis Thaliana*."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -876,6 +834,20 @@ simple-en msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referr
 "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, which has provided researchers with a wealth of genetic information about the plant.\n"
 "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
 "\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "LITERATURE_PHOTOSYNTHESIS"
+advanced-en msgstr "References on this page:\n"
+"- Cook, J., Oreskes, N., Doran, P. T., Anderegg, W. R. L., Verheggen, B., Maibach, E. W., Carlton, J. S., Lewandowsky, S., Skuce, A. G., Green, S. A., Nuccitelli, D., Jacobs, P., Richardson, M., Winkler, B., Painting, R., & Rice, K. (2016). Consensus on consensus: A synthesis of consensus estimates on human-caused global warming. Environmental Research Letters, 11(4), 048002. https://doi.org/10.1088/1748-9326/11/4/048002"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""

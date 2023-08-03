@@ -69,6 +69,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.caption(text("CAPTION_THAIANA_PICTURE"))
         st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION"), unsafe_allow_html=True)
 
+def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
+    if version == "Advanced":
+        with st.expander(text("LITERATURE")):
+            st.markdown(text("LITERATURE_PHOTOSYNTHESIS"), unsafe_allow_html=True)
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
@@ -80,5 +84,6 @@ if __name__ == "__main__":
 
     text = get_localised_text(version, language)
     make_page(text, language, version)
+    make_literature(text, language, version)
     make_prev_next_button("start", "measuring method")
     make_sidebar()
