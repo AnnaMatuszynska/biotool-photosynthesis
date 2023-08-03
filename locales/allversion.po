@@ -2406,24 +2406,19 @@ simple-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corne
 simple-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
-#: pages/2 Daten-Analyse.py:48
-#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-advanced-en msgstr "Light intensity in μmol m⁻² s⁻¹"
-advanced-de msgstr "Lichtintensität in μmol m⁻² s⁻¹"
-advanced-fr msgstr "Light intensity in μmol m⁻² s⁻¹"
-advanced-pl msgstr "Light intensity in μmol m⁻² s⁻¹"
-advanced-es msgstr "Light intensity in μmol m⁻² s⁻¹"
-simple-en msgstr "Light intensity in μmol m⁻² s⁻¹"
-simple-de msgstr "Lichtintensität in μmol m⁻² s⁻¹"
-simple-fr msgstr "Light intensity in μmol m⁻² s⁻¹"
-simple-pl msgstr "Light intensity in μmol m⁻² s⁻¹"
-simple-es msgstr "Light intensity in μmol m⁻² s⁻¹"
+advanced-en msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
+advanced-de msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
+simple-de msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
-#: pages/2 Daten-Analyse.py:55
-#: pages/3 Pflanzengedächtnis.py:53
-#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 advanced-en msgstr "Test duration in minutes"
 advanced-de msgstr "Versuchsdauer in Minuten"
@@ -2440,26 +2435,50 @@ simple-es msgstr "Test duration in minutes"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-advanced-en msgstr "Saturation pulses in the selected intervals in seconds"
-advanced-de msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
-advanced-fr msgstr "Saturation pulses in the selected intervals in seconds"
-advanced-pl msgstr "Saturation pulses in the selected intervals in seconds"
-advanced-es msgstr "Saturation pulses in the selected intervals in seconds"
-simple-en msgstr "Saturation pulses in the selected intervals in seconds"
-simple-de msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
-simple-fr msgstr "Saturation pulses in the selected intervals in seconds"
-simple-pl msgstr "Saturation pulses in the selected intervals in seconds"
-simple-es msgstr "Saturation pulses in the selected intervals in seconds"
+advanced-en msgstr "Seconds between saturating pulse during light phase"
+advanced-de msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "Seconds between saturating pulse during light phase"
+simple-de msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/first_analysis.py:222
-#: pages/Analyse.py:67
-#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
 advanced-en msgstr "Conversion rate to Zeaxanthin in ± percent of default"
 advanced-de msgstr "Umwandlungsrate zu Zeaxanthin in ± Prozent Standardwert"
 advanced-fr msgstr "Conversion rate to Zeaxanthin in ± percent of default"
 advanced-pl msgstr "Conversion rate to Zeaxanthin in ± percent of default"
 advanced-es msgstr "Conversion rate to Zeaxanthin in ± percent of default"
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/first_analysis.py:168
+msgid "SLIDER_DARKLENGTH"
+advanced-en msgstr "Length of the dark phase in seconds"
+advanced-de msgstr "Dauer der Dunkelphase in Sekunden"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/first_analysis.py:181
+msgid "SLIDER_SATURATE"
+advanced-en msgstr "Light intensity of saturating pulse in μmol m⁻² s⁻¹"
+advanced-de msgstr "Lichtintensität des Sättigungsimpulses in μmol m⁻² s⁻¹"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr ""
 simple-de msgstr ""
 simple-fr msgstr ""
@@ -2525,7 +2544,7 @@ simple-es msgstr "Memory phase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXSIS_TIME"
+msgid "AXIS_TIME_MIN"
 advanced-en msgstr "Time [min]"
 advanced-de msgstr "Zeit [min]"
 advanced-fr msgstr "Time [min]"
@@ -2539,12 +2558,12 @@ simple-es msgstr "Time [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "TIME"
+msgid "AXIS_TIME_S"
 advanced-en msgstr "Time [s]"
 advanced-de msgstr "Zeit [s]"
-advanced-fr msgstr "Time [min]"
-advanced-pl msgstr "Time [min]"
-advanced-es msgstr "Time [min]"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "Time [s]"
 simple-de msgstr "Zeit [s]"
 simple-fr msgstr "Time [s]"
@@ -2564,6 +2583,32 @@ simple-de msgstr "Fluoreszenz [F´ₘ /Fₘ]"
 simple-fr msgstr "Fluorescence [F´ₘ /Fₘ]"
 simple-pl msgstr "Fluorescence [F´ₘ /Fₘ]"
 simple-es msgstr "Fluorescence [F´ₘ /Fₘ]"
+
+#: pages/first_analysis.py:217
+msgid "AXIS_NPQ"
+advanced-en msgstr "NPQ [a.u.]"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
+
+#: pages/first_analysis.py:230
+msgid "AXIS_PHIPSII"
+advanced-en msgstr "Φ(PSII)"
+advanced-de msgstr ""
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr ""
+simple-de msgstr ""
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
