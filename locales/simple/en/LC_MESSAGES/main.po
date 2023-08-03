@@ -1043,12 +1043,12 @@ msgstr ""
 #: pages/model.explain.py:58
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
-msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. If you want to learn how to implement such a model computationally using Python as a programming language, please switch to the :blue[Advanced] mode."
+msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. If you want to learn how to implement such a model computationally using Python as a programming language, please switch to the <a href='#' id='Advanced'>Advanced</a> mode."
 
 #: pages/model_explain.py:122
 #: Anna's explanation of the model
 msgid "IMPLEMENTATION_TO_EXPERT"
-msgstr "To see the mathematical implementation of the model, including the differential equations derived to describe the dynamics of photoprotection, switch to the :blue[Advanced] mode."
+msgstr "To see the mathematical implementation of the model, including the differential equations derived to describe the dynamics of photoprotection, switch to the <a href='#' id='Advanced'>Advanced</a> mode."
 
 #: pages/model_explain.py:240
 msgid "MODEL_CODE_EXPANDER"

@@ -3,15 +3,14 @@ from pages._sidebar import make_sidebar
 from PIL import Image
 from st_pages import Page, show_pages
 from typing import Callable
-from utils import get_localised_text, make_prev_next_button, icons
-
+from utils import get_localised_text, make_prev_next_button, icons, resetting_click_detector_setup, markdown_click
 
 def make_introduction(text: Callable[[str], str]) -> None:
-    st.markdown(text("HEADLINE_MAIN"))
-    st.markdown(text("INTRO"))
+    markdown_click("HEADLINE_MAIN", text)
+    markdown_click("INTRO", text)
 
     with st.expander(text("EXPANDER_ABOUT")):
-        st.markdown(text("EXPLANATION_ABOUT"))
+        markdown_click("EXPLANATION_ABOUT", text)
 
     # Introduction biotool
     st.video("https://youtu.be/KvyjIWLD8rU")
@@ -29,13 +28,13 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
             st.markdown(text("EXPLANATION_IN_VIVO"))
             st.markdown(text("EXPLANATION_IN_SILICO"))
 
-    st.markdown(text("HEADLINE_PAGES"))
-    st.markdown(text("INTRODUCTION_PAGES"))
-    st.markdown(text("PHOTOSYNTHESIS"))
-    st.markdown(text("METHOD"))
-    st.markdown(text("MODEL"))
-    st.markdown(text("EXPERIMENT"))
-    st.markdown(text("MEMORY"))
+    markdown_click("HEADLINE_PAGES", text)
+    markdown_click("INTRODUCTION_PAGES", text)
+    markdown_click("PHOTOSYNTHESIS", text)
+    markdown_click("METHOD", text)
+    markdown_click("MODEL", text)
+    markdown_click("EXPERIMENT", text)
+    markdown_click("MEMORY", text)
 
 
 if __name__ == "__main__":
@@ -94,6 +93,7 @@ if __name__ == "__main__":
             ),
         ]
     )
+    resetting_click_detector_setup()
     make_introduction(text)
     make_chapters(text, version, language)
     make_prev_next_button(None, "photosynthesis")

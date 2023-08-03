@@ -7,6 +7,8 @@ from pathlib import Path
 from streamlit_extras.switch_page_button import switch_page
 from typing import Callable
 import json
+from st_click_detector import click_detector
+import re
 
 
 def get_localised_text(version: str, language: str) -> Callable[[str], str]:
@@ -122,5 +124,42 @@ def include_image(path: str, img_width: float = 0.5, caption: str = None, center
 def js_r(filename: str):
     with open(filename, encoding='utf8') as f_in:
         return json.load(f_in)
-
 icons = js_r("assets/emoji.json")
+
+def resetting_click_detector_setup():
+    # Implement a counter for the runs
+    st.session_state.setdefault("_rcd#", 0)
+    st.session_state["_rcd#"] += 1
+    del_keys = [x for x in st.session_state.keys() if x.startswith("_rcd_") and re.search('[0-9]+$', x) and int(re.search('([0-9]+)$', x).group(1)) < st.session_state["_rcd#"]-1]
+    if len(del_keys) > 0:
+        for key in del_keys:
+            del st.session_state[key]
+
+def resetting_click_detector(content, key="_"):
+    old_key = f"_rcd_{key}_{st.session_state['_rcd#']-1}"
+    new_key = f"_rcd_{key}_{st.session_state['_rcd#']}"
+    clicked = st.session_state.setdefault(old_key, "")
+    del st.session_state[old_key]
+    _ = click_detector(content, key=new_key)
+    return clicked
+
+def markdown_click(placeholder, text_obj, detector_key=None, unsafe_allow_html=False):
+    """Automatically a click detector and set the version if applicable.
+
+    Args:
+        text (str): text to be displayed and possibly click-checked
+        detector_key (Any, optional): key for the detector in session state. Defaults to None and sets it with the text's hash.
+        allow_unsafe_html (Any): argument for st.markdown
+
+    Returns:
+        None or str: id of the clicked text otherwise None
+    """
+    text = text_obj(placeholder)
+    if re.search("<a href='#'",text):
+        clicked = resetting_click_detector(text, placeholder if detector_key is None else detector_key)
+        if re.search("<a href='#' id='Advanced'|<a href='#' id='Simple'", text) and clicked in ["Advanced","Simple"]:
+            st.session_state.version = clicked
+        return clicked
+    else:
+        st.markdown(text, unsafe_allow_html=unsafe_allow_html)
+        return None
