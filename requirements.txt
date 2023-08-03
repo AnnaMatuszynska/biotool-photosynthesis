@@ -5,3 +5,4 @@ streamlit-extras
 tomli
 pip
 st-pages
+st-click-detector
