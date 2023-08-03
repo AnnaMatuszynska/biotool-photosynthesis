@@ -39,12 +39,20 @@ msgstr ""
 msgid "EXPLANATION_ABOUT"
 msgstr ""
 
+#: pages/3 Pflanzengedächtnis.py:97
+msgid "START_BUTTOM"
+msgstr ""
+
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "LITERATURE_DECLARATION"
+msgstr ""
+
+
+msgid "CAPTION_PAM"
 msgstr ""
 
 #: EINFÜHRUNG.py:36
@@ -185,7 +193,7 @@ msgstr "- emissions of heat-trapping gasses"
 # Grammarly checked
 msgid "END_OF_INTRODUCTION"
 msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
+        agreed that currently we are in a human-caused global warming [Cook], and research is needed to understand the \
         impact of the sudden rise of Earth Temperature."
 
 #: pages/photosynthesis.py:32
@@ -213,6 +221,21 @@ msgstr "Photosynthesis process"
 #: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr ""
+
+#: pages/photosynthesis.py:47
+#: EINFÜHRUNG.py:39
+msgid "HEADLINE_NUTRIENTS"
+msgstr ""
+
+#: pages/photosynthesis.py:48
+#: EINFÜHRUNG.py:40
+msgid "NUTRIENTS_EXPLANATION"
+msgstr ""
+
+#: pages/photosynthesis.py:52
+#: EINFÜHRUNG.py:40
+msgid "CAPTION_STOMATA_PICTURE"
+msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
@@ -274,10 +297,6 @@ msgstr "A photograph of a plant of the wild type of the model organism _Arabidop
 #: pages/photosynthesis.py:87
 # Grammarly checked
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
-msgstr ""
-
-#: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
 msgstr ""
 
 #: pages/method.py:10
@@ -610,7 +629,17 @@ msgstr ""
 
 #: pages/model_explain.py:67
 #: Grammarly checked
-msgid "CONSTRUCTION_EXPLANATION"
+msgid "CONSTRUCTION_EXPLANATION_1"
+msgstr ""
+
+#: pages/model_explain.py:67
+#: 
+msgid "CAPTION_MODEL_NPQ"
+msgstr ""
+
+#: pages/model_explain.py:67
+#: Grammarly checked
+msgid "CONSTRUCTION_EXPLANATION_2"
 msgstr ""
 
 #: pages/model_explain.py:68
@@ -756,10 +785,15 @@ msgid "TIPP2"
 msgstr "***Tip 2:*** *By clicking the Stop button in the upper right corner you can cancel the calculation process.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
+#: pages/2 Daten-Analyse.py:48
+#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-msgstr ""
+msgstr "Light intensity in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
+#: pages/2 Daten-Analyse.py:55
+#: pages/3 Pflanzengedächtnis.py:53
+#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 msgstr "Dark phase in minutes"
 
@@ -767,19 +801,13 @@ msgstr "Dark phase in minutes"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-msgstr ""
+msgstr "Saturation pulses in the selected intervals in seconds"
 
 #: pages/first_analysis.py:222
+#: pages/Analyse.py:67
+#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
 msgstr "Conversion rate to Zeaxanthin in ± percent of default"
-
-#: pages/first_analysis.py:168
-msgid "SLIDER_DARKLENGTH"
-msgstr ""
-
-#: pages/first_analysis.py:181
-msgid "SLIDER_SATURATE"
-msgstr ""
 
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
 #: pages/2 Daten-Analyse.py:83
@@ -804,25 +832,17 @@ msgstr "Memory phase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXIS_TIME_MIN"
+msgid "AXSIS_TIME"
 msgstr "Time [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "AXIS_TIME_S"
-msgstr ""
+msgid "TIME"
+msgstr "Time [min]"
 
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
-msgstr ""
-
-#: pages/first_analysis.py:217
-msgid "AXIS_NPQ"
-msgstr ""
-
-#: pages/first_analysis.py:230
-msgid "AXIS_PHIPSII"
 msgstr ""
 
 #: pages/plant_memory.py:262

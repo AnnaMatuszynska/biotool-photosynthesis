@@ -269,7 +269,9 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
 
     st.markdown(text("CONSTRUCTION_EXPLANATION_1"))
-    include_image("pictures/NPQ_photosynthesis.png", 0.8, text("CAPTION_FOTOSYNTHESE_LEAF_ZOOM"), True)
+
+    include_image("pictures/NPQphotosynthesis.png", 0.8, text("CAPTION_MODEL_NPQ"), True)
+
     st.markdown(text("CONSTRUCTION_EXPLANATION_2"))
     st.markdown(text("RATES_1"), unsafe_allow_html=True)
     st.markdown(text("RATES_2"))

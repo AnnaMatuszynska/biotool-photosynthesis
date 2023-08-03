@@ -38,11 +38,11 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     if language == "German":
         include_image("pictures/Fotosynthese.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
     else:
-        include_image("pictures/Fotosynthese_eng.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
+        include_image("pictures/Fotosynthese_eng.jpg", 0.8, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
 
     st.markdown(text("HEADLINE_PHOTOSYNTHESIS_LOCATION"))
     st.markdown(text("PHOTOSYNTHESIS_LOCATION_EXPLANATION"))
-    include_image("pictures/phot_place_upper.PNG", 0.6, text("CAPTION_FOTOSYNTHESE_LEAF_ZOOM"), True)
+    include_image("pictures/phot_place_upper.PNG", 0.8, text("CAPTION_FOTOSYNTHESE_LEAF_ZOOM"), True)
 
     if language == "German":
         include_image("pictures/Fotosynthese-Apparat.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
@@ -69,10 +69,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.caption(text("CAPTION_THAIANA_PICTURE"))
         st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION"), unsafe_allow_html=True)
 
-def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
-    if version == "Advanced":
-        with st.expander(text("LITERATURE")):
-            st.markdown(text("LITERATURE_PHOTOSYNTHESIS"), unsafe_allow_html=True)
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
@@ -84,6 +80,5 @@ if __name__ == "__main__":
 
     text = get_localised_text(version, language)
     make_page(text, language, version)
-    make_literature(text, language, version)
     make_prev_next_button("start", "measuring method")
     make_sidebar()

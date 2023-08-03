@@ -39,6 +39,10 @@ msgstr "O naszej stronie"
 msgid "EXPLANATION_ABOUT"
 msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
 
+#: pages/3 Pflanzengedächtnis.py:97
+msgid "START_BUTTOM"
+msgstr "Rozpocznij testy"
+
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 msgstr "Literatura"
@@ -46,6 +50,10 @@ msgstr "Literatura"
 #: pages/1 Messmethode.py:50
 msgid "LITERATURE_DECLARATION"
 msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
+
+
+msgid "CAPTION_PAM"
+msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 
 #: EINFÜHRUNG.py:36
 msgid "HEADLINE_PRODUCENTEN"
@@ -216,6 +224,21 @@ msgstr "Proces fotosyntezy"
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
 
+#: pages/photosynthesis.py:47
+#: EINFÜHRUNG.py:39
+msgid "HEADLINE_NUTRIENTS"
+msgstr "#### Nutrient intake"
+
+#: pages/photosynthesis.py:48
+#: EINFÜHRUNG.py:40
+msgid "NUTRIENTS_EXPLANATION"
+msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
+
+#: pages/photosynthesis.py:52
+#: EINFÜHRUNG.py:40
+msgid "CAPTION_STOMATA_PICTURE"
+msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
+
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
 # Grammarly checked
@@ -282,10 +305,6 @@ msgstr "A photograph of a plant of the wild type of the model organism _Arabidop
 #: pages/photosynthesis.py:87
 # Grammarly checked
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
-msgstr ""
-
-#: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
 msgstr ""
 
 #: pages/method.py:10
@@ -390,7 +409,7 @@ In the bottom panel you see results of the PAM experiments. Take a good look, ca
 #: pages/method.py:41 pages/method.py:61
 #: pages/1 Messmethode.py:47
 msgid "CAPTION_ABB2"
-msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
+msgstr "Example Graph of a PAM measurement"
 
 #: pages/method.py:43
 #: pages/1 Messmethode.py:32
@@ -431,13 +450,13 @@ msgstr "This was a lot of theory for just a bit of shining, so try a measurement
 #: pages/model_explain.py:16
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_COMPUTATIONAL_MODELS"
-msgstr "# "
+msgstr "# Mathematical models"
 
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 # Grammarly checked
 msgid "HEADLINE_MODEL"
-msgstr ""
+msgstr "# Mathematical models"
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
@@ -599,7 +618,17 @@ msgstr "## Konstrukcja modelu"
 
 #: pages/model_explain.py:67
 #: Grammarly checked
-msgid "CONSTRUCTION_EXPLANATION"
+msgid "CONSTRUCTION_EXPLANATION_1"
+msgstr ""
+
+#: pages/model_explain.py:67
+#: 
+msgid "CAPTION_MODEL_NPQ"
+msgstr "Schemat elementów wchodzących w skład uproszczonego modelu matematycznego wykorzystywanego na tej stronie. Model został opracowany w 2016 roku i zawiera szczegółowy opis wewnętrznych procesów zachodzących wewnątrz fotosystemu II (PSII), w tym procesów wpływających na dynamikę niefotochemicznego wygaszacza (z ang. NPQ), w tym PsbS i zeaksantyny."
+
+#: pages/model_explain.py:67
+#: Grammarly checked
+msgid "CONSTRUCTION_EXPLANATION_2"
 msgstr ""
 
 #: pages/model_explain.py:68
@@ -743,10 +772,15 @@ msgid "TIPP2"
 msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
+#: pages/2 Daten-Analyse.py:48
+#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-msgstr ""
+msgstr "Light intensity in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
+#: pages/2 Daten-Analyse.py:55
+#: pages/3 Pflanzengedächtnis.py:53
+#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 msgstr "Test duration in minutes"
 
@@ -754,18 +788,12 @@ msgstr "Test duration in minutes"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-msgstr ""
+msgstr "Saturation pulses in the selected intervals in seconds"
 
 #: pages/first_analysis.py:222
+#: pages/Analyse.py:67
+#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
-msgstr ""
-
-#: pages/first_analysis.py:168
-msgid "SLIDER_DARKLENGTH"
-msgstr ""
-
-#: pages/first_analysis.py:181
-msgid "SLIDER_SATURATE"
 msgstr ""
 
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
@@ -791,26 +819,18 @@ msgstr "Memory phase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXIS_TIME_MIN"
+msgid "AXSIS_TIME"
 msgstr "Time [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "AXIS_TIME_S"
+msgid "TIME"
 msgstr "Time [s]"
 
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
 msgstr "Fluorescence [F´ₘ /Fₘ]"
-
-#: pages/first_analysis.py:217
-msgid "AXIS_NPQ"
-msgstr ""
-
-#: pages/first_analysis.py:230
-msgid "AXIS_PHIPSII"
-msgstr ""
 
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
