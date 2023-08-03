@@ -48,7 +48,6 @@ def make_matplotlib_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, t
         except:
             pass
     
-    print('new', new_xticks, 'old', default_xticks)
     ax.set_xticks(new_xticks)
     
     # Change the left and down limit
