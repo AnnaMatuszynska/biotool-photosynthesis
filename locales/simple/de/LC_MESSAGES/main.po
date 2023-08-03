@@ -472,13 +472,13 @@ msgstr "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den
 #: pages/model_explain.py:16
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_COMPUTATIONAL_MODELS"
-msgstr "# Das Modell"
+msgstr "# "
 
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 # Grammarly checked
 msgid "HEADLINE_MODEL"
-msgstr "# Das Modell"
+msgstr ""
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60

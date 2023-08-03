@@ -417,7 +417,7 @@ msgstr "# Computational models"
 #: pages/1 Messmethode.py:30
 # Grammarly checked
 msgid "HEADLINE_MODEL"
-msgstr "## Mathematical models"
+msgstr "## What are mathematical models?"
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
@@ -470,13 +470,13 @@ msgstr ""
 #: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
-msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>."
+msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
 
 #: pages/model_explain.py:37
 #: pages/model.explain.py:37
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
-msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and change in the number of people in each category, so overall, three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
+msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 
 #: pages/model_explain.py:52
 #: pages/model.explain.py:52
@@ -488,7 +488,7 @@ msgstr "To effectively solve each ODE, it is crucial to consider the rates invol
 #: pages/model.explain.py:55
 # Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
-msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2)."
+msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 
 #: pages\model_explain.py:61
 # Grammarly checked
