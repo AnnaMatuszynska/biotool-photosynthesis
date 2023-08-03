@@ -104,19 +104,6 @@ simple-fr msgstr ""
 simple-pl msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
 simple-es msgstr ""
 
-#: pages/3 Pflanzengedächtnis.py:97
-msgid "START_BUTTOM"
-advanced-en msgstr "Start the tests"
-advanced-de msgstr "Starte den Versuche"
-advanced-fr msgstr ""
-advanced-pl msgstr "Rozpocznij testy"
-advanced-es msgstr ""
-simple-en msgstr "Start the tests"
-simple-de msgstr "Starte den Versuche"
-simple-fr msgstr ""
-simple-pl msgstr "Rozpocznij testy"
-simple-es msgstr ""
-
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 advanced-en msgstr "Literature"
@@ -141,19 +128,6 @@ simple-en msgstr "The following literature provides more in-depth information on
 simple-de msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
 simple-fr msgstr ""
 simple-pl msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
-simple-es msgstr ""
-
-
-msgid "CAPTION_PAM"
-advanced-en msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
-advanced-de msgstr ""
-advanced-fr msgstr ""
-advanced-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
-advanced-es msgstr ""
-simple-en msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
-simple-de msgstr ""
-simple-fr msgstr ""
-simple-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 simple-es msgstr ""
 
 #: EINFÜHRUNG.py:36
@@ -267,12 +241,12 @@ simple-es msgstr "We aimed at both curious **newcomers** and more **advanced** l
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-advanced-en msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
+advanced-en msgstr "In this :blue[Advanced] version we will explain in detail an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating *in silico* mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex *in silico* mutants, and more outputs will be generated."
 advanced-de msgstr "Nehmen wir an, Sie wählen die :blue[Fortgeschritten]-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit *in silico*."
 advanced-fr msgstr ""
 advanced-pl msgstr "Załóżmy, że wybierzesz wersję :blue[Zaawansowany]. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy **in silico**."
 advanced-es msgstr ""
-simple-en msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer *in silico.*"
+simple-en msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
 simple-de msgstr "Nehmen wir an, Sie wählen die :blue[Fortgeschritten]-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit *in silico*."
 simple-fr msgstr ""
 simple-pl msgstr "Załóżmy, że wybierzesz wersję :blue[Zaawansowany]. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy *in silico*."
@@ -1354,15 +1328,15 @@ In the bottom panel you see results of the PAM experiments. Take a good look, ca
 #: pages/method.py:41 pages/method.py:61
 #: pages/1 Messmethode.py:47
 msgid "CAPTION_ABB2"
-advanced-en msgstr "Example Graph of a PAM measurement"
+advanced-en msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 advanced-de msgstr ""
 advanced-fr msgstr "Example Graph of a PAM measurement"
-advanced-pl msgstr "Example Graph of a PAM measurement"
+advanced-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 advanced-es msgstr "Example Graph of a PAM measurement"
-simple-en msgstr "Example Graph of a PAM measurement"
+simple-en msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 simple-de msgstr ""
 simple-fr msgstr "Example Graph of a PAM measurement"
-simple-pl msgstr "Example Graph of a PAM measurement"
+simple-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 simple-es msgstr "Example Graph of a PAM measurement"
 
 #: pages/method.py:43

@@ -18,15 +18,16 @@ def make_introduction(text: Callable[[str], str]) -> None:
     st.markdown(text("HEADLINE_USAGE"))
     st.markdown(text("USAGE"))
     st.markdown(text("ADVANCED_USE"))
-    st.markdown(text("DROP_BOX_INTRO"))
 
 
 # FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
-    with st.expander(text("EXPANDER_IN")):
-        st.markdown(text("EXPLANATION_IN_VITRO"))
-        st.markdown(text("EXPLANATION_IN_VIVO"))
-        st.markdown(text("EXPLANATION_IN_SILICO"))
+    if version == "Simple":
+        st.markdown(text("DROP_BOX_INTRO"))
+        with st.expander(text("EXPANDER_IN")):
+            st.markdown(text("EXPLANATION_IN_VITRO"))
+            st.markdown(text("EXPLANATION_IN_VIVO"))
+            st.markdown(text("EXPLANATION_IN_SILICO"))
 
     st.markdown(text("HEADLINE_PAGES"))
     st.markdown(text("INTRODUCTION_PAGES"))
