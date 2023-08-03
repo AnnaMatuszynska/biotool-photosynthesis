@@ -39,10 +39,6 @@ msgstr "Über diese Webseite"
 msgid "EXPLANATION_ABOUT"
 msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
 
-#: pages/3 Pflanzengedächtnis.py:97
-msgid "START_BUTTOM"
-msgstr "Starte den Versuche"
-
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 msgstr "Literatur"
@@ -50,10 +46,6 @@ msgstr "Literatur"
 #: pages/1 Messmethode.py:50
 msgid "LITERATURE_DECLARATION"
 msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
-
-
-msgid "CAPTION_PAM"
-msgstr ""
 
 #: EINFÜHRUNG.py:36
 msgid "HEADLINE_PRODUCENTEN"
@@ -159,12 +151,12 @@ msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
 msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
-msgstr ""
+msgstr "# Fotosynthese"
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
 msgid "HEADLINE_CLIMATE"
-msgstr ""
+msgstr "## Klimawandel"
 
 #: pages/photosynthesis.py:11
 #: Lisa's introduction
@@ -229,21 +221,6 @@ msgstr "Photosynthese Ablauf"
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
 
-#: pages/photosynthesis.py:47
-#: EINFÜHRUNG.py:39
-msgid "HEADLINE_NUTRIENTS"
-msgstr ""
-
-#: pages/photosynthesis.py:48
-#: EINFÜHRUNG.py:40
-msgid "NUTRIENTS_EXPLANATION"
-msgstr ""
-
-#: pages/photosynthesis.py:52
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-msgstr "Mikroskopische Aufnahme eines Stomata des Wildtypes des Modellorganismus Arabidopsis thaliana."
-
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
 # Grammarly checked
@@ -304,6 +281,10 @@ msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis t
 #: pages/photosynthesis.py:87
 # Grammarly checked
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "LITERATURE_PHOTOSYNTHESIS"
 msgstr ""
 
 #: pages/method.py:10

@@ -39,10 +39,6 @@ msgstr "About this Website"
 msgid "EXPLANATION_ABOUT"
 msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
 
-#: pages/3 Pflanzengedächtnis.py:97
-msgid "START_BUTTOM"
-msgstr "Start the tests"
-
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 msgstr "Literature"
@@ -50,10 +46,6 @@ msgstr "Literature"
 #: pages/1 Messmethode.py:50
 msgid "LITERATURE_DECLARATION"
 msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
-
-
-msgid "CAPTION_PAM"
-msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
 
 #: EINFÜHRUNG.py:36
 msgid "HEADLINE_PRODUCENTEN"
@@ -90,7 +82,7 @@ msgstr "We aimed at both curious **newcomers** and more :blue[**advanced**] lear
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer *in silico.*"
+msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer in silico."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -143,7 +135,7 @@ msgstr "As the headline already told you, we work *in silico*, i.e., with mathem
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements."
+msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements. In the :blue[Advanced] version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
@@ -212,21 +204,6 @@ msgstr "Photosynthesis process"
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
 
-#: pages/photosynthesis.py:47
-#: EINFÜHRUNG.py:39
-msgid "HEADLINE_NUTRIENTS"
-msgstr "#### Nutrient intake"
-
-#: pages/photosynthesis.py:48
-#: EINFÜHRUNG.py:40
-msgid "NUTRIENTS_EXPLANATION"
-msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-
-#: pages/photosynthesis.py:52
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
 # Grammarly checked
@@ -293,6 +270,10 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, which has provided researchers with a wealth of genetic information about the plant.\n"
 "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
 "\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
+
+#: pages/1 Messmethode.py:50
+msgid "LITERATURE_PHOTOSYNTHESIS"
+msgstr ""
 
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
@@ -372,7 +353,7 @@ msgstr "In this one figure, the basic principles behind the fluorescence and PAM
 #: pages/method.py:41 pages/method.py:61
 #: pages/1 Messmethode.py:47
 msgid "CAPTION_ABB2"
-msgstr "Example Graph of a PAM measurement"
+msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 
 #: pages/method.py:43
 #: pages/1 Messmethode.py:32
