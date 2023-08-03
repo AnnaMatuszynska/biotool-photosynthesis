@@ -129,16 +129,16 @@ msgstr "In the following, we will give you a short overview of what you can expe
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "PHOTOSYNTHESIS"
-msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis. Especially something about the functionality, because the knowledge is required on the following pages. In the :blue[Advanced] Version, there is more in-depth information on climate change."
+msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis to take full use of the following pages. In this :blue[Advanced] Version, there is more in-depth information on climate change as well as molecular description of the photoprotective mechanism."
 
 #: pages/1 Messmethode.py:50
 msgid "METHOD"
-msgstr "To measure plants' photosynthetic performance, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
+msgstr "To measure plants' photosynthetic performance, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible. In this :blue[Advanced] Version we additionally provide links to specialised literature where you can learn more in depth about the fluorescence measurements."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "MODEL"
-msgstr "As the headline already told you, we work *in silico*, i.e., with mathematical models. On the **computational models page**, you will learn something about mathematical models in general, as well as something about photosynthesis models. In the :blue[Advanced] version, you can also learn about implementing a mathematical model."
+msgstr "As the headline already told you, we work *in silico*, i.e., with mathematical models. On the **computational models page**, you will learn something about mathematical models in general, as well as something about photosynthesis models. In the :blue[Advanced] version, you can also learn about implementing a mathematical model in a programming language Python."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
@@ -208,9 +208,9 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthesis process"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:39
+#: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO$_2$ and sugar production."
+msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
 
 #: pages/photosynthesis.py:47
 #: EINFÜHRUNG.py:39

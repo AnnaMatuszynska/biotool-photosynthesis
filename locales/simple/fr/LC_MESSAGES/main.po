@@ -21,11 +21,11 @@ msgstr ""
 
 # SIDEBAR
 msgid "SIMPLE"
-msgstr "Simple"
+msgstr ""
 
 
 msgid "ADVANCED"
-msgstr "Advanced"
+msgstr ""
 
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
@@ -41,66 +41,56 @@ msgstr ""
 
 #: pages/3 Pflanzengedächtnis.py:97
 msgid "START_BUTTOM"
-msgstr "Start the tests"
+msgstr ""
 
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
-msgstr "Literature"
+msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "LITERATURE_DECLARATION"
-msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
+msgstr ""
 
 
 msgid "CAPTION_PAM"
-msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
+msgstr ""
 
 #: EINFÜHRUNG.py:36
 msgid "HEADLINE_PRODUCENTEN"
-msgstr "#### Consumers vs producers"
+msgstr ""
 
 #: EINFÜHRUNG.py:37
 msgid "PRODUCENTEN_EXPLANATION"
-msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
+msgstr ""
 
 #: Start.py:10
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
-msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
+msgstr ""
 
 #: Start.py:11
 #: Intro by Anna
 # Grammarly checked
 msgid "INTRO"
-msgstr "This is a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen \
-        University, Germany. Our goal is to provide a teaching tool applicable to the needs of XXI-century students. We \
-        want to show how computational modeling supports the current research in increasing our understanding of how the \
-        world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably \
-        the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening \
-        about the process of photosynthesis."
+msgstr ""
 
 #: Start.py:15
 #: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "HEADLINE_USAGE"
-msgstr "## How to use this website"
+msgstr ""
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
-msgstr "We aimed at both curious **newcomers** and more **advanced** learners. At any point of using this website you can choose \
-        which version you want to use by clicking on the left side button: Version and selecting from the drop-down list \
-        *Simple* or *Advanced*."
+msgstr ""
 
 #: Start.py:17
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "If you do decide to choose the *Advanced* version, you will not only learn about photosynthesis \
-        as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. \
-        You will also learn how to 'genetically modify' your photosynthetic organism to perform new set of experiments, \
-        meaning you will get to create a digital mutant. We call the work performed in computer in silico."
+msgstr ""
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -110,22 +100,22 @@ msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *
 #: Start.py:23
 #: EINFÜHRUNG.py:28
 msgid "EXPANDER_IN"
-msgstr "Differences between in vitro, in vivo and in silico"
+msgstr ""
 
 #: Start.py:24
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_VITRO"
-msgstr "*In vitro* refers to experiments conducted outside a living organism in a controlled laboratory setting."
+msgstr ""
 
 #: Start.py:25
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_VIVO"
-msgstr "In vivo refers to experiments conducted inside a living organism, usually animals or humans."
+msgstr ""
 
 #: Start.py:26
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_SILICO"
-msgstr "In silico refers to computational experiments and simulations performed using computer models and algorithms."
+msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "HEADLINE_PAGES"
@@ -207,7 +197,7 @@ msgstr ""
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
 msgid "HEADLINE_PHOTOSYNTHESIS"
-msgstr "# Photosynthesis"
+msgstr ""
 
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
@@ -230,7 +220,7 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthesis process"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:39
+#: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr ""
 
@@ -320,7 +310,7 @@ msgstr ""
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
-msgstr "# Measuring photosynthesis"
+msgstr ""
 
 #: pages/method.py:15
 #: Explanation by Tobias
@@ -624,7 +614,7 @@ msgstr ""
 
 #: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "## Model construction"
+msgstr ""
 
 #: pages/model_explain.py:67
 #: Grammarly checked

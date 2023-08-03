@@ -57,11 +57,11 @@ msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a 
 
 #: EINFÜHRUNG.py:36
 msgid "HEADLINE_PRODUCENTEN"
-msgstr "#### Consumers vs producers"
+msgstr "#### Producenci kontra konsumenci"
 
 #: EINFÜHRUNG.py:37
 msgid "PRODUCENTEN_EXPLANATION"
-msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
+msgstr "Przez **konsumenta** rozumiemy żywe istoty, które żywią się biomasą produkowaną przez inne żywe istoty. Wszystkie żywe istoty, które mogą produkować biomasę, nazywane są **producentami**. Należą do nich w szczególności rośliny. Mogą one produkować biomasę niezależnie, na przykład poprzez fotosyntezę."
 
 #: Start.py:10
 #: EINFÜHRUNG.py:21
@@ -90,10 +90,7 @@ msgstr "Naszym celem jest dotrzeć zarówno do **początkujących** jak i bardzi
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "If you do decide to choose the *Advanced* version, you will not only learn about photosynthesis \
-        as a process, but also about methods how to measure its dynamics and how to calculate its efficiency using computer. \
-        You will also learn how to 'genetically modify' your photosynthetic organism to perform new set of experiments, \
-        meaning you will get to create a digital mutant. We call the work performed in computer in silico."
+msgstr "Załóżmy, że wybierzesz wersję :blue[Zaawansowany]. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy *in silico*."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -108,49 +105,49 @@ msgstr "Różnica między *in vitro*, *in vivo* i *in silico*"
 #: Start.py:24
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_VITRO"
-msgstr "*In vitro* refers to experiments conducted outside a living organism in a controlled laboratory setting."
+msgstr "*In vitro* odnosi się do eksperymentów przeprowadzanych poza żywym organizmem w kontrolowanych warunkach laboratoryjnych."
 
 #: Start.py:25
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_VIVO"
-msgstr "In vivo refers to experiments conducted inside a living organism, usually animals or humans."
+msgstr "Termin *in vivo* odnosi się do eksperymentów przeprowadzanych wewnątrz żywego organizmu, zwykle zwierząt lub ludzi."
 
 #: Start.py:26
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_SILICO"
-msgstr "In silico refers to computational experiments and simulations performed using computer models and algorithms."
+msgstr "*In silico* odnosi się do eksperymentów obliczeniowych i symulacji przeprowadzanych przy użyciu modeli komputerowych i algorytmów."
 
 #: pages/1 Messmethode.py:50
 msgid "HEADLINE_PAGES"
-msgstr ""
+msgstr "## Streszczenia stron"
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "INTRODUCTION_PAGES"
-msgstr ""
+msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji :blue[Advanced] znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach :blue[Zaawansowany]."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "PHOTOSYNTHESIS"
-msgstr ""
+msgstr "W zakładce **fotosynteza** dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony."
 
 #: pages/1 Messmethode.py:50
 msgid "METHOD"
-msgstr ""
+msgstr "Abyśmy mogli zmierzyć wydajność fotosyntetyczną roślin, potrzebujemy określonej metody pomiaru. Została ona przedstawiona na stronie **metoda pomiaru**. Ponadto omawiamy, w jaki sposób możemy zwizualizować nasze pomiary."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "MODEL"
-msgstr ""
+msgstr "Jak w samym tytule tej strony, pracujemy *in silico*, tj. z modelami matematycznymi. Na stronie **modele obliczeniowe** dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr ""
+msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
-msgstr ""
+msgstr "Wreszcie, poznasz pamięć światła roślin na stronie **pamięć światła roślin** i możesz udowodnić jej istnienie niezależnie za pomocą eksperymentów."
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
@@ -200,7 +197,7 @@ msgstr ""
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
 msgid "HEADLINE_PHOTOSYNTHESIS"
-msgstr "# Photosynthesis"
+msgstr "## Proces fotosyntezy"
 
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
@@ -220,12 +217,12 @@ msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do 
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
 msgid "CAPTION_FOTOSYNTHESE_PICTURE"
-msgstr "Photosynthesis process"
+msgstr "Proces fotosyntezy"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:39
+#: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO$_2$ i produkcji cukru."
+msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
 
 #: pages/photosynthesis.py:47
 #: EINFÜHRUNG.py:39
@@ -313,7 +310,7 @@ msgstr ""
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
-msgstr "# Measuring photosynthesis"
+msgstr "# Metoda pomiaru"
 
 #: pages/method.py:15
 #: Explanation by Tobias
@@ -613,11 +610,11 @@ msgstr ""
 
 #: pages/model_explain.py:65
 msgid "HEADLINE_EXPERIMENTS"
-msgstr ""
+msgstr "Eksperymenty *in silico*"
 
 #: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "## Model construction"
+msgstr "## Konstrukcja modelu"
 
 #: pages/model_explain.py:67
 #: Grammarly checked

@@ -37,7 +37,7 @@ msgstr "Über diese Webseite"
 
 #: This can be copied to add new text entries with translations
 msgid "EXPLANATION_ABOUT"
-msgstr ""
+msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
 
 #: pages/3 Pflanzengedächtnis.py:97
 msgid "START_BUTTOM"
@@ -66,7 +66,7 @@ msgstr ""
 #: Start.py:10
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
-msgstr "# Herzlich Willkommen!"
+msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung der Photosynthese anhand eines Computermodells."
 
 #: Start.py:11
 #: Intro by Anna
@@ -91,70 +91,70 @@ msgstr "## Nutzung dieser Website"
 #: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
-msgstr ""
+msgstr "Wir richten uns sowohl an neugierige **Neulinge** als auch an :blue[Fortgeschrittene] Lernende. Wenn Sie diese Website nutzen, können Sie wählen, welche Version Sie verwenden möchten, indem Sie auf die Schaltfläche auf der linken Seite klicken: Version klicken und aus der Dropdown-Liste *Einfach* oder *:blau[Fortgeschrittene]* auswählen."
 
 #: Start.py:17
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr ""
+msgstr "Nehmen wir an, Sie wählen die :blue[Fortgeschritten]-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit *in silico*."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
 msgid "DROP_BOX_INTRO"
-msgstr ""
+msgstr "Wenn Sie den Unterschied zwischen *in vitro*, *in vivo* und *in silico* nicht kennen, öffnen Sie die Dropbox unten."
 
 #: Start.py:23
 #: EINFÜHRUNG.py:28
 msgid "EXPANDER_IN"
-msgstr ""
+msgstr "Unterschiede zwischen _in vitro_, _in vivo_ und _in silico_"
 
 #: Start.py:24
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_VITRO"
-msgstr ""
+msgstr "*In vitro* bezieht sich auf Experimente, die außerhalb eines lebenden Organismus in einer kontrollierten Laborumgebung durchgeführt werden."
 
 #: Start.py:25
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_VIVO"
-msgstr ""
+msgstr "*In vivo* bezieht sich auf Experimente, die in einem lebenden Organismus, in der Regel einem Tier oder einem Menschen, durchgeführt werden."
 
 #: Start.py:26
 #: EINFÜHRUNG.py:28
 msgid "EXPLANATION_IN_SILICO"
-msgstr ""
+msgstr "*In silico* bezieht sich auf Computerexperimente und -simulationen, die mit Hilfe von Computermodellen und -algorithmen durchgeführt werden."
 
 #: pages/1 Messmethode.py:50
 msgid "HEADLINE_PAGES"
-msgstr ""
+msgstr "## Zusammenfassung der Seiten"
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "INTRODUCTION_PAGES"
-msgstr ""
+msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie auf den folgenden Seiten erwartet."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "PHOTOSYNTHESIS"
-msgstr ""
+msgstr "Auf der Seite **Photosynthese** erfahren Sie alles, was Sie über die Photosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können. In dieser :blue[Fortgeschrittenen]-Version gibt es ausführlichere Informationen über den Klimawandel sowie eine molekulare Beschreibung des Photoprotektionsmechanismus."
 
 #: pages/1 Messmethode.py:50
 msgid "METHOD"
-msgstr ""
+msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir eine spezielle Messmethode. Diese wird auf der Seite **Messmethode** vorgestellt. Darüber hinaus gehen wir darauf ein, wie wir unsere Messungen sichtbar machen können. In dieser :blue[Fortgeschrittenen]-Version bieten wir zusätzlich Links zu Fachliteratur, in der Sie mehr über die Fluoreszenzmessungen erfahren können."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "MODEL"
-msgstr ""
+msgstr "Wie die Überschrift schon sagt, arbeiten wir *in silico*, d.h. mit mathematischen Modellen. Auf der Seite **Computermodelle** erfahren Sie etwas über mathematische Modelle im Allgemeinen und etwas über Photosynthesemodelle. In der :blue[Advanced]-Version können Sie auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr ""
+msgstr "Auf der Seite **Experimente** ***in silico*** lernen Sie das von uns verwendete und von Anna Matuszyńska mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der :blue[Advanced]-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
-msgstr ""
+msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das pflanzliche Lichtgedächtnis kennen und können dessen Existenz selbständig mit Experimenten nachweisen."
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
@@ -219,9 +219,9 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthese Ablauf"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:39
+#: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO$_2$ und die Zuckerproduktion verwendet wird."
+msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
 
 #: pages/photosynthesis.py:47
 #: EINFÜHRUNG.py:39
@@ -634,7 +634,7 @@ msgstr ""
 
 #: pages/model_explain.py:65
 msgid "HEADLINE_EXPERIMENTS"
-msgstr ""
+msgstr "# Experimente *in silico*"
 
 #: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"

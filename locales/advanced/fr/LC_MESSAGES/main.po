@@ -21,11 +21,11 @@ msgstr ""
 
 # SIDEBAR
 msgid "SIMPLE"
-msgstr "Simple"
+msgstr ""
 
 
 msgid "ADVANCED"
-msgstr "Advanced"
+msgstr ""
 
 #: EINFÜHRUNG.py:
 msgid "LANGUAGE"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: pages/3 Pflanzengedächtnis.py:97
 msgid "START_BUTTOM"
-msgstr "Start the tests"
+msgstr ""
 
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
@@ -49,8 +49,7 @@ msgstr ""
 
 #: pages/1 Messmethode.py:50
 msgid "LITERATURE_DECLARATION"
-msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the \
-           opportunity to familiarize oneself with the basics."
+msgstr ""
 
 
 msgid "CAPTION_PAM"
@@ -67,25 +66,19 @@ msgstr ""
 #: Start.py:10
 #: EINFÜHRUNG.py:21
 msgid "HEADLINE_MAIN"
-msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model."
+msgstr ""
 
 #: Start.py:11
 #: Intro by Anna
 # Grammarly checked
 msgid "INTRO"
-msgstr "This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipps and Anna Matuszyńska at the \
-        RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of a XXI century \
-        students. We want to show how computational modeling supports the current research in increasing our understanding \
-        how the world works, and we have selected photosynthesis as THE processs to demonstrate it with. At the end, \
-        photosynthesis is arguably the most important process on Earth! We created this interactive dashboard, aimed at \
-        both curious newcomers and more advanced learners. You can choose which Version you want to use by clicking on \
-        the left side Version *Simple* or *Expert*. "
+msgstr ""
 
 #: Start.py:15
 #: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "HEADLINE_USAGE"
-msgstr "## How to use this website"
+msgstr ""
 
 #: Start.py:16
 #: EINFÜHRUNG.py:24
@@ -219,7 +212,7 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthesis process"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:39
+#: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr ""
 
@@ -303,7 +296,7 @@ msgstr ""
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
-msgstr "# The measurement method"
+msgstr ""
 
 #: pages/method.py:15
 #: Explanation by Tobias
@@ -626,7 +619,7 @@ msgstr ""
 
 #: pages/model_explain.py:65
 msgid "HEADLINE_MODEL_CONSTRUCTION"
-msgstr "## Model construction"
+msgstr ""
 
 #: pages/model_explain.py:67
 #: Grammarly checked
@@ -636,7 +629,7 @@ msgstr ""
 #: pages/model_explain.py:68
 #: Anna's explanation of the model
 msgid "RATES_1"
-msgstr "1) the reduced fraction of the plastoquinone pool ($PQH_2$),"
+msgstr ""
 
 #: pages/model_explain.py:69
 #: Anna's explanation of the model
