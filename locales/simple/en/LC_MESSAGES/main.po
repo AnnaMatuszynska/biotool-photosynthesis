@@ -39,10 +39,6 @@ msgstr "About this Website"
 msgid "EXPLANATION_ABOUT"
 msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
 
-#: pages/3 Pflanzengedächtnis.py:97
-msgid "START_BUTTOM"
-msgstr "Start the tests"
-
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 msgstr "Literature"
@@ -90,7 +86,7 @@ msgstr "We aimed at both curious **newcomers** and more :blue[**advanced**] lear
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer *in silico.*"
+msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer *in silico*."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -143,7 +139,7 @@ msgstr "As the headline already told you, we work *in silico*, i.e., with mathem
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements."
+msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements. In the :blue[Advanced] version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
@@ -212,21 +208,6 @@ msgstr "Photosynthesis process"
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
 
-#: pages/photosynthesis.py:47
-#: EINFÜHRUNG.py:39
-msgid "HEADLINE_NUTRIENTS"
-msgstr "#### Nutrient intake"
-
-#: pages/photosynthesis.py:48
-#: EINFÜHRUNG.py:40
-msgid "NUTRIENTS_EXPLANATION"
-msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-
-#: pages/photosynthesis.py:52
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
 # Grammarly checked
@@ -294,6 +275,10 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
 "\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
 
+#: pages/1 Messmethode.py:50
+msgid "LITERATURE_PHOTOSYNTHESIS"
+msgstr ""
+
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
@@ -314,7 +299,7 @@ msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, 
 #: pages/method.py:20
 #: Explanation by Tobias
 msgid "GROWING_PLANTS_1"
-msgstr "Plant shine!"
+msgstr "Plants shine!"
 
 #: pages/method.py:22
 #: Explanation by Tobias
@@ -372,7 +357,13 @@ msgstr "In this one figure, the basic principles behind the fluorescence and PAM
 #: pages/method.py:41 pages/method.py:61
 #: pages/1 Messmethode.py:47
 msgid "CAPTION_ABB2"
-msgstr "Example Graph of a PAM measurement"
+msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
+
+#: pages/method.py:43
+#: pages/1 Messmethode.py:32
+# Grammarly checked
+msgid "HEADLINE_PAM_MEASUREMENT"
+msgstr "### PAM Experiments"
 
 #: pages/method.py:43
 #: pages/1 Messmethode.py:32
@@ -417,7 +408,7 @@ msgstr "# Computational models"
 #: pages/1 Messmethode.py:30
 # Grammarly checked
 msgid "HEADLINE_MODEL"
-msgstr "## Mathematical models"
+msgstr "## What are mathematical models?"
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
@@ -470,13 +461,13 @@ msgstr ""
 #: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
-msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>."
+msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
 
 #: pages/model_explain.py:37
 #: pages/model.explain.py:37
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
-msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). If you have never seen what an ODE looks like, click the box Ordinary Differential Equations. Using differential equations, you can describe the relationship between the time and change in the number of people in each category, so overall, three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
+msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 
 #: pages/model_explain.py:52
 #: pages/model.explain.py:52
@@ -488,7 +479,7 @@ msgstr "To effectively solve each ODE, it is crucial to consider the rates invol
 #: pages/model.explain.py:55
 # Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
-msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2)."
+msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 
 #: pages\model_explain.py:61
 # Grammarly checked
@@ -733,15 +724,10 @@ msgid "TIPP2"
 msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
-#: pages/2 Daten-Analyse.py:48
-#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-msgstr "Light intensity in μmol m⁻² s⁻¹"
+msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
-#: pages/2 Daten-Analyse.py:55
-#: pages/3 Pflanzengedächtnis.py:53
-#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 msgstr "Test duration in minutes"
 
@@ -749,12 +735,18 @@ msgstr "Test duration in minutes"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-msgstr "Saturation pulses in the selected intervals in seconds"
+msgstr "Seconds between saturating pulse during light phase"
 
 #: pages/first_analysis.py:222
-#: pages/Analyse.py:67
-#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
+msgstr ""
+
+#: pages/first_analysis.py:168
+msgid "SLIDER_DARKLENGTH"
+msgstr ""
+
+#: pages/first_analysis.py:181
+msgid "SLIDER_SATURATE"
 msgstr ""
 
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
@@ -780,18 +772,26 @@ msgstr "Memory phase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXSIS_TIME"
+msgid "AXIS_TIME_MIN"
 msgstr "Time [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "TIME"
+msgid "AXIS_TIME_S"
 msgstr "Time [s]"
 
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
 msgstr "Fluorescence [F´ₘ /Fₘ]"
+
+#: pages/first_analysis.py:217
+msgid "AXIS_NPQ"
+msgstr ""
+
+#: pages/first_analysis.py:230
+msgid "AXIS_PHIPSII"
+msgstr ""
 
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
