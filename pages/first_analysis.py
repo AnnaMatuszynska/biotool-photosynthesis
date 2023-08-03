@@ -10,7 +10,7 @@ from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from PIL import Image
 from typing import Any, Callable
-from utils import get_localised_text, make_prev_next_button, include_ytvideo, include_image
+from utils import get_localised_text, make_prev_next_button, include_ytvideo, include_image, resetting_click_detector_setup, markdown_click
 from matplotlib import pyplot as plt, patches
 from scipy.signal import find_peaks, peak_prominences
 
@@ -328,7 +328,7 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
 
     if version == "Simple":
-        st.markdown(text("IMPLEMENTATION_TO_EXPERT"))
+        markdown_click("IMPLEMENTATION_TO_EXPERT", text)
 
     if version == "Advanced":
         with st.expander(text("MODEL_CODE_EXPANDER")):
@@ -550,6 +550,7 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "Simple")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
+    resetting_click_detector_setup()
     make_page(text)
     include_image("pictures/slider-default-value.png", 0.6, text("CAPTION_DEFAULT_SLIDERS"), center_caption=True)
     make_prev_next_button("computational models", "plant light memory")

@@ -86,7 +86,7 @@ msgstr "Naszym celem jest dotrzeć zarówno do **początkujących** jak i bardzi
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "Załóżmy, że wybierzesz wersję :blue[Zaawansowany]. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy *in silico*."
+msgstr "Załóżmy, że wybierzesz wersję <a href='#' id='Advanced'>Zaawansowany</a>. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy <i>in silico</i>."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -120,7 +120,7 @@ msgstr "## Streszczenia stron"
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "INTRODUCTION_PAGES"
-msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji :blue[Advanced] znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach :blue[Zaawansowany]."
+msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji <a href='#' id='Advanced'>Advanced</a> znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach <a href='#' id='Advanced'>Zaawansowany</a>."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked

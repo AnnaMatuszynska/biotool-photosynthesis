@@ -15,8 +15,8 @@ def make_introduction(text: Callable[[str], str]) -> None:
     # Introduction biotool
     st.video("https://youtu.be/KvyjIWLD8rU")
     st.markdown(text("HEADLINE_USAGE"))
-    st.markdown(text("USAGE"))
-    st.markdown(text("ADVANCED_USE"))
+    markdown_click("USAGE", text)
+    markdown_click("ADVANCED_USE", text)
 
 
 # FIXME: version and language should probably be replaced by text

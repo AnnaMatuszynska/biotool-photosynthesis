@@ -9,7 +9,7 @@ from modelbase.typing import Array
 from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from typing import Any, Callable
-from utils import get_localised_text, make_prev_next_button
+from utils import get_localised_text, make_prev_next_button, resetting_click_detector_setup, markdown_click
 
 
 # Function for PAM experiment
@@ -266,7 +266,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
     with col2:
         st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
-    st.markdown(text("INTRODUCTION_BRAIN"))
+    markdown_click("INTRODUCTION_BRAIN", text)
 
     col1, col2, _ = st.columns(3)
     with col2:
@@ -352,6 +352,7 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "Simple")
     language: str = st.session_state.setdefault("language", "English")
     _ = get_localised_text(version, language)
+    resetting_click_detector_setup()
     make_page(_, version)
     make_prev_next_button("experiments in silico", "take home messages")
     make_sidebar()

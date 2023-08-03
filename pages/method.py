@@ -2,7 +2,7 @@ import streamlit as st
 from pages._sidebar import make_sidebar
 from PIL import Image
 from typing import Callable
-from utils import get_localised_text, make_prev_next_button
+from utils import get_localised_text, make_prev_next_button, resetting_click_detector_setup, markdown_click
 
 
 # FIXME: language and version probably should be put into text here
@@ -29,7 +29,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("EXPLANATION_VIDEO"), unsafe_allow_html=True)
 
     with st.expander(text("MEASURING_FLUORESZENZ"), expanded=True):
-        st.markdown(text("EXPLANATION_MEASUREMENT_1"), unsafe_allow_html=True)
+        markdown_click("EXPLANATION_MEASUREMENT_1", text)
         st.markdown(text("INTRODUCTION_PHI"), unsafe_allow_html=True)
         st.video("https://youtu.be/EwXkOlMBl3o")
 
@@ -97,6 +97,7 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "Simple")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
+    resetting_click_detector_setup()
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("photosynthesis", "computational models")

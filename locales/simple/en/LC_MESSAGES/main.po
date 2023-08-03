@@ -80,13 +80,13 @@ msgstr "## How to use this website"
 #: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
-msgstr "We aimed at both curious **newcomers** and more :blue[**advanced**] learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *Simple* or :blue[*Advanced*]."
+msgstr "We aimed at both curious <b>newcomers</b> and more <a href='#' id='Advanced'>advanced</a> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>Simple</i> or <a href='#' id='Advanced'>Advanced</a>."
 
 #: Start.py:17
 #: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "Suppose you choose the :blue[Advanced] version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer *in silico*."
+msgstr "Suppose you choose the <a href='#' id='Advanced'>Advanced</a> version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer <i>in silico</i>."
 
 #: Start.py:18
 #: EINFÜHRUNG.py:28
@@ -120,7 +120,7 @@ msgstr "## Abstract of the pages"
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "INTRODUCTION_PAGES"
-msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In :blue[Advanced] you will find the overview of what additional information you will get in the :blue[Advanced] versions."
+msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In <a href='#' id='Advanced'>Advanced</a> you will find the overview of what additional information you will get in the <a href='#' id='Advanced'>Advanced</a> versions."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
@@ -139,7 +139,7 @@ msgstr "As the headline already told you, we work *in silico*, i.e., with mathem
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "On the page **experiments** ***in silico***, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements. In the :blue[Advanced] version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
+msgstr "On the page <b>experiments <i>in silico</i></b>, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements. In the <a href='#' id='Advanced'>Advanced</a> version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
@@ -334,7 +334,7 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_MEASUREMENT_1"
-msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the :blue[Advanced] section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the reemitted light signal."
+msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='Advanced'>Advanced</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the reemitted light signal."
 
 #: pages/method.py:34
 #: Explanation by Tobias
@@ -496,7 +496,7 @@ msgstr "### The Farquhar, von Caemmerer and Berry model"
 
 #: pages/model_explain.py:71
 msgid "FVCB_1"
-msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). C<sub>3</sub> you may ask? Actually, plants can perform their photosynthesis in a slightly different manner. Check the box below to learn more about the various forms of photosynthesis. The model was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results. Please use the :blue[Advanced] mode to see these equations."
+msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). C<sub>3</sub> you may ask? Actually, plants can perform their photosynthesis in a slightly different manner. Check the box below to learn more about the various forms of photosynthesis. The model was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results. Please use the <a href='#' id='Advanced'>Advanced</a> mode to see these equations."
 
 #: pages/model_explain.py:87
 msgid "FVCB_2"
@@ -509,7 +509,7 @@ msgstr "### The *e*-photosynthesis model"
 #: pages/model_explain.py:92
 # Grammarly checked
 msgid "E_PHOTOSYNTHESIS_1"
-msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It uses many different elements from other models and brings them all together to create one of the most complete dynamic models of photosynthesis. To have a small glimpse at what this model entails, switch to the :blue[Advanced] mode"
+msgstr "The <i>e</i>-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It uses many different elements from other models and brings them all together to create one of the most complete dynamic models of photosynthesis. To have a small glimpse at what this model entails, switch to the <a href='#' id='Advanced'>Advanced</a> mode"
 
 #: pages/model_explain.py:102
 msgid "E_PHOTOSYNTHESIS_2"
@@ -522,7 +522,7 @@ msgstr "### The Bellasio model"
 #: pages/model_explain.py:107
 # Grammarly checked
 msgid "BELLASIO_1"
-msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behavior. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. It combines various elements from models, such as the FvCB and *e*-photosynthesis models, while simplifying certain aspects to make it suitable for non-experienced computational biologists. For a more detailed overview of what this model includes, switch to the :blue[Advanced] mode."
+msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behavior. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. It combines various elements from models, such as the FvCB and <i>e</i>-photosynthesis models, while simplifying certain aspects to make it suitable for non-experienced computational biologists. For a more detailed overview of what this model includes, switch to the <a href='#' id='Advanced'>Advanced</a> mode."
 
 #: pages/model_explain.py:109
 # Grammarly checked
@@ -801,7 +801,7 @@ msgstr "# Plant Light Memory"
 #: pages/plant_memory.py:269
 # Grammarly checked
 msgid "INTRODUCTION_BRAIN"
-msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own **memory experiments**. Go ahead; you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the :blue[Advanced] version on the left. You can also create your mutated version of the plant and see if you can *forget* the light sooner."
+msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b> and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='Advanced'>Advanced</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40
