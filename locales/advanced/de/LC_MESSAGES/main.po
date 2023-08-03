@@ -39,10 +39,6 @@ msgstr "Über diese Webseite"
 msgid "EXPLANATION_ABOUT"
 msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
 
-#: pages/3 Pflanzengedächtnis.py:97
-msgid "START_BUTTOM"
-msgstr "Starte den Versuche"
-
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 msgstr "Literatur"
@@ -159,12 +155,12 @@ msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
 msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
-msgstr ""
+msgstr "# Fotosynthese"
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
 msgid "HEADLINE_CLIMATE"
-msgstr ""
+msgstr "## Klimawandel"
 
 #: pages/photosynthesis.py:11
 #: Lisa's introduction
@@ -194,7 +190,7 @@ msgstr "- Emissionen wärmespeichernder Gase"
 # Grammarly checked
 msgid "END_OF_INTRODUCTION"
 msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten *97 % der Klimaforscher* \
-        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden [Cook], und dass \
+        darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden (Cook et al., 2016), und dass \
         Forschung erforderlich ist, um die Auswirkungen des plötzlichen Anstiegs der Erdtemperatur zu verstehen."
 
 #: pages/photosynthesis.py:32
@@ -222,21 +218,6 @@ msgstr "Photosynthese Ablauf"
 #: PHOTOSYNTHESIS.py:45
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
-
-#: pages/photosynthesis.py:47
-#: EINFÜHRUNG.py:39
-msgid "HEADLINE_NUTRIENTS"
-msgstr ""
-
-#: pages/photosynthesis.py:48
-#: EINFÜHRUNG.py:40
-msgid "NUTRIENTS_EXPLANATION"
-msgstr ""
-
-#: pages/photosynthesis.py:52
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-msgstr "Mikroskopische Aufnahme eines Stomata des Wildtypes des Modellorganismus Arabidopsis thaliana."
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
@@ -298,6 +279,10 @@ msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis t
 #: pages/photosynthesis.py:87
 # Grammarly checked
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
+msgstr ""
+
+#: pages/1 Messmethode.py:50
+msgid "LITERATURE_PHOTOSYNTHESIS"
 msgstr ""
 
 #: pages/method.py:10
@@ -425,8 +410,14 @@ msgstr ""
 #: pages/method.py:43
 #: pages/1 Messmethode.py:32
 # Grammarly checked
+msgid "HEADLINE_PAM_MEASUREMENT"
+msgstr "### PAM Experimente"
+
+#: pages/method.py:43
+#: pages/1 Messmethode.py:32
+# Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
-msgstr "###### Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
+msgstr "Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
         Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
         'PAM'. Aus dem Namen können Sie schon ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der \
         Lichtblitze 'modulieren' (steuern)."
@@ -810,15 +801,10 @@ msgid "TIPP2"
 msgstr "***Tipp 2:*** *Durch Klicken auf die Schaltfläche Stopp in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
-#: pages/2 Daten-Analyse.py:48
-#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-msgstr "Lichtintensität in μmol m⁻² s⁻¹"
+msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
-#: pages/2 Daten-Analyse.py:55
-#: pages/3 Pflanzengedächtnis.py:53
-#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 msgstr "Versuchsdauer in Minuten"
 
@@ -826,13 +812,19 @@ msgstr "Versuchsdauer in Minuten"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-msgstr "Sättigungsimpulse in den gewählten Intervallen in Sekunden"
+msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
 
 #: pages/first_analysis.py:222
-#: pages/Analyse.py:67
-#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
 msgstr "Umwandlungsrate zu Zeaxanthin in ± Prozent Standardwert"
+
+#: pages/first_analysis.py:168
+msgid "SLIDER_DARKLENGTH"
+msgstr "Dauer der Dunkelphase in Sekunden"
+
+#: pages/first_analysis.py:181
+msgid "SLIDER_SATURATE"
+msgstr "Lichtintensität des Sättigungsimpulses in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
 #: pages/2 Daten-Analyse.py:83
@@ -857,18 +849,26 @@ msgstr "Gedächtnisphase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXSIS_TIME"
+msgid "AXIS_TIME_MIN"
 msgstr "Zeit [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "TIME"
+msgid "AXIS_TIME_S"
 msgstr "Zeit [s]"
 
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
 msgstr "Fluoreszenz [F´ₘ /Fₘ]"
+
+#: pages/first_analysis.py:217
+msgid "AXIS_NPQ"
+msgstr ""
+
+#: pages/first_analysis.py:230
+msgid "AXIS_PHIPSII"
+msgstr ""
 
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
@@ -880,6 +880,30 @@ msgstr "# Das Pflanzengedächtnis"
 msgid "INTRODUCTION_BRAIN"
 msgstr "Das Modell bietet auch die Möglichkeit, Experimente mit Dunkelphasen zu simulieren. So kann das Kurzzeitgedächtnis \
         der Pflanzen demonstriert werden. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
+
+#: pages/plant_memory.py:212
+msgid "SLIDER_TRAINING"
+msgstr ""
+
+#: pages/plant_memory.py:219
+msgid "SLIDER_RELAXATION"
+msgstr ""
+
+#: pages/plant_memory.py:212
+msgid "SLIDER_MEMORY"
+msgstr ""
+
+#  #: pages/plant_memory.py:95
+#  msgid "ANNO_TRAINING"
+#  advanced-de msgstr ""
+
+#  #: pages/plant_memory.py:95
+#  msgid "ANNO_RELAXATION"
+#  advanced-de msgstr ""
+
+#  #: pages/plant_memory.py:95
+#  msgid "ANNO_MEMORY"
+#  advanced-de msgstr ""
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40

@@ -39,10 +39,6 @@ msgstr ""
 msgid "EXPLANATION_ABOUT"
 msgstr ""
 
-#: pages/3 Pflanzengedächtnis.py:97
-msgid "START_BUTTOM"
-msgstr ""
-
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
 msgstr ""
@@ -224,21 +220,6 @@ msgstr "Photosynthesis process"
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr ""
 
-#: pages/photosynthesis.py:47
-#: EINFÜHRUNG.py:39
-msgid "HEADLINE_NUTRIENTS"
-msgstr "#### Nutrient intake"
-
-#: pages/photosynthesis.py:48
-#: EINFÜHRUNG.py:40
-msgid "NUTRIENTS_EXPLANATION"
-msgstr "Plants take up the necessary CO₂ for photosynthesis from the air through leaf openings, the stomata."
-
-#: pages/photosynthesis.py:52
-#: EINFÜHRUNG.py:40
-msgid "CAPTION_STOMATA_PICTURE"
-msgstr "Microscopic image of a stomatal of the wild type of the model organism Arabidopsis thaliana."
-
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
 # Grammarly checked
@@ -307,6 +288,10 @@ msgstr "A photograph of a plant of the wild type of the model organism _Arabidop
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
+#: pages/1 Messmethode.py:50
+msgid "LITERATURE_PHOTOSYNTHESIS"
+msgstr ""
+
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_ONE"
@@ -329,7 +314,7 @@ msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, 
 #: pages/method.py:20
 #: Explanation by Tobias
 msgid "GROWING_PLANTS_1"
-msgstr "Plant shine!"
+msgstr "Plants shine!"
 
 #: pages/method.py:22
 #: Explanation by Tobias
@@ -414,6 +399,12 @@ msgstr "Example Graph of a PAM measurement"
 #: pages/method.py:43
 #: pages/1 Messmethode.py:32
 # Grammarly checked
+msgid "HEADLINE_PAM_MEASUREMENT"
+msgstr ""
+
+#: pages/method.py:43
+#: pages/1 Messmethode.py:32
+# Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
 msgstr ""
 
@@ -450,13 +441,13 @@ msgstr "This was a lot of theory for just a bit of shining, so try a measurement
 #: pages/model_explain.py:16
 #: pages/1 Messmethode.py:30
 msgid "HEADLINE_COMPUTATIONAL_MODELS"
-msgstr "# Mathematical models"
+msgstr "# "
 
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 # Grammarly checked
 msgid "HEADLINE_MODEL"
-msgstr "# Mathematical models"
+msgstr ""
 
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
@@ -772,15 +763,10 @@ msgid "TIPP2"
 msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
 #: pages/first_analysis.py:203 pages/plant_memory.py:286
-#: pages/2 Daten-Analyse.py:48
-#: pages/Analyse.py:48
 msgid "SLIDER_LIGHT"
-msgstr "Light intensity in μmol m⁻² s⁻¹"
+msgstr ""
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
-#: pages/2 Daten-Analyse.py:55
-#: pages/3 Pflanzengedächtnis.py:53
-#: pages/Analyse.py:55
 msgid "SLIDER_TIME"
 msgstr "Test duration in minutes"
 
@@ -788,12 +774,18 @@ msgstr "Test duration in minutes"
 #: pages/2 Daten-Analyse.py:60
 #: pages/Analyse.py:60
 msgid "SLIDER_PULSES"
-msgstr "Saturation pulses in the selected intervals in seconds"
+msgstr ""
 
 #: pages/first_analysis.py:222
-#: pages/Analyse.py:67
-#: pages/2 Daten-Analyse.py:67
 msgid "SLIDER_ACTIVATION"
+msgstr ""
+
+#: pages/first_analysis.py:168
+msgid "SLIDER_DARKLENGTH"
+msgstr ""
+
+#: pages/first_analysis.py:181
+msgid "SLIDER_SATURATE"
 msgstr ""
 
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
@@ -819,18 +811,26 @@ msgstr "Memory phase"
 
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXSIS_TIME"
+msgid "AXIS_TIME_MIN"
 msgstr "Time [min]"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "TIME"
+msgid "AXIS_TIME_S"
 msgstr "Time [s]"
 
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
 msgstr "Fluorescence [F´ₘ /Fₘ]"
+
+#: pages/first_analysis.py:217
+msgid "AXIS_NPQ"
+msgstr ""
+
+#: pages/first_analysis.py:230
+msgid "AXIS_PHIPSII"
+msgstr ""
 
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
@@ -841,6 +841,30 @@ msgstr "# The plant memory"
 # Grammarly checked
 msgid "INTRODUCTION_BRAIN"
 msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to play even more, click the **Expert** version on the left."
+
+#: pages/plant_memory.py:212
+msgid "SLIDER_TRAINING"
+msgstr ""
+
+#: pages/plant_memory.py:219
+msgid "SLIDER_RELAXATION"
+msgstr ""
+
+#: pages/plant_memory.py:212
+msgid "SLIDER_MEMORY"
+msgstr ""
+
+#  #: pages/plant_memory.py:95
+#  msgid "ANNO_TRAINING"
+#  simple-fr msgstr ""
+
+#  #: pages/plant_memory.py:95
+#  msgid "ANNO_RELAXATION"
+#  simple-fr msgstr ""
+
+#  #: pages/plant_memory.py:95
+#  msgid "ANNO_MEMORY"
+#  simple-fr msgstr ""
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40

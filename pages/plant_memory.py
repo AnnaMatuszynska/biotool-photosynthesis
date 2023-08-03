@@ -10,252 +10,333 @@ from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from typing import Any, Callable
 from utils import get_localised_text, make_prev_next_button
+from matplotlib import pyplot as plt, patches
+from scipy.signal import find_peaks, peak_prominences
 
+def make_matplotlib_plot_memory(text: Callable[[str], str], xlabel1, xlabel2, ylabel, time, values, dark_length, width, height, training_length, relaxation_length, memory_length):
+    
+    max_time = dark_length+training_length+relaxation_length+memory_length
+    
+    with plt.rc_context(
+    {
+        "axes.spines.right": False,
+        "figure.frameon": True,
+        "axes.facecolor": (0.0, 0.0, 0.0, 0),
+        "figure.facecolor": (0.0, 0.0, 0.0, 0),
+        "figure.edgecolor": (0.0, 0.0, 0.0, 0),
+        "text.color": "#9296a4",
+        "axes.labelcolor": "#9296a4",
+        "xtick.color": "#9296a4",
+        "ytick.color": "#9296a4",
+        "figure.figsize": (width,height)
+    }
+):
+        fig, ax = plt.subplots()
+        ax.plot(time,
+            values,
+            color = '#FF4B4B'    
+        )
 
-# Function for PAM experiment
-def changingLight(model, y0d, lights, interval):  # type: ignore
-    s: _Simulate = Simulator(model, integrator=Scipy)  # type: ignore
-    s._integrator._simulate = _simulate  # type: ignore
-    s.initialise(y0d)
-    dt = 0
-    for i in range(len(interval)):
-        s.update_parameter("PFD", lights[i])
-        dt += interval[i]
-        s.simulate(dt)
-    return s
+    # Add the dark phase length to the xticks
+    default_xticks = ax.get_xticks()
+    new_xticks = []
+    for i in range(len(default_xticks)):
+        try:
+            if default_xticks[i] > dark_length and default_xticks[i-1] < dark_length:
+                new_xticks.append(dark_length)
+                new_xticks.append(default_xticks[i])
+            elif default_xticks[i] > training_length + dark_length and default_xticks[i-1] < training_length + dark_length:
+                new_xticks.append(training_length + dark_length)
+                new_xticks.append(default_xticks[i])
+            elif default_xticks[i] > relaxation_length + training_length + dark_length and default_xticks[i-1] < relaxation_length + training_length + dark_length:
+                new_xticks.append(relaxation_length + training_length + dark_length)
+                new_xticks.append(default_xticks[i])
+            else:
+                new_xticks.append(default_xticks[i])
+        except:
+            pass
+    
+    ax.set_xticks(new_xticks)
+    
+    # Change the left and down limit
+    ax.set_xlim(0, max_time)
+    ax.set_ylim(0)
 
-
-def get_NPQ(F, t, lights, maxlight):  # type: ignore
-    z = []  # container for lists. Each list contains the positions of fluorescence values for one peak
-    o = []  # container for position of Fo'
-    cnt = 0
-    while cnt < len(lights):
-        if lights[cnt] == maxlight:
-            h = []  # temporary container for all F==maxlight. For each peak it is renewed
-            while cnt != len(lights) and lights[cnt] == maxlight:
-                h.append(cnt)
-                cnt += 1
-            z.append(h)
-            o.append(h[0] - 1)  # value directly at the bottom of peak is Fo
-        else:
-            cnt += 1
-    peaks = [i[np.argmax(F[i])] for i in z]  # Fm is the maximal value for each peak sequence
-    Fm = F[peaks]
-    tm = t[peaks]
-    Fo = F[o]
-    to = t[o]
-    NPQ = (Fm[0] - Fm) / Fm
-    PhiPSII = (Fm - Fo) / Fm  # see Baker2000
-    return Fm, NPQ, tm, Fo, to, PhiPSII
-
-
-def create_simulation_parameters(slider_time: float, slider_light: float) -> tuple[Array, Array]:
-    tprot = np.array(
-        [
-            1.0,
-            0.8,
-            28,
-            0.8,
-            30,
-            0.8,
-            50,
-            0.8,
-            69,
-            0.8,
-            90,
-            0.8,
-            110,
-            0.8,
-            130,
-            0.8,
-            151,
-            0.8,
-            171,
-            0.8,
-            29,
-            0.8,
-            49,
-            0.8,
-            70,
-            0.8,
-            90,
-            0.8,
-            109,
-            0.8,
-            slider_time * 60,
-            0.8,
-            30,
-            0.8,
-            30,
-            0.8,
-            50,
-            0.8,
-            70,
-            0.8,
-            90,
-            0.8,
-            110,
-            0.8,
-        ]
+    # Highlight dark and light phase
+    dark_patch = patches.Rectangle(
+        xy=(ax.get_xlim()[0],ax.get_ylim()[0]),
+        width = dark_length,
+        height = ax.get_ylim()[1],
+        facecolor = '#1c5bc7',
+        alpha = 0.3
     )
-
-    ProtPFDs = np.array(
-        [
-            0.0,
-            5000.0,
-            0.0,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            0.0,
-            5000.0,
-            0.0,
-            5000.0,
-            0.0,
-            5000.0,
-            0.0,
-            5000.0,
-            0.0,
-            5000.0,
-            0.0,
-            5000.0,
-            0.0,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-            slider_light,
-            5000.0,
-        ]
+    training_patch = patches.Rectangle(
+        xy=(dark_length,ax.get_ylim()[0]),
+        width = training_length,
+        height = ax.get_ylim()[1],
+        facecolor = '#cf6d0c',
+        alpha = 0.3
     )
-    return tprot, ProtPFDs
-
-
-def simulate(updated_parameters: dict[str, float], tprot: Any, ProtPFDs: Any) -> Any:
-    y0d = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
-    model = get_model()
-    model.update_parameters(updated_parameters)
-    PAM = changingLight(model, y0d, ProtPFDs, tprot)
-    F = PAM.get_variable(variable="Fluo")
-    Fm, NPQ, tm, Fo, to, PhiPSII = get_NPQ(
-        PAM.get_variable(variable="Fluo"),
-        PAM.get_time(),
-        PAM.get_variable(variable="L"),
-        maxlight=5000,
+    relaxation_patch = patches.Rectangle(
+        xy=(training_length+dark_length,ax.get_ylim()[0]),
+        width = relaxation_length,
+        height = ax.get_ylim()[1],
+        facecolor = '#1c5bc7',
+        alpha = 0.3
     )
+    memory_patch = patches.Rectangle(
+        xy=(dark_length+training_length+relaxation_length,ax.get_ylim()[0]),
+        width = memory_length,
+        height = ax.get_ylim()[1],
+        facecolor = '#D10A0D',
+        alpha = 0.3
+    )
+    patch_list = [dark_patch, training_patch, relaxation_patch, memory_patch]
+    anno_list = [text("ANNO_TRAINING"), text("ANNO_RELAXATION"), text("ANNO_MEMORY")]
+    for i in range(len(patch_list)):
+        ax.add_patch(patch_list[i])
+        if i != 0 and patch_list[i].get_width() != 0:
+            rx, ry = patch_list[i].get_xy()
+            cx = rx + patch_list[i].get_width()/2
+            cy = ry + patch_list[i].get_height()*0.1
+            ax.annotate(anno_list[i-1], (cx, cy), ha='center', va='center', color = '#CCD0DB', alpha = 1)
+     
 
-    return PAM, F, NPQ, tm, PhiPSII
+    #Create the top xaxis for the minutes
+    ax_top = ax.secondary_xaxis('top', functions=(lambda x: x/60, lambda x: x*60))
+    ax_top.set_color("#9296a4")
 
+    #Add labels
+    ax.set_xlabel(xlabel1)
+    ax.set_ylabel(ylabel)
+    ax_top.set_xlabel(xlabel2)
 
-def make_plot_meta(text: Callable[[str], str], slider_time: float) -> Any:
-    areas_data = pd.DataFrame(
-        {
-            "Phasen": ["Dunkelphase", "Trainingsphase", "Dunkelphase", "Gedächtnisphase"],
-            "Phasen+1": [" ", text("PHASE1"), text("PHASE2"), text("PHASE3")],
-            "start": [0, 0.53, 14, 20 + slider_time],
-            "stop": [0.53, 14, 20 + slider_time, 30 + slider_time],
-            "color": ["#1c5bc7", "#cf6d0c", "#1c5bc7", "#d10a0d"],
+    for i in [ax, ax_top]:
+        i.spines['bottom'].set_color("#9296a4")
+        i.spines['left'].set_color("#9296a4")
+        i.spines['top'].set_color("#9296a4")
+        i.spines['right'].set_visible(False)
+
+    ax.grid(visible=True, which='both', axis='both', color = '#9296a4', alpha = 0.5)
+    return fig
+
+def sim_model_memory(updated_parameters, slider_light, slider_pings, slider_saturate, slider_darklength, training_length, relaxation_phase, memory_length):
+    m = get_model()
+    m.update_parameters(updated_parameters)
+    s = Simulator(m)
+
+    y0 = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
+    s.initialise(y0)
+
+    max_time = slider_darklength + training_length + relaxation_phase + memory_length
+    
+    saturating_pulse = slider_saturate
+    length_pulse = 0.8
+    
+    beginning_dark_length = slider_darklength
+    dark_light = 0
+    
+    light_light = slider_light
+    training_length = int(training_length)
+    relaxation_phase = int(relaxation_phase)
+    pulses_intervall = slider_pings
+
+    for i in range(max_time):
+        if i == 2: # First pulse in first dark phase
+            s.update_parameter("PFD", dark_light)
+            s.simulate(i)
+            s.update_parameter("PFD", saturating_pulse)
+            s.simulate(i + length_pulse)
+        elif i == beginning_dark_length: # Pulse for beginning of training
+            s.update_parameter("PFD", dark_light)
+            s.simulate(i)
+            s.update_parameter("PFD", saturating_pulse)
+            s.simulate(i + length_pulse)
+        elif i in [beginning_dark_length + (pulses_intervall * j) for j in range(training_length+1)] and i <= training_length + beginning_dark_length: #Pulses in training with set intervall
+            s.update_parameter("PFD", light_light)
+            s.simulate(i)
+            s.update_parameter("PFD", saturating_pulse)
+            s.simulate(i + length_pulse)
+        elif i == training_length + beginning_dark_length: # Pulse at beginning of relaxation phase
+            s.update_parameter("PFD", light_light)
+            s.simulate(i)
+            s.update_parameter("PFD", saturating_pulse)
+            s.simulate(i + length_pulse)
+        # elif i > (beginning_dark_length + training_length) and i < (beginning_dark_length + training_length + relaxation_phase - pulses_intervall): # Simulation until pulse in relaxation phase
+        #     s.update_parameter("PFD", dark_light)
+        #     s.simulate(i)
+        elif i == (beginning_dark_length + training_length + relaxation_phase - pulses_intervall): # Pulse at start of memory
+            s.update_parameter("PFD", dark_light)
+            s.simulate(i)
+            s.update_parameter("PFD", saturating_pulse)
+            s.simulate(i + length_pulse)
+        # elif i in [beginning_dark_length + training_length + relaxation_phase + (pulses_intervall * j) for j in range((max_time-(beginning_dark_length + training_length + relaxation_phase))+1)]: # Pulses in memory phase in set intervalls
+        #     if i <= (beginning_dark_length + training_length + relaxation_phase):
+        #         s.update_parameter("PFD", dark_light)
+        #     else:
+        #         s.update_parameter("PFD", light_light)
+        #     s.simulate(i)
+        #     s.update_parameter("PFD", saturating_pulse)
+        #     s.simulate(i + length_pulse)
+        elif i == max_time - 1:
+            s.update_parameter("PFD", light_light)
+            s.simulate(i)
+            s.simulate(max_time)
+    st.write(len(s.time))
+    sim_time = s.get_time()
+    sim_results = s.get_full_results_dict()
+    return sim_time, sim_results
+
+def make_sim_area_memory(text: Callable[[str], str]) -> None:
+
+    col1, col2 = st.columns(2)
+    with col1:
+        slider_light = st.slider(
+        text("SLIDER_LIGHT"),  # Exponenten können reinkopiert werden durch commands
+        100,
+        900,
+        key='light2' # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+    )
+    with col2:
+        slider_pings = st.slider(
+            label=text("SLIDER_PULSES"),
+            min_value=10,
+            max_value=100,
+            value=20
+        )
+    
+    col1, col2, col3 = st.columns([1,1,1], gap="medium")
+    
+    with col1:
+        slider_training = st.slider(
+            label=text("SLIDER_TRAINING"),
+            min_value=0,
+            max_value=5,
+            value=2
+        )
+    with col2:
+        slider_relaxation = st.slider(
+            label=text("SLIDER_RELAXATION"),
+            min_value=0,
+            max_value=5,
+            value=2
+        )
+    with col3:
+        slider_memory = st.slider(
+            label=text("SLIDER_MEMORY"),
+            min_value=0,
+            max_value=5,
+            value=2
+        )
+
+    if version == "Advanced":
+        slider_darklength = 60
+        slider_saturate = 5000
+        col1, col2 = st.columns(2)
+        with col1:
+            slider_aktivation = st.slider(
+                text("SLIDER_ACTIVATION"),
+                -1000,
+                +1000,
+                0,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            )
+        with col2:
+            slider_deaktivation = st.slider(
+                text("SLIDER_DEACTIVATION"),
+                -1000,
+                +1000,
+                0,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            )
+
+        updated_parameters = {
+            "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
+            "kEpoxZ": 0.00024
+            * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
         }
-    )
-
-    areas = (
-        alt.Chart(areas_data.reset_index())  # type: ignore
-        .mark_rect(opacity=0.3)  # type: ignore
-        .encode(
-            x2="stop",
-            y=alt.value(0),
-            y2=alt.value(290),  # pixels from top
-            color=alt.Color("color", scale=None, legend=None),  # type: ignore
-            x=alt.X("start", axis=alt.Axis(title=text("AXSIS_TIME"))),  # type: ignore
-        )
-    )
-
-    # Einfügen der Phasenbeschriftung
-    chart_labels = (
-        alt.Chart(areas_data)  # type: ignore
-        .mark_text(align="left", baseline="middle", dx=7, dy=-135, size=13)  # type: ignore
-        .encode(x="start", x2="stop", text="Phasen+1", color=alt.value("#FAFAFA"))
-    )
-
-    return areas, chart_labels
-
-
-def make_simple_plot(chart_data: Any, areas: Any, chart_labels: Any) -> Any:
-    chart = (
-        alt.Chart(chart_data)  # type: ignore
-        .mark_line(color="#FF4B4B")  # type: ignore
-        .encode(x="Zeit", y="Fluoreszenz", tooltip="Fluoreszenz")
-    )
-
-    # coloured areas
-
-    st.altair_chart(areas + chart + chart_labels, use_container_width=True)
-
-
-def make_expert_plot(
-    NPQ: Any, tm: Any, PhiPSII: Any, areas: Any, chart_labels: Any, left: Any, right: Any
-) -> Any:
-    left, right = st.columns(2)
-
-    def create_chart_data(data: Any, x: Any, y: Any) -> Any:
-        chart_data = pd.DataFrame({x: data[x], y: data[y]})
-        return chart_data
-
-    def create_chart(text: Callable[[str], str], chart_data: Any, x: Any, y: Any, color: Any) -> Any:
-        chart = (
-            alt.Chart(chart_data)
-            .mark_line(color=color)
-            .encode(
-                x=alt.X(x, axis=alt.Axis(title=text("TIME"))),
-                y=alt.Y(y, axis=alt.Axis(title=text("FLUO"))),  # type: ignore
+    else:
+        updated_parameters = {
+            "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
+            "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+        }
+        slider_darklength = 60
+        slider_saturate = 5000
+        
+    if st.button("Start", type="primary", key='button2'):
+        with st.spinner(text("SPINNER")):
+            sim_time, sim_results = sim_model_memory(
+                updated_parameters=updated_parameters,
+                slider_light=slider_light,
+                slider_pings=slider_pings,
+                slider_saturate=slider_saturate,
+                slider_darklength=slider_darklength,
+                training_length=slider_training*60,
+                relaxation_phase=slider_relaxation*60,
+                memory_length=slider_memory*60
             )
-        )
-        return chart
+            
+            PAM_F = sim_results['Fluo']
+            PAM_Fmax = max(sim_results['Fluo'])
 
-    def create_points(text: Callable[[str], str], chart_data: Any, x: Any, y: Any, color: Any) -> Any:
-        points = (
-            alt.Chart(chart_data)
-            .mark_point(filled=True, size=65, color=color)
-            .encode(
-                x=alt.X(x, axis=alt.Axis(title=text("TIME"))),
-                y=alt.Y(y, axis=alt.Axis(title=text("FLUO"))),
+            fig_PAM = make_matplotlib_plot_memory(
+                text=text,
+                xlabel1=text("AXIS_TIME_S"),
+                xlabel2=text("AXIS_TIME_MIN"),
+                ylabel=text("FLUO"),
+                time=sim_time,
+                values=PAM_F/PAM_Fmax,
+                dark_length=slider_darklength,
+                width = 15,
+                height = 3,
+                training_length=slider_training*60,
+                relaxation_length=slider_relaxation*60,
+                memory_length=slider_memory*60
             )
-        )
-        return points
 
-    chart_data1 = create_chart_data({"NPQ": NPQ, "Zeit": tm / 60}, "Zeit", "NPQ")
-    chart_data2 = create_chart_data({"Phi": PhiPSII, "Zeit": tm / 60}, "Zeit", "Phi")
+            st.pyplot(fig_PAM)
 
-    chart1 = create_chart(chart_data1, "Zeit", "NPQ", "#FF4B4B")  # type: ignore
-    points1 = create_points(chart_data1, "Zeit", "NPQ", "#FF4B4B")  # type: ignore
+            if version == 'Advanced':
+                peaks, _ = find_peaks((PAM_F/PAM_Fmax), height=0) # Find the Flourescence peaks (Fmaxs)
+                NPQ = ((PAM_F[peaks][0] - PAM_F[peaks])) / PAM_F[peaks]
 
-    chart2 = create_chart(chart_data2, "Zeit", "Phi", "#FF4B4B")  # type: ignore
-    points2 = create_points(chart_data2, "Zeit", "Phi", "#FF4B4B")  # type: ignore
+                prominences, prominences_left, prominences_right = peak_prominences((PAM_F/PAM_Fmax), peaks) # Find the minima around the peaks
+                Fo = [(PAM_F/PAM_Fmax)[i] for i in prominences_left] # Fo is always the minima before the peak
+                PhiPSII = (PAM_F[peaks] - Fo) / PAM_F[peaks]
 
-    with left:
-        st.altair_chart(chart1 + chart_labels + areas + points1, use_container_width=True)
-    with right:
-        st.altair_chart(chart2 + chart_labels + areas + points2, use_container_width=True)
+                fig_NPQ = make_matplotlib_plot_memory(
+                    text=text,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel=text("AXIS_NPQ"),
+                    time=sim_time[peaks],
+                    values=NPQ,
+                    dark_length=slider_darklength,
+                    width = 15/2,
+                    height = 6,
+                    training_length=slider_training*60,
+                    relaxation_length=slider_relaxation*60,
+                    memory_length=slider_memory*60
+                )
 
+                fig_PhiPSII = make_matplotlib_plot_memory(
+                    text=text,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel=text("AXIS_PHIPSII"),
+                    time=sim_time[peaks],
+                    values=PhiPSII,
+                    dark_length=slider_darklength,
+                    width = 15/2,
+                    height = 6,
+                    training_length=slider_training*60,
+                    relaxation_length=slider_relaxation*60,
+                    memory_length=slider_memory*60
+                )
+
+                col1, col2 = st.columns([1,1])
+                with col1:
+                    st.pyplot(fig_NPQ, use_container_width=True)
+                with col2:
+                    st.pyplot(fig_PhiPSII, use_container_width=True)
 
 # FIXME: version here should probably be replaced by text
 def make_page(text: Callable[[str], str], version: str) -> None:
@@ -272,77 +353,11 @@ def make_page(text: Callable[[str], str], version: str) -> None:
     with col2:
         st.image("pictures/memory_protocol.png")
 
-    if version == "simple":
-        with st.expander(text("TASK_1")):
-            st.markdown(text("TASK_MEMORY_1_EXPLANATION"))
-
-        with st.expander(text("TASK_2")):
-            st.markdown(text("TASK_MEMORY_2_EXPLANATION"))
-
     st.markdown(text("TIP1"))
 
     st.markdown(text("TIP2"))
 
-    # slider zum Einstellen in zwei Spalten angeordnet
-    col1, col2 = st.columns(2)
-    with col1:
-        slider_light = st.slider(
-            text("SLIDER_LIGHT"),  # Exponenten können reincopiert werden durch commands
-            100,
-            900,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-        )
-    with col2:
-        slider_time = st.slider(text("SLIDER_TIME"), 5, 60)
-    if version == "Advanced":
-        col1, col2 = st.columns(2)
-        with col1:
-            slider_aktivation = st.slider(
-                text("SLIDER_ACTIVATION"),
-                -100,
-                +100,
-                0,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
-        with col2:
-            slider_deaktivation = st.slider(
-                text("SLIDER_DEACTIVATION"),
-                -100,
-                +100,
-                0,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
-
-        updated_parameters = {
-            "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024
-            * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-
-    else:
-        updated_parameters = {
-            "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-
-    # light and interval for the model
-    tprot, ProtPFDs = create_simulation_parameters(slider_time, slider_light)
-
-    # open everything behind
-    if st.button("Start", type="primary"):
-        with st.spinner(text("SPINNER")):  # loading indicator
-            # plt the graph
-            PAM, F, NPQ, tm, PhiPSII = simulate(updated_parameters, tprot, ProtPFDs)
-
-            # maingraph
-            chart_data = pd.DataFrame({"Fluoreszenz": F / max(F), "Zeit": PAM.get_time() / 60})
-            areas, chart_labels = make_plot_meta(text, slider_time)
-
-            make_simple_plot(chart_data, areas, chart_labels)
-
-            left, right = st.columns(2)
-
-            if version == "Advanced":
-                # second Graph
-                make_expert_plot(NPQ, tm, PhiPSII, areas, chart_labels, left, right)
-
+    make_sim_area_memory(text)
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
