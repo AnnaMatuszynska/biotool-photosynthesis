@@ -1,12 +1,6 @@
-import altair as alt
-import numpy as np
-import pandas as pd
 import streamlit as st
 from model import get_model
-from modelbase.ode import Simulator, _Simulate
-from modelbase.ode.integrators import Scipy
-from modelbase.typing import Array
-from pages._monkey_patch import _simulate
+from modelbase.ode import Simulator
 from pages._sidebar import make_sidebar
 from typing import Any, Callable
 from utils import get_localised_text, make_prev_next_button, resetting_click_detector_setup, markdown_click, simulate_period
