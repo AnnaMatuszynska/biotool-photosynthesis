@@ -2632,13 +2632,13 @@ simple-es msgstr "Time [s]"
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
-advanced-en msgstr "Relative Fluorescence (F/Fₘ) [a.u.]"
-advanced-de msgstr "Relative Fluoreszenz (F/Fₘ) [a.u.]"
+advanced-en msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
+advanced-de msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Relative Fluorescence (F/Fₘ) [a.u.]"
-simple-de msgstr "Relative Fluoreszenz (F/Fₘ) [a.u.]"
+simple-en msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
+simple-de msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
 simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
@@ -2686,22 +2686,19 @@ simple-es msgstr "# The plant memory"
 #: pages/plant_memory.py:269
 # Grammarly checked
 msgid "INTRODUCTION_BRAIN"
-advanced-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be trained to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own **memory experiments**. Go ahead; you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to play even more, click the **Expert** version on the left."
+advanced-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b> and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
 advanced-de msgstr "Das Modell bietet auch die Möglichkeit, Experimente mit Dunkelphasen zu simulieren. So kann das Kurzzeitgedächtnis \
         der Pflanzen demonstriert werden. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
-advanced-fr msgstr "The model also offers the possibility to simulate experiments with dark phases. In this way, the short-term \
-        memory of plants can be demonstrated. You can simulate different scenarios with the two sliders."
-advanced-pl msgstr "The model also offers the possibility to simulate experiments with dark phases. In this way, the short-term \
-        memory of plants can be demonstrated. You can simulate different scenarios with the two sliders."
-advanced-es msgstr "The model also offers the possibility to simulate experiments with dark phases. In this way, the short-term \
-        memory of plants can be demonstrated. You can simulate different scenarios with the two sliders."
-simple-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b> and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='Advanced'>Advanced</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
+simple-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b> and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='Advanced'>Advanced</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
 simple-de msgstr "Nachdem Sie herausgefunden haben, wie Pflanzen auf unterschiedliche Lichtintensitäten reagieren. Sie können \
         sich nun mit dem Gedächtnis der Pflanzen beschäftigen. Dies ist eine interessante Tatsache, die sich mit dem \
         Modell sehr schön modellieren lässt. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
-simple-fr msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to play even more, click the **Expert** version on the left."
-simple-pl msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to play even more, click the **Expert** version on the left."
-simple-es msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to play even more, click the **Expert** version on the left."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/plant_memory.py:212
 msgid "SLIDER_TRAINING"

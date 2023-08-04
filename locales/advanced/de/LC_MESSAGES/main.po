@@ -860,7 +860,7 @@ msgstr "Zeit [s]"
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
-msgstr "Fluoreszenz [F´ₘ /Fₘ]"
+msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
 
 #: pages/first_analysis.py:217
 msgid "AXIS_NPQ"

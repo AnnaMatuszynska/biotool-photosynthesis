@@ -847,8 +847,7 @@ msgstr "# The plant memory"
 #: pages/plant_memory.py:269
 # Grammarly checked
 msgid "INTRODUCTION_BRAIN"
-msgstr "The model also offers the possibility to simulate experiments with dark phases. In this way, the short-term \
-        memory of plants can be demonstrated. You can simulate different scenarios with the two sliders."
+msgstr ""
 
 #: pages/plant_memory.py:212
 msgid "SLIDER_TRAINING"

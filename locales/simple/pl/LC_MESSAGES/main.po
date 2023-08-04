@@ -826,7 +826,7 @@ msgstr "Time [s]"
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
-msgstr "Fluorescence [F´ₘ /Fₘ]"
+msgstr ""
 
 #: pages/first_analysis.py:217
 msgid "AXIS_NPQ"
@@ -844,7 +844,7 @@ msgstr "# The plant memory"
 #: pages/plant_memory.py:269
 # Grammarly checked
 msgid "INTRODUCTION_BRAIN"
-msgstr "Since you have found out how plants react to different light intensities we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light in comparison to those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory* and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behaviour with a mathematical model and now, you can perform your own **memory experiments**. Go ahead, can simulate different scenarios using the two sliders below. Do you see how the fluorescence signal differs between different phases of the experiment? If you want to play even more, click the **Expert** version on the left."
+msgstr ""
 
 #: pages/plant_memory.py:212
 msgid "SLIDER_TRAINING"
