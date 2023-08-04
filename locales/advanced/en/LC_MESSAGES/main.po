@@ -139,7 +139,7 @@ msgstr "Mathematical modelling therory and examples of popular models be present
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained and simple simulations performed, including the editing of model parameters."
+msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)) which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained and simple simulations performed, including the editing of model parameters."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
@@ -276,9 +276,8 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 "\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
 
 #: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
-msgstr "References on this page:\n"
-"- Cook, J., Oreskes, N., Doran, P. T., Anderegg, W. R. L., Verheggen, B., Maibach, E. W., Carlton, J. S., Lewandowsky, S., Skuce, A. G., Green, S. A., Nuccitelli, D., Jacobs, P., Richardson, M., Winkler, B., Painting, R., & Rice, K. (2016). Consensus on consensus: A synthesis of consensus estimates on human-caused global warming. Environmental Research Letters, 11(4), 048002. https://doi.org/10.1088/1748-9326/11/4/048002"
+msgid "LITERATURE_ONPAGE"
+msgstr "References on this page:"
 
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
@@ -574,7 +573,7 @@ msgstr "## Model construction"
 #: pages/model_explain.py:67
 #: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION_1"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below."
+msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 #: pages/model_explain.py:67
 #: 
@@ -1318,3 +1317,5 @@ msgstr ""
 msgid "INTRO_MODEL"
 msgstr ""
 
+msgid "PROGRAMS_USED"
+msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."

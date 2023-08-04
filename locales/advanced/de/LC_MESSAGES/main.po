@@ -146,7 +146,7 @@ msgstr "Wie die Überschrift schon sagt, arbeiten wir <i>in silico</i>, d.h. mit
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der <a href='#' id='Advanced'>Advanced</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
+msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der <a href='#' id='Advanced'>Advanced</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
@@ -282,8 +282,8 @@ msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
-msgstr ""
+msgid "LITERATURE_ONPAGE"
+msgstr "Referenzen auf dieser Seite:"
 
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
@@ -639,7 +639,7 @@ msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure be
         Gesamtprozess spielt, haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität \
         angestrebt. Wir haben uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang \
         mit dem Fotosystem II konzentriert und nur die Prozesse in das Modell aufgenommen, die entweder direkt von der NPQ \
-        betroffen sind oder das Ausmaß der NPQ regulieren. "
+        betroffen sind oder das Ausmaß der NPQ regulieren (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003)). "
 
 #: pages/model_explain.py:67
 #: 
@@ -1443,3 +1443,5 @@ msgstr ""
 msgid "INTRO_MODEL"
 msgstr ""
 
+msgid "PROGRAMS_USED"
+msgstr "Die Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."

@@ -139,7 +139,7 @@ msgstr "Jak już powiedziano w nagłówku, pracujemy <i>in silico</i>, tj. z mod
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='Advanced'>Advanced</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
+msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)). Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='Advanced'>Advanced</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
@@ -275,8 +275,8 @@ msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
-msgstr ""
+msgid "LITERATURE_ONPAGE"
+msgstr "Referencje na tej stronie:"
 
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
@@ -615,7 +615,7 @@ msgstr "## Konstrukcja modelu"
 #: pages/model_explain.py:67
 #: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION_1"
-msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: białka, enzymy, nośniki elektronów, pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa istotną rolę w całym procesie, naszym celem było maksymalne zmniejszenie złożoności modelu do badania pamięci światła. Dlatego skupiliśmy się wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II. Uwzględniliśmy tylko te procesy, które bezpośrednio wpływają lub regulują zakres NPQ, jak pokazano na poniższym schemacie."
+msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: białka, enzymy, nośniki elektronów, pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa istotną rolę w całym procesie, naszym celem było maksymalne zmniejszenie złożoności modelu do badania pamięci światła. Dlatego skupiliśmy się wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II. Uwzględniliśmy tylko te procesy, które bezpośrednio wpływają lub regulują zakres NPQ, jak pokazano na poniższym schemacie (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 #: pages/model_explain.py:67
 #: 
@@ -1396,3 +1396,5 @@ msgstr ""
 msgid "INTRO_MODEL"
 msgstr ""
 
+msgid "PROGRAMS_USED"
+msgstr "Do stworzenia strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."

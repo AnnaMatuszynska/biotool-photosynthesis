@@ -540,6 +540,12 @@ def make_page(text: Callable[[str], str]) -> None:
 
     make_sim_area(text)
 
+def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
+    with st.expander(text("LITERATURE")):
+        st.markdown(text("LITERATURE_ONPAGE"))
+        st.markdown(
+            "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
+        )
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
@@ -552,5 +558,6 @@ if __name__ == "__main__":
     resetting_click_detector_setup()
     make_page(text)
     include_image("pictures/slider-default-value.png", 0.6, text("CAPTION_DEFAULT_SLIDERS"), center_caption=True)
+    make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")
     make_sidebar()

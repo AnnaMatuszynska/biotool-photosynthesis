@@ -72,7 +72,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     if version == "Advanced":
         with st.expander(text("LITERATURE")):
-            st.markdown(text("LITERATURE_PHOTOSYNTHESIS"), unsafe_allow_html=True)
+            st.markdown(text("LITERATURE_ONPAGE"))
+            st.markdown(
+                "- Cook, J., Oreskes, N., Doran, P. T., Anderegg, W. R. L., Verheggen, B., Maibach, E. W., Carlton, J. S., Lewandowsky, S., Skuce, A. G., Green, S. A., Nuccitelli, D., Jacobs, P., Richardson, M., Winkler, B., Painting, R., & Rice, K. (2016). Consensus on consensus: A synthesis of consensus estimates on human-caused global warming. Environmental Research Letters, 11(4), 048002. https://doi.org/10.1088/1748-9326/11/4/048002"
+            )
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")

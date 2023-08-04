@@ -289,7 +289,7 @@ msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
+msgid "LITERATURE_ONPAGE"
 msgstr ""
 
 #: pages/method.py:10
@@ -1350,3 +1350,5 @@ msgstr "We have now successfully implemented and used a model of epidemiology. S
 msgid "INTRO_MODEL"
 msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
 
+msgid "PROGRAMS_USED"
+msgstr ""

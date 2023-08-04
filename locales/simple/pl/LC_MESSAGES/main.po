@@ -139,7 +139,7 @@ msgstr "Jak w samym tytule tej strony, pracujemy *in silico*, tj. z modelami mat
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów."
+msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów."
 
 #: pages/1 Messmethode.py:50
 msgid "MEMORY"
@@ -289,8 +289,8 @@ msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
-msgstr ""
+msgid "LITERATURE_ONPAGE"
+msgstr "Referencje na tej stronie:"
 
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
@@ -614,7 +614,7 @@ msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiel
         pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa ważną rolę w całym procesie, \
         dążyliśmy do maksymalnego zmniejszenia złożoności naszego modelu, który został stworzony w celu badania wpływu intensywnego światła na fotosyntezę. Skupiliśmy się więc wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II \
         i uwzględniliśmy w modelu tylko te procesy, na które NPQ ma bezpośredni wpływ lub \
-        regulują zakres NPQ."
+        regulują zakres NPQ (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 #: pages/model_explain.py:67
 #: 
@@ -1356,3 +1356,5 @@ msgstr "We have now successfully implemented and used a model of epidemiology. S
 msgid "INTRO_MODEL"
 msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
 
+msgid "PROGRAMS_USED"
+msgstr "Do stworzenia strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."
