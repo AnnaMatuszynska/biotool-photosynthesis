@@ -35,7 +35,8 @@ msgstr "Langue"
 msgid "EXPANDER_ABOUT"
 msgstr ""
 
-#: This can be copied to add new text entries with translations
+#: pages/Start.py:13
+# Grammarly checked
 msgid "EXPLANATION_ABOUT"
 msgstr ""
 
@@ -77,19 +78,17 @@ msgid "HEADLINE_USAGE"
 msgstr ""
 
 #: Start.py:16
-#: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
 msgstr ""
 
 #: Start.py:17
-#: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
 msgstr ""
 
 #: Start.py:18
-#: EINFÜHRUNG.py:28
+# Grammarly checked
 msgid "DROP_BOX_INTRO"
 msgstr "If you don't know the difference between the *in vitro*, *in vivo* and *in silico*, open the drop-box below."
 
@@ -128,6 +127,7 @@ msgid "PHOTOSYNTHESIS"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "METHOD"
 msgstr ""
 
@@ -142,6 +142,7 @@ msgid "EXPERIMENT"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "MEMORY"
 msgstr ""
 
@@ -159,15 +160,7 @@ msgstr "## Climate change"
 #: Lisa's introduction
 # Grammarly checked
 msgid "INTRODUCTION_CLIMATE_CHANGE"
-msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of \
-        life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., \
-        changed temperatures (heat and cold), flooding events, and drought can lead to stressful events in plants. Those \
-        factors can have various short- and long-term effects on plants– summarized in Fig. right. Nevertheless, plants \
-        experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first \
-        reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis \
-        itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of \
-        photosynthesis and the fixation of CO₂ by plants is an important measure of overall **plant fitness**, **productivity**, \
-        and **survival**. Consequently, basic research on photosynthesis and its efficiency is essential to assess our changing world."
+msgstr ""
 
 #: pages/photosynthesis.py:14
 #: Lisa's introduction
@@ -199,16 +192,12 @@ msgstr ""
 #: EINFÜHRUNG.py:43
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_1"
-msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
-        but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
-        through their roots, but not all of them. As already mentioned, plants are producers and can therefore \
-        manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
+msgstr ""
 
 #: pages/photosynthesis.py:34
-#: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light."
+msgstr ""
 
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
@@ -216,7 +205,7 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthesis process"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:45
+# Grmmarly checked
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr ""
 
@@ -227,16 +216,11 @@ msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
 msgstr "## Place of photosynthesis"
 
 #: pages/photosynthesis.py:57
-#: EINFÜHRUNG.py:55
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the inner membranes (called thylakoid membranes). Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
+msgstr ""
 
 #: pages/photosynthesis.py:68
-#: EINFÜHRUNG.py:43
 # Grammarly checked
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
@@ -252,13 +236,9 @@ msgid "HEADLINE_NPQ"
 msgstr "## How to deal with too much light?"
 
 #: pages/photosynthesis.py:76
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "NPQ_EXPLANATION"
-msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
-        and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
-        form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
-        protective mechanisms are referred to as NPQ."
+msgstr ""
 
 #: pages/photosynthesis.py:78
 #: pages/1 Messmethode.py:40
@@ -266,7 +246,6 @@ msgid "HEADER_MODEL_ORGANISMEN"
 msgstr "## One plant to rule them all"
 
 #: pages/photosynthesis.py:79
-#: pages/1 Messmethode.py:40
 # Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
 msgstr "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis Thaliana*, a 'model organism'."
@@ -288,7 +267,7 @@ msgstr "A photograph of a plant of the wild type of the model organism _Arabidop
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
-#: pages/1 Messmethode.py:50
+#
 msgid "LITERATURE_ONPAGE"
 msgstr ""
 
@@ -298,18 +277,14 @@ msgid "HEADLINE_ONE"
 msgstr ""
 
 #: pages/method.py:15
-#: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_MEASUREMENT"
-msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page you will learn how can we measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continously becoming a more quantitative science, obviously numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or in a field. Therefore a particularly important characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
+msgstr ""
 
 #: pages/method.py:18
-#: EINFÜHRUNG.py:36
 # Grammarly checked
 msgid "CAPTION_ABB1"
-msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
+msgstr ""
 
 #: pages/method.py:20
 #: Explanation by Tobias
@@ -320,38 +295,25 @@ msgstr "Plants shine!"
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_GLOWING"
-msgstr "Here is where a specialty of plants comes into play: They can re-emit light and in proper conditions shine! When light shines on leaves, they use majority of the light to run complex photochemical reactions of photosynthesis, but a small part of the absorbed light is reemitted. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something shine in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence shine is red."
+msgstr ""
 
 #: pages/method.py:23
 #: Explanation by Tobias
 # Grammarly checked
 msgid "PLANT_ARE_SHINING_RED"
-msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
+msgstr ""
 
 #: pages/method.py:24
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_EXPERIMENT"
-msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore \
-        distracting light and focus on the red fluorescence. Now watch what happens:"
+msgstr ""
 
 #: pages/method.py:30
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_VIDEO"
-msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
+msgstr ""
 
 #: pages/method.py:32
 #: Explanation by Tobias
@@ -362,21 +324,13 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_MEASUREMENT_1"
-msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='Advanced'>Advanced</a> section. Let's \
-        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
+msgstr ""
 
 #: pages/method.py:34
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_PHI"
-msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
+msgstr ""
 
 #: pages/method.py:37
 #: Explanation by Tobias
@@ -388,22 +342,19 @@ msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
-msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. \
-In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
+msgstr ""
 
 #: pages/method.py:41 pages/method.py:61
-#: pages/1 Messmethode.py:47
+# Grammarly checked
 msgid "CAPTION_ABB2"
 msgstr "Example Graph of a PAM measurement"
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "HEADLINE_PAM_MEASUREMENT"
 msgstr ""
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
 msgstr ""
@@ -496,8 +447,6 @@ msgid "HEADLINE_MODELBASE"
 msgstr ""
 
 #: pages/model_explain.py:23
-#: pages/model.explain.py:23
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr ""
@@ -515,10 +464,9 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
 msgstr ""
 
 #: pages/model_explain.py:55
-#: pages/model.explain.py:55
 # Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
-msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
+msgstr ""
 
 #: pages\model_explain.py:61
 # Grammarly checked
@@ -534,6 +482,7 @@ msgid "HEADLINE_FVCB"
 msgstr ""
 
 #: pages/model_explain.py:71
+# Grammarly checked
 msgid "FVCB_1"
 msgstr ""
 
@@ -613,7 +562,7 @@ msgid "CONSTRUCTION_EXPLANATION_1"
 msgstr ""
 
 #: pages/model_explain.py:67
-#: 
+# Grammarly checked
 msgid "CAPTION_MODEL_NPQ"
 msgstr ""
 
@@ -1350,5 +1299,7 @@ msgstr "We have now successfully implemented and used a model of epidemiology. S
 msgid "INTRO_MODEL"
 msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
 
+#: pages/Start.py:14
+# Grammarly checked
 msgid "PROGRAMS_USED"
 msgstr ""

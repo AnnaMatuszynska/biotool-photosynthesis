@@ -35,7 +35,8 @@ msgstr "Sprache"
 msgid "EXPANDER_ABOUT"
 msgstr "Über diese Webseite"
 
-#: This can be copied to add new text entries with translations
+#: pages/Start.py:13
+# Grammarly checked
 msgid "EXPLANATION_ABOUT"
 msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
 
@@ -84,19 +85,17 @@ msgid "HEADLINE_USAGE"
 msgstr "## Nutzung dieser Website"
 
 #: Start.py:16
-#: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
 msgstr "Wir richten uns sowohl an neugierige <b>Neulinge</b> als auch an <a href='#' id='Advanced'>Fortgeschrittene</a> Lernende. Wenn Sie diese Website nutzen, können Sie wählen, welche Version Sie verwenden möchten, indem Sie auf die Schaltfläche auf der linken Seite klicken: Version klicken und aus der Dropdown-Liste <i>Einfach</i> oder <a href='#' id='Advanced'>Fortgeschrittene</a> auswählen."
 
 #: Start.py:17
-#: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
 msgstr "Nehmen wir an, Sie wählen die <a href='#' id='Advanced'>Fortgeschritten</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
 
 #: Start.py:18
-#: EINFÜHRUNG.py:28
+# Grammarly checked
 msgid "DROP_BOX_INTRO"
 msgstr "Wenn Sie den Unterschied zwischen *in vitro*, *in vivo* und *in silico* nicht kennen, öffnen Sie die Dropbox unten."
 
@@ -135,6 +134,7 @@ msgid "PHOTOSYNTHESIS"
 msgstr "Auf der Seite **Fotosynthese** erfahren Sie alles, was Sie über die Fotosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können."
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "METHOD"
 msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir eine spezielle Messmethode. Diese wird auf der Seite **Messmethode** vorgestellt. Außerdem gehen wir darauf ein, wie wir unsere Messungen sichtbar machen können."
 
@@ -149,6 +149,7 @@ msgid "EXPERIMENT"
 msgstr "Auf der Seite **Experimente** ***in silico*** lernen Sie das von uns verwendete und von Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen."
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "MEMORY"
 msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das pflanzliche Lichtgedächtnis kennen und können dessen Existenz selbständig mit Experimenten nachweisen."
 
@@ -211,7 +212,7 @@ msgid "PHOTOSYNTHESIS_EXPLANATION_1"
 msgstr ""
 
 #: pages/photosynthesis.py:34
-#: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
 msgstr ""
 
@@ -221,7 +222,7 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthese Ablauf"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:45
+# Grmmarly checked
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
 
@@ -232,13 +233,11 @@ msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
 msgstr ""
 
 #: pages/photosynthesis.py:57
-#: EINFÜHRUNG.py:55
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 msgstr ""
 
 #: pages/photosynthesis.py:68
-#: EINFÜHRUNG.py:43
 # Grammarly checked
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
@@ -254,7 +253,6 @@ msgid "HEADLINE_NPQ"
 msgstr ""
 
 #: pages/photosynthesis.py:76
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "NPQ_EXPLANATION"
 msgstr ""
@@ -265,7 +263,6 @@ msgid "HEADER_MODEL_ORGANISMEN"
 msgstr ""
 
 #: pages/photosynthesis.py:79
-#: pages/1 Messmethode.py:40
 # Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
 msgstr ""
@@ -287,7 +284,7 @@ msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis t
 msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
-#: pages/1 Messmethode.py:50
+#
 msgid "LITERATURE_ONPAGE"
 msgstr "Referenzen auf dieser Seite:"
 
@@ -297,7 +294,6 @@ msgid "HEADLINE_ONE"
 msgstr "# Die Messmethode"
 
 #: pages/method.py:15
-#: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_MEASUREMENT"
 msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
@@ -309,7 +305,6 @@ msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese i
         einem Baum oder auf einem Feld durchführen will."
 
 #: pages/method.py:18
-#: EINFÜHRUNG.py:36
 # Grammarly checked
 msgid "CAPTION_ABB1"
 msgstr "Foto einer Pflanze der Gattung Einblatt, in drei verschiedenen Beleuchtungssituationen: Links bei Tageslicht, \
@@ -409,18 +404,16 @@ msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lich
         wir mit jedem Blitz Fluoreszenz erzeugen, ist das resultierende Signal genau wie das Messlicht gemustert (moduliert)."
 
 #: pages/method.py:41 pages/method.py:61
-#: pages/1 Messmethode.py:47
+# Grammarly checked
 msgid "CAPTION_ABB2"
 msgstr ""
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "HEADLINE_PAM_MEASUREMENT"
 msgstr "### PAM Experimente"
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
 msgstr "Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
@@ -518,8 +511,6 @@ msgid "HEADLINE_MODELBASE"
 msgstr ""
 
 #: pages/model_explain.py:23
-#: pages/model.explain.py:23
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr ""
@@ -537,7 +528,6 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
 msgstr ""
 
 #: pages/model_explain.py:55
-#: pages/model.explain.py:55
 # Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
 msgstr ""
@@ -556,6 +546,7 @@ msgid "HEADLINE_FVCB"
 msgstr ""
 
 #: pages/model_explain.py:71
+# Grammarly checked
 msgid "FVCB_1"
 msgstr ""
 
@@ -640,7 +631,7 @@ msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure be
         das Ausmaß der NPQ regulieren (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 #: pages/model_explain.py:67
-#: 
+# Grammarly checked
 msgid "CAPTION_MODEL_NPQ"
 msgstr "Schema der Komponenten, die in dem auf dieser Website verwendeten vereinfachten mathematischen Modell enthalten sind. Das Modell wurde 2016 entwickelt und enthält eine detaillierte Beschreibung der internen Prozesse im Photosystem II (PSII), einschließlich der Prozesse, die die Dynamik der Quencher (Psbs und Zeaxanthin) beeinflussen."
 
@@ -1439,5 +1430,7 @@ msgstr ""
 msgid "INTRO_MODEL"
 msgstr ""
 
+#: pages/Start.py:14
+# Grammarly checked
 msgid "PROGRAMS_USED"
 msgstr "Die Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."

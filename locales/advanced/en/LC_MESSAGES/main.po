@@ -35,9 +35,10 @@ msgstr "Language"
 msgid "EXPANDER_ABOUT"
 msgstr "About this Website"
 
-#: This can be copied to add new text entries with translations
+#: pages/Start.py:13
+# Grammarly checked
 msgid "EXPLANATION_ABOUT"
-msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
+msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information on downloading and running the notebook, please refer to the `README.md` file on GitHub."
 
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
@@ -77,19 +78,17 @@ msgid "HEADLINE_USAGE"
 msgstr "## How to use this website"
 
 #: Start.py:16
-#: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
 msgstr "We aimed at both curious <b>newcomers</b> and more <b>advanced</b> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>Simple</i> or <a href='#' id='Advanced'>Advanced</a>."
 
 #: Start.py:17
-#: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-msgstr "In this <a href='#' id='Advanced'>Advanced</a> version we will explain in detail an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
+msgstr "In this <a href='#' id='Advanced'>Advanced</a> version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
 
 #: Start.py:18
-#: EINFÜHRUNG.py:28
+# Grammarly checked
 msgid "DROP_BOX_INTRO"
 msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 
@@ -125,9 +124,10 @@ msgstr "In the following, we will give you a short overview of what you can expe
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "PHOTOSYNTHESIS"
-msgstr "The **photosynthesis page** will give a short summary of the fundamental mechanisms of photosynthesis, in-depth information on climate change as well as a molecular description of the photoprotective mechanism."
+msgstr "The **photosynthesis page** will summarize the fundamental mechanisms of photosynthesis, in-depth information on climate change, and a molecular description of the photoprotective mechanism."
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "METHOD"
 msgstr "The **measuring method page** will explain a state-of-the-art method of measuring photosynthetic parameters using non-invasive fluorescence. Literature for further reading is also provided."
 
@@ -139,9 +139,10 @@ msgstr "Mathematical modelling therory and examples of popular models be present
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)) which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained and simple simulations performed, including the editing of model parameters."
+msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003) ) which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained, and simple simulations will be performed, including the editing of model parameters."
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "MEMORY"
 msgstr "Lastly, the **plant light memory page** will explain how the plant non-photochemical quenching mechanism leads to a memory effect of light conditions and how the mathematical model can be used for investigation."
 
@@ -180,7 +181,7 @@ msgstr "- emissions of heat-trapping gasses"
 #: Lisa's introduction
 # Grammarly checked
 msgid "END_OF_INTRODUCTION"
-msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the impact of the sudden rise of Earth Temperature."
+msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that we are currently in human-caused global warming (Cook et al., 2016). Research is needed to understand the impact of the sudden rise of Earth's Temperature."
 
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
@@ -194,9 +195,9 @@ msgid "PHOTOSYNTHESIS_EXPLANATION_1"
 msgstr "Plants are autotrophic and can thus produce complex organic compounds like sugars, lipids, and proteins from simple nutrients."
 
 #: pages/photosynthesis.py:34
-#: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolised into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus resulting in the production of molecular oxygen."
+msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolized into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus producing molecular oxygen."
 
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
@@ -204,9 +205,9 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Simplified photosynthesis process"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:45
+# Grmmarly checked
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures which delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic cariers uses light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
+msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures that delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic carriers use light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
@@ -215,13 +216,11 @@ msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
 msgstr "## Place of photosynthesis"
 
 #: pages/photosynthesis.py:57
-#: EINFÜHRUNG.py:55
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-msgstr "Photosynthesis takes place in the cells of the primarily green components of plants, mainly within mesophyl cells. Chloroplast organelles within these cells perform the conversion of light energy into chemical energy equivalents, which is commonly called 'light reaction'. Within the series of protein complexes used for this energy conversion, two types of photosystems exist. Both contain chlorophyll reaction centers, which, upon light absorption, are able to oxise compounds with high redox potential (e.g. H₂O) and reduce acceptors with low redox potential (e.g. NADP⁺). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
+msgstr "Photosynthesis occurs in the cells of the primarily green components of plants, mainly within mesophyll cells. Chloroplast organelles within these cells perform the conversion of light energy into chemical energy equivalents, commonly called 'light reaction'. Two types of photosystems exist within the series of protein complexes used for this energy conversion. Both contain chlorophyll reaction centers, which, upon light absorption, can oxidize compounds with high redox potential (e.g. H₂O) and reduce acceptors with low redox potential (e.g. NADP⁺). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 
 #: pages/photosynthesis.py:68
-#: EINFÜHRUNG.py:43
 # Grammarly checked
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
@@ -229,7 +228,7 @@ msgstr "Complexes within the thylakoid membrane, which are necessary for photosy
 #: pages/photosynthesis.py:51
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
-msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product 3-phosphoglycerate, which is then further metabolised into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the comples Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyses the first CO₂-fixation step.\nThe following video visualises the different macromolecular scales of photosynthesis in a very simplified manner:"
+msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\nThe following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
 
 #: pages/photosynthesis.py:75
 #: EINFÜHRUNG.py:59
@@ -237,10 +236,9 @@ msgid "HEADLINE_NPQ"
 msgstr "## How to deal with too much light?"
 
 #: pages/photosynthesis.py:76
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "NPQ_EXPLANATION"
-msgstr "If the photosystems absorb too much light energy, protein breakdown and cellular damage by producing radical oxygen species can ensue. Therefore, multiple preventive mechanisms exist to reduce high light damage, ranging from the adaption of the photosystems to the movement of chloroplasts and whole leaves. Processes on the scale of the photosystems are acting the fastest and usually result in light energy being directly emitted as heat. Such processes are collectively called non-photochemical quenching (NPQ). The following pages will present the model representing the plant 'Xanthophyll cycle', where the enzymatic interconversion of carotenoids leads to a system with tunable light absorption for dissipation as heat."
+msgstr "If the photosystems absorb too much light energy, protein breakdown, and cellular damage by producing radical oxygen species can ensue. Therefore, multiple preventive mechanisms exist to reduce high light damage, ranging from the adaption of the photosystems to the movement of chloroplasts and whole leaves. Processes on the scale of the photosystems are acting the fastest and usually result in light energy being directly emitted as heat. Such processes are collectively called non-photochemical quenching (NPQ). The following pages will present the model representing the plant 'Xanthophyll cycle', where the enzymatic interconversion of carotenoids leads to a system with tunable light absorption for dissipation as heat."
 
 #: pages/photosynthesis.py:78
 #: pages/1 Messmethode.py:40
@@ -248,10 +246,9 @@ msgid "HEADER_MODEL_ORGANISMEN"
 msgstr "## One plant to rule them all"
 
 #: pages/photosynthesis.py:79
-#: pages/1 Messmethode.py:40
 # Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
-msgstr "While the presented methods and models are applicable for a wide range of plants, most were developed for the model plant *Arabidopsis Thaliana*."
+msgstr "While the presented methods and models apply to many plants, most were developed for the model plant *Arabidopsis Thaliana*."
 
 #: pages/photosynthesis.py:81
 #: pages/1 Messmethode.py:40
@@ -275,7 +272,7 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
 "\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
 
-#: pages/1 Messmethode.py:50
+#
 msgid "LITERATURE_ONPAGE"
 msgstr "References on this page:"
 
@@ -285,13 +282,11 @@ msgid "HEADLINE_ONE"
 msgstr "# Measuring method"
 
 #: pages/method.py:15
-#: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_MEASUREMENT"
-msgstr "To quantitatively measure the photosynthetic acitivity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are difficult to perform in the field, fluorescence measurements can be performed on plants of various sizes and in various environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the european space agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
+msgstr "To quantitatively measure the photosynthetic activity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are challenging to perform in the field, fluorescence measurements can be performed on plants of various sizes and in multiple environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the European Space Agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
 
 #: pages/method.py:18
-#: EINFÜHRUNG.py:36
 # Grammarly checked
 msgid "CAPTION_ABB1"
 msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
@@ -317,13 +312,13 @@ msgstr "Stray environmental light, especially the green fraction reflected by th
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_EXPERIMENT"
-msgstr "In the following example, we used a powerful UV light source for chlorophyll excitation and covered the camera with a red-pass filter to limit light detection to the fluorescence range. We, also, initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
+msgstr "We used a powerful UV light source for chlorophyll excitation in the following example. We covered the camera with a red-pass filter to limit light detection to the fluorescence range. We also initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
 
 #: pages/method.py:30
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_VIDEO"
-msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. Upon removal of the sticker, however, the covered tissue without induced light protection received intense illumination, producing a strong fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualises both chlorophyll fluorescence and the leaf adaption to light."
+msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. However, upon removal of the sticker, the covered tissue without induced light protection received intense illumination, producing a solid fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualizes chlorophyll fluorescence and the leaf adaption to light."
 
 #: pages/method.py:32
 #: Explanation by Tobias
@@ -334,13 +329,13 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_MEASUREMENT_1"
-msgstr "The above experiment also visualised the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centres where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
+msgstr "The above experiment also visualized the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centers where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads to a buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
 
 #: pages/method.py:34
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_PHI"
-msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalised to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). By relating measurements within a PAM protocol and observing the fluorescence dynamics, photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified."
+msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalized to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). Photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified by relating measurements within a PAM protocol and observing the fluorescence dynamics."
 
 #: pages/method.py:37
 #: Explanation by Tobias
@@ -352,24 +347,22 @@ msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
-msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualises the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behaviour of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. This summary figure is reproduced from Nies et al. (2021)."
+msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualizes the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behavior of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as the lower panel shows. This summary figure is reproduced from Nies et al. (2021)."
 
 #: pages/method.py:41 pages/method.py:61
-#: pages/1 Messmethode.py:47
+# Grammarly checked
 msgid "CAPTION_ABB2"
 msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "HEADLINE_PAM_MEASUREMENT"
 msgstr "### PAM Experiments"
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
-msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For more a in-depth overview, please consider the literature at the bottom of the page."
+msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For a more in-depth overview, please consider the literature at the bottom of the page."
 
 #: pages/method.py:46
 #: Explanation by Tobias
@@ -457,8 +450,6 @@ msgid "HEADLINE_MODELBASE"
 msgstr "#### Modelbase implementation"
 
 #: pages/model_explain.py:23
-#: pages/model.explain.py:23
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
@@ -476,7 +467,6 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
 msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
 
 #: pages/model_explain.py:55
-#: pages/model.explain.py:55
 # Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
 msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
@@ -495,6 +485,7 @@ msgid "HEADLINE_FVCB"
 msgstr "### The Farquhar, von Caemmerer and Berry model"
 
 #: pages/model_explain.py:71
+# Grammarly checked
 msgid "FVCB_1"
 msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). It was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results."
 
@@ -573,12 +564,12 @@ msgstr "## Model construction"
 #: pages/model_explain.py:67
 #: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION_1"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
+msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown in the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 #: pages/model_explain.py:67
-#: 
+# Grammarly checked
 msgid "CAPTION_MODEL_NPQ"
-msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model has been developed back in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes that affect the quencher dynamics (Psbs and zeaxanthin)."
+msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model was developed in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes affecting the quencher dynamics (Psbs and zeaxanthin)."
 
 #: pages/model_explain.py:67
 #: Grammarly checked
@@ -808,7 +799,7 @@ msgstr "# Plant Light Memory"
 #: pages/plant_memory.py:269
 # Grammarly checked
 msgid "INTRODUCTION_BRAIN"
-msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b> and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
+msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin, you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
 
 #: pages/plant_memory.py:212
 msgid "SLIDER_TRAINING"
@@ -1317,5 +1308,7 @@ msgstr ""
 msgid "INTRO_MODEL"
 msgstr ""
 
+#: pages/Start.py:14
+# Grammarly checked
 msgid "PROGRAMS_USED"
 msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."

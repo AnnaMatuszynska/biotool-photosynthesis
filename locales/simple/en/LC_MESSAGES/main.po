@@ -35,9 +35,10 @@ msgstr "Language"
 msgid "EXPANDER_ABOUT"
 msgstr "About this Website"
 
-#: This can be copied to add new text entries with translations
+#: pages/Start.py:13
+# Grammarly checked
 msgid "EXPLANATION_ABOUT"
-msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
+msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information on downloading and running the notebook, please refer to the `README.md` file on GitHub."
 
 #: pages/1 Messmethode.py:49
 msgid "LITERATURE"
@@ -77,19 +78,17 @@ msgid "HEADLINE_USAGE"
 msgstr "## How to use this website"
 
 #: Start.py:16
-#: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
 msgstr "We aimed at both curious <b>newcomers</b> and more <a href='#' id='Advanced'>advanced</a> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>Simple</i> or <a href='#' id='Advanced'>Advanced</a>."
 
 #: Start.py:17
-#: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
 msgstr "Suppose you choose the <a href='#' id='Advanced'>Advanced</a> version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer <i>in silico</i>."
 
 #: Start.py:18
-#: EINFÜHRUNG.py:28
+# Grammarly checked
 msgid "DROP_BOX_INTRO"
 msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 
@@ -120,16 +119,17 @@ msgstr "## Abstract of the pages"
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "INTRODUCTION_PAGES"
-msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In <a href='#' id='Advanced'>Advanced</a> you will find the overview of what additional information you will get in the <a href='#' id='Advanced'>Advanced</a> versions."
+msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In <a href='#' id='Advanced'>Advanced</a>, you will find the overview of what additional information you will get in the <a href='#' id='Advanced'>Advanced</a> versions."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "PHOTOSYNTHESIS"
-msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis to take full use of the following pages."
+msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis to use the following pages fully."
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "METHOD"
-msgstr "For us to measure plants' photosynthetic performance, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
+msgstr "We need a specific measurement method to measure plants' photosynthetic performance. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
@@ -142,6 +142,7 @@ msgid "EXPERIMENT"
 msgstr "On the page <b>experiments <i>in silico</i></b>, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Afterward, you can directly use it yourself to perform your first measurements. In the <a href='#' id='Advanced'>Advanced</a> version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "MEMORY"
 msgstr "Last but not least, you will get to know the plant light memory on the **plant light memory page** and can prove its existence independently with experiments."
 
@@ -194,7 +195,7 @@ msgid "PHOTOSYNTHESIS_EXPLANATION_1"
 msgstr "Just like humans, plants need nutrients for their growth. The most essential is water and minerals, but plants also need fats, carbohydrates, and proteins. Most of these nutrients plants can absorb from the soil through their roots, but not all of them. As already mentioned, plants are producers and can, therefore, manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
 
 #: pages/photosynthesis.py:34
-#: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
 msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O, and energy in the form of light."
 
@@ -204,9 +205,9 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthesis process"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:45
+# Grmmarly checked
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
+msgstr "Zooming into a leaf, the cross-section contains mesophyll cells where the organelle chloroplasts are present within those. Within the membrane system of chloroplasts - called the thylakoid system- photosynthesis' light reaction occurs. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
 
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
@@ -215,13 +216,11 @@ msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
 msgstr "## Place of photosynthesis"
 
 #: pages/photosynthesis.py:57
-#: EINFÜHRUNG.py:55
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 msgstr "Photosynthesis takes place in the cells of the primarily green components of plants. In these cells are specialized organelles, the chloroplasts. There, the part of photosynthesis called the light reaction takes place. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 
 #: pages/photosynthesis.py:68
-#: EINFÜHRUNG.py:43
 # Grammarly checked
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
@@ -237,7 +236,6 @@ msgid "HEADLINE_NPQ"
 msgstr "## How to deal with too much light?"
 
 #: pages/photosynthesis.py:76
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "NPQ_EXPLANATION"
 msgstr "What happens when too much light and, thus, excess energy hits Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released as heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
@@ -248,7 +246,6 @@ msgid "HEADER_MODEL_ORGANISMEN"
 msgstr "## One plant to rule them all"
 
 #: pages/photosynthesis.py:79
-#: pages/1 Messmethode.py:40
 # Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
 msgstr "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis Thaliana*, a 'model organism'."
@@ -275,7 +272,7 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
 "\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
 
-#: pages/1 Messmethode.py:50
+#
 msgid "LITERATURE_ONPAGE"
 msgstr "References on this page:"
 
@@ -285,13 +282,11 @@ msgid "HEADLINE_ONE"
 msgstr "# Measuring method"
 
 #: pages/method.py:15
-#: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_MEASUREMENT"
 msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
 
 #: pages/method.py:18
-#: EINFÜHRUNG.py:36
 # Grammarly checked
 msgid "CAPTION_ABB1"
 msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
@@ -355,18 +350,16 @@ msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
 msgstr "In this one figure, the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel, you see the results of the PAM experiments. Take a good look because, in a few minutes, you will produce similar results, not with the help of a fluorometer but with your computer! So, what do we see in this graph? It results from a unique light protocol, where a dark-adapted plant is exposed to very weak actinic light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. We can use these fluorescence features to calculate the values quantifying photosynthesis, e.g., the amount of NPQ.\n\n So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1 in the left diagram, a simplified 'Jablonsky diagram'). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most crucial part: the fluorescence emission spectra are red-shifted from the absorption spectra. That means the fluorescence light is redder (at higher wavelengths in the left axis) than the light absorbed (upper panel on the right). This, in turn, means that the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the light that we shine on the plants. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. It took us a long time to summarize everything on one figure only, and this figure originates from our previous work (Nies et al. 2021)."
 
 #: pages/method.py:41 pages/method.py:61
-#: pages/1 Messmethode.py:47
+# Grammarly checked
 msgid "CAPTION_ABB2"
 msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "HEADLINE_PAM_MEASUREMENT"
 msgstr "### PAM Experiments"
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
 msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
@@ -457,8 +450,6 @@ msgid "HEADLINE_MODELBASE"
 msgstr ""
 
 #: pages/model_explain.py:23
-#: pages/model.explain.py:23
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
@@ -476,7 +467,6 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
 msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
 
 #: pages/model_explain.py:55
-#: pages/model.explain.py:55
 # Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
 msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
@@ -495,6 +485,7 @@ msgid "HEADLINE_FVCB"
 msgstr "### The Farquhar, von Caemmerer and Berry model"
 
 #: pages/model_explain.py:71
+# Grammarly checked
 msgid "FVCB_1"
 msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). C<sub>3</sub> you may ask? Actually, plants can perform their photosynthesis in a slightly different manner. Check the box below to learn more about the various forms of photosynthesis. The model was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results. Please use the <a href='#' id='Advanced'>Advanced</a> mode to see these equations."
 
@@ -509,7 +500,7 @@ msgstr "### The *e*-photosynthesis model"
 #: pages/model_explain.py:92
 # Grammarly checked
 msgid "E_PHOTOSYNTHESIS_1"
-msgstr "The <i>e</i>-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It uses many different elements from other models and brings them all together to create one of the most complete dynamic models of photosynthesis. To have a small glimpse at what this model entails, switch to the <a href='#' id='Advanced'>Advanced</a> mode"
+msgstr "The <i>e</i>-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It uses many different elements from other models and brings them all together to create one of the most complete dynamic models of photosynthesis. To have a small glimpse at what this model entails, switch to the <a href='#' id='Advanced'>Advanced</a> mode."
 
 #: pages/model_explain.py:102
 msgid "E_PHOTOSYNTHESIS_2"
@@ -571,12 +562,12 @@ msgstr "## Model construction"
 #: pages/model_explain.py:67
 #: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION_1"
-msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
+msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown in the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 #: pages/model_explain.py:67
-#: 
+# Grammarly checked
 msgid "CAPTION_MODEL_NPQ"
-msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model has been developed back in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes that affect the quencher dynamics (Psbs and zeaxanthin)."
+msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model was developed in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes affecting the quencher dynamics (Psbs and zeaxanthin)."
 
 #: pages/model_explain.py:67
 #: Grammarly checked
@@ -801,7 +792,7 @@ msgstr "# Plant Light Memory"
 #: pages/plant_memory.py:269
 # Grammarly checked
 msgid "INTRODUCTION_BRAIN"
-msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b> and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='Advanced'>Advanced</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
+msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='Advanced'>Advanced</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
 
 #: pages/plant_memory.py:212
 msgid "SLIDER_TRAINING"
@@ -1300,5 +1291,7 @@ msgstr ""
 msgid "INTRO_MODEL"
 msgstr ""
 
+#: pages/Start.py:14
+# Grammarly checked
 msgid "PROGRAMS_USED"
 msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."

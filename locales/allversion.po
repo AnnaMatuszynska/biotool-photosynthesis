@@ -91,14 +91,15 @@ simple-fr msgstr ""
 simple-pl msgstr "O naszej stronie"
 simple-es msgstr ""
 
-#: This can be copied to add new text entries with translations
+#: pages/Start.py:13
+# Grammarly checked
 msgid "EXPLANATION_ABOUT"
-advanced-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
+advanced-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information on downloading and running the notebook, please refer to the `README.md` file on GitHub."
 advanced-de msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
 advanced-fr msgstr ""
 advanced-pl msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
 advanced-es msgstr ""
-simple-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information  on how to download and run the notebook, please refer to the `README.md` file on GitHub."
+simple-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information on downloading and running the notebook, please refer to the `README.md` file on GitHub."
 simple-de msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
 simple-fr msgstr ""
 simple-pl msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
@@ -234,7 +235,6 @@ simple-pl msgstr "## Jak używać tej strony?"
 simple-es msgstr ""
 
 #: Start.py:16
-#: EINFÜHRUNG.py:24
 # Grammarly checked
 msgid "USAGE"
 advanced-en msgstr "We aimed at both curious <b>newcomers</b> and more <b>advanced</b> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>Simple</i> or <a href='#' id='Advanced'>Advanced</a>."
@@ -251,10 +251,9 @@ simple-es msgstr "We aimed at both curious **newcomers** and more **advanced** l
         *Simple* or *Advanced*."
 
 #: Start.py:17
-#: EINFÜHRUNG.py:26
 # Grammarly checked
 msgid "ADVANCED_USE"
-advanced-en msgstr "In this <a href='#' id='Advanced'>Advanced</a> version we will explain in detail an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
+advanced-en msgstr "In this <a href='#' id='Advanced'>Advanced</a> version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
 advanced-de msgstr "Nehmen wir an, Sie wählen die <a href='#' id='Advanced'>Fortgeschritten</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
 advanced-fr msgstr ""
 advanced-pl msgstr "Załóżmy, że wybierzesz wersję <a href='#' id='Advanced'>Zaawansowany</a>. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy <i>in silico</i>."
@@ -266,7 +265,7 @@ simple-pl msgstr "Załóżmy, że wybierzesz wersję <a href='#' id='Advanced'>Z
 simple-es msgstr ""
 
 #: Start.py:18
-#: EINFÜHRUNG.py:28
+# Grammarly checked
 msgid "DROP_BOX_INTRO"
 advanced-en msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 advanced-de msgstr "Wenn Sie den Unterschied zwischen *in vitro*, *in vivo* und *in silico* nicht kennen, öffnen Sie die Dropbox unten."
@@ -356,7 +355,7 @@ advanced-de msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darübe
 advanced-fr msgstr ""
 advanced-pl msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach."
 advanced-es msgstr ""
-simple-en msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In <a href='#' id='Advanced'>Advanced</a> you will find the overview of what additional information you will get in the <a href='#' id='Advanced'>Advanced</a> versions."
+simple-en msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In <a href='#' id='Advanced'>Advanced</a>, you will find the overview of what additional information you will get in the <a href='#' id='Advanced'>Advanced</a> versions."
 simple-de msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie auf den folgenden Seiten erwartet. Unter <a href='#' id='Advanced'>Advanced</a> finden Sie die Übersicht, welche zusätzlichen Informationen Sie in den <a href='#' id='Advanced'>Fortgeschrittene</a>-Versionen erhalten."
 simple-fr msgstr ""
 simple-pl msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji <a href='#' id='Advanced'>Advanced</a> znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach <a href='#' id='Advanced'>Zaawansowany</a>."
@@ -365,25 +364,26 @@ simple-es msgstr ""
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "PHOTOSYNTHESIS"
-advanced-en msgstr "The **photosynthesis page** will give a short summary of the fundamental mechanisms of photosynthesis, in-depth information on climate change as well as a molecular description of the photoprotective mechanism."
+advanced-en msgstr "The **photosynthesis page** will summarize the fundamental mechanisms of photosynthesis, in-depth information on climate change, and a molecular description of the photoprotective mechanism."
 advanced-de msgstr "Auf der Seite <b>Photosynthese</b> erfahren Sie alles, was Sie über die Photosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können. In dieser <a href='#' id='Advanced'>Fortgeschrittenen</a>-Version gibt es ausführlichere Informationen über den Klimawandel sowie eine molekulare Beschreibung des Photoprotektionsmechanismus."
 advanced-fr msgstr ""
 advanced-pl msgstr "Na stronie <b>fotosynteza</b> dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony. W tej wersji <a href='#' id='Advanced'>Zaawansowany</a> znajduje się więcej szczegółowych informacji na temat zmian klimatycznych, a także molekularny opis mechanizmu fotoprotekcji."
 advanced-es msgstr ""
-simple-en msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis to take full use of the following pages."
+simple-en msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis to use the following pages fully."
 simple-de msgstr "Auf der Seite **Fotosynthese** erfahren Sie alles, was Sie über die Fotosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können."
 simple-fr msgstr ""
 simple-pl msgstr "W zakładce **fotosynteza** dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony."
 simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "METHOD"
 advanced-en msgstr "The **measuring method page** will explain a state-of-the-art method of measuring photosynthetic parameters using non-invasive fluorescence. Literature for further reading is also provided."
 advanced-de msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir eine spezielle Messmethode. Diese wird auf der Seite <b>Messmethode</b> vorgestellt. Darüber hinaus gehen wir darauf ein, wie wir unsere Messungen sichtbar machen können. In dieser <a href='#' id='Advanced'>Fortgeschrittenen</a>-Version bieten wir zusätzlich Links zu Fachliteratur, in der Sie mehr über die Fluoreszenzmessungen erfahren können."
 advanced-fr msgstr ""
 advanced-pl msgstr "Aby zmierzyć wydajność fotosyntetyczną roślin, potrzebujemy określonej metody pomiaru. Została ona przedstawiona na stronie **metody pomiarowe**. Ponadto omawiamy, w jaki sposób możemy uwidocznić nasze pomiary. W tej :niebieskiej[Zaawansowanej] wersji dodatkowo podajemy linki do specjalistycznej literatury, w której można dowiedzieć się więcej na temat pomiarów fluorescencji."
 advanced-es msgstr ""
-simple-en msgstr "For us to measure plants' photosynthetic performance, we need a specific measurement method. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
+simple-en msgstr "We need a specific measurement method to measure plants' photosynthetic performance. This is presented on the **measuring method page**. In addition, we address how we can make our measurements visible."
 simple-de msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir eine spezielle Messmethode. Diese wird auf der Seite **Messmethode** vorgestellt. Außerdem gehen wir darauf ein, wie wir unsere Messungen sichtbar machen können."
 simple-fr msgstr ""
 simple-pl msgstr "Abyśmy mogli zmierzyć wydajność fotosyntetyczną roślin, potrzebujemy określonej metody pomiaru. Została ona przedstawiona na stronie **metoda pomiaru**. Ponadto omawiamy, w jaki sposób możemy zwizualizować nasze pomiary."
@@ -406,7 +406,7 @@ simple-es msgstr ""
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-advanced-en msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)) which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained and simple simulations performed, including the editing of model parameters."
+advanced-en msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003) ) which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained, and simple simulations will be performed, including the editing of model parameters."
 advanced-de msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der <a href='#' id='Advanced'>Advanced</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
 advanced-fr msgstr ""
 advanced-pl msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)). Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='Advanced'>Advanced</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
@@ -418,6 +418,7 @@ simple-pl msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany 
 simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
+# Grammarly checked
 msgid "MEMORY"
 advanced-en msgstr "Lastly, the **plant light memory page** will explain how the plant non-photochemical quenching mechanism leads to a memory effect of light conditions and how the mathematical model can be used for investigation."
 advanced-de msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das pflanzliche Lichtgedächtnis kennen und können dessen Existenz selbständig mit Experimenten nachweisen."
@@ -466,15 +467,9 @@ advanced-en msgstr "*Climate* is defined as the average statistical measurements
 advanced-de msgstr "Das *Klima* selbst ist definiert als die durchschnittlichen statistischen Messungen des Wetters über einen langen \
         Zeitraum an einem bestimmten Ort. *Klimawandel* ist definiert als eine weltweite Veränderung des Klimas. Drei \
         Hauptkategorien können eine Veränderung des Klimas bewirken:"
-advanced-fr msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a \
-        certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can \
-        induce a change in climate:"
-advanced-pl msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a \
-        certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can \
-        induce a change in climate:"
-advanced-es msgstr "*Climate* itself is defined as the average statistical measurements of the weather over a long period in a \
-        certain place. *Climate change* is defined as a worldwide change in the climate. Three main categories can \
-        induce a change in climate:"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, e.g., changed temperatures (heat and cold), flooding events, and drought, can lead to stressful events in plants. As summarized in the Figure on the right, those factors can have various short- and long-term effects on plants. Nevertheless, plants experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of photosynthesis and the fixation of CO₂ by plants is an essential measure of overall **plant fitness**, **productivity**, and **survival**. Consequently, basic research on photosynthesis and its efficiency is vital to assess our changing world."
 simple-de msgstr "Da Pflanzen **nicht** weglaufen können, müssen sie sich an die veränderten Umweltbedingungen anpassen. Pflanzen \
         sind die Grundlage des Lebens auf der Erde (Abb. links), und die Anpassung der Pflanzen ist entscheidend für eine \
@@ -487,33 +482,9 @@ simple-de msgstr "Da Pflanzen **nicht** weglaufen können, müssen sie sich an d
         ist die Analyse der Photosynthese und der CO₂-Fixierung von Pflanzen ein wichtiges Maß für die allgemeine \
         **Pflanzenfitness**, **Produktivität** und das **Überleben**. Folglich ist die Grundlagenforschung zur Photosynthese \
         und ihrer Effizienz unerlässlich, um unsere sich verändernde Welt zu beurteilen."
-simple-fr msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of \
-        life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., \
-        changed temperatures (heat and cold), flooding events, and drought can lead to stressful events in plants. Those \
-        factors can have various short- and long-term effects on plants– summarized in Fig. right. Nevertheless, plants \
-        experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first \
-        reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis \
-        itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of \
-        photosynthesis and the fixation of CO₂ by plants is an important measure of overall **plant fitness**, **productivity**, \
-        and **survival**. Consequently, basic research on photosynthesis and its efficiency is essential to assess our changing world."
-simple-pl msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of \
-        life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., \
-        changed temperatures (heat and cold), flooding events, and drought can lead to stressful events in plants. Those \
-        factors can have various short- and long-term effects on plants– summarized in Fig. right. Nevertheless, plants \
-        experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first \
-        reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis \
-        itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of \
-        photosynthesis and the fixation of CO₂ by plants is an important measure of overall **plant fitness**, **productivity**, \
-        and **survival**. Consequently, basic research on photosynthesis and its efficiency is essential to assess our changing world."
-simple-es msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of \
-        life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, like e.g., \
-        changed temperatures (heat and cold), flooding events, and drought can lead to stressful events in plants. Those \
-        factors can have various short- and long-term effects on plants– summarized in Fig. right. Nevertheless, plants \
-        experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first \
-        reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis \
-        itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of \
-        photosynthesis and the fixation of CO₂ by plants is an important measure of overall **plant fitness**, **productivity**, \
-        and **survival**. Consequently, basic research on photosynthesis and its efficiency is essential to assess our changing world."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/photosynthesis.py:14
 #: Lisa's introduction
@@ -561,19 +532,13 @@ simple-es msgstr ""
 #: Lisa's introduction
 # Grammarly checked
 msgid "END_OF_INTRODUCTION"
-advanced-en msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the impact of the sudden rise of Earth Temperature."
+advanced-en msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that we are currently in human-caused global warming (Cook et al., 2016). Research is needed to understand the impact of the sudden rise of Earth's Temperature."
 advanced-de msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten *97 % der Klimaforscher* \
         darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden (Cook et al., 2016), und dass \
         Forschung erforderlich ist, um die Auswirkungen des plötzlichen Anstiegs der Erdtemperatur zu verstehen."
-advanced-fr msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
-        impact of the sudden rise of Earth Temperature."
-advanced-pl msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
-        impact of the sudden rise of Earth Temperature."
-advanced-es msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* \
-        agreed that currently we are in a human-caused global warming (Cook et al., 2016), and research is needed to understand the \
-        impact of the sudden rise of Earth Temperature."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr ""
 simple-de msgstr ""
 simple-fr msgstr ""
@@ -605,35 +570,23 @@ advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "Just like humans, plants need nutrients for their growth. The most essential is water and minerals, but plants also need fats, carbohydrates, and proteins. Most of these nutrients plants can absorb from the soil through their roots, but not all of them. As already mentioned, plants are producers and can, therefore, manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
 simple-de msgstr ""
-simple-fr msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
-        but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
-        through their roots, but not all of them. As already mentioned, plants are producers and can therefore \
-        manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
-simple-pl msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
-        but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
-        through their roots, but not all of them. As already mentioned, plants are producers and can therefore \
-        manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
-simple-es msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
-        but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
-        through their roots, but not all of them. As already mentioned, plants are producers and can therefore \
-        manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/photosynthesis.py:34
-#: EINFÜHRUNG.py:43
+# Grammarly checked
 msgid "PHOTOSYNTHESIS_EXPLANATION_2"
-advanced-en msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolised into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus resulting in the production of molecular oxygen."
+advanced-en msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolized into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus producing molecular oxygen."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O, and energy in the form of light."
 simple-de msgstr ""
-simple-fr msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light."
-simple-pl msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light."
-simple-es msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
@@ -650,14 +603,14 @@ simple-pl msgstr "Proces fotosyntezy"
 simple-es msgstr "Photosynthesis process"
 
 #: pages/photosynthesis.py:47
-#: PHOTOSYNTHESIS.py:45
+# Grmmarly checked
 msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-advanced-en msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures which delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic cariers uses light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
+advanced-en msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures that delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic carriers use light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
 advanced-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
 advanced-fr msgstr ""
 advanced-pl msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
 advanced-es msgstr ""
-simple-en msgstr "Zooming in into a leaf, the cross-section contains mesophyll cells where within those the organelle chloroplasts are present. Within the membrane system of chloroplasts - called thylakoid system- photosynthesis' light reaction takes place. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
+simple-en msgstr "Zooming into a leaf, the cross-section contains mesophyll cells where the organelle chloroplasts are present within those. Within the membrane system of chloroplasts - called the thylakoid system- photosynthesis' light reaction occurs. The light energy is converted here into chemical energy (ATP and NADPH synthesis), which is used for the fixation of CO₂ and sugar production."
 simple-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
 simple-fr msgstr ""
 simple-pl msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
@@ -679,31 +632,20 @@ simple-pl msgstr "## Place of photosynthesis"
 simple-es msgstr "## Place of photosynthesis"
 
 #: pages/photosynthesis.py:57
-#: EINFÜHRUNG.py:55
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-advanced-en msgstr "Photosynthesis takes place in the cells of the primarily green components of plants, mainly within mesophyl cells. Chloroplast organelles within these cells perform the conversion of light energy into chemical energy equivalents, which is commonly called 'light reaction'. Within the series of protein complexes used for this energy conversion, two types of photosystems exist. Both contain chlorophyll reaction centers, which, upon light absorption, are able to oxise compounds with high redox potential (e.g. H₂O) and reduce acceptors with low redox potential (e.g. NADP⁺). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
+advanced-en msgstr "Photosynthesis occurs in the cells of the primarily green components of plants, mainly within mesophyll cells. Chloroplast organelles within these cells perform the conversion of light energy into chemical energy equivalents, commonly called 'light reaction'. Two types of photosystems exist within the series of protein complexes used for this energy conversion. Both contain chlorophyll reaction centers, which, upon light absorption, can oxidize compounds with high redox potential (e.g. H₂O) and reduce acceptors with low redox potential (e.g. NADP⁺). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "Photosynthesis takes place in the cells of the primarily green components of plants. In these cells are specialized organelles, the chloroplasts. There, the part of photosynthesis called the light reaction takes place. The so-called photosystems are located in the membrane. Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 simple-de msgstr ""
-simple-fr msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the inner membranes (called thylakoid membranes). Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
-simple-pl msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
-simple-es msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/photosynthesis.py:68
-#: EINFÜHRUNG.py:43
 # Grammarly checked
 msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 advanced-en msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
@@ -720,7 +662,7 @@ simple-es msgstr "Complexes within the thylakoid membrane, which are necessary f
 #: pages/photosynthesis.py:51
 # Grammarly checked
 msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
-advanced-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product 3-phosphoglycerate, which is then further metabolised into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the comples Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyses the first CO₂-fixation step.\nThe following video visualises the different macromolecular scales of photosynthesis in a very simplified manner:"
+advanced-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\nThe following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -746,28 +688,18 @@ simple-pl msgstr "## How to deal with too much light?"
 simple-es msgstr "## How to deal with too much light?"
 
 #: pages/photosynthesis.py:76
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "NPQ_EXPLANATION"
-advanced-en msgstr "If the photosystems absorb too much light energy, protein breakdown and cellular damage by producing radical oxygen species can ensue. Therefore, multiple preventive mechanisms exist to reduce high light damage, ranging from the adaption of the photosystems to the movement of chloroplasts and whole leaves. Processes on the scale of the photosystems are acting the fastest and usually result in light energy being directly emitted as heat. Such processes are collectively called non-photochemical quenching (NPQ). The following pages will present the model representing the plant 'Xanthophyll cycle', where the enzymatic interconversion of carotenoids leads to a system with tunable light absorption for dissipation as heat."
+advanced-en msgstr "If the photosystems absorb too much light energy, protein breakdown, and cellular damage by producing radical oxygen species can ensue. Therefore, multiple preventive mechanisms exist to reduce high light damage, ranging from the adaption of the photosystems to the movement of chloroplasts and whole leaves. Processes on the scale of the photosystems are acting the fastest and usually result in light energy being directly emitted as heat. Such processes are collectively called non-photochemical quenching (NPQ). The following pages will present the model representing the plant 'Xanthophyll cycle', where the enzymatic interconversion of carotenoids leads to a system with tunable light absorption for dissipation as heat."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "What happens when too much light and, thus, excess energy hits Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released as heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
 simple-de msgstr ""
-simple-fr msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
-        and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
-        form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
-        protective mechanisms are referred to as NPQ."
-simple-pl msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
-        and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
-        form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
-        protective mechanisms are referred to as NPQ."
-simple-es msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
-        and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
-        form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
-        protective mechanisms are referred to as NPQ."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/photosynthesis.py:78
 #: pages/1 Messmethode.py:40
@@ -784,10 +716,9 @@ simple-pl msgstr "## One plant to rule them all"
 simple-es msgstr "## One plant to rule them all"
 
 #: pages/photosynthesis.py:79
-#: pages/1 Messmethode.py:40
 # Grammarly checked
 msgid "MODEL_ORGANISMEN_EXPLANATION"
-advanced-en msgstr "While the presented methods and models are applicable for a wide range of plants, most were developed for the model plant *Arabidopsis Thaliana*."
+advanced-en msgstr "While the presented methods and models apply to many plants, most were developed for the model plant *Arabidopsis Thaliana*."
 advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
@@ -852,7 +783,7 @@ simple-fr msgstr ""
 simple-pl msgstr ""
 simple-es msgstr ""
 
-#: pages/1 Messmethode.py:50
+#
 msgid "LITERATURE_ONPAGE"
 advanced-en msgstr "References on this page:"
 advanced-de msgstr "Referenzen auf dieser Seite:"
@@ -880,10 +811,9 @@ simple-pl msgstr "# Metoda pomiaru"
 simple-es msgstr ""
 
 #: pages/method.py:15
-#: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_MEASUREMENT"
-advanced-en msgstr "To quantitatively measure the photosynthetic acitivity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are difficult to perform in the field, fluorescence measurements can be performed on plants of various sizes and in various environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the european space agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
+advanced-en msgstr "To quantitatively measure the photosynthetic activity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are challenging to perform in the field, fluorescence measurements can be performed on plants of various sizes and in multiple environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the European Space Agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
 advanced-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
         mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
         Zahlen und das Messen von Dingen. Deshalb haben Forscher viele Methoden erfunden, um zu bestimmen, wie viel \
@@ -891,24 +821,9 @@ advanced-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fo
         Kohlendioxid aufnehmen. Daher kann die Fotosynthese daran gemessen werden, wie schnell diese Gase produziert \
         oder verbraucht werden. Die Messung von Gasen kann jedoch schwierig sein, vor allem, wenn man sie draußen an \
         einem Baum oder auf einem Feld durchführen will."
-advanced-fr msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
-        modelling to learn more about it. But biologists don't just like knowledge. They also like numbers and measuring \
-        things. So researchers invented many ways of determining how much a plant is doing photosynthesis. For example, \
-        you heard that plants produce oxygen and take up carbon dioxide. Therefore, photosynthesis can be measured by \
-        how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want \
-        to do it outside on a tree or in a field. "
-advanced-pl msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
-        modelling to learn more about it. But biologists don't just like knowledge. They also like numbers and measuring \
-        things. So researchers invented many ways of determining how much a plant is doing photosynthesis. For example, \
-        you heard that plants produce oxygen and take up carbon dioxide. Therefore, photosynthesis can be measured by \
-        how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want \
-        to do it outside on a tree or in a field. "
-advanced-es msgstr "On the previous page, you learned about the importance of photosynthesis, how it works, and how we can use \
-        modelling to learn more about it. But biologists don't just like knowledge. They also like numbers and measuring \
-        things. So researchers invented many ways of determining how much a plant is doing photosynthesis. For example, \
-        you heard that plants produce oxygen and take up carbon dioxide. Therefore, photosynthesis can be measured by \
-        how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want \
-        to do it outside on a tree or in a field. "
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
 simple-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
         mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
@@ -917,40 +832,27 @@ simple-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Foto
         Kohlendioxid aufnehmen. Daher kann die Fotosynthese daran gemessen werden, wie schnell diese Gase produziert \
         oder verbraucht werden. Die Messung von Gasen kann jedoch schwierig sein, vor allem, wenn man sie draußen an \
         einem Baum oder auf einem Feld durchführen will."
-simple-fr msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page you will learn how can we measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continously becoming a more quantitative science, obviously numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or in a field. Therefore a particularly important characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
-simple-pl msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page you will learn how can we measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continously becoming a more quantitative science, obviously numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or in a field. Therefore a particularly important characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
-simple-es msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page you will learn how can we measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continously becoming a more quantitative science, obviously numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or in a field. Therefore a particularly important characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:18
-#: EINFÜHRUNG.py:36
 # Grammarly checked
 msgid "CAPTION_ABB1"
 advanced-en msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
 advanced-de msgstr "Foto einer Pflanze der Art Spathiphyllum, in drei verschiedenen Beleuchtungssituationen: Links in Tageslicht, \
         in der Mitte beleuchtet von einer handelsüblichen UV5-Lampe, Rechts ebenfalls beleuchtet mit einer UV5-Lampe, \
         jedoch durch einen Filter, welcher alle Wellenlängen, bis auf die des roten Lichtes filtert."
-advanced-fr msgstr "Photo of a plant (Spathiphyllum), a monocot, under three different light treatments: On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
-advanced-pl msgstr "Photo of a plant (Spathiphyllum), a monocot, under three different light treatments: On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
-advanced-es msgstr "Photo of a plant (Spathiphyllum), a monocot, under three different light treatments: On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
 simple-de msgstr "Foto einer Pflanze der Gattung Einblatt, in drei verschiedenen Beleuchtungssituationen: Links bei Tageslicht, \
         in der Mitte mit einer handelsüblichen UV5-Lampe beleuchtet, Rechts ebenfalls mit einer UV5-Lampe beleuchtet, \
         jedoch durch einen Filter, welcher alle Wellenlängen außer dem roten Lichtes filtert."
-simple-fr msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
-simple-pl msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
-simple-es msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, \
-        in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, \
-        but through a filter which filters all wavelengths except for the red light."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:20
 #: Explanation by Tobias
@@ -975,32 +877,17 @@ advanced-de msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie kö
         sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
         passiert, wenn dein weißes T-Shirt im Schwarzlicht einer Disco lila leuchtet. Wenn etwas bei Beleuchtung in \
         einer anderen Lichtfarbe leuchtet, nennt man das 'Fluoreszenz'. Und das Fluoreszenzlicht der Pflanze ist rot."
-advanced-fr msgstr "Here is where a specialty of plants comes into play: They can glow! When light shines on them, they not only \
-        photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something glows in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence glow is red."
-advanced-pl msgstr "Here is where a specialty of plants comes into play: They can glow! When light shines on them, they not only \
-        photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something glows in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence glow is red."
-advanced-es msgstr "Here is where a specialty of plants comes into play: They can glow! When light shines on them, they not only \
-        photosynthesize, but also release a small part of that absorbed light. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something glows in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence glow is red."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "Here is where a specialty of plants comes into play: They can reemit light and, in proper conditions, shine! When light shines on leaves, they use most of the light to run complex photochemical reactions of photosynthesis. Still, a small part of the absorbed light is reemitted. Something similar happens when your white T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, this is called 'fluorescence'. And the plant's fluorescence shine is red."
 simple-de msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchten! Wenn Licht auf sie fällt, betreiben \
         sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
         passiert, wenn dein weißes T-Shirt im Schwarzlicht einer Disco lila leuchtet. Wenn etwas bei Beleuchtung in \
         einer anderen Lichtfarbe leuchtet, nennt man das 'Fluoreszenz'. Und das Fluoreszenzlicht der Pflanze ist rot."
-simple-fr msgstr "Here is where a specialty of plants comes into play: They can re-emit light and in proper conditions shine! When light shines on leaves, they use majority of the light to run complex photochemical reactions of photosynthesis, but a small part of the absorbed light is reemitted. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something shine in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence shine is red."
-simple-pl msgstr "Here is where a specialty of plants comes into play: They can re-emit light and in proper conditions shine! When light shines on leaves, they use majority of the light to run complex photochemical reactions of photosynthesis, but a small part of the absorbed light is reemitted. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something shine in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence shine is red."
-simple-es msgstr "Here is where a specialty of plants comes into play: They can re-emit light and in proper conditions shine! When light shines on leaves, they use majority of the light to run complex photochemical reactions of photosynthesis, but a small part of the absorbed light is reemitted. Something similar happens when your white \
-        T-shirt shines purple in a disco's black light. When something shine in a different light color when illuminated, \
-        this is called 'fluorescence'. And the plant's fluorescence shine is red."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:23
 #: Explanation by Tobias
@@ -1011,68 +898,44 @@ advanced-de msgstr "Jetzt werden Sie vielleicht denken: 'Aber Pflanzen sind doch
         Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren \
         es, was wir als ihre Grundfarbe sehen. Ihr rotes Leuchten ist jedoch viel schwächer, und da aus allen Richtungen \
         stärkeres Licht in unsere Augen fällt, können wir es einfach nicht sehen."
-advanced-fr msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red glow, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
-advanced-pl msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red glow, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
-advanced-es msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red glow, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "You might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. Plants don't absorb green light but reflect it, which we see as their primary color. Their red shine, however, is much fainter than that, and with stronger light coming into our eyes from all directions, we can't see it."
 simple-de msgstr "Jetzt werden Sie vielleicht denken: 'Aber Pflanzen sind doch grün, und ich habe noch nie eine fluoreszierende \
         Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren \
         es, was wir als ihre Grundfarbe sehen. Ihr rotes Leuchten ist jedoch viel schwächer, und da aus allen Richtungen \
         stärkeres Licht in unsere Augen fällt, können wir es einfach nicht sehen."
-simple-fr msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
-simple-pl msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
-simple-es msgstr "Now you might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. \
-        Plants don't absorb green light and instead reflect it, which we see as their primary color. Their red shine, \
-        however, is much fainter than that, and with stronger light coming into our eyes from all directions, we just can't see it."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:24
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_EXPERIMENT"
-advanced-en msgstr "In the following example, we used a powerful UV light source for chlorophyll excitation and covered the camera with a red-pass filter to limit light detection to the fluorescence range. We, also, initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
+advanced-en msgstr "We used a powerful UV light source for chlorophyll excitation in the following example. We covered the camera with a red-pass filter to limit light detection to the fluorescence range. We also initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
 advanced-de msgstr "Deshalb haben wir ein kleines Experiment für Sie vorbereitet: Hier haben wir einen kleinen Teil des Blattes \
         einer Pflanze mit einem Aufkleber abgedeckt und werden ihn nun mit starkem Licht bestrahlen. Der Rotfilter der \
         Kamera hilft uns, ablenkendes Licht zu ignorieren und uns auf die rote Fluoreszenz zu konzentrieren. Beobachten \
         Sie nun, was passiert:"
-advanced-fr msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker and will now shine a strong light on it. The camera's red filter helps us ignore distracting light and \
-        focus on the red fluorescence. Now watch what happens:"
-advanced-pl msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker and will now shine a strong light on it. The camera's red filter helps us ignore distracting light and \
-        focus on the red fluorescence. Now watch what happens:"
-advanced-es msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker and will now shine a strong light on it. The camera's red filter helps us ignore distracting light and \
-        focus on the red fluorescence. Now watch what happens:"
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker with the RWTH letters and will now shine an intense light on it. The camera's red filter helps us ignore distracting light and focus on the red fluorescence. Now watch what happens:"
 simple-de msgstr "Deshalb haben wir ein kleines Experiment für Sie vorbereitet: Hier haben wir einen kleinen Teil des Blattes \
         einer Pflanze mit einem Aufkleber abgedeckt und werden ihn nun mit starkem Licht bestrahlen. Der Rotfilter der \
         Kamera hilft uns, ablenkendes Licht zu ignorieren und uns auf die rote Fluoreszenz zu konzentrieren. Beobachten \
         Sie nun, was passiert:"
-simple-fr msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore \
-        distracting light and focus on the red fluorescence. Now watch what happens:"
-simple-pl msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore \
-        distracting light and focus on the red fluorescence. Now watch what happens:"
-simple-es msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a \
-        sticker with the RWTH letters and will now shine a strong light on it. The camera's red filter helps us ignore \
-        distracting light and focus on the red fluorescence. Now watch what happens:"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:30
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_VIDEO"
-advanced-en msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. Upon removal of the sticker, however, the covered tissue without induced light protection received intense illumination, producing a strong fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualises both chlorophyll fluorescence and the leaf adaption to light."
+advanced-en msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. However, upon removal of the sticker, the covered tissue without induced light protection received intense illumination, producing a solid fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualizes chlorophyll fluorescence and the leaf adaption to light."
 advanced-de msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben gerade \
         die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre \
         Umgebung anpassen. Auf die Teile des Blattes, die nicht von dem Aufkleber bedeckt sind, fällt sehr viel Licht. \
@@ -1082,30 +945,9 @@ advanced-de msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck de
         Sonnenschutz produziert. Sie sahen das intensive Licht und fluoreszierten mit voller Kraft - direkt neben ihren \
         geschützten Nachbarn. Diesen deutlichen Unterschied in der Fluoreszenz sahen Sie als Nachbild des Aufklebers. \
         Als wir die Lampe weiter bestrahlten, passten sich alle Zellen dem Licht an und das Bild auf dem Blatt verschwand."
-advanced-fr msgstr "Did you see the red glow and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
-advanced-pl msgstr "Did you see the red glow and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
-advanced-es msgstr "Did you see the red glow and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals acting as 'sunscreen' within the cells. After a few seconds, these cells were protected and received less light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to it, vanishing the picture on the leaf."
 simple-de msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben gerade \
         die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre \
@@ -1116,30 +958,9 @@ simple-de msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des 
         Sonnenschutz produziert. Sie sahen das intensive Licht und fluoreszierten mit voller Kraft - direkt neben ihren \
         geschützten Nachbarn. Diesen deutlichen Unterschied in der Fluoreszenz sahen Sie als Nachbild des Aufklebers. \
         Als wir die Lampe weiter bestrahlten, passten sich alle Zellen dem Licht an und das Bild auf dem Blatt verschwand."
-simple-fr msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
-simple-pl msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
-simple-es msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in \
-        action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's \
-        parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals \
-        acting as a kind of sunscreen within the cells. After a few seconds, these cells were protected and received less \
-        light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw \
-        the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference \
-        in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to \
-        it, vanishing the picture on the leaf."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:32
 #: Explanation by Tobias
@@ -1159,48 +980,30 @@ simple-es msgstr "Measuring Photosynthesis with Fluorescence"
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_MEASUREMENT_1"
-advanced-en msgstr "The above experiment also visualised the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centres where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
+advanced-en msgstr "The above experiment also visualized the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centers where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads to a buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
 advanced-de msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
         können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn Sie sich dafür interessieren, wie das \
         geschieht, schauen Sie sich den Abschnitt [Experte] an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
         Pflanze wirkt sich auch auf die Leuchtkraft aus."
-advanced-fr msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
-        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
-advanced-pl msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
-        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
-advanced-es msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the [Expert] section. Let's \
-        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='Advanced'>Advanced</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the reemitted light signal."
 simple-de msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
         können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn Sie sich dafür interessieren, wie das \
         geschieht, schauen Sie sich den Abschnitt [Experte] an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
         Pflanze wirkt sich auch auf die Leuchtkraft aus."
-simple-fr msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='Advanced'>Advanced</a> section. Let's \
-        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
-simple-pl msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='Advanced'>Advanced</a> section. Let's \
-        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
-simple-es msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this \
-        help with testing photosynthesis? A lot, actually. Because not only the 'sunscreen' affects leaf fluorescence, \
-        but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='Advanced'>Advanced</a> section. Let's \
-        say for now how strongly the plant photosynthesizes also has an effect on the strength of the reemitted light signal."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:34
 #: Explanation by Tobias
 # Grammarly checked
 msgid "INTRODUCTION_PHI"
-advanced-en msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalised to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). By relating measurements within a PAM protocol and observing the fluorescence dynamics, photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified."
+advanced-en msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalized to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). Photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified by relating measurements within a PAM protocol and observing the fluorescence dynamics."
 advanced-de msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflanzen als auch, wie erstaunlich sie sich an etwas so \
         Einfaches wie Licht anpassen können. Aber was hat das mit der Prüfung der Fotosynthese zu tun? Eigentlich eine \
         ganze Menge. Denn nicht nur der 'Sonnenschutz' beeinflusst die Blattfluoreszenz, sondern auch viele andere \
@@ -1212,24 +1015,9 @@ advanced-de msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflan
         und vor allem, wie es Fotosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
         Buchstaben 'Psi', und Sie werden ihn vielleicht in einigen der Diagramme sehen, die Sie später erstellen werden. \
         Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
-advanced-fr msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
-advanced-pl msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
-advanced-es msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you will hear about this 'PAM' later). With some clever maths behind it, they can then calculate many things we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the Greek letter 'Psi'; you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant does photosynthesis more efficiently."
 simple-de msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflanzen als auch, wie erstaunlich sie sich an etwas so \
         Einfaches wie Licht anpassen können. Aber was hat das mit der Prüfung der Fotosynthese zu tun? Eigentlich eine \
@@ -1242,24 +1030,9 @@ simple-de msgstr "Dieses Experiment zeigte Ihnen sowohl das Leuchten der Pflanze
         und vor allem, wie es Fotosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
         Buchstaben 'Psi', und Sie werden ihn vielleicht in einigen der Diagramme sehen, die Sie später erstellen werden. \
         Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
-simple-fr msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
-simple-pl msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
-simple-es msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you \
-        will hear about this 'PAM' later). With some clever maths behind it, they can then calculate a lot of the things \
-        we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most \
-        importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the greek letter 'Psi', \
-        and you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant \
-        is doing photosynthesis more efficiently."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:37
 #: Explanation by Tobias
@@ -1280,37 +1053,25 @@ simple-es msgstr "Basic principles of measuring chlorophyll fluorescence with PA
 #: Explanation by Tobias
 # Grammarly checked
 msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
-advanced-en msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualises the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behaviour of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. This summary figure is reproduced from Nies et al. (2021)."
+advanced-en msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualizes the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behavior of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as the lower panel shows. This summary figure is reproduced from Nies et al. (2021)."
 advanced-de msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
         diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
         für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
         wir mit jedem Blitz Fluoreszenz erzeugen, ist das resultierende Signal genau wie das Messlicht gemustert (moduliert)."
-advanced-fr msgstr "Indeed, we shine a very tight series of short and weak light flashes on the plant, over a thousand each second! \
-        With this flashing, we measure the plant performance and call it 'measuring light'. The measuring light is too \
-        weak to be used for photosynthesis, but strong enough to get the plant to fluoresce. And, since we produce \
-        fluorescence with each flash, the resulting signal is patterned (modulated), just like the measuring light."
-advanced-pl msgstr "Indeed, we shine a very tight series of short and weak light flashes on the plant, over a thousand each second! \
-        With this flashing, we measure the plant performance and call it 'measuring light'. The measuring light is too \
-        weak to be used for photosynthesis, but strong enough to get the plant to fluoresce. And, since we produce \
-        fluorescence with each flash, the resulting signal is patterned (modulated), just like the measuring light."
-advanced-es msgstr "Indeed, we shine a very tight series of short and weak light flashes on the plant, over a thousand each second! \
-        With this flashing, we measure the plant performance and call it 'measuring light'. The measuring light is too \
-        weak to be used for photosynthesis, but strong enough to get the plant to fluoresce. And, since we produce \
-        fluorescence with each flash, the resulting signal is patterned (modulated), just like the measuring light."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "In this one figure, the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel, you see the results of the PAM experiments. Take a good look because, in a few minutes, you will produce similar results, not with the help of a fluorometer but with your computer! So, what do we see in this graph? It results from a unique light protocol, where a dark-adapted plant is exposed to very weak actinic light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. We can use these fluorescence features to calculate the values quantifying photosynthesis, e.g., the amount of NPQ.\n\n So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1 in the left diagram, a simplified 'Jablonsky diagram'). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most crucial part: the fluorescence emission spectra are red-shifted from the absorption spectra. That means the fluorescence light is redder (at higher wavelengths in the left axis) than the light absorbed (upper panel on the right). This, in turn, means that the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the light that we shine on the plants. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. It took us a long time to summarize everything on one figure only, and this figure originates from our previous work (Nies et al. 2021)."
 simple-de msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
         diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
         für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
         wir mit jedem Blitz Fluoreszenz erzeugen, ist das resultierende Signal genau wie das Messlicht gemustert (moduliert)."
-simple-fr msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. \
-In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
-simple-pl msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. \
-In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
-simple-es msgstr "In this one figure the basic principles behind the fluorescence and PAM experiment are explained. \
-In the bottom panel you see results of the PAM experiments. Take a good look, cause in few minutes you will be producing similar results but not with a help of a fluorometer but your computer! So what do we see in this graph? It is a result of a special light protocol, where a dark-adapted plant is exposed to very weak, actinic light (AL, white area shown in the light bar, L) followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most important part: the fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). This basically means that the fluorescence can be detected using fluorometers with corresponding optical filters and their signal will not be mistaken with the light that we actually shine on the plants. The emitted fluorescence signal is recorded, as shown in the lower panel with key readouts. It took us a long time to summarize everything on one figure only and this figure originates from our previous work (Nies et al. 2021)."
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/method.py:41 pages/method.py:61
-#: pages/1 Messmethode.py:47
+# Grammarly checked
 msgid "CAPTION_ABB2"
 advanced-en msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 advanced-de msgstr ""
@@ -1324,7 +1085,6 @@ simple-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chl
 simple-es msgstr "Example Graph of a PAM measurement"
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "HEADLINE_PAM_MEASUREMENT"
 advanced-en msgstr "### PAM Experiments"
@@ -1339,26 +1099,16 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/method.py:43
-#: pages/1 Messmethode.py:32
 # Grammarly checked
 msgid "INTRODUCTION_PAM_MEASUREMENT"
-advanced-en msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For more a in-depth overview, please consider the literature at the bottom of the page."
+advanced-en msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For a more in-depth overview, please consider the literature at the bottom of the page."
 advanced-de msgstr "Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
         Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
         'PAM'. Aus dem Namen können Sie schon ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der \
         Lichtblitze 'modulieren' (steuern)."
-advanced-fr msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
-        for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
-        for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
-        (intensity) of light flashes."
-advanced-pl msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
-        for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
-        for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
-        (intensity) of light flashes."
-advanced-es msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis \
-        for this you have already heard of: Fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' \
-        for short. From the name, you can already deduce that we, as experimenters, 'modulate' (control) the 'amplitude' \
-        (intensity) of light flashes."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
 simple-de msgstr "Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
         Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
@@ -1659,8 +1409,6 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:23
-#: pages/model.explain.py:23
-#: EINFÜHRUNG.py:60
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 advanced-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
@@ -1705,7 +1453,6 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:55
-#: pages/model.explain.py:55
 # Grammarly checked
 msgid "CAPTION_SIR_RESULTS_PICTURE"
 advanced-en msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
@@ -1715,9 +1462,9 @@ advanced-pl msgstr ""
 advanced-es msgstr ""
 simple-en msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 simple-de msgstr ""
-simple-fr msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
-simple-pl msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
-simple-es msgstr "The change of the population of Planet-X using the SIR model taken from Earth's scientists. The infection rate is set to ($\\alpha = 2$) and the recovery rate to ($\\beta = 0.2$)"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages\model_explain.py:61
 # Grammarly checked
@@ -1760,6 +1507,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/model_explain.py:71
+# Grammarly checked
 msgid "FVCB_1"
 advanced-en msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). It was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results."
 advanced-de msgstr ""
@@ -1808,7 +1556,7 @@ advanced-de msgstr ""
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "The <i>e</i>-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It uses many different elements from other models and brings them all together to create one of the most complete dynamic models of photosynthesis. To have a small glimpse at what this model entails, switch to the <a href='#' id='Advanced'>Advanced</a> mode"
+simple-en msgstr "The <i>e</i>-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It uses many different elements from other models and brings them all together to create one of the most complete dynamic models of photosynthesis. To have a small glimpse at what this model entails, switch to the <a href='#' id='Advanced'>Advanced</a> mode."
 simple-de msgstr ""
 simple-fr msgstr ""
 simple-pl msgstr ""
@@ -1991,7 +1739,7 @@ simple-es msgstr ""
 #: pages/model_explain.py:67
 #: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION_1"
-advanced-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
+advanced-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown in the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 advanced-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
         Elektronenträger, Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im \
         Gesamtprozess spielt, haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität \
@@ -2001,7 +1749,7 @@ advanced-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreich
 advanced-fr msgstr ""
 advanced-pl msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: białka, enzymy, nośniki elektronów, pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa istotną rolę w całym procesie, naszym celem było maksymalne zmniejszenie złożoności modelu do badania pamięci światła. Dlatego skupiliśmy się wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II. Uwzględniliśmy tylko te procesy, które bezpośrednio wpływają lub regulują zakres NPQ, jak pokazano na poniższym schemacie (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 advanced-es msgstr ""
-simple-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
+simple-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown in the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 simple-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, Elektronenträger, \
         Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im Gesamtprozess spielt, \
         haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität angestrebt. Wir haben \
@@ -2017,14 +1765,14 @@ simple-pl msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych
 simple-es msgstr ""
 
 #: pages/model_explain.py:67
-#: 
+# Grammarly checked
 msgid "CAPTION_MODEL_NPQ"
-advanced-en msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model has been developed back in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes that affect the quencher dynamics (Psbs and zeaxanthin)."
+advanced-en msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model was developed in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes affecting the quencher dynamics (Psbs and zeaxanthin)."
 advanced-de msgstr "Schema der Komponenten, die in dem auf dieser Website verwendeten vereinfachten mathematischen Modell enthalten sind. Das Modell wurde 2016 entwickelt und enthält eine detaillierte Beschreibung der internen Prozesse im Photosystem II (PSII), einschließlich der Prozesse, die die Dynamik der Quencher (Psbs und Zeaxanthin) beeinflussen."
 advanced-fr msgstr ""
 advanced-pl msgstr "Schemat elementów wchodzących w skład uproszczonego modelu matematycznego wykorzystywanego na tej stronie. Model został opracowany w 2016 roku i zawiera szczegółowy opis wewnętrznych procesów zachodzących wewnątrz fotosystemu II (PSII), w tym procesów wpływających na dynamikę niefotochemicznego wygaszacza (z ang. NPQ), w tym PsbS i zeaksantyny."
 advanced-es msgstr ""
-simple-en msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model has been developed back in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes that affect the quencher dynamics (Psbs and zeaxanthin)."
+simple-en msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model was developed in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes affecting the quencher dynamics (Psbs and zeaxanthin)."
 simple-de msgstr "Schema der Komponenten, die in dem auf dieser Website verwendeten vereinfachten mathematischen Modell enthalten sind. Das Modell wurde 2016 entwickelt und enthält eine detaillierte Beschreibung der internen Prozesse im Photosystem II (PSII), einschließlich der Prozesse, die die Dynamik der Quencher (Psbs und Zeaxanthin) beeinflussen."
 simple-fr msgstr ""
 simple-pl msgstr "Schemat elementów wchodzących w skład uproszczonego modelu matematycznego wykorzystywanego na tej stronie. Model został opracowany w 2016 roku i zawiera szczegółowy opis wewnętrznych procesów zachodzących wewnątrz fotosystemu II (PSII), w tym procesów wpływających na dynamikę niefotochemicznego wygaszacza (z ang. NPQ), w tym PsbS i zeaksantyny."
@@ -2686,13 +2434,13 @@ simple-es msgstr "# The plant memory"
 #: pages/plant_memory.py:269
 # Grammarly checked
 msgid "INTRODUCTION_BRAIN"
-advanced-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b> and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
+advanced-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin, you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
 advanced-de msgstr "Das Modell bietet auch die Möglichkeit, Experimente mit Dunkelphasen zu simulieren. So kann das Kurzzeitgedächtnis \
         der Pflanzen demonstriert werden. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b> and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='Advanced'>Advanced</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
+simple-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='Advanced'>Advanced</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
 simple-de msgstr "Nachdem Sie herausgefunden haben, wie Pflanzen auf unterschiedliche Lichtintensitäten reagieren. Sie können \
         sich nun mit dem Gedächtnis der Pflanzen beschäftigen. Dies ist eine interessante Tatsache, die sich mit dem \
         Modell sehr schön modellieren lässt. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
@@ -3097,18 +2845,9 @@ advanced-de msgstr "Pflanzen benötigen für ihr Wachstum wie auch wir Menschen 
         können die Pflanzen über ihre Wurzeln aus dem Boden aufnehmen, jedoch nicht alle. Wie bereits angesprochen sind \
         Pflanzen Produzenten und können daher Nährstoffe herstellen. Zu diesen Nährstoffen zählen insbesondere die \
         Kohlenhydrate, welche bei der Fotosynthese entstehen."
-advanced-fr msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
-        but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
-        through their roots, but not all of them. As already mentioned, plants are producers and can therefore \
-        manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
-advanced-pl msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
-        but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
-        through their roots, but not all of them. As already mentioned, plants are producers and can therefore \
-        manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
-advanced-es msgstr "Just like humans, plants need nutrients for their growth. The most essential of these are water and minerals, \
-        but plants also need fats, carbohydrates and proteins. Most of these nutrients plants can absorb from the soil \
-        through their roots, but not all of them. As already mentioned, plants are producers and can therefore \
-        manufacture nutrients. These nutrients include, in particular, carbohydrates, which are produced during photosynthesis."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr ""
 simple-de msgstr "Pflanzen benötigen für ihr Wachstum wie auch wir Menschen Nährstoffe. Essentiell sind dabei vor allem Wasser \
         und Mineralstoffe, aber auch Pflanzen benötigen Fette, Kohlenhydrate und Proteine. Die meisten dieser Nährstoffe \
@@ -3125,14 +2864,11 @@ advanced-en msgstr ""
 advanced-de msgstr "Bei der Fotosynthese stellen Pflanzen Biomasse in Form von Glukose her. Dazu benötigen sie CO₂, H₂O \
         sowie Energie in Form von Licht. [Hier](https://www.planet-schule.de/mm/lebensraum/wald-photosynthese/) könnt \
         ihr euch über den Ablauf der Fotosynthese informieren."
-advanced-fr msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
+advanced-fr msgstr " [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
         about the process of photosynthesis."
-advanced-pl msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
+advanced-pl msgstr " [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
         about the process of photosynthesis."
-advanced-es msgstr "In photosynthesis, plants produce biomass in the form of glucose. To do this, they need CO₂, H₂O and energy in \
-        the form of light. [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
+advanced-es msgstr " [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
         about the process of photosynthesis."
 simple-en msgstr ""
 simple-de msgstr "Bei der Fotosynthese stellen Pflanzen Biomasse in Form von Glukose her. Dazu benötigen sie CO₂, H₂O \
@@ -3163,18 +2899,9 @@ advanced-de msgstr "Die Fotosynthese findet in den Zellen der meist grünen Best
         welcher als Lichtreaktion bezeichnet wird. In der Membran sitzen die sogenannten Fotosysteme. Das Fotosystem II \
         (FSII) welches durch die Energie des Lichtes Wasser in Sauerstoff und Wasserstoff aufspaltet ist für uns besonders \
         Interessant. "
-advanced-fr msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
-advanced-pl msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
-advanced-es msgstr "Photosynthesis takes place in the cells of the mostly green components of plants. In these cells are \
-        specialized organelles the chloroplasts. There, the part of photosynthesis takes place, which \
-        is called the light reaction. The so-called photosystems are located in the membrane. Photosystem II (PSII), \
-        which uses the energy of light to split water into oxygen and protons, is of particular interest to us. "
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr ""
 simple-de msgstr "Die Fotosynthese findet in den Zellen der meist grünen Bestandteile von Pflanzen statt. In diesen Zellen befinden \
         sich spezialisierte Organellen, die Chloroplasten. Dort findet der Teil der Fotosynthese statt, \
@@ -3205,18 +2932,9 @@ advanced-de msgstr "Was passiert eigentlich wenn zu viel Licht und damit übersc
         dieses kaputt und muss dann von der Zelle erneuert werden? Zum Glück nicht! Stattdessen kann die überschüssige \
         Energie in Form von Wärme abgegeben oder zur ATP-Synthese benutzt werden. So kann die Zelle geschützt werden. \
         Die beiden nicht photochemischen Schutzmechanismen werden als NPQ bezeichnet."
-advanced-fr msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
-        and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
-        form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
-        protective mechanisms are referred to as NPQ."
-advanced-pl msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
-        and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
-        form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
-        protective mechanisms are referred to as NPQ."
-advanced-es msgstr "What actually happens when too much light and thus excess energy hits the Photosystem II? Does it break down \
-        and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released in the \
-        form of heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical \
-        protective mechanisms are referred to as NPQ."
+advanced-fr msgstr ""
+advanced-pl msgstr ""
+advanced-es msgstr ""
 simple-en msgstr ""
 simple-de msgstr "Was passiert eigentlich wenn zu viel Licht und damit überschüssige Energie auf das Fotosystem II trifft? Geht \
         dieses kaputt und muss dann von der Zelle erneuert werden? Zum Glück nicht! Stattdessen kann die überschüssige \
@@ -4582,6 +4300,8 @@ simple-fr msgstr "Photosynthesis is a complex process involving numerous players
 simple-pl msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
 simple-es msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
 
+#: pages/Start.py:14
+# Grammarly checked
 msgid "PROGRAMS_USED"
 advanced-en msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."
 advanced-de msgstr "Die Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."
