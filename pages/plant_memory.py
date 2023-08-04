@@ -218,7 +218,7 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
         slider_pings = st.slider(
             label=text("SLIDER_PULSES"),
             min_value=10,
-            max_value=100,
+            max_value=60,
             value=20
         )
     
