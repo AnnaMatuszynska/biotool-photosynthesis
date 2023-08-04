@@ -14,6 +14,91 @@ from utils import get_localised_text, make_prev_next_button, include_ytvideo, in
 from matplotlib import pyplot as plt, patches
 from scipy.signal import find_peaks, peak_prominences
 
+def make_matplotlib_plot_advanced(text: Callable[[str], str], xlabel1, xlabel2, ylabel, time, values, max_time, dark_length, width, height):
+    with plt.rc_context(
+    {
+        "axes.spines.right": False,
+        "figure.frameon": True,
+        "axes.facecolor": (0.0, 0.0, 0.0, 0),
+        "figure.facecolor": (0.0, 0.0, 0.0, 0),
+        "figure.edgecolor": (0.0, 0.0, 0.0, 0),
+        "text.color": "#9296a4",
+        "axes.labelcolor": "#9296a4",
+        "xtick.color": "#9296a4",
+        "ytick.color": "#9296a4",
+        "figure.figsize": (width,height)
+    }
+):
+        fig, axs = plt.subplot_mosaic(
+            mosaic=[
+                ['A', 'A'],
+                ['B', 'C']
+            ],
+            constrained_layout=True
+        )
+        axs['A'].plot(time['PAM'], values['PAM'], color='#FF4B4B')
+        axs['B'].plot(time['NPQ'], values['NPQ'], color='#FF4B4B')
+        axs['C'].plot(time['PhiPSII'], values['PhiPSII'], color='#FF4B4B')
+
+    for j in range(len([axs['A'], axs['B'], axs['C']])):
+        ax = [axs['A'], axs['B'], axs['C']][j]
+        # Add the dark phase length to the xticks
+        default_xticks = ax.get_xticks()
+        new_xticks = []
+        for i in range(len(default_xticks)):
+            try:
+                if default_xticks[i] > dark_length and default_xticks[i-1] < dark_length:
+                    new_xticks.append(dark_length)
+                    new_xticks.append(default_xticks[i])
+                else:
+                    new_xticks.append(default_xticks[i])
+            except:
+                pass
+        
+        ax.set_xticks(new_xticks)
+        
+        # Change the left and down limit
+        ax.set_xlim(0, max_time)
+        ax.set_ylim(0)
+
+        # Highlight dark and light phase
+        dark_patch = patches.Rectangle(
+            xy=(ax.get_xlim()[0],ax.get_ylim()[0]),
+            width = dark_length,
+            height = ax.get_ylim()[1],
+            facecolor = '#1c5bc7',
+            alpha = 0.3
+        )
+        light_patch = patches.Rectangle(
+            xy=(dark_length,ax.get_ylim()[0]),
+            width = max_time-dark_length,
+            height = ax.get_ylim()[1],
+            facecolor = '#cf6d0c',
+            alpha = 0.3
+        )
+
+        ax.add_patch(dark_patch)
+        ax.add_patch(light_patch)
+
+        #Create the top xaxis for the minutes
+        ax_top = ax.secondary_xaxis('top', functions=(lambda x: x/60, lambda x: x*60))
+        ax_top.set_color("#9296a4")
+
+        
+
+        #Add labels
+        ax.set_xlabel(xlabel1)
+        ax.set_ylabel(ylabel[j])
+        ax_top.set_xlabel(xlabel2)
+
+        for i in [ax, ax_top]:
+            i.spines['bottom'].set_color("#9296a4")
+            i.spines['left'].set_color("#9296a4")
+            i.spines['top'].set_color("#9296a4")
+            i.spines['right'].set_visible(False)
+
+    return fig
+
 def make_matplotlib_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, time, values, max_time, dark_length, width, height):
     with plt.rc_context(
     {
@@ -205,20 +290,21 @@ def make_sim_area(text: Callable[[str], str]) -> None:
             PAM_F = sim_results['Fluo']
             PAM_Fmax = max(sim_results['Fluo'])
 
-            fig_PAM = make_matplotlib_plot(
-                text=text,
-                xlabel1=text("AXIS_TIME_S"),
-                xlabel2=text("AXIS_TIME_MIN"),
-                ylabel=text("FLUO"),
-                time=sim_time,
-                values=PAM_F/PAM_Fmax,
-                max_time=slider_time*60,
-                dark_length=slider_darklength,
-                width = 15,
-                height = 3
-            )
+            if version == 'Simple':
+                fig_PAM = make_matplotlib_plot(
+                    text=text,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel=text("FLUO"),
+                    time=sim_time,
+                    values=PAM_F/PAM_Fmax,
+                    max_time=slider_time*60,
+                    dark_length=slider_darklength,
+                    width = 15,
+                    height = 3
+                )
 
-            st.pyplot(fig_PAM)
+                st.pyplot(fig_PAM)
 
             if version == 'Advanced':
                 peaks, _ = find_peaks((PAM_F/PAM_Fmax), height=0) # Find the Flourescence peaks (Fmaxs)
@@ -228,37 +314,20 @@ def make_sim_area(text: Callable[[str], str]) -> None:
                 Fo = [(PAM_F/PAM_Fmax)[i] for i in prominences_left] # Fo is always the minima before the peak
                 PhiPSII = (PAM_F[peaks] - Fo) / PAM_F[peaks]
 
-                fig_NPQ = make_matplotlib_plot(
+                fig_advanced = make_matplotlib_plot_advanced(
                     text=text,
                     xlabel1=text("AXIS_TIME_S"),
                     xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel=text("AXIS_NPQ"),
-                    time=sim_time[peaks],
-                    values=NPQ,
+                    ylabel=[text("FLUO"), text("AXIS_NPQ"), text("AXIS_PHIPSII")],
+                    time={'PAM': sim_time, 'NPQ': sim_time[peaks], 'PhiPSII': sim_time[peaks]},
+                    values={'PAM': PAM_F/PAM_Fmax, 'NPQ': NPQ, 'PhiPSII': PhiPSII},
                     max_time=slider_time*60,
                     dark_length=slider_darklength,
-                    width = 15/2,
+                    width = 15,
                     height = 6
                 )
-
-                fig_PhiPSII = make_matplotlib_plot(
-                    text=text,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel=text("AXIS_PHIPSII"),
-                    time=sim_time[peaks],
-                    values=PhiPSII,
-                    max_time=slider_time*60,
-                    dark_length=slider_darklength,
-                    width = 15/2,
-                    height = 6
-                )
-
-                col1, col2 = st.columns([1,1])
-                with col1:
-                    st.pyplot(fig_NPQ, use_container_width=True)
-                with col2:
-                    st.pyplot(fig_PhiPSII, use_container_width=True)
+                
+                st.pyplot(fig_advanced)
 
 
 
