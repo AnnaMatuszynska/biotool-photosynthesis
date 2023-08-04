@@ -2633,16 +2633,16 @@ simple-es msgstr "Time [s]"
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
 msgid "FLUO"
-advanced-en msgstr "Fluorescence [F´ₘ /Fₘ]"
-advanced-de msgstr "Fluoreszenz [F´ₘ /Fₘ]"
+advanced-en msgstr "Relative Fluorescence (F/Fₘ) [a.u.]"
+advanced-de msgstr "Relative Fluoreszenz (F/Fₘ) [a.u.]"
 advanced-fr msgstr ""
 advanced-pl msgstr ""
 advanced-es msgstr ""
-simple-en msgstr "Fluorescence [F´ₘ /Fₘ]"
-simple-de msgstr "Fluoreszenz [F´ₘ /Fₘ]"
-simple-fr msgstr "Fluorescence [F´ₘ /Fₘ]"
-simple-pl msgstr "Fluorescence [F´ₘ /Fₘ]"
-simple-es msgstr "Fluorescence [F´ₘ /Fₘ]"
+simple-en msgstr "Relative Fluorescence (F/Fₘ) [a.u.]"
+simple-de msgstr "Relative Fluoreszenz (F/Fₘ) [a.u.]"
+simple-fr msgstr ""
+simple-pl msgstr ""
+simple-es msgstr ""
 
 #: pages/first_analysis.py:217
 msgid "AXIS_NPQ"
