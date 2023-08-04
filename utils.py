@@ -9,7 +9,7 @@ from typing import Callable
 import json
 from st_click_detector import click_detector
 import re
-
+import warnings
 
 def get_localised_text(version: str, language: str) -> Callable[[str], str]:
     version = version.lower()
@@ -164,3 +164,33 @@ def markdown_click(placeholder, text_obj, detector_key=None, unsafe_allow_html=F
     else:
         st.markdown(text, unsafe_allow_html=unsafe_allow_html)
         return None
+
+def simulate_period(s, starting_time, length_phase, pulse_intervall, starting_light, saturating_pulse, length_pulse, during_light, dark_flag = False):
+    warnings.filterwarnings("error", category= RuntimeWarning)
+    error_flag = True
+    
+    while error_flag == True:
+        try:
+            s.update_parameter("PFD", starting_light)
+            s.simulate(starting_time)
+            s.update_parameter("PFD", saturating_pulse)
+            s.simulate(starting_time + length_pulse)
+            
+            warnings.filterwarnings("default", category= RuntimeWarning)
+            error_flag = False
+        except RuntimeWarning:
+            starting_light += 0.001
+            
+    
+    num_pulses = int(length_phase/pulse_intervall)
+            
+    if dark_flag == False:
+        for i in range(num_pulses):
+            if i > 0:
+                new_timepoint = starting_time + pulse_intervall * i
+                s.update_parameter("PFD", during_light)
+                s.simulate(new_timepoint)
+                s.update_parameter("PFD", saturating_pulse)
+                s.simulate(new_timepoint + length_pulse)
+            
+    return
