@@ -275,7 +275,7 @@ msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
 
 #: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
+msgid "LITERATURE_ONPAGE"
 msgstr ""
 
 #: pages/method.py:10
@@ -1402,3 +1402,5 @@ msgstr ""
 msgid "INTRO_MODEL"
 msgstr ""
 
+msgid "PROGRAMS_USED"
+msgstr ""

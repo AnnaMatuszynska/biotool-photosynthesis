@@ -64,6 +64,9 @@ def make_page(text: Callable[[str], str], language: str, version: str):
 
     st.markdown("Thank you for your interest in our project!")
 
+    st.markdown("### Ressources")
+    st.markdown(text("PROGRAMS_USED"))
+
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:

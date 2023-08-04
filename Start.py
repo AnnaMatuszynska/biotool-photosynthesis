@@ -11,6 +11,7 @@ def make_introduction(text: Callable[[str], str]) -> None:
 
     with st.expander(text("EXPANDER_ABOUT")):
         markdown_click("EXPLANATION_ABOUT", text)
+        st.markdown(text("PROGRAMS_USED"))
 
     # Introduction biotool
     st.video("https://youtu.be/KvyjIWLD8rU")
