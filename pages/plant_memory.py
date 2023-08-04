@@ -376,6 +376,13 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
     make_sim_area_memory(text)
 
+def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
+    with st.expander(text("LITERATURE")):
+        st.markdown(text("LITERATURE_ONPAGE"))
+        st.markdown(
+            "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
+        )
+
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
@@ -383,8 +390,9 @@ if __name__ == "__main__":
 
     version: str = st.session_state.setdefault("version", "Simple")
     language: str = st.session_state.setdefault("language", "English")
-    _ = get_localised_text(version, language)
+    text = get_localised_text(version, language)
     resetting_click_detector_setup()
-    make_page(_, version)
+    make_page(text, version)
+    make_literature(text, version, language)
     make_prev_next_button("experiments in silico", "take home messages")
     make_sidebar()

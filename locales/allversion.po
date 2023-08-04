@@ -406,15 +406,15 @@ simple-es msgstr ""
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "EXPERIMENT"
-advanced-en msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained and simple simulations performed, including the editing of model parameters."
-advanced-de msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der <a href='#' id='Advanced'>Advanced</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
+advanced-en msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)) which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained and simple simulations performed, including the editing of model parameters."
+advanced-de msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der <a href='#' id='Advanced'>Advanced</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
 advanced-fr msgstr ""
-advanced-pl msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='Advanced'>Advanced</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
+advanced-pl msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)). Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='Advanced'>Advanced</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
 advanced-es msgstr ""
-simple-en msgstr "On the page <b>experiments <i>in silico</i></b>, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska. Afterward, you can directly use it yourself to perform your first measurements. In the <a href='#' id='Advanced'>Advanced</a> version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
-simple-de msgstr "Auf der Seite **Experimente** ***in silico*** lernen Sie das von uns verwendete und von Anna Matuszyńska mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen."
+simple-en msgstr "On the page <b>experiments <i>in silico</i></b>, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Afterward, you can directly use it yourself to perform your first measurements. In the <a href='#' id='Advanced'>Advanced</a> version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
+simple-de msgstr "Auf der Seite **Experimente** ***in silico*** lernen Sie das von uns verwendete und von Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen."
 simple-fr msgstr ""
-simple-pl msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską. Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów."
+simple-pl msgstr "Na stronie **eksperymenty** ***in silico*** poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów."
 simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
@@ -853,17 +853,16 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 #: pages/1 Messmethode.py:50
-msgid "LITERATURE_PHOTOSYNTHESIS"
-advanced-en msgstr "References on this page:\n"
-"- Cook, J., Oreskes, N., Doran, P. T., Anderegg, W. R. L., Verheggen, B., Maibach, E. W., Carlton, J. S., Lewandowsky, S., Skuce, A. G., Green, S. A., Nuccitelli, D., Jacobs, P., Richardson, M., Winkler, B., Painting, R., & Rice, K. (2016). Consensus on consensus: A synthesis of consensus estimates on human-caused global warming. Environmental Research Letters, 11(4), 048002. https://doi.org/10.1088/1748-9326/11/4/048002"
-advanced-de msgstr ""
+msgid "LITERATURE_ONPAGE"
+advanced-en msgstr "References on this page:"
+advanced-de msgstr "Referenzen auf dieser Seite:"
 advanced-fr msgstr ""
-advanced-pl msgstr ""
+advanced-pl msgstr "Referencje na tej stronie:"
 advanced-es msgstr ""
-simple-en msgstr ""
-simple-de msgstr ""
+simple-en msgstr "References on this page:"
+simple-de msgstr "Referenzen auf dieser Seite:"
 simple-fr msgstr ""
-simple-pl msgstr ""
+simple-pl msgstr "Referencje na tej stronie:"
 simple-es msgstr ""
 
 #: pages/method.py:10
@@ -1992,29 +1991,29 @@ simple-es msgstr ""
 #: pages/model_explain.py:67
 #: Grammarly checked
 msgid "CONSTRUCTION_EXPLANATION_1"
-advanced-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below."
+advanced-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 advanced-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
         Elektronenträger, Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im \
         Gesamtprozess spielt, haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität \
         angestrebt. Wir haben uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang \
         mit dem Fotosystem II konzentriert und nur die Prozesse in das Modell aufgenommen, die entweder direkt von der NPQ \
-        betroffen sind oder das Ausmaß der NPQ regulieren. "
+        betroffen sind oder das Ausmaß der NPQ regulieren (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003)). "
 advanced-fr msgstr ""
-advanced-pl msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: białka, enzymy, nośniki elektronów, pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa istotną rolę w całym procesie, naszym celem było maksymalne zmniejszenie złożoności modelu do badania pamięci światła. Dlatego skupiliśmy się wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II. Uwzględniliśmy tylko te procesy, które bezpośrednio wpływają lub regulują zakres NPQ, jak pokazano na poniższym schemacie."
+advanced-pl msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: białka, enzymy, nośniki elektronów, pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa istotną rolę w całym procesie, naszym celem było maksymalne zmniejszenie złożoności modelu do badania pamięci światła. Dlatego skupiliśmy się wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II. Uwzględniliśmy tylko te procesy, które bezpośrednio wpływają lub regulują zakres NPQ, jak pokazano na poniższym schemacie (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 advanced-es msgstr ""
-simple-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below."
+simple-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown on the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 simple-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, Elektronenträger, \
         Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im Gesamtprozess spielt, \
         haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität angestrebt. Wir haben \
         uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang mit dem Fotosystem II \
         konzentriert und nur die Prozesse in das Modell aufgenommen, die entweder direkt von der NPQ betroffen sind oder \
-        das Ausmaß der NPQ regulieren."
+        das Ausmaß der NPQ regulieren (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 simple-fr msgstr ""
 simple-pl msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: Białka, enzymy, nośniki elektronów, \
         pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa ważną rolę w całym procesie, \
         dążyliśmy do maksymalnego zmniejszenia złożoności naszego modelu, który został stworzony w celu badania wpływu intensywnego światła na fotosyntezę. Skupiliśmy się więc wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II \
         i uwzględniliśmy w modelu tylko te procesy, na które NPQ ma bezpośredni wpływ lub \
-        regulują zakres NPQ."
+        regulują zakres NPQ (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 simple-es msgstr ""
 
 #: pages/model_explain.py:67

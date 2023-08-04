@@ -36,6 +36,12 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
     markdown_click("EXPERIMENT", text)
     markdown_click("MEMORY", text)
 
+def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
+    with st.expander(text("LITERATURE")):
+        st.markdown(text("LITERATURE_ONPAGE"))
+        st.markdown(
+            "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
+        )
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
@@ -96,6 +102,6 @@ if __name__ == "__main__":
     resetting_click_detector_setup()
     make_introduction(text)
     make_chapters(text, version, language)
+    make_literature(text, version, language)
     make_prev_next_button(None, "photosynthesis")
-
     make_sidebar()
