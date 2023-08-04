@@ -9,7 +9,7 @@ from modelbase.typing import Array
 from pages._monkey_patch import _simulate
 from pages._sidebar import make_sidebar
 from typing import Any, Callable
-from utils import get_localised_text, make_prev_next_button, resetting_click_detector_setup, markdown_click
+from utils import get_localised_text, make_prev_next_button, resetting_click_detector_setup, markdown_click, simulate_period
 from matplotlib import pyplot as plt, patches
 from scipy.signal import find_peaks, peak_prominences
 
@@ -93,15 +93,15 @@ def make_matplotlib_plot_memory(text: Callable[[str], str], xlabel1, xlabel2, yl
     )
     patch_list = [dark_patch, training_patch, relaxation_patch, memory_patch]
     anno_list = [text("ANNO_TRAINING"), text("ANNO_RELAXATION"), text("ANNO_MEMORY")]
+    
     for i in range(len(patch_list)):
         ax.add_patch(patch_list[i])
         if i != 0 and patch_list[i].get_width() != 0:
             rx, ry = patch_list[i].get_xy()
             cx = rx + patch_list[i].get_width()/2
             cy = ry + patch_list[i].get_height()*0.1
-            ax.annotate(anno_list[i-1], (cx, cy), ha='center', va='center', color = '#CCD0DB', alpha = 1)
+            ax.annotate(anno_list[i-1], (cx, cy), ha='center', va='center', color = '#323336', alpha = 1, backgroundcolor = '#9296a4')
      
-
     #Create the top xaxis for the minutes
     ax_top = ax.secondary_xaxis('top', functions=(lambda x: x/60, lambda x: x*60))
     ax_top.set_color("#9296a4")
@@ -127,62 +127,79 @@ def sim_model_memory(updated_parameters, slider_light, slider_pings, slider_satu
 
     y0 = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
     s.initialise(y0)
-
-    max_time = slider_darklength + training_length + relaxation_phase + memory_length
     
-    saturating_pulse = slider_saturate
     length_pulse = 0.8
-    
-    beginning_dark_length = slider_darklength
     dark_light = 0
-    
-    light_light = slider_light
     training_length = int(training_length)
     relaxation_phase = int(relaxation_phase)
-    pulses_intervall = slider_pings
 
-    for i in range(max_time):
-        if i == 2: # First pulse in first dark phase
-            s.update_parameter("PFD", dark_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        elif i == beginning_dark_length: # Pulse for beginning of training
-            s.update_parameter("PFD", dark_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        elif i in [beginning_dark_length + (pulses_intervall * j) for j in range(training_length+1)] and i <= training_length + beginning_dark_length: #Pulses in training with set intervall
-            s.update_parameter("PFD", light_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        elif i == training_length + beginning_dark_length: # Pulse at beginning of relaxation phase
-            s.update_parameter("PFD", light_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        # elif i > (beginning_dark_length + training_length) and i < (beginning_dark_length + training_length + relaxation_phase - pulses_intervall): # Simulation until pulse in relaxation phase
-        #     s.update_parameter("PFD", dark_light)
-        #     s.simulate(i)
-        elif i == (beginning_dark_length + training_length + relaxation_phase - pulses_intervall): # Pulse at start of memory
-            s.update_parameter("PFD", dark_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        elif i in [beginning_dark_length + training_length + relaxation_phase + (pulses_intervall * j) for j in range((max_time-(beginning_dark_length + training_length + relaxation_phase))+1)]: # Pulses in memory phase in set intervalls
-            if i <= (beginning_dark_length + training_length + relaxation_phase):
-                s.update_parameter("PFD", dark_light)
-            else:
-                s.update_parameter("PFD", light_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        elif i == max_time - 1:
-            s.update_parameter("PFD", light_light)
-            s.simulate(i)
-            s.simulate(max_time)
-    st.write(len(s.time))
+# Dark Period
+    if slider_darklength > 0:
+        simulate_period(
+            s=s,
+            starting_time=2,
+            length_phase=slider_darklength,
+            pulse_intervall=slider_pings,
+            starting_light=dark_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=dark_light,
+            dark_flag=True
+        )
+# Training
+    if training_length > 0:
+        simulate_period(
+            s=s,
+            starting_time=slider_darklength,
+            length_phase=training_length,
+            pulse_intervall=slider_pings,
+            starting_light=dark_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=slider_light
+        )
+# Relaxation phase 1
+    if relaxation_phase > 0:
+        simulate_period(
+            s=s,
+            starting_time=slider_darklength+training_length,
+            length_phase=slider_darklength+training_length+relaxation_phase-slider_pings,
+            pulse_intervall=slider_pings,
+            starting_light=slider_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=dark_light,
+            dark_flag=True
+        )
+# Relaxation phase 2
+    if relaxation_phase > 0:
+        simulate_period(
+            s=s,
+            starting_time=slider_darklength+training_length+relaxation_phase-slider_pings,
+            length_phase=slider_pings,
+            pulse_intervall=slider_pings,
+            starting_light=dark_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=dark_light,
+            dark_flag=True
+            )
+# Memory Phase
+    if memory_length > 0:
+        simulate_period(
+            s=s,
+            starting_time=slider_darklength+training_length+relaxation_phase,
+            length_phase=memory_length,
+            pulse_intervall=slider_pings,
+            starting_light=dark_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=slider_light,
+        )
+# End
+    s.update_parameter("PFD", slider_light)
+    s.simulate(slider_darklength+training_length+relaxation_phase+memory_length)
+
     sim_time = s.get_time()
     sim_results = s.get_full_results_dict()
     return sim_time, sim_results
