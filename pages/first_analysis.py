@@ -629,14 +629,13 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
                 "    - Does this depend on the other settings?\n"
             )
-            if version == "Advaced":
+            if version == "Advanced":
                 st.markdown(
                     "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
                     "    - How does the simulated NPQ graph behave when you increase the Zeaxanthin conversion rate? And the Violaxanthin rate?\n"
                     "    - Are changes in the two rates additive?\n"
-                    "    - Which settings would you deem advantageous to the plant?\n"
                     "6. :blue[In the dark phase the plant's NPQ system relaxes.]"
-                    "    - Whathappens if you strongly reduce the adaption time?"
+                    "    - What happens if you strongly reduce the adaption time?"
                     "7."
                 )
         else:  # If toggle is switched show possible iterpretation
