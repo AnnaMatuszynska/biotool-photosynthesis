@@ -230,8 +230,9 @@ def make_sim_area(text: Callable[[str], str]) -> None:
     with col1:
         slider_time = st.slider(
             text("SLIDER_TIME"),
-            5,
-            30,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            1,
+            15,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            value=5
         )
     with col2:
         slider_pings = st.slider(
@@ -607,6 +608,22 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("TIPP1"))
     st.markdown(text("TIPP2"))
 
+    # Add guiding questions:
+    st.markdown("### Guiding Questions")
+    st.markdown(
+        "With the default values, the following simulation shows you a typical PAM experiment. Whenn testing out the sliders you may try the following:\n"
+        "- You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:\n"
+        "  - When the light is being turned on, how does the reaction differ to when you used 100 μmol m⁻² s⁻¹? What does that mean to the plant?\n"
+        "  - How do the saturation pulse signals differ between the lower and higher intensity?"
+        "- On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here."
+        "  - Compare the fluorescecne at the very end of the simulation between default and high light - is there a difference?"
+        "- At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two miutes that we cannot see."
+        "  - Lower the time between the saturation pulses. What can you see?"
+        "  - Does it seem like the saturation pulses affect the plant's photosynthesis?"
+        "- The longer an experiment takes, the more work it is for the experimenter."
+        "  - Should you reduce the measuring time? Why or "
+                )
+
     make_sim_area(text)
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
@@ -626,7 +643,7 @@ if __name__ == "__main__":
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
     make_page(text)
-    include_image("pictures/slider-default-value.png", 0.6, text("CAPTION_DEFAULT_SLIDERS"), center_caption=True)
+    include_image("pictures/slider-default-value.png", 1, text("CAPTION_DEFAULT_SLIDERS"), center_caption=True)
     make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")
     make_sidebar()
