@@ -609,8 +609,9 @@ def make_page(text: Callable[[str], str]) -> None:
 
     # Add guiding questions:
     with st.expander(
-        text("Having trouble connecting the simulation results to biology? Try our **guiding questions**")
+        "Having trouble connecting the simulation results to biology? Try our **guiding questions**"
     ):
+        # The guide questionns are shown by default
         st.markdown("### Guiding Questions")
         see_interpr = st.toggle("See our interpretation")
         if not see_interpr:
@@ -628,7 +629,17 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
                 "    - Does this depend on the other settings?\n"
             )
-        else:
+            if version == "Advaced":
+                st.markdown(
+                    "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
+                    "    - How does the simulated NPQ graph behave when you increase the Zeaxanthin conversion rate? And the Violaxanthin rate?\n"
+                    "    - Are changes in the two rates additive?\n"
+                    "    - Which settings would you deem advantageous to the plant?\n"
+                    "6. :blue[In the dark phase the plant's NPQ system relaxes.]"
+                    "    - Whathappens if you strongly reduce the adaption time?"
+                    "7."
+                )
+        else:  # If toggle is switched show possible iterpretation
             st.markdown(
                 "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
                 "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
@@ -643,7 +654,6 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - With a light intensity of 500 to 900 μmol m⁻² s⁻¹ the NPQ adaption seems to be finished after three to four seconds. We should measure at least this long to capture the whole process.\n"
                 "    - With lower light intensities this adaption process takes less time. So a shorter measurement might be feasible.\n"
             )
-            # st.button("Hide our interpretation", key="see_interpretation")
 
     make_sim_area(text)
 
