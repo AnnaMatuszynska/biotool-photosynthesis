@@ -737,7 +737,7 @@ msgstr "Seconds between saturating pulse during light phase"
 
 #: pages/first_analysis.py:222
 msgid "SLIDER_ACTIVATION"
-msgstr "Conversion rate to Zeaxanthin in ± percent of default"
+msgstr "Conversion rate to Zeaxanthin in percent of default"
 
 #: pages/first_analysis.py:168
 msgid "SLIDER_DARKLENGTH"
@@ -856,7 +856,7 @@ msgstr "- Plants can recall previous exposure to light and adjust their photosyn
 
 #: pages/Analyse.py:72
 msgid "SLIDER_DEACTIVATION"
-msgstr "Conversion rate to Violaxanthin in ± percent of default"
+msgstr "Conversion rate to Violaxanthin in percent of default"
 
 #: EINFÜHRUNG.py:22
 msgid "AUTHOR"

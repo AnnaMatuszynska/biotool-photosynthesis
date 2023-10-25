@@ -737,7 +737,7 @@ msgstr ""
 
 #: pages/first_analysis.py:222
 msgid "SLIDER_ACTIVATION"
-msgstr "Conversion rate to Zeaxanthin in ± percent of default"
+msgstr "Conversion rate to Zeaxanthin in percent of default"
 
 #: pages/first_analysis.py:168
 msgid "SLIDER_DARKLENGTH"

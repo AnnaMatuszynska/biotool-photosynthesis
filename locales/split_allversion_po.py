@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import re
 import numpy as np
+import re
 from pathlib import Path
 from warnings import warn
 
@@ -23,6 +23,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 """
 
+
 def _get_header_and_version(po):
     # Extract the header
     header_end = np.where(np.array([bool(re.match("# TEXT VERSIONS\n", x)) for x in po]))[0][0]
@@ -35,10 +36,11 @@ def _get_header_and_version(po):
     po = po[version_end:]
     return header, versions, po
 
+
 def split_allversion_po(file):
     with open(file, "r") as f:
         po = f.readlines()
-        
+
         # Extract header and versions
         header, versions, po = _get_header_and_version(po)
 
@@ -53,16 +55,16 @@ def split_allversion_po(file):
             # Get the lines that should be deleted
             # Lines may be broken and extended by "\"
             others = np.array([bool(re.search(f"(?<!{version})\s+msgstr", x)) for x in _po])
-            breaks = np.array([bool(re.search("\\\\\s*\n$|\\\\n\s*[\'\"]\s*$", x)) for x in _po])
+            breaks = np.array([bool(re.search("\\\\\s*\n$|\\\\n\s*['\"]\s*$", x)) for x in _po])
             extended = np.logical_and(others, breaks)
 
             if any(extended):
                 for i in np.where(extended)[0]:
                     for j in range(i, len(_po)):
                         if breaks[j]:
-                            others[j+1] = True
+                            others[j + 1] = True
                         else:
-                            break            
+                            break
 
             texts[version] = header + list(_po[np.invert(others)])
     ns_val = np.array(list(ns.values()))
@@ -71,6 +73,7 @@ def split_allversion_po(file):
 
     return texts
 
+
 def save_split_po(pos, locales_dir="."):
     for nam, text in pos.items():
         vers, lang = nam.split("-")
@@ -78,9 +81,8 @@ def save_split_po(pos, locales_dir="."):
         with open(path, "w") as f:
             f.writelines(text)
 
+
 if __name__ == "__main__":
-    pos = split_allversion_po("allversion.po")
-    save_split_po(pos, locales_dir="")
-
-
-
+    DIRPATH = Path(__file__).parent.resolve()
+    pos = split_allversion_po(DIRPATH / "allversion.po")
+    save_split_po(pos, locales_dir=DIRPATH)

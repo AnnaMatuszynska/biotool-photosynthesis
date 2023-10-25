@@ -807,7 +807,7 @@ msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
 
 #: pages/first_analysis.py:222
 msgid "SLIDER_ACTIVATION"
-msgstr "Umwandlungsrate zu Zeaxanthin in ± Prozent Standardwert"
+msgstr "Umwandlungsrate zu Zeaxanthin in Prozent des Standardwerts"
 
 #: pages/first_analysis.py:168
 msgid "SLIDER_DARKLENGTH"
@@ -923,7 +923,7 @@ msgstr ""
 
 #: pages/Analyse.py:72
 msgid "SLIDER_DEACTIVATION"
-msgstr "Umwandlungsrate zu Violaxanthin in ± Prozent Standardwert"
+msgstr "Umwandlungsrate zu Violaxanthin in Prozent des Standardwerts"
 
 #: EINFÜHRUNG.py:22
 msgid "AUTHOR"
