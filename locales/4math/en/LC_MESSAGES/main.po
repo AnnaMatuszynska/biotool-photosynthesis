@@ -80,12 +80,12 @@ msgstr "## How to use this website"
 #: Start.py:16
 # Grammarly checked
 msgid "USAGE"
-msgstr "We aimed at both curious <b>newcomers</b> and more <b>advanced</b> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>Simple</i> or <a href='#' id='Advanced'>Advanced</a>."
+msgstr "We aimed at both curious <b>newcomers</b> and more <b>advanced</b> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>4Bio</i> or <a href='#' id='4Math'>4Math</a>."
 
 #: Start.py:17
 # Grammarly checked
 msgid "4MATH_USE"
-msgstr "In this <a href='#' id='Advanced'>Advanced</a> version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
+msgstr "In this <a href='#' id='4Math'>4Math</a> version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
 
 #: Start.py:18
 # Grammarly checked

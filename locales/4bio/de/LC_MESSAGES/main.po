@@ -87,12 +87,12 @@ msgstr "## Nutzung dieser Website"
 #: Start.py:16
 # Grammarly checked
 msgid "USAGE"
-msgstr "Wir richten uns sowohl an neugierige <b>Neulinge</b> als auch an <a href='#' id='Advanced'>Fortgeschrittene</a> Lernende. Wenn Sie diese Website nutzen, können Sie wählen, welche Version Sie verwenden möchten, indem Sie auf die Schaltfläche auf der linken Seite klicken: Version klicken und aus der Dropdown-Liste <i>Einfach</i> oder <a href='#' id='Advanced'>Fortgeschrittene</a> auswählen."
+msgstr "Wir richten uns sowohl an neugierige <b>Neulinge</b> als auch an <a href='#' id='4Math'>Fortgeschrittene</a> Lernende. Wenn Sie diese Website nutzen, können Sie wählen, welche Version Sie verwenden möchten, indem Sie auf die Schaltfläche auf der linken Seite klicken: Version klicken und aus der Dropdown-Liste <i>Einfach</i> oder <a href='#' id='4Math'>Fortgeschrittene</a> auswählen."
 
 #: Start.py:17
 # Grammarly checked
 msgid "4MATH_USE"
-msgstr "Nehmen wir an, Sie wählen die <a href='#' id='Advanced'>Fortgeschritten</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
+msgstr "Nehmen wir an, Sie wählen die <a href='#' id='4Math'>Fortgeschritten</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
 
 #: Start.py:18
 # Grammarly checked
@@ -126,7 +126,7 @@ msgstr "## Zusammenfassung der Seiten"
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "INTRODUCTION_PAGES"
-msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie auf den folgenden Seiten erwartet. Unter <a href='#' id='Advanced'>Advanced</a> finden Sie die Übersicht, welche zusätzlichen Informationen Sie in den <a href='#' id='Advanced'>Fortgeschrittene</a>-Versionen erhalten."
+msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie auf den folgenden Seiten erwartet. Unter <a href='#' id='4Math'>4Math</a> finden Sie die Übersicht, welche zusätzlichen Informationen Sie in den <a href='#' id='4Math'>Fortgeschrittene</a>-Versionen erhalten."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked

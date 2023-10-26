@@ -85,7 +85,7 @@ msgstr "Naszym celem jest dotrzeć zarówno do **początkujących** jak i bardzi
 #: Start.py:17
 # Grammarly checked
 msgid "4MATH_USE"
-msgstr "Załóżmy, że wybierzesz wersję <a href='#' id='Advanced'>Zaawansowany</a>. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy <i>in silico</i>."
+msgstr "Załóżmy, że wybierzesz wersję <a href='#' id='4Math'>Zaawansowany</a>. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy <i>in silico</i>."
 
 #: Start.py:18
 # Grammarly checked
@@ -119,7 +119,7 @@ msgstr "## Streszczenia stron"
 #: pages/1 Messmethode.py:50
 # Grammarly checked
 msgid "INTRODUCTION_PAGES"
-msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji <a href='#' id='Advanced'>Advanced</a> znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach <a href='#' id='Advanced'>Zaawansowany</a>."
+msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji <a href='#' id='4Math'>4Math</a> znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach <a href='#' id='4Math'>Zaawansowany</a>."
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
