@@ -9,10 +9,10 @@ You can check out the online version [here](https://annamatuszynska-biotool-phot
 
 ### Setting up
 
-We recommend setting up a virtual environment of your choice, e.g. with conda
+We recommend setting up a virtual environment of your choice, e.g. with conda, and using `Python 3.11`
 
 ```bash
-conda create -n biotoolenvironment pip
+conda create -n biotoolenvironment python==3.11 pip
 conda activate biotoolenvironment
 pip install -r requirements.txt 
 ```
