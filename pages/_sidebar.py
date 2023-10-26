@@ -12,7 +12,7 @@ def make_sidebar() -> tuple[str, str]:
 
     # Versions selectbox
     versions = ["Simple", "Advanced"]
-    version_display = dict(zip(versions, [text("SIMPLE"), text("ADVANCED")]))
+    version_display = dict(zip(versions, [text("FOR_BIO"), text("FOR_MATH")]))
     version_to_idx = dict(zip(versions, range(len(versions))))
     version = cast(
         str,

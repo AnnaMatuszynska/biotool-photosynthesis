@@ -77,7 +77,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         )
 
         if version == "Simple":
-            markdown_click("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
+            markdown_click("MATHEMATICAL_MODELLING_EXAMPLE_4BIO", text)
 
         if version == "Advanced":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))

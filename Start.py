@@ -17,7 +17,7 @@ def make_introduction(text: Callable[[str], str]) -> None:
     st.video("https://youtu.be/KvyjIWLD8rU")
     st.markdown(text("HEADLINE_USAGE"))
     markdown_click("USAGE", text)
-    markdown_click("ADVANCED_USE", text)
+    markdown_click("FOR_MATH_USE", text)
 
 
 # FIXME: version and language should probably be replaced by text

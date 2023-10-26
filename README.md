@@ -33,7 +33,7 @@ Texts and the translations are adapted in `allversion.po` file in the locals fol
 versions for the two versions. In each subfolder you can find the texts of each page.
 
 To insert a new language, a subfolder with the abbreviation for the language must be created in each of the two \
-version folders. Then add the new version abbreviation (e.g. `simple-en`) under `# TEXT VERSIONS` and the translation for each text snippet under the respective msgid in the form
+version folders. Then add the new version abbreviation (e.g. `4bio-en`) under `# TEXT VERSIONS` and the translation for each text snippet under the respective msgid in the form
 ```po
 <version_abbr> msgstr "<translation>"
 ```
