@@ -40,7 +40,7 @@ msgid "INSERT_PLACEHOLDER_HERE"
 4bio-es msgstr ""
 
 # SIDEBAR
-msgid "FOR_BIO"
+msgid "4BIO"
 4math-en msgstr "4Bio"
 4math-de msgstr "4Bio"
 4math-fr msgstr ""
@@ -53,7 +53,7 @@ msgid "FOR_BIO"
 4bio-es msgstr ""
 
 
-msgid "FOR_MATH"
+msgid "4MATH"
 4math-en msgstr "4Math"
 4math-de msgstr "4Math"
 4math-fr msgstr ""
@@ -252,7 +252,7 @@ msgid "USAGE"
 
 #: Start.py:17
 # Grammarly checked
-msgid "FOR_MATH_USE"
+msgid "4MATH_USE"
 4math-en msgstr "In this <a href='#' id='Advanced'>Advanced</a> version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
 4math-de msgstr "Nehmen wir an, Sie wählen die <a href='#' id='Advanced'>Fortgeschritten</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
 4math-fr msgstr ""

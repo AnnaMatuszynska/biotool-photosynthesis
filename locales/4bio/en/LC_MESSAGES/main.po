@@ -20,11 +20,11 @@ msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
 # SIDEBAR
-msgid "FOR_BIO"
+msgid "4BIO"
 msgstr "4Bio"
 
 
-msgid "FOR_MATH"
+msgid "4MATH"
 msgstr "4Math"
 
 #: EINFÜHRUNG.py:
@@ -84,7 +84,7 @@ msgstr "We aimed at both curious <b>newcomers</b> and more <a href='#' id='Advan
 
 #: Start.py:17
 # Grammarly checked
-msgid "FOR_MATH_USE"
+msgid "4MATH_USE"
 msgstr "Suppose you choose the <a href='#' id='Advanced'>Advanced</a> version. In that case, you will not only learn about photosynthesis as a process but also about methods how to measure its dynamics and how to calculate its efficiency using a computer. You will also learn how to 'genetically modify' your photosynthetic organism to perform a new set of experiments, meaning you will get to create a digital mutant. We call the work performed in computer <i>in silico</i>."
 
 #: Start.py:18

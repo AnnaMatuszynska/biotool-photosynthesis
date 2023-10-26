@@ -32,10 +32,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     st.markdown(text("EXAMPLE_MATHEMATICAL_MODEL"))
 
-    if version == "Simple":
+    if version == "4Bio":
         tab1, tab2 = st.tabs([text("TAB_SIR"), " "])
 
-    if version == "Advanced":
+    if version == "4Math":
         tab1, tab2, tab3 = st.tabs([text("TAB_SIR"), text("TAB_MANUAL"), text("TAB_MODELBASE")])
 
     with tab1:
@@ -76,13 +76,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             "pictures/SIR_modelbase.png", img_width=0.6, caption=text("CAPTION_SIR_RESULTS_PICTURE")
         )
 
-        if version == "Simple":
+        if version == "4Bio":
             markdown_click("MATHEMATICAL_MODELLING_EXAMPLE_4BIO", text)
 
-        if version == "Advanced":
+        if version == "4Math":
             st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
 
-    if version == "Advanced":
+    if version == "4Math":
         with open(Path(__file__).parent / "assets" / "sir_v1_integ.py") as fp:
             sir_v1_integ = f"\n```python\n{fp.read()}```\n\n"
 
@@ -180,7 +180,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         markdown_click("FVCB_1",text)
 
-        if version == "Advanced":
+        if version == "4Math":
             st.latex(
                 r"""
                 \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
@@ -201,7 +201,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         markdown_click("E_PHOTOSYNTHESIS_1", text)
 
-        if version == "Advanced":
+        if version == "4Math":
             st.latex(
                 r"""
                 \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
@@ -216,7 +216,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         markdown_click("BELLASIO_1", text)
 
-        if version == "Advanced":
+        if version == "4Math":
             st.latex(
                 r"""
                 \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
@@ -240,7 +240,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
         st.markdown(text("LITERATURE_ONPAGE"))
-        if version == "Simple":
+        if version == "4Bio":
             """
             - Bellasio, C. (2019). A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research, 141(1), 99–118. https://doi.org/10.1007/s11120-018-0601-1
             - Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
@@ -250,7 +250,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
             """
 
-        if version == "Advanced":
+        if version == "4Math":
             """
             - Bellasio, C. (2019). A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research, 141(1), 99–118. https://doi.org/10.1007/s11120-018-0601-1
             - Bellasio, C., Quirk, J., Buckley, T. N., & Beerling, D. J. (2017). A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C4 Photosynthesis. Plant Physiology, 175(1), 104–119. https://doi.org/10.1104/pp.17.00666
@@ -270,7 +270,7 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version: str = st.session_state.setdefault("version", "Simple")
+    version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()

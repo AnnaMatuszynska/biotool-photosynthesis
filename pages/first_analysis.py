@@ -240,7 +240,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
     with col2:
         slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=20, max_value=150, value=85)
 
-    if version == "Advanced":
+    if version == "4Math":
         col1, col2 = st.columns(2)
         with col1:
             slider_aktivation = st.select_slider(
@@ -288,7 +288,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
             PAM_F = sim_results["Fluo"]
             PAM_Fmax = max(sim_results["Fluo"])
 
-            if version == "Simple":
+            if version == "4Bio":
                 fig_PAM = make_matplotlib_plot(
                     text=text,
                     xlabel1=text("AXIS_TIME_S"),
@@ -304,7 +304,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
 
                 st.pyplot(fig_PAM)
 
-            if version == "Advanced":
+            if version == "4Math":
                 peaks, _ = find_peaks((PAM_F / PAM_Fmax), height=0)  # Find the Flourescence peaks (Fmaxs)
                 NPQ = ((PAM_F[peaks][0] - PAM_F[peaks])) / PAM_F[peaks]
 
@@ -349,7 +349,7 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("RATES_5"))
     st.markdown(text("RATES_6"), unsafe_allow_html=True)
 
-    if version == "Advanced":
+    if version == "4Math":
         st.markdown(text("HEADLINE_MODEL_EQUATIONS"))
         st.markdown(text("MODEL_EQUATIONS_INTRODUCTION"))
         st.latex(
@@ -395,10 +395,10 @@ def make_page(text: Callable[[str], str]) -> None:
 
     st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
 
-    if version == "Simple":
+    if version == "4Bio":
         markdown_click("IMPLEMENTATION_TO_EXPERT", text)
 
-    if version == "Advanced":
+    if version == "4Math":
         with st.expander(text("MODEL_CODE_EXPANDER")):
             st.markdown(text("CONSTRUCTION_HEADER"))
             st.markdown(text("CONSTRUCTION_1"))
@@ -619,7 +619,7 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version: str = st.session_state.setdefault("version", "Simple")
+    version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()

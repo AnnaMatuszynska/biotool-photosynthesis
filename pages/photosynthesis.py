@@ -12,7 +12,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     markdown_click("HEADLINE_CLIMATE", text)
     markdown_click("INTRODUCTION_CLIMATE_CHANGE", text)
 
-    if version == "Advanced":
+    if version == "4Math":
         markdown_click("POINT_1", text)
         markdown_click("POINT_2", text)
         markdown_click("POINT_3", text)
@@ -70,7 +70,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION"), unsafe_allow_html=True)
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
-    if version == "Advanced":
+    if version == "4Math":
         with st.expander(text("LITERATURE")):
             st.markdown(text("LITERATURE_ONPAGE"))
             st.markdown(
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version: str = st.session_state.setdefault("version", "Simple")
+    version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
 
     text = get_localised_text(version, language)

@@ -263,7 +263,7 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
     with col3:
         slider_memory = st.slider(label=text("SLIDER_MEMORY"), min_value=0, max_value=5, value=2)
 
-    if version == "Advanced":
+    if version == "4Math":
         slider_darklength = 60
         slider_saturate = 5000
         col1, col2 = st.columns(2)
@@ -326,7 +326,7 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
             st.pyplot(fig_PAM)
 
-            if version == "Advanced":
+            if version == "4Math":
                 peaks, _ = find_peaks((PAM_F / PAM_Fmax), height=0)  # Find the Flourescence peaks (Fmaxs)
                 NPQ = ((PAM_F[peaks][0] - PAM_F[peaks])) / PAM_F[peaks]
 
@@ -410,7 +410,7 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version: str = st.session_state.setdefault("version", "Simple")
+    version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()

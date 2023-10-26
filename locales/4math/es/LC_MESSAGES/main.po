@@ -20,11 +20,11 @@ msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
 # SIDEBAR
-msgid "FOR_BIO"
+msgid "4BIO"
 msgstr ""
 
 
-msgid "FOR_MATH"
+msgid "4MATH"
 msgstr ""
 
 #: EINFÜHRUNG.py:
@@ -90,7 +90,7 @@ msgstr ""
 
 #: Start.py:17
 # Grammarly checked
-msgid "FOR_MATH_USE"
+msgid "4MATH_USE"
 msgstr ""
 
 #: Start.py:18

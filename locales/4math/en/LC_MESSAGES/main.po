@@ -20,11 +20,11 @@ msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
 # SIDEBAR
-msgid "FOR_BIO"
+msgid "4BIO"
 msgstr "4Bio"
 
 
-msgid "FOR_MATH"
+msgid "4MATH"
 msgstr "4Math"
 
 #: EINFÜHRUNG.py:
@@ -84,7 +84,7 @@ msgstr "We aimed at both curious <b>newcomers</b> and more <b>advanced</b> learn
 
 #: Start.py:17
 # Grammarly checked
-msgid "FOR_MATH_USE"
+msgid "4MATH_USE"
 msgstr "In this <a href='#' id='Advanced'>Advanced</a> version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
 
 #: Start.py:18

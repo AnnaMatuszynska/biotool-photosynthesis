@@ -11,8 +11,8 @@ def make_sidebar() -> tuple[str, str]:
     text = get_localised_text(version, language)
 
     # Versions selectbox
-    versions = ["Simple", "Advanced"]
-    version_display = dict(zip(versions, [text("FOR_BIO"), text("FOR_MATH")]))
+    versions = ["4Bio", "4Math"]
+    version_display = dict(zip(versions, [text("4BIO"), text("4MATH")]))
     version_to_idx = dict(zip(versions, range(len(versions))))
     version = cast(
         str,
