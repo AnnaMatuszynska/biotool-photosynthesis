@@ -3,6 +3,7 @@ from cycler import cycler
 from modelbase.ode import Model, Simulator
 
 
+
 def infection(alpha, s, i, r):
     return alpha * s * i / (s + i + r)
 

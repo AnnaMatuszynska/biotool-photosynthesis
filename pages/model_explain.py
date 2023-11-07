@@ -12,6 +12,7 @@ from utils import (
     resetting_click_detector_setup,
     markdown_click
 )
+from pages.assets.SIR_model.sir_utils import *
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -34,53 +35,207 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     if version == "Simple":
         tab1, tab2 = st.tabs([text("TAB_SIR"), " "])
+        
+        with tab1:
+            st.markdown(text("HEADLINE_SIR"))
+
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
+            
+            include_image("pictures/SIR_Aliens.png", 0.5)
+            
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_1"), unsafe_allow_html=True)
+            
+            include_image("pictures/SIR_AliensScheme.png", 0.5)
+            
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_2"), unsafe_allow_html=True)
+            
+            st.latex(
+                r"""
+                \begin{aligned}
+                    \mathrm{Infecting\ rate:}\ v_1 &= \beta \cdot \frac{\mathrm{S}\cdot \mathrm{I}}{\mathrm{N}} \\
+                    \mathrm{Recovery\ rate:}\ v_{2} &= \gamma \cdot \mathrm{I} \\
+                \end{aligned}
+                """
+            )
+            
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"), unsafe_allow_html=True)
+            
+            st.latex(
+                r"""
+                \begin{aligned}
+                    \mathrm{dS} &= -v_1 \cdot \mathrm{d}t \\
+                    \mathrm{dI} &= \left( v_1 - v_2 \right) \cdot \mathrm{d}t \\
+                    \mathrm{dR} &= v_2 \cdot \mathrm{d}t
+                \end{aligned}
+                """
+            )
+            
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_4"), unsafe_allow_html=True)
+
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                
+                sir_slider_start, sir_slider_end = st.slider(
+                        label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"),
+                        min_value=0,
+                        max_value=1000,
+                        value=(900, 1000),
+                        step=1
+                    )
+                
+                S_initial = sir_slider_start
+                I_initial = sir_slider_end - sir_slider_start
+                R_initial = 1000 - sir_slider_end
+                    
+                st.components.v1.html(
+                    f'''
+                        <div style=
+                        "display: flex;
+                        flex-direction: row;
+                        margin: 0;
+                        padding: 0;"
+                        >
+                            <div style="background-color: rgb(249,165,27); padding: 10px; border: 5px solid rgb(253,207,140); border-radius: 0px; text-align: center; flex-grow: {S_initial/1000}; ">
+                            {S_initial}
+                            </div>
+                            
+                            
+                            
+                            <div style="background-color: rgb(209,35,42); padding: 10px; border: 5px solid rgb(229,146,121); border-radius: 0px; text-align: center; flex-grow: {I_initial/1000}; ">
+                            {I_initial}
+                            </div>
+                            
+                            <div style="background-color: #1062ef; padding: 10px; border: 5px solid #87b0f7; border-radius: 0px; text-align: center; flex-grow: {R_initial/1000}; ">
+                            {R_initial}
+                            </div>
+                            
+                        </div>
+                    ''',
+                    height=55
+                )
+                
+                col1_, col2_, col3_ = st.columns([1.5,1,1])
+                
+                with col1_:
+                    sir_time_slider = st.slider(
+                        label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"),
+                        min_value=5,
+                        max_value=36,
+                        value=20
+                    )
+                
+                with col2_:
+                    sir_beta_slider = st.slider(
+                        label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"),
+                        min_value=0.0,
+                        max_value=5.0,
+                        value=2.0
+                    )
+                    
+                with col3_:
+                    sir_gamma_slider = st.slider(
+                        label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"),
+                        min_value=0.0,
+                        max_value=2.0,
+                        value=0.2
+                    )
+                    
+                if st.button(
+                    label='Reset SIR Model',
+                    use_container_width= True
+                ):
+                    st.session_state['SIR_model'] = {}
+                
+            with col2:
+                sir_time, sir_results = get_results_dict_SIRModel(
+                    beta_param=sir_beta_slider,
+                    gamma_param=sir_gamma_slider,
+                    S_initial=S_initial,
+                    I_initial=I_initial,
+                    R_initial=R_initial,
+                    time_end=sir_time_slider
+                )
+                
+                if 'SIR_model' not in st.session_state:
+                    st.session_state['SIR_model'] = {
+                        "S": [sir_time, sir_results["S"]],
+                        "I": [sir_time, sir_results["I"]],
+                        "R": [sir_time, sir_results["R"]]
+                    }
+                    
+                else:
+                    st.session_state['SIR_model'].update({
+                        "S": [sir_time, sir_results["S"]],
+                        "I": [sir_time, sir_results["I"]],
+                        "R": [sir_time, sir_results["R"]]
+                    }
+                    )
+                    
+                sir_fig = get_plot_SIRModel(st.session_state['SIR_model'])
+                
+                st.pyplot(sir_fig, transparent = True)
+                
+                st.session_state['SIR_model'].update({
+                        "old S": [sir_time, sir_results["S"]],
+                        "old I": [sir_time, sir_results["I"]],
+                        "old R": [sir_time, sir_results["R"]]
+                    }
+                    )
 
     if version == "Advanced":
         tab1, tab2, tab3 = st.tabs([text("TAB_SIR"), text("TAB_MANUAL"), text("TAB_MODELBASE")])
 
-    with tab1:
-        st.markdown(text("HEADLINE_SIR"))
+        with tab1:
+            st.markdown(text("HEADLINE_SIR"))
 
-        st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
-        st.latex(
-            r"""
-            \mathrm{S} \xrightarrow{\textit{v}_1} \mathrm{I} \xrightarrow{\textit{v}_2} \mathrm{R}
-            """
-        )
-        st.latex(
-            r"""
-            \begin{aligned}
-                v_1 &= \beta \cdot \frac{\mathrm{S}\cdot \mathrm{I}}{\mathrm{N}} \\
-                v_2 &= \gamma \cdot \mathrm{I} \\
-            \end{aligned}
-            """
-        )
-        st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_2"))
-        st.latex(
-            r"""
-            \mathrm{S} \xrightarrow{\textit{v}_1} \mathrm{I} \xrightarrow{\textit{v}_2} \mathrm{R}
-            """
-        )
-        st.latex(
-            r"""
-            \begin{aligned}
-                \frac{\mathrm{d}\mathrm{S}}{\mathrm{d}t} &= - v_1 \\
-                \frac{\mathrm{d}\mathrm{I}}{\mathrm{d}t} &= v_1 - v_2 \\
-                \frac{\mathrm{d}\mathrm{R}}{\mathrm{d}t} &=  v_2
-            \end{aligned}
-            """
-        )
-        st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
+            
+            include_image("pictures/SIR_Aliens.png", 0.5)
+            
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_1"), unsafe_allow_html=True)
+            
+            include_image("pictures/SIR_AliensScheme.png", 0.5)
+            
+            st.latex(
+                r"""
+                \mathrm{S} \xrightarrow{\textit{v}_1} \mathrm{I} \xrightarrow{\textit{v}_2} \mathrm{R}
+                """
+            )
+            st.latex(
+                r"""
+                \begin{aligned}
+                    v_1 &= \beta \cdot \frac{\mathrm{S}\cdot \mathrm{I}}{\mathrm{N}} \\
+                    v_2 &= \gamma \cdot \mathrm{I} \\
+                \end{aligned}
+                """
+            )
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_2"))
+            st.latex(
+                r"""
+                \mathrm{S} \xrightarrow{\textit{v}_1} \mathrm{I} \xrightarrow{\textit{v}_2} \mathrm{R}
+                """
+            )
+            st.latex(
+                r"""
+                \begin{aligned}
+                    \frac{\mathrm{d}\mathrm{S}}{\mathrm{d}t} &= - v_1 \\
+                    \frac{\mathrm{d}\mathrm{I}}{\mathrm{d}t} &= v_1 - v_2 \\
+                    \frac{\mathrm{d}\mathrm{R}}{\mathrm{d}t} &=  v_2
+                \end{aligned}
+                """
+            )
+            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
 
-        include_image(
-            "pictures/SIR_modelbase.png", img_width=0.6, caption=text("CAPTION_SIR_RESULTS_PICTURE")
-        )
+            include_image(
+                "pictures/SIR_modelbase.png", img_width=0.6, caption=text("CAPTION_SIR_RESULTS_PICTURE")
+            )
 
-        if version == "Simple":
-            markdown_click("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
+            if version == "Simple":
+                markdown_click("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
 
-        if version == "Advanced":
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
+            if version == "Advanced":
+                st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
 
     if version == "Advanced":
         with open(Path(__file__).parent / "assets" / "sir_v1_integ.py") as fp:

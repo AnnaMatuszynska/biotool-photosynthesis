@@ -451,16 +451,38 @@ msgstr ""
 msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr ""
 
+#: pages/model_explain.py:48
+# Grammarly checked
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_1"
+msgstr ""
+
+
 #: pages/model_explain.py:37
 #: pages/model.explain.py:37
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
 msgstr ""
 
-#: pages/model_explain.py:52
+#: pages/model_explain.py:60
 #: pages/model.explain.py:52
 # Grammarly checked
 msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
+msgstr ""
+
+#: pages/model_explain.py:72
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_4"
+msgstr ""
+
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
+msgstr ""
+
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
+msgstr ""
+
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
+msgstr ""
+
+msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
 msgstr ""
 
 #: pages/model_explain.py:55
