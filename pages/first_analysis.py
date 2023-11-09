@@ -315,19 +315,20 @@ def sim_model(
 def make_sim_area(text: Callable[[str], str]) -> None:
     slider_light = st.slider(
         text("SLIDER_LIGHT"),  # Exponenten können reinkopiert werden durch commands
-        100,
+        50,
         900,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+        value=100,
     )
-
     col1, col2 = st.columns(2)
     with col1:
         slider_time = st.slider(
             text("SLIDER_TIME"),
-            5,
-            30,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            1,
+            15,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            value=5,
         )
     with col2:
-        slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=20, max_value=150, value=85)
+        slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
 
     if version == "Advanced":
         col1, col2 = st.columns(2)
@@ -347,7 +348,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
                 value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             )
             slider_saturate = st.slider(
-                label=text("SLIDER_SATURATE"), min_value=100, max_value=10000, value=5000
+                label=text("SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
             )
 
         updated_parameters = {
@@ -727,6 +728,70 @@ def make_page(text: Callable[[str], str]) -> None:
     include_ytvideo("https://youtu.be/zxGZKeopEDw", 0.5)
     st.markdown(text("TIPP1"))
     st.markdown(text("TIPP2"))
+
+    # Add guiding questions:
+    with st.expander(
+        "Having trouble connecting the simulation results to biology? Try our **guiding questions**"
+    ):
+        # The guide questionns are shown by default
+        st.markdown("### Guiding Questions")
+        see_interpr = st.toggle("See our interpretation")
+        if not see_interpr:
+            st.markdown(
+                "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
+                "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
+                "    - When the light is being turned on, how does the reaction differ to when you used 100 μmol m⁻² s⁻¹? What does that mean to the plant?\n"
+                "    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
+                "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
+                "    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
+                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two miutes that we cannot see.]\n"
+                "    - Lower the time between the saturation pulses. What can you see?\n"
+                "    - Does it seem like the saturation pulses affect the plant's photosynthesis?\n"
+                "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
+                "    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
+                "    - Does this depend on the other settings?\n"
+            )
+            if version == "Advanced":
+                st.markdown(
+                    "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
+                    "    - How does the simulated NPQ graph behave when you increase the Zeaxanthin conversion rate? And the Violaxanthin rate?\n"
+                    "    - Are changes in the two rates additive?\n"
+                    "6. :blue[In the dark phase the plant's NPQ system relaxes.]\n"
+                    "    - What happens if you strongly reduce the adaption time?\n"
+                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaninful results.]\n"
+                    "    - Increase the saturating pulse intensity to maximum. Does something change?"
+                    "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
+                )
+        else:  # If toggle is switched show possible iterpretation
+            st.markdown(
+                "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
+                "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
+                "    - The fluorescence signal after turning on the light, shortly after the peak, is a lot higher. This is because chlorophyll receives much more energy which puts the plant under light stress.\n"
+                "    - The later saturation pulses, after ca. 2 minutes, are shorter than those under low light. Therefore the plant has increased the heat quenching, aka NPQ, as a light protection mechanism.\n"
+                "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
+                "    - For this higher light intensity we can see as well the increased fluorescence after light-on and the further decreasing fluorescence during the pulses.\n"
+                "    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full acctivation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhaused and higher light might damage the plant.\n"
+                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two miutes that we cannot see.]\n"
+                "    - With more fequent pulses, we can see the dropping peak fluorescence more clearly. Therefore, we see the NPQ activation in a higher resolution and could try to fit a function to estimate the activation rate.\n"
+                "    - Normally we assume that the pulses don't affect the photosynthesis. After a pulse the signal returns to the previous level and the peak height seems to decrease always the same.\n" 
+                "    - However, if we give pulses in rapid succession under low light, the saturation pulses can have an effect like actinic light. You can see this if you try a light intensity of 50 μmol m⁻² s⁻¹ with pulses every 5 s. There, the peak height decreases more than with fewer pulses. \n"
+                "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
+                "    - With a light intensity of 500 to 900 μmol m⁻² s⁻¹ the NPQ adaption seems to be finished after three to four seconds. We should measure at least this long to capture the whole process.\n"
+                "    - With lower light intensities this adaption process takes less time. So a shorter measurement might be feasible.\n"
+            )
+            if version == "Advanced":
+                st.markdown(
+                    "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
+                    "    - If we increase the Zeaxanthin conversion rate, the maximal NPQ activity increases up to a factor of about two.\n"
+                    "    - With a high frequency of saturation pulses we can also see that this maximal activity is reached faster.\n"
+                    "    - If we increase the Zeaxanthin conversion rate, the maximal NPQ activity also increases up to a factor of about two.\n" 
+                    "    - Are changes in the two rates additive?\n"
+                    "6. :blue[In the dark phase the plant's NPQ system relaxes.]\n"
+                    "    - What happens if you strongly reduce the adaption time?\n"
+                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaninful results.]\n"
+                    "    - Increase the saturating pulse intensity to maximum. Does something change?"
+                    "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
+                )
 
     make_sim_area(text)
 
