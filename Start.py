@@ -105,4 +105,5 @@ if __name__ == "__main__":
     make_chapters(text, version, language)
     make_literature(text, version, language)
     make_prev_next_button(None, "photosynthesis")
+    st.write(st.session_state)
     make_sidebar()

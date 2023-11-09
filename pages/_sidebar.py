@@ -20,7 +20,7 @@ def make_sidebar() -> tuple[str, str]:
             label="⚙ Version 👩‍🎓👩🏼‍🔬",
             options=versions,
             format_func=lambda x: version_display[x],
-            index=0, #version_to_idx[st.session_state["version"]],
+            # index=0, #version_to_idx[st.session_state["version"]],
             key="version",
         ),
     )
@@ -33,7 +33,7 @@ def make_sidebar() -> tuple[str, str]:
         st.sidebar.selectbox(
             label="⚙ Language 🌍💬",
             options=languages,
-            index=0, #language_to_idx[st.session_state["language"]],
+            # index=0, #language_to_idx[st.session_state["language"]],
             key="language",
         ),
     )
