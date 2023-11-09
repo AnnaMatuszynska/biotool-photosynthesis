@@ -81,7 +81,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                         min_value=0,
                         max_value=1000,
                         value=(900, 1000),
-                        step=1
+                        step=1,
+                        key = 'SIRSLIDER'
                     )
                 
                 S_initial = sir_slider_start
@@ -122,7 +123,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                         label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"),
                         min_value=5,
                         max_value=36,
-                        value=20
+                        value=20,
+                        key = 'SIR_TIME_SLIDER'
                     )
                 
                 with col2_:
@@ -130,7 +132,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                         label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"),
                         min_value=0.0,
                         max_value=5.0,
-                        value=2.0
+                        value=2.0,
+                        key = 'SIR_BETA_SLIDER'
                     )
                     
                 with col3_:
@@ -138,15 +141,35 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                         label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"),
                         min_value=0.0,
                         max_value=2.0,
-                        value=0.2
+                        value=0.2,
+                        key = 'SIR_GAMMA_SLIDER'
                     )
-                    
-                if st.button(
-                    label='Reset SIR Model',
-                    use_container_width= True
-                ):
+                
+                def reset_slider_values():
+                    st.session_state['SIRSLIDER'] = [900, 1000]
+                    st.session_state['SIR_TIME_SLIDER'] = 20
+                    st.session_state['SIR_BETA_SLIDER'] = 2.0
+                    st.session_state['SIR_GAMMA_SLIDER'] = 0.2
+                
+                col1__, col2__ = st.columns(2)
+                
+                with col1__:
+                    st.button(
+                        label = 'Reset Slider Values',
+                        use_container_width=True,
+                        on_click=reset_slider_values
+                    )
+                
+                def reset_graph():
                     st.session_state['SIR_model'] = {}
                 
+                with col2__:
+                    st.button(
+                        label = 'Reset Graph',
+                        use_container_width=True,
+                        on_click=reset_graph
+                    )
+
             with col2:
                 sir_time, sir_results = get_results_dict_SIRModel(
                     beta_param=sir_beta_slider,
