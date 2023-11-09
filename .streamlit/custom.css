@@ -11,8 +11,27 @@
     .block-container {
         max-width: 60vw;
     }
+}
 
-    [data-testid="stHorizontalBlock"] {
-        flex-direction: row;
-    }
+[data-testid="stHorizontalBlock"] {
+    flex-direction: row;
+}
+
+/* Old naming? */
+.st-emotion-cache-a8w3f8.eczjsme9 {
+    max-height: 60vh;
+}
+
+.st-emotion-cache-1oe5cao{
+    max-height: 60vh;
+    /* max-height: none; */
+}
+
+/* New / alternaitve naming? */
+.css-a8w3f8 {
+    max-height: 60vh;
+}
+
+.css-1oe5cao{
+    max-height: 60vh;
 }
