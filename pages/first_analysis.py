@@ -373,74 +373,88 @@ def make_sim_area(text: Callable[[str], str]) -> None:
                 slider_saturate,
                 slider_darklength,
             )
-
-            PAM_F = sim_results["Fluo"]
-            PAM_Fmax = max(sim_results["Fluo"])
-
-            if 'simple_model' not in st.session_state:
-                st.session_state['simple_model'] = {
-                    'Fluo': [sim_time, PAM_F / PAM_Fmax]
-                }
-            else:
-                st.session_state['simple_model'].update({
-                    'Fluo': [sim_time, PAM_F / PAM_Fmax]
-                })
             
-            if version == "Simple":
-                fig_PAM = make_matplotlib_plot(
-                    text=text,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel=text("FLUO"),
-                    values=st.session_state['simple_model'],
-                    max_time=slider_time * 60,
-                    dark_length=slider_darklength,
-                    width=15,
-                    height=3,
-                )
-
-                st.pyplot(fig_PAM, transparent=True)
+            st.session_state['simple_model_results'] = {
+                'time': sim_time,
+                'results': sim_results,
+                'slider_time': slider_time,
+                'slider_darklength': slider_darklength 
+            }
                 
-                st.session_state['simple_model'].update({
-                    'old Fluo': [sim_time, PAM_F / PAM_Fmax]
-                })
+    try:
+        
+        sim_time = st.session_state['simple_model_results']['time']
+        sim_results = st.session_state['simple_model_results']['results']
+        
+        PAM_F = sim_results["Fluo"]
+        PAM_Fmax = max(sim_results["Fluo"])
 
-            if version == "Advanced":
-                peaks, _ = find_peaks((PAM_F / PAM_Fmax), height=0)  # Find the Flourescence peaks (Fmaxs)
-                NPQ = ((PAM_F[peaks][0] - PAM_F[peaks])) / PAM_F[peaks]
+        if 'simple_model' not in st.session_state:
+            st.session_state['simple_model'] = {
+                'Fluo': [sim_time, PAM_F / PAM_Fmax]
+            }
+        else:
+            st.session_state['simple_model'].update({
+                'Fluo': [sim_time, PAM_F / PAM_Fmax]
+            })
+        
+        if version == "Simple":
+            fig_PAM = make_matplotlib_plot(
+                text=text,
+                xlabel1=text("AXIS_TIME_S"),
+                xlabel2=text("AXIS_TIME_MIN"),
+                ylabel=text("FLUO"),
+                values=st.session_state['simple_model'],
+                max_time=st.session_state['simple_model_results']['slider_time'] * 60,
+                dark_length=st.session_state['simple_model_results']['slider_darklength'],
+                width=15,
+                height=3,
+            )
 
-                prominences, prominences_left, prominences_right = peak_prominences(
-                    (PAM_F / PAM_Fmax), peaks
-                )  # Find the minima around the peaks
-                Fo = [
-                    (PAM_F / PAM_Fmax)[i] for i in prominences_left
-                ]  # Fo is always the minima before the peak
-                PhiPSII = (PAM_F[peaks] - Fo) / PAM_F[peaks]
-                
-                st.session_state['simple_model'].update({
-                    'NPQ': [sim_time[peaks], NPQ],
-                    'PhiPSII': [sim_time[peaks], PhiPSII]
-                })
+            st.pyplot(fig_PAM, transparent=True)
+            
+            st.session_state['simple_model'].update({
+                'old Fluo': [sim_time, PAM_F / PAM_Fmax]
+            })
 
-                fig_advanced = make_matplotlib_plot_advanced(
-                    text=text,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel={'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
-                    values=st.session_state['simple_model'],
-                    max_time=slider_time * 60,
-                    dark_length=slider_darklength,
-                    width=15,
-                    height=6,
-                )
+        if version == "Advanced":
+            peaks, _ = find_peaks((PAM_F / PAM_Fmax), height=0)  # Find the Flourescence peaks (Fmaxs)
+            NPQ = ((PAM_F[peaks][0] - PAM_F[peaks])) / PAM_F[peaks]
 
-                st.pyplot(fig_advanced, transparent = True)
-                
-                st.session_state['simple_model'].update({
-                    'old Fluo': st.session_state['simple_model']['Fluo'],
-                    'old NPQ': st.session_state['simple_model']['NPQ'],
-                    'old PhiPSII': st.session_state['simple_model']['PhiPSII'],
-                })
+            prominences, prominences_left, prominences_right = peak_prominences(
+                (PAM_F / PAM_Fmax), peaks
+            )  # Find the minima around the peaks
+            Fo = [
+                (PAM_F / PAM_Fmax)[i] for i in prominences_left
+            ]  # Fo is always the minima before the peak
+            PhiPSII = (PAM_F[peaks] - Fo) / PAM_F[peaks]
+            
+            st.session_state['simple_model'].update({
+                'NPQ': [sim_time[peaks], NPQ],
+                'PhiPSII': [sim_time[peaks], PhiPSII]
+            })
+
+            fig_advanced = make_matplotlib_plot_advanced(
+                text=text,
+                xlabel1=text("AXIS_TIME_S"),
+                xlabel2=text("AXIS_TIME_MIN"),
+                ylabel={'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
+                values=st.session_state['simple_model'],
+                max_time=st.session_state['simple_model_results']['slider_time'] * 60,
+                dark_length=st.session_state['simple_model_results']['slider_darklength'],
+                width=15,
+                height=6,
+            )
+
+            st.pyplot(fig_advanced, transparent = True)
+            
+            st.session_state['simple_model'].update({
+                'old Fluo': st.session_state['simple_model']['Fluo'],
+                'old NPQ': st.session_state['simple_model']['NPQ'],
+                'old PhiPSII': st.session_state['simple_model']['PhiPSII'],
+            })
+    except:
+        pass
 
 
 def make_page(text: Callable[[str], str]) -> None:
