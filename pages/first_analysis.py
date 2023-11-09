@@ -24,26 +24,103 @@ from utils import (
 
 
 def make_matplotlib_plot_advanced(
-    text: Callable[[str], str], xlabel1, xlabel2, ylabel, time, values, max_time, dark_length, width, height
+    text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height
 ):
-    with plt.rc_context(
-        {
-            "axes.spines.right": False,
-            "figure.frameon": True,
-            "axes.facecolor": (0.0, 0.0, 0.0, 0),
-            "figure.facecolor": (0.0, 0.0, 0.0, 0),
-            "figure.edgecolor": (0.0, 0.0, 0.0, 0),
-            "text.color": "#9296a4",
-            "axes.labelcolor": "#9296a4",
-            "xtick.color": "#9296a4",
-            "ytick.color": "#9296a4",
-            "figure.figsize": (width, height),
+    text_color = "#727682"
+    alpha_old = 0.5
+    
+    style_dict = {
+        'Fluo': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'New'
+        },
+        'old Fluo': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': 'Old'
+        },
+        'NPQ': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'New'
+        },
+        'old NPQ': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': 'Old'
+        },
+        'PhiPSII': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'New'
+        },
+        'old PhiPSII': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': 'Old'
         }
-    ):
+    }
+    
+    with plt.rc_context(
+    {
+        "axes.spines.right": False,
+        "axes.edgecolor": text_color,
+        "font.size": 12.0,
+        "text.color": text_color,
+        "axes.labelcolor": text_color,
+        "xtick.color": text_color,
+        "ytick.color": text_color,
+        "grid.color": text_color,
+        "font.weight": 'bold',
+        "figure.figsize": (width, height),
+        
+    }
+        ):
+        
         fig, axs = plt.subplot_mosaic(mosaic=[["A", "A"], ["B", "C"]], constrained_layout=True)
-        axs["A"].plot(time["PAM"], values["PAM"], color="#FF4B4B")
-        axs["B"].plot(time["NPQ"], values["NPQ"], color="#FF4B4B")
-        axs["C"].plot(time["PhiPSII"], values["PhiPSII"], color="#FF4B4B")
+        
+        graph_belong = {
+            'Fluo': 'A',
+            'NPQ': 'B',
+            'PhiPSII': 'C'
+        }
+        
+        for i in {'Fluo', 'NPQ', 'PhiPSII'}:
+            if values.get('old ' + i):
+                axs[graph_belong[i]].plot(
+                        values['old ' + i][0],
+                        values['old ' + i][1],
+                        color = style_dict['old ' + i]['color'],
+                        linestyle = style_dict['old ' + i]['linestyle'],
+                        alpha = style_dict['old ' + i]['alpha'],
+                        label = style_dict['old ' + i]['label']
+                    )
+            axs[graph_belong[i]].plot(
+                    values[i][0],
+                    values[i][1],
+                    color = style_dict[i]['color'],
+                    linestyle = style_dict[i]['linestyle'],
+                    alpha = style_dict[i]['alpha'],
+                    label = style_dict[i]['label']
+                )
+            
+            # Create the top xaxis for the minutes
+            ax_top = axs[graph_belong[i]].secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
+            
+            # Add labels
+            axs[graph_belong[i]].set_xlabel(xlabel1, weight = 'bold', size = 12)
+            axs[graph_belong[i]].set_ylabel(ylabel[i], weight = 'bold', size = 12)
+            ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
+            
+            axs[graph_belong[i]].legend(loc = 'best', ncols=2, frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
+        
 
     for j in range(len([axs["A"], axs["B"], axs["C"]])):
         ax = [axs["A"], axs["B"], axs["C"]][j]
@@ -85,43 +162,67 @@ def make_matplotlib_plot_advanced(
         ax.add_patch(dark_patch)
         ax.add_patch(light_patch)
 
-        # Create the top xaxis for the minutes
-        ax_top = ax.secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
-        ax_top.set_color("#9296a4")
-
-        # Add labels
-        ax.set_xlabel(xlabel1)
-        ax.set_ylabel(ylabel[j])
-        ax_top.set_xlabel(xlabel2)
-
-        for i in [ax, ax_top]:
-            i.spines["bottom"].set_color("#9296a4")
-            i.spines["left"].set_color("#9296a4")
-            i.spines["top"].set_color("#9296a4")
-            i.spines["right"].set_visible(False)
 
     return fig
 
 
 def make_matplotlib_plot(
-    text: Callable[[str], str], xlabel1, xlabel2, ylabel, time, values, max_time, dark_length, width, height
+    text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height
 ):
-    with plt.rc_context(
-        {
-            "axes.spines.right": False,
-            "figure.frameon": True,
-            "axes.facecolor": (0.0, 0.0, 0.0, 0),
-            "figure.facecolor": (0.0, 0.0, 0.0, 0),
-            "figure.edgecolor": (0.0, 0.0, 0.0, 0),
-            "text.color": "#9296a4",
-            "axes.labelcolor": "#9296a4",
-            "xtick.color": "#9296a4",
-            "ytick.color": "#9296a4",
-            "figure.figsize": (width, height),
+    
+    text_color = "#727682"
+    alpha_old = 0.5
+    
+    style_dict = {
+        'Fluo': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'New'
+        },
+        'old Fluo': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': 'Old'
         }
-    ):
+    }
+    
+    with plt.rc_context(
+    {
+        "axes.spines.right": False,
+        "axes.edgecolor": text_color,
+        "font.size": 12.0,
+        "text.color": text_color,
+        "axes.labelcolor": text_color,
+        "xtick.color": text_color,
+        "ytick.color": text_color,
+        "grid.color": text_color,
+        "font.weight": 'bold',
+        "figure.figsize": (width, height),
+        
+    }
+        ):
+        
         fig, ax = plt.subplots()
-        ax.plot(time, values, color="#FF4B4B")
+        for i in ['old Fluo', 'Fluo']:
+            if values.get(i):
+                ax.plot(
+                    values[i][0],
+                    values[i][1],
+                    color = style_dict[i]['color'],
+                    linestyle = style_dict[i]['linestyle'],
+                    alpha = style_dict[i]['alpha'],
+                    label = style_dict[i]['label']
+                )
+        
+        # Create the top xaxis for the minutes
+        ax_top = ax.secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
+        
+        # Add labels
+        ax.set_xlabel(xlabel1, weight = 'bold', size = 12)
+        ax.set_ylabel(ylabel, weight = 'bold', size = 12)
+        ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
 
     # Add the dark phase length to the xticks
     default_xticks = ax.get_xticks()
@@ -161,20 +262,8 @@ def make_matplotlib_plot(
     ax.add_patch(dark_patch)
     ax.add_patch(light_patch)
 
-    # Create the top xaxis for the minutes
-    ax_top = ax.secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
-    ax_top.set_color("#9296a4")
-
-    # Add labels
-    ax.set_xlabel(xlabel1)
-    ax.set_ylabel(ylabel)
-    ax_top.set_xlabel(xlabel2)
-
-    for i in [ax, ax_top]:
-        i.spines["bottom"].set_color("#9296a4")
-        i.spines["left"].set_color("#9296a4")
-        i.spines["top"].set_color("#9296a4")
-        i.spines["right"].set_visible(False)
+    # Create and center legend
+    plt.legend(loc = 'best', ncols = 2, frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
 
     return fig
 
@@ -288,21 +377,33 @@ def make_sim_area(text: Callable[[str], str]) -> None:
             PAM_F = sim_results["Fluo"]
             PAM_Fmax = max(sim_results["Fluo"])
 
+            if 'simple_model' not in st.session_state:
+                st.session_state['simple_model'] = {
+                    'Fluo': [sim_time, PAM_F / PAM_Fmax]
+                }
+            else:
+                st.session_state['simple_model'].update({
+                    'Fluo': [sim_time, PAM_F / PAM_Fmax]
+                })
+            
             if version == "Simple":
                 fig_PAM = make_matplotlib_plot(
                     text=text,
                     xlabel1=text("AXIS_TIME_S"),
                     xlabel2=text("AXIS_TIME_MIN"),
                     ylabel=text("FLUO"),
-                    time=sim_time,
-                    values=PAM_F / PAM_Fmax,
+                    values=st.session_state['simple_model'],
                     max_time=slider_time * 60,
                     dark_length=slider_darklength,
                     width=15,
                     height=3,
                 )
 
-                st.pyplot(fig_PAM)
+                st.pyplot(fig_PAM, transparent=True)
+                
+                st.session_state['simple_model'].update({
+                    'old Fluo': [sim_time, PAM_F / PAM_Fmax]
+                })
 
             if version == "Advanced":
                 peaks, _ = find_peaks((PAM_F / PAM_Fmax), height=0)  # Find the Flourescence peaks (Fmaxs)
@@ -315,21 +416,31 @@ def make_sim_area(text: Callable[[str], str]) -> None:
                     (PAM_F / PAM_Fmax)[i] for i in prominences_left
                 ]  # Fo is always the minima before the peak
                 PhiPSII = (PAM_F[peaks] - Fo) / PAM_F[peaks]
+                
+                st.session_state['simple_model'].update({
+                    'NPQ': [sim_time[peaks], NPQ],
+                    'PhiPSII': [sim_time[peaks], PhiPSII]
+                })
 
                 fig_advanced = make_matplotlib_plot_advanced(
                     text=text,
                     xlabel1=text("AXIS_TIME_S"),
                     xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel=[text("FLUO"), text("AXIS_NPQ"), text("AXIS_PHIPSII")],
-                    time={"PAM": sim_time, "NPQ": sim_time[peaks], "PhiPSII": sim_time[peaks]},
-                    values={"PAM": PAM_F / PAM_Fmax, "NPQ": NPQ, "PhiPSII": PhiPSII},
+                    ylabel={'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
+                    values=st.session_state['simple_model'],
                     max_time=slider_time * 60,
                     dark_length=slider_darklength,
                     width=15,
                     height=6,
                 )
 
-                st.pyplot(fig_advanced)
+                st.pyplot(fig_advanced, transparent = True)
+                
+                st.session_state['simple_model'].update({
+                    'old Fluo': st.session_state['simple_model']['Fluo'],
+                    'old NPQ': st.session_state['simple_model']['NPQ'],
+                    'old PhiPSII': st.session_state['simple_model']['PhiPSII'],
+                })
 
 
 def make_page(text: Callable[[str], str]) -> None:
@@ -624,9 +735,6 @@ if __name__ == "__main__":
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
     make_page(text)
-    include_image(
-        "pictures/slider-default-value.png", 0.6, text("CAPTION_DEFAULT_SLIDERS"), center_caption=True
-    )
     make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")
     make_sidebar()
