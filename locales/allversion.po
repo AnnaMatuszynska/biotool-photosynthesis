@@ -40,7 +40,7 @@ simple-pl msgstr ""
 simple-es msgstr ""
 
 # SIDEBAR
-msgid "SIMPLE"
+msgid "4BIO"
 advanced-en msgstr "Simple"
 advanced-de msgstr "Einfach"
 advanced-fr msgstr ""
@@ -53,7 +53,7 @@ simple-pl msgstr "Podstawowy"
 simple-es msgstr ""
 
 
-msgid "ADVANCED"
+msgid "4STEM"
 advanced-en msgstr "Advanced"
 advanced-de msgstr "Fortgeschritten"
 advanced-fr msgstr ""
@@ -252,7 +252,7 @@ simple-es msgstr "We aimed at both curious **newcomers** and more **advanced** l
 
 #: Start.py:17
 # Grammarly checked
-msgid "ADVANCED_USE"
+msgid "4STEM_USE"
 advanced-en msgstr "In this <a href='#' id='Advanced'>Advanced</a> version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
 advanced-de msgstr "Nehmen wir an, Sie wählen die <a href='#' id='Advanced'>Fortgeschritten</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
 advanced-fr msgstr ""

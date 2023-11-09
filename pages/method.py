@@ -44,7 +44,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             caption=text("CAPTION_ABB2"),
         )
 
-    # if version == "Advanced":
+    # if version == "4STEM":
     #     with st.expander(text("SATURATING_PULSES")):
     #         st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
 
@@ -68,7 +68,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
         st.markdown(text("LITERATURE_DECLARATION"), unsafe_allow_html=True)
-        if version == "Advanced":
+        if version == "4STEM":
             """
             - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
             """
@@ -76,7 +76,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - Nies, T., Niu, Y., Ebenhöh, O., Matsubara, S., & Matuszyńska, A. (2021). Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research (p. 2021.05.12.443801). bioRxiv. https://doi.org/10.1101/2021.05.12.443801
 
             """
-        elif version == "Simple":
+        elif version == "4Bio":
             if language == "German":
                 """
                 - https://link.springer.com/referenceworkentry/10.1007/978-3-662-53493-9_13-1
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version: str = st.session_state.setdefault("version", "Simple")
+    version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()

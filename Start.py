@@ -17,12 +17,12 @@ def make_introduction(text: Callable[[str], str]) -> None:
     st.video("https://youtu.be/KvyjIWLD8rU")
     st.markdown(text("HEADLINE_USAGE"))
     markdown_click("USAGE", text)
-    markdown_click("ADVANCED_USE", text)
+    markdown_click("4STEM_USE", text)
 
 
 # FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
-    if version == "Simple":
+    if version == "4Bio":
         st.markdown(text("DROP_BOX_INTRO"))
         with st.expander(text("EXPANDER_IN")):
             st.markdown(text("EXPLANATION_IN_VITRO"))
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version: str = st.session_state.setdefault("version", "Simple")
+    version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
 
     text = get_localised_text(version, language)

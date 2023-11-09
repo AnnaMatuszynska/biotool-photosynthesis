@@ -330,7 +330,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
     with col2:
         slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
 
-    if version == "Advanced":
+    if version == "4STEM":
         col1, col2 = st.columns(2)
         with col1:
             slider_aktivation = st.select_slider(
@@ -399,7 +399,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
                 'Fluo': [sim_time, PAM_F / PAM_Fmax]
             })
         
-        if version == "Simple":
+        if version == "4Bio":
             fig_PAM = make_matplotlib_plot(
                 text=text,
                 xlabel1=text("AXIS_TIME_S"),
@@ -418,7 +418,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
                 'old Fluo': [sim_time, PAM_F / PAM_Fmax]
             })
 
-        if version == "Advanced":
+        if version == "4STEM":
             peaks, _ = find_peaks((PAM_F / PAM_Fmax), height=0)  # Find the Flourescence peaks (Fmaxs)
             NPQ = ((PAM_F[peaks][0] - PAM_F[peaks])) / PAM_F[peaks]
 
@@ -475,7 +475,7 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("RATES_5"))
     st.markdown(text("RATES_6"), unsafe_allow_html=True)
 
-    if version == "Advanced":
+    if version == "4STEM":
         st.markdown(text("HEADLINE_MODEL_EQUATIONS"))
         st.markdown(text("MODEL_EQUATIONS_INTRODUCTION"))
         st.latex(
@@ -521,10 +521,10 @@ def make_page(text: Callable[[str], str]) -> None:
 
     st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
 
-    if version == "Simple":
+    if version == "4Bio":
         markdown_click("IMPLEMENTATION_TO_EXPERT", text)
 
-    if version == "Advanced":
+    if version == "4STEM":
         with st.expander(text("MODEL_CODE_EXPANDER")):
             st.markdown(text("CONSTRUCTION_HEADER"))
             st.markdown(text("CONSTRUCTION_1"))
@@ -751,7 +751,7 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
                 "    - Does this depend on the other settings?\n"
             )
-            if version == "Advanced":
+            if version == "4STEM":
                 st.markdown(
                     "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
                     "    - How does the simulated NPQ graph behave when you increase the Zeaxanthin conversion rate? And the Violaxanthin rate?\n"
@@ -779,7 +779,7 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - With a light intensity of 500 to 900 μmol m⁻² s⁻¹ the NPQ adaption seems to be finished after three to four seconds. We should measure at least this long to capture the whole process.\n"
                 "    - With lower light intensities this adaption process takes less time. So a shorter measurement might be feasible.\n"
             )
-            if version == "Advanced":
+            if version == "4STEM":
                 st.markdown(
                     "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
                     "    - If we increase the Zeaxanthin conversion rate, the maximal NPQ activity increases up to a factor of about two.\n"
@@ -809,7 +809,7 @@ if __name__ == "__main__":
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    version: str = st.session_state.setdefault("version", "Simple")
+    version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
