@@ -10,13 +10,13 @@ from utils import (
 )
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
-    st.markdown(text("HEADLINE_CONCLUSION"))
+    st.markdown(text("CON_HEADLINE_CONCLUSION"))
 
-    st.markdown(text("CONCLUSION_TEXT_ONE"))
+    st.markdown(text("CON_CONCLUSION_TEXT_ONE"))
 
     include_image("pictures/photosynthesis_productivity.gif", 0.7)
 
-    st.markdown(text("CONCLUSION_TEXT_TWO"))
+    st.markdown(text("CON_CONCLUSION_TEXT_TWO"))
 
 
 if __name__ == "__main__":

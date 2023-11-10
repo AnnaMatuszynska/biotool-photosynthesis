@@ -40,7 +40,7 @@ msgid "INSERT_PLACEHOLDER_HERE"
 4bio-es msgstr ""
 
 # SIDEBAR
-msgid "4BIO"
+msgid "SDE_4BIO"
 4stem-en msgstr "4Bio"
 4stem-de msgstr "4Bio"
 4stem-fr msgstr "4Bio"
@@ -53,7 +53,7 @@ msgid "4BIO"
 4bio-es msgstr "4Bio"
 
 
-msgid "4STEM"
+msgid "SDE_4STEM"
 4stem-en msgstr "4STEM"
 4stem-de msgstr "4STEM"
 4stem-fr msgstr "4STEM"
@@ -65,21 +65,8 @@ msgid "4STEM"
 4bio-pl msgstr "4STEM"
 4bio-es msgstr "4STEM"
 
-#: EINFÜHRUNG.py:
-msgid "LANGUAGE"
-4stem-en msgstr "Language"
-4stem-de msgstr "Sprache"
-4stem-fr msgstr "Langue"
-4stem-pl msgstr "Język"
-4stem-es msgstr "Idioma"
-4bio-en msgstr "Language"
-4bio-de msgstr "Sprache"
-4bio-fr msgstr "Langue"
-4bio-pl msgstr "Język"
-4bio-es msgstr "Idioma"
-
 #: This can be copied to add new text entries with translations
-msgid "EXPANDER_ABOUT"
+msgid "STR_EXPANDER_ABOUT"
 4stem-en msgstr "About this Website"
 4stem-de msgstr "Über diese Webseite"
 4stem-fr msgstr ""
@@ -93,7 +80,7 @@ msgid "EXPANDER_ABOUT"
 
 #: pages/Start.py:13
 # Grammarly checked
-msgid "EXPLANATION_ABOUT"
+msgid "STR_EXPLANATION_ABOUT"
 4stem-en msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information on downloading and running the notebook, please refer to the `README.md` file on GitHub."
 4stem-de msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
 4stem-fr msgstr ""
@@ -119,7 +106,7 @@ msgid "LITERATURE"
 4bio-es msgstr ""
 
 #: pages/1 Messmethode.py:50
-msgid "LITERATURE_DECLARATION"
+msgid "MTH_LITERATURE_DECLARATION"
 4stem-en msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
 4stem-de msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
 4stem-fr msgstr ""
@@ -131,48 +118,9 @@ msgid "LITERATURE_DECLARATION"
 4bio-pl msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
 4bio-es msgstr ""
 
-
-msgid "CAPTION_PAM"
-4stem-en msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
-4stem-es msgstr ""
-4bio-en msgstr "Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment."
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:36
-msgid "HEADLINE_PRODUCENTEN"
-4stem-en msgstr "#### Consumers vs producers"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr "#### Producenci kontra konsumenci"
-4stem-es msgstr ""
-4bio-en msgstr "#### Consumers vs producers"
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr "#### Producenci kontra konsumenci"
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:37
-msgid "PRODUCENTEN_EXPLANATION"
-4stem-en msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr "Przez **konsumenta** rozumiemy żywe istoty, które żywią się biomasą produkowaną przez inne żywe istoty. Wszystkie żywe istoty, które mogą produkować biomasę, nazywane są **producentami**. Należą do nich w szczególności rośliny. Mogą one produkować biomasę niezależnie, na przykład poprzez fotosyntezę."
-4stem-es msgstr ""
-4bio-en msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings that can produce biomass are called **producers**. These include, in particular, plants. These can produce biomass independently through photosynthesis, for example."
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr "Przez **konsumenta** rozumiemy żywe istoty, które żywią się biomasą produkowaną przez inne żywe istoty. Wszystkie żywe istoty, które mogą produkować biomasę, nazywane są **producentami**. Należą do nich w szczególności rośliny. Mogą one produkować biomasę niezależnie, na przykład poprzez fotosyntezę."
-4bio-es msgstr ""
-
 #: Start.py:10
 #: EINFÜHRUNG.py:21
-msgid "HEADLINE_MAIN"
+msgid "STR_HEADLINE_MAIN"
 4stem-en msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
 4stem-de msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung der Photosynthese anhand eines Computermodells."
 4stem-fr msgstr ""
@@ -187,7 +135,7 @@ msgid "HEADLINE_MAIN"
 #: Start.py:11
 #: Intro by Anna
 # Grammarly checked
-msgid "INTRO"
+msgid "STR_INTRO"
 4stem-en msgstr "Welcome to a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of 21st-century students. We want to show how computational modeling supports the current research in increasing our understanding of how the world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening to the process of photosynthesis."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -202,7 +150,7 @@ msgid "INTRO"
 #: Start.py:15
 #: EINFÜHRUNG.py:24
 # Grammarly checked
-msgid "HEADLINE_USAGE"
+msgid "STR_HEADLINE_USAGE"
 4stem-en msgstr "## How to use this website"
 4stem-de msgstr "## Nutzung dieser Website"
 4stem-fr msgstr ""
@@ -216,7 +164,7 @@ msgid "HEADLINE_USAGE"
 
 #: Start.py:16
 # Grammarly checked
-msgid "USAGE"
+msgid "STR_USAGE"
 4stem-en msgstr "We aimed at both curious <b>newcomers</b> and more <b>advanced</b> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>4Bio</i>, if you feel more comforable with biology, or <i>4STEM</i>, if you want to experience the mathematical background in more detail."
 4stem-de msgstr "Wir richten uns sowohl an neugierige <b>Neulinge</b> als auch an <b>Fortgeschrittene</b> Lernende. Wenn Sie diese Website nutzen, können Sie wählen, welche Version Sie verwenden möchten, indem Sie auf die Schaltfläche auf der linken Seite klicken und aus der Dropdown-Liste auswählen: <i>4Bio</i>, wenn sie sich mit der Biologie sicherer fühlen, oder <i>4Bio</i>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
 4stem-fr msgstr ""
@@ -230,7 +178,7 @@ msgid "USAGE"
 
 #: Start.py:17
 # Grammarly checked
-msgid "4STEM_USE"
+msgid "STR_4STEM_USE"
 4stem-en msgstr "In this 4STEM version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating <i>in silico</i> mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex <i>in silico</i> mutants, and more outputs will be generated."
 4stem-de msgstr "In deiser 4STEM-Version Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
 4stem-fr msgstr ""
@@ -244,7 +192,7 @@ msgid "4STEM_USE"
 
 #: Start.py:18
 # Grammarly checked
-msgid "DROP_BOX_INTRO"
+msgid "STR_DROP_BOX_INTRO"
 4stem-en msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 4stem-de msgstr "Wenn Sie den Unterschied zwischen *in vitro*, *in vivo* und *in silico* nicht kennen, öffnen Sie die Dropbox unten."
 4stem-fr msgstr ""
@@ -258,7 +206,7 @@ msgid "DROP_BOX_INTRO"
 
 #: Start.py:23
 #: EINFÜHRUNG.py:28
-msgid "EXPANDER_IN"
+msgid "STR_EXPANDER_IN"
 4stem-en msgstr "Differences between _in vitro_, _in vivo_ and _in silico_"
 4stem-de msgstr "Unterschiede zwischen _in vitro_, _in vivo_ und _in silico_"
 4stem-fr msgstr ""
@@ -272,7 +220,7 @@ msgid "EXPANDER_IN"
 
 #: Start.py:24
 #: EINFÜHRUNG.py:28
-msgid "EXPLANATION_IN_VITRO"
+msgid "STR_EXPLANATION_IN_VITRO"
 4stem-en msgstr "*In vitro* refers to experiments conducted outside a living organism in a controlled laboratory setting."
 4stem-de msgstr "*In vitro* bezieht sich auf Experimente, die außerhalb eines lebenden Organismus in einer kontrollierten Laborumgebung durchgeführt werden."
 4stem-fr msgstr ""
@@ -286,7 +234,7 @@ msgid "EXPLANATION_IN_VITRO"
 
 #: Start.py:25
 #: EINFÜHRUNG.py:28
-msgid "EXPLANATION_IN_VIVO"
+msgid "STR_EXPLANATION_IN_VIVO"
 4stem-en msgstr "*In vivo* refers to experiments conducted inside a living organism, usually animals or humans."
 4stem-de msgstr "*In vivo* bezieht sich auf Experimente, die in einem lebenden Organismus, in der Regel einem Tier oder einem Menschen, durchgeführt werden."
 4stem-fr msgstr ""
@@ -300,7 +248,7 @@ msgid "EXPLANATION_IN_VIVO"
 
 #: Start.py:26
 #: EINFÜHRUNG.py:28
-msgid "EXPLANATION_IN_SILICO"
+msgid "STR_EXPLANATION_IN_SILICO"
 4stem-en msgstr "*In silico* refers to computational experiments and simulations performed using computer models and algorithms."
 4stem-de msgstr "*In silico* bezieht sich auf Computerexperimente und -simulationen, die mit Hilfe von Computermodellen und -algorithmen durchgeführt werden."
 4stem-fr msgstr ""
@@ -313,7 +261,7 @@ msgid "EXPLANATION_IN_SILICO"
 4bio-es msgstr ""
 
 #: pages/1 Messmethode.py:50
-msgid "HEADLINE_PAGES"
+msgid "STR_HEADLINE_PAGES"
 4stem-en msgstr "## Abstract of the pages"
 4stem-de msgstr "## Zusammenfassung der Seiten"
 4stem-fr msgstr ""
@@ -327,7 +275,7 @@ msgid "HEADLINE_PAGES"
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
-msgid "INTRODUCTION_PAGES"
+msgid "STR_INTRODUCTION_PAGES"
 4stem-en msgstr "In the following, we will give you a short overview of what you can expect on the following pages."
 4stem-de msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie auf den folgenden Seiten erwartet."
 4stem-fr msgstr ""
@@ -341,7 +289,7 @@ msgid "INTRODUCTION_PAGES"
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
-msgid "PHOTOSYNTHESIS"
+msgid "STR_PHOTOSYNTHESIS"
 4stem-en msgstr "The **photosynthesis page** will summarize the fundamental mechanisms of photosynthesis, in-depth information on climate change, and a molecular description of the photoprotective mechanism."
 4stem-de msgstr "Auf der Seite <b>Photosynthese</b> erfahren Sie alles, was Sie über die Photosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können. In dieser 4STEM-Version gibt es ausführlichere Informationen über den Klimawandel sowie eine molekulare Beschreibung des Photoprotektionsmechanismus."
 4stem-fr msgstr ""
@@ -355,7 +303,7 @@ msgid "PHOTOSYNTHESIS"
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
-msgid "METHOD"
+msgid "STR_METHOD"
 4stem-en msgstr "The **measuring method page** will explain a state-of-the-art method of measuring photosynthetic parameters using non-invasive fluorescence. Literature for further reading is also provided."
 4stem-de msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir eine spezielle Messmethode. Diese wird auf der Seite <b>Messmethode</b> vorgestellt. Darüber hinaus gehen wir darauf ein, wie wir unsere Messungen sichtbar machen können. In dieser 4STEM-Version bieten wir zusätzlich Links zu Fachliteratur, in der Sie mehr über die Fluoreszenzmessungen erfahren können."
 4stem-fr msgstr ""
@@ -369,7 +317,7 @@ msgid "METHOD"
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
-msgid "MODEL"
+msgid "STR_MODEL"
 4stem-en msgstr "Mathematical modelling therory and examples of popular models be presented on the **computational models page**. Additionally, we demonstrate the implementation of mathematical model in a programming language Python."
 4stem-de msgstr "Wie die Überschrift schon sagt, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Auf der Seite <b>Computermodelle</b> erfahren Sie etwas über mathematische Modelle im Allgemeinen und etwas über Photosynthesemodelle."
 4stem-fr msgstr ""
@@ -383,7 +331,7 @@ msgid "MODEL"
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
-msgid "EXPERIMENT"
+msgid "STR_EXPERIMENT"
 4stem-en msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003) ) which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained, and simple simulations will be performed, including the editing of model parameters."
 4stem-de msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003)) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen."
 4stem-fr msgstr ""
@@ -397,7 +345,7 @@ msgid "EXPERIMENT"
 
 #: pages/1 Messmethode.py:50
 # Grammarly checked
-msgid "MEMORY"
+msgid "STR_MEMORY"
 4stem-en msgstr "Lastly, the **plant light memory page** will explain how the plant non-photochemical quenching mechanism leads to a memory effect of light conditions and how the mathematical model can be used for investigation."
 4stem-de msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das pflanzliche Lichtgedächtnis kennen und können dessen Existenz selbständig mit Experimenten nachweisen."
 4stem-fr msgstr ""
@@ -411,7 +359,7 @@ msgid "MEMORY"
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
-msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
+msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
 4stem-en msgstr "# Photosynthesis"
 4stem-de msgstr "# Fotosynthese"
 4stem-fr msgstr ""
@@ -425,7 +373,7 @@ msgid "HEADLINE_PHOTOSYNTHESIS_PAGE"
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
-msgid "HEADLINE_CLIMATE"
+msgid "PHO_HEADLINE_CLIMATE"
 4stem-en msgstr "## Climate Change"
 4stem-de msgstr "## Klimawandel"
 4stem-fr msgstr ""
@@ -440,7 +388,7 @@ msgid "HEADLINE_CLIMATE"
 #: pages/photosynthesis.py:11
 #: Lisa's introduction
 # Grammarly checked
-msgid "INTRODUCTION_CLIMATE_CHANGE"
+msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
 4stem-en msgstr "*Climate* is defined as the average statistical measurements of the weather over a long period in a specific place. *Climate change* is defined as a worldwide change in the climate. Three main categories can induce a change in the climate:"
 4stem-de msgstr "Das *Klima* selbst ist definiert als die durchschnittlichen statistischen Messungen des Wetters über einen langen \
         Zeitraum an einem bestimmten Ort. *Klimawandel* ist definiert als eine weltweite Veränderung des Klimas. Drei \
@@ -466,7 +414,7 @@ msgid "INTRODUCTION_CLIMATE_CHANGE"
 
 #: pages/photosynthesis.py:14
 #: Lisa's introduction
-msgid "POINT_1"
+msgid "PHO_POINT_1"
 4stem-en msgstr "- plate tectonics and vulcanism"
 4stem-de msgstr "- Plattentektonik und Vulkanismus"
 4stem-fr msgstr "- plate tectonics and vulcanism"
@@ -480,7 +428,7 @@ msgid "POINT_1"
 
 #: pages/photosynthesis.py:15
 #: Lisa's introduction
-msgid "POINT_2"
+msgid "PHO_POINT_2"
 4stem-en msgstr "- earth orbit transitions"
 4stem-de msgstr "- Erdumlaufbahnübergänge"
 4stem-fr msgstr "- earth orbit transitions"
@@ -494,7 +442,7 @@ msgid "POINT_2"
 
 #: pages/photosynthesis.py:16
 #: Lisa's introduction
-msgid "POINT_3"
+msgid "PHO_POINT_3"
 4stem-en msgstr "- emissions of heat-trapping gasses"
 4stem-de msgstr "- Emissionen wärmespeichernder Gase"
 4stem-fr msgstr "- emissions of heat-trapping gasses"
@@ -509,7 +457,7 @@ msgid "POINT_3"
 #: pages/photosynthesis.py:17
 #: Lisa's introduction
 # Grammarly checked
-msgid "END_OF_INTRODUCTION"
+msgid "PHO_END_OF_INTRODUCTION"
 4stem-en msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that we are currently in human-caused global warming (Cook et al., 2016). Research is needed to understand the impact of the sudden rise of Earth's Temperature."
 4stem-de msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Jahr 2016 stimmten *97 % der Klimaforscher* \
         darin überein, dass wir uns derzeit in einer vom Menschen verursachten globalen Erwärmung befinden (Cook et al., 2016), und dass \
@@ -525,7 +473,7 @@ msgid "END_OF_INTRODUCTION"
 
 #: pages/photosynthesis.py:32
 #: EINFÜHRUNG.py:42
-msgid "HEADLINE_PHOTOSYNTHESIS"
+msgid "PHO_HEADLINE_PHOTOSYNTHESIS"
 4stem-en msgstr "## Process of Photosynthesis"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -540,7 +488,7 @@ msgid "HEADLINE_PHOTOSYNTHESIS"
 #: pages/photosynthesis.py:33
 #: EINFÜHRUNG.py:43
 # Grammarly checked
-msgid "PHOTOSYNTHESIS_EXPLANATION_1"
+msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_1"
 4stem-en msgstr "Plants are autotrophic and can thus produce complex organic compounds like sugars, lipids, and proteins from simple nutrients."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -554,7 +502,7 @@ msgid "PHOTOSYNTHESIS_EXPLANATION_1"
 
 #: pages/photosynthesis.py:34
 # Grammarly checked
-msgid "PHOTOSYNTHESIS_EXPLANATION_2"
+msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
 4stem-en msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolized into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus producing molecular oxygen."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -568,7 +516,7 @@ msgid "PHOTOSYNTHESIS_EXPLANATION_2"
 
 #: pages/photosynthesis.py:44
 #: EINFÜHRUNG.py:43
-msgid "CAPTION_FOTOSYNTHESE_PICTURE"
+msgid "PHO_CAPTION_FOTOSYNTHESE_PICTURE"
 4stem-en msgstr "Simplified photosynthesis process"
 4stem-de msgstr "Photosynthese Ablauf"
 4stem-fr msgstr "Photosynthesis process"
@@ -582,7 +530,7 @@ msgid "CAPTION_FOTOSYNTHESE_PICTURE"
 
 #: pages/photosynthesis.py:47
 # Grmmarly checked
-msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
+msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 4stem-en msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures that delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic carriers use light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
 4stem-de msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
 4stem-fr msgstr ""
@@ -597,7 +545,7 @@ msgid "CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 #: pages/photosynthesis.py:56
 #: EINFÜHRUNG.py:54
 # Grammarly checked
-msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
+msgid "PHO_HEADLINE_PHOTOSYNTHESIS_LOCATION"
 4stem-en msgstr "## Place of photosynthesis"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -611,7 +559,7 @@ msgid "HEADLINE_PHOTOSYNTHESIS_LOCATION"
 
 #: pages/photosynthesis.py:57
 # Grammarly checked
-msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
+msgid "PHO_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 4stem-en msgstr "Photosynthesis occurs in the cells of the primarily green components of plants, mainly within mesophyll cells. Chloroplast organelles within these cells perform the conversion of light energy into chemical energy equivalents, commonly called 'light reaction'. Two types of photosystems exist within the series of protein complexes used for this energy conversion. Both contain chlorophyll reaction centers, which, upon light absorption, can oxidize compounds with high redox potential (e.g. H₂O) and reduce acceptors with low redox potential (e.g. NADP⁺). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -625,7 +573,7 @@ msgid "PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 
 #: pages/photosynthesis.py:68
 # Grammarly checked
-msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
+msgid "PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 4stem-en msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
 4stem-de msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
 4stem-fr msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
@@ -639,7 +587,7 @@ msgid "CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 
 #: pages/photosynthesis.py:51
 # Grammarly checked
-msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
+msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 4stem-en msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\nThe following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -653,7 +601,7 @@ msgid "PHOTOSYNTHESIS_LOCATION_CONTINUE"
 
 #: pages/photosynthesis.py:75
 #: EINFÜHRUNG.py:59
-msgid "HEADLINE_NPQ"
+msgid "PHO_HEADLINE_NPQ"
 4stem-en msgstr "## How to deal with too much light?"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -667,7 +615,7 @@ msgid "HEADLINE_NPQ"
 
 #: pages/photosynthesis.py:76
 # Grammarly checked
-msgid "NPQ_EXPLANATION"
+msgid "PHO_NPQ_EXPLANATION"
 4stem-en msgstr "If the photosystems absorb too much light energy, protein breakdown, and cellular damage by producing radical oxygen species can ensue. Therefore, multiple preventive mechanisms exist to reduce high light damage, ranging from the adaption of the photosystems to the movement of chloroplasts and whole leaves. Processes on the scale of the photosystems are acting the fastest and usually result in light energy being directly emitted as heat. Such processes are collectively called non-photochemical quenching (NPQ). The following pages will present the model representing the plant 'Xanthophyll cycle', where the enzymatic interconversion of carotenoids leads to a system with tunable light absorption for dissipation as heat."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -681,7 +629,7 @@ msgid "NPQ_EXPLANATION"
 
 #: pages/photosynthesis.py:78
 #: pages/1 Messmethode.py:40
-msgid "HEADER_MODEL_ORGANISMEN"
+msgid "PHO_HEADER_MODEL_ORGANISMEN"
 4stem-en msgstr "## One plant to rule them all"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -695,7 +643,7 @@ msgid "HEADER_MODEL_ORGANISMEN"
 
 #: pages/photosynthesis.py:79
 # Grammarly checked
-msgid "MODEL_ORGANISMEN_EXPLANATION"
+msgid "PHO_MODEL_ORGANISMEN_EXPLANATION"
 4stem-en msgstr "While the presented methods and models apply to many plants, most were developed for the model plant *Arabidopsis Thaliana*."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -710,7 +658,7 @@ msgid "MODEL_ORGANISMEN_EXPLANATION"
 #: pages/photosynthesis.py:81
 #: pages/1 Messmethode.py:40
 # Grammarly checked
-msgid "EXPANDER_MODEL_ORGANISMEN"
+msgid "PHO_EXPANDER_MODEL_ORGANISMEN"
 4stem-en msgstr "Why is Arabidopsis thaliana a model organism?"
 4stem-de msgstr "Wieso wird Arabidopsis thaliana als Modellorganismus bezeichnet?"
 4stem-fr msgstr "Why is Arabidopsis thaliana a model organism?"
@@ -725,7 +673,7 @@ msgid "EXPANDER_MODEL_ORGANISMEN"
 #: pages/photosynthesis.py:85
 #: pages/1 Messmethode.py:40
 # Grammarly checked
-msgid "CAPTION_THAIANA_PICTURE"
+msgid "PHO_CAPTION_THAIANA_PICTURE"
 4stem-en msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 4stem-de msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis thaliana_."
 4stem-fr msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
@@ -739,7 +687,7 @@ msgid "CAPTION_THAIANA_PICTURE"
 
 #: pages/photosynthesis.py:87
 # Grammarly checked
-msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION"
+msgid "PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"
 4stem-en msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model system in plant biology. It has several characteristics that make it well-suited for laboratory studies, including:\n"
 "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study multiple generations in a relatively short period of time.\n"
 "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to study specific developmental processes.\n"
@@ -776,7 +724,7 @@ msgid "LITERATURE_ONPAGE"
 
 #: pages/method.py:10
 #: pages/1 Messmethode.py:30
-msgid "HEADLINE_ONE"
+msgid "MTH_HEADLINE_ONE"
 4stem-en msgstr "# Measuring method"
 4stem-de msgstr "# Die Messmethode"
 4stem-fr msgstr ""
@@ -790,7 +738,7 @@ msgid "HEADLINE_ONE"
 
 #: pages/method.py:15
 # Grammarly checked
-msgid "INTRODUCTION_MEASUREMENT"
+msgid "MTH_INTRODUCTION_MEASUREMENT"
 4stem-en msgstr "To quantitatively measure the photosynthetic activity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are challenging to perform in the field, fluorescence measurements can be performed on plants of various sizes and in multiple environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the European Space Agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
 4stem-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
         mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
@@ -816,7 +764,7 @@ msgid "INTRODUCTION_MEASUREMENT"
 
 #: pages/method.py:18
 # Grammarly checked
-msgid "CAPTION_ABB1"
+msgid "MTH_CAPTION_ABB1"
 4stem-en msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
 4stem-de msgstr "Foto einer Pflanze der Art Spathiphyllum, in drei verschiedenen Beleuchtungssituationen: Links in Tageslicht, \
         in der Mitte beleuchtet von einer handelsüblichen UV5-Lampe, Rechts ebenfalls beleuchtet mit einer UV5-Lampe, \
@@ -834,7 +782,7 @@ msgid "CAPTION_ABB1"
 
 #: pages/method.py:20
 #: Explanation by Tobias
-msgid "GROWING_PLANTS_1"
+msgid "MTH_GROWING_PLANTS_1"
 4stem-en msgstr "Chlorophyll fluorescence"
 4stem-de msgstr "Leuchtende Pflanzen?"
 4stem-fr msgstr "Glowing Plants?"
@@ -849,7 +797,7 @@ msgid "GROWING_PLANTS_1"
 #: pages/method.py:22
 #: Explanation by Tobias
 # Grammarly checked
-msgid "INTRODUCTION_GLOWING"
+msgid "MTH_INTRODUCTION_GLOWING"
 4stem-en msgstr "Fluorescence measurements of plants are based on the properties of excited chlorophyll. While a significant fraction of light energy is used for photochemistry, excitations can also be dissipated as heat or fluorescence in the red wavelength spectrum."
 4stem-de msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchten! Wenn Licht auf sie fällt, betreiben \
         sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
@@ -870,7 +818,7 @@ msgid "INTRODUCTION_GLOWING"
 #: pages/method.py:23
 #: Explanation by Tobias
 # Grammarly checked
-msgid "PLANT_ARE_SHINING_RED"
+msgid "MTH_PLANT_ARE_SHINING_RED"
 4stem-en msgstr "Stray environmental light, especially the green fraction reflected by the leaf, usually masks the fluorescence from observation.  Therefore, one way to overcome this limitation is by inducing strong fluorescence and reducing the stray light."
 4stem-de msgstr "Jetzt werden Sie vielleicht denken: 'Aber Pflanzen sind doch grün, und ich habe noch nie eine fluoreszierende \
         Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren \
@@ -891,7 +839,7 @@ msgid "PLANT_ARE_SHINING_RED"
 #: pages/method.py:24
 #: Explanation by Tobias
 # Grammarly checked
-msgid "INTRODUCTION_EXPERIMENT"
+msgid "MTH_INTRODUCTION_EXPERIMENT"
 4stem-en msgstr "We used a powerful UV light source for chlorophyll excitation in the following example. We covered the camera with a red-pass filter to limit light detection to the fluorescence range. We also initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
 4stem-de msgstr "Deshalb haben wir ein kleines Experiment für Sie vorbereitet: Hier haben wir einen kleinen Teil des Blattes \
         einer Pflanze mit einem Aufkleber abgedeckt und werden ihn nun mit starkem Licht bestrahlen. Der Rotfilter der \
@@ -912,7 +860,7 @@ msgid "INTRODUCTION_EXPERIMENT"
 #: pages/method.py:30
 #: Explanation by Tobias
 # Grammarly checked
-msgid "EXPLANATION_VIDEO"
+msgid "MTH_EXPLANATION_VIDEO"
 4stem-en msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. However, upon removal of the sticker, the covered tissue without induced light protection received intense illumination, producing a solid fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualizes chlorophyll fluorescence and the leaf adaption to light."
 4stem-de msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben gerade \
         die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre \
@@ -942,7 +890,7 @@ msgid "EXPLANATION_VIDEO"
 
 #: pages/method.py:32
 #: Explanation by Tobias
-msgid "MEASURING_FLUORESZENZ"
+msgid "MTH_MEASURING_FLUORESZENZ"
 4stem-en msgstr "Measuring Photosynthesis with Fluorescence"
 4stem-de msgstr "Messung der Fotosynthese mit Fluoreszenz"
 4stem-fr msgstr "Measuring Photosynthesis with Fluorescence"
@@ -957,7 +905,7 @@ msgid "MEASURING_FLUORESZENZ"
 #: pages/method.py:33
 #: Explanation by Tobias
 # Grammarly checked
-msgid "EXPLANATION_MEASUREMENT_1"
+msgid "MTH_EXPLANATION_MEASUREMENT_1"
 4stem-en msgstr "The above experiment also visualized the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centers where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads to a buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -976,7 +924,7 @@ msgid "EXPLANATION_MEASUREMENT_1"
 #: pages/method.py:34
 #: Explanation by Tobias
 # Grammarly checked
-msgid "INTRODUCTION_PHI"
+msgid "MTH_INTRODUCTION_PHI"
 4stem-en msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalized to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). Photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified by relating measurements within a PAM protocol and observing the fluorescence dynamics."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -997,7 +945,7 @@ msgid "INTRODUCTION_PHI"
 #: pages/method.py:37
 #: Explanation by Tobias
 
-msgid "MEASURING_LIGHT_FLUORESCENCE"
+msgid "MTH_MEASURING_LIGHT_FLUORESCENCE"
 4stem-en msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 4stem-de msgstr "Messung von Licht und Fluoreszenz"
 4stem-fr msgstr "Basic principles of chlorophyll fluorescence"
@@ -1012,7 +960,7 @@ msgid "MEASURING_LIGHT_FLUORESCENCE"
 #: pages/method.py:38
 #: Explanation by Tobias
 # Grammarly checked
-msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
+msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
 4stem-en msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualizes the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behavior of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as the lower panel shows. This summary figure is reproduced from Nies et al. (2021)."
 4stem-de msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
         diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
@@ -1032,7 +980,7 @@ msgid "EXPLANATION_INTRODUCTION_ATTEMPTS"
 
 #: pages/method.py:41 pages/method.py:61
 # Grammarly checked
-msgid "CAPTION_ABB2"
+msgid "MTH_CAPTION_ABB2"
 4stem-en msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 4stem-de msgstr ""
 4stem-fr msgstr "Example Graph of a PAM measurement"
@@ -1046,7 +994,7 @@ msgid "CAPTION_ABB2"
 
 #: pages/method.py:43
 # Grammarly checked
-msgid "HEADLINE_PAM_MEASUREMENT"
+msgid "MTH_HEADLINE_PAM_MEASUREMENT"
 4stem-en msgstr "### PAM Experiments"
 4stem-de msgstr "### PAM Experimente"
 4stem-fr msgstr ""
@@ -1060,7 +1008,7 @@ msgid "HEADLINE_PAM_MEASUREMENT"
 
 #: pages/method.py:43
 # Grammarly checked
-msgid "INTRODUCTION_PAM_MEASUREMENT"
+msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
 4stem-en msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For a more in-depth overview, please consider the literature at the bottom of the page."
 4stem-de msgstr "Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
         Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
@@ -1080,7 +1028,7 @@ msgid "INTRODUCTION_PAM_MEASUREMENT"
 
 #: pages/method.py:46
 #: Explanation by Tobias
-msgid "SATURATING_PULSES"
+msgid "MTH_SATURATING_PULSES"
 4stem-en msgstr "Saturating Pulses"
 4stem-de msgstr "Sättigungsimpulse"
 4stem-fr msgstr "Saturating Pulses"
@@ -1095,7 +1043,7 @@ msgid "SATURATING_PULSES"
 #: pages/method.py:47
 #: Explanation by Tobias
 # Grammarly checked
-msgid "EXPLANATION_ATTEMPTS"
+msgid "MTH_EXPLANATION_ATTEMPTS"
 4stem-en msgstr "You need to know one more aspect of PAM: the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside photosynthesis, for example, the plant's light protection. When you also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
 4stem-de msgstr "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
         paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
@@ -1142,7 +1090,7 @@ msgid "EXPLANATION_ATTEMPTS"
 
 #: pages/method.py:49
 #: pages/1 Messmethode.py:40
-msgid "HEADLINE_ILLUSTRATION"
+msgid "MTH_HEADLINE_ILLUSTRATION"
 4stem-en msgstr "## Visualization of the results"
 4stem-de msgstr "## Die Abbildungen"
 4stem-fr msgstr "## Visualization of the results"
@@ -1157,7 +1105,7 @@ msgid "HEADLINE_ILLUSTRATION"
 #: pages/method.py:50
 #: pages/1 Messmethode.py:42
 # Grammarly checked
-msgid "EXPLANATION_ILLUSTRATION_UNITS"
+msgid "MTH_EXPLANATION_ILLUSTRATION_UNITS"
 4stem-en msgstr "The fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fm', with the first being measured in the dark as Fm."
 4stem-de msgstr "Auf der Y-Achse der Abbildungen ist die Fluoreszenz aufgetragen. Diese ist angegeben in F´ₘ /Fₘ . Also wie \
             viel Prozent der Lichtenergie für die Fotosynthese verwendet werden kann."
@@ -1186,7 +1134,7 @@ msgid "EXPLANATION_ILLUSTRATION_UNITS"
 #: pages/method.py:51
 #: pages/1 Messmethode.py:44
 # Grammarly checked
-msgid "EXPLANATION_ILLUSTRATION"
+msgid "MTH_EXPLANATION_ILLUSTRATION"
 4stem-en msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the **Experiments *in silico* ** page!"
 4stem-de msgstr "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den Abbildungen blau gekennzeichnet ist \
             (siehe Abbildung 1), diese ist, wie bereits erwähnt, Voraussetzung für die PAM-Messung. Zu diesem Zeitpunkt \
@@ -1205,7 +1153,7 @@ msgid "EXPLANATION_ILLUSTRATION"
 
 #: pages/model_explain.py:16
 #: pages/1 Messmethode.py:30
-msgid "HEADLINE_COMPUTATIONAL_MODELS"
+msgid "MDL_HEADLINE_COMPUTATIONAL_MODELS"
 4stem-en msgstr "# Computational models"
 4stem-de msgstr "# "
 4stem-fr msgstr "# "
@@ -1220,7 +1168,7 @@ msgid "HEADLINE_COMPUTATIONAL_MODELS"
 #: pages/model_explain.py:10
 #: pages/1 Messmethode.py:30
 # Grammarly checked
-msgid "HEADLINE_MODEL"
+msgid "MDL_HEADLINE_MODEL"
 4stem-en msgstr "## What are mathematical models?"
 4stem-de msgstr "# "
 4stem-fr msgstr "# "
@@ -1235,7 +1183,7 @@ msgid "HEADLINE_MODEL"
 #: pages/model_explain.py:12
 #: EINFÜHRUNG.py:60
 # Grammarly checked
-msgid "MATHEMATICAL_MODELLING_EXPLANATION_1"
+msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"
 4stem-en msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never a precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1249,7 +1197,7 @@ msgid "MATHEMATICAL_MODELLING_EXPLANATION_1"
 
 #: pages/model_explain.py:15
 
-msgid "CAPTION_MODELLING_PICTURE"
+msgid "MDL_CAPTION_MODELLING_PICTURE"
 4stem-en msgstr "The cycle of modeling. The developer often needs to go through several iterations to get from an initial problem to a curated mathematical model."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1264,7 +1212,7 @@ msgid "CAPTION_MODELLING_PICTURE"
 #: pages/model_explain.py:17
 #: pages/model.explain.py:17
 
-msgid "MATHEMATICAL_MODELLING_EXPLANATION_1b"
+msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"
 4stem-en msgstr "In the video below, you can listen more about building and using mathematical models in biology."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1277,7 +1225,7 @@ msgid "MATHEMATICAL_MODELLING_EXPLANATION_1b"
 4bio-es msgstr "In the video below you can listen more about building and using mathematical models in biology."
 
 #: pages/model_explain.py:22
-msgid "EXAMPLE_MATHEMATICAL_MODEL"
+msgid "MDL_EXAMPLE_MATHEMATICAL_MODEL"
 4stem-en msgstr "### An example of a mathematical model"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1291,7 +1239,7 @@ msgid "EXAMPLE_MATHEMATICAL_MODEL"
 
 #: pages/model_explain.py:28
 #: pages/model_explain.py:25
-msgid "TAB_SIR"
+msgid "MDL_TAB_SIR"
 4stem-en msgstr "The SIR model"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1304,7 +1252,7 @@ msgid "TAB_SIR"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:28
-msgid "TAB_MANUAL"
+msgid "MDL_TAB_MANUAL"
 4stem-en msgstr "Manual implementation"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1317,7 +1265,7 @@ msgid "TAB_MANUAL"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:28
-msgid "TAB_MODELBASE"
+msgid "MDL_TAB_MODELBASE"
 4stem-en msgstr "Modelbase implementation"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1330,7 +1278,7 @@ msgid "TAB_MODELBASE"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:40
-msgid "HEADLINE_SIR"
+msgid "MDL_HEADLINE_SIR"
 4stem-en msgstr "#### The SIR Model"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1343,7 +1291,7 @@ msgid "HEADLINE_SIR"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:28
-msgid "HEADLINE_MANUAL"
+msgid "MDL_HEADLINE_MANUAL"
 4stem-en msgstr "#### Manual implementation"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1356,7 +1304,7 @@ msgid "HEADLINE_MANUAL"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:28
-msgid "HEADLINE_MODELBASE"
+msgid "MDL_HEADLINE_MODELBASE"
 4stem-en msgstr "#### Modelbase implementation"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1370,7 +1318,7 @@ msgid "HEADLINE_MODELBASE"
 
 #: pages/model_explain.py:23
 # Grammarly checked
-msgid "MATHEMATICAL_MODELLING_EXAMPLE"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE"
 4stem-en msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1384,7 +1332,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE"
 
 #: pages/model_explain.py:48
 # Grammarly checked
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_1"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"
 4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1400,7 +1348,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_1"
 #: pages/model_explain.py:37
 #: pages/model.explain.py:37
 # Grammarly checked
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
 4stem-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1415,7 +1363,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_2"
 #: pages/model_explain.py:60
 #: pages/model.explain.py:52
 # Grammarly checked
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"
 4stem-en msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1428,7 +1376,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_3"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:72
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_4"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"
 4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1440,7 +1388,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_4"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
 4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1452,7 +1400,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
 4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1464,7 +1412,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
 4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1476,7 +1424,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
 4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1490,7 +1438,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
 
 #: pages/model_explain.py:55
 # Grammarly checked
-msgid "CAPTION_SIR_RESULTS_PICTURE"
+msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
 4stem-en msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1504,7 +1452,7 @@ msgid "CAPTION_SIR_RESULTS_PICTURE"
 
 #: pages\model_explain.py:61
 # Grammarly checked
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
 4stem-en msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example makes it possible to be solved on pen and paper. However, we have used Python to make our lives easier. You can find it in the other tabs over this section."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1517,7 +1465,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:63
-msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
+msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
 4stem-en msgstr "## Models of photosynthesis"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1530,7 +1478,7 @@ msgid "HEADLINE_MODEL_PHOTOSYNTHESIS"
 4bio-es msgstr "## Models of photosynthesis"
 
 #: pages/model_explain.py:69
-msgid "HEADLINE_FVCB"
+msgid "MDL_HEADLINE_FVCB"
 4stem-en msgstr "### The Farquhar, von Caemmerer and Berry model"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1544,7 +1492,7 @@ msgid "HEADLINE_FVCB"
 
 #: pages/model_explain.py:71
 # Grammarly checked
-msgid "FVCB_1"
+msgid "MDL_FVCB_1"
 4stem-en msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). It was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1557,7 +1505,7 @@ msgid "FVCB_1"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:87
-msgid "FVCB_2"
+msgid "MDL_FVCB_2"
 4stem-en msgstr "These rates use an epitome of parameters that have to be measured or determined beforehand. The model uses the chloroplast CO<sub>2</sub> partial pressure (C<sub>c</sub>), the chloroplast O<sub>2</sub> partial pressure (O), the C<sub>c</sub> where A = −R<sub>d</sub> (Γ<sub>&midast;</sub>), the maximal rate of carboxylation (V<sub>cmax</sub>), the Michaelis-Menten constants of carboxylation and oxygenation (K<sub>c</sub> and K<sub>o</sub> respectively), the potential electron transport rate (J) and the rate of inorganic phosphate supply to the chloroplast (T<sub>p</sub>) to calculate the three rates. The day respiration (R<sub>d</sub>) is subtracted to portray the respective assimilation rates. It is to be noted that this model is limited to a C<sub>c</sub> that is larger than Γ<sub>&midast;</sub>. \n"
 "\n This model is widely popular among scientists, as it is relatively simple and uses no complicated mathematical methods like integrations. As you may have guessed, this model type differs from the SIR model we explained earlier. It doesn’t use any ODEs and, therefore, cannot show the change in time. It only shows the A specific for the parameter values chosen. It thus depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still considered one of the best due to its simplicity."
 4stem-de msgstr ""
@@ -1571,7 +1519,7 @@ msgid "FVCB_2"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:90
-msgid "HEADLINE_E_PHOTOSYNTHESIS"
+msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
 4stem-en msgstr "### The *e*-photosynthesis model"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1585,7 +1533,7 @@ msgid "HEADLINE_E_PHOTOSYNTHESIS"
 
 #: pages/model_explain.py:92
 # Grammarly checked
-msgid "E_PHOTOSYNTHESIS_1"
+msgid "MDL_E_PHOTOSYNTHESIS_1"
 4stem-en msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It builds upon previous works by Zhu et al., incorporating the reactions associated with light absorption, excitation energy transfer, charge separation, and electron transfer around PSII from their fluorescence induction model. Additionally, it introduces analogous reactions for PSI and includes reactions from their carbon metabolism model, such as those involved in the C<sub>3</sub> cycle, sucrose and starch synthesis, and photorespiration. The model further accounts for ion transfer between the lumen and stroma, ATP and NADPH synthesis, RuBisCO activation by RuBisCO activase, NPQ by luminal pH and the xanthophyll cycle, and regulation of enzyme activities by the ferredoxin (Fd) thioredoxin system.\n"
 "\n Even though this model is very complex, it still introduces some simplifications; for example, the steps between the electron transfer of the chlorophyll *a* molecule and Fd are ignored. Furthermore, to calculate the A, this model uses the rate of carboxylation (V<sub>c</sub>) and the rate of glycine decarboxylase (v<sub>131</sub>). While the equation below may be simple, it depends on a dynamic system containing 294 equations."
 4stem-de msgstr ""
@@ -1599,7 +1547,7 @@ msgid "E_PHOTOSYNTHESIS_1"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:102
-msgid "E_PHOTOSYNTHESIS_2"
+msgid "MDL_E_PHOTOSYNTHESIS_2"
 4stem-en msgstr "Overall, 113 of these equations can be attributed to a system of ODEs, which indicates this model's complexity. Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler, more user-friendly models or focusing on specific photosynthesis aspects."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1612,7 +1560,7 @@ msgid "E_PHOTOSYNTHESIS_2"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:105
-msgid "HEADLINE_BELLASIO"
+msgid "MDL_HEADLINE_BELLASIO"
 4stem-en msgstr "### The Bellasio model"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1626,7 +1574,7 @@ msgid "HEADLINE_BELLASIO"
 
 #: pages/model_explain.py:107
 # Grammarly checked
-msgid "BELLASIO_1"
+msgid "MDL_BELLASIO_1"
 4stem-en msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behavior. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. The model aggregates three specific models, which have been modified and simplified. The light reactions are based on Yin et al.'s work, the dark reactions on Zhu et al.'s carbon metabolism model, and the stomatal conductance of Bellasio et al.'s hydro-mechanical formulation. It simplifies the intercellular space and mesophyll as uniform, calculates CO<sub>2</sub> diffusion, dissolution, and hydration mechanistically, and does not implement the restriction caused by metabolite diffusion. Furthermore, it uses the simple FvCB Formula to calculate A."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1640,7 +1588,7 @@ msgid "BELLASIO_1"
 
 #: pages/model_explain.py:109
 # Grammarly checked
-msgid "BELLASIO_2"
+msgid "MDL_BELLASIO_2"
 4stem-en msgstr "The parameters are based on averaged literature values for typical parameters, and the few parameters created for this model are derived from the original equations or assigned plausible values. The model includes the major reactions of photosynthesis and is simple enough to be modeled in a spreadsheet program like Microsoft&reg; Excel&reg;, which the author kindly provided. Overall, this model is an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1653,7 +1601,7 @@ msgid "BELLASIO_2"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:210
-msgid "EXPANDER_C3C4CAM"
+msgid "MDL_EXPANDER_C3C4CAM"
 4stem-en msgstr "The difference between C3, C4 and CAM plants"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1666,7 +1614,7 @@ msgid "EXPANDER_C3C4CAM"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:211
-msgid "HEADLINE_C3"
+msgid "MDL_HEADLINE_C3"
 4stem-en msgstr "### C<sub>3</sub> Plants"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1680,7 +1628,7 @@ msgid "HEADLINE_C3"
 
 #: pages/model_explain.py:212
 # Grammarly checked
-msgid "C3_1"
+msgid "MDL_C3_1"
 4stem-en msgstr "Most plants are C<sub>3</sub> plants, meaning the first stable compound produced during carbon fixation is a three-carbon molecule called 3-phosphoglycerate (3-PGA). This process takes place in the mesophyll cells of plant leaves and involves a chain of biochemical reactions that transform carbon dioxide (CO<sub>2</sub>) into carbohydrates like glucose."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1693,7 +1641,7 @@ msgid "C3_1"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:214
-msgid "HEADLINE_C4"
+msgid "MDL_HEADLINE_C4"
 4stem-en msgstr "### C<sub>4</sub> Plants"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1707,7 +1655,7 @@ msgid "HEADLINE_C4"
 
 #: pages/model_explain.py:215
 # Grammarly checked
-msgid "C4_1"
+msgid "MDL_C4_1"
 4stem-en msgstr "In certain plants, C<sub>4</sub> photosynthesis is an alternative process that developed to adapt to hot and dry environments. Unlike C<sub>3</sub> photosynthesis, C<sub>4</sub> photosynthesis boosts the efficiency of carbon fixation by concentrating CO<sub>2</sub> near RuBisCO in the bundle sheath cells. This separation lowers photorespiration, a wasteful process that can occur in C<sub>3</sub> plants under high temperatures and low CO<sub>2</sub> concentrations. C<sub>4</sub> photosynthesis can be found in various plant families, such as grasses (e.g., maize, sugarcane) and certain dicots (e.g., Amaranthaceae, Chenopodiaceae). It is an adaptation that permits plants to flourish in environments with high temperatures, intense sunlight, and limited water availability."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1720,7 +1668,7 @@ msgid "C4_1"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:217
-msgid "HEADLINE_CAM"
+msgid "MDL_HEADLINE_CAM"
 4stem-en msgstr "### CAM Plants"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1734,7 +1682,7 @@ msgid "HEADLINE_CAM"
 
 #: pages/model_explain.py:218
 # Grammarly checked
-msgid "CAM_1"
+msgid "MDL_CAM_1"
 4stem-en msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -1747,7 +1695,7 @@ msgid "CAM_1"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:65
-msgid "HEADLINE_EXPERIMENTS"
+msgid "FAL_HEADLINE_EXPERIMENTS"
 4stem-en msgstr "# Experiments *in silico*"
 4stem-de msgstr "# Experimente *in silico*"
 4stem-fr msgstr ""
@@ -1760,7 +1708,7 @@ msgid "HEADLINE_EXPERIMENTS"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:65
-msgid "HEADLINE_MODEL_CONSTRUCTION"
+msgid "FAL_HEADLINE_MODEL_CONSTRUCTION"
 4stem-en msgstr "## Model construction"
 4stem-de msgstr "## Konstruktion des Modells"
 4stem-fr msgstr ""
@@ -1774,7 +1722,7 @@ msgid "HEADLINE_MODEL_CONSTRUCTION"
 
 #: pages/model_explain.py:67
 #: Grammarly checked
-msgid "CONSTRUCTION_EXPLANATION_1"
+msgid "FAL_CONSTRUCTION_EXPLANATION_1"
 4stem-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown in the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 4stem-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
         Elektronenträger, Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im \
@@ -1802,7 +1750,7 @@ msgid "CONSTRUCTION_EXPLANATION_1"
 
 #: pages/model_explain.py:67
 # Grammarly checked
-msgid "CAPTION_MODEL_NPQ"
+msgid "FAL_CAPTION_MODEL_NPQ"
 4stem-en msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model was developed in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes affecting the quencher dynamics (Psbs and zeaxanthin)."
 4stem-de msgstr "Schema der Komponenten, die in dem auf dieser Website verwendeten vereinfachten mathematischen Modell enthalten sind. Das Modell wurde 2016 entwickelt und enthält eine detaillierte Beschreibung der internen Prozesse im Photosystem II (PSII), einschließlich der Prozesse, die die Dynamik der Quencher (Psbs und Zeaxanthin) beeinflussen."
 4stem-fr msgstr ""
@@ -1816,7 +1764,7 @@ msgid "CAPTION_MODEL_NPQ"
 
 #: pages/model_explain.py:67
 #: Grammarly checked
-msgid "CONSTRUCTION_EXPLANATION_2"
+msgid "FAL_CONSTRUCTION_EXPLANATION_2"
 4stem-en msgstr "So, instead of modeling the whole plant or chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
 4stem-de msgstr "Anstatt also die gesamte Pflanze oder gar den gesamten Chloroplasten \
         zu modellieren, haben wir einen Reduktionszyklus (siehe Abbildung) angewandt, der auf einem streng reduktionistischen \
@@ -1836,7 +1784,7 @@ msgid "CONSTRUCTION_EXPLANATION_2"
 
 #: pages/model_explain.py:68
 #: Anna's explanation of the model
-msgid "RATES_1"
+msgid "FAL_RATES_1"
 4stem-en msgstr "1) the reduced fraction of the plastoquinone pool (PQH<sub>2</sub>)"
 4stem-de msgstr "1) der reduzierte Anteil des Plastochinon-Pools ($PQH_2$),"
 4stem-fr msgstr ""
@@ -1850,7 +1798,7 @@ msgid "RATES_1"
 
 #: pages/model_explain.py:69
 #: Anna's explanation of the model
-msgid "RATES_2"
+msgid "FAL_RATES_2"
 4stem-en msgstr "2) the stromal concentration of ATP (ATP),"
 4stem-de msgstr "2) die stromale Konzentration von ATP (ATP),"
 4stem-fr msgstr "2) the stromal concentration of ATP (ATP),"
@@ -1864,7 +1812,7 @@ msgid "RATES_2"
 
 #: pages/model_explain.py:70
 #: Anna's explanation of the model
-msgid "RATES_3"
+msgid "FAL_RATES_3"
 4stem-en msgstr "3) the luminal proton concentration (H),"
 4stem-de msgstr "3) die luminale Protonenkonzentration ($H$),"
 4stem-fr msgstr "3) the luminal proton concentration ($H$),"
@@ -1878,7 +1826,7 @@ msgid "RATES_3"
 
 #: pages/model_explain.py:71
 #: Anna's explanation of the model
-msgid "RATES_4"
+msgid "FAL_RATES_4"
 4stem-en msgstr "4) the fraction of nonprotonated proteins (PsbS),"
 4stem-de msgstr "4) der Anteil der nicht protonierten Proteine (PsbS),"
 4stem-fr msgstr "4) the fraction of nonprotonated proteins (PsbS),"
@@ -1892,7 +1840,7 @@ msgid "RATES_4"
 
 #: pages/model_explain.py:72
 #: Anna's explanation of the model
-msgid "RATES_5"
+msgid "FAL_RATES_5"
 4stem-en msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 4stem-de msgstr "5) der Anteil von Violaxanthin am Gesamtpool der Xanthophylle (Vx),"
 4stem-fr msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
@@ -1906,7 +1854,7 @@ msgid "RATES_5"
 
 #: pages/model_explain.py:73
 #: Anna's explanation of the model
-msgid "RATES_6"
+msgid "FAL_RATES_6"
 4stem-en msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>&midast;</sup>)."
 4stem-de msgstr "6) der Anteil des aktiven ATPase-Enzyms (ATPase<sup>&midast;</sup>)."
 4stem-fr msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>&midast;</sup>)."
@@ -1920,7 +1868,7 @@ msgid "RATES_6"
 
 #: pages/model_explain.py:76
 #: Anna's explanation of the model
-msgid "HEADLINE_MODEL_EQUATIONS"
+msgid "FAL_HEADLINE_MODEL_EQUATIONS"
 4stem-en msgstr "### Mathematical equations"
 4stem-de msgstr "### Mathematische Gleichungen"
 4stem-fr msgstr "### Mathematical equations"
@@ -1934,7 +1882,7 @@ msgid "HEADLINE_MODEL_EQUATIONS"
 
 #: pages/model_explain.py:77
 #: Anna's explanation of the model
-msgid "MODEL_EQUATIONS_INTRODUCTION"
+msgid "FAL_MODEL_EQUATIONS_INTRODUCTION"
 4stem-en msgstr "The six coupled ordinary differential equations (ODE)"
 4stem-de msgstr "Die sechs gekoppelten gewöhnlichen Differenzialgleichungen (ODE)"
 4stem-fr msgstr "The six coupled ordinary differential equations (ODE)"
@@ -1948,7 +1896,7 @@ msgid "MODEL_EQUATIONS_INTRODUCTION"
 
 #: pages/model_explain.py:91
 #: Anna's explanation of the model
-msgid "REACTION_RATES"
+msgid "FAL_REACTION_RATES"
 4stem-en msgstr "Reaction rates"
 4stem-de msgstr "Reaktionsgeschwindigkeiten"
 4stem-fr msgstr "Reaction rates"
@@ -1962,7 +1910,7 @@ msgid "REACTION_RATES"
 
 #: pages/model_explain.py:92
 #: Anna's explanation of the model
-msgid "RATES_DYNAMIC"
+msgid "FAL_RATES_DYNAMIC"
 4stem-en msgstr "###### Reaction rates used in the dynamic description of the system"
 4stem-de msgstr "###### In der dynamischen Beschreibung des Systems verwendete Reaktionsraten"
 4stem-fr msgstr "###### Reaction rates used in the dynamic description of the system"
@@ -1976,7 +1924,7 @@ msgid "RATES_DYNAMIC"
 
 #: pages/model_explain.py:106
 #: Anna's explanation of the model
-msgid "RATE_QUENCHER"
+msgid "FAL_RATE_QUENCHER"
 4stem-en msgstr "###### Reaction rates to calculate the quencher activity and the overall rate"
 4stem-de msgstr "###### Reaktionsraten zur Berechnung der Quencheraktivität und der Gesamtrate"
 4stem-fr msgstr "###### Reaction rates to calculate the quencher activity and the overall rate"
@@ -1990,7 +1938,7 @@ msgid "RATE_QUENCHER"
 
 #: pages/model_explain.py:117
 #: Anna's explanation of the model
-msgid "HEADLINE_IMPLEMENTATION"
+msgid "FAL_HEADLINE_IMPLEMENTATION"
 4stem-en msgstr "### Implementation"
 4stem-de msgstr "### Implementierung"
 4stem-fr msgstr "### Implementation"
@@ -2004,7 +1952,7 @@ msgid "HEADLINE_IMPLEMENTATION"
 
 #: pages/model_explain.py:119
 #: Grammarly checked
-msgid "IMPLEMENTATION_DESCRIPTION"
+msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 4stem-en msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object-oriented language (OOL) Python using the modelbase package. The code containing differential equations, reaction rates, parameter space, and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel). In the dropdown below, you can also look at a step-by-step guide on implementing it yourself."
 4stem-de msgstr "Das mathematische Modell der fotosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache \
         (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differenzialgleichungen, Reaktionsraten, dem \
@@ -2021,7 +1969,7 @@ msgid "IMPLEMENTATION_DESCRIPTION"
 
 #: pages/model_explain.py:149
 # Grammarly checked
-msgid "SIR_IMPLEMENTATION_MANUAL_1"
+msgid "MDL_SIR_IMPLEMENTATION_MANUAL_1"
 4stem-en msgstr "Great care needs to be taken for the `y0` vector to align with the unpacked variable names and the respective differential equations. The same holds for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2034,7 +1982,7 @@ msgid "SIR_IMPLEMENTATION_MANUAL_1"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:158
-msgid "SIR_IMPLEMENTATION_MANUAL_2"
+msgid "MDL_SIR_IMPLEMENTATION_MANUAL_2"
 4stem-en msgstr "Clearly this way of writing models is very error-prone and hard to modularise. That's why we can improve on the situation by using `modelbase`."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2047,7 +1995,7 @@ msgid "SIR_IMPLEMENTATION_MANUAL_2"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:177
-msgid "SIR_IMPLEMENTATION_MODELBASE_1"
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_1"
 4stem-en msgstr "First, we are going to factor out the rate functions `infection` and `recovery` as plain Python functions."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2060,7 +2008,7 @@ msgid "SIR_IMPLEMENTATION_MODELBASE_1"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:181
-msgid "SIR_IMPLEMENTATION_MODELBASE_2"
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_2"
 4stem-en msgstr "Next, we can build the model. For this we supply all our system variables using `add_compounds` and parameters as a dictionary using `add_parameters`"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2074,7 +2022,7 @@ msgid "SIR_IMPLEMENTATION_MODELBASE_2"
 
 #: pages/model_explain.py:181
 # Grammarly checked
-msgid "SIR_IMPLEMENTATION_MODELBASE_3"
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_3"
 4stem-en msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying:\n"
 "1. A name for the transition\n"
 "2. A reference to the rate function\n"
@@ -2092,7 +2040,7 @@ msgid "SIR_IMPLEMENTATION_MODELBASE_3"
 
 #: pages/model_explain.py:189
 # Grammarly checked
-msgid "SIR_IMPLEMENTATION_MODELBASE_4"
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
 4stem-en msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
 "\n You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
 4stem-de msgstr ""
@@ -2107,7 +2055,7 @@ msgid "SIR_IMPLEMENTATION_MODELBASE_4"
 
 #: pages/model_explain.py:210
 # Grammarly checked
-msgid "SIR_IMPLEMENTATION_MODELBASE_5"
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_5"
 4stem-en msgstr "The approach's strength lies in its simplicity of extending models. For instance, we can add a compartment for deceased individuals to the SIR model, also known as the SIRD model, by introducing a new variable, parameter, and reaction:"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2120,7 +2068,7 @@ msgid "SIR_IMPLEMENTATION_MODELBASE_5"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:214
-msgid "SIR_IMPLEMENTATION_MODELBASE_6"
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
 4stem-en msgstr "Which would have been a lot more cumbersome with the manual approach."
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2132,25 +2080,10 @@ msgid "SIR_IMPLEMENTATION_MODELBASE_6"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-#: pages/first_analysis.py:97
-#: pages/2 Daten-Analyse.py:123
-#: pages/Analyse.py:123
-msgid "MEASUREMENT_PHASE"
-4stem-en msgstr "Measuring phase"
-4stem-de msgstr "Messphase"
-4stem-fr msgstr "Measuring phase"
-4stem-pl msgstr "Measuring phase"
-4stem-es msgstr "Measuring phase"
-4bio-en msgstr "Measuring phase"
-4bio-de msgstr "Messphase"
-4bio-fr msgstr "Measuring phase"
-4bio-pl msgstr "Measuring phase"
-4bio-es msgstr "Measuring phase"
-
 #: pages/first_analysis.py:177
 #: pages/2 Daten-Analyse.py:23
 #: pages/Analyse.py:23
-msgid "HEADLINE_ANALYSE"
+msgid "FAL_HEADLINE_ANALYSE"
 4stem-en msgstr "## The data analysis"
 4stem-de msgstr "## Die Daten-Analyse"
 4stem-fr msgstr "## The data analysis"
@@ -2164,7 +2097,7 @@ msgid "HEADLINE_ANALYSE"
 
 #: pages/first_analysis.py:178
 # Grammarly checked
-msgid "INTRODUKTION"
+msgid "FAL_INTRODUKTION"
 4stem-en msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors. In the following the model can be rerun with different parameters using the sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal. With the sliders, you can adjust the light instensity during the light phase, for how long the simulation will run, how far apart in time the saturation pulses will be, and how fast the activation and deactivation rates of the NPQ adaption process are."
 4stem-de msgstr "Matuszynska et al. (2016) entwickelten ein Modell, das die Vorgänge am Fotosysthem II simuliert. Mit Hilfe \
         dieses Modells können analoge Diagramme erstellt werden, wie sie bei der zuvor beschriebenen Messmethode entstehen."
@@ -2180,7 +2113,7 @@ msgid "INTRODUKTION"
 
 #: pages/first_analysis.py:193
 #: pages/Analyse.py:
-msgid "HEADLINE_SLIDER"
+msgid "FAL_HEADLINE_SLIDER"
 4stem-en msgstr "##### Use of the sliders:"
 4stem-de msgstr "##### Verwendung der Schieberegler:"
 4stem-fr msgstr "##### Use of the sliders:"
@@ -2194,7 +2127,7 @@ msgid "HEADLINE_SLIDER"
 
 #: pages/first_analysis.py:194
 # Grammarly checked
-msgid "EXPLANATNION"
+msgid "FAL_EXPLANATNION"
 4stem-en msgstr "First, change the sliders according to the test you want to simulate. Then, start the calculation by clicking on the button. The calculated graph will be displayed. When you change the sliders again, the graph disappears, and you can load a new graph."
 4stem-de msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Starten Sie dann die \
         Berechnung, indem Sie auf die Schaltfläche klicken. Das berechnete Diagramm wird angezeigt. Sobald Sie die \
@@ -2219,7 +2152,7 @@ msgid "EXPLANATNION"
 #: pages/first_analysis.py:196
 #: pages/2 Daten-Analyse.py:29
 #: pages/Analyse.py:29
-msgid "TIPP1"
+msgid "FAL_TIPP1"
 4stem-en msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by right clicking on them.*"
 4stem-de msgstr "***Tipp 1:*** *Zum Vergleich zweier Versuche, können Sie die Diagramme, über die drei Punkte (oben rechts) herunterladen.*"
 4stem-fr msgstr "***Tip 1:*** *For comparison of two tests, you can download the diagrams, via the three dots (top right).*"
@@ -2235,7 +2168,7 @@ msgid "TIPP1"
 #: pages/first_analysis.py:197
 #: pages/2 Daten-Analyse.py:31
 #: pages/Analyse.py:31
-msgid "TIPP2"
+msgid "FAL_TIPP2"
 4stem-en msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 4stem-de msgstr "***Tipp 2:*** *Durch Klicken auf die Schaltfläche Stopp in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
 4stem-fr msgstr "***Tip 2:*** *By clicking the Stop button in the upper right corner you can cancel the calculation process.*"
@@ -2262,7 +2195,7 @@ msgid "SLIDER_LIGHT"
 4bio-es msgstr ""
 
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
-msgid "SLIDER_TIME"
+msgid "FAL_SLIDER_TIME"
 4stem-en msgstr "Test duration in minutes"
 4stem-de msgstr "Versuchsdauer in Minuten"
 4stem-fr msgstr "Dark phase in minutes"
@@ -2303,7 +2236,7 @@ msgid "SLIDER_ACTIVATION"
 4bio-es msgstr ""
 
 #: pages/first_analysis.py:168
-msgid "SLIDER_DARKLENGTH"
+msgid "FAL_SLIDER_DARKLENGTH"
 4stem-en msgstr "Length of the dark phase in seconds"
 4stem-de msgstr "Dauer der Dunkelphase in Sekunden"
 4stem-fr msgstr ""
@@ -2316,7 +2249,7 @@ msgid "SLIDER_DARKLENGTH"
 4bio-es msgstr ""
 
 #: pages/first_analysis.py:181
-msgid "SLIDER_SATURATE"
+msgid "FAL_SLIDER_SATURATE"
 4stem-en msgstr "Light intensity of saturating pulse in μmol m⁻² s⁻¹"
 4stem-de msgstr "Lichtintensität des Sättigungsimpulses in μmol m⁻² s⁻¹"
 4stem-fr msgstr ""
@@ -2331,7 +2264,7 @@ msgid "SLIDER_SATURATE"
 #: pages/first_analysis.py:247 pages/plant_memory.py:326
 #: pages/2 Daten-Analyse.py:83
 #: pages/Analyse.py:83
-msgid "SPINNER"
+msgid "MEM_SPINNER"
 4stem-en msgstr "I'll do some quick math for you :computer:"
 4stem-de msgstr "Ich rechne kurz für Sie :computer:"
 4stem-fr msgstr "I'll do some quick math for you :computer:"
@@ -2343,51 +2276,9 @@ msgid "SPINNER"
 4bio-pl msgstr "I'll do some quick math for you :computer:"
 4bio-es msgstr "I'll do some quick math for you :computer:"
 
-#: pages/plant_memory.py:173
-#: pages/3 Pflanzengedächtnis.py:122
-msgid "PHASE1"
-4stem-en msgstr "Training phase"
-4stem-de msgstr "Trainingsphase"
-4stem-fr msgstr "Training phase"
-4stem-pl msgstr "Training phase"
-4stem-es msgstr "Training phase"
-4bio-en msgstr "Training phase"
-4bio-de msgstr "Trainingsphase"
-4bio-fr msgstr "Training phase"
-4bio-pl msgstr "Training phase"
-4bio-es msgstr "Training phase"
-
-#: pages/plant_memory.py:173
-#: pages/3 Pflanzengedächtnis.py:122
-msgid "PHASE2"
-4stem-en msgstr "Dark phase"
-4stem-de msgstr "Dunkelphase"
-4stem-fr msgstr "Dark phase"
-4stem-pl msgstr "Dark phase"
-4stem-es msgstr "Dark phase"
-4bio-en msgstr "Dark phase"
-4bio-de msgstr "Dunkelphase"
-4bio-fr msgstr "Dark phase"
-4bio-pl msgstr "Dark phase"
-4bio-es msgstr "Dark phase"
-
-#: pages/plant_memory.py:173
-#: pages/3 Pflanzengedächtnis.py:122
-msgid "PHASE3"
-4stem-en msgstr "Memory phase"
-4stem-de msgstr "Gedächtnisphase"
-4stem-fr msgstr "Memory phase"
-4stem-pl msgstr "Memory phase"
-4stem-es msgstr "Memory phase"
-4bio-en msgstr "Memory phase"
-4bio-de msgstr "Gedächtnisphase"
-4bio-fr msgstr "Memory phase"
-4bio-pl msgstr "Memory phase"
-4bio-es msgstr "Memory phase"
-
 #: pages/plant_memory.py:188
 #: pages/3 Pflanzengedächtnis.py:122
-msgid "AXIS_TIME_MIN"
+msgid "MEM_AXIS_TIME_MIN"
 4stem-en msgstr "Time [min]"
 4stem-de msgstr "Zeit [min]"
 4stem-fr msgstr "Time [min]"
@@ -2401,7 +2292,7 @@ msgid "AXIS_TIME_MIN"
 
 #: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
 #: pages/Analyse.py:72
-msgid "AXIS_TIME_S"
+msgid "MEM_AXIS_TIME_S"
 4stem-en msgstr "Time [s]"
 4stem-de msgstr "Zeit [s]"
 4stem-fr msgstr ""
@@ -2415,7 +2306,7 @@ msgid "AXIS_TIME_S"
 
 #: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
 #: pages/Analyse.py:72
-msgid "FLUO"
+msgid "MEM_FLUO"
 4stem-en msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
 4stem-de msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
 4stem-fr msgstr ""
@@ -2428,7 +2319,7 @@ msgid "FLUO"
 4bio-es msgstr ""
 
 #: pages/first_analysis.py:217
-msgid "AXIS_NPQ"
+msgid "MEM_AXIS_NPQ"
 4stem-en msgstr "NPQ [a.u.]"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2441,7 +2332,7 @@ msgid "AXIS_NPQ"
 4bio-es msgstr ""
 
 #: pages/first_analysis.py:230
-msgid "AXIS_PHIPSII"
+msgid "MEM_AXIS_PHIPSII"
 4stem-en msgstr "Φ(PSII)"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2455,7 +2346,7 @@ msgid "AXIS_PHIPSII"
 
 #: pages/plant_memory.py:262
 #: pages/3 Pflanzengedächtnis.py:36
-msgid "HEADLINE_BRAIN"
+msgid "MEM_HEADLINE_BRAIN"
 4stem-en msgstr "# Plant Light Memory"
 4stem-de msgstr "# Das Pflanzengedächtnis"
 4stem-fr msgstr "# The plant memory"
@@ -2469,7 +2360,7 @@ msgid "HEADLINE_BRAIN"
 
 #: pages/plant_memory.py:269
 # Grammarly checked
-msgid "INTRODUCTION_BRAIN"
+msgid "MEM_INTRODUCTION_BRAIN"
 4stem-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin, you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
 4stem-de msgstr "Das Modell bietet auch die Möglichkeit, Experimente mit Dunkelphasen zu simulieren. So kann das Kurzzeitgedächtnis \
         der Pflanzen demonstriert werden. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
@@ -2485,7 +2376,7 @@ msgid "INTRODUCTION_BRAIN"
 4bio-es msgstr ""
 
 #: pages/plant_memory.py:212
-msgid "SLIDER_TRAINING"
+msgid "MEM_SLIDER_TRAINING"
 4stem-en msgstr "Training phase in minutes"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2498,7 +2389,7 @@ msgid "SLIDER_TRAINING"
 4bio-es msgstr ""
 
 #: pages/plant_memory.py:219
-msgid "SLIDER_RELAXATION"
+msgid "MEM_SLIDER_RELAXATION"
 4stem-en msgstr "Relaxation phase in minutes"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2511,7 +2402,7 @@ msgid "SLIDER_RELAXATION"
 4bio-es msgstr ""
 
 #: pages/plant_memory.py:212
-msgid "SLIDER_MEMORY"
+msgid "MEM_SLIDER_MEMORY"
 4stem-en msgstr "Memory phase in minutes"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2524,7 +2415,7 @@ msgid "SLIDER_MEMORY"
 4bio-es msgstr ""
 
 #: pages/plant_memory.py:95
-msgid "ANNO_TRAINING"
+msgid "MEM_ANNO_TRAINING"
 4stem-en msgstr "Training"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2537,7 +2428,7 @@ msgid "ANNO_TRAINING"
 4bio-es msgstr ""
 
 #: pages/plant_memory.py:95
-msgid "ANNO_RELAXATION"
+msgid "MEM_ANNO_RELAXATION"
 4stem-en msgstr "Relaxation"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2550,7 +2441,7 @@ msgid "ANNO_RELAXATION"
 4bio-es msgstr ""
 
 #: pages/plant_memory.py:95
-msgid "ANNO_MEMORY"
+msgid "MEM_ANNO_MEMORY"
 4stem-en msgstr "Memory"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -2564,7 +2455,7 @@ msgid "ANNO_MEMORY"
 
 #: pages/plant_memory.py:278
 #: pages/3 Pflanzengedächtnis.py:40
-msgid "TIP1"
+msgid "MEM_TIP1"
 4stem-en msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
 4stem-de msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können Sie die Diagramme herunterladen, indem Sie auf die drei Punkte klicken.*"
 4stem-fr msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
@@ -2578,7 +2469,7 @@ msgid "TIP1"
 
 #: pages/plant_memory.py:280
 #: pages/3 Pflanzengedächtnis.py:42
-msgid "TIP2"
+msgid "MEM_TIP2"
 4stem-en msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 4stem-de msgstr "***Tipp 2:*** *Durch Klicken auf die Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
 4stem-fr msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
@@ -2592,7 +2483,7 @@ msgid "TIP2"
 
 #: pages/conclusion.py:12
 #: Conclusion
-msgid "HEADLINE_CONCLUSION"
+msgid "CON_HEADLINE_CONCLUSION"
 4stem-en msgstr "# Take Home Messages"
 4stem-de msgstr "# Fazit"
 4stem-fr msgstr "# Conclusion"
@@ -2606,7 +2497,7 @@ msgid "HEADLINE_CONCLUSION"
 
 #: pages/conclusion.py:12
 # Grammarly checked
-msgid "CONCLUSION_TEXT_ONE"
+msgid "CON_CONCLUSION_TEXT_ONE"
 4stem-en msgstr "We hope you have received a thorough introduction to the captivating realm of (computational) plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. We hope we could show you the following:\n"
 "- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
 "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point, like in the figure below."
@@ -2624,7 +2515,7 @@ msgid "CONCLUSION_TEXT_ONE"
 
 #: pages/conclusion.py:18
 # Grammarly checked     
-msgid "CONCLUSION_TEXT_TWO"
+msgid "CON_CONCLUSION_TEXT_TWO"
 4stem-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
 "- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
 "\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
@@ -2655,990 +2546,9 @@ msgid "SLIDER_DEACTIVATION"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-#: EINFÜHRUNG.py:22
-msgid "AUTHOR"
-4stem-en msgstr ""
-4stem-de msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/)"
-4stem-fr msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
-4stem-pl msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
-4stem-es msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/lidx/1/)"
-4bio-en msgstr ""
-4bio-de msgstr "##### Main Developer: [Sarah Philipps](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~yhnnx/Sarah-Philipps/)"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:24
-msgid "MOTIVATION"
-4stem-en msgstr ""
-4stem-de msgstr "Liebe Leser*innen, auf dieser Webseite haben Sie die Möglichkeit ein mathematisches Modell in der Biologie \
-        kennen zu lernen. Dabei haben Sie jedoch nicht nur die Möglichkeit das Modell theoretisch kennen zu lernen, \
-        sondern auch die Möglichkeit aktiv mit dem Modell zu arbeiten."
-4stem-fr msgstr "Dear users, on this website you have the opportunity to get to know a mathematical model in biology \
-        to get to know. However, you will not only have the opportunity to get to know the model theoretically,\
-        but also the possibility to work actively with the model."
-4stem-pl msgstr "Dear users, on this website you have the opportunity to get to know a mathematical model in biology \
-        to get to know. However, you will not only have the opportunity to get to know the model theoretically,\
-        but also the possibility to work actively with the model."
-4stem-es msgstr "Dear users, on this website you have the opportunity to get to know a mathematical model in biology \
-        to get to know. However, you will not only have the opportunity to get to know the model theoretically,\
-        but also the possibility to work actively with the model."
-4bio-en msgstr ""
-4bio-de msgstr "Liebe Schüler*innen, auf dieser Webseite haben Sie die Möglichkeit, mehr über das Thema Fotosynthese zu erfahren. \
-        Ihr werdet dabei auch erfahren, wie sich verschiedenen Lichtintensitäten auf Pflanzen auswirken. Ziel ist es \
-        nicht nur Wissen zu erwerben, sondern auch Ihre Fähigkeiten zur Auswertung von Diagrammen zu verbessern."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:26
-msgid "PROCESS"
-4stem-en msgstr ""
-4stem-de msgstr "Auf der Seite Messmethode wird zunächst der Biologische Hintergrund zu dem Modell erklärt. Auf den folgenden \
-        Seiten kann dann mit dem Modell gearbeitet werden."
-4stem-fr msgstr "On the Measurement Method page, the biological background to the model is explained first. On the following \
-        pages you can work with the model."
-4stem-pl msgstr "On the Measurement Method page, the biological background to the model is explained first. On the following \
-        pages you can work with the model."
-4stem-es msgstr "On the Measurement Method page, the biological background to the model is explained first. On the following \
-        pages you can work with the model."
-4bio-en msgstr ""
-4bio-de msgstr "Dazu lernen Sie zunächst die verwendete Messmethode kennen, mit der wir die Fotosyntheseleistung abschätzen können. \
-        Anschließend können Sie digitale Experimente mit Pflanzen durchführen, um herauszufinden, wie die verschiedenen \
-        Lichtintensitäten auf die Pflanzen wirken."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:28
-msgid "CONTINUING_TASK"
-4stem-en msgstr ""
-4stem-de msgstr "Das verwendete Modell ist ein sehr einfaches Modell, da es lediglich 6 Differentialgleichungen enthält mit 41 \
-        Parametern. Es wird dabei das Fotosystem II simuliert, um alle notwendigen Operationen \
-         für das nicht-photochemische Quenching (NPQ) zu berechnen."
-4stem-fr msgstr "The model used is a very simple one, since it contains only 6 differential equations with 41 \
-        parameters. The photosystem II is simulated in order to calculate all necessary operations \
-         for the non-photochemical quenching (NPQ)."
-4stem-pl msgstr "The model used is a very simple one, since it contains only 6 differential equations with 41 \
-        parameters. The photosystem II is simulated in order to calculate all necessary operations \
-         for the non-photochemical quenching (NPQ)."
-4stem-es msgstr "The model used is a very simple one, since it contains only 6 differential equations with 41 \
-        parameters. The photosystem II is simulated in order to calculate all necessary operations \
-         for the non-photochemical quenching (NPQ)."
-4bio-en msgstr ""
-4bio-de msgstr "In einer weiterführenden Aufgabe wird das Pflanzengedächtnis besprochen und analysiert."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:30
-msgid "MOTIVATION_2.0"
-4stem-en msgstr ""
-4stem-de msgstr "Doch wieso simulieren wir das Ganze im Computer und machen nicht nur Messungen an Pflanzen? Dafür gibt es eine \
-        einfache Erklärung: Es ist Ressourcensparend. Das Modell kann zeigen, wie eine Pflanze auf verschiedene \
-        Lichtintensitäten reagiert, ohne dafür Versuche durchführen zu müssen."
-4stem-fr msgstr "But why do we simulate the whole thing in the computer and not just make measurements on plants? There is a \
-        simple explanation: It saves resources. The model can show how a plant reacts to different \
-        light intensities without having to carry out experiments."
-4stem-pl msgstr "But why do we simulate the whole thing in the computer and not just make measurements on plants? There is a \
-        simple explanation: It saves resources. The model can show how a plant reacts to different \
-        light intensities without having to carry out experiments."
-4stem-es msgstr "But why do we simulate the whole thing in the computer and not just make measurements on plants? There is a \
-        simple explanation: It saves resources. The model can show how a plant reacts to different \
-        light intensities without having to carry out experiments."
-4bio-en msgstr ""
-4bio-de msgstr "Doch wieso ist es eigentlich so wichtig sich mit der Fotosynthese auseinander zu setzen? Ich hoffe diese Frage \
-        könnt ihr mir nach dem Durcharbeiten beantworten!"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:32
-msgid "DECLARATION"
-4stem-en msgstr ""
-4stem-de msgstr "Ein weiterer Vorteil des Modells ist, dass man das Kurzeit-Pflanzengedächtnis zeigen kann. Auf dies wird auf der \
-        Seite Pflanzengedächtnis eingegangen."
-4stem-fr msgstr "Another advantage of the model is that one can show the short term plant memory. This is discussed on the \
-        Plant memory page."
-4stem-pl msgstr "Another advantage of the model is that one can show the short term plant memory. This is discussed on the \
-        Plant memory page."
-4stem-es msgstr "Another advantage of the model is that one can show the short term plant memory. This is discussed on the \
-        Plant memory page."
-4bio-en msgstr ""
-4bio-de msgstr "Zunächst hier einige wichtige Informationen zu Themen im Bereich der Fotosynthese, sowie zum Thema mathematische \
-        Modelle in den Biologie."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: Lisa's introduction
-msgid "EXPANDER_CLIMATE"
-4stem-en msgstr ""
-4stem-de msgstr "Der Klimawandel"
-4stem-fr msgstr "Climate change"
-4stem-pl msgstr "Climate change"
-4stem-es msgstr "Climate change"
-4bio-en msgstr ""
-4bio-de msgstr "Der Klimawandel"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:36
-msgid "EXPANDER_PRODUCENTEN"
-4stem-en msgstr ""
-4stem-de msgstr "Konsumenten vs Produzenten"
-4stem-fr msgstr "Consumers vs producers"
-4stem-pl msgstr "Consumers vs producers"
-4stem-es msgstr "Consumers vs producers"
-4bio-en msgstr ""
-4bio-de msgstr "Konsumenten vs Produzenten"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:37
-msgid "EXPANDER_PRODUCENTEN_EXPLANATION"
-4stem-en msgstr ""
-4stem-de msgstr "Unter einem **Konsumenten** versteht man Lebewesen, welche sich von der Biomasse ernähren, die \
-        von anderen Lebewesen produziert wurde. Alle Lebewesen, die Biomasse produzieren können, nennen wir \
-        **Produzenten**. Dazu zählen insbesondere die Pflanzen. Diese können durch beispielsweise Fotosynthese \
-        selbstständig Biomasse herstellen."
-4stem-fr msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings \
-        that can produce biomass are called **producers**. These include, in particular, plants. These can produce \
-        biomass independently through photosynthesis, for example."
-4stem-pl msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings \
-        that can produce biomass are called **producers**. These include, in particular, plants. These can produce \
-        biomass independently through photosynthesis, for example."
-4stem-es msgstr "By a **consumer** we mean living beings that feed on biomass produced by other living beings. All living beings \
-        that can produce biomass are called **producers**. These include, in particular, plants. These can produce \
-        biomass independently through photosynthesis, for example."
-4bio-en msgstr ""
-4bio-de msgstr "Unter einem **Konsumenten** versteht man Lebewesen, welche sich von der Biomasse ernähren, die \
-        von anderen Lebewesen produziert wurde. Alle Lebewesen, die Biomasse produzieren können, nennen wir \
-        **Produzenten**. Dazu zählen insbesondere die Pflanzen. Diese können durch beispielsweise Fotosynthese \
-        selbstständig Biomasse herstellen."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:39
-msgid "EXPANDER_NUTRIENTS"
-4stem-en msgstr ""
-4stem-de msgstr "Nährstoff-Aufnahme"
-4stem-fr msgstr "Nutrient intake"
-4stem-pl msgstr "Nutrient intake"
-4stem-es msgstr "Nutrient intake"
-4bio-en msgstr ""
-4bio-de msgstr "Nährstoff-Aufnahme"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:40
-msgid "EXPANDER_NUTRIENTS_EXPLANATION"
-4stem-en msgstr ""
-4stem-de msgstr "Damit die Pflanzen Fotosynthese betreiben können, brauchen sie Nährstoffe, welche sie aus der Umwelt aufnehmen. \
-        Hierzu besitzen Pflanzen einerseits die Wurzeln, an welchen Wasser und Nährstoffe aus dem Boden aufgenommen \
-        werden können. Zum anderen besitzen Pflanzen Spaltöffnungen in den Blättern, sogenannte Stomata, durch welche \
-        Pflanzen das CO₂ aus der Luft aufnehmen können. "
-4stem-fr msgstr "In order for plants to photosynthesize, they need nutrients, which they absorb from the environment. For this \
-        purpose, plants have, on the one hand, roots that can absorb water and nutrients from the soil. On the other \
-        hand, plants have stomata in their leaves, through which plants can absorb CO₂ from the air."
-4stem-pl msgstr "In order for plants to photosynthesize, they need nutrients, which they absorb from the environment. For this \
-        purpose, plants have, on the one hand, roots that can absorb water and nutrients from the soil. On the other \
-        hand, plants have stomata in their leaves, through which plants can absorb CO₂ from the air."
-4stem-es msgstr "In order for plants to photosynthesize, they need nutrients, which they absorb from the environment. For this \
-        purpose, plants have, on the one hand, roots that can absorb water and nutrients from the soil. On the other \
-        hand, plants have stomata in their leaves, through which plants can absorb CO₂ from the air."
-4bio-en msgstr ""
-4bio-de msgstr "Damit die Pflanzen Fotosynthese betreiben können, brauchen sie Nährstoffe, welche sie aus der Umwelt aufnehmen. \
-        Hierzu besitzen Pflanzen einerseits die Wurzeln, an welchen Wasser und Nährstoffe aus dem Boden aufgenommen \
-        werden können. Zum anderen besitzen Pflanzen Spaltöffnungen in den Blättern, sogenannte Stomata, durch welche \
-        Pflanzen das CO₂ aus der Luft aufnehmen können. "
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:42
-msgid "EXPANDER_PHOTOSYNTHESIS"
-4stem-en msgstr ""
-4stem-de msgstr "Fotosynthese"
-4stem-fr msgstr "Photosynthesis"
-4stem-pl msgstr "Photosynthesis"
-4stem-es msgstr "Photosynthesis"
-4bio-en msgstr ""
-4bio-de msgstr "Fotosynthese"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:43
-msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_1"
-4stem-en msgstr ""
-4stem-de msgstr "Pflanzen benötigen für ihr Wachstum wie auch wir Menschen Nährstoffe. Essentiell sind dabei vor allem Wasser \
-        und Mineralstoffe, aber auch Pflanzen benötigen Fette, Kohlenhydrate und Proteine. Die meisten dieser Nährstoffe \
-        können die Pflanzen über ihre Wurzeln aus dem Boden aufnehmen, jedoch nicht alle. Wie bereits angesprochen sind \
-        Pflanzen Produzenten und können daher Nährstoffe herstellen. Zu diesen Nährstoffen zählen insbesondere die \
-        Kohlenhydrate, welche bei der Fotosynthese entstehen."
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr "Pflanzen benötigen für ihr Wachstum wie auch wir Menschen Nährstoffe. Essentiell sind dabei vor allem Wasser \
-        und Mineralstoffe, aber auch Pflanzen benötigen Fette, Kohlenhydrate und Proteine. Die meisten dieser Nährstoffe \
-        können die Pflanzen über ihre Wurzeln aus dem Boden aufnehmen, jedoch nicht alle. Wie bereits angesprochen sind \
-        Pflanzen Produzenten und können daher Nährstoffe herstellen. Zu diesen Nährstoffen zählen insbesondere die \
-        Kohlenhydrate, welche bei der Fotosynthese entstehen."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:43
-msgid "EXPANDER_PHOTOSYNTHESIS_EXPLANATION_2"
-4stem-en msgstr ""
-4stem-de msgstr "Bei der Fotosynthese stellen Pflanzen Biomasse in Form von Glukose her. Dazu benötigen sie CO₂, H₂O \
-        sowie Energie in Form von Licht. [Hier](https://www.planet-schule.de/mm/lebensraum/wald-photosynthese/) könnt \
-        ihr euch über den Ablauf der Fotosynthese informieren."
-4stem-fr msgstr " [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
-        about the process of photosynthesis."
-4stem-pl msgstr " [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
-        about the process of photosynthesis."
-4stem-es msgstr " [Here](https://www.youtube.com/watch?v=68b1HAIfX08) you can find out more \
-        about the process of photosynthesis."
-4bio-en msgstr ""
-4bio-de msgstr "Bei der Fotosynthese stellen Pflanzen Biomasse in Form von Glukose her. Dazu benötigen sie CO₂, H₂O \
-        sowie Energie in Form von Licht. [Hier](https://www.planet-schule.de/mm/lebensraum/wald-photosynthese/) könnt \
-        ihr euch über den Ablauf der Fotosynthese informieren."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:54
-msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION"
-4stem-en msgstr ""
-4stem-de msgstr "Ort der Fotosynthese"
-4stem-fr msgstr "Place of photosynthesis"
-4stem-pl msgstr "Place of photosynthesis"
-4stem-es msgstr "Place of photosynthesis"
-4bio-en msgstr ""
-4bio-de msgstr "Ort der Fotosynthese"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:55
-msgid "EXPANDER_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-4stem-en msgstr ""
-4stem-de msgstr "Die Fotosynthese findet in den Zellen der meist grünen Bestandteile von Pflanzen statt. In diesen Zellen befinden \
-        sich spezialisierte Organellen, die Chloroplasten. Dort findet der Teil der Fotosynthese statt, \
-        welcher als Lichtreaktion bezeichnet wird. In der Membran sitzen die sogenannten Fotosysteme. Das Fotosystem II \
-        (FSII) welches durch die Energie des Lichtes Wasser in Sauerstoff und Wasserstoff aufspaltet ist für uns besonders \
-        Interessant. "
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr "Die Fotosynthese findet in den Zellen der meist grünen Bestandteile von Pflanzen statt. In diesen Zellen befinden \
-        sich spezialisierte Organellen, die Chloroplasten. Dort findet der Teil der Fotosynthese statt, \
-        welcher als Lichtreaktion bezeichnet wird. In der Membran sitzen die sogenannten Fotosysteme. Das Fotosystem II \
-        (FSII) welches durch die Energie des Lichtes Wasser in Sauerstoff und Wasserstoff aufspaltet ist für uns besonders \
-        Interessant. "
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:59
-msgid "EXPANDER_NPQ"
-4stem-en msgstr ""
-4stem-de msgstr "Nicht-photochemisches Quenching (NPQ)"
-4stem-fr msgstr "Non-photochemical Quenching (NPQ)"
-4stem-pl msgstr "Non-photochemical Quenching (NPQ)"
-4stem-es msgstr "Non-photochemical Quenching (NPQ)"
-4bio-en msgstr ""
-4bio-de msgstr "Nicht-photochemisches Quenching (NPQ)"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_NPQ_EXPLANATION"
-4stem-en msgstr ""
-4stem-de msgstr "Was passiert eigentlich wenn zu viel Licht und damit überschüssige Energie auf das Fotosystem II trifft? Geht \
-        dieses kaputt und muss dann von der Zelle erneuert werden? Zum Glück nicht! Stattdessen kann die überschüssige \
-        Energie in Form von Wärme abgegeben oder zur ATP-Synthese benutzt werden. So kann die Zelle geschützt werden. \
-        Die beiden nicht photochemischen Schutzmechanismen werden als NPQ bezeichnet."
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr "Was passiert eigentlich wenn zu viel Licht und damit überschüssige Energie auf das Fotosystem II trifft? Geht \
-        dieses kaputt und muss dann von der Zelle erneuert werden? Zum Glück nicht! Stattdessen kann die überschüssige \
-        Energie in Form von Wärme abgegeben oder zur ATP-Synthese benutzt werden. So kann die Zelle geschützt werden. \
-        Die beiden nicht photochemischen Schutzmechanismen werden als NPQ bezeichnet."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_NPQ_VIOLAXIN_EXPLANATION"
-4stem-en msgstr ""
-4stem-de msgstr "Das NPQ kann darauf zurück geführt werden, dass Violaxanthin zu Zeaxanthin epoxidiert. Diesen Effekt können Sie \
-        auf den folgenden Seiten selbstständig erforschen."
-4stem-fr msgstr "The NPQ can be attributed to the fact that violaxanthin epoxidizes to zeaxanthin. You can explore this effect \
-        on your own on the following pages."
-4stem-pl msgstr "The NPQ can be attributed to the fact that violaxanthin epoxidizes to zeaxanthin. You can explore this effect \
-        on your own on the following pages."
-4stem-es msgstr "The NPQ can be attributed to the fact that violaxanthin epoxidizes to zeaxanthin. You can explore this effect \
-        on your own on the following pages."
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_MATHEMATICAL_MODELLING"
-4stem-en msgstr ""
-4stem-de msgstr "Mathematische Modelle in der Biologie"
-4stem-fr msgstr "Mathematical models in biology"
-4stem-pl msgstr "Modele matematyczne w biologii"
-4stem-es msgstr "Mathematical models in biology"
-4bio-en msgstr ""
-4bio-de msgstr "Mathematische Modelle in der Biologie"
-4bio-fr msgstr ""
-4bio-pl msgstr "Modele matematyczne w biologii"
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_1"
-4stem-en msgstr ""
-4stem-de msgstr "Mathematische Modellierung, also das entwickeln mathematischer Modelle, findet in sehr vielen Bereichen von \
-        Forschung und Industrie Anwendung. Insbesondere immer dann, wenn Probleme gelöst werden müssen, welche mit \
-        Standard-Testverfahren zu hohe Kosten verursachen würden. Dabei wird das Problem mathematisch beschrieben und \
-        Anschließend das mathematische Problem mit mathematischen Verfahren gelöst. Das Ergebnis muss anschließend auf \
-        die reale Situation, also das Problem angewendet werden und die Lösung kann dann bewertet werden. Ist die Lösung \
-        nicht ausreichend, muss das mathematische Problem überarbeitet werden. Das schlussendlich erfolgreiche mathematische \
-        Beschreibung des Problems wird als mathematisches Modell bezeichnet."
-4stem-fr msgstr "Mathematical modeling, i.e. the development of mathematical models, is used in many areas of \
-        research and industry. In particular, whenever problems need to be solved that would be too costly to solve using \
-        standard test procedures would cause too high costs. The problem is described mathematically and \
-        Then the mathematical problem is solved with mathematical methods. The result must then be applied to \
-        the real situation, i.e. the problem, and the solution can then be evaluated. If the solution \
-        is not sufficient, the mathematical problem must be revised. The eventual successful mathematical \
-        description of the problem is called a mathematical model."
-4stem-pl msgstr "Modelowanie matematyczne, w tym tworzenie nowych modeli matematycznych, jest wykorzystywane w wielu dziedzinach badań i przemysłu. W szczególności, gdy trzeba rozwiązać problemy, których rozwiązanie przy użyciu standardowych procedur testowych byłoby zbyt kosztowne. Problem jest opisywany matematycznie, a jest rozwiązywany przy u←yciu metod matematycznych i obliczeniowych. Wynik należy następnie zastosować do rzeczywistej sytuacji, tj. problemu, a następnie można ocenić rozwiązanie. Jeśli rozwiązanie nie jest wystarczające, tj. nie spełnia naszych kryteriów, problem matematyczny musi zostać poprawiony. Ostatecznie udany matematyczny opis problemu nazywany jest modelem matematycznym."
-4stem-es msgstr "Mathematical modeling, i.e. the development of mathematical models, is used in many areas of \
-        research and industry. In particular, whenever problems need to be solved that would be too costly to solve using \
-        standard test procedures would cause too high costs. The problem is described mathematically and \
-        Then the mathematical problem is solved with mathematical methods. The result must then be applied to \
-        the real situation, i.e. the problem, and the solution can then be evaluated. If the solution \
-        is not sufficient, the mathematical problem must be revised. The eventual successful mathematical \
-        description of the problem is called a mathematical model."
-4bio-en msgstr ""
-4bio-de msgstr "Mathematische Modellierung, also das entwickeln mathematischer Modelle, findet in sehr vielen Bereichen von \
-        Forschung und Industrie Anwendung. Insbesondere immer dann, wenn Probleme gelöst werden müssen, welche mit \
-        Standard-Testverfahren zu hohe Kosten verursachen würden. Dabei wird das Problem mathematisch beschrieben und \
-        Anschließend das mathematische Problem mit mathematischen Verfahren gelöst. Das Ergebnis muss anschließend auf \
-        die reale Situation, also das Problem angewendet werden und die Lösung kann dann bewertet werden. Ist die Lösung \
-        nicht ausreichend, muss das mathematische Problem überarbeitet werden. Das schlussendlich erfolgreiche mathematische \
-        Beschreibung des Problems wird als mathematisches Modell bezeichnet."
-4bio-fr msgstr ""
-4bio-pl msgstr "Modelowanie matematyczne, w tym tworzenie nowych modeli matematycznych, jest wykorzystywane w wielu dziedzinach badań i przemysłu. W szczególności, gdy trzeba rozwiązać problemy, których rozwiązanie przy użyciu standardowych procedur testowych byłoby zbyt kosztowne. Problem jest opisywany matematycznie, a jest rozwiązywany przy u←yciu metod matematycznych i obliczeniowych. Wynik należy następnie zastosować do rzeczywistej sytuacji, tj. problemu, a następnie można ocenić rozwiązanie. Jeśli rozwiązanie nie jest wystarczające, tj. nie spełnia naszych kryteriów, problem matematyczny musi zostać poprawiony. Ostatecznie udany matematyczny opis problemu nazywany jest modelem matematycznym."
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_MATHEMATICAL_MODELLING_EXPLANATION_2"
-4stem-en msgstr ""
-4stem-de msgstr "In der Biologie werden mathematische Modelle oft verwendet um Stoffwechselwege zu beschreiben. Dies lässt zu, \
-        Veränderungen auf die Stoffwechselwege simuliert und bewertet werden können. Dazu können unter anderem \
-        Differentialgleichungen verwendet werden."
-4stem-fr msgstr "In biology, mathematical models are often used to describe metabolic pathways. This allows \
-        changes on the metabolic pathways can be simulated and evaluated. Among other things, \
-        differential equations can be used."
-4stem-pl msgstr "In biology, mathematical models are often used to describe metabolic pathways. This allows \
-        changes on the metabolic pathways can be simulated and evaluated. Among other things, \
-        differential equations can be used."
-4stem-es msgstr "In biology, mathematical models are often used to describe metabolic pathways. This allows \
-        changes on the metabolic pathways can be simulated and evaluated. Among other things, \
-        differential equations can be used."
-4bio-en msgstr ""
-4bio-de msgstr "In der Biologie werden mathematische Modelle oft verwendet um Stoffwechselwege zu beschreiben. Dies lässt zu, \
-        Veränderungen auf die Stoffwechselwege simuliert und bewertet werden können. Dazu können unter anderem \
-        Differentialgleichungen verwendet werden."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_DIFFERENTIAL_EQUATIONS"
-4stem-en msgstr ""
-4stem-de msgstr "Differentialgleichungen"
-4stem-fr msgstr "Differential equations"
-4stem-pl msgstr "Równania różniczkowe"
-4stem-es msgstr "Differential equations"
-4bio-en msgstr ""
-4bio-de msgstr "Differentialgleichungen"
-4bio-fr msgstr ""
-4bio-pl msgstr "Równania różniczkowe"
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_1"
-4stem-en msgstr ""
-4stem-de msgstr "Als eine Differentialgleichung bezeichnet man jegliche Gleichungen, welche aus einer Funktion und einer Ableitung \
-        bestehen. Zum Lösen einer Differentialgleichung muss eine Funktion gefunden werden, welche eingesetzt in die Gleichung, \
-        diese löst."
-4stem-fr msgstr "A differential equation is any equation consisting of a function and a derivative \
-        is called a differential equation. To solve a differential equation, a function must be found which, when inserted into the equation, \
-        solves it."
-4stem-pl msgstr "A differential equation is any equation consisting of a function and a derivative \
-        is called a differential equation. To solve a differential equation, a function must be found which, when inserted into the equation, \
-        solves it."
-4stem-es msgstr "A differential equation is any equation consisting of a function and a derivative \
-        is called a differential equation. To solve a differential equation, a function must be found which, when inserted into the equation, \
-        solves it."
-4bio-en msgstr ""
-4bio-de msgstr "Als eine Differentialgleichung bezeichnet man jegliche Gleichungen, welche aus einer Funktion und einer Ableitung \
-        bestehen. Zum Lösen einer Differentialgleichung muss eine Funktion gefunden werden, welche eingesetzt in die Gleichung, \
-        diese löst."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_2"
-4stem-en msgstr ""
-4stem-de msgstr "Eine Differenzialgleichung hat in der Regel folgende Gestalt: y'(x)=f(x,y(x))"
-4stem-fr msgstr "A differential equation usually has the following form: y'(x)=f(x,y(x))"
-4stem-pl msgstr "A differential equation usually has the following form: y'(x)=f(x,y(x))"
-4stem-es msgstr "A differential equation usually has the following form: y'(x)=f(x,y(x))"
-4bio-en msgstr ""
-4bio-de msgstr "Eine Differenzialgleichung hat in der Regel folgende Gestalt: y'(x)=f(x,y(x))"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:60
-msgid "EXPANDER_DIFFERENTIAL_EQUATIONS_EXPLANATION_3"
-4stem-en msgstr ""
-4stem-de msgstr "[Hier](https://studyflix.de/mathematik/gewohnliche-dgl-928) gibt es weiterführende Informationen zum Thema \
-        Differentialgleichungen."
-4stem-fr msgstr "[Here](https://www.cuemath.com/calculus/differential-equation/) there is further information on the topic \
-        Differential equations."
-4stem-pl msgstr "[Here](https://www.cuemath.com/calculus/differential-equation/) there is further information on the topic \
-        Differential equations."
-4stem-es msgstr "[Here](https://www.cuemath.com/calculus/differential-equation/) there is further information on the topic \
-        Differential equations."
-4bio-en msgstr ""
-4bio-de msgstr "[Hier](https://www.youtube.com/watch?v=2qQYxam2QGg) gibt es weiterführende Informationen zum Thema \
-        Differentialgleichungen."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: EINFÜHRUNG.py:64
-msgid "CREDITS_ANNA"
-4stem-en msgstr ""
-4stem-de msgstr "Alle angezeigten Diagramme werden von einem mathematischen Modell erzeugt. Dieses Modell wurde von [Matuszynska \
-        et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub) entwickelt."
-4stem-fr msgstr "All displayed diagrams are generated by a mathematical model. This model was developed by \
-        [Matuszynska et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub)."
-4stem-pl msgstr "All displayed diagrams are generated by a mathematical model. This model was developed by \
-        [Matuszynska et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub)."
-4stem-es msgstr "All displayed diagrams are generated by a mathematical model. This model was developed by \
-        [Matuszynska et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub)."
-4bio-en msgstr ""
-4bio-de msgstr "Alle angezeigten Diagramme werden von einem mathematischen Modell erzeugt. Dieses Modell wurde von [Matuszynska \
-        et al. 2016](https://www.sciencedirect.com/science/article/pii/S0005272816306120?via%3Dihub) entwickelt."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:50
-msgid "INTRODUCTION_LITERATURE"
-4stem-en msgstr ""
-4stem-de msgstr "Folgende Literatur vertieft das Thema Photosynthese, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
-4stem-fr msgstr "The following literature will deepen the topic of photosynthesis, or provide an opportunity to familiarize \
-        yourself with the basics."
-4stem-pl msgstr "The following literature will deepen the topic of photosynthesis, or provide an opportunity to familiarize \
-        yourself with the basics."
-4stem-es msgstr "The following literature will deepen the topic of photosynthesis, or provide an opportunity to familiarize \
-        yourself with the basics."
-4bio-en msgstr ""
-4bio-de msgstr "Folgende Literatur vertieft das Thema Photosynthese, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: Conclusion
-msgid "BEGIN_OF_CONCLUTION"
-4stem-en msgstr ""
-4stem-de msgstr "Wir hoffen, dass du auf dieser Website eine umfassende Einführung in die faszinierende Welt der Pflanzenbiologie \
-        erhalten hast. Durch die Analyse von Diagrammen, die mit Computermodellen erstellt wurden, konntest du etwas \
-        über die Auswirkungen der Lichtintensität auf die Fotosynthese erfahren und das Thema Kurzzeitgedächtnis von \
-        Pflanzen erkunden. Dabei solltest du die folgenden Schlussfolgerungen gezogen haben:"
-4stem-fr msgstr "We hope you had a comprehensive introduction to the fascinating world of plant biology on this website. By \
-        analyzing diagrams created with computer models, you were able to learn about the effects of light intensity \
-        on photosynthesis and explore the topic of plant short-term memory. In doing so, you should have drawn the \
-        following conclusions:"
-4stem-pl msgstr "We hope you had a comprehensive introduction to the fascinating world of plant biology on this website. By \
-        analyzing diagrams created with computer models, you were able to learn about the effects of light intensity \
-        on photosynthesis and explore the topic of plant short-term memory. In doing so, you should have drawn the \
-        following conclusions:"
-4stem-es msgstr "We hope you had a comprehensive introduction to the fascinating world of plant biology on this website. By \
-        analyzing diagrams created with computer models, you were able to learn about the effects of light intensity \
-        on photosynthesis and explore the topic of plant short-term memory. In doing so, you should have drawn the \
-        following conclusions:"
-4bio-en msgstr ""
-4bio-de msgstr "Wir hoffen, dass du auf dieser Website eine umfassende Einführung in die faszinierende Welt der Pflanzenbiologie \
-        erhalten hast. Durch die Analyse von Diagrammen, die mit Computermodellen erstellt wurden, konntest du etwas \
-        über die Auswirkungen der Lichtintensität auf die Fotosynthese erfahren und das Thema Kurzzeitgedächtnis von \
-        Pflanzen erkunden. Dabei solltest du die folgenden Schlussfolgerungen gezogen haben:"
-4bio-fr msgstr "We hope you had a comprehensive introduction to the fascinating world of plant biology on this website. By \
-        analyzing diagrams created with computer models, you were able to learn about the effects of light intensity \
-        on photosynthesis and explore the topic of plant short-term memory. In doing so, you should have drawn the \
-        following conclusions:"
-4bio-pl msgstr "We hope you had a comprehensive introduction to the fascinating world of plant biology on this website. By \
-        analyzing diagrams created with computer models, you were able to learn about the effects of light intensity \
-        on photosynthesis and explore the topic of plant short-term memory. In doing so, you should have drawn the \
-        following conclusions:"
-4bio-es msgstr "We hope you had a comprehensive introduction to the fascinating world of plant biology on this website. By \
-        analyzing diagrams created with computer models, you were able to learn about the effects of light intensity \
-        on photosynthesis and explore the topic of plant short-term memory. In doing so, you should have drawn the \
-        following conclusions:"
-
-#: Conclusion
-msgid "CONCLUTION_POINT_1"
-4stem-en msgstr ""
-4stem-de msgstr "- Die Lichtintensität hat einen erheblichen Einfluss auf die Fotosyntheserate von Pflanzen. Mit zunehmender \
-        Lichtintensität nimmt die Fotosyntheserate bis zu einem gewissen Grad zu."
-4stem-fr msgstr "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity \
-        increases, the rate of photosynthesis increases to some degree."
-4stem-pl msgstr "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity \
-        increases, the rate of photosynthesis increases to some degree."
-4stem-es msgstr "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity \
-        increases, the rate of photosynthesis increases to some degree."
-4bio-en msgstr ""
-4bio-de msgstr "- Die Lichtintensität hat einen erheblichen Einfluss auf die Fotosyntheserate von Pflanzen. Mit zunehmender \
-        Lichtintensität nimmt die Fotosyntheserate bis zu einem gewissen Grad zu."
-4bio-fr msgstr "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity \
-        increases, the rate of photosynthesis increases to some degree."
-4bio-pl msgstr "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity \
-        increases, the rate of photosynthesis increases to some degree."
-4bio-es msgstr "- Light intensity has a significant effect on the rate of photosynthesis in plants. As light intensity \
-        increases, the rate of photosynthesis increases to some degree."
-
-#: Conclusion
-msgid "CONCLUTION_POINT_2"
-4stem-en msgstr ""
-4stem-de msgstr "- Die Beziehung zwischen Lichtintensität und Fotosyntheserate ist nicht linear. Vielmehr folgt sie einer Kurve, \
-        die an einem bestimmten Punkt, dem Sättigungspunkt, ihren Höhepunkt erreicht."
-4stem-fr msgstr "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve \
-        that peaks at a certain point, the saturation point."
-4stem-pl msgstr "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve \
-        that peaks at a certain point, the saturation point."
-4stem-es msgstr "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve \
-        that peaks at a certain point, the saturation point."
-4bio-en msgstr ""
-4bio-de msgstr "- Die Beziehung zwischen Lichtintensität und Fotosyntheserate ist nicht linear. Vielmehr folgt sie einer Kurve, \
-        die an einem bestimmten Punkt, dem Sättigungspunkt, ihren Höhepunkt erreicht."
-4bio-fr msgstr "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve \
-        that peaks at a certain point, the saturation point."
-4bio-pl msgstr "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve \
-        that peaks at a certain point, the saturation point."
-4bio-es msgstr "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve \
-        that peaks at a certain point, the saturation point."
-
-#: Conclusion
-msgid "CONCLUTION_POINT_3"
-4stem-en msgstr ""
-4stem-de msgstr "- Pflanzen haben die Fähigkeit, sich an vergangene Lichteinwirkung zu erinnern und ihre Fotosyntheseraten \
-        entsprechend anzupassen. Dieses Kurzzeitgedächtnis ermöglicht es den Pflanzen, ihren Energieverbrauch zu \
-        optimieren und sich an veränderte Umweltbedingungen anzupassen."
-4stem-fr msgstr "- Plants have the ability to remember past light exposure and adjust their photosynthetic rates accordingly. \
-        This short-term memory allows plants to optimize their energy consumption and adapt to changing environmental conditions."
-4stem-pl msgstr "- Plants have the ability to remember past light exposure and adjust their photosynthetic rates accordingly. \
-        This short-term memory allows plants to optimize their energy consumption and adapt to changing environmental conditions."
-4stem-es msgstr "- Plants have the ability to remember past light exposure and adjust their photosynthetic rates accordingly. \
-        This short-term memory allows plants to optimize their energy consumption and adapt to changing environmental conditions."
-4bio-en msgstr ""
-4bio-de msgstr "- Pflanzen haben die Fähigkeit, sich an vergangene Lichteinwirkung zu erinnern und ihre Fotosyntheseraten \
-        entsprechend anzupassen. Dieses Kurzzeitgedächtnis ermöglicht es den Pflanzen, ihren Energieverbrauch zu \
-        optimieren und sich an veränderte Umweltbedingungen anzupassen."
-4bio-fr msgstr "- Plants have the ability to remember past light exposure and adjust their photosynthetic rates accordingly. \
-        This short-term memory allows plants to optimize their energy consumption and adapt to changing environmental conditions."
-4bio-pl msgstr "- Plants have the ability to remember past light exposure and adjust their photosynthetic rates accordingly. \
-        This short-term memory allows plants to optimize their energy consumption and adapt to changing environmental conditions."
-4bio-es msgstr "- Plants have the ability to remember past light exposure and adjust their photosynthetic rates accordingly. \
-        This short-term memory allows plants to optimize their energy consumption and adapt to changing environmental conditions."
-
-#: Conclusion
-msgid "END_OF_CONCLUTION"
-4stem-en msgstr ""
-4stem-de msgstr "Alles in allem ist die PAM-Messung ein interessanter und effektiver Weg, um etwas über die komplexen \
-        Mechanismen des Pflanzenwachstums und der Entwicklung zu erfahren. Wir möchten dich ermutigen, über diese \
-        Schlussfolgerungen und die breiteren Auswirkungen dieser Erkenntnisse auf unser Verständnis der natürlichen \
-        Welt nachzudenken. Auf diese Weise wirst du die unglaubliche Komplexität und Schönheit des Pflanzenreichs noch \
-        mehr schätzen lernen."
-4stem-fr msgstr "All in all, PAM measurement is an interesting and effective way to learn about the complex mechanisms \
-        underlying plant growth and development. We encourage you to think about these conclusions and the broader \
-        implications of these findings for our understanding of the natural world. In doing so, you will come to \
-        appreciate even more the incredible complexity and beauty of the plant kingdom."
-4stem-pl msgstr "All in all, PAM measurement is an interesting and effective way to learn about the complex mechanisms \
-        underlying plant growth and development. We encourage you to think about these conclusions and the broader \
-        implications of these findings for our understanding of the natural world. In doing so, you will come to \
-        appreciate even more the incredible complexity and beauty of the plant kingdom."
-4stem-es msgstr "All in all, PAM measurement is an interesting and effective way to learn about the complex mechanisms \
-        underlying plant growth and development. We encourage you to think about these conclusions and the broader \
-        implications of these findings for our understanding of the natural world. In doing so, you will come to \
-        appreciate even more the incredible complexity and beauty of the plant kingdom."
-4bio-en msgstr ""
-4bio-de msgstr "Alles in allem ist die PAM-Messung ein interessanter und effektiver Weg, um etwas über die komplexen \
-        Mechanismen des Pflanzenwachstums und der Entwicklung zu erfahren. Wir möchten dich ermutigen, über diese \
-        Schlussfolgerungen und die breiteren Auswirkungen dieser Erkenntnisse auf unser Verständnis der natürlichen \
-        Welt nachzudenken. Auf diese Weise wirst du die unglaubliche Komplexität und Schönheit des Pflanzenreichs noch \
-        mehr schätzen lernen."
-4bio-fr msgstr "All in all, PAM measurement is an interesting and effective way to learn about the complex mechanisms \
-        underlying plant growth and development. We encourage you to think about these conclusions and the broader \
-        implications of these findings for our understanding of the natural world. In doing so, you will come to \
-        appreciate even more the incredible complexity and beauty of the plant kingdom."
-4bio-pl msgstr "All in all, PAM measurement is an interesting and effective way to learn about the complex mechanisms \
-        underlying plant growth and development. We encourage you to think about these conclusions and the broader \
-        implications of these findings for our understanding of the natural world. In doing so, you will come to \
-        appreciate even more the incredible complexity and beauty of the plant kingdom."
-4bio-es msgstr "All in all, PAM measurement is an interesting and effective way to learn about the complex mechanisms \
-        underlying plant growth and development. We encourage you to think about these conclusions and the broader \
-        implications of these findings for our understanding of the natural world. In doing so, you will come to \
-        appreciate even more the incredible complexity and beauty of the plant kingdom."
-
-#: Explanation by Tobias
-msgid "GROWING_PLANTS_2"
-4stem-en msgstr ""
-4stem-de msgstr "Leuchtende Pflanzen!"
-4stem-fr msgstr "Glowing Plants!"
-4stem-pl msgstr "Glowing Plants!"
-4stem-es msgstr "Glowing Plants!"
-4bio-en msgstr ""
-4bio-de msgstr "Leuchtende Pflanzen!"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: Explanation by Tobias
-msgid "EXPLANATION_MEASUREMENT_2"
-4stem-en msgstr ""
-4stem-de msgstr "Diese Strukturierung ist wichtig, weil wir die Fotosynthese unter natürlichen Bedingungen messen wollen, also \
-        im Freien und bei unterschiedlicher Bestrahlung, wenn die Pflanze bereits fluoresziert. Normalerweise wären wir \
-        nicht in der Lage, die vom Außen- und Messlicht erzeugte Fluoreszenz zu unterscheiden. Da unser Messlicht und \
-        die daraus resultierende Fluoreszenz jedoch moduliert sind, können wir mit ein wenig Mathematik berechnen, wie \
-        viel Fluoreszenz allein durch unser Messlicht verursacht wurde. Und da alle Blitze gleich waren, haben wir den \
-        Anteil des Lichts gemessen, der in Fluoreszenz umgewandelt wurde - eine Fluoreszenzausbeute. Diese Ausbeute ist \
-        das, was Sie in den Modellgrafiken sehen werden. Sie nimmt ab, wenn die Fotosynthese der Pflanze effizienter ist, \
-        mit stärkerem Lichtschutz, und viele weitere Faktoren wirken sich ebenfalls auf sie aus. Und sie ist unabhängig \
-        vom Außenlicht vergleichbar - eine vielseitige Messung."
-4stem-fr msgstr "This patterning is essential because we want to measure photosynthesis under natural conditions, outside and in \
-        different irradiation when the plant already fluoresces. Typically, we would not be able to tell apart the \
-        fluorescence produced by the outside and the measuring light. But, because our measuring light and its resulting \
-        fluorescence are -modulated-, with some clever math, we can calculate how much fluorescence was caused by just \
-        our measuring light. And because all the flashes were the same, we measured the fraction of light turned to \
-        fluorescence - a fluorescence yield. This yield is what you will see in the model graphs. It decreases when the \
-        plant's photosynthesis is more efficient, with more powerful light protection, and many more factors also affect \
-        it. And it is comparable regardless of the outside light - a versatile measurement."
-4stem-pl msgstr "This patterning is essential because we want to measure photosynthesis under natural conditions, outside and in \
-        different irradiation when the plant already fluoresces. Typically, we would not be able to tell apart the \
-        fluorescence produced by the outside and the measuring light. But, because our measuring light and its resulting \
-        fluorescence are -modulated-, with some clever math, we can calculate how much fluorescence was caused by just \
-        our measuring light. And because all the flashes were the same, we measured the fraction of light turned to \
-        fluorescence - a fluorescence yield. This yield is what you will see in the model graphs. It decreases when the \
-        plant's photosynthesis is more efficient, with more powerful light protection, and many more factors also affect \
-        it. And it is comparable regardless of the outside light - a versatile measurement."
-4stem-es msgstr "This patterning is essential because we want to measure photosynthesis under natural conditions, outside and in \
-        different irradiation when the plant already fluoresces. Typically, we would not be able to tell apart the \
-        fluorescence produced by the outside and the measuring light. But, because our measuring light and its resulting \
-        fluorescence are -modulated-, with some clever math, we can calculate how much fluorescence was caused by just \
-        our measuring light. And because all the flashes were the same, we measured the fraction of light turned to \
-        fluorescence - a fluorescence yield. This yield is what you will see in the model graphs. It decreases when the \
-        plant's photosynthesis is more efficient, with more powerful light protection, and many more factors also affect \
-        it. And it is comparable regardless of the outside light - a versatile measurement."
-4bio-en msgstr ""
-4bio-de msgstr "Diese Strukturierung ist wichtig, weil wir die Fotosynthese unter natürlichen Bedingungen messen wollen, also \
-        im Freien und bei unterschiedlicher Bestrahlung, wenn die Pflanze bereits fluoresziert. Normalerweise wären wir \
-        nicht in der Lage, die vom Außen- und Messlicht erzeugte Fluoreszenz zu unterscheiden. Da unser Messlicht und \
-        die daraus resultierende Fluoreszenz jedoch moduliert sind, können wir mit ein wenig Mathematik berechnen, wie \
-        viel Fluoreszenz allein durch unser Messlicht verursacht wurde. Und da alle Blitze gleich waren, haben wir den \
-        Anteil des Lichts gemessen, der in Fluoreszenz umgewandelt wurde - eine Fluoreszenzausbeute. Diese Ausbeute ist \
-        das, was Sie in den Modellgrafiken sehen werden. Sie nimmt ab, wenn die Fotosynthese der Pflanze effizienter ist, \
-        mit stärkerem Lichtschutz, und viele weitere Faktoren wirken sich ebenfalls auf sie aus. Und sie ist unabhängig \
-        vom Außenlicht vergleichbar - eine vielseitige Messung."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:40
-msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_1"
-4stem-en msgstr ""
-4stem-de msgstr "Die Ackerschmalwand (Arabidopsis thaliana) wird als Modellorganismus bezeichnet, da sie häufig als Modellsystem \
-        in der Pflanzenbiologie verwendet wird. Sie hat mehrere Eigenschaften, die sie für Laborstudien gut geeignet machen, darunter:"
-4stem-fr msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
-           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
-4stem-pl msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
-           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
-4stem-es msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
-           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
-4bio-en msgstr ""
-4bio-de msgstr "Die Ackerschmalwand (Arabidopsis thaliana) wird als Modellorganismus bezeichnet, da sie häufig als Modellsystem \
-        in der Pflanzenbiologie verwendet wird. Sie hat mehrere Eigenschaften, die sie für Laborstudien gut geeignet machen, darunter:"
-4bio-fr msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
-           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
-4bio-pl msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
-           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
-4bio-es msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model \
-           system in plant biology. It has several characteristics that make it well suited for laboratory studies, including:"
-
-#: pages/1 Messmethode.py:40
-msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT1"
-4stem-en msgstr ""
-4stem-de msgstr "1. Geringe Größe und schneller Lebenszyklus: Arabidopsis thaliana hat einen kurzen Lebenszyklus, der es den \
-        Forschern ermöglicht, mehrere Generationen in einem relativ kurzen Zeitraum zu untersuchen."
-4stem-fr msgstr "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
-        multiple generations in a relatively short period of time."
-4stem-pl msgstr "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
-        multiple generations in a relatively short period of time."
-4stem-es msgstr "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
-        multiple generations in a relatively short period of time."
-4bio-en msgstr ""
-4bio-de msgstr "1. Geringe Größe und schneller Lebenszyklus: Arabidopsis thaliana hat einen kurzen Lebenszyklus, der es den \
-        Forschern ermöglicht, mehrere Generationen in einem relativ kurzen Zeitraum zu untersuchen."
-4bio-fr msgstr "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
-        multiple generations in a relatively short period of time."
-4bio-pl msgstr "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
-        multiple generations in a relatively short period of time."
-4bio-es msgstr "1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study \
-        multiple generations in a relatively short period of time."
-
-#: pages/1 Messmethode.py:40
-msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT2"
-4stem-en msgstr ""
-4stem-de msgstr "2. Einfache Anatomie: Die Struktur der Pflanze ist einfach und gut verstanden, was es den Forschern erleichtert, \
-        spezifische Entwicklungsprozesse zu untersuchen."
-4stem-fr msgstr "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
-            study specific developmental processes."
-4stem-pl msgstr "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
-            study specific developmental processes."
-4stem-es msgstr "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
-            study specific developmental processes."
-4bio-en msgstr ""
-4bio-de msgstr "2. Einfache Anatomie: Die Struktur der Pflanze ist einfach und gut verstanden, was es den Forschern erleichtert, \
-        spezifische Entwicklungsprozesse zu untersuchen."
-4bio-fr msgstr "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
-            study specific developmental processes."
-4bio-pl msgstr "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
-            study specific developmental processes."
-4bio-es msgstr "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to \
-            study specific developmental processes."
-
-#: pages/1 Messmethode.py:40
-msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT3"
-4stem-en msgstr ""
-4stem-de msgstr "3. Sequenzierung des Genoms: Das vollständige Genom der Ackerschmalwand (Arabidopsis thaliana) war das erste \
-            Pflanzengenom, das sequenziert wurde und den Forschern eine Fülle von genetischen Informationen über die Pflanze lieferte."
-4stem-fr msgstr "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
-            which has provided researchers with a wealth of genetic information about the plant."
-4stem-pl msgstr "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
-            which has provided researchers with a wealth of genetic information about the plant."
-4stem-es msgstr "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
-            which has provided researchers with a wealth of genetic information about the plant."
-4bio-en msgstr ""
-4bio-de msgstr "3. Sequenzierung des Genoms: Das vollständige Genom der Ackerschmalwand (Arabidopsis thaliana) war das erste \
-            Pflanzengenom, das sequenziert wurde und den Forschern eine Fülle von genetischen Informationen über die Pflanze lieferte."
-4bio-fr msgstr "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
-            which has provided researchers with a wealth of genetic information about the plant."
-4bio-pl msgstr "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
-            which has provided researchers with a wealth of genetic information about the plant."
-4bio-es msgstr "3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, \
-            which has provided researchers with a wealth of genetic information about the plant."
-
-#: pages/1 Messmethode.py:40
-msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_PONT4"
-4stem-en msgstr ""
-4stem-de msgstr "4. Genetische und molekulare Hilfsmittel: Für Arabidopsis thaliana steht eine große Sammlung genetischer und \
-        molekularer Hilfsmittel zur Verfügung, die es Forschern ermöglicht, die Entwicklung, das Wachstum und die \
-        Stressreaktionen von Pflanzen auf zellulärer und molekularer Ebene zu untersuchen."
-4stem-fr msgstr "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
-        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
-4stem-pl msgstr "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
-        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
-4stem-es msgstr "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
-        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
-4bio-en msgstr ""
-4bio-de msgstr "4. Genetische und molekulare Hilfsmittel: Für Arabidopsis thaliana steht eine große Sammlung genetischer und \
-        molekularer Hilfsmittel zur Verfügung, die es Forschern ermöglicht, die Entwicklung, das Wachstum und die \
-        Stressreaktionen von Pflanzen auf zellulärer und molekularer Ebene zu untersuchen."
-4bio-fr msgstr "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
-        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
-4bio-pl msgstr "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
-        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
-4bio-es msgstr "4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em> \
-        , which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels."
-
-#: pages/1 Messmethode.py:40
-msgid "EXPANDER_MODEL_ORGANISM_EXPLANATION_2"
-4stem-en msgstr ""
-4stem-de msgstr "All diese Faktoren haben Arabidopsis thaliana zu einem wichtigen Modellorganismus für das Untersuchen der \
-        grundlegenden Pflanzenbiologie gemacht, und seine Erkenntnisse haben zu unserem Verständnis der Biologie aller Pflanzen beigetragen."
-4stem-fr msgstr "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
-        and its insights have contributed to our understanding of the biology of all plants."
-4stem-pl msgstr "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
-        and its insights have contributed to our understanding of the biology of all plants."
-4stem-es msgstr "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
-        and its insights have contributed to our understanding of the biology of all plants."
-4bio-en msgstr ""
-4bio-de msgstr "All diese Faktoren haben Arabidopsis thaliana zu einem wichtigen Modellorganismus für das Untersuchen der \
-        grundlegenden Pflanzenbiologie gemacht, und seine Erkenntnisse haben zu unserem Verständnis der Biologie aller Pflanzen beigetragen."
-4bio-fr msgstr "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
-        and its insights have contributed to our understanding of the biology of all plants."
-4bio-pl msgstr "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
-        and its insights have contributed to our understanding of the biology of all plants."
-4bio-es msgstr "All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, \
-        and its insights have contributed to our understanding of the biology of all plants."
-
-#: pages/1 Messmethode.py:44
-msgid "EXPANDER_MODEL_EQUATIONS"
-4stem-en msgstr ""
-4stem-de msgstr "Gleichungen des Fotosynthese-Modells"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:44
-msgid "EXPANDER_MODEL_EQUATIONS_EXPLANATION"
-4stem-en msgstr ""
-4stem-de msgstr "Das verwendete Fotosynthese-Modell besteht aus 6 Differenzialgleichungen mit 41 Parametern. Diese simulieren \
-            die Abläufe im Fotosystem II als Redoxreaktion. Die Gleichungen sind wie folgt:"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:44
-msgid "EQUATION_LIST_1"
-4stem-en msgstr ""
-4stem-de msgstr "- Gleichungen, die eine Annäherung an den stationären Zustand definieren. Diese werden zur Berechnung der \
-            Geschwindigkeit des Fotosystems II verwendet."
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:44
-msgid "EQUATION_LIST_2"
-4stem-en msgstr ""
-4stem-de msgstr " - In der dynamischen Beschreibung des Systems verwendete Reaktionsraten"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:44
-msgid "EQUATION_LIST_3"
-4stem-en msgstr ""
-4stem-de msgstr "- Reaktionsraten zur Berechnung der Quenching-Aktivität, also der Umwandlungsrate von Violaxanthin zu \
-            Zeaxanthin und andersherum."
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:44
-msgid "EQUATION_LIST_4"
-4stem-en msgstr ""
-4stem-de msgstr "- Reaktionsraten zur Berechnung der Gesamt-Reaktions-Rate"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:44
-msgid "EQUATION_LIST_5"
-4stem-en msgstr ""
-4stem-de msgstr "- Gleichungen zum stationären Gleichgewicht des Systems"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:44
-msgid "EQUATION_LIST_6"
-4stem-en msgstr ""
-4stem-de msgstr "- Methode zur Berechnung des Fluoreszenzsignals"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: Explanation by Tobias
-msgid "MEASURING_FLUORESCENCE"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr "Measuring Photosynthesis with Fluorescence"
-4stem-pl msgstr "Measuring Photosynthesis with Fluorescence"
-4stem-es msgstr "Measuring Photosynthesis with Fluorescence"
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: Explanation by Tobias
-msgid "MEASURING_LIGHT_FLUORESZENZ"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr "Measuring Light and Fluoreszenz"
-4stem-pl msgstr "Measuring Light and Fluoreszenz"
-4stem-es msgstr "Measuring Light and Fluoreszenz"
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
 #: pages/model.explain.py:58
 # Grammarly checked
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
 4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3652,7 +2562,7 @@ msgid "MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
 
 #: pages/model_explain.py:122
 #: Anna's explanation of the model
-msgid "IMPLEMENTATION_TO_EXPERT"
+msgid "FAL_IMPLEMENTATION_TO_EXPERT"
 4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3665,7 +2575,7 @@ msgid "IMPLEMENTATION_TO_EXPERT"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:240
-msgid "MODEL_CODE_EXPANDER"
+msgid "FAL_MODEL_CODE_EXPANDER"
 4stem-en msgstr "Step-by-Step Guide of Implementation"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3678,7 +2588,7 @@ msgid "MODEL_CODE_EXPANDER"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:241
-msgid "CONSTRUCTION_HEADER"
+msgid "FAL_CONSTRUCTION_HEADER"
 4stem-en msgstr "#### Model Construction"
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3692,7 +2602,7 @@ msgid "CONSTRUCTION_HEADER"
 
 #: pages/model_explain.py:
 # Grammarly checked
-msgid "CONSTRUCTION_1"
+msgid "FAL_CONSTRUCTION_1"
 4stem-en msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilizing a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n" 
 "\n If you want to follow along, you can copy each code block and paste them into a Python IDE. At the end, you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
 4stem-de msgstr ""
@@ -3707,7 +2617,7 @@ msgid "CONSTRUCTION_1"
 
 #: pages/model_explain.py:249
 # Grammarly checked
-msgid "CONSTRUCTION_2"
+msgid "FAL_CONSTRUCTION_2"
 4stem-en msgstr "We must look at the **reaction rates** and the **ODEs** we want to implement into our model. With them, we can decide which **parameters** and **compounds** we need. We must define them in a `dict` and `list`, respectively. It is also good practice to use comments after each value to briefly explain what that variable represents and, if present, the unit." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3721,7 +2631,7 @@ msgid "CONSTRUCTION_2"
 
 #: pages/model_explain.py:265
 # Grammarly checked
-msgid "CONSTRUCTION_3"
+msgid "FAL_CONSTRUCTION_3"
 4stem-en msgstr "The defined model has integrated functions to add the parameters and compounds easily:" 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3735,7 +2645,7 @@ msgid "CONSTRUCTION_3"
 
 #: pages/model_explain.py:272
 # Grammarly checked
-msgid "CONSTRUCTION_4"
+msgid "FAL_CONSTRUCTION_4"
 4stem-en msgstr "This model also uses some **parameters** that are derived from other parameters. Furthermore, some information is hidden behind the connection between compounds, which cannot be summarised as parameters. However, `modelbase` has some tricks to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We must first define the calculations as functions and then add them to the model." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3749,7 +2659,7 @@ msgid "CONSTRUCTION_4"
 
 #: pages/model_explain.py:290
 # Grammarly checked
-msgid "CONSTRUCTION_5"
+msgid "FAL_CONSTRUCTION_5"
 4stem-en msgstr "We now have given the model all the building blocks it needs, but it needs to know what to do with them. For that, it needs instructions. We must translate the reaction rates into `functions` to make these instructions. You will see that some of these functions also call other functions. These are only to make the code more legible or to eliminate the same calculations." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3763,7 +2673,7 @@ msgid "CONSTRUCTION_5"
 
 #: pages/model_explain.py:308
 # Grammarly checked
-msgid "CONSTRUCTION_6"
+msgid "FAL_CONSTRUCTION_6"
 4stem-en msgstr "The model has all the necessary components and instructions. Still, we must specify which building block corresponds to each instruction and how they are connected. We need to examine the ODEs and establish the stoichiometry to accomplish this." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3777,7 +2687,7 @@ msgid "CONSTRUCTION_6"
 
 #: pages/model_explain.py:315
 # Grammarly checked
-msgid "CONSTRUCTION_7"
+msgid "FAL_CONSTRUCTION_7"
 4stem-en msgstr "We have now successfully created a functional model. However, to test it, we need to simulate it. This section will guide you through the step-by-step process of generating the plot with the default values listed at the bottom of this page. This part may be more complicated than the modeling part, requiring some trial and error. We will explain our thought process so that you can follow along. Still, we suggest you carefully read this section to create the plot successfully." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3790,7 +2700,7 @@ msgid "CONSTRUCTION_7"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:317
-msgid "SIMULATION_HEADER"
+msgid "FAL_SIMULATION_HEADER"
 4stem-en msgstr "#### Model Simulation" 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3803,7 +2713,7 @@ msgid "SIMULATION_HEADER"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:319
-msgid "SIMULATION_1"
+msgid "FAL_SIMULATION_1"
 4stem-en msgstr "First, let's check if our plot is functional. To do so, we will generate a `simulator` object by utilizing the `Simulator()` class from `modelbase`." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3817,7 +2727,7 @@ msgid "SIMULATION_1"
 
 #: pages/model_explain.py:326
 # Grammarly checked
-msgid "SIMULATION_2"
+msgid "FAL_SIMULATION_2"
 4stem-en msgstr "The model requires a starting point for its calculations. The parameters have been defined during the model creation, so we now need to specify the initial concentrations or quantities of the compounds." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3831,7 +2741,7 @@ msgid "SIMULATION_2"
 
 #: pages/model_explain.py:326
 # Grammarly checked
-msgid "SIMULATION_3"
+msgid "FAL_SIMULATION_3"
 4stem-en msgstr "We can begin the simulations now. Let's select a random time point for the model to simulate to. We can visualize the results after the simulation and check for implementation errors. This test is straightforward, as an empty or non-existent plot indicates a problem. Our preferred plotting tool is `matplotlib`, which is also integrated into `modelbase`." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3845,7 +2755,7 @@ msgid "SIMULATION_3"
 
 #: pages/model_explain.py:356
 # Grammarly checked
-msgid "SIMULATION_4"
+msgid "FAL_SIMULATION_4"
 4stem-en msgstr "We have successfully simulated our model and created a basic plot. However, the plot must include important details that we need to define. These aspects include:\n"
 "\n - Displaying changes in fluorescence over time\n"
 "\n - Including an initial dark phase followed by a light phase\n"
@@ -3862,7 +2772,7 @@ msgid "SIMULATION_4"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:357
-msgid "SIMULATION_FLOURESCENCE_HEADER"
+msgid "FAL_SIMULATION_FLOURESCENCE_HEADER"
 4stem-en msgstr "##### Showing Fluorescence" 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3876,7 +2786,7 @@ msgid "SIMULATION_FLOURESCENCE_HEADER"
 
 #: pages/model_explain.py:358
 # Grammarly checked
-msgid "SIMULATION_FLOURESCENCE_1"
+msgid "FAL_SIMULATION_FLOURESCENCE_1"
 4stem-en msgstr "When using `modelbase` for simulations, it tends to display the compounds in the default plots. However, in our situation, we need to showcase the change of Fluorescence, which we did not incorporate as a compound but as an algebraic module. Hence, we must choose that change specifically." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3890,7 +2800,7 @@ msgid "SIMULATION_FLOURESCENCE_1"
 
 #: pages/model_explain.py:381
 # Grammarly checked
-msgid "SIMULATION_FLOURESCENCE_2"
+msgid "FAL_SIMULATION_FLOURESCENCE_2"
 4stem-en msgstr "To simplify the chart reading process, we will relativize the fluorescence values to their maximum. Unfortunately, this will result in a more complex code. We will demonstrate how to achieve this by extracting the simulation data from `modelbase`. However, there are several methods to accomplish this. It is worth noting that the graph will appear slightly different due to `modelbase` modifying certain plot aspects for faster processing. Nonetheless, we will ensure the diagram is aesthetically pleasing in the end." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3903,7 +2813,7 @@ msgid "SIMULATION_FLOURESCENCE_2"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:404
-msgid "SIMULATION_PHASES_HEADER"
+msgid "FAL_SIMULATION_PHASES_HEADER"
 4stem-en msgstr "##### Different Phases and Saturating Pulses" 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3917,7 +2827,7 @@ msgid "SIMULATION_PHASES_HEADER"
 
 #: pages/model_explain.py:405
 # Grammarly checked
-msgid "SIMULATION_PHASES_1"
+msgid "FAL_SIMULATION_PHASES_1"
 4stem-en msgstr "We can address the last two issues in one code by starting each phase with a saturating pulse. However, we need to make some decisions regarding:\n"
 "\n - The duration of our simulation\n"
 "\n - The brightness level of the dark and light phases, as well as the saturating pulses\n"
@@ -3935,7 +2845,7 @@ msgid "SIMULATION_PHASES_1"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:428
-msgid "SIMULATION_PRETTY_HEADER"
+msgid "FAL_SIMULATION_PRETTY_HEADER"
 4stem-en msgstr "##### Making It Pretty" 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3949,7 +2859,7 @@ msgid "SIMULATION_PRETTY_HEADER"
 
 #: pages/model_explain.py:429
 # Grammarly checked
-msgid "SIMULATION_PRETTY_1"
+msgid "FAL_SIMULATION_PRETTY_1"
 4stem-en msgstr "The simulation currently displays all the desired information. To enhance its visual appeal and comprehension, we can utilize the `matplotlib` library to create a polished graph resembling the one at the bottom of the page. While we won't provide a detailed walkthrough, you can still view the code we used." 
 4stem-de msgstr ""
 4stem-fr msgstr ""
@@ -3960,381 +2870,6 @@ msgid "SIMULATION_PRETTY_1"
 4bio-fr msgstr ""
 4bio-pl msgstr ""
 4bio-es msgstr ""
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "KONTROLL"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Knowledge check"
-4bio-de msgstr "Wissenskontrolle"
-4bio-fr msgstr "Knowledge check"
-4bio-pl msgstr "Knowledge check"
-4bio-es msgstr "Knowledge check"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "INTRODUCTION_QUESTION"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Answer all the questions and find out if you were able to evaluate the diagrams correctly and interpret results correctly."
-4bio-de msgstr "Beantworten Sie alle Fragen und finden Sie heraus, ob Sie die Diagramme richtig auswerten und die Ergebnisse \
-        richtig interpretieren konnten."
-4bio-fr msgstr "Answer all the questions and find out if you were able to evaluate the diagrams correctly and interpret results correctly."
-4bio-pl msgstr "Answer all the questions and find out if you were able to evaluate the diagrams correctly and interpret results correctly."
-4bio-es msgstr "Answer all the questions and find out if you were able to evaluate the diagrams correctly and interpret results correctly."
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "QUESTION_1"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "1. The higher the light intensity, the ... the NPQ."
-4bio-de msgstr "1. Je höher die Lichtintensität, desto ... das NPQ."
-4bio-fr msgstr "1. The higher the light intensity, the ... the NPQ."
-4bio-pl msgstr "1. The higher the light intensity, the ... the NPQ."
-4bio-es msgstr "1. The higher the light intensity, the ... the NPQ."
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "AW1"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "higher"
-4bio-de msgstr "höher"
-4bio-fr msgstr "higher"
-4bio-pl msgstr "higher"
-4bio-es msgstr "higher"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "AW2"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "lower"
-4bio-de msgstr "niedriger"
-4bio-fr msgstr "lower"
-4bio-pl msgstr "lower"
-4bio-es msgstr "lower"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "RA1"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Unfortunately this is wrong, look again at different experiments with higher and lower light intensity."
-4bio-de msgstr "Leider ist das falsch, schauen Sie sich noch einmal verschiedene Experimente mit höherer und niedrigerer \
-        Lichtintensität an."
-4bio-fr msgstr "Unfortunately this is wrong, look again at different experiments with higher and lower light intensity."
-4bio-pl msgstr "Unfortunately this is wrong, look again at different experiments with higher and lower light intensity."
-4bio-es msgstr "Unfortunately this is wrong, look again at different experiments with higher and lower light intensity."
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "RA2"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Correct!"
-4bio-de msgstr "Richtig!"
-4bio-fr msgstr "Correct!"
-4bio-pl msgstr "Correct!"
-4bio-es msgstr "Correct!"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "QUESTION_2"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "2. What happens to the NPQ during the experiment?"
-4bio-de msgstr "2. Was passiert im Verlauf des Experimentes mit dem NPQ?"
-4bio-fr msgstr "2. What happens to the NPQ during the experiment?"
-4bio-pl msgstr "2. What happens to the NPQ during the experiment?"
-4bio-es msgstr "2. What happens to the NPQ during the experiment?"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "AW3"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "It increases continuously"
-4bio-de msgstr "Sie steigt kontinuierlich"
-4bio-fr msgstr "It increases continuously"
-4bio-pl msgstr "It increases continuously"
-4bio-es msgstr "It increases continuously"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "AW4"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "It remains after some time at a level"
-4bio-de msgstr "Es bleibt nach einiger Zeit auf einem Niveau"
-4bio-fr msgstr "It remains after some time at a level"
-4bio-pl msgstr "It remains after some time at a level"
-4bio-es msgstr "It remains after some time at a level"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "AW5"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "It falls continuously"
-4bio-de msgstr "Sie fällt kontinuierlich"
-4bio-fr msgstr "It falls continuously"
-4bio-pl msgstr "It falls continuously"
-4bio-es msgstr "It falls continuously"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "RA3"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Correct! The constant level is also called the steady state."
-4bio-de msgstr "Richtig! Das gleichbleibende Niveau nennt man auch den Steady-State."
-4bio-fr msgstr "Correct! The constant level is also called the steady state."
-4bio-pl msgstr "Correct! The constant level is also called the steady state."
-4bio-es msgstr "Correct! The constant level is also called the steady state."
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "RA4"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "This is unfortunately wrong, look again at different experiments with more light pulses."
-4bio-de msgstr "Das ist leider falsch, schauen Sie sich noch einmal verschiedene Experimente mit mehr Lichtimpulsen an."
-4bio-fr msgstr "This is unfortunately wrong, look again at different experiments with more light pulses."
-4bio-pl msgstr "This is unfortunately wrong, look again at different experiments with more light pulses."
-4bio-es msgstr "This is unfortunately wrong, look again at different experiments with more light pulses."
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "QUESTION_3"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "3. Can a meaningful interpretation already succeed with a short test duration and a long time between two pulses?"
-4bio-de msgstr "Kann mit einer kurzen Versuchsdauer und einer langen Zeit zwischen zwei Impulsen bereits eine aussagekräftige \
-        Interpretation gelingen?"
-4bio-fr msgstr "3. Can a meaningful interpretation already succeed with a short test duration and a long time between two pulses?"
-4bio-pl msgstr "3. Can a meaningful interpretation already succeed with a short test duration and a long time between two pulses?"
-4bio-es msgstr "3. Can a meaningful interpretation already succeed with a short test duration and a long time between two pulses?"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "AW6"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Yes!"
-4bio-de msgstr "Ja!"
-4bio-fr msgstr "Yes!"
-4bio-pl msgstr "Yes!"
-4bio-es msgstr "Yes!"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "AW7"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "No!"
-4bio-de msgstr "Nein!"
-4bio-fr msgstr "No!"
-4bio-pl msgstr "No!"
-4bio-es msgstr "No!"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "RA5"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Unfortunately not!"
-4bio-de msgstr "Leider nicht!"
-4bio-fr msgstr "Unfortunately not!"
-4bio-pl msgstr "Unfortunately not!"
-4bio-es msgstr "Unfortunately not!"
-
-#: pages/first_analysis.py:247
-#: pages/Analyse.py:123
-msgid "RA6"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "That is correct! Only when the steady state lasts for a longer time can it be assumed that it will not change again."
-4bio-de msgstr "Das Stimmt! Erst wenn eine längere Zeit der Steady-State anhält, kann davon ausgegangen werden, dass dieser sich \
-        nicht noch einmal verändert."
-4bio-fr msgstr "That is correct! Only when the steady state lasts for a longer time can it be assumed that it will not change again."
-4bio-pl msgstr "That is correct! Only when the steady state lasts for a longer time can it be assumed that it will not change again."
-4bio-es msgstr "That is correct! Only when the steady state lasts for a longer time can it be assumed that it will not change again."
-
-#: pages/first_analysis.py:247
-msgid "CAPTION_DEFAULT_SLIDERS"
-4stem-en msgstr "Simulation graph with default values."
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "This is how the graph will look with default sliders."
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:273
-
-msgid "TASK_MEMORY_1_EXPLANATION"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "What changes with different light intensities?"
-4bio-de msgstr "Was verändert sich bei verschiedenen Lichtintensitäten?"
-4bio-fr msgstr "What changes with different light intensities?"
-4bio-pl msgstr "What changes with different light intensities?"
-4bio-es msgstr "What changes with different light intensities?"
-
-#: pages/plant_memory.py:276
-
-msgid "TASK_MEMORY_2_EXPLANATION"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "What is the effect of the length of the dark phase?"
-4bio-de msgstr "Welche Auswirkung hat die Länge der Dunkelphase?"
-4bio-fr msgstr "What is the effect of the length of the dark phase?"
-4bio-pl msgstr "What is the effect of the length of the dark phase?"
-4bio-es msgstr "What is the effect of the length of the dark phase?"
-
-#: pages/Analyse.py:123
-msgid "STOPP"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr "##### **Bitte erst öffnen, nachdem ihr alle Fragen beantwortet habt**"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/Analyse.py:123
-msgid "RESULTS"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr "Ergebnisse"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/Analyse.py:123
-msgid "EXPLANATION_RESULTS"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr "Sie haben gesehen, dass die Lichtintensität einen bedächtigen Einfuss auf das NPQ der Pflanze hat. "
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-
-msgid "EXPANDER_MATHEMATICAL_MODELLING_EXAMPLE"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr "# An example of a mathematical model"
-4bio-pl msgstr "# An example of a mathematical model"
-4bio-es msgstr "# An example of a mathematical model"
-
-
-msgid "MATHEMATICAL_MODELLING_EXAMPLE_cont"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr "We have now successfully implemented and used a model of epidemiology. Such model has been recently used as a basic of numerous more complex models used to track the expansion of a virus spread in numerous populations across the globe. If you would like to learn now how to implement such model computationally using Python as a programming language please switch to the <a href='#' id='4STEM'>4STEM</a> mode."
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-
-msgid "INTRO_MODEL"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
-4bio-pl msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
-4bio-es msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels and many more."
 
 #: pages/Start.py:14
 # Grammarly checked

@@ -322,7 +322,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
     col1, col2 = st.columns(2)
     with col1:
         slider_time = st.slider(
-            text("SLIDER_TIME"),
+            text("FAL_SLIDER_TIME"),
             1,
             15,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             value=5,
@@ -339,7 +339,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
                 value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             )
             slider_darklength = st.slider(
-                text("SLIDER_DARKLENGTH"), min_value=0, max_value=slider_time * 60, value=30
+                text("FAL_SLIDER_DARKLENGTH"), min_value=0, max_value=slider_time * 60, value=30
             )
         with col2:
             slider_deaktivation = st.select_slider(
@@ -348,7 +348,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
                 value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             )
             slider_saturate = st.slider(
-                label=text("SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
+                label=text("FAL_SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
             )
 
         updated_parameters = {
@@ -365,7 +365,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
         slider_saturate = 5000
 
     if st.button("Start", type="primary"):
-        with st.spinner(text("SPINNER")):
+        with st.spinner(text("FAL_SPINNER")):
             sim_time, sim_results = sim_model(
                 updated_parameters,
                 slider_time,
@@ -402,9 +402,9 @@ def make_sim_area(text: Callable[[str], str]) -> None:
         if version == "4Bio":
             fig_PAM = make_matplotlib_plot(
                 text=text,
-                xlabel1=text("AXIS_TIME_S"),
-                xlabel2=text("AXIS_TIME_MIN"),
-                ylabel=text("FLUO"),
+                xlabel1=text("FAL_AXIS_TIME_S"),
+                xlabel2=text("FAL_AXIS_TIME_MIN"),
+                ylabel=text("FAL_FLUO"),
                 values=st.session_state['simple_model'],
                 max_time=st.session_state['simple_model_results']['slider_time'] * 60,
                 dark_length=st.session_state['simple_model_results']['slider_darklength'],
@@ -437,9 +437,9 @@ def make_sim_area(text: Callable[[str], str]) -> None:
 
             fig_advanced = make_matplotlib_plot_advanced(
                 text=text,
-                xlabel1=text("AXIS_TIME_S"),
-                xlabel2=text("AXIS_TIME_MIN"),
-                ylabel={'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
+                xlabel1=text("FAL_AXIS_TIME_S"),
+                xlabel2=text("FAL_AXIS_TIME_MIN"),
+                ylabel={'Fluo': text("FAL_FLUO"), 'NPQ': text("FAL_AXIS_NPQ"),'PhiPSII': text("FAL_AXIS_PHIPSII")},
                 values=st.session_state['simple_model'],
                 max_time=st.session_state['simple_model_results']['slider_time'] * 60,
                 dark_length=st.session_state['simple_model_results']['slider_darklength'],
@@ -459,25 +459,25 @@ def make_sim_area(text: Callable[[str], str]) -> None:
 
 
 def make_page(text: Callable[[str], str]) -> None:
-    st.markdown(text("HEADLINE_EXPERIMENTS"))
+    st.markdown(text("FAL_HEADLINE_EXPERIMENTS"))
 
-    st.markdown(text("HEADLINE_MODEL_CONSTRUCTION"))
+    st.markdown(text("FAL_HEADLINE_MODEL_CONSTRUCTION"))
 
-    st.markdown(text("CONSTRUCTION_EXPLANATION_1"))
+    st.markdown(text("FAL_CONSTRUCTION_EXPLANATION_1"))
 
-    include_image("pictures/NPQphotosynthesis.png", 0.8, text("CAPTION_MODEL_NPQ"), True)
+    include_image("pictures/NPQphotosynthesis.png", 0.8, text("FAL_CAPTION_MODEL_NPQ"), True)
 
-    st.markdown(text("CONSTRUCTION_EXPLANATION_2"))
-    st.markdown(text("RATES_1"), unsafe_allow_html=True)
-    st.markdown(text("RATES_2"))
-    st.markdown(text("RATES_3"))
-    st.markdown(text("RATES_4"))
-    st.markdown(text("RATES_5"))
-    st.markdown(text("RATES_6"), unsafe_allow_html=True)
+    st.markdown(text("FAL_CONSTRUCTION_EXPLANATION_2"))
+    st.markdown(text("FAL_RATES_1"), unsafe_allow_html=True)
+    st.markdown(text("FAL_RATES_2"))
+    st.markdown(text("FAL_RATES_3"))
+    st.markdown(text("FAL_RATES_4"))
+    st.markdown(text("FAL_RATES_5"))
+    st.markdown(text("FAL_RATES_6"), unsafe_allow_html=True)
 
     if version == "4STEM":
-        st.markdown(text("HEADLINE_MODEL_EQUATIONS"))
-        st.markdown(text("MODEL_EQUATIONS_INTRODUCTION"))
+        st.markdown(text("FAL_HEADLINE_MODEL_EQUATIONS"))
+        st.markdown(text("FAL_MODEL_EQUATIONS_INTRODUCTION"))
         st.latex(
             r"""
             \begin{aligned}
@@ -491,8 +491,8 @@ def make_page(text: Callable[[str], str]) -> None:
         """
         )
 
-        with st.expander(text("REACTION_RATES")):
-            st.markdown(text("RATES_DYNAMIC"))
+        with st.expander(text("FAL_REACTION_RATES")):
+            st.markdown(text("FAL_RATES_DYNAMIC"))
             st.latex(
                 r"""
                 \begin{aligned}
@@ -506,7 +506,7 @@ def make_page(text: Callable[[str], str]) -> None:
                 """
             )
 
-            st.markdown(text("RATE_QUENCHER"))
+            st.markdown(text("FAL_RATE_QUENCHER"))
             st.latex(
                 r"""
                 \begin{aligned}
@@ -517,24 +517,24 @@ def make_page(text: Callable[[str], str]) -> None:
                 """
             )
 
-    st.markdown(text("HEADLINE_IMPLEMENTATION"))
+    st.markdown(text("FAL_HEADLINE_IMPLEMENTATION"))
 
-    st.markdown(text("IMPLEMENTATION_DESCRIPTION"))
+    st.markdown(text("FAL_IMPLEMENTATION_DESCRIPTION"))
 
     if version == "4Bio":
-        markdown_click("IMPLEMENTATION_TO_EXPERT", text)
+        markdown_click("FAL_IMPLEMENTATION_TO_EXPERT", text)
 
     if version == "4STEM":
-        with st.expander(text("MODEL_CODE_EXPANDER")):
-            st.markdown(text("CONSTRUCTION_HEADER"))
-            st.markdown(text("CONSTRUCTION_1"))
+        with st.expander(text("FAL_MODEL_CODE_EXPANDER")):
+            st.markdown(text("FAL_CONSTRUCTION_HEADER"))
+            st.markdown(text("FAL_CONSTRUCTION_1"))
 
             with open(Path(__file__).parent / "assets" / "model" / "model_define.py") as fp:
                 model_define = f"{fp.read()}"
 
             st.code(model_define, "python")
 
-            st.markdown(text("CONSTRUCTION_2"))
+            st.markdown(text("FAL_CONSTRUCTION_2"))
 
             tab1, tab2 = st.tabs(["Parameters", "Compounds"])
 
@@ -550,14 +550,14 @@ def make_page(text: Callable[[str], str]) -> None:
 
                 st.code(model_comps, "python")
 
-            st.markdown(text("CONSTRUCTION_3"))
+            st.markdown(text("FAL_CONSTRUCTION_3"))
 
             with open(Path(__file__).parent / "assets" / "model" / "model_addcompspars.py") as fp:
                 model_addcompspars = f"{fp.read()}"
 
             st.code(model_addcompspars, "python")
 
-            st.markdown(text("CONSTRUCTION_4"))
+            st.markdown(text("FAL_CONSTRUCTION_4"))
 
             tab1, tab2 = st.tabs(["Derived parameters", "Algebraic modules"])
 
@@ -573,7 +573,7 @@ def make_page(text: Callable[[str], str]) -> None:
 
                 st.code(model_algebraicmodules, "python")
 
-            st.markdown(text("CONSTRUCTION_5"))
+            st.markdown(text("FAL_CONSTRUCTION_5"))
 
             tab1, tab2 = st.tabs(["Rate reactions", "Other functions"])
 
@@ -589,32 +589,32 @@ def make_page(text: Callable[[str], str]) -> None:
 
                 st.code(model_otherfunctions, "python")
 
-            st.markdown(text("CONSTRUCTION_6"))
+            st.markdown(text("FAL_CONSTRUCTION_6"))
 
             with open(Path(__file__).parent / "assets" / "model" / "model_addreactions.py") as fp:
                 model_addreactions = f"{fp.read()}"
 
             st.code(model_addreactions, "python")
 
-            st.markdown(text("CONSTRUCTION_7"))
+            st.markdown(text("FAL_CONSTRUCTION_7"))
 
-            st.markdown(text("SIMULATION_HEADER"))
+            st.markdown(text("FAL_SIMULATION_HEADER"))
 
-            st.markdown(text("SIMULATION_1"))
+            st.markdown(text("FAL_SIMULATION_1"))
 
             with open(Path(__file__).parent / "assets" / "model" / "model_definesim.py") as fp:
                 model_definesim = f"{fp.read()}"
 
             st.code(model_definesim, "python")
 
-            st.markdown(text("SIMULATION_2"))
+            st.markdown(text("FAL_SIMULATION_2"))
 
             with open(Path(__file__).parent / "assets" / "model" / "model_initialisesim.py") as fp:
                 model_initialisesim = f"{fp.read()}"
 
             st.code(model_initialisesim, "python")
 
-            st.markdown(text("SIMULATION_3"))
+            st.markdown(text("FAL_SIMULATION_3"))
 
             col1, col2 = st.columns([1, 1])
 
@@ -637,9 +637,9 @@ def make_page(text: Callable[[str], str]) -> None:
             with col2:
                 include_image("pictures/basic_plot.png", 1)
 
-            st.markdown(text("SIMULATION_4"))
-            st.markdown(text("SIMULATION_FLOURESCENCE_HEADER"))
-            st.markdown(text("SIMULATION_FLOURESCENCE_1"))
+            st.markdown(text("FAL_SIMULATION_4"))
+            st.markdown(text("FAL_SIMULATION_FLOURESCENCE_HEADER"))
+            st.markdown(text("FAL_SIMULATION_FLOURESCENCE_1"))
 
             col1, col2 = st.columns([1, 1])
 
@@ -662,7 +662,7 @@ def make_page(text: Callable[[str], str]) -> None:
             with col2:
                 include_image("pictures/only_flou.png", 1)
 
-            st.markdown(text("SIMULATION_FLOURESCENCE_2"))
+            st.markdown(text("FAL_SIMULATION_FLOURESCENCE_2"))
 
             col1, col2 = st.columns([1, 1])
 
@@ -685,8 +685,8 @@ def make_page(text: Callable[[str], str]) -> None:
             with col2:
                 include_image("pictures/relative_flou.png", 1)
 
-            st.markdown(text("SIMULATION_PHASES_HEADER"))
-            st.markdown(text("SIMULATION_PHASES_1"))
+            st.markdown(text("FAL_SIMULATION_PHASES_HEADER"))
+            st.markdown(text("FAL_SIMULATION_PHASES_1"))
 
             col1, col2 = st.columns([1, 1])
 
@@ -709,8 +709,8 @@ def make_page(text: Callable[[str], str]) -> None:
             with col2:
                 include_image("pictures/phases.png", 1)
 
-            st.markdown(text("SIMULATION_PRETTY_HEADER"))
-            st.markdown(text("SIMULATION_PRETTY_1"))
+            st.markdown(text("FAL_SIMULATION_PRETTY_HEADER"))
+            st.markdown(text("FAL_SIMULATION_PRETTY_1"))
 
             include_image("pictures/complete_mockup.png", 1)
 
@@ -720,14 +720,14 @@ def make_page(text: Callable[[str], str]) -> None:
             st.code(model_complemockup, "python")
 
     # UI (Mainpage-Website)
-    st.markdown(text("HEADLINE_ANALYSE"))
-    st.markdown(text("INTRODUKTION"))
+    st.markdown(text("FAL_HEADLINE_ANALYSE"))
+    st.markdown(text("FAL_INTRODUKTION"))
 
-    st.markdown(text("HEADLINE_SLIDER"))
-    st.markdown(text("EXPLANATNION"))
+    st.markdown(text("FAL_HEADLINE_SLIDER"))
+    st.markdown(text("FAL_EXPLANATNION"))
     include_ytvideo("https://youtu.be/zxGZKeopEDw", 0.5)
-    st.markdown(text("TIPP1"))
-    st.markdown(text("TIPP2"))
+    st.markdown(text("FAL_TIPP1"))
+    st.markdown(text("FAL_TIPP2"))
 
     # Add guiding questions:
     with st.expander(

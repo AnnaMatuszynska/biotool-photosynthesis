@@ -6,36 +6,36 @@ from typing import Callable
 from utils import get_localised_text, make_prev_next_button, icons, resetting_click_detector_setup, markdown_click
 
 def make_introduction(text: Callable[[str], str]) -> None:
-    markdown_click("HEADLINE_MAIN", text)
-    markdown_click("INTRO", text)
+    markdown_click("STR_HEADLINE_MAIN", text)
+    markdown_click("STR_INTRO", text)
 
-    with st.expander(text("EXPANDER_ABOUT")):
-        markdown_click("EXPLANATION_ABOUT", text)
+    with st.expander(text("STR_EXPANDER_ABOUT")):
+        markdown_click("STR_EXPLANATION_ABOUT", text)
         st.markdown(text("PROGRAMS_USED"))
 
     # Introduction biotool
     st.video("https://youtu.be/KvyjIWLD8rU")
-    st.markdown(text("HEADLINE_USAGE"))
-    markdown_click("USAGE", text)
-    markdown_click("4STEM_USE", text)
+    st.markdown(text("STR_HEADLINE_USAGE"))
+    markdown_click("STR_USAGE", text)
+    markdown_click("STR_4STEM_USE", text)
 
 
 # FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
     if version == "4Bio":
-        st.markdown(text("DROP_BOX_INTRO"))
-        with st.expander(text("EXPANDER_IN")):
-            st.markdown(text("EXPLANATION_IN_VITRO"))
-            st.markdown(text("EXPLANATION_IN_VIVO"))
-            st.markdown(text("EXPLANATION_IN_SILICO"))
+        st.markdown(text("STR_DROP_BOX_INTRO"))
+        with st.expander(text("STR_EXPANDER_IN")):
+            st.markdown(text("STR_EXPLANATION_IN_VITRO"))
+            st.markdown(text("STR_EXPLANATION_IN_VIVO"))
+            st.markdown(text("STR_EXPLANATION_IN_SILICO"))
 
-    markdown_click("HEADLINE_PAGES", text)
-    markdown_click("INTRODUCTION_PAGES", text)
-    markdown_click("PHOTOSYNTHESIS", text)
-    markdown_click("METHOD", text)
-    markdown_click("MODEL", text)
-    markdown_click("EXPERIMENT", text)
-    markdown_click("MEMORY", text)
+    markdown_click("STR_HEADLINE_PAGES", text)
+    markdown_click("STR_INTRODUCTION_PAGES", text)
+    markdown_click("STR_PHOTOSYNTHESIS", text)
+    markdown_click("STR_METHOD", text)
+    markdown_click("STR_MODEL", text)
+    markdown_click("STR_EXPERIMENT", text)
+    markdown_click("STR_MEMORY", text)
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):

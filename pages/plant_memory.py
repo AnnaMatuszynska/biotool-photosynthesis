@@ -110,7 +110,7 @@ def make_matplotlib_plot_memory(
         alpha=0.3,
     )
     patch_list = [dark_patch, training_patch, relaxation_patch, memory_patch]
-    anno_list = [text("ANNO_TRAINING"), text("ANNO_RELAXATION"), text("ANNO_MEMORY")]
+    anno_list = [text("MEM_ANNO_TRAINING"), text("MEM_ANNO_RELAXATION"), text("MEM_ANNO_MEMORY")]
 
     for i in range(len(patch_list)):
         ax.add_patch(patch_list[i])
@@ -257,11 +257,11 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
     col1, col2, col3 = st.columns([1, 1, 1], gap="medium")
 
     with col1:
-        slider_training = st.slider(label=text("SLIDER_TRAINING"), min_value=0, max_value=5, value=2)
+        slider_training = st.slider(label=text("MEM_SLIDER_TRAINING"), min_value=0, max_value=5, value=2)
     with col2:
-        slider_relaxation = st.slider(label=text("SLIDER_RELAXATION"), min_value=0, max_value=5, value=2)
+        slider_relaxation = st.slider(label=text("MEM_SLIDER_RELAXATION"), min_value=0, max_value=5, value=2)
     with col3:
-        slider_memory = st.slider(label=text("SLIDER_MEMORY"), min_value=0, max_value=5, value=2)
+        slider_memory = st.slider(label=text("MEM_SLIDER_MEMORY"), min_value=0, max_value=5, value=2)
 
     if version == "4STEM":
         slider_darklength = 60
@@ -294,7 +294,7 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
         slider_saturate = 5000
 
     if st.button("Start", type="primary", key="button2"):
-        with st.spinner(text("SPINNER")):
+        with st.spinner(text("MEM_SPINNER")):
             sim_time, sim_results = sim_model_memory(
                 updated_parameters=updated_parameters,
                 slider_light=slider_light,
@@ -311,9 +311,9 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
             fig_PAM = make_matplotlib_plot_memory(
                 text=text,
-                xlabel1=text("AXIS_TIME_S"),
-                xlabel2=text("AXIS_TIME_MIN"),
-                ylabel=text("FLUO"),
+                xlabel1=text("MEM_AXIS_TIME_S"),
+                xlabel2=text("MEM_AXIS_TIME_MIN"),
+                ylabel=text("MEM_FLUO"),
                 time=sim_time,
                 values=PAM_F / PAM_Fmax,
                 dark_length=slider_darklength,
@@ -340,9 +340,9 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
                 fig_NPQ = make_matplotlib_plot_memory(
                     text=text,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel=text("AXIS_NPQ"),
+                    xlabel1=text("MEM_AXIS_TIME_S"),
+                    xlabel2=text("MEM_AXIS_TIME_MIN"),
+                    ylabel=text("MEM_AXIS_NPQ"),
                     time=sim_time[peaks],
                     values=NPQ,
                     dark_length=slider_darklength,
@@ -355,9 +355,9 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
                 fig_PhiPSII = make_matplotlib_plot_memory(
                     text=text,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel=text("AXIS_PHIPSII"),
+                    xlabel1=text("MEM_AXIS_TIME_S"),
+                    xlabel2=text("MEM_AXIS_TIME_MIN"),
+                    ylabel=text("MEM_AXIS_PHIPSII"),
                     time=sim_time[peaks],
                     values=PhiPSII,
                     dark_length=slider_darklength,
@@ -377,22 +377,22 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
 # FIXME: version here should probably be replaced by text
 def make_page(text: Callable[[str], str], version: str) -> None:
-    st.markdown(text("HEADLINE_BRAIN"))
+    st.markdown(text("MEM_HEADLINE_BRAIN"))
 
     # FIXME: why is col3 unused?
     col1, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
-    markdown_click("INTRODUCTION_BRAIN", text)
+    markdown_click("MEM_INTRODUCTION_BRAIN", text)
 
     col1, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/memory_protocol.png")
 
-    st.markdown(text("TIP1"))
+    st.markdown(text("MEM_TIP1"))
 
-    st.markdown(text("TIP2"))
+    st.markdown(text("MEM_TIP2"))
 
     make_sim_area_memory(text)
 

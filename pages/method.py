@@ -7,67 +7,67 @@ from utils import get_localised_text, make_prev_next_button, resetting_click_det
 
 # FIXME: language and version probably should be put into text here
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
-    st.markdown(text("HEADLINE_ONE"))
+    st.markdown(text("MTH_HEADLINE_ONE"))
     _, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Messmethode.gif")
 
-    st.markdown(text("INTRODUCTION_MEASUREMENT"), unsafe_allow_html=True)
+    st.markdown(text("MTH_INTRODUCTION_MEASUREMENT"), unsafe_allow_html=True)
 
     st.image(Image.open("pictures/Foto-Fluoreszierende_Pflanzen.jpg"))
-    st.caption(text("CAPTION_ABB1"))
+    st.caption(text("MTH_CAPTION_ABB1"))
 
-    with st.expander(text("GROWING_PLANTS_1"), expanded=True):
-        st.markdown(text("INTRODUCTION_GLOWING"), unsafe_allow_html=True)
-        st.markdown(text("PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
-        st.markdown(text("INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
+    with st.expander(text("MTH_GROWING_PLANTS_1"), expanded=True):
+        st.markdown(text("MTH_INTRODUCTION_GLOWING"), unsafe_allow_html=True)
+        st.markdown(text("MTH_PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
+        st.markdown(text("MTH_INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
 
         _, col2, _ = st.columns(3)
         with col2:
             st.video("https://youtube.com/g3uTNWsDEdo")
 
-        st.markdown(text("EXPLANATION_VIDEO"), unsafe_allow_html=True)
+        st.markdown(text("MTH_EXPLANATION_VIDEO"), unsafe_allow_html=True)
 
-    with st.expander(text("MEASURING_FLUORESZENZ"), expanded=True):
-        markdown_click("EXPLANATION_MEASUREMENT_1", text)
-        st.markdown(text("INTRODUCTION_PHI"), unsafe_allow_html=True)
+    with st.expander(text("MTH_MEASURING_FLUORESZENZ"), expanded=True):
+        markdown_click("MTH_EXPLANATION_MEASUREMENT_1", text)
+        st.markdown(text("MTH_INTRODUCTION_PHI"), unsafe_allow_html=True)
         st.video("https://youtu.be/EwXkOlMBl3o")
 
 
-    st.markdown(text("HEADLINE_PAM_MEASUREMENT"), unsafe_allow_html=True)
-    st.markdown(text("INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
+    st.markdown(text("MTH_HEADLINE_PAM_MEASUREMENT"), unsafe_allow_html=True)
+    st.markdown(text("MTH_INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
 
-    with st.expander(text("MEASURING_LIGHT_FLUORESCENCE"), expanded=True):
-        st.markdown(text("EXPLANATION_INTRODUCTION_ATTEMPTS"))
+    with st.expander(text("MTH_MEASURING_LIGHT_FLUORESCENCE"), expanded=True):
+        st.markdown(text("MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"))
         st.image(
             Image.open("pictures/PAMbasics.png"),
-            caption=text("CAPTION_ABB2"),
+            caption=text("MTH_CAPTION_ABB2"),
         )
 
     # if version == "4STEM":
-    #     with st.expander(text("SATURATING_PULSES")):
-    #         st.markdown(text("EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
+    #     with st.expander(text("MTH_SATURATING_PULSES")):
+    #         st.markdown(text("MTH_EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
 
-    st.markdown(text("HEADLINE_ILLUSTRATION"), unsafe_allow_html=True)
-    st.markdown(text("EXPLANATION_ILLUSTRATION_UNITS"), unsafe_allow_html=True)
-    st.markdown(text("EXPLANATION_ILLUSTRATION"), unsafe_allow_html=True)
+    st.markdown(text("MTH_HEADLINE_ILLUSTRATION"), unsafe_allow_html=True)
+    st.markdown(text("MTH_EXPLANATION_ILLUSTRATION_UNITS"), unsafe_allow_html=True)
+    st.markdown(text("MTH_EXPLANATION_ILLUSTRATION"), unsafe_allow_html=True)
 
     if language == "German":
         st.image(
             Image.open("pictures/Beispielabbildung_de.png"),
-            caption=text("CAPTION_ABB2"),
+            caption=text("MTH_CAPTION_ABB2"),
         )
     else:
         st.image(
             Image.open("pictures/Beispielabbildung_en.png"),
-            caption=text("CAPTION_ABB2"),
+            caption=text("MTH_CAPTION_ABB2"),
         )
 
 
 # FIXME: language and version probably should be put into text here
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
-        st.markdown(text("LITERATURE_DECLARATION"), unsafe_allow_html=True)
+        st.markdown(text("MTH_LITERATURE_DECLARATION"), unsafe_allow_html=True)
         if version == "4STEM":
             """
             - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16

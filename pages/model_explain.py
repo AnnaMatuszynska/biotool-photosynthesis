@@ -16,38 +16,38 @@ from pages.assets.SIR_model.sir_utils import *
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
-    st.markdown(text("HEADLINE_COMPUTATIONAL_MODELS"))
+    st.markdown(text("MDL_HEADLINE_COMPUTATIONAL_MODELS"))
 
-    st.markdown(text("HEADLINE_MODEL"))
+    st.markdown(text("MDL_HEADLINE_MODEL"))
 
-    st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1"))
+    st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"))
 
     include_image(
-        path="pictures/Modeling_scheme_eng.png", img_width=0.8, caption=text("CAPTION_MODELLING_PICTURE")
+        path="pictures/Modeling_scheme_eng.png", img_width=0.8, caption=text("MDL_CAPTION_MODELLING_PICTURE")
     )
 
-    st.markdown(text("MATHEMATICAL_MODELLING_EXPLANATION_1b"))
+    st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"))
 
     # Making a model
     include_ytvideo("https://youtu.be/oVME5KIHrO8")
 
-    st.markdown(text("EXAMPLE_MATHEMATICAL_MODEL"))
+    st.markdown(text("MDL_EXAMPLE_MATHEMATICAL_MODEL"))
 
     if version == "4Bio":
-        tab1, tab2 = st.tabs([text("TAB_SIR"), " "])
+        tab1, tab2 = st.tabs([text("MDL_TAB_SIR"), " "])
         
         with tab1:
-            st.markdown(text("HEADLINE_SIR"))
+            st.markdown(text("MDL_HEADLINE_SIR"))
 
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
             
             include_image("pictures/SIR_Aliens.png", 0.5)
             
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_1"), unsafe_allow_html=True)
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"), unsafe_allow_html=True)
             
             include_image("pictures/SIR_AliensScheme.png", 0.5)
             
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_2"), unsafe_allow_html=True)
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"), unsafe_allow_html=True)
             
             st.latex(
                 r"""
@@ -58,7 +58,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 """
             )
             
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"), unsafe_allow_html=True)
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"), unsafe_allow_html=True)
             
             st.latex(
                 r"""
@@ -70,14 +70,14 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 """
             )
             
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_4"), unsafe_allow_html=True)
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"), unsafe_allow_html=True)
 
             col1, col2 = st.columns(2)
             
             with col1:
                 
                 sir_slider_start, sir_slider_end = st.slider(
-                        label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"),
+                        label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"),
                         min_value=0,
                         max_value=1000,
                         value=(900, 1000),
@@ -120,7 +120,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 
                 with col1_:
                     sir_time_slider = st.slider(
-                        label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"),
+                        label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"),
                         min_value=5,
                         max_value=36,
                         value=20,
@@ -129,7 +129,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 
                 with col2_:
                     sir_beta_slider = st.slider(
-                        label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"),
+                        label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"),
                         min_value=0.0,
                         max_value=5.0,
                         value=2.0,
@@ -138,7 +138,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     
                 with col3_:
                     sir_gamma_slider = st.slider(
-                        label=text("MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"),
+                        label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"),
                         min_value=0.0,
                         max_value=2.0,
                         value=0.2,
@@ -207,16 +207,16 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     )
 
     if version == "4STEM":
-        tab1, tab2, tab3 = st.tabs([text("TAB_SIR"), text("TAB_MANUAL"), text("TAB_MODELBASE")])
+        tab1, tab2, tab3 = st.tabs([text("MDL_TAB_SIR"), text("MDL_TAB_MANUAL"), text("MDL_TAB_MODELBASE")])
 
         with tab1:
-            st.markdown(text("HEADLINE_SIR"))
+            st.markdown(text("MDL_HEADLINE_SIR"))
 
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
             
             include_image("pictures/SIR_Aliens.png", 0.5)
             
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_1"), unsafe_allow_html=True)
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"), unsafe_allow_html=True)
             
             include_image("pictures/SIR_AliensScheme.png", 0.5)
             
@@ -233,7 +233,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 \end{aligned}
                 """
             )
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_2"))
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"))
             st.latex(
                 r"""
                 \mathrm{S} \xrightarrow{\textit{v}_1} \mathrm{I} \xrightarrow{\textit{v}_2} \mathrm{R}
@@ -248,17 +248,17 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 \end{aligned}
                 """
             )
-            st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_3"))
+            st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"))
 
             include_image(
-                "pictures/SIR_modelbase.png", img_width=0.6, caption=text("CAPTION_SIR_RESULTS_PICTURE")
+                "pictures/SIR_modelbase.png", img_width=0.6, caption=text("MDL_CAPTION_SIR_RESULTS_PICTURE")
             )
 
             if version == "4Bio":
-                markdown_click("MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
+                markdown_click("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
 
             if version == "4STEM":
-                st.markdown(text("MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
+                st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
 
     if version == "4STEM":
         with open(Path(__file__).parent / "assets" / "sir_v1_integ.py") as fp:
@@ -283,10 +283,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             sird = f"\n```python\n{fp.read()}```\n\n"
 
         with tab2:
-            st.markdown(text("HEADLINE_MANUAL"))
+            st.markdown(text("MDL_HEADLINE_MANUAL"))
             st.markdown(f"{sir_v1_integ}")
 
-            st.markdown(text("SIR_IMPLEMENTATION_MANUAL_1"))
+            st.markdown(text("MDL_SIR_IMPLEMENTATION_MANUAL_1"))
 
             col1, col2 = st.columns(spec=2, gap="small")
 
@@ -306,24 +306,24 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     unsafe_allow_html=True,
                 )
 
-            st.markdown(text("SIR_IMPLEMENTATION_MANUAL_2"))
+            st.markdown(text("MDL_SIR_IMPLEMENTATION_MANUAL_2"))
 
         with tab3:
-            st.markdown(text("HEADLINE_MODELBASE"))
+            st.markdown(text("MDL_HEADLINE_MODELBASE"))
 
-            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_1"))
+            st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_1"))
 
             st.markdown(f"{sir_v2_rate_fns}")
 
-            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_2"))
+            st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_2"))
 
             st.markdown(f"{sir_v2_model}")
 
-            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_3"))
+            st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_3"))
 
             st.markdown(f"{sir_v2_reactions}")
 
-            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_4"))
+            st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_4"))
 
             col1, col2 = st.columns(spec=2, gap="small")
 
@@ -343,20 +343,20 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     unsafe_allow_html=True,
                 )
 
-            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_5"))
+            st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_5"))
 
             st.markdown(f"{sird}")
 
-            st.markdown(text("SIR_IMPLEMENTATION_MODELBASE_6"))
+            st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_6"))
 
-    st.markdown(text("HEADLINE_MODEL_PHOTOSYNTHESIS"))
+    st.markdown(text("MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"))
 
     tab1, tab2, tab3 = st.tabs(["FvCB", "e-photosynthesis", "Bellassio"])
 
     with tab1:
-        st.markdown(text("HEADLINE_FVCB"))
+        st.markdown(text("MDL_HEADLINE_FVCB"))
 
-        markdown_click("FVCB_1",text)
+        markdown_click("MDL_FVCB_1",text)
 
         if version == "4STEM":
             st.latex(
@@ -372,12 +372,12 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 """
             )
 
-        st.markdown(text("FVCB_2"), unsafe_allow_html=True)
+        st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
 
     with tab2:
-        st.markdown(text("HEADLINE_E_PHOTOSYNTHESIS"))
+        st.markdown(text("MDL_HEADLINE_E_PHOTOSYNTHESIS"))
 
-        markdown_click("E_PHOTOSYNTHESIS_1", text)
+        markdown_click("MDL_E_PHOTOSYNTHESIS_1", text)
 
         if version == "4STEM":
             st.latex(
@@ -387,12 +387,12 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 """
             )
 
-        st.markdown(text("E_PHOTOSYNTHESIS_2"))
+        st.markdown(text("MDL_E_PHOTOSYNTHESIS_2"))
 
     with tab3:
-        st.markdown(text("HEADLINE_BELLASIO"))
+        st.markdown(text("MDL_HEADLINE_BELLASIO"))
 
-        markdown_click("BELLASIO_1", text)
+        markdown_click("MDL_BELLASIO_1", text)
 
         if version == "4STEM":
             st.latex(
@@ -402,17 +402,17 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 """
             )
 
-        st.markdown(text("BELLASIO_2"))
+        st.markdown(text("MDL_BELLASIO_2"))
 
-    with st.expander(text("EXPANDER_C3C4CAM")):
-        st.markdown(text("HEADLINE_C3"), unsafe_allow_html=True)
-        st.markdown(text("C3_1"), unsafe_allow_html=True)
+    with st.expander(text("MDL_EXPANDER_C3C4CAM")):
+        st.markdown(text("MDL_HEADLINE_C3"), unsafe_allow_html=True)
+        st.markdown(text("MDL_C3_1"), unsafe_allow_html=True)
 
-        st.markdown(text("HEADLINE_C4"), unsafe_allow_html=True)
-        st.markdown(text("C4_1"), unsafe_allow_html=True)
+        st.markdown(text("MDL_HEADLINE_C4"), unsafe_allow_html=True)
+        st.markdown(text("MDL_C4_1"), unsafe_allow_html=True)
 
-        st.markdown(text("HEADLINE_CAM"), unsafe_allow_html=True)
-        st.markdown(text("CAM_1"), unsafe_allow_html=True)
+        st.markdown(text("MDL_HEADLINE_CAM"), unsafe_allow_html=True)
+        st.markdown(text("MDL_CAM_1"), unsafe_allow_html=True)
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:

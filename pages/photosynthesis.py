@@ -7,16 +7,16 @@ from utils import centered_image, get_localised_text, make_prev_next_button, inc
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
-    markdown_click("HEADLINE_PHOTOSYNTHESIS_PAGE", text)
+    markdown_click("PHO_HEADLINE_PHOTOSYNTHESIS_PAGE", text)
 
-    markdown_click("HEADLINE_CLIMATE", text)
-    markdown_click("INTRODUCTION_CLIMATE_CHANGE", text)
+    markdown_click("PHO_HEADLINE_CLIMATE", text)
+    markdown_click("PHO_INTRODUCTION_CLIMATE_CHANGE", text)
 
     if version == "4STEM":
-        markdown_click("POINT_1", text)
-        markdown_click("POINT_2", text)
-        markdown_click("POINT_3", text)
-        markdown_click("END_OF_INTRODUCTION", text)
+        markdown_click("PHO_POINT_1", text)
+        markdown_click("PHO_POINT_2", text)
+        markdown_click("PHO_POINT_3", text)
+        markdown_click("PHO_END_OF_INTRODUCTION", text)
 
     else:
         col1, col2 = st.columns(2)
@@ -31,43 +31,43 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             if language == "English":
                 centered_image("pictures/plants_stress.jpeg")
 
-    markdown_click("HEADLINE_PHOTOSYNTHESIS", text)
-    markdown_click("PHOTOSYNTHESIS_EXPLANATION_1", text)
-    markdown_click("PHOTOSYNTHESIS_EXPLANATION_2", text)
+    markdown_click("PHO_HEADLINE_PHOTOSYNTHESIS", text)
+    markdown_click("PHO_PHOTOSYNTHESIS_EXPLANATION_1", text)
+    markdown_click("PHO_PHOTOSYNTHESIS_EXPLANATION_2", text)
 
     if language == "German":
-        include_image("pictures/Fotosynthese.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
+        include_image("pictures/Fotosynthese.jpg", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_PICTURE"), True)
     else:
-        include_image("pictures/Fotosynthese_eng.jpg", 0.8, text("CAPTION_FOTOSYNTHESE_PICTURE"), True)
+        include_image("pictures/Fotosynthese_eng.jpg", 0.8, text("PHO_CAPTION_FOTOSYNTHESE_PICTURE"), True)
 
-    markdown_click("HEADLINE_PHOTOSYNTHESIS_LOCATION", text)
-    markdown_click("PHOTOSYNTHESIS_LOCATION_EXPLANATION", text)
-    include_image("pictures/phot_place_upper.PNG", 0.8, text("CAPTION_FOTOSYNTHESE_LEAF_ZOOM"), True)
+    markdown_click("PHO_HEADLINE_PHOTOSYNTHESIS_LOCATION", text)
+    markdown_click("PHO_PHOTOSYNTHESIS_LOCATION_EXPLANATION", text)
+    include_image("pictures/phot_place_upper.PNG", 0.8, text("PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"), True)
 
     if language == "German":
-        include_image("pictures/Fotosynthese-Apparat.jpg", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
+        include_image("pictures/Fotosynthese-Apparat.jpg", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
     else:
-        include_image("pictures/BioTool-photosynthesis.png", 0.6, text("CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
+        include_image("pictures/BioTool-photosynthesis.png", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
 
-    markdown_click("PHOTOSYNTHESIS_LOCATION_CONTINUE", text)
+    markdown_click("PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE", text)
 
     # Journey into leaf
     st.video("https://youtu.be/hMCA0bBVoxE")
 
-    markdown_click("HEADLINE_NPQ", text)
-    markdown_click("NPQ_EXPLANATION", text)
+    markdown_click("PHO_HEADLINE_NPQ", text)
+    markdown_click("PHO_NPQ_EXPLANATION", text)
 
-    markdown_click("HEADER_MODEL_ORGANISMEN", text)
-    markdown_click("MODEL_ORGANISMEN_EXPLANATION", text)
+    markdown_click("PHO_HEADER_MODEL_ORGANISMEN", text)
+    markdown_click("PHO_MODEL_ORGANISMEN_EXPLANATION", text)
 
-    with st.expander(text("EXPANDER_MODEL_ORGANISMEN")):
+    with st.expander(text("PHO_EXPANDER_MODEL_ORGANISMEN")):
         _, col2, _ = st.columns(3)
         with col2:
             st.image(
                 "pictures/Arabidopsis.jpg", width=400
             )  # Add Caption
-            st.caption(text("CAPTION_THAIANA_PICTURE"))
-        st.markdown(text("EXPANDER_MODEL_ORGANISM_EXPLANATION"), unsafe_allow_html=True)
+            st.caption(text("PHO_CAPTION_THAIANA_PICTURE"))
+        st.markdown(text("PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"), unsafe_allow_html=True)
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     if version == "4STEM":
