@@ -294,7 +294,7 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
         slider_saturate = 5000
 
     if st.button("Start", type="primary", key="button2"):
-        with st.spinner(text("MEM_SPINNER")):
+        with st.spinner(text("SPINNER")):
             sim_time, sim_results = sim_model_memory(
                 updated_parameters=updated_parameters,
                 slider_light=slider_light,
@@ -311,9 +311,9 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
             fig_PAM = make_matplotlib_plot_memory(
                 text=text,
-                xlabel1=text("MEM_AXIS_TIME_S"),
-                xlabel2=text("MEM_AXIS_TIME_MIN"),
-                ylabel=text("MEM_FLUO"),
+                xlabel1=text("AXIS_TIME_S"),
+                xlabel2=text("AXIS_TIME_MIN"),
+                ylabel=text("FLUO"),
                 time=sim_time,
                 values=PAM_F / PAM_Fmax,
                 dark_length=slider_darklength,
@@ -340,9 +340,9 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
                 fig_NPQ = make_matplotlib_plot_memory(
                     text=text,
-                    xlabel1=text("MEM_AXIS_TIME_S"),
-                    xlabel2=text("MEM_AXIS_TIME_MIN"),
-                    ylabel=text("MEM_AXIS_NPQ"),
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel=text("AXIS_NPQ"),
                     time=sim_time[peaks],
                     values=NPQ,
                     dark_length=slider_darklength,
@@ -355,9 +355,9 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
                 fig_PhiPSII = make_matplotlib_plot_memory(
                     text=text,
-                    xlabel1=text("MEM_AXIS_TIME_S"),
-                    xlabel2=text("MEM_AXIS_TIME_MIN"),
-                    ylabel=text("MEM_AXIS_PHIPSII"),
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel=text("AXIS_PHIPSII"),
                     time=sim_time[peaks],
                     values=PhiPSII,
                     dark_length=slider_darklength,

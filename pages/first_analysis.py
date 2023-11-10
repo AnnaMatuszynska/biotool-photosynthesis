@@ -365,7 +365,7 @@ def make_sim_area(text: Callable[[str], str]) -> None:
         slider_saturate = 5000
 
     if st.button("Start", type="primary"):
-        with st.spinner(text("FAL_SPINNER")):
+        with st.spinner(text("SPINNER")):
             sim_time, sim_results = sim_model(
                 updated_parameters,
                 slider_time,
@@ -402,9 +402,9 @@ def make_sim_area(text: Callable[[str], str]) -> None:
         if version == "4Bio":
             fig_PAM = make_matplotlib_plot(
                 text=text,
-                xlabel1=text("FAL_AXIS_TIME_S"),
-                xlabel2=text("FAL_AXIS_TIME_MIN"),
-                ylabel=text("FAL_FLUO"),
+                xlabel1=text("AXIS_TIME_S"),
+                xlabel2=text("AXIS_TIME_MIN"),
+                ylabel=text("FLUO"),
                 values=st.session_state['simple_model'],
                 max_time=st.session_state['simple_model_results']['slider_time'] * 60,
                 dark_length=st.session_state['simple_model_results']['slider_darklength'],
@@ -437,9 +437,9 @@ def make_sim_area(text: Callable[[str], str]) -> None:
 
             fig_advanced = make_matplotlib_plot_advanced(
                 text=text,
-                xlabel1=text("FAL_AXIS_TIME_S"),
-                xlabel2=text("FAL_AXIS_TIME_MIN"),
-                ylabel={'Fluo': text("FAL_FLUO"), 'NPQ': text("FAL_AXIS_NPQ"),'PhiPSII': text("FAL_AXIS_PHIPSII")},
+                xlabel1=text("AXIS_TIME_S"),
+                xlabel2=text("AXIS_TIME_MIN"),
+                ylabel={'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
                 values=st.session_state['simple_model'],
                 max_time=st.session_state['simple_model_results']['slider_time'] * 60,
                 dark_length=st.session_state['simple_model_results']['slider_darklength'],
