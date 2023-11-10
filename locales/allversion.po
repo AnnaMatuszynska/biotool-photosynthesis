@@ -1166,6 +1166,8 @@ msgid "MTH_EXPLANATION_ILLUSTRATION_UNITS"
             viel Prozent der Lichtenergie für die Fotosynthese verwendet werden kann."
 4stem-fr msgstr ""
 4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "The fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fm', with the first being measured in the dark as Fm."
 4bio-de msgstr "Auf der Y-Achse der Abbildungen ist die Fluoreszenz aufgetragen. Diese ist angegeben in F´ₘ /Fₘ . Also wie \
             viel Prozent der Lichtenergie für die Fotosynthese verwendet werden kann."
 4bio-fr msgstr ""
