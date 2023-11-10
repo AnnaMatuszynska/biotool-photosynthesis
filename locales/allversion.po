@@ -39,6 +39,104 @@ msgid "INSERT_PLACEHOLDER_HERE"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
+
+
+#: pages/1 Messmethode.py:49
+msgid "LITERATURE"
+4stem-en msgstr "Literature"
+4stem-de msgstr "Literatur"
+4stem-fr msgstr ""
+4stem-pl msgstr "Literatura"
+4stem-es msgstr ""
+4bio-en msgstr "Literature"
+4bio-de msgstr "Literatur"
+4bio-fr msgstr ""
+4bio-pl msgstr "Literatura"
+4bio-es msgstr ""
+
+#
+msgid "LITERATURE_ONPAGE"
+4stem-en msgstr "References on this page:"
+4stem-de msgstr "Referenzen auf dieser Seite:"
+4stem-fr msgstr ""
+4stem-pl msgstr "Referencje na tej stronie:"
+4stem-es msgstr ""
+4bio-en msgstr "References on this page:"
+4bio-de msgstr "Referenzen auf dieser Seite:"
+4bio-fr msgstr ""
+4bio-pl msgstr "Referencje na tej stronie:"
+4bio-es msgstr ""
+
+#: pages/first_analysis.py:203 pages/plant_memory.py:286
+msgid "SLIDER_LIGHT"
+4stem-en msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
+4stem-de msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
+4bio-de msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/first_analysis.py:216
+#: pages/2 Daten-Analyse.py:60
+#: pages/Analyse.py:60
+msgid "SLIDER_PULSES"
+4stem-en msgstr "Seconds between saturating pulse during light phase"
+4stem-de msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Seconds between saturating pulse during light phase"
+4bio-de msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/first_analysis.py:222
+msgid "SLIDER_ACTIVATION"
+4stem-en msgstr "Conversion rate to Zeaxanthin in percent of default"
+4stem-de msgstr "Umwandlungsrate zu Zeaxanthin in Prozent des Standardwerts"
+4stem-fr msgstr "Conversion rate to Zeaxanthin in percent of default"
+4stem-pl msgstr "Conversion rate to Zeaxanthin in percent of default"
+4stem-es msgstr "Conversion rate to Zeaxanthin in percent of default"
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/Analyse.py:72
+msgid "SLIDER_DEACTIVATION"
+4stem-en msgstr "Conversion rate to Violaxanthin in percent of default"
+4stem-de msgstr "Umwandlungsrate zu Violaxanthin in Prozent des Standardwerts"
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/Start.py:14
+# Grammarly checked
+msgid "PROGRAMS_USED"
+4stem-en msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."
+4stem-de msgstr "Die Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."
+4stem-fr msgstr ""
+4stem-pl msgstr "Do stworzenia strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."
+4stem-es msgstr ""
+4bio-en msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."
+4bio-de msgstr "Die Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."
+4bio-fr msgstr ""
+4bio-pl msgstr "Do stworzenia strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."
+4bio-es msgstr ""
+
+
+
 # SIDEBAR
 msgid "SDE_4BIO"
 4stem-en msgstr "4Bio"
@@ -52,7 +150,7 @@ msgid "SDE_4BIO"
 4bio-pl msgstr "4Bio"
 4bio-es msgstr "4Bio"
 
-
+# 
 msgid "SDE_4STEM"
 4stem-en msgstr "4STEM"
 4stem-de msgstr "4STEM"
@@ -64,6 +162,8 @@ msgid "SDE_4STEM"
 4bio-fr msgstr "4STEM"
 4bio-pl msgstr "4STEM"
 4bio-es msgstr "4STEM"
+
+
 
 #: This can be copied to add new text entries with translations
 msgid "STR_EXPANDER_ABOUT"
@@ -90,32 +190,6 @@ msgid "STR_EXPLANATION_ABOUT"
 4bio-de msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
 4bio-fr msgstr ""
 4bio-pl msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:49
-msgid "LITERATURE"
-4stem-en msgstr "Literature"
-4stem-de msgstr "Literatur"
-4stem-fr msgstr ""
-4stem-pl msgstr "Literatura"
-4stem-es msgstr ""
-4bio-en msgstr "Literature"
-4bio-de msgstr "Literatur"
-4bio-fr msgstr ""
-4bio-pl msgstr "Literatura"
-4bio-es msgstr ""
-
-#: pages/1 Messmethode.py:50
-msgid "MTH_LITERATURE_DECLARATION"
-4stem-en msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
-4stem-de msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
-4stem-fr msgstr ""
-4stem-pl msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami"
-4stem-es msgstr ""
-4bio-en msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
-4bio-de msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
-4bio-fr msgstr ""
-4bio-pl msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
 4bio-es msgstr ""
 
 #: Start.py:10
@@ -356,6 +430,8 @@ msgid "STR_MEMORY"
 4bio-fr msgstr ""
 4bio-pl msgstr "Wreszcie, poznasz pamięć światła roślin na stronie **pamięć światła roślin** i możesz udowodnić jej istnienie niezależnie za pomocą eksperymentów."
 4bio-es msgstr ""
+
+
 
 #: pages/photosynthesis.py:10
 #: Lisa's introduction
@@ -709,17 +785,19 @@ msgid "PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-#
-msgid "LITERATURE_ONPAGE"
-4stem-en msgstr "References on this page:"
-4stem-de msgstr "Referenzen auf dieser Seite:"
+
+
+#: pages/1 Messmethode.py:50
+msgid "MTH_LITERATURE_DECLARATION"
+4stem-en msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
+4stem-de msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
 4stem-fr msgstr ""
-4stem-pl msgstr "Referencje na tej stronie:"
+4stem-pl msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami"
 4stem-es msgstr ""
-4bio-en msgstr "References on this page:"
-4bio-de msgstr "Referenzen auf dieser Seite:"
+4bio-en msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
+4bio-de msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Möglichkeit sich mit den Grundlagen vertraut zu machen."
 4bio-fr msgstr ""
-4bio-pl msgstr "Referencje na tej stronie:"
+4bio-pl msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
 4bio-es msgstr ""
 
 #: pages/method.py:10
@@ -1150,6 +1228,8 @@ msgid "MTH_EXPLANATION_ILLUSTRATION"
 4bio-fr msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
 4bio-pl msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
 4bio-es msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the next page!"
+
+
 
 #: pages/model_explain.py:16
 #: pages/1 Messmethode.py:30
@@ -1694,6 +1774,135 @@ msgid "MDL_CAM_1"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
+#: pages/model_explain.py:149
+# Grammarly checked
+msgid "MDL_SIR_IMPLEMENTATION_MANUAL_1"
+4stem-en msgstr "Great care needs to be taken for the `y0` vector to align with the unpacked variable names and the respective differential equations. The same holds for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model_explain.py:158
+msgid "MDL_SIR_IMPLEMENTATION_MANUAL_2"
+4stem-en msgstr "Clearly this way of writing models is very error-prone and hard to modularise. That's why we can improve on the situation by using `modelbase`."
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model_explain.py:177
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_1"
+4stem-en msgstr "First, we are going to factor out the rate functions `infection` and `recovery` as plain Python functions."
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model_explain.py:181
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_2"
+4stem-en msgstr "Next, we can build the model. For this we supply all our system variables using `add_compounds` and parameters as a dictionary using `add_parameters`"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model_explain.py:181
+# Grammarly checked
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_3"
+4stem-en msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying:\n"
+"1. A name for the transition\n"
+"2. A reference to the rate function\n"
+"3. Stoichiometries, encoding how the rate affects the system variables\n"
+"4. The arguments for the rate function"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model_explain.py:189
+# Grammarly checked
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
+4stem-en msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
+"\n You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model_explain.py:210
+# Grammarly checked
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_5"
+4stem-en msgstr "The approach's strength lies in its simplicity of extending models. For instance, we can add a compartment for deceased individuals to the SIR model, also known as the SIRD model, by introducing a new variable, parameter, and reaction:"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model_explain.py:214
+msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
+4stem-en msgstr "Which would have been a lot more cumbersome with the manual approach."
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model.explain.py:58
+# Grammarly checked
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
+4stem-en msgstr ""
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. If you want to learn how to implement such a model computationally using Python as a programming language, please switch to the <a href='#' id='4STEM'>4STEM</a> mode."
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+
+
 #: pages/model_explain.py:65
 msgid "FAL_HEADLINE_EXPERIMENTS"
 4stem-en msgstr "# Experiments *in silico*"
@@ -1967,119 +2176,6 @@ msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-#: pages/model_explain.py:149
-# Grammarly checked
-msgid "MDL_SIR_IMPLEMENTATION_MANUAL_1"
-4stem-en msgstr "Great care needs to be taken for the `y0` vector to align with the unpacked variable names and the respective differential equations. The same holds for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/model_explain.py:158
-msgid "MDL_SIR_IMPLEMENTATION_MANUAL_2"
-4stem-en msgstr "Clearly this way of writing models is very error-prone and hard to modularise. That's why we can improve on the situation by using `modelbase`."
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/model_explain.py:177
-msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_1"
-4stem-en msgstr "First, we are going to factor out the rate functions `infection` and `recovery` as plain Python functions."
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/model_explain.py:181
-msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_2"
-4stem-en msgstr "Next, we can build the model. For this we supply all our system variables using `add_compounds` and parameters as a dictionary using `add_parameters`"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/model_explain.py:181
-# Grammarly checked
-msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_3"
-4stem-en msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying:\n"
-"1. A name for the transition\n"
-"2. A reference to the rate function\n"
-"3. Stoichiometries, encoding how the rate affects the system variables\n"
-"4. The arguments for the rate function"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/model_explain.py:189
-# Grammarly checked
-msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
-4stem-en msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
-"\n You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/model_explain.py:210
-# Grammarly checked
-msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_5"
-4stem-en msgstr "The approach's strength lies in its simplicity of extending models. For instance, we can add a compartment for deceased individuals to the SIR model, also known as the SIRD model, by introducing a new variable, parameter, and reaction:"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/model_explain.py:214
-msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
-4stem-en msgstr "Which would have been a lot more cumbersome with the manual approach."
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
 #: pages/first_analysis.py:177
 #: pages/2 Daten-Analyse.py:23
 #: pages/Analyse.py:23
@@ -2181,19 +2277,6 @@ msgid "FAL_TIPP2"
 4bio-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 4bio-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
-#: pages/first_analysis.py:203 pages/plant_memory.py:286
-msgid "SLIDER_LIGHT"
-4stem-en msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
-4stem-de msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
-4bio-de msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
 #: pages/first_analysis.py:211 pages/plant_memory.py:291
 msgid "FAL_SLIDER_TIME"
 4stem-en msgstr "Test duration in minutes"
@@ -2206,34 +2289,6 @@ msgid "FAL_SLIDER_TIME"
 4bio-fr msgstr "Test duration in minutes"
 4bio-pl msgstr "Test duration in minutes"
 4bio-es msgstr "Test duration in minutes"
-
-#: pages/first_analysis.py:216
-#: pages/2 Daten-Analyse.py:60
-#: pages/Analyse.py:60
-msgid "SLIDER_PULSES"
-4stem-en msgstr "Seconds between saturating pulse during light phase"
-4stem-de msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Seconds between saturating pulse during light phase"
-4bio-de msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/first_analysis.py:222
-msgid "SLIDER_ACTIVATION"
-4stem-en msgstr "Conversion rate to Zeaxanthin in percent of default"
-4stem-de msgstr "Umwandlungsrate zu Zeaxanthin in Prozent des Standardwerts"
-4stem-fr msgstr "Conversion rate to Zeaxanthin in percent of default"
-4stem-pl msgstr "Conversion rate to Zeaxanthin in percent of default"
-4stem-es msgstr "Conversion rate to Zeaxanthin in percent of default"
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
 
 #: pages/first_analysis.py:168
 msgid "FAL_SLIDER_DARKLENGTH"
@@ -2256,305 +2311,6 @@ msgid "FAL_SLIDER_SATURATE"
 4stem-pl msgstr ""
 4stem-es msgstr ""
 4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/first_analysis.py:247 pages/plant_memory.py:326
-#: pages/2 Daten-Analyse.py:83
-#: pages/Analyse.py:83
-msgid "MEM_SPINNER"
-4stem-en msgstr "I'll do some quick math for you :computer:"
-4stem-de msgstr "Ich rechne kurz für Sie :computer:"
-4stem-fr msgstr "I'll do some quick math for you :computer:"
-4stem-pl msgstr "I'll do some quick math for you :computer:"
-4stem-es msgstr "I'll do some quick math for you :computer:"
-4bio-en msgstr "I'll do some quick math for you :computer:"
-4bio-de msgstr "Ich rechne kurz für Sie :computer:"
-4bio-fr msgstr "I'll do some quick math for you :computer:"
-4bio-pl msgstr "I'll do some quick math for you :computer:"
-4bio-es msgstr "I'll do some quick math for you :computer:"
-
-#: pages/plant_memory.py:188
-#: pages/3 Pflanzengedächtnis.py:122
-msgid "MEM_AXIS_TIME_MIN"
-4stem-en msgstr "Time [min]"
-4stem-de msgstr "Zeit [min]"
-4stem-fr msgstr "Time [min]"
-4stem-pl msgstr "Time [min]"
-4stem-es msgstr "Time [min]"
-4bio-en msgstr "Time [min]"
-4bio-de msgstr "Zeit [min]"
-4bio-fr msgstr "Time [min]"
-4bio-pl msgstr "Time [min]"
-4bio-es msgstr "Time [min]"
-
-#: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
-#: pages/Analyse.py:72
-msgid "MEM_AXIS_TIME_S"
-4stem-en msgstr "Time [s]"
-4stem-de msgstr "Zeit [s]"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Time [s]"
-4bio-de msgstr "Zeit [s]"
-4bio-fr msgstr "Time [s]"
-4bio-pl msgstr "Time [s]"
-4bio-es msgstr "Time [s]"
-
-#: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
-#: pages/Analyse.py:72
-msgid "MEM_FLUO"
-4stem-en msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
-4stem-de msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
-4bio-de msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/first_analysis.py:217
-msgid "MEM_AXIS_NPQ"
-4stem-en msgstr "NPQ [a.u.]"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/first_analysis.py:230
-msgid "MEM_AXIS_PHIPSII"
-4stem-en msgstr "Φ(PSII)"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:262
-#: pages/3 Pflanzengedächtnis.py:36
-msgid "MEM_HEADLINE_BRAIN"
-4stem-en msgstr "# Plant Light Memory"
-4stem-de msgstr "# Das Pflanzengedächtnis"
-4stem-fr msgstr "# The plant memory"
-4stem-pl msgstr "# The plant memory"
-4stem-es msgstr "# The plant memory"
-4bio-en msgstr "# Plant Light Memory"
-4bio-de msgstr "# Das Pflanzengedächtnis"
-4bio-fr msgstr "# The plant memory"
-4bio-pl msgstr "# The plant memory"
-4bio-es msgstr "# The plant memory"
-
-#: pages/plant_memory.py:269
-# Grammarly checked
-msgid "MEM_INTRODUCTION_BRAIN"
-4stem-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin, you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
-4stem-de msgstr "Das Modell bietet auch die Möglichkeit, Experimente mit Dunkelphasen zu simulieren. So kann das Kurzzeitgedächtnis \
-        der Pflanzen demonstriert werden. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='4STEM'>4STEM</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
-4bio-de msgstr "Nachdem Sie herausgefunden haben, wie Pflanzen auf unterschiedliche Lichtintensitäten reagieren. Sie können \
-        sich nun mit dem Gedächtnis der Pflanzen beschäftigen. Dies ist eine interessante Tatsache, die sich mit dem \
-        Modell sehr schön modellieren lässt. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:212
-msgid "MEM_SLIDER_TRAINING"
-4stem-en msgstr "Training phase in minutes"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Training phase in minutes"
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:219
-msgid "MEM_SLIDER_RELAXATION"
-4stem-en msgstr "Relaxation phase in minutes"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Relaxation phase in minutes"
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:212
-msgid "MEM_SLIDER_MEMORY"
-4stem-en msgstr "Memory phase in minutes"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Memory phase in minutes"
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:95
-msgid "MEM_ANNO_TRAINING"
-4stem-en msgstr "Training"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Training"
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:95
-msgid "MEM_ANNO_RELAXATION"
-4stem-en msgstr "Relaxation"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Relaxation"
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:95
-msgid "MEM_ANNO_MEMORY"
-4stem-en msgstr "Memory"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "Memory"
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/plant_memory.py:278
-#: pages/3 Pflanzengedächtnis.py:40
-msgid "MEM_TIP1"
-4stem-en msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-4stem-de msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können Sie die Diagramme herunterladen, indem Sie auf die drei Punkte klicken.*"
-4stem-fr msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-4stem-pl msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-4stem-es msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-4bio-en msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-4bio-de msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können Sie die Diagramme herunterladen, indem Sie auf die drei Punkte klicken.*"
-4bio-fr msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-4bio-pl msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-4bio-es msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-
-#: pages/plant_memory.py:280
-#: pages/3 Pflanzengedächtnis.py:42
-msgid "MEM_TIP2"
-4stem-en msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-4stem-de msgstr "***Tipp 2:*** *Durch Klicken auf die Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
-4stem-fr msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-4stem-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-4stem-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-4bio-en msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-4bio-de msgstr "***Tipp 2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
-4bio-fr msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-4bio-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-4bio-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-
-#: pages/conclusion.py:12
-#: Conclusion
-msgid "CON_HEADLINE_CONCLUSION"
-4stem-en msgstr "# Take Home Messages"
-4stem-de msgstr "# Fazit"
-4stem-fr msgstr "# Conclusion"
-4stem-pl msgstr "# Podsumowanie"
-4stem-es msgstr "# Conclusion"
-4bio-en msgstr "# Take Home Messages"
-4bio-de msgstr "# Fazit"
-4bio-fr msgstr "# Conclusion"
-4bio-pl msgstr "# Podsumowanie"
-4bio-es msgstr "# Conclusion"
-
-#: pages/conclusion.py:12
-# Grammarly checked
-msgid "CON_CONCLUSION_TEXT_ONE"
-4stem-en msgstr "We hope you have received a thorough introduction to the captivating realm of (computational) plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. We hope we could show you the following:\n"
-"- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
-"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point, like in the figure below."
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "We hope you have received a thorough introduction to the captivating realm of plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. Consequently, you should have arrived at the following conclusions:\n"
-"- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
-"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point."
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/conclusion.py:18
-# Grammarly checked     
-msgid "CON_CONCLUSION_TEXT_TWO"
-4stem-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
-"- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
-"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
-"- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
-"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr "- Rośliny mogą przypomnieć sobie poprzednią ekspozycję na światło i odpowiednio dostosować swoje tempo fotosyntezy. Ta krótkotrwała pamięć pozwala im efektywnie zużywać energię i dostosowywać się do różnych warunków środowiskowych. \n"
-"- Uważamy, że pomiar PAM jest ekscytującą i skuteczną metodą poznania skomplikowanych mechanizmów leżących u podstaw wzrostu i rozwoju roślin.\n"
-"- W koncu, prosimy o rozważenie przedstawionych tutaj odkryć i ich szerszych implikacji dla naszego zrozumienia świata przyrody. W ten sposób będziesz w stanie rozpoznać i podziwiać niezwykłą złożoność i wspaniałość królestwa roślin."
-4bio-es msgstr ""
-
-#: pages/Analyse.py:72
-msgid "SLIDER_DEACTIVATION"
-4stem-en msgstr "Conversion rate to Violaxanthin in percent of default"
-4stem-de msgstr "Umwandlungsrate zu Violaxanthin in Prozent des Standardwerts"
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr ""
-4bio-de msgstr ""
-4bio-fr msgstr ""
-4bio-pl msgstr ""
-4bio-es msgstr ""
-
-#: pages/model.explain.py:58
-# Grammarly checked
-msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
-4stem-en msgstr ""
-4stem-de msgstr ""
-4stem-fr msgstr ""
-4stem-pl msgstr ""
-4stem-es msgstr ""
-4bio-en msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. If you want to learn how to implement such a model computationally using Python as a programming language, please switch to the <a href='#' id='4STEM'>4STEM</a> mode."
 4bio-de msgstr ""
 4bio-fr msgstr ""
 4bio-pl msgstr ""
@@ -2871,16 +2627,278 @@ msgid "FAL_SIMULATION_PRETTY_1"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
-#: pages/Start.py:14
-# Grammarly checked
-msgid "PROGRAMS_USED"
-4stem-en msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."
-4stem-de msgstr "Die Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."
+
+
+#: pages/first_analysis.py:247 pages/plant_memory.py:326
+#: pages/2 Daten-Analyse.py:83
+#: pages/Analyse.py:83
+msgid "MEM_SPINNER"
+4stem-en msgstr "I'll do some quick math for you :computer:"
+4stem-de msgstr "Ich rechne kurz für Sie :computer:"
+4stem-fr msgstr "I'll do some quick math for you :computer:"
+4stem-pl msgstr "I'll do some quick math for you :computer:"
+4stem-es msgstr "I'll do some quick math for you :computer:"
+4bio-en msgstr "I'll do some quick math for you :computer:"
+4bio-de msgstr "Ich rechne kurz für Sie :computer:"
+4bio-fr msgstr "I'll do some quick math for you :computer:"
+4bio-pl msgstr "I'll do some quick math for you :computer:"
+4bio-es msgstr "I'll do some quick math for you :computer:"
+
+#: pages/plant_memory.py:188
+#: pages/3 Pflanzengedächtnis.py:122
+msgid "MEM_AXIS_TIME_MIN"
+4stem-en msgstr "Time [min]"
+4stem-de msgstr "Zeit [min]"
+4stem-fr msgstr "Time [min]"
+4stem-pl msgstr "Time [min]"
+4stem-es msgstr "Time [min]"
+4bio-en msgstr "Time [min]"
+4bio-de msgstr "Zeit [min]"
+4bio-fr msgstr "Time [min]"
+4bio-pl msgstr "Time [min]"
+4bio-es msgstr "Time [min]"
+
+#: pages/plant_memory.py:228 pages/plant_memory.py:239 pages/first_analysis.py:112
+#: pages/Analyse.py:72
+msgid "MEM_AXIS_TIME_S"
+4stem-en msgstr "Time [s]"
+4stem-de msgstr "Zeit [s]"
 4stem-fr msgstr ""
-4stem-pl msgstr "Do stworzenia strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."
+4stem-pl msgstr ""
 4stem-es msgstr ""
-4bio-en msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."
-4bio-de msgstr "Die Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."
+4bio-en msgstr "Time [s]"
+4bio-de msgstr "Zeit [s]"
+4bio-fr msgstr "Time [s]"
+4bio-pl msgstr "Time [s]"
+4bio-es msgstr "Time [s]"
+
+#: pages/plant_memory.py:229 pages/plant_memory.py:240 pages/furst_analysis.py:134
+#: pages/Analyse.py:72
+msgid "MEM_FLUO"
+4stem-en msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
+4stem-de msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
+4bio-de msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
 4bio-fr msgstr ""
-4bio-pl msgstr "Do stworzenia strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/first_analysis.py:217
+msgid "MEM_AXIS_NPQ"
+4stem-en msgstr "NPQ [a.u.]"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/first_analysis.py:230
+msgid "MEM_AXIS_PHIPSII"
+4stem-en msgstr "Φ(PSII)"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr ""
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/plant_memory.py:262
+#: pages/3 Pflanzengedächtnis.py:36
+msgid "MEM_HEADLINE_BRAIN"
+4stem-en msgstr "# Plant Light Memory"
+4stem-de msgstr "# Das Pflanzengedächtnis"
+4stem-fr msgstr "# The plant memory"
+4stem-pl msgstr "# The plant memory"
+4stem-es msgstr "# The plant memory"
+4bio-en msgstr "# Plant Light Memory"
+4bio-de msgstr "# Das Pflanzengedächtnis"
+4bio-fr msgstr "# The plant memory"
+4bio-pl msgstr "# The plant memory"
+4bio-es msgstr "# The plant memory"
+
+#: pages/plant_memory.py:269
+# Grammarly checked
+msgid "MEM_INTRODUCTION_BRAIN"
+4stem-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin, you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
+4stem-de msgstr "Das Modell bietet auch die Möglichkeit, Experimente mit Dunkelphasen zu simulieren. So kann das Kurzzeitgedächtnis \
+        der Pflanzen demonstriert werden. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='4STEM'>4STEM</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
+4bio-de msgstr "Nachdem Sie herausgefunden haben, wie Pflanzen auf unterschiedliche Lichtintensitäten reagieren. Sie können \
+        sich nun mit dem Gedächtnis der Pflanzen beschäftigen. Dies ist eine interessante Tatsache, die sich mit dem \
+        Modell sehr schön modellieren lässt. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/plant_memory.py:212
+msgid "MEM_SLIDER_TRAINING"
+4stem-en msgstr "Training phase in minutes"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Training phase in minutes"
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/plant_memory.py:219
+msgid "MEM_SLIDER_RELAXATION"
+4stem-en msgstr "Relaxation phase in minutes"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Relaxation phase in minutes"
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/plant_memory.py:212
+msgid "MEM_SLIDER_MEMORY"
+4stem-en msgstr "Memory phase in minutes"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Memory phase in minutes"
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/plant_memory.py:95
+msgid "MEM_ANNO_TRAINING"
+4stem-en msgstr "Training"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Training"
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/plant_memory.py:95
+msgid "MEM_ANNO_RELAXATION"
+4stem-en msgstr "Relaxation"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Relaxation"
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/plant_memory.py:95
+msgid "MEM_ANNO_MEMORY"
+4stem-en msgstr "Memory"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "Memory"
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/plant_memory.py:278
+#: pages/3 Pflanzengedächtnis.py:40
+msgid "MEM_TIP1"
+4stem-en msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+4stem-de msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können Sie die Diagramme herunterladen, indem Sie auf die drei Punkte klicken.*"
+4stem-fr msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+4stem-pl msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+4stem-es msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+4bio-en msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+4bio-de msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können Sie die Diagramme herunterladen, indem Sie auf die drei Punkte klicken.*"
+4bio-fr msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+4bio-pl msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+4bio-es msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
+
+#: pages/plant_memory.py:280
+#: pages/3 Pflanzengedächtnis.py:42
+msgid "MEM_TIP2"
+4stem-en msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+4stem-de msgstr "***Tipp 2:*** *Durch Klicken auf die Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+4stem-fr msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+4stem-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+4stem-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+4bio-en msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+4bio-de msgstr "***Tipp 2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+4bio-fr msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+4bio-pl msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+4bio-es msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+
+
+
+#: pages/conclusion.py:12
+#: Conclusion
+msgid "CON_HEADLINE_CONCLUSION"
+4stem-en msgstr "# Take Home Messages"
+4stem-de msgstr "# Fazit"
+4stem-fr msgstr "# Conclusion"
+4stem-pl msgstr "# Podsumowanie"
+4stem-es msgstr "# Conclusion"
+4bio-en msgstr "# Take Home Messages"
+4bio-de msgstr "# Fazit"
+4bio-fr msgstr "# Conclusion"
+4bio-pl msgstr "# Podsumowanie"
+4bio-es msgstr "# Conclusion"
+
+#: pages/conclusion.py:12
+# Grammarly checked
+msgid "CON_CONCLUSION_TEXT_ONE"
+4stem-en msgstr "We hope you have received a thorough introduction to the captivating realm of (computational) plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. We hope we could show you the following:\n"
+"- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
+"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point, like in the figure below."
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "We hope you have received a thorough introduction to the captivating realm of plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. Consequently, you should have arrived at the following conclusions:\n"
+"- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
+"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point."
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/conclusion.py:18
+# Grammarly checked     
+msgid "CON_CONCLUSION_TEXT_TWO"
+4stem-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
+"- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
+"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
+"- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
+"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr "- Rośliny mogą przypomnieć sobie poprzednią ekspozycję na światło i odpowiednio dostosować swoje tempo fotosyntezy. Ta krótkotrwała pamięć pozwala im efektywnie zużywać energię i dostosowywać się do różnych warunków środowiskowych. \n"
+"- Uważamy, że pomiar PAM jest ekscytującą i skuteczną metodą poznania skomplikowanych mechanizmów leżących u podstaw wzrostu i rozwoju roślin.\n"
+"- W koncu, prosimy o rozważenie przedstawionych tutaj odkryć i ich szerszych implikacji dla naszego zrozumienia świata przyrody. W ten sposób będziesz w stanie rozpoznać i podziwiać niezwykłą złożoność i wspaniałość królestwa roślin."
 4bio-es msgstr ""
