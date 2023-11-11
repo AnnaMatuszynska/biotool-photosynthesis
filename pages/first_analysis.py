@@ -1,6 +1,3 @@
-import altair as alt
-import numpy as np
-import pandas as pd
 import streamlit as st
 from utils import include_image, resetting_click_detector_setup, make_prev_next_button, get_localised_text, markdown_click, include_ytvideo
 from pages._sidebar import make_sidebar
@@ -271,7 +268,6 @@ def make_page(text: Callable[[str], str]) -> None:
 
             st.code(model_complemockup, "python")
 
-    # UI (Mainpage-Website)
     st.markdown(text("FAL_HEADLINE_ANALYSE"))
     st.markdown(text("FAL_INTRODUKTION"))
 
@@ -389,16 +385,82 @@ def make_page(text: Callable[[str], str]) -> None:
                 label=text("FAL_SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
             )
 
-    make_sim_area(text)
-
-
+        updated_parameters = {
+            "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
+            "kEpoxZ": 0.00024
+            * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+        }
+    else:
+        updated_parameters = {
+            "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
+            "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+        }
+        slider_darklength = 30
+        slider_saturate = 5000
+        
+    if st.button("Start", type="primary"):
+        with st.spinner(text("SPINNER")):
+            sim_time, sim_results = sim_model(
+                updated_parameters,
+                slider_time,
+                slider_light,
+                slider_pings,
+                slider_saturate,
+                slider_darklength,
+            )
+            
+            if 'model_results' not in st.session_state:
+                st.session_state['model_results'] = calculate_results_to_plot(sim_time, sim_results)
+            else:
+                st.session_state['model_results'].update(calculate_results_to_plot(sim_time, sim_results))
+        
+            fig_4Bio = make_4Bio_plot(
+                text=text,
+                xlabel1=text("AXIS_TIME_S"),
+                xlabel2=text("AXIS_TIME_MIN"),
+                ylabel=text("FLUO"),
+                values=st.session_state['model_results'],
+                max_time=slider_time * 60,
+                dark_length=slider_darklength,
+                width=15,
+                height=3
+            )
+            
+            fig_4STEM = make_4STEM_plot(
+                text=text,
+                xlabel1=text("AXIS_TIME_S"),
+                xlabel2=text("AXIS_TIME_MIN"),
+                ylabel={'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
+                values=st.session_state['model_results'],
+                max_time=slider_time * 60,
+                dark_length=slider_darklength,
+                width=15,
+                height=6,
+            )
+            
+            st.session_state['fig_4Bio'] = fig_4Bio
+            st.session_state['fig_4STEM'] = fig_4STEM
+            
+            old_results = {}
+            for key, value in st.session_state['model_results'].items():
+                old_results.update({f'old {key}': value})
+            
+            st.session_state['model_results'].update(old_results)
+    
+    if 'fig_4Bio' in st.session_state and 'fig_4STEM' in st.session_state:
+        if version == '4Bio':
+            showed_fig = st.session_state['fig_4Bio']
+        else:
+            showed_fig = st.session_state['fig_4STEM']
+            
+        st.pyplot(showed_fig, transparent=True)
+            
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
         st.markdown(text("LITERATURE_ONPAGE"))
         st.markdown(
             "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
         )
-
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
