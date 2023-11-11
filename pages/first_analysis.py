@@ -2,460 +2,12 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-from matplotlib import patches
-from matplotlib import pyplot as plt
-from model import get_model
-from modelbase.ode import Model, Simulator, _Simulate
-from modelbase.ode.integrators import Scipy
-from pages._monkey_patch import _simulate
+from utils import include_image, resetting_click_detector_setup, make_prev_next_button, get_localised_text, markdown_click, include_ytvideo
 from pages._sidebar import make_sidebar
+from typing import Callable
 from pathlib import Path
-from PIL import Image
-from scipy.signal import find_peaks, peak_prominences
-from typing import Any, Callable
-from utils import (
-    get_localised_text,
-    include_image,
-    include_ytvideo,
-    make_prev_next_button,
-    markdown_click,
-    resetting_click_detector_setup,
-)
-
-
-def make_matplotlib_plot_advanced(
-    text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height
-):
-    text_color = "#727682"
-    alpha_old = 0.5
-    
-    style_dict = {
-        'Fluo': {
-            'color': '#FF4B4B',
-            'alpha': 1,
-            'linestyle': 'solid',
-            'label': 'New'
-        },
-        'old Fluo': {
-            'color': '#FF4B4B',
-            'alpha': alpha_old,
-            'linestyle': 'dashdot',
-            'label': 'Old'
-        },
-        'NPQ': {
-            'color': '#FF4B4B',
-            'alpha': 1,
-            'linestyle': 'solid',
-            'label': 'New'
-        },
-        'old NPQ': {
-            'color': '#FF4B4B',
-            'alpha': alpha_old,
-            'linestyle': 'dashdot',
-            'label': 'Old'
-        },
-        'PhiPSII': {
-            'color': '#FF4B4B',
-            'alpha': 1,
-            'linestyle': 'solid',
-            'label': 'New'
-        },
-        'old PhiPSII': {
-            'color': '#FF4B4B',
-            'alpha': alpha_old,
-            'linestyle': 'dashdot',
-            'label': 'Old'
-        }
-    }
-    
-    with plt.rc_context(
-    {
-        "axes.spines.right": False,
-        "axes.edgecolor": text_color,
-        "font.size": 12.0,
-        "text.color": text_color,
-        "axes.labelcolor": text_color,
-        "xtick.color": text_color,
-        "ytick.color": text_color,
-        "grid.color": text_color,
-        "font.weight": 'bold',
-        "figure.figsize": (width, height),
-        
-    }
-        ):
-        
-        fig, axs = plt.subplot_mosaic(mosaic=[["A", "A"], ["B", "C"]], constrained_layout=True)
-        
-        graph_belong = {
-            'Fluo': 'A',
-            'NPQ': 'B',
-            'PhiPSII': 'C'
-        }
-        
-        for i in {'Fluo', 'NPQ', 'PhiPSII'}:
-            if values.get('old ' + i):
-                axs[graph_belong[i]].plot(
-                        values['old ' + i][0],
-                        values['old ' + i][1],
-                        color = style_dict['old ' + i]['color'],
-                        linestyle = style_dict['old ' + i]['linestyle'],
-                        alpha = style_dict['old ' + i]['alpha'],
-                        label = style_dict['old ' + i]['label']
-                    )
-            axs[graph_belong[i]].plot(
-                    values[i][0],
-                    values[i][1],
-                    color = style_dict[i]['color'],
-                    linestyle = style_dict[i]['linestyle'],
-                    alpha = style_dict[i]['alpha'],
-                    label = style_dict[i]['label']
-                )
-            
-            # Create the top xaxis for the minutes
-            ax_top = axs[graph_belong[i]].secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
-            
-            # Add labels
-            axs[graph_belong[i]].set_xlabel(xlabel1, weight = 'bold', size = 12)
-            axs[graph_belong[i]].set_ylabel(ylabel[i], weight = 'bold', size = 12)
-            ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
-            
-            axs[graph_belong[i]].legend(loc = 'best', ncols=2, frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
-        
-
-    for j in range(len([axs["A"], axs["B"], axs["C"]])):
-        ax = [axs["A"], axs["B"], axs["C"]][j]
-        # Add the dark phase length to the xticks
-        default_xticks = ax.get_xticks()
-        new_xticks = []
-        for i in range(len(default_xticks)):
-            try:
-                if default_xticks[i] > dark_length and default_xticks[i - 1] < dark_length:
-                    new_xticks.append(dark_length)
-                    new_xticks.append(default_xticks[i])
-                else:
-                    new_xticks.append(default_xticks[i])
-            except:
-                pass
-
-        ax.set_xticks(new_xticks)
-
-        # Change the left and down limit
-        ax.set_xlim(0, max_time)
-        ax.set_ylim(0)
-
-        # Highlight dark and light phase
-        dark_patch = patches.Rectangle(
-            xy=(ax.get_xlim()[0], ax.get_ylim()[0]),
-            width=dark_length,
-            height=ax.get_ylim()[1],
-            facecolor="#1c5bc7",
-            alpha=0.3,
-        )
-        light_patch = patches.Rectangle(
-            xy=(dark_length, ax.get_ylim()[0]),
-            width=max_time - dark_length,
-            height=ax.get_ylim()[1],
-            facecolor="#cf6d0c",
-            alpha=0.3,
-        )
-
-        ax.add_patch(dark_patch)
-        ax.add_patch(light_patch)
-
-
-    return fig
-
-
-def make_matplotlib_plot(
-    text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height
-):
-    
-    text_color = "#727682"
-    alpha_old = 0.5
-    
-    style_dict = {
-        'Fluo': {
-            'color': '#FF4B4B',
-            'alpha': 1,
-            'linestyle': 'solid',
-            'label': 'New'
-        },
-        'old Fluo': {
-            'color': '#FF4B4B',
-            'alpha': alpha_old,
-            'linestyle': 'dashdot',
-            'label': 'Old'
-        }
-    }
-    
-    with plt.rc_context(
-    {
-        "axes.spines.right": False,
-        "axes.edgecolor": text_color,
-        "font.size": 12.0,
-        "text.color": text_color,
-        "axes.labelcolor": text_color,
-        "xtick.color": text_color,
-        "ytick.color": text_color,
-        "grid.color": text_color,
-        "font.weight": 'bold',
-        "figure.figsize": (width, height),
-        
-    }
-        ):
-        
-        fig, ax = plt.subplots()
-        for i in ['old Fluo', 'Fluo']:
-            if values.get(i):
-                ax.plot(
-                    values[i][0],
-                    values[i][1],
-                    color = style_dict[i]['color'],
-                    linestyle = style_dict[i]['linestyle'],
-                    alpha = style_dict[i]['alpha'],
-                    label = style_dict[i]['label']
-                )
-        
-        # Create the top xaxis for the minutes
-        ax_top = ax.secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
-        
-        # Add labels
-        ax.set_xlabel(xlabel1, weight = 'bold', size = 12)
-        ax.set_ylabel(ylabel, weight = 'bold', size = 12)
-        ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
-
-    # Add the dark phase length to the xticks
-    default_xticks = ax.get_xticks()
-    new_xticks = []
-    for i in range(len(default_xticks)):
-        try:
-            if default_xticks[i] > dark_length and default_xticks[i - 1] < dark_length:
-                new_xticks.append(dark_length)
-                new_xticks.append(default_xticks[i])
-            else:
-                new_xticks.append(default_xticks[i])
-        except:
-            pass
-
-    ax.set_xticks(new_xticks)
-
-    # Change the left and down limit
-    ax.set_xlim(0, max_time)
-    ax.set_ylim(0)
-
-    # Highlight dark and light phase
-    dark_patch = patches.Rectangle(
-        xy=(ax.get_xlim()[0], ax.get_ylim()[0]),
-        width=dark_length,
-        height=ax.get_ylim()[1],
-        facecolor="#1c5bc7",
-        alpha=0.3,
-    )
-    light_patch = patches.Rectangle(
-        xy=(dark_length, ax.get_ylim()[0]),
-        width=max_time - dark_length,
-        height=ax.get_ylim()[1],
-        facecolor="#cf6d0c",
-        alpha=0.3,
-    )
-
-    ax.add_patch(dark_patch)
-    ax.add_patch(light_patch)
-
-    # Create and center legend
-    plt.legend(loc = 'best', ncols = 2, frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
-
-    return fig
-
-
-def sim_model(
-    updated_parameters, slider_time, slider_light, slider_pings, slider_saturate, slider_darklength
-):
-    m = get_model()
-    m.update_parameters(updated_parameters)
-    s = Simulator(m)
-
-    y0 = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
-    s.initialise(y0)
-
-    max_time = slider_time * 60
-    saturating_pulse = slider_saturate
-    length_pulse = 0.8
-    dark_length = slider_darklength
-    dark_light = 0
-    light_light = slider_light
-    pulses_intervall = slider_pings
-
-    for i in range(max_time):
-        if i == 2:
-            s.update_parameter("PFD", dark_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        elif i == dark_length:
-            s.update_parameter("PFD", dark_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        elif i in [dark_length + (pulses_intervall * j) for j in range((max_time - dark_length) + 1)]:
-            s.update_parameter("PFD", light_light)
-            s.simulate(i)
-            s.update_parameter("PFD", saturating_pulse)
-            s.simulate(i + length_pulse)
-        elif i == max_time - 1:
-            s.update_parameter("PFD", light_light)
-            s.simulate(i)
-            s.simulate(max_time)
-
-    sim_time = s.get_time()
-    sim_results = s.get_full_results_dict()
-    return sim_time, sim_results
-
-
-def make_sim_area(text: Callable[[str], str]) -> None:
-    slider_light = st.slider(
-        text("SLIDER_LIGHT"),  # Exponenten können reinkopiert werden durch commands
-        50,
-        900,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-        value=100,
-    )
-    col1, col2 = st.columns(2)
-    with col1:
-        slider_time = st.slider(
-            text("FAL_SLIDER_TIME"),
-            1,
-            15,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            value=5,
-        )
-    with col2:
-        slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
-
-    if version == "4STEM":
-        col1, col2 = st.columns(2)
-        with col1:
-            slider_aktivation = st.select_slider(
-                text("SLIDER_ACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)),
-                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
-            slider_darklength = st.slider(
-                text("FAL_SLIDER_DARKLENGTH"), min_value=0, max_value=slider_time * 60, value=30
-            )
-        with col2:
-            slider_deaktivation = st.select_slider(
-                text("SLIDER_DEACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)),
-                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
-            slider_saturate = st.slider(
-                label=text("FAL_SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
-            )
-
-        updated_parameters = {
-            "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024
-            * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-    else:
-        updated_parameters = {
-            "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-        slider_darklength = 30
-        slider_saturate = 5000
-
-    if st.button("Start", type="primary"):
-        with st.spinner(text("SPINNER")):
-            sim_time, sim_results = sim_model(
-                updated_parameters,
-                slider_time,
-                slider_light,
-                slider_pings,
-                slider_saturate,
-                slider_darklength,
-            )
-            
-            st.session_state['simple_model_results'] = {
-                'time': sim_time,
-                'results': sim_results,
-                'slider_time': slider_time,
-                'slider_darklength': slider_darklength 
-            }
-                
-    try:
-        
-        sim_time = st.session_state['simple_model_results']['time']
-        sim_results = st.session_state['simple_model_results']['results']
-        
-        PAM_F = sim_results["Fluo"]
-        PAM_Fmax = max(sim_results["Fluo"])
-
-        if 'simple_model' not in st.session_state:
-            st.session_state['simple_model'] = {
-                'Fluo': [sim_time, PAM_F / PAM_Fmax]
-            }
-        else:
-            st.session_state['simple_model'].update({
-                'Fluo': [sim_time, PAM_F / PAM_Fmax]
-            })
-        
-        if version == "4Bio":
-            fig_PAM = make_matplotlib_plot(
-                text=text,
-                xlabel1=text("AXIS_TIME_S"),
-                xlabel2=text("AXIS_TIME_MIN"),
-                ylabel=text("FLUO"),
-                values=st.session_state['simple_model'],
-                max_time=st.session_state['simple_model_results']['slider_time'] * 60,
-                dark_length=st.session_state['simple_model_results']['slider_darklength'],
-                width=15,
-                height=3,
-            )
-
-            st.pyplot(fig_PAM, transparent=True)
-            
-            st.session_state['simple_model'].update({
-                'old Fluo': [sim_time, PAM_F / PAM_Fmax]
-            })
-
-        if version == "4STEM":
-            peaks, _ = find_peaks((PAM_F / PAM_Fmax), height=0)  # Find the Flourescence peaks (Fmaxs)
-            NPQ = ((PAM_F[peaks][0] - PAM_F[peaks])) / PAM_F[peaks]
-
-            prominences, prominences_left, prominences_right = peak_prominences(
-                (PAM_F / PAM_Fmax), peaks
-            )  # Find the minima around the peaks
-            Fo = [
-                (PAM_F / PAM_Fmax)[i] for i in prominences_left
-            ]  # Fo is always the minima before the peak
-            PhiPSII = (PAM_F[peaks] - Fo) / PAM_F[peaks]
-            
-            st.session_state['simple_model'].update({
-                'NPQ': [sim_time[peaks], NPQ],
-                'PhiPSII': [sim_time[peaks], PhiPSII]
-            })
-
-            fig_advanced = make_matplotlib_plot_advanced(
-                text=text,
-                xlabel1=text("AXIS_TIME_S"),
-                xlabel2=text("AXIS_TIME_MIN"),
-                ylabel={'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
-                values=st.session_state['simple_model'],
-                max_time=st.session_state['simple_model_results']['slider_time'] * 60,
-                dark_length=st.session_state['simple_model_results']['slider_darklength'],
-                width=15,
-                height=6,
-            )
-
-            st.pyplot(fig_advanced, transparent = True)
-            
-            st.session_state['simple_model'].update({
-                'old Fluo': st.session_state['simple_model']['Fluo'],
-                'old NPQ': st.session_state['simple_model']['NPQ'],
-                'old PhiPSII': st.session_state['simple_model']['PhiPSII'],
-            })
-    except:
-        pass
+from pages.assets.model._model_functions import sim_model, calculate_results_to_plot, make_4Bio_plot, make_4STEM_plot
+import numpy as np
 
 
 def make_page(text: Callable[[str], str]) -> None:
@@ -474,7 +26,7 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("FAL_RATES_4"))
     st.markdown(text("FAL_RATES_5"))
     st.markdown(text("FAL_RATES_6"), unsafe_allow_html=True)
-
+    
     if version == "4STEM":
         st.markdown(text("FAL_HEADLINE_MODEL_EQUATIONS"))
         st.markdown(text("FAL_MODEL_EQUATIONS_INTRODUCTION"))
@@ -523,7 +75,7 @@ def make_page(text: Callable[[str], str]) -> None:
 
     if version == "4Bio":
         markdown_click("FAL_IMPLEMENTATION_TO_EXPERT", text)
-
+        
     if version == "4STEM":
         with st.expander(text("FAL_MODEL_CODE_EXPANDER")):
             st.markdown(text("FAL_CONSTRUCTION_HEADER"))
@@ -728,7 +280,7 @@ def make_page(text: Callable[[str], str]) -> None:
     include_ytvideo("https://youtu.be/zxGZKeopEDw", 0.5)
     st.markdown(text("FAL_TIPP1"))
     st.markdown(text("FAL_TIPP2"))
-
+    
     # Add guiding questions:
     with st.expander(
         "Having trouble connecting the simulation results to biology? Try our **guiding questions**"
@@ -792,6 +344,50 @@ def make_page(text: Callable[[str], str]) -> None:
                     "    - Increase the saturating pulse intensity to maximum. Does something change?"
                     "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
                 )
+    
+    slider_light = st.slider(
+        label=text("SLIDER_LIGHT"),
+        min_value= 50,
+        max_value= 900,
+        value=100,
+    )
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        slider_time = st.slider(
+            label=text("FAL_SLIDER_TIME"),
+            min_value=1,
+            max_value=15,
+            value=5,
+        )
+    with col2:
+        slider_pings = st.slider(
+            label=text("SLIDER_PULSES"),
+            min_value=5,
+            max_value=150,
+            value=85
+        )
+        
+    if version == "4STEM":
+        col1, col2 = st.columns(2)
+        with col1:
+            slider_aktivation = st.select_slider(
+                text("SLIDER_ACTIVATION"),
+                options=np.round(np.logspace(1, 3, 21)),
+                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            )
+            slider_darklength = st.slider(
+                text("FAL_SLIDER_DARKLENGTH"), min_value=0, max_value=slider_time * 60, value=30
+            )
+        with col2:
+            slider_deaktivation = st.select_slider(
+                text("SLIDER_DEACTIVATION"),
+                options=np.round(np.logspace(1, 3, 21)),
+                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            )
+            slider_saturate = st.slider(
+                label=text("FAL_SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
+            )
 
     make_sim_area(text)
 
