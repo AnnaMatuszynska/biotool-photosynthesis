@@ -342,22 +342,23 @@ msgid "STR_HEADLINE_USAGE"
 4bio-es msgstr ""
 
 # Grammarly checked
+# 4B/S adapted
 #: Start.py:19
 msgid "STR_USAGE"
-4stem-en msgstr "We aimed at both curious **newcomers** and more **advanced** learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *4Bio*, if you feel more comforable with biology, or *4STEM*, if you want to experience the mathematical background in more detail."
-4stem-de msgstr "Wir richten uns sowohl an neugierige **Neulinge** als auch an **Fortgeschrittene** Lernende. Wenn Sie diese Website nutzen, können Sie wählen, welche Version Sie verwenden möchten, indem Sie auf die Schaltfläche auf der linken Seite klicken und aus der Dropdown-Liste auswählen: *4Bio*, wenn sie sich mit der Biologie sicherer fühlen, oder *4Bio*, wenn sie die mathematischen Hitergründe näher erkunden wollen."
+4stem-en msgstr "We aimed at both curious newcomers and more advanced learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <a href='#' id='4Bio'><i>4Bio</i></a>, if you feel more comforable with biology, or <i>4STEM</i>, if you want to experience the mathematical background in more detail."
+4stem-de msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <a href='#' id='4Bio'><i>4Bio</i></a>, wenn sie sich mit der Biologie sicherer fühlen, oder <i>4STEM</i>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
 4stem-fr msgstr ""
 4stem-pl msgstr ""
 4stem-es msgstr ""
-4bio-en msgstr "We aimed at both curious <b>newcomers</b> and more <b>advanced</b> learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list <i>4Bio</i>, if you feel more comforable with biology, or <a href='#' id='4STEM'>4STEM</a>, if you want to experience the mathematical background in more detail."
-4bio-de msgstr "Wir richten uns sowohl an neugierige <b>Neulinge</b> als auch an Fortgeschrittene Lernende. Wenn Sie diese Website nutzen, können Sie wählen, welche Version Sie verwenden möchten, indem Sie auf die Schaltfläche auf der linken Seite klicken: Version klicken und aus der Dropdown-Liste auswählen: <i>4Bio</i>, wenn sie sich mit der Biologie sicherer fühlen, oder <a href='#' id='4STEM'>4STEM</a>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
+4bio-en msgstr "We aimed at both curious newcomers and more advanced< learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <i>4Bio</i>, if you feel more comforable with biology, or <a href='#' id='4STEM'><i>4STEM</i></a>, if you want to experience the mathematical background in more detail."
+4bio-de msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <i>4Bio</i>, wenn sie sich mit der Biologie sicherer fühlen, oder <a href='#' id='4STEM'>4STEM</a>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
 4bio-fr msgstr ""
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
 # Grammarly checked
 #: Start.py:20
-msgid "STR_4STEM_USE"
+msgid "STR_SPECIFIC_USE"
 4stem-en msgstr "In this 4STEM version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating *in silico* mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex *in silico* mutants, and more outputs will be generated."
 4stem-de msgstr "In deiser 4STEM-Version Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit *in silico*."
 4stem-fr msgstr ""

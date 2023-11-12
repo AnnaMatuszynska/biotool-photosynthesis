@@ -3,7 +3,14 @@ from pages._sidebar import make_sidebar
 from PIL import Image
 from st_pages import Page, show_pages
 from typing import Callable
-from utils import get_localised_text, make_prev_next_button, icons, resetting_click_detector_setup, markdown_click
+from utils import (
+    get_localised_text,
+    icons,
+    make_prev_next_button,
+    markdown_click,
+    resetting_click_detector_setup,
+)
+
 
 def make_introduction(text: Callable[[str], str]) -> None:
     markdown_click("STR_HEADLINE_MAIN", text)
@@ -11,13 +18,13 @@ def make_introduction(text: Callable[[str], str]) -> None:
 
     with st.expander(text("STR_EXPANDER_ABOUT")):
         markdown_click("STR_EXPLANATION_ABOUT", text)
-        st.markdown(text("PROGRAMS_USED"))
+        st.markdown(text("STR_PROGRAMS_USED"))
 
     # Introduction biotool
     st.video("https://youtu.be/KvyjIWLD8rU")
     st.markdown(text("STR_HEADLINE_USAGE"))
     markdown_click("STR_USAGE", text)
-    markdown_click("STR_4STEM_USE", text)
+    markdown_click("STR_SPECIFIC_USE", text)
 
 
 # FIXME: version and language should probably be replaced by text
@@ -37,12 +44,14 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
     markdown_click("STR_EXPERIMENT", text)
     markdown_click("STR_MEMORY", text)
 
+
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
         st.markdown(text("LITERATURE_ONPAGE"))
         st.markdown(
             "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
         )
+
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
