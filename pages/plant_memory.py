@@ -263,7 +263,7 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
     with col3:
         slider_memory = st.slider(label=text("MEM_SLIDER_MEMORY"), min_value=0, max_value=5, value=2)
 
-    if version == "4STEM":
+    if version == "4Bio":
         slider_darklength = 60
         slider_saturate = 5000
         col1, col2 = st.columns(2)
@@ -326,7 +326,7 @@ def make_sim_area_memory(text: Callable[[str], str]) -> None:
 
             st.pyplot(fig_PAM)
 
-            if version == "4STEM":
+            if version == "4Bio":
                 peaks, _ = find_peaks((PAM_F / PAM_Fmax), height=0)  # Find the Flourescence peaks (Fmaxs)
                 NPQ = ((PAM_F[peaks][0] - PAM_F[peaks])) / PAM_F[peaks]
 

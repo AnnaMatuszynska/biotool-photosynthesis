@@ -2,7 +2,7 @@ import streamlit as st
 from pages._sidebar import make_sidebar
 from PIL import Image
 from typing import Callable
-from utils import get_localised_text, make_prev_next_button, resetting_click_detector_setup, markdown_click
+from utils import get_localised_text, make_prev_next_button, markdown_click, resetting_click_detector_setup
 
 
 # FIXME: language and version probably should be put into text here
@@ -33,7 +33,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MTH_INTRODUCTION_PHI"), unsafe_allow_html=True)
         st.video("https://youtu.be/EwXkOlMBl3o")
 
-
     st.markdown(text("MTH_HEADLINE_PAM_MEASUREMENT"), unsafe_allow_html=True)
     st.markdown(text("MTH_INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)
 
@@ -44,7 +43,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             caption=text("MTH_CAPTION_ABB2"),
         )
 
-    # if version == "4STEM":
+    # if version == "4Bio":
     #     with st.expander(text("MTH_SATURATING_PULSES")):
     #         st.markdown(text("MTH_EXPLANATION_ATTEMPTS"), unsafe_allow_html=True)
 
@@ -68,7 +67,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
         st.markdown(text("MTH_LITERATURE_DECLARATION"), unsafe_allow_html=True)
-        if version == "4STEM":
+        if version == "4Bio":
             """
             - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
             """
@@ -76,7 +75,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - Nies, T., Niu, Y., Ebenhöh, O., Matsubara, S., & Matuszyńska, A. (2021). Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research (p. 2021.05.12.443801). bioRxiv. https://doi.org/10.1101/2021.05.12.443801
 
             """
-        elif version == "4Bio":
+        elif version == "4STEM":
             if language == "German":
                 """
                 - https://link.springer.com/referenceworkentry/10.1007/978-3-662-53493-9_13-1
