@@ -1,5 +1,6 @@
 import streamlit as st
 from pages._sidebar import make_sidebar
+from pages.assets.SIR_model.sir_utils import *
 from pathlib import Path
 from PIL import Image
 from typing import Callable
@@ -9,10 +10,9 @@ from utils import (
     include_image,
     include_ytvideo,
     make_prev_next_button,
+    markdown_click,
     resetting_click_detector_setup,
-    markdown_click
 )
-from pages.assets.SIR_model.sir_utils import *
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -35,20 +35,20 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     if version == "4Bio":
         tab1, tab2 = st.tabs([text("MDL_TAB_SIR"), " "])
-        
+
         with tab1:
             st.markdown(text("MDL_HEADLINE_SIR"))
 
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
-            
+
             include_image("pictures/SIR_Aliens.png", 0.5)
-            
+
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"), unsafe_allow_html=True)
-            
+
             include_image("pictures/SIR_AliensScheme.png", 0.5)
-            
+
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"), unsafe_allow_html=True)
-            
+
             st.latex(
                 r"""
                 \begin{aligned}
@@ -57,9 +57,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 \end{aligned}
                 """
             )
-            
+
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"), unsafe_allow_html=True)
-            
+
             st.latex(
                 r"""
                 \begin{aligned}
@@ -69,28 +69,27 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 \end{aligned}
                 """
             )
-            
+
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"), unsafe_allow_html=True)
 
             col1, col2 = st.columns(2)
-            
+
             with col1:
-                
                 sir_slider_start, sir_slider_end = st.slider(
-                        label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"),
-                        min_value=0,
-                        max_value=1000,
-                        value=(900, 1000),
-                        step=1,
-                        key = 'SIRSLIDER'
-                    )
-                
+                    label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"),
+                    min_value=0,
+                    max_value=1000,
+                    value=(900, 1000),
+                    step=1,
+                    key="SIRSLIDER",
+                )
+
                 S_initial = sir_slider_start
                 I_initial = sir_slider_end - sir_slider_start
                 R_initial = 1000 - sir_slider_end
-                    
+
                 st.components.v1.html(
-                    f'''
+                    f"""
                         <div style=
                         "display: flex;
                         flex-direction: row;
@@ -112,63 +111,57 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                             </div>
                             
                         </div>
-                    ''',
-                    height=55
+                    """,
+                    height=55,
                 )
-                
-                col1_, col2_, col3_ = st.columns([1.5,1,1])
-                
+
+                col1_, col2_, col3_ = st.columns([1.5, 1, 1])
+
                 with col1_:
                     sir_time_slider = st.slider(
                         label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"),
                         min_value=5,
                         max_value=36,
                         value=20,
-                        key = 'SIR_TIME_SLIDER'
+                        key="SIR_TIME_SLIDER",
                     )
-                
+
                 with col2_:
                     sir_beta_slider = st.slider(
                         label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"),
                         min_value=0.0,
                         max_value=5.0,
                         value=2.0,
-                        key = 'SIR_BETA_SLIDER'
+                        key="SIR_BETA_SLIDER",
                     )
-                    
+
                 with col3_:
                     sir_gamma_slider = st.slider(
                         label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"),
                         min_value=0.0,
                         max_value=2.0,
                         value=0.2,
-                        key = 'SIR_GAMMA_SLIDER'
+                        key="SIR_GAMMA_SLIDER",
                     )
-                
+
                 def reset_slider_values():
-                    st.session_state['SIRSLIDER'] = [900, 1000]
-                    st.session_state['SIR_TIME_SLIDER'] = 20
-                    st.session_state['SIR_BETA_SLIDER'] = 2.0
-                    st.session_state['SIR_GAMMA_SLIDER'] = 0.2
-                
+                    st.session_state["SIRSLIDER"] = [900, 1000]
+                    st.session_state["SIR_TIME_SLIDER"] = 20
+                    st.session_state["SIR_BETA_SLIDER"] = 2.0
+                    st.session_state["SIR_GAMMA_SLIDER"] = 0.2
+
                 col1__, col2__ = st.columns(2)
-                
+
                 with col1__:
                     st.button(
-                        label = 'Reset Slider Values',
-                        use_container_width=True,
-                        on_click=reset_slider_values
+                        label="Reset Slider Values", use_container_width=True, on_click=reset_slider_values
                     )
-                
+
                 def reset_graph():
-                    st.session_state['SIR_model'] = {}
-                
+                    st.session_state["SIR_model"] = {}
+
                 with col2__:
-                    st.button(
-                        label = 'Reset Graph',
-                        use_container_width=True,
-                        on_click=reset_graph
-                    )
+                    st.button(label="Reset Graph", use_container_width=True, on_click=reset_graph)
 
             with col2:
                 sir_time, sir_results = get_results_dict_SIRModel(
@@ -177,34 +170,36 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     S_initial=S_initial,
                     I_initial=I_initial,
                     R_initial=R_initial,
-                    time_end=sir_time_slider
+                    time_end=sir_time_slider,
                 )
-                
-                if 'SIR_model' not in st.session_state:
-                    st.session_state['SIR_model'] = {
+
+                if "SIR_model" not in st.session_state:
+                    st.session_state["SIR_model"] = {
                         "S": [sir_time, sir_results["S"]],
                         "I": [sir_time, sir_results["I"]],
-                        "R": [sir_time, sir_results["R"]]
+                        "R": [sir_time, sir_results["R"]],
                     }
-                    
+
                 else:
-                    st.session_state['SIR_model'].update({
-                        "S": [sir_time, sir_results["S"]],
-                        "I": [sir_time, sir_results["I"]],
-                        "R": [sir_time, sir_results["R"]]
-                    }
+                    st.session_state["SIR_model"].update(
+                        {
+                            "S": [sir_time, sir_results["S"]],
+                            "I": [sir_time, sir_results["I"]],
+                            "R": [sir_time, sir_results["R"]],
+                        }
                     )
-                    
-                sir_fig = get_plot_SIRModel(st.session_state['SIR_model'])
-                
-                st.pyplot(sir_fig, transparent = True)
-                
-                st.session_state['SIR_model'].update({
+
+                sir_fig = get_plot_SIRModel(st.session_state["SIR_model"])
+
+                st.pyplot(sir_fig, transparent=True)
+
+                st.session_state["SIR_model"].update(
+                    {
                         "old S": [sir_time, sir_results["S"]],
                         "old I": [sir_time, sir_results["I"]],
-                        "old R": [sir_time, sir_results["R"]]
+                        "old R": [sir_time, sir_results["R"]],
                     }
-                    )
+                )
 
     if version == "4STEM":
         tab1, tab2, tab3 = st.tabs([text("MDL_TAB_SIR"), text("MDL_TAB_MANUAL"), text("MDL_TAB_MODELBASE")])
@@ -213,13 +208,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.markdown(text("MDL_HEADLINE_SIR"))
 
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE"), unsafe_allow_html=True)
-            
+
             include_image("pictures/SIR_Aliens.png", 0.5)
-            
+
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"), unsafe_allow_html=True)
-            
+
             include_image("pictures/SIR_AliensScheme.png", 0.5)
-            
+
             st.latex(
                 r"""
                 \mathrm{S} \xrightarrow{\textit{v}_1} \mathrm{I} \xrightarrow{\textit{v}_2} \mathrm{R}
@@ -261,25 +256,25 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"))
 
     if version == "4STEM":
-        with open(Path(__file__).parent / "assets" / "sir_v1_integ.py") as fp:
+        with open(Path(__file__).parent / "assets" / "SIR_model" / "sir_v1_integ.py") as fp:
             sir_v1_integ = f"\n```python\n{fp.read()}```\n\n"
 
-        with open(Path(__file__).parent / "assets" / "sir_v1_plot.py") as fp:
+        with open(Path(__file__).parent / "assets" / "SIR_model" / "sir_v1_plot.py") as fp:
             sir_v1_plot = f"\n```python\n{fp.read()}```\n\n"
 
-        with open(Path(__file__).parent / "assets" / "sir_v2_rate_fns.py") as fp:
+        with open(Path(__file__).parent / "assets" / "SIR_model" / "sir_v2_rate_fns.py") as fp:
             sir_v2_rate_fns = f"\n```python\n{fp.read()}```\n\n"
 
-        with open(Path(__file__).parent / "assets" / "sir_v2_model.py") as fp:
+        with open(Path(__file__).parent / "assets" / "SIR_model" / "sir_v2_model.py") as fp:
             sir_v2_model = f"\n```python\n{fp.read()}```\n\n"
 
-        with open(Path(__file__).parent / "assets" / "sir_v2_reactions.py") as fp:
+        with open(Path(__file__).parent / "assets" / "SIR_model" / "sir_v2_reactions.py") as fp:
             sir_v2_reactions = f"\n```python\n{fp.read()}```\n\n"
 
-        with open(Path(__file__).parent / "assets" / "sir_v2_simulation.py") as fp:
+        with open(Path(__file__).parent / "assets" / "SIR_model" / "sir_v2_simulation.py") as fp:
             sir_v2_simulation = f"\n```python\n{fp.read()}```\n\n"
 
-        with open(Path(__file__).parent / "assets" / "sird.py") as fp:
+        with open(Path(__file__).parent / "assets" / "SIR_model" / "sird.py") as fp:
             sird = f"\n```python\n{fp.read()}```\n\n"
 
         with tab2:
@@ -356,7 +351,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     with tab1:
         st.markdown(text("MDL_HEADLINE_FVCB"))
 
-        markdown_click("MDL_FVCB_1",text)
+        markdown_click("MDL_FVCB_1", text)
 
         if version == "4STEM":
             st.latex(
