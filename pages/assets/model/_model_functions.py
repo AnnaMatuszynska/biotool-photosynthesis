@@ -309,6 +309,32 @@ def make_4STEM_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values
 
     return fig
     
+def make_both_plots(text: Callable[[str], str], xlabel1, xlabel2, ylabel_4Bio, ylabel_4STEM, session_state_values, slider_time, slider_darklength):
     
+    fig_1 = make_4Bio_plot(
+                text=text,
+                xlabel1=xlabel1,
+                xlabel2=xlabel2,
+                ylabel=ylabel_4Bio,
+                values=session_state_values,
+                max_time=slider_time * 60,
+                dark_length=slider_darklength,
+                width=15,
+                height=3
+            )
+    
+    fig_2 = make_4STEM_plot(
+                text=text,
+                xlabel1=xlabel1,
+                xlabel2=xlabel2,
+                ylabel=ylabel_4STEM,
+                values=session_state_values,
+                max_time=slider_time * 60,
+                dark_length=slider_darklength,
+                width=15,
+                height=6,
+            )
+    
+    return fig_1, fig_2    
 
 

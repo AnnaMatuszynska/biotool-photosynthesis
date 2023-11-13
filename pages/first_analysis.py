@@ -3,8 +3,9 @@ from utils import include_image, resetting_click_detector_setup, make_prev_next_
 from pages._sidebar import make_sidebar
 from typing import Callable
 from pathlib import Path
-from pages.assets.model._model_functions import sim_model, calculate_results_to_plot, make_4Bio_plot, make_4STEM_plot
+from pages.assets.model._model_functions import sim_model, calculate_results_to_plot, make_both_plots
 import numpy as np
+import time
 
 
 def make_page(text: Callable[[str], str]) -> None:
@@ -397,55 +398,76 @@ def make_page(text: Callable[[str], str]) -> None:
         }
         slider_darklength = 30
         slider_saturate = 5000
-        
-    if st.button("Start", type="primary"):
-        with st.spinner(text("SPINNER")):
-            sim_time, sim_results = sim_model(
-                updated_parameters,
-                slider_time,
-                slider_light,
-                slider_pings,
-                slider_saturate,
-                slider_darklength,
-            )
-            
-            if 'model_results' not in st.session_state:
-                st.session_state['model_results'] = calculate_results_to_plot(sim_time, sim_results)
-            else:
-                st.session_state['model_results'].update(calculate_results_to_plot(sim_time, sim_results))
-        
-            fig_4Bio = make_4Bio_plot(
-                text=text,
-                xlabel1=text("AXIS_TIME_S"),
-                xlabel2=text("AXIS_TIME_MIN"),
-                ylabel=text("FLUO"),
-                values=st.session_state['model_results'],
-                max_time=slider_time * 60,
-                dark_length=slider_darklength,
-                width=15,
-                height=3
-            )
-            
-            fig_4STEM = make_4STEM_plot(
-                text=text,
-                xlabel1=text("AXIS_TIME_S"),
-                xlabel2=text("AXIS_TIME_MIN"),
-                ylabel={'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
-                values=st.session_state['model_results'],
-                max_time=slider_time * 60,
-                dark_length=slider_darklength,
-                width=15,
-                height=6,
-            )
-            
-            st.session_state['fig_4Bio'] = fig_4Bio
-            st.session_state['fig_4STEM'] = fig_4STEM
-            
-            old_results = {}
-            for key, value in st.session_state['model_results'].items():
-                old_results.update({f'old {key}': value})
-            
-            st.session_state['model_results'].update(old_results)
+    
+    col1_, col2_ = st.columns(2)
+    
+    with col1_:
+        if st.button("Start the simulation", type="primary", use_container_width=True):
+            with st.spinner(text("SPINNER")):
+                sim_time, sim_results = sim_model(
+                    updated_parameters,
+                    slider_time,
+                    slider_light,
+                    slider_pings,
+                    slider_saturate,
+                    slider_darklength,
+                )
+                
+                if 'model_results' not in st.session_state:
+                    st.session_state['model_results'] = calculate_results_to_plot(sim_time, sim_results)
+                else:
+                    st.session_state['model_results'].update(calculate_results_to_plot(sim_time, sim_results))
+                
+                fig_4Bio, fig_4STEM = make_both_plots(
+                    text = text,
+                    xlabel1 = text("AXIS_TIME_S"),
+                    xlabel2 = text("AXIS_TIME_MIN"),
+                    ylabel_4Bio = text("FLUO"),
+                    ylabel_4STEM = {'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
+                    session_state_values = st.session_state['model_results'],
+                    slider_time = slider_time,
+                    slider_darklength = slider_darklength
+                )
+                
+                st.session_state['fig_4Bio'] = fig_4Bio
+                st.session_state['fig_4STEM'] = fig_4STEM
+                
+                old_results = {}
+                for key, value in st.session_state['model_results'].items():
+                    old_results.update({f'old {key}': value})
+                
+                st.session_state['model_results'].update(old_results)
+    with col2_:
+        if st.button(label = 'Reset Graph', use_container_width=True):
+            if 'fig_4Bio' in st.session_state and 'fig_4STEM' in st.session_state:
+                for i in ['old Fluo', 'old NPQ', 'old PhiPSII']:
+                    if st.session_state['model_results'].get(i):
+                        st.session_state['model_results'].pop(i)
+                    else:
+                        alert = st.warning('Nothing to reset')
+                        time.sleep(1.5)
+                        alert.empty()
+                        break
+                
+                fig_4Bio, fig_4STEM = make_both_plots(
+                    text = text,
+                    xlabel1 = text("AXIS_TIME_S"),
+                    xlabel2 = text("AXIS_TIME_MIN"),
+                    ylabel_4Bio = text("FLUO"),
+                    ylabel_4STEM = {'Fluo': text("FLUO"), 'NPQ': text("AXIS_NPQ"),'PhiPSII': text("AXIS_PHIPSII")},
+                    session_state_values = st.session_state['model_results'],
+                    slider_time = slider_time,
+                    slider_darklength = slider_darklength
+                )
+                
+                st.session_state['fig_4Bio'] = fig_4Bio
+                st.session_state['fig_4STEM'] = fig_4STEM
+                
+                old_results = {}
+                for key, value in st.session_state['model_results'].items():
+                    old_results.update({f'old {key}': value})
+                
+                st.session_state['model_results'].update(old_results)
     
     if 'fig_4Bio' in st.session_state and 'fig_4STEM' in st.session_state:
         if version == '4Bio':
