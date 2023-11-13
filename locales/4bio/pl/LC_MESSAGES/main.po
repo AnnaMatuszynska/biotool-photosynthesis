@@ -22,57 +22,38 @@ msgstr ""
 
 
 #: Start.py:41
-#: pages/model_explain.py:419
-#: pages/first_analysis.py:800
+#: pages/first_analysis.py:459
 #: pages/method.py:69
-#: pages/photosynthesis.py:74
-#: pages/plant_memory.py:401
-#: Start.py:41
 #: pages/model_explain.py:419
-#: pages/first_analysis.py:800
-#: pages/method.py:69
 #: pages/photosynthesis.py:74
 #: pages/plant_memory.py:401
 msgid "LITERATURE"
 msgstr "Literatura"
 
 #: Start.py:42
+#: pages/first_analysis.py:460
 #: pages/model_explain.py:420
-#: pages/first_analysis.py:801
-#: pages/photosynthesis.py:75
-#: pages/plant_memory.py:402
-#: Start.py:42
-#: pages/model_explain.py:420
-#: pages/first_analysis.py:801
 #: pages/photosynthesis.py:75
 #: pages/plant_memory.py:402
 msgid "LITERATURE_ONPAGE"
 msgstr "Referencje na tej stronie:"
 
-#: pages/first_analysis.py:317
-#: pages/plant_memory.py:249
-#: pages/first_analysis.py:317
+#: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
 msgstr ""
 
-#: pages/first_analysis.py:331
-#: pages/plant_memory.py:255
-#: pages/first_analysis.py:331
+#: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
 msgid "SLIDER_PULSES"
 msgstr ""
 
-#: pages/first_analysis.py:337
-#: pages/plant_memory.py:272
-#: pages/first_analysis.py:337
+#: pages/first_analysis.py:371
 #: pages/plant_memory.py:272
 msgid "SLIDER_ACTIVATION"
 msgstr ""
 
-#: pages/first_analysis.py:346
-#: pages/plant_memory.py:278
-#: pages/first_analysis.py:346
+#: pages/first_analysis.py:380
 #: pages/plant_memory.py:278
 msgid "SLIDER_DEACTIVATION"
 msgstr ""
@@ -82,65 +63,42 @@ msgstr ""
 #: pages/contact.py:68
 #: Start.py:14
 #: pages/contact.py:68
-#: Start.py:14
-#: pages/contact.py:68
-#: Start.py:14
-#: pages/contact.py:68
 msgid "PROGRAMS_USED"
 msgstr "Do stworzenia strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."
 
-#: pages/first_analysis.py:368
-#: pages/plant_memory.py:297
-#: pages/first_analysis.py:368
+#: pages/first_analysis.py:402
 #: pages/plant_memory.py:297
 msgid "SPINNER"
 msgstr ""
 
-#: pages/first_analysis.py:406
-#: pages/first_analysis.py:441
-#: pages/plant_memory.py:315
-#: pages/plant_memory.py:344
-#: pages/plant_memory.py:359
-#: pages/first_analysis.py:406
-#: pages/first_analysis.py:441
+#: pages/first_analysis.py:420
+#: pages/first_analysis.py:432
 #: pages/plant_memory.py:315
 #: pages/plant_memory.py:344
 #: pages/plant_memory.py:359
 msgid "AXIS_TIME_MIN"
 msgstr ""
 
-#: pages/first_analysis.py:405
-#: pages/first_analysis.py:440
-#: pages/plant_memory.py:314
-#: pages/plant_memory.py:343
-#: pages/plant_memory.py:358
-#: pages/first_analysis.py:405
-#: pages/first_analysis.py:440
+#: pages/first_analysis.py:419
+#: pages/first_analysis.py:431
 #: pages/plant_memory.py:314
 #: pages/plant_memory.py:343
 #: pages/plant_memory.py:358
 msgid "AXIS_TIME_S"
 msgstr ""
 
-#: pages/first_analysis.py:407
-#: pages/first_analysis.py:442
-#: pages/plant_memory.py:316
-#: pages/first_analysis.py:407
-#: pages/first_analysis.py:442
+#: pages/first_analysis.py:421
+#: pages/first_analysis.py:433
 #: pages/plant_memory.py:316
 msgid "FLUO"
 msgstr ""
 
-#: pages/first_analysis.py:442
-#: pages/plant_memory.py:345
-#: pages/first_analysis.py:442
+#: pages/first_analysis.py:433
 #: pages/plant_memory.py:345
 msgid "AXIS_NPQ"
 msgstr ""
 
-#: pages/first_analysis.py:442
-#: pages/plant_memory.py:360
-#: pages/first_analysis.py:442
+#: pages/first_analysis.py:433
 #: pages/plant_memory.py:360
 msgid "AXIS_PHIPSII"
 msgstr ""
@@ -149,11 +107,9 @@ msgstr ""
 
 # SIDEBAR
 #: pages/_sidebar.py:14
-#: pages/_sidebar.py:14
 msgid "SDE_4BIO"
 msgstr "4Bio"
 
-#: pages/_sidebar.py:14
 #: pages/_sidebar.py:14
 msgid "SDE_4STEM"
 msgstr "4STEM"
@@ -162,17 +118,14 @@ msgstr "4STEM"
 
 #: This can be copied to add new text entries with translations
 #: Start.py:12
-#: Start.py:12
 msgid "STR_EXPANDER_ABOUT"
 msgstr "O naszej stronie"
 
 # Grammarly checked
 #: Start.py:13
-#: Start.py:13
 msgid "STR_EXPLANATION_ABOUT"
 msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać pod adresem <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Dodatkowo, cały kod źródłowy można pobrać z GitHub pod adresem <https://github.com/AnnaMatuszynska/biotool-photosynthesis> i uruchomić (offline) lokalnie. Aby uzyskać informacje na temat pobierania i uruchamiania notatnika, zapoznaj się z plikiem `README.md` na GitHub."
 
-#: Start.py:9
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
 msgstr "# Fotosynteza *in silico*: interaktywny panel do badania fotosyntezy przy użyciu modelu obliczeniowego i symulacji komputerowych"
@@ -180,91 +133,75 @@ msgstr "# Fotosynteza *in silico*: interaktywny panel do badania fotosyntezy prz
 #: Intro by Anna
 # Grammarly checked
 #: Start.py:10
-#: Start.py:10
 msgid "STR_INTRO"
 msgstr "To jest narzędzie do nauczania biologii, projekt uruchomiony przez **Computational Life Science Lab** na Politechnice w Akwizgranie, w Niemczech. Naszym celem jest dostarczenie narzędzia dydaktycznego dostosowanego do potrzeb uczniów XXI wieku. Naszym celem jest pokazać w jaki sposób modelowanie komputerowe wspiera obecne badania naukowe zwiększając nasz stopień zrozumienia otaczającego nas świata. Wybraliśmy fotosyntezę jako proces, aby to zademonstrować. W końcu fotosynteza jest prawdopodobnie najważniejszym procesem na Ziemi! Proponujemy, żeby Twoja przygoda z tą stroną zaczęła się od obejrzenia krótkiego filmiku o fotosyntezie."
 
 # Grammarly checked
-#: Start.py:18
 #: Start.py:18
 msgid "STR_HEADLINE_USAGE"
 msgstr "## Jak używać tej strony?"
 
 # Grammarly checked
 #: Start.py:19
-#: Start.py:19
 msgid "STR_USAGE"
 msgstr ""
 
 # Grammarly checked
 #: Start.py:20
-#: Start.py:20
-msgid "STR_4STEM_USE"
-msgstr "Załóżmy, że wybierzesz wersję <a href='#' id='4STEM'>4STEM</a>. W takim przypadku dowiesz się nie tylko o fotosyntezie jako procesie, ale także o metodach pomiaru jej dynamiki i obliczania jej wydajności za pomocą komputera. Dowiesz się również, jak 'genetycznie zmodyfikować' swój organizm fotosyntetyczny, aby wykonać nowy zestaw eksperymentów, co oznacza, że stworzysz cyfrowego mutanta. Pracę wykonywaną w komputerze nazywamy <i>in silico</i>."
+msgid "STR_SPECIFIC_USE"
+msgstr ""
 
 # Grammarly checked
-#: Start.py:26
 #: Start.py:26
 msgid "STR_DROP_BOX_INTRO"
 msgstr "Jeśli chcesz poznać różnicę między *in vitro*, *in vivo* i *in silico*, otwórz poniższe pole rozwijane."
 
 #: Start.py:27
-#: Start.py:27
 msgid "STR_EXPANDER_IN"
 msgstr "Różnica między *in vitro*, *in vivo* i *in silico*"
 
-#: Start.py:28
 #: Start.py:28
 msgid "STR_EXPLANATION_IN_VITRO"
 msgstr "*In vitro* odnosi się do eksperymentów przeprowadzanych poza żywym organizmem w kontrolowanych warunkach laboratoryjnych."
 
 #: Start.py:29
-#: Start.py:29
 msgid "STR_EXPLANATION_IN_VIVO"
 msgstr "Termin *in vivo* odnosi się do eksperymentów przeprowadzanych wewnątrz żywego organizmu, zwykle zwierząt lub ludzi."
 
 #: Start.py:30
-#: Start.py:30
 msgid "STR_EXPLANATION_IN_SILICO"
 msgstr "*In silico* odnosi się do eksperymentów obliczeniowych i symulacji przeprowadzanych przy użyciu modeli komputerowych i algorytmów."
 
-#: Start.py:32
 #: Start.py:32
 msgid "STR_HEADLINE_PAGES"
 msgstr "## Streszczenia stron"
 
 # Grammarly checked
 #: Start.py:33
-#: Start.py:33
 msgid "STR_INTRODUCTION_PAGES"
 msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji <a href='#' id='4STEM'>4STEM</a> znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach 4STEM."
 
 # Grammarly checked
-#: Start.py:34
 #: Start.py:34
 msgid "STR_PHOTOSYNTHESIS"
 msgstr "W zakładce **fotosynteza** dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony."
 
 # Grammarly checked
 #: Start.py:35
-#: Start.py:35
 msgid "STR_METHOD"
 msgstr "Abyśmy mogli zmierzyć wydajność fotosyntetyczną roślin, potrzebujemy określonej metody pomiaru. Została ona przedstawiona na stronie **metoda pomiaru**. Ponadto omawiamy, w jaki sposób możemy zwizualizować nasze pomiary."
 
 # Grammarly checked
-#: Start.py:36
 #: Start.py:36
 msgid "STR_MODEL"
 msgstr "Jak w samym tytule tej strony, pracujemy <i>in silico</i>, tj. z modelami matematycznymi. Na stronie <b>modele obliczeniowe</b> dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy. W wersji <a href='#' id='4STEM'>4STEM</a> można również dowiedzieć się o implementacji modelu matematycznego w jęyzku programowania Python."
 
 # Grammarly checked
 #: Start.py:37
-#: Start.py:37
 msgid "STR_EXPERIMENT"
 msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='4STEM'>4STEM</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
 
 # Grammarly checked
-#: Start.py:38
 #: Start.py:38
 msgid "STR_MEMORY"
 msgstr "Wreszcie, poznasz pamięć światła roślin na stronie **pamięć światła roślin** i możesz udowodnić jej istnienie niezależnie za pomocą eksperymentów."
@@ -273,12 +210,10 @@ msgstr "Wreszcie, poznasz pamięć światła roślin na stronie **pamięć świa
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
-#: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
 msgstr ""
 
 #: Lisa's introduction
-#: pages/photosynthesis.py:12
 #: pages/photosynthesis.py:12
 msgid "PHO_HEADLINE_CLIMATE"
 msgstr ""
@@ -286,24 +221,20 @@ msgstr ""
 #: Lisa's introduction
 # Grammarly checked
 #: pages/photosynthesis.py:13
-#: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
 msgstr ""
 
 #: Lisa's introduction
-#: pages/photosynthesis.py:16
 #: pages/photosynthesis.py:16
 msgid "PHO_POINT_1"
 msgstr ""
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:17
-#: pages/photosynthesis.py:17
 msgid "PHO_POINT_2"
 msgstr ""
 
 #: Lisa's introduction
-#: pages/photosynthesis.py:18
 #: pages/photosynthesis.py:18
 msgid "PHO_POINT_3"
 msgstr ""
@@ -311,29 +242,23 @@ msgstr ""
 #: Lisa's introduction
 # Grammarly checked
 #: pages/photosynthesis.py:19
-#: pages/photosynthesis.py:19
 msgid "PHO_END_OF_INTRODUCTION"
 msgstr ""
 
-#: pages/photosynthesis.py:34
 #: pages/photosynthesis.py:34
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS"
 msgstr "## Proces fotosyntezy"
 
 # Grammarly checked
 #: pages/photosynthesis.py:35
-#: pages/photosynthesis.py:35
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_1"
 msgstr ""
 
 # Grammarly checked
 #: pages/photosynthesis.py:36
-#: pages/photosynthesis.py:36
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
 msgstr ""
 
-#: pages/photosynthesis.py:39
-#: pages/photosynthesis.py:41
 #: pages/photosynthesis.py:39
 #: pages/photosynthesis.py:41
 msgid "PHO_CAPTION_FOTOSYNTHESE_PICTURE"
@@ -341,18 +266,15 @@ msgstr "Proces fotosyntezy"
 
 # Grmmarly checked
 #: pages/photosynthesis.py:45
-#: pages/photosynthesis.py:45
 msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
 
 # Grammarly checked
 #: pages/photosynthesis.py:43
-#: pages/photosynthesis.py:43
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_LOCATION"
 msgstr ""
 
 # Grammarly checked
-#: pages/photosynthesis.py:44
 #: pages/photosynthesis.py:44
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 msgstr ""
@@ -360,53 +282,43 @@ msgstr ""
 # Grammarly checked
 #: pages/photosynthesis.py:48
 #: pages/photosynthesis.py:50
-#: pages/photosynthesis.py:48
-#: pages/photosynthesis.py:50
 msgid "PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr ""
 
 # Grammarly checked
 #: pages/photosynthesis.py:52
-#: pages/photosynthesis.py:52
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
-#: pages/photosynthesis.py:57
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
 msgstr ""
 
 # Grammarly checked
 #: pages/photosynthesis.py:58
-#: pages/photosynthesis.py:58
 msgid "PHO_NPQ_EXPLANATION"
 msgstr ""
 
-#: pages/photosynthesis.py:60
 #: pages/photosynthesis.py:60
 msgid "PHO_HEADER_MODEL_ORGANISMEN"
 msgstr ""
 
 # Grammarly checked
 #: pages/photosynthesis.py:61
-#: pages/photosynthesis.py:61
 msgid "PHO_MODEL_ORGANISMEN_EXPLANATION"
 msgstr ""
 
 # Grammarly checked
-#: pages/photosynthesis.py:63
 #: pages/photosynthesis.py:63
 msgid "PHO_EXPANDER_MODEL_ORGANISMEN"
 msgstr ""
 
 # Grammarly checked
 #: pages/photosynthesis.py:69
-#: pages/photosynthesis.py:69
 msgid "PHO_CAPTION_THAIANA_PICTURE"
 msgstr ""
 
 # Grammarly checked
-#: pages/photosynthesis.py:70
 #: pages/photosynthesis.py:70
 msgid "PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr ""
@@ -414,29 +326,24 @@ msgstr ""
 
 
 #: pages/method.py:70
-#: pages/method.py:70
 msgid "MTH_LITERATURE_DECLARATION"
 msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat pomiarów PAM lub oferuje możliwość zapoznania się z podstawami."
 
-#: pages/method.py:10
 #: pages/method.py:10
 msgid "MTH_HEADLINE_ONE"
 msgstr "# Metoda pomiaru"
 
 # Grammarly checked
 #: pages/method.py:15
-#: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
 msgstr ""
 
 # Grammarly checked
 #: pages/method.py:18
-#: pages/method.py:18
 msgid "MTH_CAPTION_ABB1"
 msgstr ""
 
 #: Explanation by Tobias
-#: pages/method.py:20
 #: pages/method.py:20
 msgid "MTH_GROWING_PLANTS_1"
 msgstr ""
@@ -444,13 +351,11 @@ msgstr ""
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:21
-#: pages/method.py:21
 msgid "MTH_INTRODUCTION_GLOWING"
 msgstr ""
 
 #: Explanation by Tobias
 # Grammarly checked
-#: pages/method.py:22
 #: pages/method.py:22
 msgid "MTH_PLANT_ARE_SHINING_RED"
 msgstr ""
@@ -458,19 +363,16 @@ msgstr ""
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:23
-#: pages/method.py:23
 msgid "MTH_INTRODUCTION_EXPERIMENT"
 msgstr ""
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:29
-#: pages/method.py:29
 msgid "MTH_EXPLANATION_VIDEO"
 msgstr ""
 
 #: Explanation by Tobias
-#: pages/method.py:31
 #: pages/method.py:31
 msgid "MTH_MEASURING_FLUORESZENZ"
 msgstr ""
@@ -478,13 +380,11 @@ msgstr ""
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:32
-#: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
 msgstr ""
 
 #: Explanation by Tobias
 # Grammarly checked
-#: pages/method.py:33
 #: pages/method.py:33
 msgid "MTH_INTRODUCTION_PHI"
 msgstr ""
@@ -492,13 +392,11 @@ msgstr ""
 #: Explanation by Tobias
 
 #: pages/method.py:40
-#: pages/method.py:40
 msgid "MTH_MEASURING_LIGHT_FLUORESCENCE"
 msgstr ""
 
 #: Explanation by Tobias
 # Grammarly checked
-#: pages/method.py:41
 #: pages/method.py:41
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
 msgstr ""
@@ -507,26 +405,20 @@ msgstr ""
 #: pages/method.py:44
 #: pages/method.py:58
 #: pages/method.py:63
-#: pages/method.py:44
-#: pages/method.py:58
-#: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
 msgstr "Schematyczne przedstawienie głównych zasad fluorescencji chlorofilu a i eksperymentu PAM."
 
 # Grammarly checked
-#: pages/method.py:37
 #: pages/method.py:37
 msgid "MTH_HEADLINE_PAM_MEASUREMENT"
 msgstr ""
 
 # Grammarly checked
 #: pages/method.py:38
-#: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
 msgstr ""
 
 #: Explanation by Tobias
-#: pages/method.py:48
 #: pages/method.py:48
 msgid "MTH_SATURATING_PULSES"
 msgstr ""
@@ -534,23 +426,19 @@ msgstr ""
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:49
-#: pages/method.py:49
 msgid "MTH_EXPLANATION_ATTEMPTS"
 msgstr ""
 
-#: pages/method.py:51
 #: pages/method.py:51
 msgid "MTH_HEADLINE_ILLUSTRATION"
 msgstr ""
 
 # Grammarly checked
 #: pages/method.py:52
-#: pages/method.py:52
 msgid "MTH_EXPLANATION_ILLUSTRATION_UNITS"
 msgstr ""
 
 # Grammarly checked
-#: pages/method.py:53
 #: pages/method.py:53
 msgid "MTH_EXPLANATION_ILLUSTRATION"
 msgstr ""
@@ -558,300 +446,242 @@ msgstr ""
 
 
 #: pages/model_explain.py:19
-#: pages/model_explain.py:19
 msgid "MDL_HEADLINE_COMPUTATIONAL_MODELS"
 msgstr ""
 
 # Grammarly checked
-#: pages/model_explain.py:21
 #: pages/model_explain.py:21
 msgid "MDL_HEADLINE_MODEL"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:23
-#: pages/model_explain.py:23
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"
 msgstr ""
 
 
-#: pages/model_explain.py:26
 #: pages/model_explain.py:26
 msgid "MDL_CAPTION_MODELLING_PICTURE"
 msgstr ""
 
 
 #: pages/model_explain.py:29
-#: pages/model_explain.py:29
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"
 msgstr ""
 
 #: pages/model_explain.py:34
-#: pages/model_explain.py:34
 msgid "MDL_EXAMPLE_MATHEMATICAL_MODEL"
 msgstr ""
 
-#: pages/model_explain.py:37
 #: pages/model_explain.py:210
 #: pages/model_explain.py:37
-#: pages/model_explain.py:210
 msgid "MDL_TAB_SIR"
 msgstr ""
 
-#: pages/model_explain.py:210
 #: pages/model_explain.py:210
 msgid "MDL_TAB_MANUAL"
 msgstr ""
 
 #: pages/model_explain.py:210
-#: pages/model_explain.py:210
 msgid "MDL_TAB_MODELBASE"
 msgstr ""
 
-#: pages/model_explain.py:40
 #: pages/model_explain.py:213
 #: pages/model_explain.py:40
-#: pages/model_explain.py:213
 msgid "MDL_HEADLINE_SIR"
 msgstr ""
 
-#: pages/model_explain.py:286
 #: pages/model_explain.py:286
 msgid "MDL_HEADLINE_MANUAL"
 msgstr ""
 
 #: pages/model_explain.py:312
-#: pages/model_explain.py:312
 msgid "MDL_HEADLINE_MODELBASE"
 msgstr ""
 
 # Grammarly checked
-#: pages/model_explain.py:42
 #: pages/model_explain.py:215
 #: pages/model_explain.py:42
-#: pages/model_explain.py:215
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr ""
 
 # Grammarly checked
-#: pages/model_explain.py:46
 #: pages/model_explain.py:219
 #: pages/model_explain.py:46
-#: pages/model_explain.py:219
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"
 msgstr ""
 
 
 # Grammarly checked
-#: pages/model_explain.py:50
 #: pages/model_explain.py:236
 #: pages/model_explain.py:50
-#: pages/model_explain.py:236
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
 msgstr ""
 
 # Grammarly checked
-#: pages/model_explain.py:61
 #: pages/model_explain.py:251
 #: pages/model_explain.py:61
-#: pages/model_explain.py:251
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"
 msgstr ""
 
-#: pages/model_explain.py:73
 #: pages/model_explain.py:73
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"
 msgstr ""
 
 #: pages/model_explain.py:80
-#: pages/model_explain.py:80
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
 msgstr ""
 
-#: pages/model_explain.py:123
 #: pages/model_explain.py:123
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
 msgstr ""
 
 #: pages/model_explain.py:132
-#: pages/model_explain.py:132
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
 msgstr ""
 
-#: pages/model_explain.py:141
 #: pages/model_explain.py:141
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:254
-#: pages/model_explain.py:254
 msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:261
-#: pages/model_explain.py:261
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
 msgstr ""
 
 #: pages/model_explain.py:352
-#: pages/model_explain.py:352
 msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
 msgstr ""
 
-#: pages/model_explain.py:357
 #: pages/model_explain.py:357
 msgid "MDL_HEADLINE_FVCB"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:359
-#: pages/model_explain.py:359
 msgid "MDL_FVCB_1"
 msgstr ""
 
 #: pages/model_explain.py:375
-#: pages/model_explain.py:375
 msgid "MDL_FVCB_2"
 msgstr ""
 
-#: pages/model_explain.py:378
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:380
-#: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
 msgstr ""
 
 #: pages/model_explain.py:390
-#: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
 msgstr ""
 
-#: pages/model_explain.py:393
 #: pages/model_explain.py:393
 msgid "MDL_HEADLINE_BELLASIO"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:395
-#: pages/model_explain.py:395
 msgid "MDL_BELLASIO_1"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:405
-#: pages/model_explain.py:405
 msgid "MDL_BELLASIO_2"
 msgstr ""
 
 #: pages/model_explain.py:407
-#: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
 msgstr ""
 
-#: pages/model_explain.py:408
 #: pages/model_explain.py:408
 msgid "MDL_HEADLINE_C3"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:409
-#: pages/model_explain.py:409
 msgid "MDL_C3_1"
 msgstr ""
 
-#: pages/model_explain.py:411
 #: pages/model_explain.py:411
 msgid "MDL_HEADLINE_C4"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:412
-#: pages/model_explain.py:412
 msgid "MDL_C4_1"
 msgstr ""
 
-#: pages/model_explain.py:414
 #: pages/model_explain.py:414
 msgid "MDL_HEADLINE_CAM"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:415
-#: pages/model_explain.py:415
 msgid "MDL_CAM_1"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:289
-#: pages/model_explain.py:289
 msgid "MDL_SIR_IMPLEMENTATION_MANUAL_1"
 msgstr ""
 
-#: pages/model_explain.py:309
 #: pages/model_explain.py:309
 msgid "MDL_SIR_IMPLEMENTATION_MANUAL_2"
 msgstr ""
 
 #: pages/model_explain.py:314
-#: pages/model_explain.py:314
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_1"
 msgstr ""
 
-#: pages/model_explain.py:318
 #: pages/model_explain.py:318
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_2"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:322
-#: pages/model_explain.py:322
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_3"
 msgstr ""
 
 # Grammarly checked
-#: pages/model_explain.py:326
 #: pages/model_explain.py:326
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:346
-#: pages/model_explain.py:346
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_5"
 msgstr ""
 
-#: pages/model_explain.py:350
 #: pages/model_explain.py:350
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:258
-#: pages/model_explain.py:258
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
 msgstr ""
 
 
 
-#: pages/first_analysis.py:462
-#: pages/first_analysis.py:462
+#: pages/first_analysis.py:11
 msgid "FAL_HEADLINE_EXPERIMENTS"
 msgstr "Eksperymenty *in silico*"
 
-#: pages/first_analysis.py:464
-#: pages/first_analysis.py:464
+#: pages/first_analysis.py:13
 msgid "FAL_HEADLINE_MODEL_CONSTRUCTION"
 msgstr "## Konstrukcja modelu"
 
 #: Grammarly checked
-#: pages/first_analysis.py:466
-#: pages/first_analysis.py:466
+#: pages/first_analysis.py:15
 msgid "FAL_CONSTRUCTION_EXPLANATION_1"
 msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: Białka, enzymy, nośniki elektronów, \
         pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa ważną rolę w całym procesie, \
@@ -860,316 +690,260 @@ msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiel
         regulują zakres NPQ (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 # Grammarly checked
-#: pages/first_analysis.py:468
-#: pages/first_analysis.py:468
+#: pages/first_analysis.py:17
 msgid "FAL_CAPTION_MODEL_NPQ"
 msgstr "Schemat elementów wchodzących w skład uproszczonego modelu matematycznego wykorzystywanego na tej stronie. Model został opracowany w 2016 roku i zawiera szczegółowy opis wewnętrznych procesów zachodzących wewnątrz fotosystemu II (PSII), w tym procesów wpływających na dynamikę niefotochemicznego wygaszacza (z ang. NPQ), w tym PsbS i zeaksantyny."
 
 #: Grammarly checked
-#: pages/first_analysis.py:470
-#: pages/first_analysis.py:470
+#: pages/first_analysis.py:19
 msgid "FAL_CONSTRUCTION_EXPLANATION_2"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:471
-#: pages/first_analysis.py:471
+#: pages/first_analysis.py:20
 msgid "FAL_RATES_1"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:472
-#: pages/first_analysis.py:472
+#: pages/first_analysis.py:21
 msgid "FAL_RATES_2"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:473
-#: pages/first_analysis.py:473
+#: pages/first_analysis.py:22
 msgid "FAL_RATES_3"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:474
-#: pages/first_analysis.py:474
+#: pages/first_analysis.py:23
 msgid "FAL_RATES_4"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:475
-#: pages/first_analysis.py:475
+#: pages/first_analysis.py:24
 msgid "FAL_RATES_5"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:476
-#: pages/first_analysis.py:476
+#: pages/first_analysis.py:25
 msgid "FAL_RATES_6"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:479
-#: pages/first_analysis.py:479
+#: pages/first_analysis.py:28
 msgid "FAL_HEADLINE_MODEL_EQUATIONS"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:480
-#: pages/first_analysis.py:480
+#: pages/first_analysis.py:29
 msgid "FAL_MODEL_EQUATIONS_INTRODUCTION"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:494
-#: pages/first_analysis.py:494
+#: pages/first_analysis.py:43
 msgid "FAL_REACTION_RATES"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:495
-#: pages/first_analysis.py:495
+#: pages/first_analysis.py:44
 msgid "FAL_RATES_DYNAMIC"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:509
-#: pages/first_analysis.py:509
+#: pages/first_analysis.py:58
 msgid "FAL_RATE_QUENCHER"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:520
-#: pages/first_analysis.py:520
+#: pages/first_analysis.py:69
 msgid "FAL_HEADLINE_IMPLEMENTATION"
 msgstr ""
 
 #: Grammarly checked
-#: pages/first_analysis.py:522
-#: pages/first_analysis.py:522
+#: pages/first_analysis.py:71
 msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 msgstr ""
 
-#: pages/first_analysis.py:723
-#: pages/first_analysis.py:723
+#: pages/first_analysis.py:271
 msgid "FAL_HEADLINE_ANALYSE"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:724
-#: pages/first_analysis.py:724
+#: pages/first_analysis.py:272
 msgid "FAL_INTRODUKTION"
 msgstr ""
 
-#: pages/first_analysis.py:726
-#: pages/first_analysis.py:726
+#: pages/first_analysis.py:274
 msgid "FAL_HEADLINE_SLIDER"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:727
-#: pages/first_analysis.py:727
+#: pages/first_analysis.py:275
 msgid "FAL_EXPLANATNION"
 msgstr ""
 
-#: pages/first_analysis.py:729
-#: pages/first_analysis.py:729
+#: pages/first_analysis.py:277
 msgid "FAL_TIPP1"
 msgstr ""
 
-#: pages/first_analysis.py:730
-#: pages/first_analysis.py:730
+#: pages/first_analysis.py:278
 msgid "FAL_TIPP2"
 msgstr ""
 
-#: pages/first_analysis.py:325
-#: pages/first_analysis.py:325
+#: pages/first_analysis.py:354
 msgid "FAL_SLIDER_TIME"
 msgstr ""
 
-#: pages/first_analysis.py:342
-#: pages/first_analysis.py:342
+#: pages/first_analysis.py:376
 msgid "FAL_SLIDER_DARKLENGTH"
 msgstr ""
 
-#: pages/first_analysis.py:351
-#: pages/first_analysis.py:351
+#: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
 msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:525
-#: pages/first_analysis.py:525
+#: pages/first_analysis.py:74
 msgid "FAL_IMPLEMENTATION_TO_EXPERT"
 msgstr ""
 
-#: pages/first_analysis.py:528
-#: pages/first_analysis.py:528
+#: pages/first_analysis.py:77
 msgid "FAL_MODEL_CODE_EXPANDER"
 msgstr ""
 
-#: pages/first_analysis.py:529
-#: pages/first_analysis.py:529
+#: pages/first_analysis.py:78
 msgid "FAL_CONSTRUCTION_HEADER"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:530
-#: pages/first_analysis.py:530
+#: pages/first_analysis.py:79
 msgid "FAL_CONSTRUCTION_1"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:537
-#: pages/first_analysis.py:537
+#: pages/first_analysis.py:86
 msgid "FAL_CONSTRUCTION_2"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:553
-#: pages/first_analysis.py:553
+#: pages/first_analysis.py:102
 msgid "FAL_CONSTRUCTION_3"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:560
-#: pages/first_analysis.py:560
+#: pages/first_analysis.py:109
 msgid "FAL_CONSTRUCTION_4"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:576
-#: pages/first_analysis.py:576
+#: pages/first_analysis.py:125
 msgid "FAL_CONSTRUCTION_5"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:592
-#: pages/first_analysis.py:592
+#: pages/first_analysis.py:141
 msgid "FAL_CONSTRUCTION_6"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:599
-#: pages/first_analysis.py:599
+#: pages/first_analysis.py:148
 msgid "FAL_CONSTRUCTION_7"
 msgstr ""
 
-#: pages/first_analysis.py:601
-#: pages/first_analysis.py:601
+#: pages/first_analysis.py:150
 msgid "FAL_SIMULATION_HEADER"
 msgstr ""
 
-#: pages/first_analysis.py:603
-#: pages/first_analysis.py:603
+#: pages/first_analysis.py:152
 msgid "FAL_SIMULATION_1"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:610
-#: pages/first_analysis.py:610
+#: pages/first_analysis.py:159
 msgid "FAL_SIMULATION_2"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:617
-#: pages/first_analysis.py:617
+#: pages/first_analysis.py:166
 msgid "FAL_SIMULATION_3"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:640
-#: pages/first_analysis.py:640
+#: pages/first_analysis.py:189
 msgid "FAL_SIMULATION_4"
 msgstr ""
 
-#: pages/first_analysis.py:641
-#: pages/first_analysis.py:641
+#: pages/first_analysis.py:190
 msgid "FAL_SIMULATION_FLOURESCENCE_HEADER"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:642
-#: pages/first_analysis.py:642
+#: pages/first_analysis.py:191
 msgid "FAL_SIMULATION_FLOURESCENCE_1"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:665
-#: pages/first_analysis.py:665
+#: pages/first_analysis.py:214
 msgid "FAL_SIMULATION_FLOURESCENCE_2"
 msgstr ""
 
-#: pages/first_analysis.py:688
-#: pages/first_analysis.py:688
+#: pages/first_analysis.py:237
 msgid "FAL_SIMULATION_PHASES_HEADER"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:689
-#: pages/first_analysis.py:689
+#: pages/first_analysis.py:238
 msgid "FAL_SIMULATION_PHASES_1"
 msgstr ""
 
-#: pages/first_analysis.py:712
-#: pages/first_analysis.py:712
+#: pages/first_analysis.py:261
 msgid "FAL_SIMULATION_PRETTY_HEADER"
 msgstr ""
 
 # Grammarly checked
-#: pages/first_analysis.py:713
-#: pages/first_analysis.py:713
+#: pages/first_analysis.py:262
 msgid "FAL_SIMULATION_PRETTY_1"
 msgstr ""
 
 
 
 #: pages/plant_memory.py:380
-#: pages/plant_memory.py:380
 msgid "MEM_HEADLINE_BRAIN"
 msgstr ""
 
 # Grammarly checked
 #: pages/plant_memory.py:387
-#: pages/plant_memory.py:387
 msgid "MEM_INTRODUCTION_BRAIN"
 msgstr ""
 
-#: pages/plant_memory.py:260
 #: pages/plant_memory.py:260
 msgid "MEM_SLIDER_TRAINING"
 msgstr ""
 
 #: pages/plant_memory.py:262
-#: pages/plant_memory.py:262
 msgid "MEM_SLIDER_RELAXATION"
 msgstr ""
 
-#: pages/plant_memory.py:264
 #: pages/plant_memory.py:264
 msgid "MEM_SLIDER_MEMORY"
 msgstr ""
 
 #: pages/plant_memory.py:113
-#: pages/plant_memory.py:113
 msgid "MEM_ANNO_TRAINING"
 msgstr ""
 
-#: pages/plant_memory.py:113
 #: pages/plant_memory.py:113
 msgid "MEM_ANNO_RELAXATION"
 msgstr ""
 
 #: pages/plant_memory.py:113
-#: pages/plant_memory.py:113
 msgid "MEM_ANNO_MEMORY"
 msgstr ""
 
 #: pages/plant_memory.py:393
-#: pages/plant_memory.py:393
 msgid "MEM_TIP1"
 msgstr ""
 
-#: pages/plant_memory.py:395
 #: pages/plant_memory.py:395
 msgid "MEM_TIP2"
 msgstr ""
@@ -1178,18 +952,15 @@ msgstr ""
 
 #: Conclusion
 #: pages/conclusion.py:13
-#: pages/conclusion.py:13
 msgid "CON_HEADLINE_CONCLUSION"
 msgstr "# Podsumowanie"
 
 # Grammarly checked
 #: pages/conclusion.py:15
-#: pages/conclusion.py:15
 msgid "CON_CONCLUSION_TEXT_ONE"
 msgstr ""
 
 # Grammarly checked     
-#: pages/conclusion.py:19
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Rośliny mogą przypomnieć sobie poprzednią ekspozycję na światło i odpowiednio dostosować swoje tempo fotosyntezy. Ta krótkotrwała pamięć pozwala im efektywnie zużywać energię i dostosowywać się do różnych warunków środowiskowych. \n"

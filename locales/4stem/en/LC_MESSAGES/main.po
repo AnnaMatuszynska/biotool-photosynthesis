@@ -22,66 +22,43 @@ msgstr ""
 
 
 #: Start.py:41
-#: pages/model_explain.py:419
-#: pages/first_analysis.py:800
+#: pages/first_analysis.py:459
 #: pages/method.py:69
-#: pages/photosynthesis.py:74
-#: pages/plant_memory.py:401
-#: Start.py:41
 #: pages/model_explain.py:419
-#: pages/first_analysis.py:800
-#: pages/method.py:69
 #: pages/photosynthesis.py:74
 #: pages/plant_memory.py:401
 msgid "LITERATURE"
 msgstr "Literature"
 
 #: Start.py:42
+#: pages/first_analysis.py:460
 #: pages/model_explain.py:420
-#: pages/first_analysis.py:801
-#: pages/photosynthesis.py:75
-#: pages/plant_memory.py:402
-#: Start.py:42
-#: pages/model_explain.py:420
-#: pages/first_analysis.py:801
 #: pages/photosynthesis.py:75
 #: pages/plant_memory.py:402
 msgid "LITERATURE_ONPAGE"
 msgstr "References on this page:"
 
-#: pages/first_analysis.py:317
-#: pages/plant_memory.py:249
-#: pages/first_analysis.py:317
+#: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
 msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
 
-#: pages/first_analysis.py:331
-#: pages/plant_memory.py:255
-#: pages/first_analysis.py:331
+#: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
 msgid "SLIDER_PULSES"
 msgstr "Seconds between saturating pulse during light phase"
 
-#: pages/first_analysis.py:337
-#: pages/plant_memory.py:272
-#: pages/first_analysis.py:337
+#: pages/first_analysis.py:371
 #: pages/plant_memory.py:272
 msgid "SLIDER_ACTIVATION"
-msgstr "Conversion rate to Zeaxanthin in percent of default"
+msgstr ""
 
-#: pages/first_analysis.py:346
-#: pages/plant_memory.py:278
-#: pages/first_analysis.py:346
+#: pages/first_analysis.py:380
 #: pages/plant_memory.py:278
 msgid "SLIDER_DEACTIVATION"
-msgstr "Conversion rate to Violaxanthin in percent of default"
+msgstr ""
 
 # Grammarly checked
-#: Start.py:14
-#: pages/contact.py:68
-#: Start.py:14
-#: pages/contact.py:68
 #: Start.py:14
 #: pages/contact.py:68
 #: Start.py:14
@@ -89,71 +66,50 @@ msgstr "Conversion rate to Violaxanthin in percent of default"
 msgid "PROGRAMS_USED"
 msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."
 
-#: pages/first_analysis.py:368
-#: pages/plant_memory.py:297
-#: pages/first_analysis.py:368
+#: pages/first_analysis.py:402
 #: pages/plant_memory.py:297
 msgid "SPINNER"
 msgstr "I'll do some quick math for you :computer:"
 
-#: pages/first_analysis.py:406
-#: pages/first_analysis.py:441
-#: pages/plant_memory.py:315
-#: pages/plant_memory.py:344
-#: pages/plant_memory.py:359
-#: pages/first_analysis.py:406
-#: pages/first_analysis.py:441
+#: pages/first_analysis.py:420
+#: pages/first_analysis.py:432
 #: pages/plant_memory.py:315
 #: pages/plant_memory.py:344
 #: pages/plant_memory.py:359
 msgid "AXIS_TIME_MIN"
 msgstr "Time [min]"
 
-#: pages/first_analysis.py:405
-#: pages/first_analysis.py:440
-#: pages/plant_memory.py:314
-#: pages/plant_memory.py:343
-#: pages/plant_memory.py:358
-#: pages/first_analysis.py:405
-#: pages/first_analysis.py:440
+#: pages/first_analysis.py:419
+#: pages/first_analysis.py:431
 #: pages/plant_memory.py:314
 #: pages/plant_memory.py:343
 #: pages/plant_memory.py:358
 msgid "AXIS_TIME_S"
 msgstr "Time [s]"
 
-#: pages/first_analysis.py:407
-#: pages/first_analysis.py:442
-#: pages/plant_memory.py:316
-#: pages/first_analysis.py:407
-#: pages/first_analysis.py:442
+#: pages/first_analysis.py:421
+#: pages/first_analysis.py:433
 #: pages/plant_memory.py:316
 msgid "FLUO"
 msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
 
-#: pages/first_analysis.py:442
-#: pages/plant_memory.py:345
-#: pages/first_analysis.py:442
+#: pages/first_analysis.py:433
 #: pages/plant_memory.py:345
 msgid "AXIS_NPQ"
-msgstr "NPQ [a.u.]"
+msgstr ""
 
-#: pages/first_analysis.py:442
-#: pages/plant_memory.py:360
-#: pages/first_analysis.py:442
+#: pages/first_analysis.py:433
 #: pages/plant_memory.py:360
 msgid "AXIS_PHIPSII"
-msgstr "Φ(PSII)"
+msgstr ""
 
 
 
 # SIDEBAR
 #: pages/_sidebar.py:14
-#: pages/_sidebar.py:14
 msgid "SDE_4BIO"
 msgstr "4Bio"
 
-#: pages/_sidebar.py:14
 #: pages/_sidebar.py:14
 msgid "SDE_4STEM"
 msgstr "4STEM"
@@ -162,17 +118,14 @@ msgstr "4STEM"
 
 #: This can be copied to add new text entries with translations
 #: Start.py:12
-#: Start.py:12
 msgid "STR_EXPANDER_ABOUT"
 msgstr "About this Website"
 
 # Grammarly checked
 #: Start.py:13
-#: Start.py:13
 msgid "STR_EXPLANATION_ABOUT"
 msgstr "This website is available online and directly usable at <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Additionally, all source code can be downloaded from GitHub at <https://github.com/AnnaMatuszynska/biotool-photosynthesis> and run (offline) locally. For information on downloading and running the notebook, please refer to the `README.md` file on GitHub."
 
-#: Start.py:9
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
 msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
@@ -180,91 +133,75 @@ msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosyn
 #: Intro by Anna
 # Grammarly checked
 #: Start.py:10
-#: Start.py:10
 msgid "STR_INTRO"
 msgstr "Welcome to a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of 21st-century students. We want to show how computational modeling supports the current research in increasing our understanding of how the world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening to the process of photosynthesis."
 
 # Grammarly checked
-#: Start.py:18
 #: Start.py:18
 msgid "STR_HEADLINE_USAGE"
 msgstr "## How to use this website"
 
 # Grammarly checked
 #: Start.py:19
-#: Start.py:19
 msgid "STR_USAGE"
-msgstr "We aimed at both curious **newcomers** and more **advanced** learners. When using this website, you can choose which version you want to use by clicking on the left side button: Version and selecting from the drop-down list *4Bio*, if you feel more comforable with biology, or *4STEM*, if you want to experience the mathematical background in more detail."
+msgstr "We aimed at both curious newcomers and more advanced learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <a href='#' id='4Bio'><i>4Bio</i></a>, if you feel more comforable with biology, or <i>4STEM</i>, if you want to experience the mathematical background in more detail."
 
 # Grammarly checked
 #: Start.py:20
-#: Start.py:20
-msgid "STR_4STEM_USE"
-msgstr "In this 4STEM version, we will explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters. These methods will be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating *in silico* mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex *in silico* mutants, and more outputs will be generated."
+msgid "STR_SPECIFIC_USE"
+msgstr "In this *4STEM* version, we will summarise the biological background you need to know to understand the models on this webpage. We will give you multiple examples of models that were developed to capture different aspects of photosynthesis to show how useful modelling can be for biology. We will also explain one model in detail, showing how it is mathematically defined and implemented in Python so you can try it out for yourself."
 
 # Grammarly checked
-#: Start.py:26
 #: Start.py:26
 msgid "STR_DROP_BOX_INTRO"
 msgstr "If you need to learn the difference between the *in vitro*, *in vivo*, and *in silico*, open the drop-box below."
 
 #: Start.py:27
-#: Start.py:27
 msgid "STR_EXPANDER_IN"
 msgstr "Differences between _in vitro_, _in vivo_ and _in silico_"
 
-#: Start.py:28
 #: Start.py:28
 msgid "STR_EXPLANATION_IN_VITRO"
 msgstr "*In vitro* refers to experiments conducted outside a living organism in a controlled laboratory setting."
 
 #: Start.py:29
-#: Start.py:29
 msgid "STR_EXPLANATION_IN_VIVO"
 msgstr "*In vivo* refers to experiments conducted inside a living organism, usually animals or humans."
 
 #: Start.py:30
-#: Start.py:30
 msgid "STR_EXPLANATION_IN_SILICO"
 msgstr "*In silico* refers to computational experiments and simulations performed using computer models and algorithms."
 
-#: Start.py:32
 #: Start.py:32
 msgid "STR_HEADLINE_PAGES"
 msgstr "## Abstract of the pages"
 
 # Grammarly checked
 #: Start.py:33
-#: Start.py:33
 msgid "STR_INTRODUCTION_PAGES"
 msgstr "In the following, we will give you a short overview of what you can expect on the following pages."
 
 # Grammarly checked
-#: Start.py:34
 #: Start.py:34
 msgid "STR_PHOTOSYNTHESIS"
 msgstr "The **photosynthesis page** will summarize the fundamental mechanisms of photosynthesis, in-depth information on climate change, and a molecular description of the photoprotective mechanism."
 
 # Grammarly checked
 #: Start.py:35
-#: Start.py:35
 msgid "STR_METHOD"
 msgstr "The **measuring method page** will explain a state-of-the-art method of measuring photosynthetic parameters using non-invasive fluorescence. Literature for further reading is also provided."
 
 # Grammarly checked
-#: Start.py:36
 #: Start.py:36
 msgid "STR_MODEL"
 msgstr "Mathematical modelling therory and examples of popular models be presented on the **computational models page**. Additionally, we demonstrate the implementation of mathematical model in a programming language Python."
 
 # Grammarly checked
 #: Start.py:37
-#: Start.py:37
 msgid "STR_EXPERIMENT"
 msgstr "On the page **experiments** ***in silico***, we introduce a photosynthesis model co-developed by Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003) ) which will serve as an example for the alteration and evaluation of mathematical models. The mathematical definition of the model will be explained, and simple simulations will be performed, including the editing of model parameters."
 
 # Grammarly checked
-#: Start.py:38
 #: Start.py:38
 msgid "STR_MEMORY"
 msgstr "Lastly, the **plant light memory page** will explain how the plant non-photochemical quenching mechanism leads to a memory effect of light conditions and how the mathematical model can be used for investigation."
@@ -273,12 +210,10 @@ msgstr "Lastly, the **plant light memory page** will explain how the plant non-p
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
-#: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
 msgstr "# Photosynthesis"
 
 #: Lisa's introduction
-#: pages/photosynthesis.py:12
 #: pages/photosynthesis.py:12
 msgid "PHO_HEADLINE_CLIMATE"
 msgstr "## Climate Change"
@@ -286,54 +221,44 @@ msgstr "## Climate Change"
 #: Lisa's introduction
 # Grammarly checked
 #: pages/photosynthesis.py:13
-#: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
 msgstr "*Climate* is defined as the average statistical measurements of the weather over a long period in a specific place. *Climate change* is defined as a worldwide change in the climate. Three main categories can induce a change in the climate:"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16
-#: pages/photosynthesis.py:16
 msgid "PHO_POINT_1"
-msgstr "- plate tectonics and vulcanism"
+msgstr ""
 
 #: Lisa's introduction
-#: pages/photosynthesis.py:17
 #: pages/photosynthesis.py:17
 msgid "PHO_POINT_2"
-msgstr "- earth orbit transitions"
+msgstr ""
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:18
-#: pages/photosynthesis.py:18
 msgid "PHO_POINT_3"
-msgstr "- emissions of heat-trapping gasses"
+msgstr ""
 
 #: Lisa's introduction
 # Grammarly checked
 #: pages/photosynthesis.py:19
-#: pages/photosynthesis.py:19
 msgid "PHO_END_OF_INTRODUCTION"
-msgstr "In the history of the Earth, several times climate changes occurred. In 2016, *97% of climate researchers* agreed that we are currently in human-caused global warming (Cook et al., 2016). Research is needed to understand the impact of the sudden rise of Earth's Temperature."
+msgstr ""
 
-#: pages/photosynthesis.py:34
 #: pages/photosynthesis.py:34
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS"
 msgstr "## Process of Photosynthesis"
 
 # Grammarly checked
 #: pages/photosynthesis.py:35
-#: pages/photosynthesis.py:35
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_1"
 msgstr "Plants are autotrophic and can thus produce complex organic compounds like sugars, lipids, and proteins from simple nutrients."
 
 # Grammarly checked
 #: pages/photosynthesis.py:36
-#: pages/photosynthesis.py:36
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
 msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolized into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus producing molecular oxygen."
 
-#: pages/photosynthesis.py:39
-#: pages/photosynthesis.py:41
 #: pages/photosynthesis.py:39
 #: pages/photosynthesis.py:41
 msgid "PHO_CAPTION_FOTOSYNTHESE_PICTURE"
@@ -341,18 +266,15 @@ msgstr "Simplified photosynthesis process"
 
 # Grmmarly checked
 #: pages/photosynthesis.py:45
-#: pages/photosynthesis.py:45
 msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures that delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic carriers use light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
 
 # Grammarly checked
 #: pages/photosynthesis.py:43
-#: pages/photosynthesis.py:43
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_LOCATION"
 msgstr "## Place of photosynthesis"
 
 # Grammarly checked
-#: pages/photosynthesis.py:44
 #: pages/photosynthesis.py:44
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 msgstr "Photosynthesis occurs in the cells of the primarily green components of plants, mainly within mesophyll cells. Chloroplast organelles within these cells perform the conversion of light energy into chemical energy equivalents, commonly called 'light reaction'. Two types of photosystems exist within the series of protein complexes used for this energy conversion. Both contain chlorophyll reaction centers, which, upon light absorption, can oxidize compounds with high redox potential (e.g. H₂O) and reduce acceptors with low redox potential (e.g. NADP⁺). Photosystem II (PSII), which uses the energy of light to split water into oxygen and protons, is of particular interest to us."
@@ -360,53 +282,43 @@ msgstr "Photosynthesis occurs in the cells of the primarily green components of 
 # Grammarly checked
 #: pages/photosynthesis.py:48
 #: pages/photosynthesis.py:50
-#: pages/photosynthesis.py:48
-#: pages/photosynthesis.py:50
 msgid "PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
 
 # Grammarly checked
 #: pages/photosynthesis.py:52
-#: pages/photosynthesis.py:52
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\nThe following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
 
-#: pages/photosynthesis.py:57
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
 msgstr "## How to deal with too much light?"
 
 # Grammarly checked
 #: pages/photosynthesis.py:58
-#: pages/photosynthesis.py:58
 msgid "PHO_NPQ_EXPLANATION"
 msgstr "If the photosystems absorb too much light energy, protein breakdown, and cellular damage by producing radical oxygen species can ensue. Therefore, multiple preventive mechanisms exist to reduce high light damage, ranging from the adaption of the photosystems to the movement of chloroplasts and whole leaves. Processes on the scale of the photosystems are acting the fastest and usually result in light energy being directly emitted as heat. Such processes are collectively called non-photochemical quenching (NPQ). The following pages will present the model representing the plant 'Xanthophyll cycle', where the enzymatic interconversion of carotenoids leads to a system with tunable light absorption for dissipation as heat."
 
-#: pages/photosynthesis.py:60
 #: pages/photosynthesis.py:60
 msgid "PHO_HEADER_MODEL_ORGANISMEN"
 msgstr "## One plant to rule them all"
 
 # Grammarly checked
 #: pages/photosynthesis.py:61
-#: pages/photosynthesis.py:61
 msgid "PHO_MODEL_ORGANISMEN_EXPLANATION"
 msgstr "While the presented methods and models apply to many plants, most were developed for the model plant *Arabidopsis Thaliana*."
 
 # Grammarly checked
-#: pages/photosynthesis.py:63
 #: pages/photosynthesis.py:63
 msgid "PHO_EXPANDER_MODEL_ORGANISMEN"
 msgstr "Why is Arabidopsis thaliana a model organism?"
 
 # Grammarly checked
 #: pages/photosynthesis.py:69
-#: pages/photosynthesis.py:69
 msgid "PHO_CAPTION_THAIANA_PICTURE"
 msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
 
 # Grammarly checked
-#: pages/photosynthesis.py:70
 #: pages/photosynthesis.py:70
 msgid "PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model system in plant biology. It has several characteristics that make it well-suited for laboratory studies, including:\n"
@@ -419,29 +331,24 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 
 
 #: pages/method.py:70
-#: pages/method.py:70
 msgid "MTH_LITERATURE_DECLARATION"
 msgstr "The following literature provides more in-depth information on the subject of PAM measurements, or offers the opportunity to familiarize oneself with the basics."
 
-#: pages/method.py:10
 #: pages/method.py:10
 msgid "MTH_HEADLINE_ONE"
 msgstr "# Measuring method"
 
 # Grammarly checked
 #: pages/method.py:15
-#: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
 msgstr "To quantitatively measure the photosynthetic activity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are challenging to perform in the field, fluorescence measurements can be performed on plants of various sizes and in multiple environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the European Space Agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
 
 # Grammarly checked
 #: pages/method.py:18
-#: pages/method.py:18
 msgid "MTH_CAPTION_ABB1"
 msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
 
 #: Explanation by Tobias
-#: pages/method.py:20
 #: pages/method.py:20
 msgid "MTH_GROWING_PLANTS_1"
 msgstr "Chlorophyll fluorescence"
@@ -449,13 +356,11 @@ msgstr "Chlorophyll fluorescence"
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:21
-#: pages/method.py:21
 msgid "MTH_INTRODUCTION_GLOWING"
 msgstr "Fluorescence measurements of plants are based on the properties of excited chlorophyll. While a significant fraction of light energy is used for photochemistry, excitations can also be dissipated as heat or fluorescence in the red wavelength spectrum."
 
 #: Explanation by Tobias
 # Grammarly checked
-#: pages/method.py:22
 #: pages/method.py:22
 msgid "MTH_PLANT_ARE_SHINING_RED"
 msgstr "Stray environmental light, especially the green fraction reflected by the leaf, usually masks the fluorescence from observation.  Therefore, one way to overcome this limitation is by inducing strong fluorescence and reducing the stray light."
@@ -463,19 +368,16 @@ msgstr "Stray environmental light, especially the green fraction reflected by th
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:23
-#: pages/method.py:23
 msgid "MTH_INTRODUCTION_EXPERIMENT"
 msgstr "We used a powerful UV light source for chlorophyll excitation in the following example. We covered the camera with a red-pass filter to limit light detection to the fluorescence range. We also initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:29
-#: pages/method.py:29
 msgid "MTH_EXPLANATION_VIDEO"
 msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. However, upon removal of the sticker, the covered tissue without induced light protection received intense illumination, producing a solid fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualizes chlorophyll fluorescence and the leaf adaption to light."
 
 #: Explanation by Tobias
-#: pages/method.py:31
 #: pages/method.py:31
 msgid "MTH_MEASURING_FLUORESZENZ"
 msgstr "Measuring Photosynthesis with Fluorescence"
@@ -483,13 +385,11 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:32
-#: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
 msgstr "The above experiment also visualized the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centers where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads to a buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
 
 #: Explanation by Tobias
 # Grammarly checked
-#: pages/method.py:33
 #: pages/method.py:33
 msgid "MTH_INTRODUCTION_PHI"
 msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalized to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). Photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified by relating measurements within a PAM protocol and observing the fluorescence dynamics."
@@ -497,13 +397,11 @@ msgstr "However, the fluorescence intensity is also proportional to the intensit
 #: Explanation by Tobias
 
 #: pages/method.py:40
-#: pages/method.py:40
 msgid "MTH_MEASURING_LIGHT_FLUORESCENCE"
 msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 
 #: Explanation by Tobias
 # Grammarly checked
-#: pages/method.py:41
 #: pages/method.py:41
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
 msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualizes the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behavior of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as the lower panel shows. This summary figure is reproduced from Nies et al. (2021)."
@@ -512,26 +410,20 @@ msgstr "PAM employs a series of high-frequency light pulses with weak constant i
 #: pages/method.py:44
 #: pages/method.py:58
 #: pages/method.py:63
-#: pages/method.py:44
-#: pages/method.py:58
-#: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
 msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
 
 # Grammarly checked
-#: pages/method.py:37
 #: pages/method.py:37
 msgid "MTH_HEADLINE_PAM_MEASUREMENT"
 msgstr "### PAM Experiments"
 
 # Grammarly checked
 #: pages/method.py:38
-#: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
 msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For a more in-depth overview, please consider the literature at the bottom of the page."
 
 #: Explanation by Tobias
-#: pages/method.py:48
 #: pages/method.py:48
 msgid "MTH_SATURATING_PULSES"
 msgstr "Saturating Pulses"
@@ -539,23 +431,19 @@ msgstr "Saturating Pulses"
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:49
-#: pages/method.py:49
 msgid "MTH_EXPLANATION_ATTEMPTS"
 msgstr "You need to know one more aspect of PAM: the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside photosynthesis, for example, the plant's light protection. When you also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
 
-#: pages/method.py:51
 #: pages/method.py:51
 msgid "MTH_HEADLINE_ILLUSTRATION"
 msgstr "## Visualization of the results"
 
 # Grammarly checked
 #: pages/method.py:52
-#: pages/method.py:52
 msgid "MTH_EXPLANATION_ILLUSTRATION_UNITS"
 msgstr "The fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fm', with the first being measured in the dark as Fm."
 
 # Grammarly checked
-#: pages/method.py:53
 #: pages/method.py:53
 msgid "MTH_EXPLANATION_ILLUSTRATION"
 msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the **Experiments *in silico* ** page!"
@@ -563,260 +451,209 @@ msgstr "This was a lot of theory for just a bit of shining, so try a measurement
 
 
 #: pages/model_explain.py:19
-#: pages/model_explain.py:19
 msgid "MDL_HEADLINE_COMPUTATIONAL_MODELS"
 msgstr "# Computational models"
 
 # Grammarly checked
-#: pages/model_explain.py:21
 #: pages/model_explain.py:21
 msgid "MDL_HEADLINE_MODEL"
 msgstr "## What are mathematical models?"
 
 # Grammarly checked
 #: pages/model_explain.py:23
-#: pages/model_explain.py:23
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"
 msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never a precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
 
 
-#: pages/model_explain.py:26
 #: pages/model_explain.py:26
 msgid "MDL_CAPTION_MODELLING_PICTURE"
 msgstr "The cycle of modeling. The developer often needs to go through several iterations to get from an initial problem to a curated mathematical model."
 
 
 #: pages/model_explain.py:29
-#: pages/model_explain.py:29
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"
 msgstr "In the video below, you can listen more about building and using mathematical models in biology."
 
 #: pages/model_explain.py:34
-#: pages/model_explain.py:34
 msgid "MDL_EXAMPLE_MATHEMATICAL_MODEL"
 msgstr "### An example of a mathematical model"
 
-#: pages/model_explain.py:37
 #: pages/model_explain.py:210
 #: pages/model_explain.py:37
-#: pages/model_explain.py:210
 msgid "MDL_TAB_SIR"
 msgstr "The SIR model"
 
-#: pages/model_explain.py:210
 #: pages/model_explain.py:210
 msgid "MDL_TAB_MANUAL"
 msgstr "Manual implementation"
 
 #: pages/model_explain.py:210
-#: pages/model_explain.py:210
 msgid "MDL_TAB_MODELBASE"
 msgstr "Modelbase implementation"
 
-#: pages/model_explain.py:40
 #: pages/model_explain.py:213
 #: pages/model_explain.py:40
-#: pages/model_explain.py:213
 msgid "MDL_HEADLINE_SIR"
 msgstr "#### The SIR Model"
 
-#: pages/model_explain.py:286
 #: pages/model_explain.py:286
 msgid "MDL_HEADLINE_MANUAL"
 msgstr "#### Manual implementation"
 
 #: pages/model_explain.py:312
-#: pages/model_explain.py:312
 msgid "MDL_HEADLINE_MODELBASE"
 msgstr "#### Modelbase implementation"
 
 # Grammarly checked
-#: pages/model_explain.py:42
 #: pages/model_explain.py:215
 #: pages/model_explain.py:42
-#: pages/model_explain.py:215
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE"
 msgstr "Let us imagine a scenario where a new highly contagious but overall harmless disease gets introduced to a population of aliens on Planet-X. This disease has surprised the people of Planet-X so that they separated their population into three categories: the ones that are susceptible to the disease and can get sick at any moment (S), the ones that recovered from the infection (R), and the currently infected ones (I). To model the transition between each category, we determine the rate of infection (v<sub>1</sub>) dependent on the number of S and I in the total population (N) and their rate of recovery (v<sub>2</sub>) solely reliant on the I. They also discovered that the R gain complete immunity, but the people are too stressed to grow their population. To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S will become I at a rate of v<sub>1</sub>, and the I will become R at a rate of v<sub>2</sub>. The rate v<sub>1</sub> is dependent on the infection rate of the disease (β), the number of S and I in relation to the N. On the other hand, the rate v<sub>2</sub> is only dependent on the number of I and their recovery rate (γ)."
 
 # Grammarly checked
-#: pages/model_explain.py:46
 #: pages/model_explain.py:219
 #: pages/model_explain.py:46
-#: pages/model_explain.py:219
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"
-msgstr ""
+msgstr "To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S become I at a specific infection rate (v<sub>1</sub>) and the I become R at a specific recovery rate (v<sub>2</sub>)."
 
 
 # Grammarly checked
-#: pages/model_explain.py:50
 #: pages/model_explain.py:236
 #: pages/model_explain.py:50
-#: pages/model_explain.py:236
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
 msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 
 # Grammarly checked
-#: pages/model_explain.py:61
 #: pages/model_explain.py:251
 #: pages/model_explain.py:61
-#: pages/model_explain.py:251
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"
 msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
 
-#: pages/model_explain.py:73
 #: pages/model_explain.py:73
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"
 msgstr ""
 
 #: pages/model_explain.py:80
-#: pages/model_explain.py:80
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
 msgstr ""
 
-#: pages/model_explain.py:123
 #: pages/model_explain.py:123
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
 msgstr ""
 
 #: pages/model_explain.py:132
-#: pages/model_explain.py:132
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
 msgstr ""
 
-#: pages/model_explain.py:141
 #: pages/model_explain.py:141
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
 msgstr ""
 
 # Grammarly checked
 #: pages/model_explain.py:254
-#: pages/model_explain.py:254
 msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
 msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 
 # Grammarly checked
 #: pages/model_explain.py:261
-#: pages/model_explain.py:261
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
 msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example makes it possible to be solved on pen and paper. However, we have used Python to make our lives easier. You can find it in the other tabs over this section."
 
 #: pages/model_explain.py:352
-#: pages/model_explain.py:352
 msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
 msgstr "## Models of photosynthesis"
 
-#: pages/model_explain.py:357
 #: pages/model_explain.py:357
 msgid "MDL_HEADLINE_FVCB"
 msgstr "### The Farquhar, von Caemmerer and Berry model"
 
 # Grammarly checked
 #: pages/model_explain.py:359
-#: pages/model_explain.py:359
 msgid "MDL_FVCB_1"
 msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). It was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results."
 
-#: pages/model_explain.py:375
 #: pages/model_explain.py:375
 msgid "MDL_FVCB_2"
 msgstr "These rates use an epitome of parameters that have to be measured or determined beforehand. The model uses the chloroplast CO<sub>2</sub> partial pressure (C<sub>c</sub>), the chloroplast O<sub>2</sub> partial pressure (O), the C<sub>c</sub> where A = −R<sub>d</sub> (Γ<sub>&midast;</sub>), the maximal rate of carboxylation (V<sub>cmax</sub>), the Michaelis-Menten constants of carboxylation and oxygenation (K<sub>c</sub> and K<sub>o</sub> respectively), the potential electron transport rate (J) and the rate of inorganic phosphate supply to the chloroplast (T<sub>p</sub>) to calculate the three rates. The day respiration (R<sub>d</sub>) is subtracted to portray the respective assimilation rates. It is to be noted that this model is limited to a C<sub>c</sub> that is larger than Γ<sub>&midast;</sub>. \n"
 "\n This model is widely popular among scientists, as it is relatively simple and uses no complicated mathematical methods like integrations. As you may have guessed, this model type differs from the SIR model we explained earlier. It doesn’t use any ODEs and, therefore, cannot show the change in time. It only shows the A specific for the parameter values chosen. It thus depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still considered one of the best due to its simplicity."
 
 #: pages/model_explain.py:378
-#: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
 msgstr "### The *e*-photosynthesis model"
 
 # Grammarly checked
-#: pages/model_explain.py:380
 #: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
 msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It builds upon previous works by Zhu et al., incorporating the reactions associated with light absorption, excitation energy transfer, charge separation, and electron transfer around PSII from their fluorescence induction model. Additionally, it introduces analogous reactions for PSI and includes reactions from their carbon metabolism model, such as those involved in the C<sub>3</sub> cycle, sucrose and starch synthesis, and photorespiration. The model further accounts for ion transfer between the lumen and stroma, ATP and NADPH synthesis, RuBisCO activation by RuBisCO activase, NPQ by luminal pH and the xanthophyll cycle, and regulation of enzyme activities by the ferredoxin (Fd) thioredoxin system.\n"
 "\n Even though this model is very complex, it still introduces some simplifications; for example, the steps between the electron transfer of the chlorophyll *a* molecule and Fd are ignored. Furthermore, to calculate the A, this model uses the rate of carboxylation (V<sub>c</sub>) and the rate of glycine decarboxylase (v<sub>131</sub>). While the equation below may be simple, it depends on a dynamic system containing 294 equations."
 
 #: pages/model_explain.py:390
-#: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
 msgstr "Overall, 113 of these equations can be attributed to a system of ODEs, which indicates this model's complexity. Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler, more user-friendly models or focusing on specific photosynthesis aspects."
 
-#: pages/model_explain.py:393
 #: pages/model_explain.py:393
 msgid "MDL_HEADLINE_BELLASIO"
 msgstr "### The Bellasio model"
 
 # Grammarly checked
 #: pages/model_explain.py:395
-#: pages/model_explain.py:395
 msgid "MDL_BELLASIO_1"
 msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behavior. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. The model aggregates three specific models, which have been modified and simplified. The light reactions are based on Yin et al.'s work, the dark reactions on Zhu et al.'s carbon metabolism model, and the stomatal conductance of Bellasio et al.'s hydro-mechanical formulation. It simplifies the intercellular space and mesophyll as uniform, calculates CO<sub>2</sub> diffusion, dissolution, and hydration mechanistically, and does not implement the restriction caused by metabolite diffusion. Furthermore, it uses the simple FvCB Formula to calculate A."
 
 # Grammarly checked
 #: pages/model_explain.py:405
-#: pages/model_explain.py:405
 msgid "MDL_BELLASIO_2"
 msgstr "The parameters are based on averaged literature values for typical parameters, and the few parameters created for this model are derived from the original equations or assigned plausible values. The model includes the major reactions of photosynthesis and is simple enough to be modeled in a spreadsheet program like Microsoft&reg; Excel&reg;, which the author kindly provided. Overall, this model is an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
 
 #: pages/model_explain.py:407
-#: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
 msgstr "The difference between C3, C4 and CAM plants"
 
-#: pages/model_explain.py:408
 #: pages/model_explain.py:408
 msgid "MDL_HEADLINE_C3"
 msgstr "### C<sub>3</sub> Plants"
 
 # Grammarly checked
 #: pages/model_explain.py:409
-#: pages/model_explain.py:409
 msgid "MDL_C3_1"
 msgstr "Most plants are C<sub>3</sub> plants, meaning the first stable compound produced during carbon fixation is a three-carbon molecule called 3-phosphoglycerate (3-PGA). This process takes place in the mesophyll cells of plant leaves and involves a chain of biochemical reactions that transform carbon dioxide (CO<sub>2</sub>) into carbohydrates like glucose."
 
-#: pages/model_explain.py:411
 #: pages/model_explain.py:411
 msgid "MDL_HEADLINE_C4"
 msgstr "### C<sub>4</sub> Plants"
 
 # Grammarly checked
 #: pages/model_explain.py:412
-#: pages/model_explain.py:412
 msgid "MDL_C4_1"
 msgstr "In certain plants, C<sub>4</sub> photosynthesis is an alternative process that developed to adapt to hot and dry environments. Unlike C<sub>3</sub> photosynthesis, C<sub>4</sub> photosynthesis boosts the efficiency of carbon fixation by concentrating CO<sub>2</sub> near RuBisCO in the bundle sheath cells. This separation lowers photorespiration, a wasteful process that can occur in C<sub>3</sub> plants under high temperatures and low CO<sub>2</sub> concentrations. C<sub>4</sub> photosynthesis can be found in various plant families, such as grasses (e.g., maize, sugarcane) and certain dicots (e.g., Amaranthaceae, Chenopodiaceae). It is an adaptation that permits plants to flourish in environments with high temperatures, intense sunlight, and limited water availability."
 
-#: pages/model_explain.py:414
 #: pages/model_explain.py:414
 msgid "MDL_HEADLINE_CAM"
 msgstr "### CAM Plants"
 
 # Grammarly checked
 #: pages/model_explain.py:415
-#: pages/model_explain.py:415
 msgid "MDL_CAM_1"
 msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
 
 # Grammarly checked
 #: pages/model_explain.py:289
-#: pages/model_explain.py:289
 msgid "MDL_SIR_IMPLEMENTATION_MANUAL_1"
 msgstr "Great care needs to be taken for the `y0` vector to align with the unpacked variable names and the respective differential equations. The same holds for the order of the parameters `beta` and `gamma`. But we still get a similar result when plotting it using the code below:"
 
-#: pages/model_explain.py:309
 #: pages/model_explain.py:309
 msgid "MDL_SIR_IMPLEMENTATION_MANUAL_2"
 msgstr "Clearly this way of writing models is very error-prone and hard to modularise. That's why we can improve on the situation by using `modelbase`."
 
 #: pages/model_explain.py:314
-#: pages/model_explain.py:314
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_1"
 msgstr "First, we are going to factor out the rate functions `infection` and `recovery` as plain Python functions."
 
-#: pages/model_explain.py:318
 #: pages/model_explain.py:318
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_2"
 msgstr "Next, we can build the model. For this we supply all our system variables using `add_compounds` and parameters as a dictionary using `add_parameters`"
 
 # Grammarly checked
-#: pages/model_explain.py:322
 #: pages/model_explain.py:322
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_3"
 msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying:\n"
@@ -827,267 +664,221 @@ msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying
 
 # Grammarly checked
 #: pages/model_explain.py:326
-#: pages/model_explain.py:326
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
 msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
 "\n You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
 
 # Grammarly checked
 #: pages/model_explain.py:346
-#: pages/model_explain.py:346
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_5"
 msgstr "The approach's strength lies in its simplicity of extending models. For instance, we can add a compartment for deceased individuals to the SIR model, also known as the SIRD model, by introducing a new variable, parameter, and reaction:"
 
-#: pages/model_explain.py:350
 #: pages/model_explain.py:350
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
 msgstr "Which would have been a lot more cumbersome with the manual approach."
 
 # Grammarly checked
 #: pages/model_explain.py:258
-#: pages/model_explain.py:258
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
 msgstr ""
 
 
 
-#: pages/first_analysis.py:462
-#: pages/first_analysis.py:462
+#: pages/first_analysis.py:11
 msgid "FAL_HEADLINE_EXPERIMENTS"
 msgstr "# Experiments *in silico*"
 
-#: pages/first_analysis.py:464
-#: pages/first_analysis.py:464
+#: pages/first_analysis.py:13
 msgid "FAL_HEADLINE_MODEL_CONSTRUCTION"
 msgstr "## Model construction"
 
 #: Grammarly checked
-#: pages/first_analysis.py:466
-#: pages/first_analysis.py:466
+#: pages/first_analysis.py:15
 msgid "FAL_CONSTRUCTION_EXPLANATION_1"
 msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown in the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 # Grammarly checked
-#: pages/first_analysis.py:468
-#: pages/first_analysis.py:468
+#: pages/first_analysis.py:17
 msgid "FAL_CAPTION_MODEL_NPQ"
 msgstr "Scheme of the components included in the simplified mathematical model used on this website. The model was developed in 2016 and contains a detailed description of internal processes occurring inside photosystem II (PSII), including processes affecting the quencher dynamics (Psbs and zeaxanthin)."
 
 #: Grammarly checked
-#: pages/first_analysis.py:470
-#: pages/first_analysis.py:470
+#: pages/first_analysis.py:19
 msgid "FAL_CONSTRUCTION_EXPLANATION_2"
 msgstr "So, instead of modeling the whole plant or chloroplast, we applied a cycle of reduction (see Figure) based on a strict reductionist approach and managed to represent the model as a system of only six ordinary differential equations! Each of the equations represents the dynamic rate of change in:"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:471
-#: pages/first_analysis.py:471
+#: pages/first_analysis.py:20
 msgid "FAL_RATES_1"
 msgstr "1) the reduced fraction of the plastoquinone pool (PQH<sub>2</sub>)"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:472
-#: pages/first_analysis.py:472
+#: pages/first_analysis.py:21
 msgid "FAL_RATES_2"
 msgstr "2) the stromal concentration of ATP (ATP),"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:473
-#: pages/first_analysis.py:473
+#: pages/first_analysis.py:22
 msgid "FAL_RATES_3"
 msgstr "3) the luminal proton concentration (H),"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:474
-#: pages/first_analysis.py:474
+#: pages/first_analysis.py:23
 msgid "FAL_RATES_4"
 msgstr "4) the fraction of nonprotonated proteins (PsbS),"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:475
-#: pages/first_analysis.py:475
+#: pages/first_analysis.py:24
 msgid "FAL_RATES_5"
 msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:476
-#: pages/first_analysis.py:476
+#: pages/first_analysis.py:25
 msgid "FAL_RATES_6"
 msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>&midast;</sup>)."
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:479
-#: pages/first_analysis.py:479
+#: pages/first_analysis.py:28
 msgid "FAL_HEADLINE_MODEL_EQUATIONS"
 msgstr "### Mathematical equations"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:480
-#: pages/first_analysis.py:480
+#: pages/first_analysis.py:29
 msgid "FAL_MODEL_EQUATIONS_INTRODUCTION"
 msgstr "The six coupled ordinary differential equations (ODE)"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:494
-#: pages/first_analysis.py:494
+#: pages/first_analysis.py:43
 msgid "FAL_REACTION_RATES"
 msgstr "Reaction rates"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:495
-#: pages/first_analysis.py:495
+#: pages/first_analysis.py:44
 msgid "FAL_RATES_DYNAMIC"
 msgstr "###### Reaction rates used in the dynamic description of the system"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:509
-#: pages/first_analysis.py:509
+#: pages/first_analysis.py:58
 msgid "FAL_RATE_QUENCHER"
 msgstr "###### Reaction rates to calculate the quencher activity and the overall rate"
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:520
-#: pages/first_analysis.py:520
+#: pages/first_analysis.py:69
 msgid "FAL_HEADLINE_IMPLEMENTATION"
 msgstr "### Implementation"
 
 #: Grammarly checked
-#: pages/first_analysis.py:522
-#: pages/first_analysis.py:522
+#: pages/first_analysis.py:71
 msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object-oriented language (OOL) Python using the modelbase package. The code containing differential equations, reaction rates, parameter space, and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel). In the dropdown below, you can also look at a step-by-step guide on implementing it yourself."
 
-#: pages/first_analysis.py:723
-#: pages/first_analysis.py:723
+#: pages/first_analysis.py:271
 msgid "FAL_HEADLINE_ANALYSE"
 msgstr "## The data analysis"
 
 # Grammarly checked
-#: pages/first_analysis.py:724
-#: pages/first_analysis.py:724
+#: pages/first_analysis.py:272
 msgid "FAL_INTRODUKTION"
 msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors. In the following the model can be rerun with different parameters using the sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal. With the sliders, you can adjust the light instensity during the light phase, for how long the simulation will run, how far apart in time the saturation pulses will be, and how fast the activation and deactivation rates of the NPQ adaption process are."
 
-#: pages/first_analysis.py:726
-#: pages/first_analysis.py:726
+#: pages/first_analysis.py:274
 msgid "FAL_HEADLINE_SLIDER"
 msgstr "##### Use of the sliders:"
 
 # Grammarly checked
-#: pages/first_analysis.py:727
-#: pages/first_analysis.py:727
+#: pages/first_analysis.py:275
 msgid "FAL_EXPLANATNION"
 msgstr "First, change the sliders according to the test you want to simulate. Then, start the calculation by clicking on the button. The calculated graph will be displayed. When you change the sliders again, the graph disappears, and you can load a new graph."
 
-#: pages/first_analysis.py:729
-#: pages/first_analysis.py:729
+#: pages/first_analysis.py:277
 msgid "FAL_TIPP1"
 msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by right clicking on them.*"
 
-#: pages/first_analysis.py:730
-#: pages/first_analysis.py:730
+#: pages/first_analysis.py:278
 msgid "FAL_TIPP2"
 msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
 
-#: pages/first_analysis.py:325
-#: pages/first_analysis.py:325
+#: pages/first_analysis.py:354
 msgid "FAL_SLIDER_TIME"
 msgstr "Test duration in minutes"
 
-#: pages/first_analysis.py:342
-#: pages/first_analysis.py:342
+#: pages/first_analysis.py:376
 msgid "FAL_SLIDER_DARKLENGTH"
-msgstr "Length of the dark phase in seconds"
+msgstr ""
 
-#: pages/first_analysis.py:351
-#: pages/first_analysis.py:351
+#: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
-msgstr "Light intensity of saturating pulse in μmol m⁻² s⁻¹"
+msgstr ""
 
 #: Anna's explanation of the model
-#: pages/first_analysis.py:525
-#: pages/first_analysis.py:525
+#: pages/first_analysis.py:74
 msgid "FAL_IMPLEMENTATION_TO_EXPERT"
 msgstr ""
 
-#: pages/first_analysis.py:528
-#: pages/first_analysis.py:528
+#: pages/first_analysis.py:77
 msgid "FAL_MODEL_CODE_EXPANDER"
 msgstr "Step-by-Step Guide of Implementation"
 
-#: pages/first_analysis.py:529
-#: pages/first_analysis.py:529
+#: pages/first_analysis.py:78
 msgid "FAL_CONSTRUCTION_HEADER"
 msgstr "#### Model Construction"
 
 # Grammarly checked
-#: pages/first_analysis.py:530
-#: pages/first_analysis.py:530
+#: pages/first_analysis.py:79
 msgid "FAL_CONSTRUCTION_1"
 msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilizing a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n" 
 "\n If you want to follow along, you can copy each code block and paste them into a Python IDE. At the end, you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
 
 # Grammarly checked
-#: pages/first_analysis.py:537
-#: pages/first_analysis.py:537
+#: pages/first_analysis.py:86
 msgid "FAL_CONSTRUCTION_2"
 msgstr "We must look at the **reaction rates** and the **ODEs** we want to implement into our model. With them, we can decide which **parameters** and **compounds** we need. We must define them in a `dict` and `list`, respectively. It is also good practice to use comments after each value to briefly explain what that variable represents and, if present, the unit." 
 
 # Grammarly checked
-#: pages/first_analysis.py:553
-#: pages/first_analysis.py:553
+#: pages/first_analysis.py:102
 msgid "FAL_CONSTRUCTION_3"
 msgstr "The defined model has integrated functions to add the parameters and compounds easily:" 
 
 # Grammarly checked
-#: pages/first_analysis.py:560
-#: pages/first_analysis.py:560
+#: pages/first_analysis.py:109
 msgid "FAL_CONSTRUCTION_4"
 msgstr "This model also uses some **parameters** that are derived from other parameters. Furthermore, some information is hidden behind the connection between compounds, which cannot be summarised as parameters. However, `modelbase` has some tricks to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We must first define the calculations as functions and then add them to the model." 
 
 # Grammarly checked
-#: pages/first_analysis.py:576
-#: pages/first_analysis.py:576
+#: pages/first_analysis.py:125
 msgid "FAL_CONSTRUCTION_5"
 msgstr "We now have given the model all the building blocks it needs, but it needs to know what to do with them. For that, it needs instructions. We must translate the reaction rates into `functions` to make these instructions. You will see that some of these functions also call other functions. These are only to make the code more legible or to eliminate the same calculations." 
 
 # Grammarly checked
-#: pages/first_analysis.py:592
-#: pages/first_analysis.py:592
+#: pages/first_analysis.py:141
 msgid "FAL_CONSTRUCTION_6"
 msgstr "The model has all the necessary components and instructions. Still, we must specify which building block corresponds to each instruction and how they are connected. We need to examine the ODEs and establish the stoichiometry to accomplish this." 
 
 # Grammarly checked
-#: pages/first_analysis.py:599
-#: pages/first_analysis.py:599
+#: pages/first_analysis.py:148
 msgid "FAL_CONSTRUCTION_7"
 msgstr "We have now successfully created a functional model. However, to test it, we need to simulate it. This section will guide you through the step-by-step process of generating the plot with the default values listed at the bottom of this page. This part may be more complicated than the modeling part, requiring some trial and error. We will explain our thought process so that you can follow along. Still, we suggest you carefully read this section to create the plot successfully." 
 
-#: pages/first_analysis.py:601
-#: pages/first_analysis.py:601
+#: pages/first_analysis.py:150
 msgid "FAL_SIMULATION_HEADER"
 msgstr "#### Model Simulation" 
 
-#: pages/first_analysis.py:603
-#: pages/first_analysis.py:603
+#: pages/first_analysis.py:152
 msgid "FAL_SIMULATION_1"
 msgstr "First, let's check if our plot is functional. To do so, we will generate a `simulator` object by utilizing the `Simulator()` class from `modelbase`." 
 
 # Grammarly checked
-#: pages/first_analysis.py:610
-#: pages/first_analysis.py:610
+#: pages/first_analysis.py:159
 msgid "FAL_SIMULATION_2"
 msgstr "The model requires a starting point for its calculations. The parameters have been defined during the model creation, so we now need to specify the initial concentrations or quantities of the compounds." 
 
 # Grammarly checked
-#: pages/first_analysis.py:617
-#: pages/first_analysis.py:617
+#: pages/first_analysis.py:166
 msgid "FAL_SIMULATION_3"
 msgstr "We can begin the simulations now. Let's select a random time point for the model to simulate to. We can visualize the results after the simulation and check for implementation errors. This test is straightforward, as an empty or non-existent plot indicates a problem. Our preferred plotting tool is `matplotlib`, which is also integrated into `modelbase`." 
 
 # Grammarly checked
-#: pages/first_analysis.py:640
-#: pages/first_analysis.py:640
+#: pages/first_analysis.py:189
 msgid "FAL_SIMULATION_4"
 msgstr "We have successfully simulated our model and created a basic plot. However, the plot must include important details that we need to define. These aspects include:\n"
 "\n - Displaying changes in fluorescence over time\n"
@@ -1095,31 +886,26 @@ msgstr "We have successfully simulated our model and created a basic plot. Howev
 "\n - Showing saturating light pulses at the beginning of each phase and at specific intervals during the light phase\n"
 "\n To address these issues, we will tackle each one individually. We recommend replacing the code at each new step that includes the `matplotlib` import at the top if you follow this guide. You will notice many similarities throughout the process." 
 
-#: pages/first_analysis.py:641
-#: pages/first_analysis.py:641
+#: pages/first_analysis.py:190
 msgid "FAL_SIMULATION_FLOURESCENCE_HEADER"
 msgstr "##### Showing Fluorescence" 
 
 # Grammarly checked
-#: pages/first_analysis.py:642
-#: pages/first_analysis.py:642
+#: pages/first_analysis.py:191
 msgid "FAL_SIMULATION_FLOURESCENCE_1"
 msgstr "When using `modelbase` for simulations, it tends to display the compounds in the default plots. However, in our situation, we need to showcase the change of Fluorescence, which we did not incorporate as a compound but as an algebraic module. Hence, we must choose that change specifically." 
 
 # Grammarly checked
-#: pages/first_analysis.py:665
-#: pages/first_analysis.py:665
+#: pages/first_analysis.py:214
 msgid "FAL_SIMULATION_FLOURESCENCE_2"
 msgstr "To simplify the chart reading process, we will relativize the fluorescence values to their maximum. Unfortunately, this will result in a more complex code. We will demonstrate how to achieve this by extracting the simulation data from `modelbase`. However, there are several methods to accomplish this. It is worth noting that the graph will appear slightly different due to `modelbase` modifying certain plot aspects for faster processing. Nonetheless, we will ensure the diagram is aesthetically pleasing in the end." 
 
-#: pages/first_analysis.py:688
-#: pages/first_analysis.py:688
+#: pages/first_analysis.py:237
 msgid "FAL_SIMULATION_PHASES_HEADER"
 msgstr "##### Different Phases and Saturating Pulses" 
 
 # Grammarly checked
-#: pages/first_analysis.py:689
-#: pages/first_analysis.py:689
+#: pages/first_analysis.py:238
 msgid "FAL_SIMULATION_PHASES_1"
 msgstr "We can address the last two issues in one code by starting each phase with a saturating pulse. However, we need to make some decisions regarding:\n"
 "\n - The duration of our simulation\n"
@@ -1128,66 +914,54 @@ msgstr "We can address the last two issues in one code by starting each phase wi
 "\n - The number of saturating pulses we want during the light phase.\n"
 "\n The code below displays our selected values, but feel free to use your preferred values and observe the outcome. This is what this website also makes more straightforward for you at the bottom of the page." 
 
-#: pages/first_analysis.py:712
-#: pages/first_analysis.py:712
+#: pages/first_analysis.py:261
 msgid "FAL_SIMULATION_PRETTY_HEADER"
 msgstr "##### Making It Pretty" 
 
 # Grammarly checked
-#: pages/first_analysis.py:713
-#: pages/first_analysis.py:713
+#: pages/first_analysis.py:262
 msgid "FAL_SIMULATION_PRETTY_1"
 msgstr "The simulation currently displays all the desired information. To enhance its visual appeal and comprehension, we can utilize the `matplotlib` library to create a polished graph resembling the one at the bottom of the page. While we won't provide a detailed walkthrough, you can still view the code we used." 
 
 
 
 #: pages/plant_memory.py:380
-#: pages/plant_memory.py:380
 msgid "MEM_HEADLINE_BRAIN"
 msgstr "# Plant Light Memory"
 
 # Grammarly checked
 #: pages/plant_memory.py:387
-#: pages/plant_memory.py:387
 msgid "MEM_INTRODUCTION_BRAIN"
 msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually *trained* to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called **short-term light memory**, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own **memory experiments**. Go ahead; you can simulate different scenarios using the seven sliders below. Do you see how the fluorescence signal differs between different experiment phases? By changing the conversion rates to Zeaxanthin and Violaxanthin, you are also able to play around with a mutated version of the plant, where you can change the memory of the plant."
 
-#: pages/plant_memory.py:260
 #: pages/plant_memory.py:260
 msgid "MEM_SLIDER_TRAINING"
 msgstr "Training phase in minutes"
 
 #: pages/plant_memory.py:262
-#: pages/plant_memory.py:262
 msgid "MEM_SLIDER_RELAXATION"
 msgstr "Relaxation phase in minutes"
 
-#: pages/plant_memory.py:264
 #: pages/plant_memory.py:264
 msgid "MEM_SLIDER_MEMORY"
 msgstr "Memory phase in minutes"
 
 #: pages/plant_memory.py:113
-#: pages/plant_memory.py:113
 msgid "MEM_ANNO_TRAINING"
 msgstr "Training"
 
-#: pages/plant_memory.py:113
 #: pages/plant_memory.py:113
 msgid "MEM_ANNO_RELAXATION"
 msgstr "Relaxation"
 
 #: pages/plant_memory.py:113
-#: pages/plant_memory.py:113
 msgid "MEM_ANNO_MEMORY"
 msgstr "Memory"
 
 #: pages/plant_memory.py:393
-#: pages/plant_memory.py:393
 msgid "MEM_TIP1"
 msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
 
-#: pages/plant_memory.py:395
 #: pages/plant_memory.py:395
 msgid "MEM_TIP2"
 msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
@@ -1196,12 +970,10 @@ msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can
 
 #: Conclusion
 #: pages/conclusion.py:13
-#: pages/conclusion.py:13
 msgid "CON_HEADLINE_CONCLUSION"
 msgstr "# Take Home Messages"
 
 # Grammarly checked
-#: pages/conclusion.py:15
 #: pages/conclusion.py:15
 msgid "CON_CONCLUSION_TEXT_ONE"
 msgstr "We hope you have received a thorough introduction to the captivating realm of (computational) plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. We hope we could show you the following:\n"
@@ -1209,7 +981,6 @@ msgstr "We hope you have received a thorough introduction to the captivating rea
 "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point, like in the figure below."
 
 # Grammarly checked     
-#: pages/conclusion.py:19
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
