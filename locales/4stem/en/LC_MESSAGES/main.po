@@ -51,12 +51,12 @@ msgstr "Seconds between saturating pulse during light phase"
 #: pages/first_analysis.py:371
 #: pages/plant_memory.py:272
 msgid "SLIDER_ACTIVATION"
-msgstr ""
+msgstr "Conversion rate to Zeaxanthin in percent of default"
 
 #: pages/first_analysis.py:380
 #: pages/plant_memory.py:278
 msgid "SLIDER_DEACTIVATION"
-msgstr ""
+msgstr "Conversion rate to Violaxanthin in percent of default"
 
 # Grammarly checked
 #: Start.py:14
@@ -96,12 +96,12 @@ msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:345
 msgid "AXIS_NPQ"
-msgstr ""
+msgstr "NPQ [a.u.]"
 
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:360
 msgid "AXIS_PHIPSII"
-msgstr ""
+msgstr "Φ(PSII)"
 
 
 
@@ -527,7 +527,7 @@ msgstr "To effectively solve each ODE, it is crucial to consider the rates invol
 #: pages/model_explain.py:251
 #: pages/model_explain.py:61
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"
-msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
+msgstr ""
 
 #: pages/model_explain.py:73
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"
@@ -804,11 +804,11 @@ msgstr "Test duration in minutes"
 
 #: pages/first_analysis.py:376
 msgid "FAL_SLIDER_DARKLENGTH"
-msgstr ""
+msgstr "Length of the dark phase in seconds"
 
 #: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
-msgstr ""
+msgstr "Light intensity of saturating pulse in μmol m⁻² s⁻¹"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74
