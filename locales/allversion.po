@@ -1478,7 +1478,7 @@ msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE"
 #: pages/model_explain.py:219
 #: pages/model_explain.py:46
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"
-4stem-en msgstr "To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S become I at a specific infection rate (v<sub>1</sub>) and the I become R at a specific recovery rate (v<sub>2</sub>)."
+4stem-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""
@@ -1494,7 +1494,7 @@ msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"
 #: pages/model_explain.py:236
 #: pages/model_explain.py:50
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
-4stem-en msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
+4stem-en msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own. Here we also gave you the possibility to use an interactive version of the Model."
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""
@@ -1509,7 +1509,7 @@ msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
 #: pages/model_explain.py:251
 #: pages/model_explain.py:61
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"
-4stem-en msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own."
+4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""
@@ -1535,7 +1535,7 @@ msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"
 
 #: pages/model_explain.py:80
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
-4stem-en msgstr ""
+4stem-en msgstr "Initial amounts of S, I, and R"
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""
@@ -1548,7 +1548,7 @@ msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
 
 #: pages/model_explain.py:123
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
-4stem-en msgstr ""
+4stem-en msgstr "Simulation time in months"
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""
@@ -1561,7 +1561,7 @@ msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
 
 #: pages/model_explain.py:132
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
-4stem-en msgstr ""
+4stem-en msgstr "Infection rate β"
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""
@@ -1574,7 +1574,7 @@ msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
 
 #: pages/model_explain.py:141
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
-4stem-en msgstr ""
+4stem-en msgstr "Recovery rate γ"
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""
@@ -1602,7 +1602,7 @@ msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
 # Grammarly checked
 #: pages/model_explain.py:261
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
-4stem-en msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example makes it possible to be solved on pen and paper. However, we have used Python to make our lives easier. You can find it in the other tabs over this section."
+4stem-en msgstr ""
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""
@@ -1959,7 +1959,7 @@ msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
 # Grammarly checked
 #: pages/model_explain.py:258
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
-4stem-en msgstr ""
+4stem-en msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example makes it possible to be solved on pen and paper. However, we have used Python to make our lives easier. You can find it in the other tabs over this section."
 4stem-de msgstr ""
 4stem-fr msgstr ""
 4stem-pl msgstr ""

@@ -366,7 +366,7 @@ def make_page(text: Callable[[str], str]) -> None:
         )
     with col2:
         slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
-
+        
     if version == "4Bio":
         col1, col2 = st.columns(2)
         with col1:

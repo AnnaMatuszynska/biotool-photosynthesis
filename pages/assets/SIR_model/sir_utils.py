@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from cycler import cycler
 from modelbase.ode import Model, Simulator
+from pages.assets.model._model_functions import plot_stylings
 
 def infection(beta, s, i, r):
     return beta * s * i / (s + i + r)
@@ -29,7 +30,6 @@ def get_results_dict_SIRModel(beta_param, gamma_param, S_initial, I_initial, R_i
 
 def get_plot_SIRModel(values_dict):
     
-    text_color = "#727682"
     alpha_old = 0.5
     
     style_dict = {
@@ -65,20 +65,10 @@ def get_plot_SIRModel(values_dict):
         },
     }
     
-    with plt.rc_context(
-    {
-        "axes.spines.right": False,
-        "axes.edgecolor": text_color,
-        "axes.spines.top": False,
-        "font.size": 12.0,
-        "text.color": text_color,
-        "axes.labelcolor": text_color,
-        "xtick.color": text_color,
-        "ytick.color": text_color,
-        "grid.color": text_color,
-        "font.weight": 'bold',
-    }
-        ):
+    style_plot = plot_stylings()
+    style_plot['axes.spines.top'] = False
+    
+    with plt.rc_context(style_plot):
         
         fig, ax = plt.subplots()
         

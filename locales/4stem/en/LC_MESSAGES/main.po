@@ -514,14 +514,14 @@ msgstr "Let us imagine a scenario where a new highly contagious but overall harm
 #: pages/model_explain.py:219
 #: pages/model_explain.py:46
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"
-msgstr "To know how their population will look in a few months, they try a new method they heard from Earth about, namely **mathematical modeling**. To start, you should create a scheme for your problem; in this case, the S become I at a specific infection rate (v<sub>1</sub>) and the I become R at a specific recovery rate (v<sub>2</sub>)."
+msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
 
 
 # Grammarly checked
 #: pages/model_explain.py:236
 #: pages/model_explain.py:50
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
-msgstr "With this scheme, you have already successfully modeled your problem; you just now have to be able to use it. To do that, you have to see what information you want to gather from your model, which is, in this case, the change in the population depending on the time. A handy mathematical tool to depict the change of something depending on the change of another specific value is the so-called Ordinary Differential Equation&nbsp;(ODE). Using differential equations, you can describe the relationship between the time and the change in the number of people in each category, so overall, there are three equations. This set of three equations is called a system of ODEs and will be solved numerically using an integrator. So let's apply this method to our example of Planet-X, first by creating the ODE system:"
+msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own. Here we also gave you the possibility to use an interactive version of the Model."
 
 # Grammarly checked
 #: pages/model_explain.py:251
@@ -535,19 +535,19 @@ msgstr ""
 
 #: pages/model_explain.py:80
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
-msgstr ""
+msgstr "Initial amounts of S, I, and R"
 
 #: pages/model_explain.py:123
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
-msgstr ""
+msgstr "Simulation time in months"
 
 #: pages/model_explain.py:132
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
-msgstr ""
+msgstr "Infection rate β"
 
 #: pages/model_explain.py:141
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
-msgstr ""
+msgstr "Recovery rate γ"
 
 # Grammarly checked
 #: pages/model_explain.py:254
@@ -557,7 +557,7 @@ msgstr "The change in the population of Planet-X using the SIR model taken from 
 # Grammarly checked
 #: pages/model_explain.py:261
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
-msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example makes it possible to be solved on pen and paper. However, we have used Python to make our lives easier. You can find it in the other tabs over this section."
+msgstr ""
 
 #: pages/model_explain.py:352
 msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
@@ -680,7 +680,7 @@ msgstr "Which would have been a lot more cumbersome with the manual approach."
 # Grammarly checked
 #: pages/model_explain.py:258
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
-msgstr ""
+msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. The simplicity of our use example makes it possible to be solved on pen and paper. However, we have used Python to make our lives easier. You can find it in the other tabs over this section."
 
 
 
