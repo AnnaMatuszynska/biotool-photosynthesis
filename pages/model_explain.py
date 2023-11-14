@@ -13,6 +13,8 @@ from utils import (
     markdown_click,
     resetting_click_detector_setup,
 )
+from pages.assets.FCvB.FCvB_functions import steady_state_photosynthesis
+import numpy as np
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -311,6 +313,38 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             )
 
         st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
+        
+        col1__, col2__, col3__ = st.columns(3)
+        
+        with col1__:
+            slider_O = st.slider(
+                label='Intercellular chloroplast pO2 (O) [µbar]',
+                min_value = 100,
+                max_value=500,
+                value=210
+            )
+            
+        with col2__:
+            slider_J = st.slider(
+                label='Electron transport rate (J) [µmol m⁻² s⁻¹]',
+                min_value=50.0,
+                max_value=300.0,
+                value=124.4
+            )
+        with col3__:
+            slider_Tp = st.slider(
+                label='Inorganic phosphate supply rate (Tp) [µmol m⁻² s⁻¹]',
+                min_value=50.0,
+                max_value=300.0,
+                value=124.4
+            )
+            
+        fcvb_results = steady_state_photosynthesis(
+            Ci=np.linspace(0, 700, num= 7000),
+            O = slider_O,
+            J=slider_J,
+            Tp=slider_Tp
+        )
 
     with tab2:
         st.markdown(text("MDL_HEADLINE_E_PHOTOSYNTHESIS"))
