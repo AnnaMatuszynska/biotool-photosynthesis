@@ -51,12 +51,12 @@ msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
 #: pages/first_analysis.py:371
 #: pages/plant_memory.py:272
 msgid "SLIDER_ACTIVATION"
-msgstr ""
+msgstr "Umwandlungsrate zu Zeaxanthin in Prozent des Standardwerts"
 
 #: pages/first_analysis.py:380
 #: pages/plant_memory.py:278
 msgid "SLIDER_DEACTIVATION"
-msgstr ""
+msgstr "Umwandlungsrate zu Violaxanthin in Prozent des Standardwerts"
 
 # Grammarly checked
 #: Start.py:14
@@ -96,12 +96,12 @@ msgstr "Rel. Fluoreszenz (F/Fₘ) [a.u.]"
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:345
 msgid "AXIS_NPQ"
-msgstr ""
+msgstr "NPQ [a.u.]"
 
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:360
 msgid "AXIS_PHIPSII"
-msgstr ""
+msgstr "Φ(PSII)"
 
 
 
@@ -851,11 +851,11 @@ msgstr "Versuchsdauer in Minuten"
 
 #: pages/first_analysis.py:376
 msgid "FAL_SLIDER_DARKLENGTH"
-msgstr ""
+msgstr "Dauer der Dunkelphase in Sekunden"
 
 #: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
-msgstr ""
+msgstr "Lichtintensität des Sättigungsimpulses in μmol m⁻² s⁻¹"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74
