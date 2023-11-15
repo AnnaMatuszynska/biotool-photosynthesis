@@ -1,5 +1,6 @@
 import numpy as np
 from pages.assets.model._model_functions import plot_stylings
+import matplotlib.pyplot as plt
 
 def quadratic(a, b, c):
     '''
@@ -156,8 +157,65 @@ def steady_state_photosynthesis(Ci = 300,
     #The overal CO2 assimilation
     A = np.min([Ac, Aj, Ap], axis = 0)
     
-    return {'A': A, 'Ac': Ac, 'Aj': Aj, 'Ap': Ap}
+    return {'Ac': Ac, 'Aj': Aj, 'Ap': Ap, 'A': A}
 
-def make_FvCB_plot():
+def make_FvCB_plot(Ci, results, display_bools):
     
-    return
+    style_dict = {
+        'A': {
+            'color': '#45D689',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'A'
+        },
+        'Ac': {
+            'color': '#3740FA',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': '$\mathbf{A}_{\mathbf{c}}$'
+        },
+        'Aj': {
+            'color': '#FAD64A',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': '${\mathbf{A}_{\mathbf{j}}}$'
+        },
+        'Ap': {
+            'color': '#FA433E',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': '$\mathbf{A}_{\mathbf{p}}$'
+        }
+    }
+    
+    style_plot = plot_stylings()
+    style_plot.update({
+        "axes.spines.top": False
+    })
+    
+    with plt.rc_context(style_plot):
+        
+        fig, ax = plt.subplots()
+        
+        for key, value in display_bools.items():
+            if value:
+                ax.plot(
+                    Ci,
+                    results[key],
+                    color = style_dict[key]['color'],
+                    linestyle = style_dict[key]['linestyle'],
+                    alpha = style_dict[key]['alpha'],
+                    label = style_dict[key]['label'],
+                    linewidth=3
+                )
+    
+    plt.xlim(0)
+    plt.ylim(0)
+    
+    plt.xlabel('Intercellular CO$\mathbf{_2}$ [µbar]', weight= 'bold', size=12)
+    plt.ylabel('CO$\mathbf{_2}$ assimilation [µmol m⁻² s⁻¹]', weight= 'bold', size=12)
+    
+    plt.legend(loc = 'best', frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
+    
+    plt.tight_layout()
+    return fig
