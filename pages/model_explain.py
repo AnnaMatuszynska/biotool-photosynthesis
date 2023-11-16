@@ -15,6 +15,7 @@ from utils import (
 )
 from pages.assets.FCvB.FCvB_functions import steady_state_photosynthesis, make_FvCB_plot
 import numpy as np
+import pandas as pd
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -296,7 +297,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     with tab1:
         st.markdown(text("MDL_HEADLINE_FVCB"))
 
-        markdown_click("MDL_FVCB_1", text)
+        markdown_click("MDL_FVCB_1", text, unsafe_allow_html=True)
 
         if version == "4STEM":
             st.latex(
@@ -314,14 +315,18 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
         
+        st.markdown(text("MDL_FVCB_3"), unsafe_allow_html=True)
+        
+        if version=='4STEM':
+            st.markdown(text("MDL_FVCB_4"), unsafe_allow_html=True)
+        
         fcvb_sliders = st.container()
         
-        col1__, col2__, col3__, col4__ = st.columns([0.1,0.3,0.3,0.3])
+        col1__, col2__, col3__, col4__ = st.columns([0.08, 0.3, 0.3, 0.32])
         
         with col1__:
             
-            st.write('Precision')
-            
+            st.markdown(text("MDL_FVCB_SLIDERS_PRECISION"))
             
         with col2__:
             precise_O = st.number_input(
@@ -349,52 +354,73 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             )
         
         with fcvb_sliders:
-            col1___, col2___, col3___, col4___ = st.columns([0.1,0.3,0.3,0.3])
+            col1___, col2___, col3___, col4___ = st.columns([0.08, 0.3, 0.3, 0.32])
             
             with col1___:
-                st.write('Sliders')
+                st.markdown(text("MDL_FVCB_SLIDERS_TEXT"))
             with col2___:
                 slider_O = st.slider(
-                    label='Intercellular pO2 [mbar]',
+                    label=text("MDL_FVCB_SLIDERS_O"),
                     min_value=100,
                     max_value=500,
                     value=precise_O
                 )
             with col3___:
                 slider_J = st.slider(
-                    label='Electron transport rate (J) [µmol m⁻² s⁻¹]',
+                    label=text("MDL_FVCB_SLIDERS_J"),
                     min_value=50.0,
                     max_value=300.0,
                     value=precise_J
                 )    
             with col4___:
                 slider_Tp = st.slider(
-                    label='Inorganic phosphate supply rate (Tp) [µmol m⁻² s⁻¹]',
+                    label=text("MDL_FVCB_SLIDERS_Tp"),
                     min_value=100,
                     max_value=500,
                     value=precise_Tp
                 )
                 
-        col1____, col2____ = st.columns([1, 2])
+        col1____, col2____, col3____ = st.columns([0.3, 0.2, 0.5])
         
         with col1____:
+            st.markdown(
+                f'''
+                <div align="center"><strong>{text("MDL_FVCB_DEFAULT_PARAMETERS")}</strong></div>
+                ''',
+                unsafe_allow_html=True
+            )
+            
+            st.markdown(
+                f'''
+                | {text("MDL_FVCB_DEFAULT_PARAMETERS_VARIABLES")} | {text("MDL_FVCB_DEFAULT_PARAMETERS_VALUES")} | {text("MDL_FVCB_DEFAULT_PARAMETERS_UNITS")} |
+                | --- | --- | --- |
+                | V<sub>cmax</sub> | 80 | µmol m⁻² s⁻¹ |
+                | K<sub>c</sub> | 259 | µbar |
+                | K<sub>o</sub> | 179 | mbar |
+                | Γ<sub>*</sub> | 38.6 | µbar |
+                | R<sub>d</sub> | 1 | µmol m⁻² s⁻¹ |
+                ''',
+                unsafe_allow_html=True
+            )
+        
+        with col2____:
             toggle_A = st.toggle(
-                label='Display A?',
+                label=f'{text("MDL_FVCB_TOGGLE")} A?',
                 value=True,
             )
             toggle_Ac = st.toggle(
-                label='Display Ac?',
+                label=f'{text("MDL_FVCB_TOGGLE")} Ac?',
                 value=False,
             )
             toggle_Aj = st.toggle(
-                label='Display Aj?',
+                label=f'{text("MDL_FVCB_TOGGLE")} Aj?',
                 value=False,
             )
             toggle_Ap = st.toggle(
-                label='Display Ap?',
+                label=f'{text("MDL_FVCB_TOGGLE")} Ap?',
                 value=False,
             )
-        with col2____:
+        with col3____:
             fcvb_results = steady_state_photosynthesis(
                 Ci=np.linspace(0, 700, num= 7000),
                 O = slider_O,

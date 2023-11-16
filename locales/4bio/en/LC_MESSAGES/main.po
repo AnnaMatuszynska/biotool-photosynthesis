@@ -570,12 +570,53 @@ msgstr "### The Farquhar, von Caemmerer and Berry model"
 # Grammarly checked
 #: pages/model_explain.py:359
 msgid "MDL_FVCB_1"
-msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). C<sub>3</sub> you may ask? Actually, plants can perform their photosynthesis in a slightly different manner. Check the box below to learn more about the various forms of photosynthesis. The model was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (Ac), the electron transport limited rate (Aj), and the triphosphate limited rate (Ap), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results. Please use the <a href='#' id='4STEM'>4STEM</a> mode to see these equations."
+msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). C<sub>3</sub> you may ask? Actually, plants can perform their photosynthesis in a slightly different manner. Check the box below to learn more about the various forms of photosynthesis. The model was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (A<sub>c</sub>), the electron transport limited rate (A<sub>j</sub>), and the triphosphate limited rate (A<sub>p</sub>), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results. Please use the <a href='#' id='4STEM'>4STEM</a> mode to see these equations."
 
 #: pages/model_explain.py:375
 msgid "MDL_FVCB_2"
-msgstr "This model is widely popular among scientists as, despite its simplicity, it accurately captures the carbon assimilation rate. As you may have guessed, this model type differs from the SIR model we explained earlier. It doesn’t use any ODEs and, therefore, cannot show the change in time. It only shows the A specific for the parameter values chosen. It, thus, depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still considered one of the best due to its simplicity.\n"
-"\n Following the equations of the review by Caemmerer in 2013, we created an interactive model to compare with the other models in this application. As this model only depicts a steady-state, it is harder to show the same type of results like the SIR Model above. This is because they are two different types of modelling approaches, that are used for different cases. Our example of the FvCB will allow you to display the change of all three As (A<sub>c</sub>, A<sub>j</sub>, and A<sub>p</sub>), depending on the intracellular carbondioxide concentration. This model simplifies the photosynthetic constructt heavily, and therefore takes upon many assumptions. We too, are taking upon many assumptions, meaning we are showing the simplest version of this model, using the parameters extracted from the 2013 review."
+msgstr "This model is widely popular among scientists as, despite its simplicity, it accurately captures the carbon assimilation rate. As you may have guessed, this model type differs from the SIR model we explained earlier. It doesn’t use any ODEs and, therefore, cannot show the change in time. It only shows the A specific for the parameter values chosen. It, thus, depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still considered one of the best due to its simplicity."
+
+#: This can be copied to add new text entries with translations
+msgid "MDL_FVCB_3"
+msgstr "Following the equations of the review by Caemmerer in 2013, we created an interactive model to compare with the other models in this application. As this model only depicts a steady state, it is harder to show the same results as the SIR Model above. This is because they are two different types of modelling approaches that are used for other cases. Our example of the FvCB will allow you to display the change of all three As (A<sub>c</sub>, A<sub>j</sub>, and A<sub>p</sub>), depending on the intracellular carbon dioxide concentration. This model simplifies the photosynthetic construct heavily and, therefore, takes upon many assumptions. We, too, are taking upon many assumptions, meaning we are showing the simplest version of this model using the parameters extracted from the 2013 review."
+
+msgid "MDL_FVCB_4"
+msgstr ""
+
+msgid "MDL_FVCB_SLIDERS_PRECISION"
+msgstr "Precision"
+
+msgid "MDL_FVCB_SLIDERS_TEXT"
+msgstr "Sliders"
+
+msgid "MDL_FVCB_SLIDERS_O"
+msgstr "Intercellular pO2 [mbar]"
+
+msgid "MDL_FVCB_SLIDERS_J"
+msgstr "Electron transport rate (J) [µmol m⁻² s⁻¹]"
+
+msgid "MDL_FVCB_SLIDERS_Tp"
+msgstr "Inorganic phosphate supply rate (Tp) [µmol m⁻² s⁻¹]"
+
+#: pages/model_explain.py:384
+msgid "MDL_FVCB_DEFAULT_PARAMETERS"
+msgstr "Default Parameters used"
+
+#: pages/model_explain.py:384
+msgid "MDL_FVCB_DEFAULT_PARAMETERS_VARIABLES"
+msgstr "Variables"
+
+#: pages/model_explain.py:384
+msgid "MDL_FVCB_DEFAULT_PARAMETERS_VALUES"
+msgstr "Values"
+
+#: pages/model_explain.py:384
+msgid "MDL_FVCB_DEFAULT_PARAMETERS_UNITS"
+msgstr "Units"
+
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_TOGGLE"
+msgstr "Display"
 
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"

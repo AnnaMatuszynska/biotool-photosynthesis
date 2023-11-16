@@ -637,6 +637,48 @@ msgstr ""
 msgid "MDL_FVCB_2"
 msgstr ""
 
+#: This can be copied to add new text entries with translations
+msgid "MDL_FVCB_3"
+msgstr ""
+
+msgid "MDL_FVCB_4"
+msgstr ""
+
+msgid "MDL_FVCB_SLIDERS_PRECISION"
+msgstr ""
+
+msgid "MDL_FVCB_SLIDERS_TEXT"
+msgstr ""
+
+msgid "MDL_FVCB_SLIDERS_O"
+msgstr ""
+
+msgid "MDL_FVCB_SLIDERS_J"
+msgstr ""
+
+msgid "MDL_FVCB_SLIDERS_Tp"
+msgstr ""
+
+#: pages/model_explain.py:384
+msgid "MDL_FVCB_DEFAULT_PARAMETERS"
+msgstr ""
+
+#: pages/model_explain.py:384
+msgid "MDL_FVCB_DEFAULT_PARAMETERS_VARIABLES"
+msgstr ""
+
+#: pages/model_explain.py:384
+msgid "MDL_FVCB_DEFAULT_PARAMETERS_VALUES"
+msgstr ""
+
+#: pages/model_explain.py:384
+msgid "MDL_FVCB_DEFAULT_PARAMETERS_UNITS"
+msgstr ""
+
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_TOGGLE"
+msgstr ""
+
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
 msgstr ""
