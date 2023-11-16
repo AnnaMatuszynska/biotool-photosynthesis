@@ -564,6 +564,10 @@ msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
 msgstr "## Models of photosynthesis"
 
 #: pages/model_explain.py:357
+msgid "MDL_MODELS_OVERVIEW"
+msgstr "### The Farquhar, von Caemmerer and Berry model"
+
+#: pages/model_explain.py:357
 msgid "MDL_HEADLINE_FVCB"
 msgstr "### The Farquhar, von Caemmerer and Berry model"
 

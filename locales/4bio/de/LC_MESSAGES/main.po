@@ -625,6 +625,10 @@ msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
 msgstr ""
 
 #: pages/model_explain.py:357
+msgid "MDL_MODELS_OVERVIEW"
+msgstr ""
+
+#: pages/model_explain.py:357
 msgid "MDL_HEADLINE_FVCB"
 msgstr ""
 

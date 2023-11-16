@@ -291,6 +291,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_6"))
 
     st.markdown(text("MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"))
+    
+    st.markdown(text("MDL_MODELS_OVERVIEW"))
 
     tab1, tab2, tab3 = st.tabs(["FvCB", "e-photosynthesis", "Bellassio"])
 

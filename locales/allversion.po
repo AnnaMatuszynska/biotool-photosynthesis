@@ -1627,6 +1627,19 @@ msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
 4bio-es msgstr ""
 
 #: pages/model_explain.py:357
+msgid "MDL_MODELS_OVERVIEW"
+4stem-en msgstr "When doing modelling, the first step you should always do is to search for your problem, as you may already find your answers in the broad world of research. Sometimes you can find a model that completely covers your needs or at least one you can build on. Sharing past research is the basis of any science, and it is no different in computational modeling. In this section, we will briefly summarize three other models of photosynthesis, before you will be able to play with our own. While they are all mechanistic models, they have different approaches and goals. They vary in complexity, popularity and method, but all try to simulate the same thing. The carbon assimilation (A) of photosynthesis"
+4stem-de msgstr ""
+4stem-fr msgstr ""
+4stem-pl msgstr ""
+4stem-es msgstr ""
+4bio-en msgstr "### The Farquhar, von Caemmerer and Berry model"
+4bio-de msgstr ""
+4bio-fr msgstr ""
+4bio-pl msgstr ""
+4bio-es msgstr ""
+
+#: pages/model_explain.py:357
 msgid "MDL_HEADLINE_FVCB"
 4stem-en msgstr "### The Farquhar, von Caemmerer and Berry model"
 4stem-de msgstr ""
