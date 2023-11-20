@@ -4,6 +4,7 @@ from scipy.signal import find_peaks, peak_prominences
 import matplotlib.pyplot as plt
 from matplotlib import patches
 from typing import Callable
+import warnings
 
 def sim_model(
     updated_parameters, slider_time, slider_light, slider_pings, slider_saturate, slider_darklength
@@ -177,7 +178,7 @@ def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values,
     ax.add_patch(dark_patch)
     ax.add_patch(light_patch)
 
-    # Create and center legend
+    # Create and legend
     plt.legend(loc = 'best', ncols = 2, frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
 
     return fig
@@ -337,4 +338,482 @@ def make_both_plots(text: Callable[[str], str], xlabel1, xlabel2, ylabel_4Bio, y
     
     return fig_1, fig_2    
 
+def sim_model_memory(
+    updated_parameters,
+    slider_light,
+    slider_pings,
+    slider_saturate,
+    slider_darklength,
+    training_length,
+    relaxation_phase,
+    memory_length,
+):
+    m = get_model()
+    m.update_parameters(updated_parameters)
+    s = Simulator(m)
 
+    y0 = {"P": 0, "H": 6.32975752e-05, "E": 0, "A": 25.0, "Pr": 1, "V": 1}
+    s.initialise(y0)
+
+    length_pulse = 0.8
+    dark_light = 0
+    training_length = int(training_length)
+    relaxation_phase = int(relaxation_phase)
+
+    # Dark Period
+    if slider_darklength > 0:
+        simulate_period(
+            s=s,
+            starting_time=2,
+            length_phase=slider_darklength,
+            pulse_intervall=slider_pings,
+            starting_light=dark_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=dark_light,
+            dark_flag=True,
+        )
+    # Training
+    if training_length > 0:
+        simulate_period(
+            s=s,
+            starting_time=slider_darklength,
+            length_phase=training_length,
+            pulse_intervall=slider_pings,
+            starting_light=dark_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=slider_light,
+        )
+    # Relaxation phase 1
+    if relaxation_phase > 0:
+        simulate_period(
+            s=s,
+            starting_time=slider_darklength + training_length,
+            length_phase=slider_darklength + training_length + relaxation_phase - slider_pings,
+            pulse_intervall=slider_pings,
+            starting_light=slider_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=dark_light,
+            dark_flag=True,
+        )
+    # Relaxation phase 2
+    if relaxation_phase > 0:
+        simulate_period(
+            s=s,
+            starting_time=slider_darklength + training_length + relaxation_phase - slider_pings,
+            length_phase=slider_pings,
+            pulse_intervall=slider_pings,
+            starting_light=dark_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=dark_light,
+            dark_flag=True,
+        )
+    # Memory Phase
+    if memory_length > 0:
+        simulate_period(
+            s=s,
+            starting_time=slider_darklength + training_length + relaxation_phase,
+            length_phase=memory_length,
+            pulse_intervall=slider_pings,
+            starting_light=dark_light,
+            saturating_pulse=slider_saturate,
+            length_pulse=length_pulse,
+            during_light=slider_light,
+        )
+    # End
+    s.update_parameter("PFD", slider_light)
+    s.simulate(slider_darklength + training_length + relaxation_phase + memory_length)
+
+    sim_time = s.get_time()
+    sim_results = s.get_full_results_dict()
+    return sim_time, sim_results
+
+def simulate_period(s, starting_time, length_phase, pulse_intervall, starting_light, saturating_pulse, length_pulse, during_light, dark_flag = False):
+    warnings.filterwarnings("error", category= RuntimeWarning)
+    error_flag = True
+    
+    while error_flag == True:
+        try:
+            s.update_parameter("PFD", starting_light)
+            s.simulate(starting_time)
+            s.update_parameter("PFD", saturating_pulse)
+            s.simulate(starting_time + length_pulse)
+            
+            warnings.filterwarnings("default", category= RuntimeWarning)
+            error_flag = False
+        except RuntimeWarning:
+            starting_light += 0.001
+            
+    
+    num_pulses = int(length_phase/pulse_intervall)
+            
+    if dark_flag == False:
+        for i in range(num_pulses):
+            if i > 0:
+                new_timepoint = starting_time + pulse_intervall * i
+                s.update_parameter("PFD", during_light)
+                s.simulate(new_timepoint)
+                s.update_parameter("PFD", saturating_pulse)
+                s.simulate(new_timepoint + length_pulse)
+            
+    return
+
+def make_matplotlib_plot_memory_4STEM(
+    text: Callable[[str], str],
+    xlabel1,
+    xlabel2,
+    ylabel,
+    values,
+    dark_length,
+    width,
+    height,
+    training_length,
+    relaxation_length,
+    memory_length,
+):
+    max_time = dark_length + training_length + relaxation_length + memory_length
+
+    style_plot = plot_stylings()
+    style_plot.update({"figure.figsize": (width, height)})
+    
+    alpha_old = 0.5
+    
+    style_dict = {
+        'Fluo': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'New'
+        },
+        'old Fluo': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': 'Old'
+        }
+    }
+    
+    with plt.rc_context(style_plot):
+        
+        fig, ax = plt.subplots()
+        for i in ['old Fluo', 'Fluo']:
+            if values.get(i):
+                ax.plot(
+                    values[i][0],
+                    values[i][1],
+                    color = style_dict[i]['color'],
+                    linestyle = style_dict[i]['linestyle'],
+                    alpha = style_dict[i]['alpha'],
+                    label = style_dict[i]['label']
+                )
+                
+        # Create the top xaxis for the minutes
+        ax_top = ax.secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
+
+        # Add labels
+        ax.set_xlabel(xlabel1, weight = 'bold', size = 12)
+        ax.set_ylabel(ylabel, weight = 'bold', size = 12)
+        ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
+
+        # Add the dark phase length to the xticks
+        default_xticks = ax.get_xticks()
+        new_xticks = []
+        for i in range(len(default_xticks)):
+            try:
+                if default_xticks[i] > dark_length and default_xticks[i - 1] < dark_length:
+                    new_xticks.append(dark_length)
+                    new_xticks.append(default_xticks[i])
+                elif (
+                    default_xticks[i] > training_length + dark_length
+                    and default_xticks[i - 1] < training_length + dark_length
+                ):
+                    new_xticks.append(training_length + dark_length)
+                    new_xticks.append(default_xticks[i])
+                elif (
+                    default_xticks[i] > relaxation_length + training_length + dark_length
+                    and default_xticks[i - 1] < relaxation_length + training_length + dark_length
+                ):
+                    new_xticks.append(relaxation_length + training_length + dark_length)
+                    new_xticks.append(default_xticks[i])
+                else:
+                    new_xticks.append(default_xticks[i])
+            except:
+                pass
+
+        ax.set_xticks(new_xticks)
+
+        # Change the left and down limit
+        ax.set_xlim(0, max_time)
+        ax.set_ylim(0)
+
+        # Highlight dark and light phase
+        dark_patch = patches.Rectangle(
+            xy=(ax.get_xlim()[0], ax.get_ylim()[0]),
+            width=dark_length,
+            height=ax.get_ylim()[1],
+            facecolor="#1c5bc7",
+            alpha=0.3,
+        )
+        training_patch = patches.Rectangle(
+            xy=(dark_length, ax.get_ylim()[0]),
+            width=training_length,
+            height=ax.get_ylim()[1],
+            facecolor="#cf6d0c",
+            alpha=0.3,
+        )
+        relaxation_patch = patches.Rectangle(
+            xy=(training_length + dark_length, ax.get_ylim()[0]),
+            width=relaxation_length,
+            height=ax.get_ylim()[1],
+            facecolor="#1c5bc7",
+            alpha=0.3,
+        )
+        memory_patch = patches.Rectangle(
+            xy=(dark_length + training_length + relaxation_length, ax.get_ylim()[0]),
+            width=memory_length,
+            height=ax.get_ylim()[1],
+            facecolor="#D10A0D",
+            alpha=0.3,
+        )
+        
+        patch_list = [dark_patch, training_patch, relaxation_patch, memory_patch]
+        anno_list = [text("MEM_ANNO_TRAINING"), text("MEM_ANNO_RELAXATION"), text("MEM_ANNO_MEMORY")]
+
+        for i in range(len(patch_list)):
+            ax.add_patch(patch_list[i])
+            if i != 0 and patch_list[i].get_width() != 0:
+                rx, ry = patch_list[i].get_xy()
+                cx = rx + patch_list[i].get_width() / 2
+                cy = ry + patch_list[i].get_height() * 0.1
+                ax.annotate(
+                    anno_list[i - 1],
+                    (cx, cy),
+                    ha="center",
+                    va="center",
+                    color="#323336",
+                    alpha=1,
+                    backgroundcolor="#9296a4",
+                )
+
+        ax.grid(visible=True, which="both", axis="both", color="#9296a4", alpha=0.5)
+        
+        ax.legend(loc = 'best', ncols=2, frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
+    
+    return fig
+
+def make_matplotlib_plot_memory_4Bio(
+    text: Callable[[str], str],
+    xlabel1,
+    xlabel2,
+    ylabel,
+    values,
+    dark_length,
+    width,
+    height,
+    training_length,
+    relaxation_length,
+    memory_length,
+):
+    max_time = dark_length + training_length + relaxation_length + memory_length
+
+    style_plot = plot_stylings()
+    style_plot.update({"figure.figsize": (width, height)})
+    
+    alpha_old = 0.5
+    
+    style_dict = {
+        'Fluo': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'New'
+        },
+        'old Fluo': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': 'Old'
+        },
+        'NPQ': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'New'
+        },
+        'old NPQ': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': 'Old'
+        },
+        'PhiPSII': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': 'New'
+        },
+        'old PhiPSII': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': 'Old'
+        }
+    }
+    
+    with plt.rc_context(style_plot):
+        fig, axs = plt.subplot_mosaic(mosaic=[["A", "A"], ["B", "C"]], constrained_layout=True)
+        
+        graph_belong = {
+            'Fluo': 'A',
+            'NPQ': 'B',
+            'PhiPSII': 'C'
+        }
+        
+        for i in {'Fluo', 'NPQ', 'PhiPSII'}:
+            ax = axs[graph_belong[i]]
+            if values.get('old ' + i):
+                ax.plot(
+                        values['old ' + i][0],
+                        values['old ' + i][1],
+                        color = style_dict['old ' + i]['color'],
+                        linestyle = style_dict['old ' + i]['linestyle'],
+                        alpha = style_dict['old ' + i]['alpha'],
+                        label = style_dict['old ' + i]['label']
+                    )
+            ax.plot(
+                    values[i][0],
+                    values[i][1],
+                    color = style_dict[i]['color'],
+                    linestyle = style_dict[i]['linestyle'],
+                    alpha = style_dict[i]['alpha'],
+                    label = style_dict[i]['label']
+                )
+            
+            # Create the top xaxis for the minutes
+            ax_top = ax.secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
+            
+            # Add labels
+            ax.set_xlabel(xlabel1, weight = 'bold', size = 12)
+            ax.set_ylabel(ylabel[i], weight = 'bold', size = 12)
+            ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
+            
+            # Add the dark phase length to the xticks
+            default_xticks = ax.get_xticks()
+            new_xticks = []
+            for i in range(len(default_xticks)):
+                try:
+                    if default_xticks[i] > dark_length and default_xticks[i - 1] < dark_length:
+                        new_xticks.append(dark_length)
+                        new_xticks.append(default_xticks[i])
+                    elif (
+                        default_xticks[i] > training_length + dark_length
+                        and default_xticks[i - 1] < training_length + dark_length
+                    ):
+                        new_xticks.append(training_length + dark_length)
+                        new_xticks.append(default_xticks[i])
+                    elif (
+                        default_xticks[i] > relaxation_length + training_length + dark_length
+                        and default_xticks[i - 1] < relaxation_length + training_length + dark_length
+                    ):
+                        new_xticks.append(relaxation_length + training_length + dark_length)
+                        new_xticks.append(default_xticks[i])
+                    else:
+                        new_xticks.append(default_xticks[i])
+                except:
+                    pass
+
+            ax.set_xticks(new_xticks)
+
+            # Change the left and down limit
+            ax.set_xlim(0, max_time)
+            ax.set_ylim(0)
+
+            # Highlight dark and light phase
+            dark_patch = patches.Rectangle(
+                xy=(ax.get_xlim()[0], ax.get_ylim()[0]),
+                width=dark_length,
+                height=ax.get_ylim()[1],
+                facecolor="#1c5bc7",
+                alpha=0.3,
+            )
+            training_patch = patches.Rectangle(
+                xy=(dark_length, ax.get_ylim()[0]),
+                width=training_length,
+                height=ax.get_ylim()[1],
+                facecolor="#cf6d0c",
+                alpha=0.3,
+            )
+            relaxation_patch = patches.Rectangle(
+                xy=(training_length + dark_length, ax.get_ylim()[0]),
+                width=relaxation_length,
+                height=ax.get_ylim()[1],
+                facecolor="#1c5bc7",
+                alpha=0.3,
+            )
+            memory_patch = patches.Rectangle(
+                xy=(dark_length + training_length + relaxation_length, ax.get_ylim()[0]),
+                width=memory_length,
+                height=ax.get_ylim()[1],
+                facecolor="#D10A0D",
+                alpha=0.3,
+            )
+    
+            patch_list = [dark_patch, training_patch, relaxation_patch, memory_patch]
+            anno_list = [text("MEM_ANNO_TRAINING"), text("MEM_ANNO_RELAXATION"), text("MEM_ANNO_MEMORY")]
+
+            for i in range(len(patch_list)):
+                ax.add_patch(patch_list[i])
+                if i != 0 and patch_list[i].get_width() != 0:
+                    rx, ry = patch_list[i].get_xy()
+                    cx = rx + patch_list[i].get_width() / 2
+                    cy = ry + patch_list[i].get_height() * 0.1
+                    ax.annotate(
+                        anno_list[i - 1],
+                        (cx, cy),
+                        ha="center",
+                        va="center",
+                        color="#323336",
+                        alpha=1,
+                        backgroundcolor="#9296a4",
+                    )
+
+            ax.grid(visible=True, which="both", axis="both", color="#9296a4", alpha=0.5)
+            
+        axs[graph_belong['Fluo']].legend(loc = 'best', ncols=2, frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
+    
+    return fig
+
+def make_both_plots_memory(text: Callable[[str], str], xlabel1, xlabel2, ylabel_4Bio, ylabel_4STEM, session_state_values, slider_darklength, slider_training, slider_relaxation, slider_memory):
+    
+    fig_1 = make_matplotlib_plot_memory_4Bio(
+                text=text,
+                xlabel1=xlabel1,
+                xlabel2=xlabel2,
+                ylabel=ylabel_4Bio,
+                values=session_state_values,
+                dark_length=slider_darklength,
+                width=15,
+                height=6,
+                training_length=slider_training,
+                relaxation_length=slider_relaxation,
+                memory_length=slider_memory
+            )
+    
+    fig_2 = make_matplotlib_plot_memory_4STEM(
+                text=text,
+                xlabel1=xlabel1,
+                xlabel2=xlabel2,
+                ylabel=ylabel_4STEM,
+                values=session_state_values,
+                dark_length=slider_darklength,
+                width=15,
+                height=3,
+                training_length=slider_training,
+                relaxation_length=slider_relaxation,
+                memory_length=slider_memory
+            )
+    
+    return fig_1, fig_2
