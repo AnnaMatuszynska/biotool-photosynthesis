@@ -97,7 +97,7 @@ def plot_stylings():
     
     return stylings_dict
 
-def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height):
+def make_4STEM_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height):
     
     alpha_old = 0.5
     
@@ -183,7 +183,7 @@ def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values,
 
     return fig
 
-def make_4STEM_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height):
+def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height):
     
     alpha_old = 0.5
     
@@ -228,7 +228,7 @@ def make_4STEM_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values
     
     plot_style = plot_stylings()
     plot_style.update({"figure.figsize": (width, height)})
-    
+    print(ylabel)
     with plt.rc_context(plot_style):
         fig, axs = plt.subplot_mosaic(mosaic=[["A", "A"], ["B", "C"]], constrained_layout=True)
         
@@ -321,7 +321,7 @@ def make_both_plots(text: Callable[[str], str], xlabel1, xlabel2, ylabel_4Bio, y
                 max_time=slider_time * 60,
                 dark_length=slider_darklength,
                 width=15,
-                height=3
+                height=6
             )
     
     fig_2 = make_4STEM_plot(
@@ -333,7 +333,7 @@ def make_both_plots(text: Callable[[str], str], xlabel1, xlabel2, ylabel_4Bio, y
                 max_time=slider_time * 60,
                 dark_length=slider_darklength,
                 width=15,
-                height=6,
+                height=3,
             )
     
     return fig_1, fig_2    

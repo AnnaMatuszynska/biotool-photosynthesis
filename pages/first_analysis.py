@@ -424,8 +424,8 @@ def make_page(text: Callable[[str], str]) -> None:
                     text=text,
                     xlabel1=text("AXIS_TIME_S"),
                     xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel_4Bio=text("FLUO"),
-                    ylabel_4STEM={
+                    ylabel_4STEM=text("FLUO"),
+                    ylabel_4Bio={
                         "Fluo": text("FLUO"),
                         "NPQ": text("AXIS_NPQ"),
                         "PhiPSII": text("AXIS_PHIPSII"),
@@ -459,8 +459,8 @@ def make_page(text: Callable[[str], str]) -> None:
                     text=text,
                     xlabel1=text("AXIS_TIME_S"),
                     xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel_4Bio=text("FLUO"),
-                    ylabel_4STEM={
+                    ylabel_4STEM=text("FLUO"),
+                    ylabel_4Bio={
                         "Fluo": text("FLUO"),
                         "NPQ": text("AXIS_NPQ"),
                         "PhiPSII": text("AXIS_PHIPSII"),
