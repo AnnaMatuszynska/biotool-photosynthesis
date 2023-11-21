@@ -228,7 +228,7 @@ def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values,
     
     plot_style = plot_stylings()
     plot_style.update({"figure.figsize": (width, height)})
-    print(ylabel)
+    
     with plt.rc_context(plot_style):
         fig, axs = plt.subplot_mosaic(mosaic=[["A", "A"], ["B", "C"]], constrained_layout=True)
         
