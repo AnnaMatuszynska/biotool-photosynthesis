@@ -1,23 +1,25 @@
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 
-# Create a sample plot
-fig, ax = plt.subplots()
-line1, = ax.plot([1, 2, 3], label='Line 1')
-line2, = ax.plot([3, 2, 1], label='Liaadsadsada 2')
+# Create a simple scatter plot
+x_values = [1, 2, 3, 4, 5]
+y_values = [2, 3, 5, 7, 11]
+plt.scatter(x_values, y_values, label='Scatter Plot')
 
-# Add legend with two columns
-legend = ax.legend(loc='upper left', bbox_to_anchor=(0, 1), ncols=2)
+# Define the coordinates for the Line2D
+line_x = [1, 5]
+line_y = [2, 11]
 
-for handle in legend.legend_handles:
-    print(handle.get_bbox().max)
-    print(legend.get_texts())
+# Create a Line2D object
+line = Line2D([0], [0], color='red', linewidth=2, linestyle='dashed', label='Line2D')
 
-# Get the legend frame width
-legend_width = ax.get_legend().get_frame().get_width()
+# Set labels and title
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Line2D at Specific Coordinates')
 
-# Calculate the width of each column
-column_width = legend_width / 2
+# Add a legend
+legend = plt.legend([line], ['Hello'])
 
-print(f"The width of each legend column is: {column_width}")
-
+# Show the plot
 plt.show()

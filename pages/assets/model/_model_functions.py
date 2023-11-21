@@ -915,15 +915,6 @@ def make_plot(
             variable_numbers_old = f"{variables['old slider_light']}\n{variables['old slider_saturate']}"
         
         legend = axs['D'].legend(custom_legend_lines, custom_legend_text, ncols=2, frameon = False, labelcolor = 'linecolor', loc = 'right', bbox_to_anchor = (1, 1))
-        
-        for handle in legend.legend_handles:
-            bbox = handle.get_bbox()
-            x, y, handle_width, handle_height = bbox.x0, bbox.y0, bbox.width, bbox.height
-            if handle.get_label() == new_label:
-                variable_numbers = variable_numbers_new
-            else:
-                variable_numbers = variable_numbers_old
-            axs['D'].text()
                 
         variable_text = "LP [μmol m⁻² s⁻¹]\nSP [μmol m⁻² s⁻¹]"
         
