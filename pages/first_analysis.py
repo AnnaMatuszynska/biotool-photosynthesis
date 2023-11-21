@@ -2,7 +2,7 @@ import numpy as np
 import streamlit as st
 import time
 from pages._sidebar import make_sidebar
-from pages.assets.model._model_functions import calculate_results_to_plot, make_both_plots, sim_model
+from pages.assets.model._model_functions import calculate_results_to_plot, make_both_plots, sim_model, make_plot
 from pathlib import Path
 from typing import Callable
 from utils import (
@@ -402,6 +402,17 @@ def make_page(text: Callable[[str], str]) -> None:
         slider_saturate = 5000
 
     col1_, col2_ = st.columns(2)
+    
+    if "model_sliders" not in st.session_state:
+        st.session_state["model_sliders"] = {
+            'slider_light': slider_light,
+            'slider_saturate': slider_saturate
+        }
+    else:
+        st.session_state["model_sliders"].update({
+            'slider_light': slider_light,
+            'slider_saturate': slider_saturate
+        })
 
     with col1_:
         if st.button("Start the simulation", type="primary", use_container_width=True):
@@ -420,19 +431,41 @@ def make_page(text: Callable[[str], str]) -> None:
                 else:
                     st.session_state["model_results"].update(calculate_results_to_plot(sim_time, sim_results))
 
-                fig_4Bio, fig_4STEM = make_both_plots(
-                    text=text,
+                fig_4Bio = make_plot(
+                    values=st.session_state["model_results"],
+                    variables=st.session_state["model_sliders"],
+                    version='4Bio',
+                    width=15,
+                    height=6,
                     xlabel1=text("AXIS_TIME_S"),
                     xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel_4STEM=text("FLUO"),
-                    ylabel_4Bio={
+                    ylabel={
                         "Fluo": text("FLUO"),
                         "NPQ": text("AXIS_NPQ"),
                         "PhiPSII": text("AXIS_PHIPSII"),
                     },
-                    session_state_values=st.session_state["model_results"],
-                    slider_time=slider_time,
-                    slider_darklength=slider_darklength,
+                    dark_length=slider_darklength,
+                    max_time=slider_time * 60,
+                    new_label=text("PLOTS_LABEL_NEW"),
+                    old_label=text("PLOTS_LABEL_OLD")
+                )
+                fig_4STEM = make_plot(
+                    values=st.session_state["model_results"],
+                    variables=st.session_state["model_sliders"],
+                    version='4STEM',
+                    width=15,
+                    height=3,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel={
+                        "Fluo": text("FLUO"),
+                        "NPQ": text("AXIS_NPQ"),
+                        "PhiPSII": text("AXIS_PHIPSII"),
+                    },
+                    dark_length=slider_darklength,
+                    max_time=slider_time * 60,
+                    new_label=text("PLOTS_LABEL_NEW"),
+                    old_label=text("PLOTS_LABEL_OLD")
                 )
 
                 st.session_state["fig_4Bio"] = fig_4Bio
@@ -443,6 +476,12 @@ def make_page(text: Callable[[str], str]) -> None:
                     old_results.update({f"old {key}": value})
 
                 st.session_state["model_results"].update(old_results)
+                
+                old_sliders = {}
+                for key, value in st.session_state["model_sliders"].items():
+                    old_sliders.update({f"old {key}": value})
+
+                st.session_state["model_sliders"].update(old_sliders)
     with col2_:
         if st.button(label="Reset Graph", use_container_width=True):
             if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
@@ -455,19 +494,41 @@ def make_page(text: Callable[[str], str]) -> None:
                         alert.empty()
                         break
 
-                fig_4Bio, fig_4STEM = make_both_plots(
-                    text=text,
+                fig_4Bio = make_plot(
+                    values=st.session_state["model_results"],
+                    variables=st.session_state["model_sliders"],
+                    version='4Bio',
+                    width=15,
+                    height=6,
                     xlabel1=text("AXIS_TIME_S"),
                     xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel_4STEM=text("FLUO"),
-                    ylabel_4Bio={
+                    ylabel={
                         "Fluo": text("FLUO"),
                         "NPQ": text("AXIS_NPQ"),
                         "PhiPSII": text("AXIS_PHIPSII"),
                     },
-                    session_state_values=st.session_state["model_results"],
-                    slider_time=slider_time,
-                    slider_darklength=slider_darklength,
+                    dark_length=slider_darklength,
+                    max_time=slider_time * 60,
+                    new_label=text("PLOTS_LABEL_NEW"),
+                    old_label=text("PLOTS_LABEL_OLD")
+                )
+                fig_4STEM = make_plot(
+                    values=st.session_state["model_results"],
+                    variables=st.session_state["model_sliders"],
+                    version='4STEM',
+                    width=15,
+                    height=3,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel={
+                        "Fluo": text("FLUO"),
+                        "NPQ": text("AXIS_NPQ"),
+                        "PhiPSII": text("AXIS_PHIPSII"),
+                    },
+                    dark_length=slider_darklength,
+                    max_time=slider_time * 60,
+                    new_label=text("PLOTS_LABEL_NEW"),
+                    old_label=text("PLOTS_LABEL_OLD")
                 )
 
                 st.session_state["fig_4Bio"] = fig_4Bio
@@ -478,6 +539,12 @@ def make_page(text: Callable[[str], str]) -> None:
                     old_results.update({f"old {key}": value})
 
                 st.session_state["model_results"].update(old_results)
+                
+                old_sliders = {}
+                for key, value in st.session_state["model_sliders"].items():
+                    old_sliders.update({f"old {key}": value})
+
+                st.session_state["model_sliders"].update(old_sliders)
 
     if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
         if version == "4Bio":
