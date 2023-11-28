@@ -285,6 +285,21 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("FAL_TIPP1"))
     st.markdown(text("FAL_TIPP2"))
 
+    with st.expander("See how to interpret your modelling results"):
+        st.markdown("### Graphs with one result")
+        include_image(str(Path("pictures/explanation_graph_oneresult.png")), img_width=1)
+        st.markdown(
+            "We can look at the graph in three phases:\n"
+            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is 'F0'. We then simulate a saturating light pulse which rapidly inceases the fluorescence up to the peak value 'Fm'. Fm should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. We see that the simulated fluorescence decreases back to the F0-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
+            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level 'Fm'' is the same as Fm, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F0. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
+            "3. Indeed, when we proceed to give another saturating pulse, we see that the new maximl fluorescence Fm' is noticably lower than Fm, show ing uns that non-photochemical quenching has been activated and is funnelling excitation energy away from both fluorescence and photosynthesis. You can find this observation directly reflected in the formula to estimate NPQ:"
+        )
+        st.latex("NPQ = \frac{F_m - F_m'}{F_m'}")
+
+        st.markdown("### Graphs with old and new results")
+        include_image(str(Path("pictures/explanation_graph_tworesults.png")), img_width=1)
+        st.markdown("In this case, we ")
+
     # Add guiding questions:
     with st.expander(
         "Having trouble connecting the simulation results to biology? Try our **guiding questions**"
@@ -366,7 +381,7 @@ def make_page(text: Callable[[str], str]) -> None:
         )
     with col2:
         slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
-        
+
     if version == "4Bio":
         col1, col2 = st.columns(2)
         with col1:
