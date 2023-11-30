@@ -474,11 +474,11 @@ def make_page(text: Callable[[str], str]) -> bool:
                         plot_variables = {
                             'New': st.session_state['model_variables']['New']
                         }
-                        
+                    
                     fig_4Bio = make_plot(
                         values=plot_values,
                         variables=plot_variables,
-                        version = version,
+                        version = '4Bio',
                         width = 15,
                         height = 6,
                         xlabel1=text("AXIS_TIME_S"),
@@ -493,19 +493,36 @@ def make_page(text: Callable[[str], str]) -> bool:
                         new_label = text("NEW_LABEL"),
                         old_label = text("OLD_LABEL")
                     )
+                    
+                    fig_4STEM = make_plot(
+                        values=plot_values,
+                        variables=plot_variables,
+                        version = '4STEM',
+                        width = 15,
+                        height = 3,
+                        xlabel1=text("AXIS_TIME_S"),
+                        xlabel2=text("AXIS_TIME_MIN"),
+                        ylabel={
+                            "Fluo": text("FLUO")
+                        },
+                        dark_length=slider_darklength,
+                        max_time=slider_time*60,
+                        new_label = text("NEW_LABEL"),
+                        old_label = text("OLD_LABEL")
+                    )
 
                     st.session_state["fig_4Bio"] = fig_4Bio
-                    #st.session_state["fig_4STEM"] = fig_4STEM
+                    st.session_state["fig_4STEM"] = fig_4STEM
 
                 old_results = {}
                 for key, value in st.session_state["model_results"].items():
                     old_results.update({f"old {key}": value})
 
-                    st.session_state["model_results"].update(old_results)
-                    
-                    st.session_state["model_variables"].update({
-                        'Old': {k:v for k,v in st.session_state["model_variables"]['New'].items()
-                    }})
+                st.session_state["model_results"].update(old_results)
+                
+                st.session_state["model_variables"].update({
+                    'Old': {k:v for k,v in st.session_state["model_variables"]['New'].items()
+                }})
         # with col2_:
         #     if st.button(label="Reset Graph", use_container_width=True):
         #         if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
@@ -542,13 +559,13 @@ def make_page(text: Callable[[str], str]) -> bool:
 
         #             st.session_state["model_results"].update(old_results)
 
-        if "fig_4Bio" in st.session_state or "fig_4STEM" in st.session_state:
+        if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
             if version == "4Bio":
                 showed_fig = st.session_state["fig_4Bio"]
             else:
                 showed_fig = st.session_state["fig_4STEM"]
 
-                st.pyplot(showed_fig, transparent=True)
+            st.pyplot(showed_fig, transparent=True)
 
             return see_interpr
 
