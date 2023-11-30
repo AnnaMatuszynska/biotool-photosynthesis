@@ -571,11 +571,11 @@ msgstr ""
 msgid "MDL_FVCB_1"
 msgstr ""
 
-#: pages/model_explain.py:375
+#: pages/model_explain.py:318
 msgid "MDL_FVCB_2"
 msgstr ""
 
-#: This can be copied to add new text entries with translations
+#: pages/model_explain.py:320
 msgid "MDL_FVCB_3"
 msgstr ""
 
