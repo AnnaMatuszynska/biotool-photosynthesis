@@ -430,95 +430,62 @@ def make_page(text: Callable[[str], str]) -> bool:
 
         with col1_:
             # if st.button("Start the simulation", type="primary", use_container_width=True):
-            if st.form_submit_button("Start the simulation", type="primary", use_container_width=True):
-                with st.spinner(text("SPINNER")):
-                    sim_time, sim_results = sim_model(
-                        updated_parameters,
-                        slider_time,
-                        slider_light,
-                        slider_pings,
-                        slider_saturate,
-                        slider_darklength,
-                    )
+            submitted = st.form_submit_button("Start the simulation", type="primary", use_container_width=True)
+        if submitted:
+            with st.spinner(text("SPINNER")):
+                time.sleep(0.1)
+                sim_time, sim_results = sim_model(
+                    updated_parameters,
+                    slider_time,
+                    slider_light,
+                    slider_pings,
+                    slider_saturate,
+                    slider_darklength,
+                )
 
-                    if "model_results" not in st.session_state:
-                        st.session_state["model_results"] = calculate_results_to_plot(sim_time, sim_results)
-                    else:
-                        st.session_state["model_results"].update(calculate_results_to_plot(sim_time, sim_results))
+                if "model_results" not in st.session_state:
+                    st.session_state["model_results"] = calculate_results_to_plot(sim_time, sim_results)
+                else:
+                    st.session_state["model_results"].update(calculate_results_to_plot(sim_time, sim_results))
 
-                    if show_old:
-                        plot_values = st.session_state["model_results"]
-                    else:
-                        plot_values = {k:v for k,v in st.session_state["model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
+                if show_old:
+                    plot_values = st.session_state["model_results"]
+                else:
+                    plot_values = {k:v for k,v in st.session_state["model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
 
-                    fig_4Bio, fig_4STEM = make_both_plots(
-                        text=text,
-                        xlabel1=text("AXIS_TIME_S"),
-                        xlabel2=text("AXIS_TIME_MIN"),
-                        ylabel_4STEM=text("FLUO"),
-                        ylabel_4Bio={
-                            "Fluo": text("FLUO"),
-                            "NPQ": text("AXIS_NPQ"),
-                            "PhiPSII": text("AXIS_PHIPSII"),
-                        },
-                        session_state_values=plot_values,
-                        slider_time=slider_time,
-                        slider_darklength=slider_darklength,
-                    )
+                fig_4Bio, fig_4STEM = make_both_plots(
+                    text=text,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel_4STEM=text("FLUO"),
+                    ylabel_4Bio={
+                        "Fluo": text("FLUO"),
+                        "NPQ": text("AXIS_NPQ"),
+                        "PhiPSII": text("AXIS_PHIPSII"),
+                    },
+                    session_state_values=plot_values,
+                    slider_time=slider_time,
+                    slider_darklength=slider_darklength,
+                )
 
-                    st.session_state["fig_4Bio"] = fig_4Bio
-                    st.session_state["fig_4STEM"] = fig_4STEM
+                st.session_state["fig_4Bio"] = fig_4Bio
+                st.session_state["fig_4STEM"] = fig_4STEM
 
-                    old_results = {}
-                    for key, value in st.session_state["model_results"].items():
-                        old_results.update({f"old {key}": value})
+                old_results = {}
+                for key, value in st.session_state["model_results"].items():
+                    old_results.update({f"old {key}": value})
 
-                    st.session_state["model_results"].update(old_results)
-        # with col2_:
-        #     if st.button(label="Reset Graph", use_container_width=True):
-        #         if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
-        #             for i in ["old Fluo", "old NPQ", "old PhiPSII"]:
-        #                 if st.session_state["model_results"].get(i):
-        #                     st.session_state["model_results"].pop(i)
-        #                 else:
-        #                     alert = st.warning("Nothing to reset")
-        #                     time.sleep(1.5)
-        #                     alert.empty()
-        #                     break
+                st.session_state["model_results"].update(old_results)
 
-        #             fig_4Bio, fig_4STEM = make_both_plots(
-        #                 text=text,
-        #                 xlabel1=text("AXIS_TIME_S"),
-        #                 xlabel2=text("AXIS_TIME_MIN"),
-        #                 ylabel_4STEM=text("FLUO"),
-        #                 ylabel_4Bio={
-        #                     "Fluo": text("FLUO"),
-        #                     "NPQ": text("AXIS_NPQ"),
-        #                     "PhiPSII": text("AXIS_PHIPSII"),
-        #                 },
-        #                 session_state_values=st.session_state["model_results"],
-        #                 slider_time=slider_time,
-        #                 slider_darklength=slider_darklength,
-        #             )
+            if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
+                if version == "4Bio":
+                    showed_fig = st.session_state["fig_4Bio"]
+                else:
+                    showed_fig = st.session_state["fig_4STEM"]
 
-        #             st.session_state["fig_4Bio"] = fig_4Bio
-        #             st.session_state["fig_4STEM"] = fig_4STEM
+                st.pyplot(showed_fig, transparent=True)
 
-        #             old_results = {}
-        #             for key, value in st.session_state["model_results"].items():
-        #                 old_results.update({f"old {key}": value})
-
-        #             st.session_state["model_results"].update(old_results)
-
-        if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
-            if version == "4Bio":
-                showed_fig = st.session_state["fig_4Bio"]
-            else:
-                showed_fig = st.session_state["fig_4STEM"]
-
-            st.pyplot(showed_fig, transparent=True)
-
-        return see_interpr
+            return see_interpr
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:

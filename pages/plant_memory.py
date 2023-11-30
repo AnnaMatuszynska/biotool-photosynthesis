@@ -15,6 +15,7 @@ from utils import (
 )
 from pages.assets.model._model_functions import make_matplotlib_plot_memory_4STEM, sim_model_memory, calculate_results_to_plot, make_both_plots_memory
 import time
+import datetime
 
 def make_page(text: Callable[[str], str], version: str) -> None:
     st.markdown(text("MEM_HEADLINE_BRAIN"))
@@ -24,7 +25,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
         st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
     markdown_click("MEM_INTRODUCTION_BRAIN", text)
-
+    
     col1, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/memory_protocol.png")
@@ -34,61 +35,69 @@ def make_page(text: Callable[[str], str], version: str) -> None:
     st.markdown(text("MEM_TIP2"))
     
     # slider zum Einstellen in zwei Spalten angeordnet
-    col1, col2 = st.columns(2)
-    with col1:
-        slider_light = st.slider(
-            text("SLIDER_LIGHT"),  # Exponenten können reinkopiert werden durch commands
-            100,
-            900,
-            key="light2",  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-        )
-    with col2:
-        slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=10, max_value=60, value=20)
-
-    col1, col2, col3 = st.columns([1, 1, 1], gap="medium")
-
-    with col1:
-        slider_training = st.slider(label=text("MEM_SLIDER_TRAINING"), min_value=0, max_value=5, value=2)
-    with col2:
-        slider_relaxation = st.slider(label=text("MEM_SLIDER_RELAXATION"), min_value=0, max_value=5, value=2)
-    with col3:
-        slider_memory = st.slider(label=text("MEM_SLIDER_MEMORY"), min_value=0, max_value=5, value=2)
-
-    if version == "4Bio":
-        slider_darklength = 60
-        slider_saturate = 5000
+    with st.form("memory_model"):
+        
         col1, col2 = st.columns(2)
         with col1:
-            slider_aktivation = st.select_slider(
-                text("SLIDER_ACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)),
-                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+            slider_light = st.slider(
+                text("SLIDER_LIGHT"),  # Exponenten können reinkopiert werden durch commands
+                100,
+                900,
+                key="light2",  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             )
         with col2:
-            slider_deaktivation = st.select_slider(
-                text("SLIDER_DEACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)),
-                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
+            slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=10, max_value=60, value=20)
 
-        updated_parameters = {
-            "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024
-            * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-    else:
-        updated_parameters = {
-            "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-        slider_darklength = 60
-        slider_saturate = 5000
+        col1, col2, col3 = st.columns([1, 1, 1], gap="medium")
+
+        with col1:
+            slider_training = st.slider(label=text("MEM_SLIDER_TRAINING"), min_value=0, max_value=5, value=2)
+        with col2:
+            slider_relaxation = st.slider(label=text("MEM_SLIDER_RELAXATION"), min_value=0, max_value=5, value=2)
+        with col3:
+            slider_memory = st.slider(label=text("MEM_SLIDER_MEMORY"), min_value=0, max_value=5, value=2)
+
+        if version == "4Bio":
+            slider_darklength = 60
+            slider_saturate = 5000
+            col1, col2 = st.columns(2)
+            with col1:
+                slider_aktivation = st.select_slider(
+                    text("SLIDER_ACTIVATION"),
+                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+                )
+            with col2:
+                slider_deaktivation = st.select_slider(
+                    text("SLIDER_DEACTIVATION"),
+                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+                )
+
+            updated_parameters = {
+                "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
+                "kEpoxZ": 0.00024
+                * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+            }
+        else:
+            updated_parameters = {
+                "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
+                "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+            }
+            slider_darklength = 60
+            slider_saturate = 5000
+            
+        col1_, col2_ = st.columns(2)
         
-    col1_, col2_ = st.columns(2)
+        with col2_:
+            show_old = st.checkbox("Compare with the last simulation", value=True)
+
+        with col1_:  
+            submitted =  st.form_submit_button("Start the simulation", type="primary", use_container_width=True)
     
-    with col1_:  
-        if st.button("Start the simulation", type="primary", key="button2", use_container_width=True):
-            with st.spinner(text("SPINNER")):
+        if submitted:
+            with st.spinner(text("SPINNER")):#
+                time.sleep(0.1)
                 sim_time, sim_results = sim_model_memory(
                     updated_parameters=updated_parameters,
                     slider_light=slider_light,
@@ -105,6 +114,11 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                 else:
                     st.session_state["memory_model_results"].update(calculate_results_to_plot(sim_time, sim_results))
                     
+                if show_old:
+                    plot_values = st.session_state["memory_model_results"]
+                else:
+                    plot_values = {k:v for k,v in st.session_state["memory_model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
+                
                 fig_4Bio, fig_4STEM = make_both_plots_memory(
                     text=text,
                     xlabel1=text("AXIS_TIME_S"),
@@ -115,7 +129,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                         "NPQ": text("AXIS_NPQ"),
                         "PhiPSII": text("AXIS_PHIPSII"),
                     },
-                    session_state_values=st.session_state["memory_model_results"],
+                    session_state_values=plot_values,
                     slider_darklength=slider_darklength,
                     slider_memory=slider_memory * 60,
                     slider_training=slider_training * 60,
@@ -130,53 +144,17 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     old_results.update({f"old {key}": value})
 
                 st.session_state["memory_model_results"].update(old_results)
-        
-    with col2_:
-        if st.button(label="Reset Graph", use_container_width=True):
-            if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:
-                for i in ["old Fluo", "old NPQ", "old PhiPSII"]:
-                    if st.session_state["memory_model_results"].get(i):
-                        st.session_state["memory_model_results"].pop(i)
-                    else:
-                        alert = st.warning("Nothing to reset")
-                        time.sleep(1.5)
-                        alert.empty()
-                        break
-                    
-                fig_4Bio, fig_4STEM = make_both_plots_memory(
-                    text=text,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel_4STEM=text("FLUO"),
-                    ylabel_4Bio={
-                        "Fluo": text("FLUO"),
-                        "NPQ": text("AXIS_NPQ"),
-                        "PhiPSII": text("AXIS_PHIPSII"),
-                    },
-                    session_state_values=st.session_state["memory_model_results"],
-                    slider_darklength=slider_darklength,
-                    slider_memory=slider_memory * 60,
-                    slider_training=slider_training * 60,
-                    slider_relaxation=slider_relaxation * 60
-                )
-                
-                st.session_state["memory_fig_4Bio"] = fig_4Bio
-                st.session_state["memory_fig_4STEM"] = fig_4STEM
-                
-                old_results = {}
-                for key, value in st.session_state["memory_model_results"].items():
-                    old_results.update({f"old {key}": value})
+            
+                        
+                if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:
+                        if version == "4Bio":
+                            showed_fig = st.session_state["memory_fig_4Bio"]
+                        else:
+                            showed_fig = st.session_state["memory_fig_4STEM"]
 
-                st.session_state["memory_model_results"].update(old_results)
-                
-    if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:
-            if version == "4Bio":
-                showed_fig = st.session_state["memory_fig_4Bio"]
-            else:
-                showed_fig = st.session_state["memory_fig_4STEM"]
+                        st.pyplot(showed_fig, transparent=True)
 
-            st.pyplot(showed_fig, transparent=True)
-
+    
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
