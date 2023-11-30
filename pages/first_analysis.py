@@ -285,29 +285,58 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("FAL_TIPP1"))
     st.markdown(text("FAL_TIPP2"))
 
-    with st.expander("See how to interpret your modelling results"):
+    with st.expander("See how to interpret your modelling results", expanded=True):
         st.markdown("### Graphs with one result")
         include_image(str(Path("pictures/explanation_graph_oneresult.png")), img_width=1)
         st.markdown(
             "We can look at the graph in three phases:\n"
-            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is 'F0'. We then simulate a saturating light pulse which rapidly inceases the fluorescence up to the peak value 'Fm'. Fm should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. We see that the simulated fluorescence decreases back to the F0-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
-            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level 'Fm'' is the same as Fm, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F0. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
-            "3. Indeed, when we proceed to give another saturating pulse, we see that the new maximl fluorescence Fm' is noticably lower than Fm, show ing uns that non-photochemical quenching has been activated and is funnelling excitation energy away from both fluorescence and photosynthesis. You can find this observation directly reflected in the formula to estimate NPQ:"
+            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is 'F₀'. We then simulate a saturating light pulse which rapidly inceases the fluorescence up to the peak value 'Fₘ'. Fₘ should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. 'Fₜ', the fluorescence simulated outside of saturating pulses, shows the photosystems behaviour under the actinic light. We see that Fₜ decreases back to the F₀-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
+            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level (Fₘ') is the same as Fₘ, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F₀ which persists until the end of the experiment. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
+            "3. Indeed, when we proceed to give another saturating pulse, we see that the new maximum fluorescence Fₘ' is noticeably lower than Fₘ, showing us that non-photochemical quenching has been activated and is funnelling excitation energy away from both fluorescence and photosynthesis. You can find this observation directly reflected in the formula to estimate NPQ:"
         )
-        st.latex("NPQ = \frac{F_m - F_m'}{F_m'}")
+        st.latex(r"NPQ = \frac{F_m - F_m'}{F_m'}")
+        st.markdown(
+            "The same way you can analyse simulation graphs with changed parameters and even more light phases. In general, observe how  Fₜ and Fₘ' behave over time, especially when the light condition is changed. Then, connect your oversations with your knowledge on NPQ. If you are interested, you could also use the calculated estimated of NPQ and and PSII efficiency in the <a href='#' id='4Bio'>4Bio</a> version."
+        )
 
         st.markdown("### Graphs with old and new results")
         include_image(str(Path("pictures/explanation_graph_tworesults.png")), img_width=1)
-        st.markdown("In this case, we ")
+        st.markdown(
+            "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol m⁻² s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behaviour implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ's, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
+        )
 
     # Add guiding questions:
     with st.expander(
         "Having trouble connecting the simulation results to biology? Try our **guiding questions**"
     ):
-        # The guide questionns are shown by default
+        # The answers are hidden by default
         st.markdown("### Guiding Questions")
         see_interpr = st.toggle("See our interpretation")
+
+        # Remove the bullet point marker
+        st.markdown(
+            """<style>
+            .st-emotion-cache-0.eqpbllx5 ul{
+                list-style: none; /* Remove list bullets */
+                padding: 0;
+                margin: 0;
+            }
+            </style>""",
+            unsafe_allow_html=True,
+        )
         if not see_interpr:
+            # Replace the bullet point with a "Q:"
+            st.markdown(
+                """<style>
+                .st-emotion-cache-0.eqpbllx5 ul li:before{
+                    content: 'Q:';
+                    padding-right: 10px;
+                    font-weight: bold;
+                    margin: 0 0 0 -27px;
+                }
+                </style>""",
+                unsafe_allow_html=True,
+            )
             st.markdown(
                 "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
                 "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
@@ -333,7 +362,19 @@ def make_page(text: Callable[[str], str]) -> None:
                     "    - Increase the saturating pulse intensity to maximum. Does something change?"
                     "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
                 )
-        else:  # If toggle is switched show possible iterpretation
+        else:  # If toggle is switched show possible interpretation
+            # Replace the bullet point with a "A:"
+            st.markdown(
+                """<style>
+                .st-emotion-cache-0.eqpbllx5 ul li:before{
+                    content: 'A:';
+                    padding-right: 10px;
+                    font-weight: bold;
+                    margin: 0 0 0 -25px;
+                }
+                </style>""",
+                unsafe_allow_html=True,
+            )
             st.markdown(
                 "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
                 "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
