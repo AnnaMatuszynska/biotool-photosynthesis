@@ -343,9 +343,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         with col3__:
             precise_J = st.number_input(
                 label='Precise J',
-                min_value=50.,
-                max_value=300.,
-                value=124.4,
+                min_value=50,
+                max_value=300,
+                value=124,
                 label_visibility='collapsed'
             )
         with col4__:
@@ -364,7 +364,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 st.markdown(text("MDL_FVCB_SLIDERS_TEXT"))
             with col2___:
                 slider_O = st.slider(
-                    label=st.markdown(text("MDL_FVCB_SLIDERS_O"), unsafe_allow_html=True),
+                    label=text("MDL_FVCB_SLIDERS_O"),
                     min_value=100,
                     max_value=500,
                     value=precise_O
@@ -372,8 +372,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             with col3___:
                 slider_J = st.slider(
                     label=text("MDL_FVCB_SLIDERS_J"),
-                    min_value=50.0,
-                    max_value=300.0,
+                    min_value=50,
+                    max_value=300,
                     value=precise_J
                 )    
             with col4___:
@@ -465,7 +465,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 """
             )
 
-        st.markdown(text("MDL_E_PHOTOSYNTHESIS_2"))
+        st.markdown(text("MDL_E_PHOTOSYNTHESIS_2"), unsafe_allow_html=True)
+        
+        st.markdown(text("MDL_E_PHOTOSYNTHESIS_3"))
 
     with tab3:
         st.markdown(text("MDL_HEADLINE_BELLASIO"))
@@ -502,18 +504,28 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             2. Evans, J., &amp; Von Caemmerer, S. (2012). Temperature response of carbon isotope discrimination and mesophyll conductance in tobacco. Plant, Cell &amp;amp; Environment, 36(4), 745–756. https://doi.org/10.1111/j.1365-3040.2012.02591.x
             3. Price, G. D., Badger, M. R., & Von Caemmerer, S. (2010). The prospect of using cyanobacterial bicarbonate transporters to improve leaf photosynthesis in C3 crop plants. Plant Physiology, 155(1), 20–26. https://doi.org/10.1104/pp.110.164681
             4. Von Caemmerer, S. (2013). Steady-state models of photosynthesis. Plant, Cell & Environment, 36(9), 1617–1630. https://doi.org/10.1111/pce.12098
+            5. Zhu, X.-G., Wang, Y., Ort, D. R., & Long, S. P. (2013). e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: from light capture to sucrose synthesis. Plant, Cell & Environment, 36(9), 1711–1727. https://doi.org/10.1111/pce.12025
+            6. Zhu, X.-G., Govindjee, Baker, N. R., deSturler, E., Ort, D. R., & Long, S. P. (2005). Chlorophyll a fluorescence induction kinetics in leaves predicted from a model describing each discrete step of excitation energy and electron transfer associated with Photosystem II. Planta, 223(1), 114–133. https://doi.org/10.1007/s00425-005-0064-4
+            7. Zhu, X.-G., De Sturler, E., & Long, S. P. (2007). Optimizing the Distribution of Resources between Enzymes of Carbon Metabolism Can Dramatically Increase Photosynthetic Rate: A Numerical Simulation Using an Evolutionary Algorithm. Plant Physiology, 145(2), 513–526. https://doi.org/10.1104/pp.107.103713
             
             
             - Bellasio, C. (2019). A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research, 141(1), 99–118. https://doi.org/10.1007/s11120-018-0601-1
             - 
             - Taiz, L., Zeiger, E., Møller, I. M., & Murphy, A. S. (2018). Fundamentals of plant physiology (First edition). Published in the United States of America by Oxford University Press.
             - 
-            - Zhu, X.-G., Wang, Y., Ort, D. R., & Long, S. P. (2013). e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: from light capture to sucrose synthesis. Plant, Cell & Environment, 36(9), 1711–1727. https://doi.org/10.1111/pce.12025
+            - 
 
             """
 
         if version == "4STEM":
             """
+            1. Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
+            2. Evans, J., &amp; Von Caemmerer, S. (2012). Temperature response of carbon isotope discrimination and mesophyll conductance in tobacco. Plant, Cell &amp;amp; Environment, 36(4), 745–756. https://doi.org/10.1111/j.1365-3040.2012.02591.x
+            3. Price, G. D., Badger, M. R., & Von Caemmerer, S. (2010). The prospect of using cyanobacterial bicarbonate transporters to improve leaf photosynthesis in C3 crop plants. Plant Physiology, 155(1), 20–26. https://doi.org/10.1104/pp.110.164681
+            4. Von Caemmerer, S. (2013). Steady-state models of photosynthesis. Plant, Cell & Environment, 36(9), 1617–1630. https://doi.org/10.1111/pce.12098
+            5. 
+            
+            
             - Bellasio, C. (2019). A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research, 141(1), 99–118. https://doi.org/10.1007/s11120-018-0601-1
             - Bellasio, C., Quirk, J., Buckley, T. N., & Beerling, D. J. (2017). A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C4 Photosynthesis. Plant Physiology, 175(1), 104–119. https://doi.org/10.1104/pp.17.00666
             - Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
@@ -521,8 +533,8 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - van Aalst, M., Ebenhöh, O., & Matuszyńska, A. (2021). Constructing and analysing dynamic models with modelbase v1.2.3: A software update. BMC Bioinformatics, 22(1), 1–15. https://doi.org/10.1186/s12859-021-04122-7
             - Von Caemmerer, S. (2013). Steady-state models of photosynthesis. Plant, Cell & Environment, 36(9), 1617–1630. https://doi.org/10.1111/pce.12098
             - Yin, X., Van Oijen, M., & Schapendonk, A. H. C. M. (2004). Extension of a biochemical model for the generalized stoichiometry of electron transport limited C3 photosynthesis. Plant, Cell & Environment, 27(10), 1211–1222. https://doi.org/10.1111/j.1365-3040.2004.01224.x
-            - Zhu, X.-G., De Sturler, E., & Long, S. P. (2007). Optimizing the Distribution of Resources between Enzymes of Carbon Metabolism Can Dramatically Increase Photosynthetic Rate: A Numerical Simulation Using an Evolutionary Algorithm. Plant Physiology, 145(2), 513–526. https://doi.org/10.1104/pp.107.103713
-            - Zhu, X.-G., Govindjee, Baker, N. R., deSturler, E., Ort, D. R., & Long, S. P. (2005). Chlorophyll a fluorescence induction kinetics in leaves predicted from a model describing each discrete step of excitation energy and electron transfer associated with Photosystem II. Planta, 223(1), 114–133. https://doi.org/10.1007/s00425-005-0064-4
+            - 
+            - 
             - Zhu, X.-G., Wang, Y., Ort, D. R., & Long, S. P. (2013). e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: from light capture to sucrose synthesis. Plant, Cell & Environment, 36(9), 1711–1727. https://doi.org/10.1111/pce.12025
             """
 

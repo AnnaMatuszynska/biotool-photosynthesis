@@ -633,6 +633,10 @@ msgstr ""
 msgid "MDL_E_PHOTOSYNTHESIS_2"
 msgstr ""
 
+#: pages/model_explain.py:390
+msgid "MDL_E_PHOTOSYNTHESIS_3"
+msgstr ""
+
 #: pages/model_explain.py:393
 msgid "MDL_HEADLINE_BELLASIO"
 msgstr ""

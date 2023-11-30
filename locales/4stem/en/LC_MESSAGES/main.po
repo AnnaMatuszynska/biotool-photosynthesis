@@ -597,13 +597,13 @@ msgid "MDL_FVCB_SLIDERS_TEXT"
 msgstr "Sliders"
 
 msgid "MDL_FVCB_SLIDERS_O"
-msgstr "Chloroplast O<sub>2</sub> partial pressure [mbar]"
+msgstr "Chloroplast O₂ partial pressure [mbar]"
 
 msgid "MDL_FVCB_SLIDERS_J"
 msgstr "Electron transport rate (J) [µmol m⁻² s⁻¹]"
 
 msgid "MDL_FVCB_SLIDERS_Tp"
-msgstr "Inorganic phosphate supply rate (T<sub>p</sub>) [µmol m⁻² s⁻¹]"
+msgstr "Inorganic phosphate supply rate (Tₚ) [µmol m⁻² s⁻¹]"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS"
@@ -637,6 +637,10 @@ msgstr "The *e*-photosynthesis model aims to provide a realistic representation 
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
+msgstr "Overall, 113 of these equations can be attributed to a system of ODEs, which indicates this model's complexity. Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler, more user-friendly models or focusing on specific photosynthesis aspects."
+
+#: pages/model_explain.py:390
+msgid "MDL_E_PHOTOSYNTHESIS_3"
 msgstr "Overall, 113 of these equations can be attributed to a system of ODEs, which indicates this model's complexity. Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler, more user-friendly models or focusing on specific photosynthesis aspects."
 
 #: pages/model_explain.py:393
