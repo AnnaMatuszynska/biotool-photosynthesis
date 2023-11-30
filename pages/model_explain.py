@@ -384,7 +384,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     value=precise_Tp
                 )
                 
-        col1____, col2____, col3____ = st.columns([0.3, 0.2, 0.5])
+        col1____, col2____,= st.columns([0.3, 0.7])
         
         with col1____:
             st.markdown(
@@ -408,23 +408,30 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             )
         
         with col2____:
-            toggle_A = st.toggle(
-                label=f'{text("MDL_FVCB_TOGGLE")} A?',
-                value=True,
-            )
-            toggle_Ac = st.toggle(
-                label=f'{text("MDL_FVCB_TOGGLE")} Ac?',
-                value=False,
-            )
-            toggle_Aj = st.toggle(
-                label=f'{text("MDL_FVCB_TOGGLE")} Aj?',
-                value=False,
-            )
-            toggle_Ap = st.toggle(
-                label=f'{text("MDL_FVCB_TOGGLE")} Ap?',
-                value=False,
-            )
-        with col3____:
+            
+            col1_____, col2_____, col3_____, col4_____ = st.columns(4)
+            
+            with col1_____:
+                toggle_A = st.toggle(
+                    label=f'{text("MDL_FVCB_TOGGLE")} A?',
+                    value=True,
+                )
+            with col2_____:
+                toggle_Ac = st.toggle(
+                    label=f'{text("MDL_FVCB_TOGGLE")} Ac?',
+                    value=False,
+                )
+            with col3_____:
+                toggle_Aj = st.toggle(
+                    label=f'{text("MDL_FVCB_TOGGLE")} Aj?',
+                    value=False,
+                )
+            with col4_____:
+                toggle_Ap = st.toggle(
+                    label=f'{text("MDL_FVCB_TOGGLE")} Ap?',
+                    value=False,
+                )
+                
             fcvb_results = steady_state_photosynthesis(
                 Ci=np.linspace(0, 700, num= 7000),
                 O = slider_O,
@@ -445,12 +452,14 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     'Aj': toggle_Aj,
                     'Ap': toggle_Ap,
                     'A': toggle_A,
-                }
+                },
+                xlabel = text("MDL_FVCB_XLABEL"),
+                ylabel = text("MDL_FVCB_YLABEL"),
+                empty_label = text("MDL_FVCB_EMPTY"),
             )
         
             st.pyplot(fcvb_fig, transparent = True)
-
-        
+                
 
     with tab2:
         st.markdown(text("MDL_HEADLINE_E_PHOTOSYNTHESIS"))

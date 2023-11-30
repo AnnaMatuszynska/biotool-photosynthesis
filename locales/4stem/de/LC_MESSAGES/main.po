@@ -665,6 +665,18 @@ msgstr ""
 msgid "MDL_FVCB_TOGGLE"
 msgstr ""
 
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_XLABEL"
+msgstr ""
+
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_YLABEL"
+msgstr ""
+
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_EMPTY"
+msgstr ""
+
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
 msgstr ""

@@ -625,6 +625,18 @@ msgstr "Units"
 msgid "MDL_FVCB_TOGGLE"
 msgstr "Display"
 
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_XLABEL"
+msgstr "Intercellular "
+
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_YLABEL"
+msgstr "assimilation [µmol m⁻² s⁻¹]"
+
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_EMPTY"
+msgstr "Nothing to show here"
+
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
 msgstr "### The *e*-photosynthesis model"
