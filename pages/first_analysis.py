@@ -1,5 +1,6 @@
 import numpy as np
 import streamlit as st
+from streamlit.components.v1 import html
 import time
 from pages._sidebar import make_sidebar
 from pages.assets.model._model_functions import calculate_results_to_plot, make_both_plots, sim_model
@@ -15,7 +16,7 @@ from utils import (
 )
 
 
-def make_page(text: Callable[[str], str]) -> None:
+def make_page(text: Callable[[str], str]) -> bool:
     st.markdown(text("FAL_HEADLINE_EXPERIMENTS"))
 
     st.markdown(text("FAL_HEADLINE_MODEL_CONSTRUCTION"))
@@ -311,32 +312,9 @@ def make_page(text: Callable[[str], str]) -> None:
     ):
         # The answers are hidden by default
         st.markdown("### Guiding Questions")
-        see_interpr = st.toggle("See our interpretation")
+        see_interpr = st.toggle("**See our interpretation**")
 
-        # Remove the bullet point marker
-        st.markdown(
-            """<style>
-            .st-emotion-cache-0.eqpbllx5 ul{
-                list-style: none; /* Remove list bullets */
-                padding: 0;
-                margin: 0;
-            }
-            </style>""",
-            unsafe_allow_html=True,
-        )
         if not see_interpr:
-            # Replace the bullet point with a "Q:"
-            st.markdown(
-                """<style>
-                .st-emotion-cache-0.eqpbllx5 ul li:before{
-                    content: 'Q:';
-                    padding-right: 10px;
-                    font-weight: bold;
-                    margin: 0 0 0 -27px;
-                }
-                </style>""",
-                unsafe_allow_html=True,
-            )
             st.markdown(
                 "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
                 "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
@@ -344,7 +322,7 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
                 "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
                 "    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
-                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two miutes that we cannot see.]\n"
+                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
                 "    - Lower the time between the saturation pulses. What can you see?\n"
                 "    - Does it seem like the saturation pulses affect the plant's photosynthesis?\n"
                 "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
@@ -356,25 +334,13 @@ def make_page(text: Callable[[str], str]) -> None:
                     "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
                     "    - How does the simulated NPQ graph behave when you increase the Zeaxanthin conversion rate? And the Violaxanthin rate?\n"
                     "    - Are changes in the two rates additive?\n"
-                    "6. :blue[In the dark phase the plant's NPQ system relaxes.]\n"
-                    "    - What happens if you strongly reduce the adaption time?\n"
-                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaninful results.]\n"
+                    "6. :blue[The plant's NPQ mechanism relaxes in the dark after the saturating pulse. Is this necessary?]\n"
+                    "    - What happens if you strongly reduce the dark-adaption time?\n"
+                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
                     "    - Increase the saturating pulse intensity to maximum. Does something change?"
                     "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
                 )
         else:  # If toggle is switched show possible interpretation
-            # Replace the bullet point with a "A:"
-            st.markdown(
-                """<style>
-                .st-emotion-cache-0.eqpbllx5 ul li:before{
-                    content: 'A:';
-                    padding-right: 10px;
-                    font-weight: bold;
-                    margin: 0 0 0 -25px;
-                }
-                </style>""",
-                unsafe_allow_html=True,
-            )
             st.markdown(
                 "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
                 "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
@@ -382,9 +348,9 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - The later saturation pulses, after ca. 2 minutes, are shorter than those under low light. Therefore the plant has increased the heat quenching, aka NPQ, as a light protection mechanism.\n"
                 "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
                 "    - For this higher light intensity we can see as well the increased fluorescence after light-on and the further decreasing fluorescence during the pulses.\n"
-                "    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full acctivation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhaused and higher light might damage the plant.\n"
-                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two miutes that we cannot see.]\n"
-                "    - With more fequent pulses, we can see the dropping peak fluorescence more clearly. Therefore, we see the NPQ activation in a higher resolution and could try to fit a function to estimate the activation rate.\n"
+                "    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full activation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhausted and higher light might damage the plant.\n"
+                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
+                "    - With more frequent pulses, we can see the dropping peak fluorescence more clearly. Therefore, we see the NPQ activation in a higher resolution and could try to fit a function to estimate the activation rate.\n"
                 "    - Normally we assume that the pulses don't affect the photosynthesis. After a pulse the signal returns to the previous level and the peak height seems to decrease always the same.\n"
                 "    - However, if we give pulses in rapid succession under low light, the saturation pulses can have an effect like actinic light. You can see this if you try a light intensity of 50 μmol m⁻² s⁻¹ with pulses every 5 s. There, the peak height decreases more than with fewer pulses. \n"
                 "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
@@ -398,9 +364,9 @@ def make_page(text: Callable[[str], str]) -> None:
                     "    - With a high frequency of saturation pulses we can also see that this maximal activity is reached faster.\n"
                     "    - If we increase the Zeaxanthin conversion rate, the maximal NPQ activity also increases up to a factor of about two.\n"
                     "    - Are changes in the two rates additive?\n"
-                    "6. :blue[In the dark phase the plant's NPQ system relaxes.]\n"
-                    "    - What happens if you strongly reduce the adaption time?\n"
-                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaninful results.]\n"
+                    "6. :blue[The plant's NPQ mechanism relaxes in the dark after the saturating pulse. Is this necessary?]\n"
+                    "    - When we shorten the dark phase to less than 10-15 seconds, the relaxation after the dark saturation pulse isn't completed yet. Therefore, when we turn on the actinic light, we initially overestimate the fluorescence and the estimated stress level.\n"
+                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
                     "    - Increase the saturating pulse intensity to maximum. Does something change?"
                     "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
                 )
@@ -428,7 +394,7 @@ def make_page(text: Callable[[str], str]) -> None:
         with col1:
             slider_aktivation = st.select_slider(
                 text("SLIDER_ACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)),
+                options=np.round(np.logspace(1, 3, 21)).astype(int),
                 value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             )
             slider_darklength = st.slider(
@@ -437,7 +403,7 @@ def make_page(text: Callable[[str], str]) -> None:
         with col2:
             slider_deaktivation = st.select_slider(
                 text("SLIDER_DEACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)),
+                options=np.round(np.logspace(1, 3, 21)).astype(int),
                 value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
             )
             slider_saturate = st.slider(
@@ -543,6 +509,8 @@ def make_page(text: Callable[[str], str]) -> None:
 
         st.pyplot(showed_fig, transparent=True)
 
+    return see_interpr
+
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
@@ -551,6 +519,45 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
         )
 
+def style_guinding_questions(see_interpr:bool=False)->None:
+    # Remove the bullet point marker
+    st.markdown(
+        """<style>
+        .st-emotion-cache-0.eqpbllx5 ul{
+            list-style: none; /* Remove list bullets */
+            padding: 0;
+            margin: 0;
+        }
+        </style>""",
+        unsafe_allow_html=True
+    )
+    if see_interpr:
+        # Replace the bullet point with a "A:"
+        st.markdown(
+            """<style>
+            .st-emotion-cache-0.eqpbllx5 ul li:before{
+                content: 'A:';
+                padding-right: 10px;
+                font-weight: bold;
+                margin: 0 0 0 -25px;
+            }
+            </style>""",
+            unsafe_allow_html=True
+        )
+    else:
+        # Replace the bullet point with a "Q:"
+        st.markdown(
+            """<style>
+            .st-emotion-cache-0.eqpbllx5 ul li:before{
+                content: 'Q:';
+                padding-right: 10px;
+                font-weight: bold;
+                margin: 0 0 0 -27px;
+            }
+            </style>""",
+            unsafe_allow_html=True
+        )
+    return None
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
@@ -561,7 +568,8 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
-    make_page(text)
+    see_interpr = make_page(text)
     make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")
-    make_sidebar()
+    make_sidebar()#
+    style_guinding_questions(see_interpr)
