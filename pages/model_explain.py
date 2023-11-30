@@ -301,6 +301,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         
         st.markdown(text("MDL_FVCB_1"), unsafe_allow_html=True)
 
+        st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
+        
         if version == "4STEM":
             st.latex(
                 r"""
@@ -314,12 +316,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 \end{aligned}
                 """
             )
-
-        st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
         
         st.markdown(text("MDL_FVCB_3"), unsafe_allow_html=True)
         
         markdown_click("MDL_FVCB_4", text, unsafe_allow_html = True)
+        
+        if version == "4STEM":
+            st.markdown(text("MDL_FVCB_5"), unsafe_allow_html=True)
         
         fcvb_sliders = st.container()
         
@@ -361,7 +364,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 st.markdown(text("MDL_FVCB_SLIDERS_TEXT"))
             with col2___:
                 slider_O = st.slider(
-                    label=text("MDL_FVCB_SLIDERS_O"),
+                    label=st.markdown(text("MDL_FVCB_SLIDERS_O"), unsafe_allow_html=True),
                     min_value=100,
                     max_value=500,
                     value=precise_O
