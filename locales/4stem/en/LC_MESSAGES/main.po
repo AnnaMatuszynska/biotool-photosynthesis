@@ -574,18 +574,21 @@ msgstr "### The Farquhar, von Caemmerer and Berry model"
 # Grammarly checked
 #: pages/model_explain.py:359
 msgid "MDL_FVCB_1"
-msgstr "The FvCB model is a purely mathematical tool used to depict photosynthesis in C<sub>3</sub> plants by calculating their carbon assimilation (A). It was first created in 1980 by Graham Farquhar, Susanne von Caemmerer, and Joseph Berry and has since undergone many different variations and updates. The most basic version uses four equations, each depicting the A with a specific limiting rate. These include the RuBisCO limited rate (A<sub>c</sub>), the electron transport limited rate (A<sub>j</sub>), and the triphosphate limited rate (A<sub>p</sub>), where the minimum of the three is taken as the end-resulting A. These equations include several different parameters that can be measured or estimated beforehand. This step is crucial as it gives life to the model, and by varying these, you alter the model's results."
+msgstr "The FvCB model, also known as the Farquhar, von Caemmerer, and Berry model, is a widely used theoretical framework in plant biology, first conceptualized in 1980&nbsp;[1]. While photosynthesis can broadly be summarized in three stages: light absorption, light reactions, and carbon fixation, this model only focuses on the latter. This provides a simplified view of C<sub>3</sub> photosynthesis and is named after its primary contributors: Graham D. Farquhar, Susanne von Caemmerer, and Joseph A. Berry. If you're unfamiliar with C<sub>3</sub> photosynthesis, you may want to check out the Dropbox below to learn more about the different types of photosynthesis."
 
-#: pages/model_explain.py:375
+#: pages/model_explain.py:318
 msgid "MDL_FVCB_2"
-msgstr "These rates use an epitome of parameters that have to be measured or determined beforehand. The model uses the chloroplast CO<sub>2</sub> partial pressure (C<sub>c</sub>), the chloroplast O<sub>2</sub> partial pressure (O), the C<sub>c</sub> where A = −R<sub>d</sub> (Γ<sub>&midast;</sub>), the maximal rate of carboxylation (V<sub>cmax</sub>), the Michaelis-Menten constants of carboxylation and oxygenation (K<sub>c</sub> and K<sub>o</sub> respectively), the potential electron transport rate (J) and the rate of inorganic phosphate supply to the chloroplast (T<sub>p</sub>) to calculate the three rates. The day respiration (R<sub>d</sub>) is subtracted to portray the respective assimilation rates. It is to be noted that this model is limited to a C<sub>c</sub> that is larger than Γ<sub>&midast;</sub>."
+msgstr "The primary goal of the FvCB model is to describe carbon assimilation (A), which is the process of plants and other photosynthetic organisms incorporating carbon dioxide from the atmosphere into organic compounds. This goal can be found in many photosynthetic models, as it is a critical factor for the plant's well-being, as the higher the A, the healthier the plant. As with everything in biology, it is more complex, but in a simplistic sense, this is a common way to see it. The FvCB model uses purely mathematical equations to calculate the A. Furthermore, it describes it as the minimum of three different limited As: the RuBisCO limited rate (A<sub>c</sub>), the electron transport limited rate (A<sub>j</sub>), and the triphosphate limited rate (A<sub>p</sub>). Using this model, you can easily calculate A utilizing a set of predefined and mostly measurable parameters and equations, as shown below:"
 
-#: This can be copied to add new text entries with translations
+#: pages/model_explain.py:320
 msgid "MDL_FVCB_3"
-msgstr "This model is widely popular among scientists, as it is relatively simple and uses no complicated mathematical methods like integrations. As you may have guessed, this model type differs from the SIR model we explained earlier. It doesn’t use any ODEs and, therefore, cannot show the change in time. It only shows the A specific for the parameter values chosen. It thus depicts the plant photosynthesis in a steady state. This state is achievable for the plant systems themselves, but due to the many fluctuations of environmental conditions, it is never achieved in nature. This is why this model is not the most accurate representation of photosynthesis. However, it is still considered one of the best due to its simplicity."
+msgstr "The model uses the chloroplast CO<sub>2</sub> partial pressure (C<sub>c</sub>), the chloroplast O<sub>2</sub> partial pressure (O), the C<sub>c</sub> where A = −R<sub>d</sub> (Γ<sub>&midast;</sub>), the maximal rate of carboxylation (V<sub>cmax</sub>), the Michaelis-Menten constants of carboxylation and oxygenation (K<sub>c</sub> and K<sub>o</sub> respectively), the potential electron transport rate (J) and the rate of inorganic phosphate supply to the chloroplast (T<sub>p</sub>) to calculate the three rates. The day respiration (R<sub>d</sub>) is subtracted to portray the respective assimilation rates. It is to be noted that this model is limited to a C<sub>c</sub> that is larger than Γ<sub>&midast;</sub>."
 
 msgid "MDL_FVCB_4"
-msgstr "While the simplicity of this model allows us to 'simulate' it on a piece of paper, we can still use the power of computers to make our lives easier. Below this text, you can find an interactive version of the simulation that allows you to change three parameters that are important for each of the three As (A<sub>c</sub>, A<sub>j</sub>, and A<sub>p</sub>). This can give you insight into how this model can calculate the A depending on a varying C<sub>c</sub> with different parameters. To avoid being overwhelmed by the number of parameters you can vary, we have set default values for the other essential parameters by following the data given by the 2013 review of this model by von Caemmerer. Furthermore, as this model can easily be expanded, we have used the simplest form, the same as the one detailed above in the equations."
+msgstr "Calculating A with these equations is relatively simple, but the model has one significant drawback. It does not incorporate time, limiting it to a constant, steady-state. While plants can achieve a steady-state, it is not typical for them in the outside world due to a constantly fluctuating environment. This is where dynamic models excel, like the SIR-model or other photosynthesis models."
+
+msgid "MDL_FVCB_5"
+msgstr "Despite this significant drawback, the FvCB model has been widely praised. Primarily attributed to its simplicity, it can easily be incorporated into other, more complex models focusing on, for example, mesophyll conductance&nbsp;[2] or inserting bicarbonate transporters at the chloroplast envelope&nbsp;[3]. We have created an interactive simulation using the four equations above to show you this simplicity. To not overwhelm you, you can change the O, J, and T<sub>p</sub>, which only change the different As (A<sub>c</sub>, A<sub>c</sub>, and A<sub>c</sub> respectively. The rest of the parameters were set to the values used in the review by S. von Caemmerer, from which we took these equations&nbsp;[4]."
 
 msgid "MDL_FVCB_SLIDERS_PRECISION"
 msgstr "Precision"
@@ -594,13 +597,13 @@ msgid "MDL_FVCB_SLIDERS_TEXT"
 msgstr "Sliders"
 
 msgid "MDL_FVCB_SLIDERS_O"
-msgstr "Intercellular pO2 [mbar]"
+msgstr "Chloroplast O₂ partial pressure [mbar]"
 
 msgid "MDL_FVCB_SLIDERS_J"
 msgstr "Electron transport rate (J) [µmol m⁻² s⁻¹]"
 
 msgid "MDL_FVCB_SLIDERS_Tp"
-msgstr "Inorganic phosphate supply rate (Tp) [µmol m⁻² s⁻¹]"
+msgstr "Inorganic phosphate supply rate (Tₚ) [µmol m⁻² s⁻¹]"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS"
@@ -622,6 +625,18 @@ msgstr "Units"
 msgid "MDL_FVCB_TOGGLE"
 msgstr "Display"
 
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_XLABEL"
+msgstr "Intercellular "
+
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_YLABEL"
+msgstr "assimilation [µmol m⁻² s⁻¹]"
+
+#: pages/model_explain.py:408
+msgid "MDL_FVCB_EMPTY"
+msgstr "Nothing to show here"
+
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
 msgstr "### The *e*-photosynthesis model"
@@ -629,12 +644,15 @@ msgstr "### The *e*-photosynthesis model"
 # Grammarly checked
 #: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
-msgstr "The *e*-photosynthesis model aims to provide a realistic representation of photosynthesis. Like the SIR model, it uses an ODE system with more complicated equations and compounds. Since photosynthesis is a convoluted mechanism, this model strives to include most components while simplifying where necessary. It builds upon previous works by Zhu et al., incorporating the reactions associated with light absorption, excitation energy transfer, charge separation, and electron transfer around PSII from their fluorescence induction model. Additionally, it introduces analogous reactions for PSI and includes reactions from their carbon metabolism model, such as those involved in the C<sub>3</sub> cycle, sucrose and starch synthesis, and photorespiration. The model further accounts for ion transfer between the lumen and stroma, ATP and NADPH synthesis, RuBisCO activation by RuBisCO activase, NPQ by luminal pH and the xanthophyll cycle, and regulation of enzyme activities by the ferredoxin (Fd) thioredoxin system.\n"
-"\n Even though this model is very complex, it still introduces some simplifications; for example, the steps between the electron transfer of the chlorophyll *a* molecule and Fd are ignored. Furthermore, to calculate the A, this model uses the rate of carboxylation (V<sub>c</sub>) and the rate of glycine decarboxylase (v<sub>131</sub>). While the equation below may be simple, it depends on a dynamic system containing 294 equations."
+msgstr "In 2012, Xin-Guang Zhu, Yu Wang, Donald R. Ort, and Stephen P. Long developed the *e*-photosynthesis model to provide a realistic representation of photosynthesis [5]. The model is complex and dynamic, encompassing most components of C<sub>3</sub> photosynthesis while only simplifying where necessary. It includes reactions of light absorption, light reactions, and carbon assimilation, building on top of Zhu et al.'s previous works, including their fluorescence model [6] and carbon metabolism model [7]. If you're not familiar with C<sub>3</sub> photosynthesis, you can learn more about the different types of photosynthesis in the Dropbox linked below."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
-msgstr "Overall, 113 of these equations can be attributed to a system of ODEs, which indicates this model's complexity. Though the model's intricacy makes it less popular than others, it shows promising results in accounting for various factors that affect photosynthesis. Therefore, it is usually used as a reference for simpler, more user-friendly models or focusing on specific photosynthesis aspects."
+msgstr "The e-photosynthesis model is like the SIR-model, but on a much larger scale. It uses an ODE system with a total of 294 equations, of which 113 describe the ODEs. Using various biochemical parameters, it can calculate the minute aspects of photosynthesis with no definite end calculation goal, such as carbon assimilation by the FvCB. This makes the model a very generalized photosynthesis model."
+
+#: pages/model_explain.py:390
+msgid "MDL_E_PHOTOSYNTHESIS_3"
+msgstr "However, the e-photosynthesis model has yet to see much usage mainly because of its complexity. To make it work for other parameters than those used during its creation, many measured biochemical parameters must be included. Often, researchers must find these parameters themselves, as they have not yet been published. This makes the model complicated and impractical for specific research."
 
 #: pages/model_explain.py:393
 msgid "MDL_HEADLINE_BELLASIO"

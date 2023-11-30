@@ -298,9 +298,11 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     with tab1:
         st.markdown(text("MDL_HEADLINE_FVCB"))
+        
+        st.markdown(text("MDL_FVCB_1"), unsafe_allow_html=True)
 
-        markdown_click("MDL_FVCB_1", text, unsafe_allow_html=True)
-
+        st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
+        
         if version == "4STEM":
             st.latex(
                 r"""
@@ -314,13 +316,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 \end{aligned}
                 """
             )
-
-        st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
         
         st.markdown(text("MDL_FVCB_3"), unsafe_allow_html=True)
         
-        if version=='4STEM':
-            st.markdown(text("MDL_FVCB_4"), unsafe_allow_html=True)
+        markdown_click("MDL_FVCB_4", text, unsafe_allow_html = True)
+        
+        if version == "4STEM":
+            st.markdown(text("MDL_FVCB_5"), unsafe_allow_html=True)
         
         fcvb_sliders = st.container()
         
@@ -341,9 +343,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         with col3__:
             precise_J = st.number_input(
                 label='Precise J',
-                min_value=50.,
-                max_value=300.,
-                value=124.4,
+                min_value=50,
+                max_value=300,
+                value=124,
                 label_visibility='collapsed'
             )
         with col4__:
@@ -370,8 +372,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             with col3___:
                 slider_J = st.slider(
                     label=text("MDL_FVCB_SLIDERS_J"),
-                    min_value=50.0,
-                    max_value=300.0,
+                    min_value=50,
+                    max_value=300,
                     value=precise_J
                 )    
             with col4___:
@@ -382,7 +384,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     value=precise_Tp
                 )
                 
-        col1____, col2____, col3____ = st.columns([0.3, 0.2, 0.5])
+        col1____, col2____,= st.columns([0.3, 0.7])
         
         with col1____:
             st.markdown(
@@ -406,23 +408,30 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             )
         
         with col2____:
-            toggle_A = st.toggle(
-                label=f'{text("MDL_FVCB_TOGGLE")} A?',
-                value=True,
-            )
-            toggle_Ac = st.toggle(
-                label=f'{text("MDL_FVCB_TOGGLE")} Ac?',
-                value=False,
-            )
-            toggle_Aj = st.toggle(
-                label=f'{text("MDL_FVCB_TOGGLE")} Aj?',
-                value=False,
-            )
-            toggle_Ap = st.toggle(
-                label=f'{text("MDL_FVCB_TOGGLE")} Ap?',
-                value=False,
-            )
-        with col3____:
+            
+            col1_____, col2_____, col3_____, col4_____ = st.columns(4)
+            
+            with col1_____:
+                toggle_A = st.toggle(
+                    label=f'{text("MDL_FVCB_TOGGLE")} A?',
+                    value=True,
+                )
+            with col2_____:
+                toggle_Ac = st.toggle(
+                    label=f'{text("MDL_FVCB_TOGGLE")} Ac?',
+                    value=False,
+                )
+            with col3_____:
+                toggle_Aj = st.toggle(
+                    label=f'{text("MDL_FVCB_TOGGLE")} Aj?',
+                    value=False,
+                )
+            with col4_____:
+                toggle_Ap = st.toggle(
+                    label=f'{text("MDL_FVCB_TOGGLE")} Ap?',
+                    value=False,
+                )
+                
             fcvb_results = steady_state_photosynthesis(
                 Ci=np.linspace(0, 700, num= 7000),
                 O = slider_O,
@@ -443,27 +452,23 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     'Aj': toggle_Aj,
                     'Ap': toggle_Ap,
                     'A': toggle_A,
-                }
+                },
+                xlabel = text("MDL_FVCB_XLABEL"),
+                ylabel = text("MDL_FVCB_YLABEL"),
+                empty_label = text("MDL_FVCB_EMPTY"),
             )
         
             st.pyplot(fcvb_fig, transparent = True)
-
-        
+                
 
     with tab2:
         st.markdown(text("MDL_HEADLINE_E_PHOTOSYNTHESIS"))
-
-        markdown_click("MDL_E_PHOTOSYNTHESIS_1", text)
-
-        if version == "4STEM":
-            st.latex(
-                r"""
-                \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
-                A = \indexni{V}{c}-\indexni{v}{131}
-                """
-            )
-
-        st.markdown(text("MDL_E_PHOTOSYNTHESIS_2"))
+        
+        st.markdown(text("MDL_E_PHOTOSYNTHESIS_1"), unsafe_allow_html=True)
+        
+        st.markdown(text("MDL_E_PHOTOSYNTHESIS_2"), unsafe_allow_html=True)
+        
+        st.markdown(text("MDL_E_PHOTOSYNTHESIS_3"), unsafe_allow_html=True)
 
     with tab3:
         st.markdown(text("MDL_HEADLINE_BELLASIO"))
@@ -496,16 +501,35 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
         st.markdown(text("LITERATURE_ONPAGE"))
         if version == "4Bio":
             """
+            1. Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
+            2. Evans, J., &amp; Von Caemmerer, S. (2012). Temperature response of carbon isotope discrimination and mesophyll conductance in tobacco. Plant, Cell &amp;amp; Environment, 36(4), 745–756. https://doi.org/10.1111/j.1365-3040.2012.02591.x
+            3. Price, G. D., Badger, M. R., & Von Caemmerer, S. (2010). The prospect of using cyanobacterial bicarbonate transporters to improve leaf photosynthesis in C3 crop plants. Plant Physiology, 155(1), 20–26. https://doi.org/10.1104/pp.110.164681
+            4. Von Caemmerer, S. (2013). Steady-state models of photosynthesis. Plant, Cell & Environment, 36(9), 1617–1630. https://doi.org/10.1111/pce.12098
+            5. Zhu, X.-G., Wang, Y., Ort, D. R., & Long, S. P. (2013). e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: from light capture to sucrose synthesis. Plant, Cell & Environment, 36(9), 1711–1727. https://doi.org/10.1111/pce.12025
+            6. Zhu, X.-G., Govindjee, Baker, N. R., deSturler, E., Ort, D. R., & Long, S. P. (2005). Chlorophyll a fluorescence induction kinetics in leaves predicted from a model describing each discrete step of excitation energy and electron transfer associated with Photosystem II. Planta, 223(1), 114–133. https://doi.org/10.1007/s00425-005-0064-4
+            7. Zhu, X.-G., De Sturler, E., & Long, S. P. (2007). Optimizing the Distribution of Resources between Enzymes of Carbon Metabolism Can Dramatically Increase Photosynthetic Rate: A Numerical Simulation Using an Evolutionary Algorithm. Plant Physiology, 145(2), 513–526. https://doi.org/10.1104/pp.107.103713
+            
+            
             - Bellasio, C. (2019). A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research, 141(1), 99–118. https://doi.org/10.1007/s11120-018-0601-1
-            - Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
+            - 
             - Taiz, L., Zeiger, E., Møller, I. M., & Murphy, A. S. (2018). Fundamentals of plant physiology (First edition). Published in the United States of America by Oxford University Press.
-            - Von Caemmerer, S. (2013). Steady-state models of photosynthesis. Plant, Cell & Environment, 36(9), 1617–1630. https://doi.org/10.1111/pce.12098
-            - Zhu, X.-G., Wang, Y., Ort, D. R., & Long, S. P. (2013). e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: from light capture to sucrose synthesis. Plant, Cell & Environment, 36(9), 1711–1727. https://doi.org/10.1111/pce.12025
+            - 
+            - 
 
             """
 
         if version == "4STEM":
             """
+            1. Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
+            2. Evans, J., &amp; Von Caemmerer, S. (2012). Temperature response of carbon isotope discrimination and mesophyll conductance in tobacco. Plant, Cell &amp;amp; Environment, 36(4), 745–756. https://doi.org/10.1111/j.1365-3040.2012.02591.x
+            3. Price, G. D., Badger, M. R., & Von Caemmerer, S. (2010). The prospect of using cyanobacterial bicarbonate transporters to improve leaf photosynthesis in C3 crop plants. Plant Physiology, 155(1), 20–26. https://doi.org/10.1104/pp.110.164681
+            4. Von Caemmerer, S. (2013). Steady-state models of photosynthesis. Plant, Cell & Environment, 36(9), 1617–1630. https://doi.org/10.1111/pce.12098
+            5. Zhu, X.-G., Wang, Y., Ort, D. R., & Long, S. P. (2013). e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: from light capture to sucrose synthesis. Plant, Cell & Environment, 36(9), 1711–1727. https://doi.org/10.1111/pce.12025
+            6. Zhu, X.-G., Govindjee, Baker, N. R., deSturler, E., Ort, D. R., & Long, S. P. (2005). Chlorophyll a fluorescence induction kinetics in leaves predicted from a model describing each discrete step of excitation energy and electron transfer associated with Photosystem II. Planta, 223(1), 114–133. https://doi.org/10.1007/s00425-005-0064-4
+            7. Zhu, X.-G., De Sturler, E., & Long, S. P. (2007). Optimizing the Distribution of Resources between Enzymes of Carbon Metabolism Can Dramatically Increase Photosynthetic Rate: A Numerical Simulation Using an Evolutionary Algorithm. Plant Physiology, 145(2), 513–526. https://doi.org/10.1104/pp.107.103713
+            
+            
+            
             - Bellasio, C. (2019). A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research, 141(1), 99–118. https://doi.org/10.1007/s11120-018-0601-1
             - Bellasio, C., Quirk, J., Buckley, T. N., & Beerling, D. J. (2017). A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C4 Photosynthesis. Plant Physiology, 175(1), 104–119. https://doi.org/10.1104/pp.17.00666
             - Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
@@ -513,8 +537,8 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - van Aalst, M., Ebenhöh, O., & Matuszyńska, A. (2021). Constructing and analysing dynamic models with modelbase v1.2.3: A software update. BMC Bioinformatics, 22(1), 1–15. https://doi.org/10.1186/s12859-021-04122-7
             - Von Caemmerer, S. (2013). Steady-state models of photosynthesis. Plant, Cell & Environment, 36(9), 1617–1630. https://doi.org/10.1111/pce.12098
             - Yin, X., Van Oijen, M., & Schapendonk, A. H. C. M. (2004). Extension of a biochemical model for the generalized stoichiometry of electron transport limited C3 photosynthesis. Plant, Cell & Environment, 27(10), 1211–1222. https://doi.org/10.1111/j.1365-3040.2004.01224.x
-            - Zhu, X.-G., De Sturler, E., & Long, S. P. (2007). Optimizing the Distribution of Resources between Enzymes of Carbon Metabolism Can Dramatically Increase Photosynthetic Rate: A Numerical Simulation Using an Evolutionary Algorithm. Plant Physiology, 145(2), 513–526. https://doi.org/10.1104/pp.107.103713
-            - Zhu, X.-G., Govindjee, Baker, N. R., deSturler, E., Ort, D. R., & Long, S. P. (2005). Chlorophyll a fluorescence induction kinetics in leaves predicted from a model describing each discrete step of excitation energy and electron transfer associated with Photosystem II. Planta, 223(1), 114–133. https://doi.org/10.1007/s00425-005-0064-4
+            - 
+            - 
             - Zhu, X.-G., Wang, Y., Ort, D. R., & Long, S. P. (2013). e-photosynthesis: A comprehensive dynamic mechanistic model of C3 photosynthesis: from light capture to sucrose synthesis. Plant, Cell & Environment, 36(9), 1711–1727. https://doi.org/10.1111/pce.12025
             """
 

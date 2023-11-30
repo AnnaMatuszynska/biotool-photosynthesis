@@ -1,6 +1,7 @@
 import numpy as np
 from pages.assets.model._model_functions import plot_stylings
 import matplotlib.pyplot as plt
+from matplotlib import patches
 
 def quadratic(a, b, c):
     '''
@@ -159,7 +160,7 @@ def steady_state_photosynthesis(Ci = 300,
     
     return {'Ac': Ac, 'Aj': Aj, 'Ap': Ap, 'A': A}
 
-def make_FvCB_plot(Ci, results, display_bools):
+def make_FvCB_plot(Ci, results, display_bools, xlabel, ylabel, empty_label):
     
     style_dict = {
         'A': {
@@ -190,7 +191,9 @@ def make_FvCB_plot(Ci, results, display_bools):
     
     style_plot = plot_stylings()
     style_plot.update({
-        "axes.spines.top": False
+        "axes.spines.top": False,
+        "figure.figsize" : (7, 3),
+        "font.size": 10.0,
     })
     
     with plt.rc_context(style_plot):
@@ -208,14 +211,23 @@ def make_FvCB_plot(Ci, results, display_bools):
                     label = style_dict[key]['label'],
                     linewidth=3
                 )
+                
+        if True not in display_bools.values():
+            ax.annotate(
+                empty_label,
+                (ax.get_xlim()[1]/2, ax.get_ylim()[1]/2),
+                ha='center',
+                va='center'
+            )
     
     plt.xlim(0)
     plt.ylim(0)
     
-    plt.xlabel('Intercellular CO$\mathbf{_2}$ [µbar]', weight= 'bold', size=12)
-    plt.ylabel('CO$\mathbf{_2}$ assimilation [µmol m⁻² s⁻¹]', weight= 'bold', size=12)
+    plt.xlabel(xlabel + " CO$\mathbf{_2}$ [µbar]", weight= 'bold', size=8)
+    plt.ylabel("CO$\mathbf{_2}$ " + ylabel, weight= 'bold', size=8)
     
-    plt.legend(loc = 'best', frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
+    if True in display_bools.values():
+        plt.legend(loc = 'best', frameon = False, labelcolor = 'linecolor', fontsize = 10, prop = {'weight':'bold'})
     
     plt.tight_layout()
     return fig

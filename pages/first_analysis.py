@@ -1,5 +1,6 @@
 import numpy as np
 import streamlit as st
+from streamlit.components.v1 import html
 import time
 from pages._sidebar import make_sidebar
 from pages.assets.model._model_functions import calculate_results_to_plot, make_both_plots, sim_model, make_plot
@@ -15,7 +16,7 @@ from utils import (
 )
 
 
-def make_page(text: Callable[[str], str]) -> None:
+def make_page(text: Callable[[str], str]) -> bool:
     st.markdown(text("FAL_HEADLINE_EXPERIMENTS"))
 
     st.markdown(text("FAL_HEADLINE_MODEL_CONSTRUCTION"))
@@ -285,13 +286,34 @@ def make_page(text: Callable[[str], str]) -> None:
     st.markdown(text("FAL_TIPP1"))
     st.markdown(text("FAL_TIPP2"))
 
+    with st.expander("See how to interpret your modelling results", expanded=True):
+        st.markdown("### Graphs with one result")
+        include_image(str(Path("pictures/explanation_graph_oneresult.png")), img_width=1)
+        st.markdown(
+            "We can look at the graph in three phases:\n"
+            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is 'F₀'. We then simulate a saturating light pulse which rapidly inceases the fluorescence up to the peak value 'Fₘ'. Fₘ should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. 'Fₜ', the fluorescence simulated outside of saturating pulses, shows the photosystems behaviour under the actinic light. We see that Fₜ decreases back to the F₀-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
+            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level (Fₘ') is the same as Fₘ, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F₀ which persists until the end of the experiment. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
+            "3. Indeed, when we proceed to give another saturating pulse, we see that the new maximum fluorescence Fₘ' is noticeably lower than Fₘ, showing us that non-photochemical quenching has been activated and is funnelling excitation energy away from both fluorescence and photosynthesis. You can find this observation directly reflected in the formula to estimate NPQ:"
+        )
+        st.latex(r"NPQ = \frac{F_m - F_m'}{F_m'}")
+        st.markdown(
+            "The same way you can analyse simulation graphs with changed parameters and even more light phases. In general, observe how  Fₜ and Fₘ' behave over time, especially when the light condition is changed. Then, connect your oversations with your knowledge on NPQ. If you are interested, you could also use the calculated estimated of NPQ and and PSII efficiency in the <a href='#' id='4Bio'>4Bio</a> version."
+        )
+
+        st.markdown("### Graphs with old and new results")
+        include_image(str(Path("pictures/explanation_graph_tworesults.png")), img_width=1)
+        st.markdown(
+            "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol m⁻² s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behaviour implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ's, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
+        )
+
     # Add guiding questions:
     with st.expander(
         "Having trouble connecting the simulation results to biology? Try our **guiding questions**"
     ):
-        # The guide questionns are shown by default
+        # The answers are hidden by default
         st.markdown("### Guiding Questions")
-        see_interpr = st.toggle("See our interpretation")
+        see_interpr = st.toggle("**See our interpretation**")
+
         if not see_interpr:
             st.markdown(
                 "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
@@ -300,7 +322,7 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
                 "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
                 "    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
-                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two miutes that we cannot see.]\n"
+                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
                 "    - Lower the time between the saturation pulses. What can you see?\n"
                 "    - Does it seem like the saturation pulses affect the plant's photosynthesis?\n"
                 "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
@@ -312,13 +334,13 @@ def make_page(text: Callable[[str], str]) -> None:
                     "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
                     "    - How does the simulated NPQ graph behave when you increase the Zeaxanthin conversion rate? And the Violaxanthin rate?\n"
                     "    - Are changes in the two rates additive?\n"
-                    "6. :blue[In the dark phase the plant's NPQ system relaxes.]\n"
-                    "    - What happens if you strongly reduce the adaption time?\n"
-                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaninful results.]\n"
-                    "    - Increase the saturating pulse intensity to maximum. Does something change?"
+                    "6. :blue[The plant's NPQ mechanism relaxes in the dark after the saturating pulse. Is this necessary?]\n"
+                    "    - What happens if you strongly reduce the dark-adaption time?\n"
+                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
+                    "    - Increase the saturating pulse intensity to maximum. Does something change?\n"
                     "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
                 )
-        else:  # If toggle is switched show possible iterpretation
+        else:  # If toggle is switched show possible interpretation
             st.markdown(
                 "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
                 "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
@@ -326,9 +348,9 @@ def make_page(text: Callable[[str], str]) -> None:
                 "    - The later saturation pulses, after ca. 2 minutes, are shorter than those under low light. Therefore the plant has increased the heat quenching, aka NPQ, as a light protection mechanism.\n"
                 "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
                 "    - For this higher light intensity we can see as well the increased fluorescence after light-on and the further decreasing fluorescence during the pulses.\n"
-                "    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full acctivation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhaused and higher light might damage the plant.\n"
-                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two miutes that we cannot see.]\n"
-                "    - With more fequent pulses, we can see the dropping peak fluorescence more clearly. Therefore, we see the NPQ activation in a higher resolution and could try to fit a function to estimate the activation rate.\n"
+                "    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full activation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhausted and higher light might damage the plant.\n"
+                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
+                "    - With more frequent pulses, we can see the dropping peak fluorescence more clearly. Therefore, we see the NPQ activation in a higher resolution and could try to fit a function to estimate the activation rate.\n"
                 "    - Normally we assume that the pulses don't affect the photosynthesis. After a pulse the signal returns to the previous level and the peak height seems to decrease always the same.\n"
                 "    - However, if we give pulses in rapid succession under low light, the saturation pulses can have an effect like actinic light. You can see this if you try a light intensity of 50 μmol m⁻² s⁻¹ with pulses every 5 s. There, the peak height decreases more than with fewer pulses. \n"
                 "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
@@ -342,217 +364,161 @@ def make_page(text: Callable[[str], str]) -> None:
                     "    - With a high frequency of saturation pulses we can also see that this maximal activity is reached faster.\n"
                     "    - If we increase the Zeaxanthin conversion rate, the maximal NPQ activity also increases up to a factor of about two.\n"
                     "    - Are changes in the two rates additive?\n"
-                    "6. :blue[In the dark phase the plant's NPQ system relaxes.]\n"
-                    "    - What happens if you strongly reduce the adaption time?\n"
-                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaninful results.]\n"
-                    "    - Increase the saturating pulse intensity to maximum. Does something change?"
+                    "6. :blue[The plant's NPQ mechanism relaxes in the dark after the saturating pulse. Is this necessary?]\n"
+                    "    - When we shorten the dark phase to less than 10-15 seconds, the relaxation after the dark saturation pulse isn't completed yet. Therefore, when we turn on the actinic light, we initially overestimate the fluorescence and the estimated stress level.\n"
+                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
+                    "    - The fluorescence simulation minimally changes when increasing the saturation pulse to maximum intensity. The higher light intensity \n"
                     "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
                 )
 
-    slider_light = st.slider(
-        label=text("SLIDER_LIGHT"),
-        min_value=50,
-        max_value=900,
-        value=100,
-    )
-    col1, col2 = st.columns(2)
-
-    with col1:
-        slider_time = st.slider(
-            label=text("FAL_SLIDER_TIME"),
-            min_value=1,
-            max_value=15,
-            value=5,
+    with st.form("simple_model"):
+        slider_light = st.slider(
+            label=text("SLIDER_LIGHT"),
+            min_value=50,
+            max_value=900,
+            value=100,
         )
-    with col2:
-        slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
-        
-    if version == "4Bio":
         col1, col2 = st.columns(2)
+
         with col1:
-            slider_aktivation = st.select_slider(
-                text("SLIDER_ACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)),
-                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
-            slider_darklength = st.slider(
-                text("FAL_SLIDER_DARKLENGTH"), min_value=0, max_value=slider_time * 60, value=30
+            slider_time = st.slider(
+                label=text("FAL_SLIDER_TIME"),
+                min_value=1,
+                max_value=15,
+                value=5,
             )
         with col2:
-            slider_deaktivation = st.select_slider(
-                text("SLIDER_DEACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)),
-                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
-            slider_saturate = st.slider(
-                label=text("FAL_SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
-            )
+            slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
 
-        updated_parameters = {
-            "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024
-            * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-    else:
-        updated_parameters = {
-            "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-        slider_darklength = 30
-        slider_saturate = 5000
-
-    col1_, col2_ = st.columns(2)
-    
-    if "model_sliders" not in st.session_state:
-        st.session_state["model_sliders"] = {
-            'slider_light': slider_light,
-            'slider_saturate': slider_saturate
-        }
-    else:
-        st.session_state["model_sliders"].update({
-            'slider_light': slider_light,
-            'slider_saturate': slider_saturate
-        })
-
-    with col1_:
-        if st.button("Start the simulation", type="primary", use_container_width=True):
-            with st.spinner(text("SPINNER")):
-                sim_time, sim_results = sim_model(
-                    updated_parameters,
-                    slider_time,
-                    slider_light,
-                    slider_pings,
-                    slider_saturate,
-                    slider_darklength,
-                )
-
-                if "model_results" not in st.session_state:
-                    st.session_state["model_results"] = calculate_results_to_plot(sim_time, sim_results)
-                else:
-                    st.session_state["model_results"].update(calculate_results_to_plot(sim_time, sim_results))
-
-                fig_4Bio = make_plot(
-                    values=st.session_state["model_results"],
-                    variables=st.session_state["model_sliders"],
-                    version='4Bio',
-                    width=15,
-                    height=6,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel={
-                        "Fluo": text("FLUO"),
-                        "NPQ": text("AXIS_NPQ"),
-                        "PhiPSII": text("AXIS_PHIPSII"),
-                    },
-                    dark_length=slider_darklength,
-                    max_time=slider_time * 60,
-                    new_label=text("PLOTS_LABEL_NEW"),
-                    old_label=text("PLOTS_LABEL_OLD")
-                )
-                fig_4STEM = make_plot(
-                    values=st.session_state["model_results"],
-                    variables=st.session_state["model_sliders"],
-                    version='4STEM',
-                    width=15,
-                    height=3,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel={
-                        "Fluo": text("FLUO"),
-                        "NPQ": text("AXIS_NPQ"),
-                        "PhiPSII": text("AXIS_PHIPSII"),
-                    },
-                    dark_length=slider_darklength,
-                    max_time=slider_time * 60,
-                    new_label=text("PLOTS_LABEL_NEW"),
-                    old_label=text("PLOTS_LABEL_OLD")
-                )
-
-                st.session_state["fig_4Bio"] = fig_4Bio
-                st.session_state["fig_4STEM"] = fig_4STEM
-
-                old_results = {}
-                for key, value in st.session_state["model_results"].items():
-                    old_results.update({f"old {key}": value})
-
-                st.session_state["model_results"].update(old_results)
-                
-                old_sliders = {}
-                for key, value in st.session_state["model_sliders"].items():
-                    old_sliders.update({f"old {key}": value})
-
-                st.session_state["model_sliders"].update(old_sliders)
-    with col2_:
-        if st.button(label="Reset Graph", use_container_width=True):
-            if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
-                for i in ["old Fluo", "old NPQ", "old PhiPSII"]:
-                    if st.session_state["model_results"].get(i):
-                        st.session_state["model_results"].pop(i)
-                    else:
-                        alert = st.warning("Nothing to reset")
-                        time.sleep(1.5)
-                        alert.empty()
-                        break
-
-                fig_4Bio = make_plot(
-                    values=st.session_state["model_results"],
-                    variables=st.session_state["model_sliders"],
-                    version='4Bio',
-                    width=15,
-                    height=6,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel={
-                        "Fluo": text("FLUO"),
-                        "NPQ": text("AXIS_NPQ"),
-                        "PhiPSII": text("AXIS_PHIPSII"),
-                    },
-                    dark_length=slider_darklength,
-                    max_time=slider_time * 60,
-                    new_label=text("PLOTS_LABEL_NEW"),
-                    old_label=text("PLOTS_LABEL_OLD")
-                )
-                fig_4STEM = make_plot(
-                    values=st.session_state["model_results"],
-                    variables=st.session_state["model_sliders"],
-                    version='4STEM',
-                    width=15,
-                    height=3,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel={
-                        "Fluo": text("FLUO"),
-                        "NPQ": text("AXIS_NPQ"),
-                        "PhiPSII": text("AXIS_PHIPSII"),
-                    },
-                    dark_length=slider_darklength,
-                    max_time=slider_time * 60,
-                    new_label=text("PLOTS_LABEL_NEW"),
-                    old_label=text("PLOTS_LABEL_OLD")
-                )
-
-                st.session_state["fig_4Bio"] = fig_4Bio
-                st.session_state["fig_4STEM"] = fig_4STEM
-
-                old_results = {}
-                for key, value in st.session_state["model_results"].items():
-                    old_results.update({f"old {key}": value})
-
-                st.session_state["model_results"].update(old_results)
-                
-                old_sliders = {}
-                for key, value in st.session_state["model_sliders"].items():
-                    old_sliders.update({f"old {key}": value})
-
-                st.session_state["model_sliders"].update(old_sliders)
-
-    if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
         if version == "4Bio":
-            showed_fig = st.session_state["fig_4Bio"]
-        else:
-            showed_fig = st.session_state["fig_4STEM"]
+            col1, col2 = st.columns(2)
+            with col1:
+                slider_aktivation = st.select_slider(
+                    text("SLIDER_ACTIVATION"),
+                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+                )
+                slider_darklength = st.slider(
+                    text("FAL_SLIDER_DARKLENGTH"), min_value=0, max_value=slider_time * 60, value=30
+                )
+            with col2:
+                slider_deaktivation = st.select_slider(
+                    text("SLIDER_DEACTIVATION"),
+                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+                )
+                slider_saturate = st.slider(
+                    label=text("FAL_SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
+                )
 
-        st.pyplot(showed_fig, transparent=True)
+            updated_parameters = {
+                "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
+                "kEpoxZ": 0.00024
+                * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+            }
+        else:
+            updated_parameters = {
+                "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
+                "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+            }
+            slider_darklength = 30
+            slider_saturate = 5000
+
+        col1_, col2_ = st.columns(2)
+        with col2_:
+            show_old = st.checkbox("Compare with the last simulation", value=True)
+
+        with col1_:
+            # if st.button("Start the simulation", type="primary", use_container_width=True):
+            if st.form_submit_button("Start the simulation", type="primary", use_container_width=True):
+                with st.spinner(text("SPINNER")):
+                    sim_time, sim_results = sim_model(
+                        updated_parameters,
+                        slider_time,
+                        slider_light,
+                        slider_pings,
+                        slider_saturate,
+                        slider_darklength,
+                    )
+
+                    if "model_results" not in st.session_state:
+                        st.session_state["model_results"] = calculate_results_to_plot(sim_time, sim_results)
+                    else:
+                        st.session_state["model_results"].update(calculate_results_to_plot(sim_time, sim_results))
+
+                    if show_old:
+                        plot_values = st.session_state["model_results"]
+                    else:
+                        plot_values = {k:v for k,v in st.session_state["model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
+
+                    fig_4Bio, fig_4STEM = make_both_plots(
+                        text=text,
+                        xlabel1=text("AXIS_TIME_S"),
+                        xlabel2=text("AXIS_TIME_MIN"),
+                        ylabel_4STEM=text("FLUO"),
+                        ylabel_4Bio={
+                            "Fluo": text("FLUO"),
+                            "NPQ": text("AXIS_NPQ"),
+                            "PhiPSII": text("AXIS_PHIPSII"),
+                        },
+                        session_state_values=plot_values,
+                        slider_time=slider_time,
+                        slider_darklength=slider_darklength,
+                    )
+
+                    st.session_state["fig_4Bio"] = fig_4Bio
+                    st.session_state["fig_4STEM"] = fig_4STEM
+
+                    old_results = {}
+                    for key, value in st.session_state["model_results"].items():
+                        old_results.update({f"old {key}": value})
+
+                    st.session_state["model_results"].update(old_results)
+        # with col2_:
+        #     if st.button(label="Reset Graph", use_container_width=True):
+        #         if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
+        #             for i in ["old Fluo", "old NPQ", "old PhiPSII"]:
+        #                 if st.session_state["model_results"].get(i):
+        #                     st.session_state["model_results"].pop(i)
+        #                 else:
+        #                     alert = st.warning("Nothing to reset")
+        #                     time.sleep(1.5)
+        #                     alert.empty()
+        #                     break
+
+        #             fig_4Bio, fig_4STEM = make_both_plots(
+        #                 text=text,
+        #                 xlabel1=text("AXIS_TIME_S"),
+        #                 xlabel2=text("AXIS_TIME_MIN"),
+        #                 ylabel_4STEM=text("FLUO"),
+        #                 ylabel_4Bio={
+        #                     "Fluo": text("FLUO"),
+        #                     "NPQ": text("AXIS_NPQ"),
+        #                     "PhiPSII": text("AXIS_PHIPSII"),
+        #                 },
+        #                 session_state_values=st.session_state["model_results"],
+        #                 slider_time=slider_time,
+        #                 slider_darklength=slider_darklength,
+        #             )
+
+        #             st.session_state["fig_4Bio"] = fig_4Bio
+        #             st.session_state["fig_4STEM"] = fig_4STEM
+
+        #             old_results = {}
+        #             for key, value in st.session_state["model_results"].items():
+        #                 old_results.update({f"old {key}": value})
+
+        #             st.session_state["model_results"].update(old_results)
+
+        if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
+            if version == "4Bio":
+                showed_fig = st.session_state["fig_4Bio"]
+            else:
+                showed_fig = st.session_state["fig_4STEM"]
+
+            st.pyplot(showed_fig, transparent=True)
+
+        return see_interpr
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
@@ -562,6 +528,45 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
         )
 
+def style_guinding_questions(see_interpr:bool=False)->None:
+    # Remove the bullet point marker
+    st.markdown(
+        """<style>
+        .st-emotion-cache-0.eqpbllx5 ul{
+            list-style: none; /* Remove list bullets */
+            padding: 0;
+            margin: 0;
+        }
+        </style>""",
+        unsafe_allow_html=True
+    )
+    if see_interpr:
+        # Replace the bullet point with a "A:"
+        st.markdown(
+            """<style>
+            .st-emotion-cache-0.eqpbllx5 ul li:before{
+                content: 'A:';
+                padding-right: 10px;
+                font-weight: bold;
+                margin: 0 0 0 -25px;
+            }
+            </style>""",
+            unsafe_allow_html=True
+        )
+    else:
+        # Replace the bullet point with a "Q:"
+        st.markdown(
+            """<style>
+            .st-emotion-cache-0.eqpbllx5 ul li:before{
+                content: 'Q:';
+                padding-right: 10px;
+                font-weight: bold;
+                margin: 0 0 0 -27px;
+            }
+            </style>""",
+            unsafe_allow_html=True
+        )
+    return None
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
@@ -572,7 +577,8 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
-    make_page(text)
+    see_interpr = make_page(text)
     make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")
-    make_sidebar()
+    make_sidebar()#
+    style_guinding_questions(see_interpr)
