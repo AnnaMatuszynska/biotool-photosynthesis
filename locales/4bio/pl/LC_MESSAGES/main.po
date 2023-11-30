@@ -976,6 +976,58 @@ msgstr ""
 msgid "FAL_SIMULATION_PRETTY_1"
 msgstr ""
 
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_EXPANDER"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_HEADER_SINGLE"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_1"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_2"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_HEADER_DUO"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_DUO"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_EXPANDER"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_HEADER"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_TOGGLE"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_QUESTIONS"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_QUESTIONS_EXTEND"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_ANSWERS"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_ANSWERS_EXTEND"
+msgstr ""
+
 
 
 #: pages/plant_memory.py:380

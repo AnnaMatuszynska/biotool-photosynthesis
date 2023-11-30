@@ -312,7 +312,7 @@ msgstr "## One plant to rule them all"
 # Grammarly checked
 #: pages/photosynthesis.py:61
 msgid "PHO_MODEL_ORGANISMEN_EXPLANATION"
-msgstr "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis Thaliana*, a 'model organism'."
+msgstr "Often, when you try to find out something about plants in general, like how photosynthesis works, the experiments are performed on the species *Arabidopsis thaliana*, a 'model organism'."
 
 # Grammarly checked
 #: pages/photosynthesis.py:63
@@ -976,6 +976,102 @@ msgstr ""
 #: pages/first_analysis.py:262
 msgid "FAL_SIMULATION_PRETTY_1"
 msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_EXPANDER"
+msgstr "See how to interpret your modelling results"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_HEADER_SINGLE"
+msgstr "### Graphs with one result"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_1"
+msgstr "We can look at the graph in three phases:\n"
+            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is 'F₀'. We then simulate a saturating light pulse which rapidly inceases the fluorescence up to the peak value 'Fₘ'. Fₘ should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. 'Fₜ', the fluorescence simulated outside of saturating pulses, shows the photosystems behaviour under the actinic light. We see that Fₜ decreases back to the F₀-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
+            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level (Fₘ') is the same as Fₘ, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F₀ which persists until the end of the experiment. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
+            "3. Indeed, when we proceed to give another saturating pulse, we see that the new maximum fluorescence Fₘ' is noticeably lower than Fₘ, showing us that non-photochemical quenching has been activated and is funnelling excitation energy away from both fluorescence and photosynthesis. You can find this observation directly reflected in the formula to estimate NPQ:"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_2"
+msgstr  "The same way you can analyse simulation graphs with changed parameters and even more light phases. In general, observe how  Fₜ and Fₘ' behave over time, especially when the light condition is changed. Then, connect your oversations with your knowledge on NPQ. If you are interested, you could also use the calculated estimated of NPQ and and PSII efficiency in the <a href='#' id='4Bio'>4Bio</a> version."
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_HEADER_DUO"
+msgstr "### Graphs with old and new results"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GRAPH_EXPLANATION_DUO"
+msgstr "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol m⁻² s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behaviour implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ's, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_EXPANDER"
+msgstr "Having trouble connecting the simulation results to biology? Try our **guiding questions**"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_HEADER"
+msgstr "### Guiding Questions"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_TOGGLE"
+msgstr "**See our interpretation**"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_QUESTIONS"
+msgstr "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
+                "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
+                "    - When the light is being turned on, how does the reaction differ to when you used 100 μmol m⁻² s⁻¹? What does that mean to the plant?\n"
+                "    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
+                "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
+                "    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
+                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
+                "    - Lower the time between the saturation pulses. What can you see?\n"
+                "    - Does it seem like the saturation pulses affect the plant's photosynthesis?\n"
+                "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
+                "    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
+                "    - Does this depend on the other settings?\n"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_QUESTIONS_EXTEND"
+msgstr "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
+                    "    - How does the simulated NPQ graph behave when you increase the Zeaxanthin conversion rate? And the Violaxanthin rate?\n"
+                    "    - Are changes in the two rates additive?\n"
+                    "6. :blue[The plant's NPQ mechanism relaxes in the dark after the saturating pulse. Is this necessary?]\n"
+                    "    - What happens if you strongly reduce the dark-adaption time?\n"
+                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
+                    "    - Increase the saturating pulse intensity to maximum. Does something change?\n"
+                    "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?\n"
+                    "    - Because the model assumes that the saturation pulses aren't too low, if you keep decreasing the intensity, you might experience errors in simulation or analysis. Don't let this deter you! Instead try out how the model reacts to our inputs and how else you can break it."
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_ANSWERS"
+msgstr "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
+                "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
+                "    - The fluorescence signal after turning on the light, shortly after the peak, is a lot higher. This is because chlorophyll receives much more energy which puts the plant under light stress.\n"
+                "    - The later saturation pulses, after ca. two minutes, are shorter than those under low light. Therefore the plant has increased the heat quenching, aka NPQ, as a light protection mechanism.\n"
+                "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
+                "    - For this higher light intensity we can see as well the increased fluorescence after light-on and the further decreasing fluorescence during the pulses.\n"
+                "    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full activation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhausted and higher light might damage the plant.\n"
+                "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
+                "    - With more frequent pulses, we can see the dropping peak fluorescence more clearly. Therefore, we see the NPQ activation in a higher resolution and could try to fit a function to estimate the activation rate.\n"
+                "    - Normally we assume that the pulses don't affect the photosynthesis. After a pulse the signal returns to the previous level and the peak height seems to decrease always the same.\n"
+                "    - However, if we give pulses in rapid succession under low light, the saturation pulses can have an effect like actinic light. You can see this if you try a light intensity of 50 μmol m⁻² s⁻¹ with pulses every 5 s. There, the peak height decreases more than with fewer pulses. \n"
+                "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
+                "    - With a light intensity of 500 to 900 μmol m⁻² s⁻¹ the NPQ adaption seems to be finished after three to four seconds. We should measure at least this long to capture the whole process.\n"
+                "    - With lower light intensities this adaption process takes less time. So a shorter measurement might be feasible.\n"
+
+#: pages/first_analysis.py:262
+msgid "FAL_GUIDING_ANSWERS_EXTEND"
+msgstr "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent the activation and deactivation rates of NPQ respectively.]\n"
+                    "    - If we increase the Zeaxanthin conversion rate, the maximal NPQ activity increases up to a factor of about two.\n"
+                    "    - With a high frequency of saturation pulses we can also see that this maximal activity is reached faster.\n"
+                    "    - If we increase the Zeaxanthin conversion rate, the maximal NPQ activity also increases up to a factor of about two.\n"
+                    "    - Are changes in the two rates additive?\n"
+                    "6. :blue[The plant's NPQ mechanism relaxes in the dark after the saturating pulse. Is this necessary?]\n"
+                    "    - When we shorten the dark phase to less than 10-15 seconds, the relaxation after the dark saturation pulse isn't completed yet. Therefore, when we turn on the actinic light, we initially overestimate the fluorescence and the estimated stress level.\n"
+                    "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
+                    "    - The fluorescence simulation minimally changes when increasing the saturation pulse to maximum intensity. The higher light intensity \n"
+                    "    - Below ca. 2000 μmol m⁻² s⁻¹ the peak height difference is clearly noticeable. From there, the Fₜ level seems generally increased as the fluorescence is normalised to the undersaturated Fₘ. Both factors lead to a strong overestimation of NPQ and an underestimated Φ(PSII).\n"
 
 
 
