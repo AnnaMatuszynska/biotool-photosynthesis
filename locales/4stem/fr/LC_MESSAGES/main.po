@@ -103,7 +103,13 @@ msgstr ""
 msgid "AXIS_PHIPSII"
 msgstr ""
 
+#: pages/first_analysis.py:489
+msgid "NEW_LABEL"
+msgstr ""
 
+#: pages/first_analysis.py:489
+msgid "OLD_LABEL"
+msgstr ""
 
 # SIDEBAR
 #: pages/_sidebar.py:14

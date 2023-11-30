@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import patches
 from typing import Callable
 import warnings
+from matplotlib.lines import Line2D
 
 def sim_model(
     updated_parameters, slider_time, slider_light, slider_pings, slider_saturate, slider_darklength
@@ -183,7 +184,7 @@ def make_4STEM_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values
 
     return fig
 
-def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height):
+def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values, max_time, dark_length, width, height, variables):
     
     alpha_old = 0.5
     
@@ -229,9 +230,39 @@ def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values,
     plot_style = plot_stylings()
     plot_style.update({"figure.figsize": (width, height)})
     
+    plot_mosaic = [['A' if i < 6 else 'D' for i in range(0, 10)], ['B' if i < 5 else 'C' for i in range(0, 10)]]
+    
     with plt.rc_context(plot_style):
-        fig, axs = plt.subplot_mosaic(mosaic=[["A", "A"], ["B", "C"]], constrained_layout=True)
+        fig, axs = plt.subplot_mosaic(mosaic=plot_mosaic, constrained_layout=True)
         
+        #Create fake legend
+        axs['D'].set_axis_off()
+        
+        custom_legend_lines = [
+            Line2D([0], [0], color = style_dict['Fluo']['color'], linestyle = style_dict['Fluo']['linestyle'], alpha = style_dict['Fluo']['alpha'])
+        ]
+        custom_legend_text = [
+            'New'
+        ]
+        
+        if values.get('old Fluo'):
+            custom_legend_lines.append(
+                Line2D([0], [0], color = style_dict['old Fluo']['color'], linestyle = style_dict['old Fluo']['linestyle'], alpha = style_dict['old Fluo']['alpha'])
+            )
+            custom_legend_text.append('Old')
+            variable_numbers_old = f"{variables['old slider_light']}\n{variables['old slider_saturate']}"
+            
+        variable_text = "LP [μmol m⁻² s⁻¹]\nSP [μmol m⁻² s⁻¹]"
+        
+        variable_numbers_new = f"{variables['slider_light']}\n{variables['slider_saturate']}"
+        
+        axs['D'].text(0, 0.9, variable_text, linespacing=1.5, verticalalignment = 'top')
+        axs['D'].text(0.6, 0.9, variable_numbers_new, linespacing=1.5, verticalalignment = 'top', horizontalalignment = 'center')
+        axs['D'].text(0.85, 0.9, variable_numbers_old, linespacing=1.5, verticalalignment = 'top', horizontalalignment = 'center')
+            
+        axs['D'].legend(custom_legend_lines, custom_legend_text, ncols=2, frameon = False, labelcolor = 'linecolor', loc = [0.5,1])
+        
+        # Plot the graphs
         graph_belong = {
             'Fluo': 'A',
             'NPQ': 'B',
@@ -264,8 +295,6 @@ def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values,
             axs[graph_belong[i]].set_xlabel(xlabel1, weight = 'bold', size = 12)
             axs[graph_belong[i]].set_ylabel(ylabel[i], weight = 'bold', size = 12)
             ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
-            
-            axs[graph_belong[i]].legend(loc = 'best', ncols=2, frameon = False, labelcolor = 'linecolor', fontsize = 12, prop = {'weight':'bold'})
             
     for j in range(len([axs["A"], axs["B"], axs["C"]])):
         ax = [axs["A"], axs["B"], axs["C"]][j]
@@ -310,7 +339,7 @@ def make_4Bio_plot(text: Callable[[str], str], xlabel1, xlabel2, ylabel, values,
 
     return fig
     
-def make_both_plots(text: Callable[[str], str], xlabel1, xlabel2, ylabel_4Bio, ylabel_4STEM, session_state_values, slider_time, slider_darklength):
+def make_both_plots(text: Callable[[str], str], xlabel1, xlabel2, ylabel_4Bio, ylabel_4STEM, session_state_values, slider_time, slider_darklength, slider_values):
     
     fig_1 = make_4Bio_plot(
                 text=text,
@@ -321,7 +350,8 @@ def make_both_plots(text: Callable[[str], str], xlabel1, xlabel2, ylabel_4Bio, y
                 max_time=slider_time * 60,
                 dark_length=slider_darklength,
                 width=15,
-                height=6
+                height=6,
+                variables=slider_values
             )
     
     fig_2 = make_4STEM_plot(
@@ -817,3 +847,194 @@ def make_both_plots_memory(text: Callable[[str], str], xlabel1, xlabel2, ylabel_
             )
     
     return fig_1, fig_2
+
+def make_plot(
+    values,
+    variables,
+    version,
+    width,
+    height,
+    xlabel1,
+    xlabel2,
+    ylabel,
+    dark_length,
+    max_time,
+    new_label,
+    old_label
+):
+    
+    plot_style = plot_stylings()
+    
+    alpha_old = 0.5
+    
+    style_dict = {
+        'Old': {
+            'color': '#FF4B4B',
+            'alpha': alpha_old,
+            'linestyle': 'dashdot',
+            'label': old_label
+        },
+        'New': {
+            'color': '#FF4B4B',
+            'alpha': 1,
+            'linestyle': 'solid',
+            'label': new_label
+        }
+    }
+    
+    plot_style.update({"figure.figsize": (width, height)})
+    
+    plot_mosaic = [['A' if i < 6 else 'D' for i in range(0, 10)]]
+    
+    if version == '4Bio':
+        plot_mosaic.append(['B' if i < 5 else 'C' for i in range(0, 10)])
+    
+    with plt.rc_context(plot_style):
+        fig, axs = plt.subplot_mosaic(mosaic=plot_mosaic, constrained_layout=True)
+        
+        #Create fake legend
+        axs['D'].set_axis_off()
+        
+        new_line = Line2D([0], [0], color = style_dict['New']['color'], linestyle = style_dict['New']['linestyle'], alpha = style_dict['New']['alpha'])
+        old_line = Line2D([0], [0], color = style_dict['Old']['color'], linestyle = style_dict['Old']['linestyle'], alpha = style_dict['Old']['alpha'])
+        
+        new_legend = axs['D'].legend(
+            [new_line],
+            [new_label],
+            frameon = False,
+            labelcolor = 'linecolor',
+            loc = 'center',
+            bbox_to_anchor = (0.55, 1)
+        )
+        
+        variable_text = ""
+        variable_numbers_new = ''
+        variable_numbers_old = ''
+        
+        for data_version, data_dict in variables.items():
+            for variable_name, variable in data_dict.items():
+                if data_version == 'New':
+                    variable_text += f"{variable_name}\n"
+                    variable_numbers_new += f"{variable}\n"
+                else:
+                    variable_numbers_old += f"{variable}\n"
+        
+        axs['D'].text(0, 0.9, variable_text, linespacing=2, verticalalignment = 'top', ha='left')
+        
+        axs['D'].text(0.55, 0.9, variable_numbers_new, linespacing=2, verticalalignment = 'top', horizontalalignment = 'center')
+        
+        if values.get('old Fluo'):
+            old_legend = axs['D'].legend(
+                [old_line],
+                [old_label],
+                frameon = False,
+                labelcolor = 'linecolor',
+                loc = 'center',
+                bbox_to_anchor = (0.85, 1)
+            )
+            axs['D'].text(0.85, 0.9, variable_numbers_old, linespacing=2, verticalalignment = 'top', horizontalalignment = 'center')
+        
+        axs['D'].add_artist(new_legend)
+
+        
+        # custom_legend_lines = [
+        #     Line2D([0], [0], color = style_dict['New']['color'], linestyle = style_dict['New']['linestyle'], alpha = style_dict['New']['alpha'])
+        # ]
+        # custom_legend_text = [
+        #     style_dict['New']['label']
+        # ]
+        
+        # variable_numbers_old = ''
+        
+        # if values.get('old Fluo'):
+        #     custom_legend_lines.append(
+        #         Line2D([0], [0], color = style_dict['Old']['color'], linestyle = style_dict['Old']['linestyle'], alpha = style_dict['Old']['alpha'])
+        #     )
+        #     custom_legend_text.append(style_dict['Old']['label'])
+            
+        #     variable_numbers_old = f"{variables['old slider_light']}\n{variables['old slider_saturate']}"
+        
+        # legend = axs['D'].legend(custom_legend_lines, custom_legend_text, ncols=2, frameon = False, labelcolor = 'linecolor', loc = 'right', bbox_to_anchor = (1, 1))
+                
+        # variable_text = "LP [μmol m⁻² s⁻¹]\nSP [μmol m⁻² s⁻¹]"
+        
+        # variable_numbers_new = f"{variables['slider_light']}\n{variables['slider_saturate']}"
+        
+        # axs['D'].text(0, 0.9, variable_text, linespacing=1.5, verticalalignment = 'top')
+        # axs['D'].text(0.6, 0.9, variable_numbers_new, linespacing=1.5, verticalalignment = 'top', horizontalalignment = 'center')
+        # axs['D'].text(0.85, 0.9, variable_numbers_old, linespacing=1.5, verticalalignment = 'top', horizontalalignment = 'center')
+        
+        
+
+        # Plot the graphs
+        graph_belong = {'Fluo': 'A'}
+        
+        if version == '4Bio':
+            graph_belong.update({
+                'NPQ': 'B',
+                'PhiPSII': 'C'
+            })
+        
+        for graph, letter in graph_belong.items():
+            if values.get('old ' + graph):
+                axs[letter].plot(
+                    values['old ' + graph][0],
+                    values['old ' + graph][1],
+                    color = style_dict['Old']['color'],
+                    linestyle = style_dict['Old']['linestyle'],
+                    alpha = style_dict['Old']['alpha'],
+                )
+            axs[letter].plot(
+                values[graph][0],
+                values[graph][1],
+                color = style_dict['New']['color'],
+                linestyle = style_dict['New']['linestyle'],
+                alpha = style_dict['New']['alpha'],
+            )
+            
+            # Create the top xaxis for the minutes
+            ax_top = axs[letter].secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
+            
+            # Add labels
+            axs[letter].set_xlabel(xlabel1, weight = 'bold', size = 12)
+            axs[letter].set_ylabel(ylabel[graph], weight = 'bold', size = 12)
+            ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
+
+            default_xticks = axs[letter].get_xticks()
+            new_xticks = []
+            for i in range(len(default_xticks)):
+                try:
+                    if default_xticks[i] > dark_length and default_xticks[i - 1] < dark_length:
+                        new_xticks.append(dark_length)
+                        new_xticks.append(default_xticks[i])
+                    else:
+                        new_xticks.append(default_xticks[i])
+                except:
+                    pass
+
+            axs[letter].set_xticks(new_xticks)
+
+            # Change the left and down limit
+            axs[letter].set_xlim(0, max_time)
+            axs[letter].set_ylim(0)
+            
+            # Highlight dark and light phase
+            dark_patch = patches.Rectangle(
+                xy=(axs[letter].get_xlim()[0], axs[letter].get_ylim()[0]),
+                width=dark_length,
+                height=axs[letter].get_ylim()[1],
+                facecolor="#1c5bc7",
+                alpha=0.3,
+            )
+            light_patch = patches.Rectangle(
+                xy=(dark_length, axs[letter].get_ylim()[0]),
+                width=max_time - dark_length,
+                height=axs[letter].get_ylim()[1],
+                facecolor="#cf6d0c",
+                alpha=0.3,
+            )
+
+            axs[letter].add_patch(dark_patch)
+            axs[letter].add_patch(light_patch)
+            
+    return fig
