@@ -424,6 +424,23 @@ def make_page(text: Callable[[str], str]) -> bool:
             slider_darklength = 30
             slider_saturate = 5000
 
+        if "model_variables" not in st.session_state:
+            st.session_state["model_variables"] = {
+                'New': {
+                    'LP [μmol m⁻² s⁻¹]': slider_light,
+                    'SP [μmol m⁻² s⁻¹]': slider_saturate,
+                    'CtZ [s⁻¹]': round(updated_parameters['kDeepoxV'], 4),
+                    'CtV [s⁻¹]': round(updated_parameters['kEpoxZ'], 5)
+                }
+            }
+        else:
+            st.session_state["model_variables"]['New'].update({
+                'LP [μmol m⁻² s⁻¹]': slider_light,
+                'SP [μmol m⁻² s⁻¹]': slider_saturate,
+                'CtZ [s⁻¹]': round(updated_parameters['kDeepoxV'], 4),
+                'CtV [s⁻¹]': round(updated_parameters['kEpoxZ'], 5)
+            })
+        
         col1_, col2_ = st.columns(2)
         with col2_:
             show_old = st.checkbox("Compare with the last simulation", value=True)
@@ -448,32 +465,45 @@ def make_page(text: Callable[[str], str]) -> bool:
 
                     if show_old:
                         plot_values = st.session_state["model_results"]
+                        plot_variables = st.session_state['model_variables']
+                        
                     else:
                         plot_values = {k:v for k,v in st.session_state["model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
-
-                    fig_4Bio, fig_4STEM = make_both_plots(
-                        text=text,
+                        plot_variables = {
+                            'New': st.session_state['model_variables']['New']
+                        }
+                        
+                    fig_4Bio = make_plot(
+                        values=plot_values,
+                        variables=plot_variables,
+                        version = version,
+                        width = 15,
+                        height = 6,
                         xlabel1=text("AXIS_TIME_S"),
                         xlabel2=text("AXIS_TIME_MIN"),
-                        ylabel_4STEM=text("FLUO"),
-                        ylabel_4Bio={
+                        ylabel={
                             "Fluo": text("FLUO"),
                             "NPQ": text("AXIS_NPQ"),
                             "PhiPSII": text("AXIS_PHIPSII"),
                         },
-                        session_state_values=plot_values,
-                        slider_time=slider_time,
-                        slider_darklength=slider_darklength,
+                        dark_length=slider_darklength,
+                        max_time=slider_time*60,
+                        new_label = text("NEW_LABEL"),
+                        old_label = text("OLD_LABEL")
                     )
 
                     st.session_state["fig_4Bio"] = fig_4Bio
-                    st.session_state["fig_4STEM"] = fig_4STEM
+                    #st.session_state["fig_4STEM"] = fig_4STEM
 
                     old_results = {}
                     for key, value in st.session_state["model_results"].items():
                         old_results.update({f"old {key}": value})
 
                     st.session_state["model_results"].update(old_results)
+                    
+                    st.session_state["model_variables"].update({
+                        'Old': {k:v for k,v in st.session_state["model_variables"]['New'].items()
+                    }})
         # with col2_:
         #     if st.button(label="Reset Graph", use_container_width=True):
         #         if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
@@ -510,7 +540,7 @@ def make_page(text: Callable[[str], str]) -> bool:
 
         #             st.session_state["model_results"].update(old_results)
 
-        if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
+        if "fig_4Bio" in st.session_state or "fig_4STEM" in st.session_state:
             if version == "4Bio":
                 showed_fig = st.session_state["fig_4Bio"]
             else:

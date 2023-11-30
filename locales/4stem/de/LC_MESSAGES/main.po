@@ -41,7 +41,7 @@ msgstr "Referenzen auf dieser Seite:"
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
-msgstr "Lichtintensität der Lichtphase in μmol m⁻² s⁻¹"
+msgstr "Lichtintensität der Lichtphase (LP) in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
@@ -51,12 +51,12 @@ msgstr "Sekunden zwischen Sättigungsimpulsen während der Lichtphase"
 #: pages/first_analysis.py:371
 #: pages/plant_memory.py:272
 msgid "SLIDER_ACTIVATION"
-msgstr "Umwandlungsrate zu Zeaxanthin in Prozent des Standardwerts"
+msgstr "Umwandlungsrate zu Zeaxanthin (CtZ) in Prozent des Standardwerts"
 
 #: pages/first_analysis.py:380
 #: pages/plant_memory.py:278
 msgid "SLIDER_DEACTIVATION"
-msgstr "Umwandlungsrate zu Violaxanthin in Prozent des Standardwerts"
+msgstr "Umwandlungsrate zu Violaxanthin (CtV) in Prozent des Standardwerts"
 
 # Grammarly checked
 #: Start.py:14
@@ -103,7 +103,13 @@ msgstr "NPQ [a.u.]"
 msgid "AXIS_PHIPSII"
 msgstr "Φ(PSII)"
 
+#: pages/first_analysis.py:489
+msgid "NEW_LABEL"
+msgstr ""
 
+#: pages/first_analysis.py:489
+msgid "OLD_LABEL"
+msgstr ""
 
 # SIDEBAR
 #: pages/_sidebar.py:14
@@ -920,7 +926,7 @@ msgstr "Dauer der Dunkelphase in Sekunden"
 
 #: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
-msgstr "Lichtintensität des Sättigungsimpulses in μmol m⁻² s⁻¹"
+msgstr "Lichtintensität des Sättigungsimpulses (SP) in μmol m⁻² s⁻¹"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74

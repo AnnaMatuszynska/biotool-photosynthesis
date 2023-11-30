@@ -41,7 +41,7 @@ msgstr "References on this page:"
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
-msgstr "Light intensity of light phase in μmol m⁻² s⁻¹"
+msgstr "Light intensity of light phase (LP) in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
@@ -51,12 +51,12 @@ msgstr "Seconds between saturating pulse during light phase"
 #: pages/first_analysis.py:371
 #: pages/plant_memory.py:272
 msgid "SLIDER_ACTIVATION"
-msgstr "Conversion rate to Zeaxanthin in percent of default"
+msgstr "Conversion rate to Zeaxanthin (CtZ) in percent of default"
 
 #: pages/first_analysis.py:380
 #: pages/plant_memory.py:278
 msgid "SLIDER_DEACTIVATION"
-msgstr "Conversion rate to Violaxanthin in percent of default"
+msgstr "Conversion rate to Violaxanthin (CtV) in percent of default"
 
 # Grammarly checked
 #: Start.py:14
@@ -103,7 +103,13 @@ msgstr "NPQ [a.u.]"
 msgid "AXIS_PHIPSII"
 msgstr "Φ(PSII)"
 
+#: pages/first_analysis.py:489
+msgid "NEW_LABEL"
+msgstr "New"
 
+#: pages/first_analysis.py:489
+msgid "OLD_LABEL"
+msgstr "Old"
 
 # SIDEBAR
 #: pages/_sidebar.py:14
@@ -627,7 +633,7 @@ msgstr "Display"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_XLABEL"
-msgstr "Intercellular "
+msgstr "Intercellular"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_YLABEL"
@@ -871,7 +877,7 @@ msgstr "Length of the dark phase in seconds"
 
 #: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
-msgstr "Light intensity of saturating pulse in μmol m⁻² s⁻¹"
+msgstr "Light intensity of saturating pulse (SP) in μmol m⁻² s⁻¹"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74

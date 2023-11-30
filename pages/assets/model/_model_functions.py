@@ -895,34 +895,74 @@ def make_plot(
         #Create fake legend
         axs['D'].set_axis_off()
         
+        new_line = Line2D([0], [0], color = style_dict['New']['color'], linestyle = style_dict['New']['linestyle'], alpha = style_dict['New']['alpha'])
+        old_line = Line2D([0], [0], color = style_dict['Old']['color'], linestyle = style_dict['Old']['linestyle'], alpha = style_dict['Old']['alpha'])
         
+        new_legend = axs['D'].legend(
+            [new_line],
+            [new_label],
+            frameon = False,
+            labelcolor = 'linecolor',
+            loc = 'center',
+            bbox_to_anchor = (0.55, 1)
+        )
         
-        custom_legend_lines = [
-            Line2D([0], [0], color = style_dict['New']['color'], linestyle = style_dict['New']['linestyle'], alpha = style_dict['New']['alpha'])
-        ]
-        custom_legend_text = [
-            style_dict['New']['label']
-        ]
-        
+        variable_text = ""
+        variable_numbers_new = ''
         variable_numbers_old = ''
         
+        for data_version, data_dict in variables.items():
+            for variable_name, variable in data_dict.items():
+                if data_version == 'New':
+                    variable_text += f"{variable_name}\n"
+                    variable_numbers_new += f"{variable}\n"
+                else:
+                    variable_numbers_old += f"{variable}\n"
+        
+        axs['D'].text(0, 0.9, variable_text, linespacing=2, verticalalignment = 'top', ha='left')
+        
+        axs['D'].text(0.55, 0.9, variable_numbers_new, linespacing=2, verticalalignment = 'top', horizontalalignment = 'center')
+        
         if values.get('old Fluo'):
-            custom_legend_lines.append(
-                Line2D([0], [0], color = style_dict['Old']['color'], linestyle = style_dict['Old']['linestyle'], alpha = style_dict['Old']['alpha'])
+            old_legend = axs['D'].legend(
+                [old_line],
+                [old_label],
+                frameon = False,
+                labelcolor = 'linecolor',
+                loc = 'center',
+                bbox_to_anchor = (0.85, 1)
             )
-            custom_legend_text.append(style_dict['Old']['label'])
+            axs['D'].text(0.85, 0.9, variable_numbers_old, linespacing=2, verticalalignment = 'top', horizontalalignment = 'center')
+        
+        axs['D'].add_artist(new_legend)
+
+        
+        # custom_legend_lines = [
+        #     Line2D([0], [0], color = style_dict['New']['color'], linestyle = style_dict['New']['linestyle'], alpha = style_dict['New']['alpha'])
+        # ]
+        # custom_legend_text = [
+        #     style_dict['New']['label']
+        # ]
+        
+        # variable_numbers_old = ''
+        
+        # if values.get('old Fluo'):
+        #     custom_legend_lines.append(
+        #         Line2D([0], [0], color = style_dict['Old']['color'], linestyle = style_dict['Old']['linestyle'], alpha = style_dict['Old']['alpha'])
+        #     )
+        #     custom_legend_text.append(style_dict['Old']['label'])
             
-            variable_numbers_old = f"{variables['old slider_light']}\n{variables['old slider_saturate']}"
+        #     variable_numbers_old = f"{variables['old slider_light']}\n{variables['old slider_saturate']}"
         
-        legend = axs['D'].legend(custom_legend_lines, custom_legend_text, ncols=2, frameon = False, labelcolor = 'linecolor', loc = 'right', bbox_to_anchor = (1, 1))
+        # legend = axs['D'].legend(custom_legend_lines, custom_legend_text, ncols=2, frameon = False, labelcolor = 'linecolor', loc = 'right', bbox_to_anchor = (1, 1))
                 
-        variable_text = "LP [μmol m⁻² s⁻¹]\nSP [μmol m⁻² s⁻¹]"
+        # variable_text = "LP [μmol m⁻² s⁻¹]\nSP [μmol m⁻² s⁻¹]"
         
-        variable_numbers_new = f"{variables['slider_light']}\n{variables['slider_saturate']}"
+        # variable_numbers_new = f"{variables['slider_light']}\n{variables['slider_saturate']}"
         
-        axs['D'].text(0, 0.9, variable_text, linespacing=1.5, verticalalignment = 'top')
-        axs['D'].text(0.6, 0.9, variable_numbers_new, linespacing=1.5, verticalalignment = 'top', horizontalalignment = 'center')
-        axs['D'].text(0.85, 0.9, variable_numbers_old, linespacing=1.5, verticalalignment = 'top', horizontalalignment = 'center')
+        # axs['D'].text(0, 0.9, variable_text, linespacing=1.5, verticalalignment = 'top')
+        # axs['D'].text(0.6, 0.9, variable_numbers_new, linespacing=1.5, verticalalignment = 'top', horizontalalignment = 'center')
+        # axs['D'].text(0.85, 0.9, variable_numbers_old, linespacing=1.5, verticalalignment = 'top', horizontalalignment = 'center')
         
         
 
