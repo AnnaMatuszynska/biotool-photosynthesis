@@ -288,8 +288,6 @@ def make_page(text: Callable[[str], str]) -> bool:
     st.markdown(text("FAL_HEADLINE_SLIDER"))
     st.markdown(text("FAL_EXPLANATNION"))
     include_ytvideo("https://youtu.be/zxGZKeopEDw", 0.5)
-    st.markdown(text("FAL_TIPP1"))
-    st.markdown(text("FAL_TIPP2"))
 
     with st.expander(text("FAL_GRAPH_EXPLANATION_EXPANDER"), expanded=True):
         st.markdown(text("FAL_GRAPH_EXPLANATION_HEADER_SINGLE"))
