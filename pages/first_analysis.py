@@ -1,10 +1,15 @@
 import numpy as np
 import streamlit as st
-from streamlit.components.v1 import html
 import time
 from pages._sidebar import make_sidebar
-from pages.assets.model._model_functions import calculate_results_to_plot, make_both_plots, sim_model, make_plot
+from pages.assets.model._model_functions import (
+    calculate_results_to_plot,
+    make_both_plots,
+    make_plot,
+    sim_model,
+)
 from pathlib import Path
+from streamlit.components.v1 import html
 from typing import Callable
 from utils import (
     get_localised_text,
@@ -338,14 +343,15 @@ def make_page(text: Callable[[str], str]) -> bool:
                     "    - What happens if you strongly reduce the dark-adaption time?\n"
                     "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
                     "    - Increase the saturating pulse intensity to maximum. Does something change?\n"
-                    "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
+                    "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?\n"
+                    "    - Because the model assumes that the saturation pulses aren't too low, if you keep decreasing the intensity, you might experience errors in simulation or analysis. Don't let this deter you! Instead try out how the model reacts to our inputs and how else you can break it."
                 )
         else:  # If toggle is switched show possible interpretation
             st.markdown(
                 "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
                 "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
                 "    - The fluorescence signal after turning on the light, shortly after the peak, is a lot higher. This is because chlorophyll receives much more energy which puts the plant under light stress.\n"
-                "    - The later saturation pulses, after ca. 2 minutes, are shorter than those under low light. Therefore the plant has increased the heat quenching, aka NPQ, as a light protection mechanism.\n"
+                "    - The later saturation pulses, after ca. two minutes, are shorter than those under low light. Therefore the plant has increased the heat quenching, aka NPQ, as a light protection mechanism.\n"
                 "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
                 "    - For this higher light intensity we can see as well the increased fluorescence after light-on and the further decreasing fluorescence during the pulses.\n"
                 "    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full activation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhausted and higher light might damage the plant.\n"
@@ -368,7 +374,7 @@ def make_page(text: Callable[[str], str]) -> bool:
                     "    - When we shorten the dark phase to less than 10-15 seconds, the relaxation after the dark saturation pulse isn't completed yet. Therefore, when we turn on the actinic light, we initially overestimate the fluorescence and the estimated stress level.\n"
                     "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
                     "    - The fluorescence simulation minimally changes when increasing the saturation pulse to maximum intensity. The higher light intensity \n"
-                    "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
+                    "    - Below ca. 2000 μmol m⁻² s⁻¹ the peak height difference is clearly noticeable. From there, the Fₜ level seems generally increased as the fluorescence is normalised to the undersaturated Fₘ. Both factors lead to a strong overestimation of NPQ and an underestimated Φ(PSII).\n"
                 )
 
     with st.form("simple_model"):
@@ -426,28 +432,32 @@ def make_page(text: Callable[[str], str]) -> bool:
 
         if "model_variables" not in st.session_state:
             st.session_state["model_variables"] = {
-                'New': {
-                    'LP [μmol m⁻² s⁻¹]': slider_light,
-                    'SP [μmol m⁻² s⁻¹]': slider_saturate,
-                    'CtZ [s⁻¹]': round(updated_parameters['kDeepoxV'], 4),
-                    'CtV [s⁻¹]': round(updated_parameters['kEpoxZ'], 5)
+                "New": {
+                    "LP [μmol m⁻² s⁻¹]": slider_light,
+                    "SP [μmol m⁻² s⁻¹]": slider_saturate,
+                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
+                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
                 }
             }
         else:
-            st.session_state["model_variables"]['New'].update({
-                'LP [μmol m⁻² s⁻¹]': slider_light,
-                'SP [μmol m⁻² s⁻¹]': slider_saturate,
-                'CtZ [s⁻¹]': round(updated_parameters['kDeepoxV'], 4),
-                'CtV [s⁻¹]': round(updated_parameters['kEpoxZ'], 5)
-            })
-        
+            st.session_state["model_variables"]["New"].update(
+                {
+                    "LP [μmol m⁻² s⁻¹]": slider_light,
+                    "SP [μmol m⁻² s⁻¹]": slider_saturate,
+                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
+                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
+                }
+            )
+
         col1_, col2_ = st.columns(2)
         with col2_:
             show_old = st.checkbox("Compare with the last simulation", value=True)
 
         with col1_:
             # if st.button("Start the simulation", type="primary", use_container_width=True):
-            submitted = st.form_submit_button("Start the simulation", type="primary", use_container_width=True)
+            submitted = st.form_submit_button(
+                "Start the simulation", type="primary", use_container_width=True
+            )
         if submitted:
             with st.spinner(text("SPINNER")):
                 time.sleep(0.1)
@@ -467,20 +477,22 @@ def make_page(text: Callable[[str], str]) -> bool:
 
                     if show_old:
                         plot_values = st.session_state["model_results"]
-                        plot_variables = st.session_state['model_variables']
-                        
+                        plot_variables = st.session_state["model_variables"]
+
                     else:
-                        plot_values = {k:v for k,v in st.session_state["model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
-                        plot_variables = {
-                            'New': st.session_state['model_variables']['New']
+                        plot_values = {
+                            k: v
+                            for k, v in st.session_state["model_results"].items()
+                            if k in ["Fluo", "NPQ", "PhiPSII"]
                         }
-                    
+                        plot_variables = {"New": st.session_state["model_variables"]["New"]}
+
                     fig_4Bio = make_plot(
                         values=plot_values,
                         variables=plot_variables,
-                        version = '4Bio',
-                        width = 15,
-                        height = 6,
+                        version="4Bio",
+                        width=15,
+                        height=6,
                         xlabel1=text("AXIS_TIME_S"),
                         xlabel2=text("AXIS_TIME_MIN"),
                         ylabel={
@@ -489,26 +501,24 @@ def make_page(text: Callable[[str], str]) -> bool:
                             "PhiPSII": text("AXIS_PHIPSII"),
                         },
                         dark_length=slider_darklength,
-                        max_time=slider_time*60,
-                        new_label = text("NEW_LABEL"),
-                        old_label = text("OLD_LABEL")
+                        max_time=slider_time * 60,
+                        new_label=text("NEW_LABEL"),
+                        old_label=text("OLD_LABEL"),
                     )
-                    
+
                     fig_4STEM = make_plot(
                         values=plot_values,
                         variables=plot_variables,
-                        version = '4STEM',
-                        width = 15,
-                        height = 3,
+                        version="4STEM",
+                        width=15,
+                        height=3,
                         xlabel1=text("AXIS_TIME_S"),
                         xlabel2=text("AXIS_TIME_MIN"),
-                        ylabel={
-                            "Fluo": text("FLUO")
-                        },
+                        ylabel={"Fluo": text("FLUO")},
                         dark_length=slider_darklength,
-                        max_time=slider_time*60,
-                        new_label = text("NEW_LABEL"),
-                        old_label = text("OLD_LABEL")
+                        max_time=slider_time * 60,
+                        new_label=text("NEW_LABEL"),
+                        old_label=text("OLD_LABEL"),
                     )
 
                     st.session_state["fig_4Bio"] = fig_4Bio
@@ -519,45 +529,10 @@ def make_page(text: Callable[[str], str]) -> bool:
                     old_results.update({f"old {key}": value})
 
                 st.session_state["model_results"].update(old_results)
-                
-                st.session_state["model_variables"].update({
-                    'Old': {k:v for k,v in st.session_state["model_variables"]['New'].items()
-                }})
-        # with col2_:
-        #     if st.button(label="Reset Graph", use_container_width=True):
-        #         if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
-        #             for i in ["old Fluo", "old NPQ", "old PhiPSII"]:
-        #                 if st.session_state["model_results"].get(i):
-        #                     st.session_state["model_results"].pop(i)
-        #                 else:
-        #                     alert = st.warning("Nothing to reset")
-        #                     time.sleep(1.5)
-        #                     alert.empty()
-        #                     break
 
-        #             fig_4Bio, fig_4STEM = make_both_plots(
-        #                 text=text,
-        #                 xlabel1=text("AXIS_TIME_S"),
-        #                 xlabel2=text("AXIS_TIME_MIN"),
-        #                 ylabel_4STEM=text("FLUO"),
-        #                 ylabel_4Bio={
-        #                     "Fluo": text("FLUO"),
-        #                     "NPQ": text("AXIS_NPQ"),
-        #                     "PhiPSII": text("AXIS_PHIPSII"),
-        #                 },
-        #                 session_state_values=st.session_state["model_results"],
-        #                 slider_time=slider_time,
-        #                 slider_darklength=slider_darklength,
-        #             )
-
-        #             st.session_state["fig_4Bio"] = fig_4Bio
-        #             st.session_state["fig_4STEM"] = fig_4STEM
-
-        #             old_results = {}
-        #             for key, value in st.session_state["model_results"].items():
-        #                 old_results.update({f"old {key}": value})
-
-        #             st.session_state["model_results"].update(old_results)
+                st.session_state["model_variables"].update(
+                    {"Old": {k: v for k, v in st.session_state["model_variables"]["New"].items()}}
+                )
 
         if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
             if version == "4Bio":
@@ -577,7 +552,8 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
         )
 
-def style_guinding_questions(see_interpr:bool=False)->None:
+
+def style_guinding_questions(see_interpr: bool = False) -> None:
     # Remove the bullet point marker
     st.markdown(
         """<style>
@@ -587,7 +563,7 @@ def style_guinding_questions(see_interpr:bool=False)->None:
             margin: 0;
         }
         </style>""",
-        unsafe_allow_html=True
+        unsafe_allow_html=True,
     )
     if see_interpr:
         # Replace the bullet point with a "A:"
@@ -600,7 +576,7 @@ def style_guinding_questions(see_interpr:bool=False)->None:
                 margin: 0 0 0 -25px;
             }
             </style>""",
-            unsafe_allow_html=True
+            unsafe_allow_html=True,
         )
     else:
         # Replace the bullet point with a "Q:"
@@ -613,9 +589,10 @@ def style_guinding_questions(see_interpr:bool=False)->None:
                 margin: 0 0 0 -27px;
             }
             </style>""",
-            unsafe_allow_html=True
+            unsafe_allow_html=True,
         )
     return None
+
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
@@ -629,5 +606,5 @@ if __name__ == "__main__":
     see_interpr = make_page(text)
     make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")
-    make_sidebar()#
+    make_sidebar()  #
     style_guinding_questions(see_interpr)
