@@ -337,7 +337,7 @@ def make_page(text: Callable[[str], str]) -> bool:
                     "6. :blue[The plant's NPQ mechanism relaxes in the dark after the saturating pulse. Is this necessary?]\n"
                     "    - What happens if you strongly reduce the dark-adaption time?\n"
                     "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
-                    "    - Increase the saturating pulse intensity to maximum. Does something change?"
+                    "    - Increase the saturating pulse intensity to maximum. Does something change?\n"
                     "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
                 )
         else:  # If toggle is switched show possible interpretation
@@ -367,149 +367,158 @@ def make_page(text: Callable[[str], str]) -> bool:
                     "6. :blue[The plant's NPQ mechanism relaxes in the dark after the saturating pulse. Is this necessary?]\n"
                     "    - When we shorten the dark phase to less than 10-15 seconds, the relaxation after the dark saturation pulse isn't completed yet. Therefore, when we turn on the actinic light, we initially overestimate the fluorescence and the estimated stress level.\n"
                     "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
-                    "    - Increase the saturating pulse intensity to maximum. Does something change?"
+                    "    - The fluorescence simulation minimally changes when increasing the saturation pulse to maximum intensity. The higher light intensity \n"
                     "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?"
                 )
 
-    slider_light = st.slider(
-        label=text("SLIDER_LIGHT"),
-        min_value=50,
-        max_value=900,
-        value=100,
-    )
-    col1, col2 = st.columns(2)
-
-    with col1:
-        slider_time = st.slider(
-            label=text("FAL_SLIDER_TIME"),
-            min_value=1,
-            max_value=15,
-            value=5,
+    with st.form("simple_model"):
+        slider_light = st.slider(
+            label=text("SLIDER_LIGHT"),
+            min_value=50,
+            max_value=900,
+            value=100,
         )
-    with col2:
-        slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
-
-    if version == "4Bio":
         col1, col2 = st.columns(2)
+
         with col1:
-            slider_aktivation = st.select_slider(
-                text("SLIDER_ACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)).astype(int),
-                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
-            slider_darklength = st.slider(
-                text("FAL_SLIDER_DARKLENGTH"), min_value=0, max_value=slider_time * 60, value=30
+            slider_time = st.slider(
+                label=text("FAL_SLIDER_TIME"),
+                min_value=1,
+                max_value=15,
+                value=5,
             )
         with col2:
-            slider_deaktivation = st.select_slider(
-                text("SLIDER_DEACTIVATION"),
-                options=np.round(np.logspace(1, 3, 21)).astype(int),
-                value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
-            )
-            slider_saturate = st.slider(
-                label=text("FAL_SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
-            )
+            slider_pings = st.slider(label=text("SLIDER_PULSES"), min_value=5, max_value=150, value=85)
 
-        updated_parameters = {
-            "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024
-            * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-    else:
-        updated_parameters = {
-            "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
-            "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
-        }
-        slider_darklength = 30
-        slider_saturate = 5000
-
-    col1_, col2_ = st.columns(2)
-
-    with col1_:
-        if st.button("Start the simulation", type="primary", use_container_width=True):
-            with st.spinner(text("SPINNER")):
-                sim_time, sim_results = sim_model(
-                    updated_parameters,
-                    slider_time,
-                    slider_light,
-                    slider_pings,
-                    slider_saturate,
-                    slider_darklength,
-                )
-
-                if "model_results" not in st.session_state:
-                    st.session_state["model_results"] = calculate_results_to_plot(sim_time, sim_results)
-                else:
-                    st.session_state["model_results"].update(calculate_results_to_plot(sim_time, sim_results))
-
-                fig_4Bio, fig_4STEM = make_both_plots(
-                    text=text,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel_4STEM=text("FLUO"),
-                    ylabel_4Bio={
-                        "Fluo": text("FLUO"),
-                        "NPQ": text("AXIS_NPQ"),
-                        "PhiPSII": text("AXIS_PHIPSII"),
-                    },
-                    session_state_values=st.session_state["model_results"],
-                    slider_time=slider_time,
-                    slider_darklength=slider_darklength,
-                )
-
-                st.session_state["fig_4Bio"] = fig_4Bio
-                st.session_state["fig_4STEM"] = fig_4STEM
-
-                old_results = {}
-                for key, value in st.session_state["model_results"].items():
-                    old_results.update({f"old {key}": value})
-
-                st.session_state["model_results"].update(old_results)
-    with col2_:
-        if st.button(label="Reset Graph", use_container_width=True):
-            if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
-                for i in ["old Fluo", "old NPQ", "old PhiPSII"]:
-                    if st.session_state["model_results"].get(i):
-                        st.session_state["model_results"].pop(i)
-                    else:
-                        alert = st.warning("Nothing to reset")
-                        time.sleep(1.5)
-                        alert.empty()
-                        break
-
-                fig_4Bio, fig_4STEM = make_both_plots(
-                    text=text,
-                    xlabel1=text("AXIS_TIME_S"),
-                    xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel_4STEM=text("FLUO"),
-                    ylabel_4Bio={
-                        "Fluo": text("FLUO"),
-                        "NPQ": text("AXIS_NPQ"),
-                        "PhiPSII": text("AXIS_PHIPSII"),
-                    },
-                    session_state_values=st.session_state["model_results"],
-                    slider_time=slider_time,
-                    slider_darklength=slider_darklength,
-                )
-
-                st.session_state["fig_4Bio"] = fig_4Bio
-                st.session_state["fig_4STEM"] = fig_4STEM
-
-                old_results = {}
-                for key, value in st.session_state["model_results"].items():
-                    old_results.update({f"old {key}": value})
-
-                st.session_state["model_results"].update(old_results)
-
-    if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
         if version == "4Bio":
-            showed_fig = st.session_state["fig_4Bio"]
+            col1, col2 = st.columns(2)
+            with col1:
+                slider_aktivation = st.select_slider(
+                    text("SLIDER_ACTIVATION"),
+                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+                )
+                slider_darklength = st.slider(
+                    text("FAL_SLIDER_DARKLENGTH"), min_value=0, max_value=slider_time * 60, value=30
+                )
+            with col2:
+                slider_deaktivation = st.select_slider(
+                    text("SLIDER_DEACTIVATION"),
+                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
+                )
+                slider_saturate = st.slider(
+                    label=text("FAL_SLIDER_SATURATE"), min_value=0, max_value=10000, value=5000
+                )
+
+            updated_parameters = {
+                "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
+                "kEpoxZ": 0.00024
+                * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+            }
         else:
-            showed_fig = st.session_state["fig_4STEM"]
+            updated_parameters = {
+                "kDeepoxV": 0.0024,  # Aktivierung des Quenchings
+                "kEpoxZ": 0.00024,  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+            }
+            slider_darklength = 30
+            slider_saturate = 5000
 
-        st.pyplot(showed_fig, transparent=True)
+        col1_, col2_ = st.columns(2)
+        with col2_:
+            show_old = st.checkbox("Compare with the last simulation", value=True)
 
-    return see_interpr
+        with col1_:
+            # if st.button("Start the simulation", type="primary", use_container_width=True):
+            if st.form_submit_button("Start the simulation", type="primary", use_container_width=True):
+                with st.spinner(text("SPINNER")):
+                    sim_time, sim_results = sim_model(
+                        updated_parameters,
+                        slider_time,
+                        slider_light,
+                        slider_pings,
+                        slider_saturate,
+                        slider_darklength,
+                    )
+
+                    if "model_results" not in st.session_state:
+                        st.session_state["model_results"] = calculate_results_to_plot(sim_time, sim_results)
+                    else:
+                        st.session_state["model_results"].update(calculate_results_to_plot(sim_time, sim_results))
+
+                    if show_old:
+                        plot_values = st.session_state["model_results"]
+                    else:
+                        plot_values = {k:v for k,v in st.session_state["model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
+
+                    fig_4Bio, fig_4STEM = make_both_plots(
+                        text=text,
+                        xlabel1=text("AXIS_TIME_S"),
+                        xlabel2=text("AXIS_TIME_MIN"),
+                        ylabel_4STEM=text("FLUO"),
+                        ylabel_4Bio={
+                            "Fluo": text("FLUO"),
+                            "NPQ": text("AXIS_NPQ"),
+                            "PhiPSII": text("AXIS_PHIPSII"),
+                        },
+                        session_state_values=plot_values,
+                        slider_time=slider_time,
+                        slider_darklength=slider_darklength,
+                    )
+
+                    st.session_state["fig_4Bio"] = fig_4Bio
+                    st.session_state["fig_4STEM"] = fig_4STEM
+
+                    old_results = {}
+                    for key, value in st.session_state["model_results"].items():
+                        old_results.update({f"old {key}": value})
+
+                    st.session_state["model_results"].update(old_results)
+        # with col2_:
+        #     if st.button(label="Reset Graph", use_container_width=True):
+        #         if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
+        #             for i in ["old Fluo", "old NPQ", "old PhiPSII"]:
+        #                 if st.session_state["model_results"].get(i):
+        #                     st.session_state["model_results"].pop(i)
+        #                 else:
+        #                     alert = st.warning("Nothing to reset")
+        #                     time.sleep(1.5)
+        #                     alert.empty()
+        #                     break
+
+        #             fig_4Bio, fig_4STEM = make_both_plots(
+        #                 text=text,
+        #                 xlabel1=text("AXIS_TIME_S"),
+        #                 xlabel2=text("AXIS_TIME_MIN"),
+        #                 ylabel_4STEM=text("FLUO"),
+        #                 ylabel_4Bio={
+        #                     "Fluo": text("FLUO"),
+        #                     "NPQ": text("AXIS_NPQ"),
+        #                     "PhiPSII": text("AXIS_PHIPSII"),
+        #                 },
+        #                 session_state_values=st.session_state["model_results"],
+        #                 slider_time=slider_time,
+        #                 slider_darklength=slider_darklength,
+        #             )
+
+        #             st.session_state["fig_4Bio"] = fig_4Bio
+        #             st.session_state["fig_4STEM"] = fig_4STEM
+
+        #             old_results = {}
+        #             for key, value in st.session_state["model_results"].items():
+        #                 old_results.update({f"old {key}": value})
+
+        #             st.session_state["model_results"].update(old_results)
+
+        if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
+            if version == "4Bio":
+                showed_fig = st.session_state["fig_4Bio"]
+            else:
+                showed_fig = st.session_state["fig_4STEM"]
+
+            st.pyplot(showed_fig, transparent=True)
+
+        return see_interpr
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
