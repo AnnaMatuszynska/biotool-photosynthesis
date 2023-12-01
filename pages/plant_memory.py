@@ -30,7 +30,6 @@ def make_page(text: Callable[[str], str], version: str) -> None:
         st.image("pictures/memory_protocol.png")
 
     # Add guiding questions:
-    see_interpr = False
     # with st.expander(text("MEM_GUIDING_EXPANDER")):
     #     # The answers are hidden by default
     #     st.markdown(text("MEM_GUIDING_HEADER"))
