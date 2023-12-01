@@ -396,10 +396,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 ''',
                 unsafe_allow_html=True
             )
-            
+
             st.markdown(
                 f'''
-                | {text("MDL_FVCB_DEFAULT_PARAMETERS_VARIABLES")} | {text("MDL_FVCB_DEFAULT_PARAMETERS_VALUES")} | {text("MDL_FVCB_DEFAULT_PARAMETERS_UNITS")} |
+                |  | {text("MDL_FVCB_DEFAULT_PARAMETERS_VALUES")} | {text("MDL_FVCB_DEFAULT_PARAMETERS_UNITS")} |
                 | --- | --- | --- |
                 | V<sub>cmax</sub> | 80 | µmol m⁻² s⁻¹ |
                 | K<sub>c</sub> | 259 | µbar |
@@ -494,6 +494,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MDL_HEADLINE_CAM"), unsafe_allow_html=True)
         st.markdown(text("MDL_CAM_1"), unsafe_allow_html=True)
 
+def style_page():
+    # Stop the table from overflowing
+    st.markdown('<style>table{width: 100%} .st-emotion-cache-nahz7x.e1nzilvr5{overflow-x: scroll}</style>', unsafe_allow_html=True)
+
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
@@ -542,3 +546,4 @@ if __name__ == "__main__":
     make_literature(text, language, version)
     make_prev_next_button("measuring method", "experiments in silico")
     make_sidebar()
+    style_page()
