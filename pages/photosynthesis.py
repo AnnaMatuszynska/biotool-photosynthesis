@@ -68,6 +68,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     markdown_click("PHO_HEADLINE_NPQ", text)
     markdown_click("PHO_NPQ_EXPLANATION", text)
 
+    include_image("pictures/Violaxanthin Scheme-4.png", 0.8, text("PHO_CAPTION_NPQ"))
+
     markdown_click("PHO_HEADER_MODEL_ORGANISMEN", text)
     markdown_click("PHO_MODEL_ORGANISMEN_EXPLANATION", text)
 

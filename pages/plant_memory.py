@@ -31,15 +31,15 @@ def make_page(text: Callable[[str], str], version: str) -> None:
         st.image("pictures/memory_protocol.png")
     
     # Add guiding questions:
-    with st.expander(text("MEM_GUIDING_EXPANDER")):
-        # The answers are hidden by default
-        st.markdown(text("MEM_GUIDING_HEADER"))
-        see_interpr = st.toggle(text("MEM_GUIDING_TOGGLE"))
+    # with st.expander(text("MEM_GUIDING_EXPANDER")):
+    #     # The answers are hidden by default
+    #     st.markdown(text("MEM_GUIDING_HEADER"))
+    #     see_interpr = st.toggle(text("MEM_GUIDING_TOGGLE"))
 
-        if not see_interpr:
-            st.markdown(text("MEM_GUIDING_QUESTIONS"))
-        else:  # If toggle is switched show possible interpretation
-            st.markdown(text("MEM_GUIDING_ANSWERS"))
+    #     if not see_interpr:
+    #         st.markdown(text("MEM_GUIDING_QUESTIONS"))
+    #     else:  # If toggle is switched show possible interpretation
+    #         st.markdown(text("MEM_GUIDING_ANSWERS"))
 
     # slider zum Einstellen in zwei Spalten angeordnet
     with st.form("memory_model"):

@@ -317,6 +317,9 @@ msgstr ""
 msgid "PHO_NPQ_EXPLANATION"
 msgstr ""
 
+msgid "PHO_CAPTION_NPQ"
+msgstr ""
+
 #: pages/photosynthesis.py:60
 msgid "PHO_HEADER_MODEL_ORGANISMEN"
 msgstr ""

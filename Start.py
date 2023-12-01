@@ -9,6 +9,7 @@ from utils import (
     make_prev_next_button,
     markdown_click,
     resetting_click_detector_setup,
+    include_ytvideo
 )
 
 
@@ -16,20 +17,20 @@ def make_introduction(text: Callable[[str], str]) -> None:
     markdown_click("STR_HEADLINE_MAIN", text)
     markdown_click("STR_INTRO", text)
 
-    with st.expander(text("STR_EXPANDER_ABOUT")):
-        markdown_click("STR_EXPLANATION_ABOUT", text)
-        st.markdown(text("STR_PROGRAMS_USED"))
+    # Learning objectives
+    with st.expander(text("STR_EXPANDER_OUTCOMES")):
+        st.markdown("")
 
     # Introduction biotool
-    st.video("https://youtu.be/KvyjIWLD8rU")
     st.markdown(text("STR_HEADLINE_USAGE"))
     markdown_click("STR_USAGE", text)
     markdown_click("STR_SPECIFIC_USE", text)
+    st.video("https://youtu.be/KvyjIWLD8rU")
 
 
 # FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
-    if version == "4Bio":
+    if version == "4STEM":
         st.markdown(text("STR_DROP_BOX_INTRO"))
         with st.expander(text("STR_EXPANDER_IN")):
             st.markdown(text("STR_EXPLANATION_IN_VITRO"))
@@ -43,6 +44,11 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
     markdown_click("STR_MODEL", text)
     markdown_click("STR_EXPERIMENT", text)
     markdown_click("STR_MEMORY", text)
+
+    # Make About section
+    with st.expander(text("STR_EXPANDER_ABOUT")):
+        markdown_click("STR_EXPLANATION_ABOUT", text)
+        st.markdown(text("STR_PROGRAMS_USED"))
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
