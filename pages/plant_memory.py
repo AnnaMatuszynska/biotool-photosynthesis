@@ -13,7 +13,7 @@ from utils import (
     markdown_click,
     resetting_click_detector_setup,
 )
-from pages.assets.model._model_functions import make_matplotlib_plot_memory_4STEM, sim_model_memory, calculate_results_to_plot, make_both_plots_memory
+from pages.assets.model._model_functions import sim_model_memory, calculate_results_to_plot, make_plot
 import time
 import datetime
 
@@ -87,6 +87,25 @@ def make_page(text: Callable[[str], str], version: str) -> None:
             slider_darklength = 60
             slider_saturate = 5000
             
+        if "memory_model_variables" not in st.session_state:
+            st.session_state["memory_model_variables"] = {
+                "New": {
+                    "AL [μmol m⁻² s⁻¹]": slider_light,
+                    "SP [μmol m⁻² s⁻¹]": slider_saturate,
+                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
+                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
+                }
+            }
+        else:
+            st.session_state["memory_model_variables"]["New"].update(
+                {
+                    "AL [μmol m⁻² s⁻¹]": slider_light,
+                    "SP [μmol m⁻² s⁻¹]": slider_saturate,
+                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
+                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
+                }
+            )
+            
         col1_, col2_ = st.columns(2)
         
         with col2_:
@@ -116,24 +135,59 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     
                 if show_old:
                     plot_values = st.session_state["memory_model_results"]
+                    plot_variables = st.session_state["memory_model_variables"]
                 else:
                     plot_values = {k:v for k,v in st.session_state["memory_model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
+                    plot_variables = {"New": st.session_state["memory_model_variables"]["New"]}
                 
-                fig_4Bio, fig_4STEM = make_both_plots_memory(
-                    text=text,
+                fig_4Bio = make_plot(
+                    values=plot_values,
+                    variables=plot_variables,
+                    version="4Bio",
+                    width=15,
+                    height=6,
                     xlabel1=text("AXIS_TIME_S"),
                     xlabel2=text("AXIS_TIME_MIN"),
-                    ylabel_4STEM=text("FLUO"),
-                    ylabel_4Bio={
+                    ylabel={
                         "Fluo": text("FLUO"),
                         "NPQ": text("AXIS_NPQ"),
                         "PhiPSII": text("AXIS_PHIPSII"),
                     },
-                    session_state_values=plot_values,
-                    slider_darklength=slider_darklength,
-                    slider_memory=slider_memory * 60,
-                    slider_training=slider_training * 60,
-                    slider_relaxation=slider_relaxation * 60
+                    dark_length=slider_darklength,
+                    new_label=text("NEW_LABEL"),
+                    old_label=text("OLD_LABEL"),
+                    memory_flag = True,
+                    memory_length=slider_memory * 60,
+                    training_length=slider_training * 60,
+                    relaxation_length=slider_relaxation * 60,
+                    annotation_labels={
+                        'Training': text("MEM_ANNO_TRAINING"),
+                        'Relaxation': text("MEM_ANNO_RELAXATION"),
+                        'Memory': text("MEM_ANNO_MEMORY")
+                    }
+                )
+                
+                fig_4STEM = make_plot(
+                    values=plot_values,
+                    variables=plot_variables,
+                    version="4STEM",
+                    width=15,
+                    height=3,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel={"Fluo": text("FLUO")},
+                    dark_length=slider_darklength,
+                    new_label=text("NEW_LABEL"),
+                    old_label=text("OLD_LABEL"),
+                    memory_flag = True,
+                    memory_length=slider_memory * 60,
+                    training_length=slider_training * 60,
+                    relaxation_length=slider_relaxation * 60,
+                    annotation_labels={
+                        'Training': text("MEM_ANNO_TRAINING"),
+                        'Relaxation': text("MEM_ANNO_RELAXATION"),
+                        'Memory': text("MEM_ANNO_MEMORY")
+                    }
                 )
                 
                 st.session_state["memory_fig_4Bio"] = fig_4Bio
@@ -144,6 +198,10 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     old_results.update({f"old {key}": value})
 
                 st.session_state["memory_model_results"].update(old_results)
+                
+                st.session_state["memory_model_variables"].update(
+                    {"Old": {k: v for k, v in st.session_state["memory_model_variables"]["New"].items()}}
+                )
             
                         
                 if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:

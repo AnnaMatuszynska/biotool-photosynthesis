@@ -4,7 +4,6 @@ import time
 from pages._sidebar import make_sidebar
 from pages.assets.model._model_functions import (
     calculate_results_to_plot,
-    make_both_plots,
     make_plot,
     sim_model,
 )
@@ -371,7 +370,7 @@ def make_page(text: Callable[[str], str]) -> bool:
         if "model_variables" not in st.session_state:
             st.session_state["model_variables"] = {
                 "New": {
-                    "LP [μmol m⁻² s⁻¹]": slider_light,
+                    "AL [μmol m⁻² s⁻¹]": slider_light,
                     "SP [μmol m⁻² s⁻¹]": slider_saturate,
                     "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
                     "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
@@ -380,7 +379,7 @@ def make_page(text: Callable[[str], str]) -> bool:
         else:
             st.session_state["model_variables"]["New"].update(
                 {
-                    "LP [μmol m⁻² s⁻¹]": slider_light,
+                    "AL [μmol m⁻² s⁻¹]": slider_light,
                     "SP [μmol m⁻² s⁻¹]": slider_saturate,
                     "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
                     "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
@@ -388,6 +387,7 @@ def make_page(text: Callable[[str], str]) -> bool:
             )
 
         col1_, col2_ = st.columns(2)
+        
         with col2_:
             show_old = st.checkbox("Compare with the last simulation", value=True)
 
