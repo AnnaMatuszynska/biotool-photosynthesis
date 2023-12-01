@@ -669,6 +669,14 @@ msgstr ""
 msgid "MDL_BELLASIO_2"
 msgstr ""
 
+#: pages/model_explain.py:405
+msgid "MDL_BELLASIO_3"
+msgstr ""
+
+#: pages/model_explain.py:405
+msgid "MDL_BELLASIO_4"
+msgstr ""
+
 #: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
 msgstr ""

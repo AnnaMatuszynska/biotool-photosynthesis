@@ -508,7 +508,7 @@ msgstr "#### Manual implementation"
 
 #: pages/model_explain.py:312
 msgid "MDL_HEADLINE_MODELBASE"
-msgstr "#### Modelbase implementation"
+msgstr "#### Modelbase implementation [1]"
 
 # Grammarly checked
 #: pages/model_explain.py:215
@@ -580,7 +580,7 @@ msgstr "### The Farquhar, von Caemmerer and Berry model"
 # Grammarly checked
 #: pages/model_explain.py:359
 msgid "MDL_FVCB_1"
-msgstr "The FvCB model, also known as the Farquhar, von Caemmerer, and Berry model, is a widely used theoretical framework in plant biology, first conceptualized in 1980&nbsp;[1]. While photosynthesis can broadly be summarized in three stages: light absorption, light reactions, and carbon fixation, this model only focuses on the latter. This provides a simplified view of C<sub>3</sub> photosynthesis and is named after its primary contributors: Graham D. Farquhar, Susanne von Caemmerer, and Joseph A. Berry. If you're unfamiliar with C<sub>3</sub> photosynthesis, you may want to check out the Dropbox below to learn more about the different types of photosynthesis."
+msgstr "The FvCB model, also known as the Farquhar, von Caemmerer, and Berry model, is a widely used theoretical framework in plant biology, first conceptualized in 1980&nbsp;[2]. While photosynthesis can broadly be summarized in three stages: light absorption, light reactions, and carbon fixation, this model only focuses on the latter. This provides a simplified view of C<sub>3</sub> photosynthesis and is named after its primary contributors: Graham D. Farquhar, Susanne von Caemmerer, and Joseph A. Berry. If you're unfamiliar with C<sub>3</sub> photosynthesis, you may want to check out the Dropbox below to learn more about the different types of photosynthesis."
 
 #: pages/model_explain.py:318
 msgid "MDL_FVCB_2"
@@ -594,7 +594,7 @@ msgid "MDL_FVCB_4"
 msgstr "Calculating A with these equations is relatively simple, but the model has one significant drawback. It does not incorporate time, limiting it to a constant, steady-state. While plants can achieve a steady-state, it is not typical for them in the outside world due to a constantly fluctuating environment. This is where dynamic models excel, like the SIR-model or other photosynthesis models."
 
 msgid "MDL_FVCB_5"
-msgstr "Despite this significant drawback, the FvCB model has been widely praised. Primarily attributed to its simplicity, it can easily be incorporated into other, more complex models focusing on, for example, mesophyll conductance&nbsp;[2] or inserting bicarbonate transporters at the chloroplast envelope&nbsp;[3]. We have created an interactive simulation using the four equations above to show you this simplicity. To not overwhelm you, you can change the O, J, and T<sub>p</sub>, which only change the different As (A<sub>c</sub>, A<sub>c</sub>, and A<sub>c</sub> respectively. The rest of the parameters were set to the values used in the review by S. von Caemmerer, from which we took these equations&nbsp;[4]."
+msgstr "Despite this significant drawback, the FvCB model has been widely praised. Primarily attributed to its simplicity, it can easily be incorporated into other, more complex models focusing on, for example, mesophyll conductance&nbsp;[3] or inserting bicarbonate transporters at the chloroplast envelope&nbsp;[4]. We have created an interactive simulation using the four equations above to show you this simplicity. To not overwhelm you, you can change the O, J, and T<sub>p</sub>, which only change the different As (A<sub>c</sub>, A<sub>c</sub>, and A<sub>c</sub> respectively. The rest of the parameters were set to the values used in the review by S. von Caemmerer, from which we took these equations&nbsp;[5]."
 
 msgid "MDL_FVCB_SLIDERS_PRECISION"
 msgstr "Precision"
@@ -650,7 +650,7 @@ msgstr "### The *e*-photosynthesis model"
 # Grammarly checked
 #: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
-msgstr "In 2012, Xin-Guang Zhu, Yu Wang, Donald R. Ort, and Stephen P. Long developed the *e*-photosynthesis model to provide a realistic representation of photosynthesis [5]. The model is complex and dynamic, encompassing most components of C<sub>3</sub> photosynthesis while only simplifying where necessary. It includes reactions of light absorption, light reactions, and carbon assimilation, building on top of Zhu et al.'s previous works, including their fluorescence model [6] and carbon metabolism model [7]. If you're not familiar with C<sub>3</sub> photosynthesis, you can learn more about the different types of photosynthesis in the Dropbox linked below."
+msgstr "In 2012, Xin-Guang Zhu, Yu Wang, Donald R. Ort, and Stephen P. Long developed the *e*-photosynthesis model to provide a realistic representation of photosynthesis [6]. The model is complex and dynamic, encompassing most components of C<sub>3</sub> photosynthesis while only simplifying where necessary. It includes reactions of light absorption, light reactions, and carbon assimilation, building on top of Zhu et al.'s previous works, including their fluorescence model [7] and carbon metabolism model [8]. If you're not familiar with C<sub>3</sub> photosynthesis, you can learn more about the different types of photosynthesis in the Dropbox linked below."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
@@ -667,16 +667,24 @@ msgstr "### The Bellasio model"
 # Grammarly checked
 #: pages/model_explain.py:395
 msgid "MDL_BELLASIO_1"
-msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behavior. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. The model aggregates three specific models, which have been modified and simplified. The light reactions are based on Yin et al.'s work, the dark reactions on Zhu et al.'s carbon metabolism model, and the stomatal conductance of Bellasio et al.'s hydro-mechanical formulation. It simplifies the intercellular space and mesophyll as uniform, calculates CO<sub>2</sub> diffusion, dissolution, and hydration mechanistically, and does not implement the restriction caused by metabolite diffusion. Furthermore, it uses the simple FvCB Formula to calculate A."
+msgstr "The Bellassio model was introduced in 2018 as a solution to the problem of oversimplified steady-state models and overly complex dynamic models [9]. It divides the leaf model into three compartments: the atmosphere, the space between the cells, and the mesophyll, where most of the plant's photosynthetic activity occurs. The model focuses on carbon assimilation processes, integrating light reactions and stomatal behaviour, which are the processes by which the plant captures carbon dioxide and releases water vapour during photosynthesis. The model's complexity is between the FvCB and *e*-photosynthesis models, as it takes inspiration from both to build its framework."
 
 # Grammarly checked
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_2"
-msgstr "The parameters are based on averaged literature values for typical parameters, and the few parameters created for this model are derived from the original equations or assigned plausible values. The model includes the major reactions of photosynthesis and is simple enough to be modeled in a spreadsheet program like Microsoft&reg; Excel&reg;, which the author kindly provided. Overall, this model is an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
+msgstr "To create the model, the author built upon three main models. Yin et al.'s equations [10] for the light reactions were modified, Zhu et al.'s carbon metabolism model [8] was used to simulate carbon assimilation, and a hydro-mechanical stomatal conductance model was introduced using the author's past model [11]. The end carbon assimilation is calculated using parts of the FvCB model [2]."
+
+#: pages/model_explain.py:405
+msgid "MDL_BELLASIO_3"
+msgstr "To make the model accessible to a broader range of users, the author introduced several simplifications that reduced the computational requirements. This allowed the model to be simulated using a spreadsheet program such as Microsoft Excel, making it accessible even to those with limited computational experience."
+
+#: pages/model_explain.py:405
+msgid "MDL_BELLASIO_4"
+msgstr "The model's parameters are based on averaged literature values derived from original equations or assigned plausible values. This provides a complete, simplistic package of C<sub>3</sub>-photosynthesis on a leaf level, which makes computational modelling more accessible to plant biologists."
 
 #: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
-msgstr "The difference between C3, C4 and CAM plants"
+msgstr "The difference between C3, C4 and CAM plants [12]"
 
 #: pages/model_explain.py:408
 msgid "MDL_HEADLINE_C3"

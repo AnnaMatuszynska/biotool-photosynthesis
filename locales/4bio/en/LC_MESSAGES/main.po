@@ -667,16 +667,24 @@ msgstr "### The Bellasio model"
 # Grammarly checked
 #: pages/model_explain.py:395
 msgid "MDL_BELLASIO_1"
-msgstr "The Bellasio model is a dynamic C<sub>3</sub> photosynthesis model that combines light and dark reactions with stomatal behavior. Its main objective is to provide a generalized photosynthesis model for C<sub>3</sub> plants that is easily accessible and user-friendly. It combines various elements from models, such as the FvCB and <i>e</i>-photosynthesis models, while simplifying certain aspects to make it suitable for non-experienced computational biologists. For a more detailed overview of what this model includes, switch to the <a href='#' id='4STEM'>4STEM</a> mode."
+msgstr "The Bellassio model, created in 2018, was developed to bridge the gap between simplistic, unrealistic steady-state models and more complex, complete dynamic models&nbsp;[8]. It divides the leaf model into three compartments: the atmosphere, intercellular space, and mesophyll. This model focuses on carbon assimilation processes, integrating light reactions and stomatal behaviour to create a more comprehensive leaf and plant model. It can be placed between the FvCB and *e*-photosynthesis models, as it takes inspiration from and uses some aspects of both to build its framework."
 
 # Grammarly checked
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_2"
-msgstr "The model includes the major reactions of photosynthesis and is simple enough to be modeled in a spreadsheet program like Microsoft&reg; Excel&reg;, which the author kindly provided. Overall, this model is an excellent starting point for scientists who wish to model photosynthesis, even if they lack experience with dynamic models."
+msgstr "To create this model, the author built upon three main models. They modified Yin et al.'s equations&nbsp;[9] for the light reactions, used Zhu et al.'s carbon metabolism model&nbsp;[7] to simulate the carbon assimilation process, and introduced stomatal conductance using their past model&nbsp;[10]. The end carbon assimilation is calculated using parts of the FvCB model&nbsp;[1]."
+
+#: pages/model_explain.py:405
+msgid "MDL_BELLASIO_3"
+msgstr "To make the model accessible to a broader range of users, the author introduced simplifications, such as assuming uniformity between the intercellular cells with no internal concentration gradients. The model was also designed to work within Microsoft Excel, allowing even the least experienced biologist to use it."
+
+#: pages/model_explain.py:405
+msgid "MDL_BELLASIO_4"
+msgstr "The model's parameters are based on averaged literature values derived from original equations or assigned plausible values. This creates a complete, simplistic package of C<sub>3</sub>-photosynthesis on a leaf level, allowing more plant biologists to be introduced to computational modelling."
 
 #: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
-msgstr "The difference between C3, C4 and CAM plants"
+msgstr "The difference between C3, C4 and CAM plants [11]"
 
 #: pages/model_explain.py:408
 msgid "MDL_HEADLINE_C3"
