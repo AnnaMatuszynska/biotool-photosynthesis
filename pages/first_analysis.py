@@ -338,7 +338,7 @@ def make_page(text: Callable[[str], str]) -> bool:
             with col1:
                 slider_aktivation = st.select_slider(
                     text("SLIDER_ACTIVATION"),
-                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    options=np.round(np.logspace(0,4, 21)).astype(int),
                     value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
                 )
                 slider_darklength = st.slider(
@@ -347,7 +347,7 @@ def make_page(text: Callable[[str], str]) -> bool:
             with col2:
                 slider_deaktivation = st.select_slider(
                     text("SLIDER_DEACTIVATION"),
-                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    options=np.round(np.logspace(0,4, 21)).astype(int),
                     value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
                 )
                 slider_saturate = st.slider(
@@ -355,9 +355,9 @@ def make_page(text: Callable[[str], str]) -> bool:
                 )
 
             updated_parameters = {
-                "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
+                "kDeepoxV": 0.0024 * (slider_aktivation / 100),  # Aktivierung des Quenchings
                 "kEpoxZ": 0.00024
-                * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+                * (slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
             }
         else:
             updated_parameters = {
@@ -372,8 +372,8 @@ def make_page(text: Callable[[str], str]) -> bool:
                 "New": {
                     "AL [μmol m⁻² s⁻¹]": slider_light,
                     "SP [μmol m⁻² s⁻¹]": slider_saturate,
-                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
-                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
+                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 5),
+                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 6),
                 }
             }
         else:
@@ -381,8 +381,8 @@ def make_page(text: Callable[[str], str]) -> bool:
                 {
                     "AL [μmol m⁻² s⁻¹]": slider_light,
                     "SP [μmol m⁻² s⁻¹]": slider_saturate,
-                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
-                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
+                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 5),
+                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 6),
                 }
             )
 

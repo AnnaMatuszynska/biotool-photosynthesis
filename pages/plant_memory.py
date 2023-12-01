@@ -30,6 +30,17 @@ def make_page(text: Callable[[str], str], version: str) -> None:
     with col2:
         st.image("pictures/memory_protocol.png")
     
+    # Add guiding questions:
+    with st.expander(text("MEM_GUIDING_EXPANDER")):
+        # The answers are hidden by default
+        st.markdown(text("MEM_GUIDING_HEADER"))
+        see_interpr = st.toggle(text("MEM_GUIDING_TOGGLE"))
+
+        if not see_interpr:
+            st.markdown(text("MEM_GUIDING_QUESTIONS"))
+        else:  # If toggle is switched show possible interpretation
+            st.markdown(text("MEM_GUIDING_ANSWERS"))
+
     # slider zum Einstellen in zwei Spalten angeordnet
     with st.form("memory_model"):
         
@@ -60,20 +71,20 @@ def make_page(text: Callable[[str], str], version: str) -> None:
             with col1:
                 slider_aktivation = st.select_slider(
                     text("SLIDER_ACTIVATION"),
-                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    options=np.round(np.logspace(0,4, 21)).astype(int),
                     value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
                 )
             with col2:
                 slider_deaktivation = st.select_slider(
                     text("SLIDER_DEACTIVATION"),
-                    options=np.round(np.logspace(1, 3, 21)).astype(int),
+                    options=np.round(np.logspace(0, 4, 21)).astype(int),
                     value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
                 )
 
             updated_parameters = {
-                "kDeepoxV": 0.0024 * (1 + slider_aktivation / 100),  # Aktivierung des Quenchings
+                "kDeepoxV": 0.0024 * (slider_aktivation / 100),  # Aktivierung des Quenchings
                 "kEpoxZ": 0.00024
-                * (1 + slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
+                * (slider_deaktivation / 100),  # 6.e-4,  #converted to [1/s]   # Deaktivierung
             }
         else:
             updated_parameters = {
@@ -88,8 +99,8 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                 "New": {
                     "AL [μmol m⁻² s⁻¹]": slider_light,
                     "SP [μmol m⁻² s⁻¹]": slider_saturate,
-                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
-                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
+                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 5),
+                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 6),
                 }
             }
         else:
@@ -97,8 +108,8 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                 {
                     "AL [μmol m⁻² s⁻¹]": slider_light,
                     "SP [μmol m⁻² s⁻¹]": slider_saturate,
-                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 4),
-                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 5),
+                    "CtZ [s⁻¹]": round(updated_parameters["kDeepoxV"], 5),
+                    "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 6),
                 }
             )
             
@@ -200,15 +211,54 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                 )
             
                         
-                if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:
-                        if version == "4Bio":
-                            showed_fig = st.session_state["memory_fig_4Bio"]
-                        else:
-                            showed_fig = st.session_state["memory_fig_4STEM"]
+        if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:
+                if version == "4Bio":
+                    showed_fig = st.session_state["memory_fig_4Bio"]
+                else:
+                    showed_fig = st.session_state["memory_fig_4STEM"]
 
-                        st.pyplot(showed_fig, transparent=True)
+                st.pyplot(showed_fig, transparent=True)
+    return see_interpr
 
-    
+def style_guinding_questions(see_interpr: bool = False) -> None:
+    # Remove the bullet point marker
+    st.markdown(
+        """<style>
+        .st-emotion-cache-0.eqpbllx5 ul{
+            list-style: none; /* Remove list bullets */
+            padding: 0;
+            margin: 0;
+        }
+        </style>""",
+        unsafe_allow_html=True,
+    )
+    if see_interpr:
+        # Replace the bullet point with a "A:"
+        st.markdown(
+            """<style>
+            .st-emotion-cache-0.eqpbllx5 ul li:before{
+                content: 'A:';
+                padding-right: 10px;
+                font-weight: bold;
+                margin: 0 0 0 -25px;
+            }
+            </style>""",
+            unsafe_allow_html=True,
+        )
+    else:
+        # Replace the bullet point with a "Q:"
+        st.markdown(
+            """<style>
+            .st-emotion-cache-0.eqpbllx5 ul li:before{
+                content: 'Q:';
+                padding-right: 10px;
+                font-weight: bold;
+                margin: 0 0 0 -27px;
+            }
+            </style>""",
+            unsafe_allow_html=True,
+        )
+    return None
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):
@@ -227,7 +277,8 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
-    make_page(text, version)
+    see_interpr = make_page(text, version)
     make_literature(text, version, language)
     make_prev_next_button("experiments in silico", "take home messages")
     make_sidebar()
+    style_guinding_questions(see_interpr)

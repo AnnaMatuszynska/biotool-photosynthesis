@@ -1079,6 +1079,41 @@ msgstr ""
 msgid "MEM_TIP2"
 msgstr ""
 
+#: pages/first_analysis.py:262
+msgid "MEM_GUIDING_EXPANDER"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "MEM_GUIDING_HEADER"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "MEM_GUIDING_TOGGLE"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "MEM_GUIDING_QUESTIONS"
+"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
+"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
+"2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
+"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
+"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
+"3. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
+"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
+"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
+"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
+"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
+"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
+"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
+"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
+"    - "
+"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
+msgstr ""
+
+#: pages/first_analysis.py:262
+msgid "MEM_GUIDING_ANSWERS"
+msgstr ""
+
 
 
 #: Conclusion
