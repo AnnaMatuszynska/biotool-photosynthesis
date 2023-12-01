@@ -802,6 +802,13 @@ msgstr "We have now successfully implemented and used a model of epidemiology. S
 msgid "FAL_HEADLINE_EXPERIMENTS"
 msgstr "# Experiments *in silico*"
 
+msgid "FAL_LEARNING_OBJECTIVES"
+msgstr "### Learning objectives\n"
+"- You learn to simulate a photosynthesis model and interprete the results\n"
+"- You understand to simulate changes of interest, e.g. mutations\n"
+"#### What you need to know:\n"
+"- Reading and analysing graphs"
+
 #: pages/first_analysis.py:13
 msgid "FAL_HEADLINE_MODEL_CONSTRUCTION"
 msgstr "## Model construction"
@@ -1128,6 +1135,14 @@ msgstr "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent t
 #: pages/plant_memory.py:380
 msgid "MEM_HEADLINE_BRAIN"
 msgstr "# Plant Light Memory"
+
+msgid "MEM_LEARNING_OBJECTIVES"
+msgstr "### Learning objectives\n"
+"- You learn how plants can remember past light conditions\n"
+"- You can show the plants light memory effect using simulations\n"
+"- You can show and explain the dependence of light memory on NPQ kinetics\n"
+"#### What you need to know:\n"
+"- Reading and analysing graphs"
 
 # Grammarly checked
 #: pages/plant_memory.py:387

@@ -2,11 +2,7 @@ import numpy as np
 import streamlit as st
 import time
 from pages._sidebar import make_sidebar
-from pages.assets.model._model_functions import (
-    calculate_results_to_plot,
-    make_plot,
-    sim_model,
-)
+from pages.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model
 from pathlib import Path
 from streamlit.components.v1 import html
 from typing import Callable
@@ -22,6 +18,9 @@ from utils import (
 
 def make_page(text: Callable[[str], str]) -> bool:
     st.markdown(text("FAL_HEADLINE_EXPERIMENTS"))
+
+    # Learning objectives
+    st.info(text("FAL_LEARNING_OBJECTIVES"))
 
     st.markdown(text("FAL_HEADLINE_MODEL_CONSTRUCTION"))
 
@@ -338,7 +337,7 @@ def make_page(text: Callable[[str], str]) -> bool:
             with col1:
                 slider_aktivation = st.select_slider(
                     text("SLIDER_ACTIVATION"),
-                    options=np.round(np.logspace(0,4, 21)).astype(int),
+                    options=np.round(np.logspace(0, 4, 21)).astype(int),
                     value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
                 )
                 slider_darklength = st.slider(
@@ -347,7 +346,7 @@ def make_page(text: Callable[[str], str]) -> bool:
             with col2:
                 slider_deaktivation = st.select_slider(
                     text("SLIDER_DEACTIVATION"),
-                    options=np.round(np.logspace(0,4, 21)).astype(int),
+                    options=np.round(np.logspace(0, 4, 21)).astype(int),
                     value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
                 )
                 slider_saturate = st.slider(
@@ -387,7 +386,7 @@ def make_page(text: Callable[[str], str]) -> bool:
             )
 
         col1_, col2_ = st.columns(2)
-        
+
         with col2_:
             show_old = st.checkbox("Compare with the last simulation", value=True)
 

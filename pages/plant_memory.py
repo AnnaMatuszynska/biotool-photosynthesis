@@ -1,37 +1,36 @@
+import datetime
 import numpy as np
 import streamlit as st
+import time
 from matplotlib import patches
 from matplotlib import pyplot as plt
 from model import get_model
 from modelbase.ode import Simulator
 from pages._sidebar import make_sidebar
+from pages.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model_memory
 from scipy.signal import find_peaks, peak_prominences
 from typing import Any, Callable
-from utils import (
-    get_localised_text,
-    make_prev_next_button,
-    markdown_click,
-    resetting_click_detector_setup,
-)
-from pages.assets.model._model_functions import sim_model_memory, calculate_results_to_plot, make_plot
-import time
-import datetime
+from utils import get_localised_text, make_prev_next_button, markdown_click, resetting_click_detector_setup
+
 
 def make_page(text: Callable[[str], str], version: str) -> None:
     st.markdown(text("MEM_HEADLINE_BRAIN"))
+
+    # Learning objectives
+    st.info(text("MEM_LEARNING_OBJECTIVES"))
 
     col1, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Pflanzengedachtnis.gif")
 
     markdown_click("MEM_INTRODUCTION_BRAIN", text)
-    
+
     col1, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/memory_protocol.png")
-    
+
     # Add guiding questions:
-    see_interpr=False
+    see_interpr = False
     # with st.expander(text("MEM_GUIDING_EXPANDER")):
     #     # The answers are hidden by default
     #     st.markdown(text("MEM_GUIDING_HEADER"))
@@ -44,7 +43,6 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
     # slider zum Einstellen in zwei Spalten angeordnet
     with st.form("memory_model"):
-        
         col1, col2 = st.columns(2)
         with col1:
             slider_light = st.slider(
@@ -61,7 +59,9 @@ def make_page(text: Callable[[str], str], version: str) -> None:
         with col1:
             slider_training = st.slider(label=text("MEM_SLIDER_TRAINING"), min_value=0, max_value=5, value=2)
         with col2:
-            slider_relaxation = st.slider(label=text("MEM_SLIDER_RELAXATION"), min_value=0, max_value=5, value=2)
+            slider_relaxation = st.slider(
+                label=text("MEM_SLIDER_RELAXATION"), min_value=0, max_value=5, value=2
+            )
         with col3:
             slider_memory = st.slider(label=text("MEM_SLIDER_MEMORY"), min_value=0, max_value=5, value=2)
 
@@ -72,7 +72,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
             with col1:
                 slider_aktivation = st.select_slider(
                     text("SLIDER_ACTIVATION"),
-                    options=np.round(np.logspace(0,4, 21)).astype(int),
+                    options=np.round(np.logspace(0, 4, 21)).astype(int),
                     value=100,  # Zwischenschritte können durch folgendes angegeben werden: (x,y,z)
                 )
             with col2:
@@ -94,7 +94,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
             }
             slider_darklength = 60
             slider_saturate = 5000
-            
+
         if "memory_model_variables" not in st.session_state:
             st.session_state["memory_model_variables"] = {
                 "New": {
@@ -113,17 +113,19 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     "CtV [s⁻¹]": round(updated_parameters["kEpoxZ"], 6),
                 }
             )
-            
+
         col1_, col2_ = st.columns(2)
-        
+
         with col2_:
             show_old = st.checkbox("Compare with the last simulation", value=True)
 
-        with col1_:  
-            submitted =  st.form_submit_button("Start the simulation", type="primary", use_container_width=True)
-    
+        with col1_:
+            submitted = st.form_submit_button(
+                "Start the simulation", type="primary", use_container_width=True
+            )
+
         if submitted:
-            with st.spinner(text("SPINNER")):#
+            with st.spinner(text("SPINNER")):  #
                 time.sleep(0.1)
                 sim_time, sim_results = sim_model_memory(
                     updated_parameters=updated_parameters,
@@ -135,19 +137,27 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     relaxation_phase=slider_relaxation * 60,
                     memory_length=slider_memory * 60,
                 )
-                
+
                 if "memory_model_results" not in st.session_state:
-                    st.session_state["memory_model_results"] = calculate_results_to_plot(sim_time, sim_results)
+                    st.session_state["memory_model_results"] = calculate_results_to_plot(
+                        sim_time, sim_results
+                    )
                 else:
-                    st.session_state["memory_model_results"].update(calculate_results_to_plot(sim_time, sim_results))
-                    
+                    st.session_state["memory_model_results"].update(
+                        calculate_results_to_plot(sim_time, sim_results)
+                    )
+
                 if show_old:
                     plot_values = st.session_state["memory_model_results"]
                     plot_variables = st.session_state["memory_model_variables"]
                 else:
-                    plot_values = {k:v for k,v in st.session_state["memory_model_results"].items() if k in ["Fluo", "NPQ", "PhiPSII"]}
+                    plot_values = {
+                        k: v
+                        for k, v in st.session_state["memory_model_results"].items()
+                        if k in ["Fluo", "NPQ", "PhiPSII"]
+                    }
                     plot_variables = {"New": st.session_state["memory_model_variables"]["New"]}
-                
+
                 fig_4Bio = make_plot(
                     values=plot_values,
                     variables=plot_variables,
@@ -164,17 +174,17 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     dark_length=slider_darklength,
                     new_label=text("NEW_LABEL"),
                     old_label=text("OLD_LABEL"),
-                    memory_flag = True,
+                    memory_flag=True,
                     memory_length=slider_memory * 60,
                     training_length=slider_training * 60,
                     relaxation_length=slider_relaxation * 60,
                     annotation_labels={
-                        'Training': text("MEM_ANNO_TRAINING"),
-                        'Relaxation': text("MEM_ANNO_RELAXATION"),
-                        'Memory': text("MEM_ANNO_MEMORY")
-                    }
+                        "Training": text("MEM_ANNO_TRAINING"),
+                        "Relaxation": text("MEM_ANNO_RELAXATION"),
+                        "Memory": text("MEM_ANNO_MEMORY"),
+                    },
                 )
-                
+
                 fig_4STEM = make_plot(
                     values=plot_values,
                     variables=plot_variables,
@@ -187,39 +197,39 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     dark_length=slider_darklength,
                     new_label=text("NEW_LABEL"),
                     old_label=text("OLD_LABEL"),
-                    memory_flag = True,
+                    memory_flag=True,
                     memory_length=slider_memory * 60,
                     training_length=slider_training * 60,
                     relaxation_length=slider_relaxation * 60,
                     annotation_labels={
-                        'Training': text("MEM_ANNO_TRAINING"),
-                        'Relaxation': text("MEM_ANNO_RELAXATION"),
-                        'Memory': text("MEM_ANNO_MEMORY")
-                    }
+                        "Training": text("MEM_ANNO_TRAINING"),
+                        "Relaxation": text("MEM_ANNO_RELAXATION"),
+                        "Memory": text("MEM_ANNO_MEMORY"),
+                    },
                 )
-                
+
                 st.session_state["memory_fig_4Bio"] = fig_4Bio
                 st.session_state["memory_fig_4STEM"] = fig_4STEM
-                
+
                 old_results = {}
                 for key, value in st.session_state["memory_model_results"].items():
                     old_results.update({f"old {key}": value})
 
                 st.session_state["memory_model_results"].update(old_results)
-                
+
                 st.session_state["memory_model_variables"].update(
                     {"Old": {k: v for k, v in st.session_state["memory_model_variables"]["New"].items()}}
                 )
-            
-                        
-        if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:
-                if version == "4Bio":
-                    showed_fig = st.session_state["memory_fig_4Bio"]
-                else:
-                    showed_fig = st.session_state["memory_fig_4STEM"]
 
-                st.pyplot(showed_fig, transparent=True)
+        if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:
+            if version == "4Bio":
+                showed_fig = st.session_state["memory_fig_4Bio"]
+            else:
+                showed_fig = st.session_state["memory_fig_4STEM"]
+
+            st.pyplot(showed_fig, transparent=True)
     return see_interpr
+
 
 def style_guinding_questions(see_interpr: bool = False) -> None:
     # Remove the bullet point marker
@@ -260,6 +270,7 @@ def style_guinding_questions(see_interpr: bool = False) -> None:
             unsafe_allow_html=True,
         )
     return None
+
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("LITERATURE")):

@@ -838,6 +838,9 @@ msgstr ""
 msgid "FAL_HEADLINE_EXPERIMENTS"
 msgstr "# Experimente *in silico*"
 
+msgid "FAL_LEARNING_OBJECTIVES"
+msgstr ""
+
 #: pages/first_analysis.py:13
 msgid "FAL_HEADLINE_MODEL_CONSTRUCTION"
 msgstr "## Konstruktion des Modells"
@@ -1133,6 +1136,9 @@ msgstr ""
 #: pages/plant_memory.py:380
 msgid "MEM_HEADLINE_BRAIN"
 msgstr "# Das Pflanzengedächtnis"
+
+msgid "MEM_LEARNING_OBJECTIVES"
+msgstr ""
 
 # Grammarly checked
 #: pages/plant_memory.py:387
