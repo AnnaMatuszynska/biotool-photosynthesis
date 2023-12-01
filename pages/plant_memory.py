@@ -29,10 +29,6 @@ def make_page(text: Callable[[str], str], version: str) -> None:
     col1, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/memory_protocol.png")
-
-    st.markdown(text("MEM_TIP1"))
-
-    st.markdown(text("MEM_TIP2"))
     
     # slider zum Einstellen in zwei Spalten angeordnet
     with st.form("memory_model"):
