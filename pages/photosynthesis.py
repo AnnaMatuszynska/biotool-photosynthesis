@@ -103,9 +103,9 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
 
     text = get_localised_text(version, language)
+    make_sidebar()
     resetting_click_detector_setup()
     track_page_visit("photosynthesis")
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("start", "measuring method")
-    make_sidebar()

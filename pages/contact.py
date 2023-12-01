@@ -83,7 +83,7 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
+    make_sidebar()
     track_page_visit("contact")
     make_page(text, language, version)
     make_prev_next_button("take home messages", None)
-    make_sidebar()

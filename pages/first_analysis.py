@@ -540,10 +540,10 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
+    make_sidebar()
     resetting_click_detector_setup()
     track_page_visit("first_analysis")
     see_interpr = make_page(text)
     make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")
-    make_sidebar()  #
     style_guinding_questions(see_interpr)
