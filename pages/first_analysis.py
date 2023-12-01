@@ -413,64 +413,64 @@ def make_page(text: Callable[[str], str]) -> bool:
                 else:
                     st.session_state["model_results"].update(calculate_results_to_plot(sim_time, sim_results))
 
-                    if show_old:
-                        plot_values = st.session_state["model_results"]
-                        plot_variables = st.session_state["model_variables"]
+                if show_old:
+                    plot_values = st.session_state["model_results"]
+                    plot_variables = st.session_state["model_variables"]
 
-                    else:
-                        plot_values = {
-                            k: v
-                            for k, v in st.session_state["model_results"].items()
-                            if k in ["Fluo", "NPQ", "PhiPSII"]
-                        }
-                        plot_variables = {"New": st.session_state["model_variables"]["New"]}
+                else:
+                    plot_values = {
+                        k: v
+                        for k, v in st.session_state["model_results"].items()
+                        if k in ["Fluo", "NPQ", "PhiPSII"]
+                    }
+                    plot_variables = {"New": st.session_state["model_variables"]["New"]}
 
-                    fig_4Bio = make_plot(
-                        values=plot_values,
-                        variables=plot_variables,
-                        version="4Bio",
-                        width=15,
-                        height=6,
-                        xlabel1=text("AXIS_TIME_S"),
-                        xlabel2=text("AXIS_TIME_MIN"),
-                        ylabel={
-                            "Fluo": text("FLUO"),
-                            "NPQ": text("AXIS_NPQ"),
-                            "PhiPSII": text("AXIS_PHIPSII"),
-                        },
-                        dark_length=slider_darklength,
-                        max_time=slider_time * 60,
-                        new_label=text("NEW_LABEL"),
-                        old_label=text("OLD_LABEL"),
-                    )
-
-                    fig_4STEM = make_plot(
-                        values=plot_values,
-                        variables=plot_variables,
-                        version="4STEM",
-                        width=15,
-                        height=3,
-                        xlabel1=text("AXIS_TIME_S"),
-                        xlabel2=text("AXIS_TIME_MIN"),
-                        ylabel={"Fluo": text("FLUO")},
-                        dark_length=slider_darklength,
-                        max_time=slider_time * 60,
-                        new_label=text("NEW_LABEL"),
-                        old_label=text("OLD_LABEL"),
-                    )
-
-                    st.session_state["fig_4Bio"] = fig_4Bio
-                    st.session_state["fig_4STEM"] = fig_4STEM
-
-                old_results = {}
-                for key, value in st.session_state["model_results"].items():
-                    old_results.update({f"old {key}": value})
-
-                st.session_state["model_results"].update(old_results)
-
-                st.session_state["model_variables"].update(
-                    {"Old": {k: v for k, v in st.session_state["model_variables"]["New"].items()}}
+                fig_4Bio = make_plot(
+                    values=plot_values,
+                    variables=plot_variables,
+                    version="4Bio",
+                    width=15,
+                    height=6,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel={
+                        "Fluo": text("FLUO"),
+                        "NPQ": text("AXIS_NPQ"),
+                        "PhiPSII": text("AXIS_PHIPSII"),
+                    },
+                    dark_length=slider_darklength,
+                    max_time=slider_time * 60,
+                    new_label=text("NEW_LABEL"),
+                    old_label=text("OLD_LABEL"),
                 )
+
+                fig_4STEM = make_plot(
+                    values=plot_values,
+                    variables=plot_variables,
+                    version="4STEM",
+                    width=15,
+                    height=3,
+                    xlabel1=text("AXIS_TIME_S"),
+                    xlabel2=text("AXIS_TIME_MIN"),
+                    ylabel={"Fluo": text("FLUO")},
+                    dark_length=slider_darklength,
+                    max_time=slider_time * 60,
+                    new_label=text("NEW_LABEL"),
+                    old_label=text("OLD_LABEL"),
+                )
+
+                st.session_state["fig_4Bio"] = fig_4Bio
+                st.session_state["fig_4STEM"] = fig_4STEM
+
+            old_results = {}
+            for key, value in st.session_state["model_results"].items():
+                old_results.update({f"old {key}": value})
+
+            st.session_state["model_results"].update(old_results)
+
+            st.session_state["model_variables"].update(
+                {"Old": {k: v for k, v in st.session_state["model_variables"]["New"].items()}}
+            )
 
         if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
             if version == "4Bio":
