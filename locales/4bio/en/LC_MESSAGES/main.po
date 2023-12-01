@@ -64,7 +64,7 @@ msgstr "Conversion rate to Violaxanthin (CtV) in percent of default"
 #: Start.py:14
 #: pages/contact.py:68
 msgid "PROGRAMS_USED"
-msgstr "**Streamlit** was used for building the website: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."
+msgstr "This website was built using **Streamlit**: https://streamlit.io/.\n\nSome figures were created using **BioRender**: https://biorender.com."
 
 #: pages/first_analysis.py:402
 #: pages/plant_memory.py:297
@@ -156,6 +156,16 @@ msgstr "We aimed at both curious newcomers and more advanced< learners in the fi
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
 msgstr "In this *4Bio* version, we will introduce you to the concept of modelling and how it can be used in biology.We will also explain an experimental method for measuring photosynthesis dynamics and calculating photosynthetic parameters in detail. These methods will then be used on a simple mathematical model of plant light adaption with the possibility of creating and investigating *in silico* mutants. In this version, more parameters of the mathematical model can be altered, allowing for more complex *in silico* mutants, and more outputs will be generated."
+
+msgid "STR_LEARNING_OBJECTIVES_HEADER"
+msgstr "### Learning objectives\n"
+        "What we hope you will learn by following the *4Bio* version:"
+
+msgid "STR_LEARNING_OBJECTIVES"
+msgstr "- You can explain what models are, how they are useful in biology, and name some examples\n"
+            "- You can summarise how non photochemical quenching works and how it is used in light protection\n"
+            "- You can summarise how fluorescence can be used to measure photosynthesis\n"
+            "- You can produce photosynthesis simulations and explain their biological meaning"
 
 # Grammarly checked
 #: Start.py:26

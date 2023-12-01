@@ -157,6 +157,12 @@ msgstr ""
 msgid "STR_SPECIFIC_USE"
 msgstr ""
 
+msgid "STR_LEARNING_OBJECTIVES_HEADER"
+msgstr ""
+
+msgid "STR_LEARNING_OBJECTIVES"
+msgstr ""
+
 # Grammarly checked
 #: Start.py:26
 msgid "STR_DROP_BOX_INTRO"

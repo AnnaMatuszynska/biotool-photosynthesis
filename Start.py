@@ -17,26 +17,22 @@ def make_introduction(text: Callable[[str], str]) -> None:
     markdown_click("STR_HEADLINE_MAIN", text)
     markdown_click("STR_INTRO", text)
 
-    # Learning objectives
-    with st.expander(text("STR_EXPANDER_OUTCOMES")):
-        st.markdown("")
-
     # Introduction biotool
     st.markdown(text("STR_HEADLINE_USAGE"))
-    markdown_click("STR_USAGE", text)
+    col1, col2 = st.columns((0.4,0.6))
+    with col1:
+        markdown_click("STR_USAGE", text)
+    with col2:
+        include_ytvideo("https://youtu.be/KvyjIWLD8rU", 0.9)
     markdown_click("STR_SPECIFIC_USE", text)
-    st.video("https://youtu.be/KvyjIWLD8rU")
+
+    # Learning objectives
+    st.markdown(text("STR_LEARNING_OBJECTIVES_HEADER"))
+    st.info(text("STR_LEARNING_OBJECTIVES"))
 
 
 # FIXME: version and language should probably be replaced by text
 def make_chapters(text: Callable[[str], str], version: str, language: str) -> None:
-    if version == "4STEM":
-        st.markdown(text("STR_DROP_BOX_INTRO"))
-        with st.expander(text("STR_EXPANDER_IN")):
-            st.markdown(text("STR_EXPLANATION_IN_VITRO"))
-            st.markdown(text("STR_EXPLANATION_IN_VIVO"))
-            st.markdown(text("STR_EXPLANATION_IN_SILICO"))
-
     markdown_click("STR_HEADLINE_PAGES", text)
     markdown_click("STR_INTRODUCTION_PAGES", text)
     markdown_click("STR_PHOTOSYNTHESIS", text)
@@ -44,6 +40,16 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
     markdown_click("STR_MODEL", text)
     markdown_click("STR_EXPERIMENT", text)
     markdown_click("STR_MEMORY", text)
+    
+    # Explanation about "in vivo" etc
+    if version == "4STEM":
+        st.divider()
+        st.markdown(text("STR_DROP_BOX_INTRO"))
+        with st.expander(text("STR_EXPANDER_IN")):
+            st.markdown(text("STR_EXPLANATION_IN_VITRO"))
+            st.markdown(text("STR_EXPLANATION_IN_VIVO"))
+            st.markdown(text("STR_EXPLANATION_IN_SILICO"))
+        st.divider()
 
     # Make About section
     with st.expander(text("STR_EXPANDER_ABOUT")):

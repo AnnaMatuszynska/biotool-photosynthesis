@@ -64,7 +64,7 @@ msgstr "Umwandlungsrate zu Violaxanthin (CtV) in Prozent des Standardwerts"
 #: Start.py:14
 #: pages/contact.py:68
 msgid "PROGRAMS_USED"
-msgstr "Die Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."
+msgstr "Diese Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\n\nManche Grafiken wurden erstellt mit **BioRender**: https://biorender.com."
 
 #: pages/first_analysis.py:402
 #: pages/plant_memory.py:297
@@ -156,6 +156,12 @@ msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschritte
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
 msgstr "Nehmen wir an, Sie wählen die <a href='#' id='4STEM'>4STEM</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
+
+msgid "STR_LEARNING_OBJECTIVES_HEADER"
+msgstr ""
+
+msgid "STR_LEARNING_OBJECTIVES"
+msgstr ""
 
 # Grammarly checked
 #: Start.py:26
