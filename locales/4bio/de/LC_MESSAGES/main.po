@@ -1089,6 +1089,7 @@ msgstr ""
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS"
+msgstr ""
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS_EXTEND"
@@ -1096,9 +1097,11 @@ msgstr ""
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS"
+msgstr ""
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS_EXTEND"
+msgstr ""
 
 
 
