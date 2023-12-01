@@ -10,7 +10,13 @@ from pages._sidebar import make_sidebar
 from pages.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model_memory
 from scipy.signal import find_peaks, peak_prominences
 from typing import Any, Callable
-from utils import get_localised_text, make_prev_next_button, markdown_click, resetting_click_detector_setup
+from utils import (
+    get_localised_text,
+    make_prev_next_button,
+    markdown_click,
+    resetting_click_detector_setup,
+    track_page_visit,
+)
 
 
 def make_page(text: Callable[[str], str], version: str) -> None:
@@ -289,6 +295,7 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
+    track_page_visit("plant_memory")
     see_interpr = make_page(text, version)
     make_literature(text, version, language)
     make_prev_next_button("experiments in silico", "take home messages")

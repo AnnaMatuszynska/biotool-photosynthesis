@@ -6,10 +6,11 @@ from typing import Callable
 from utils import (
     get_localised_text,
     icons,
+    include_ytvideo,
     make_prev_next_button,
     markdown_click,
     resetting_click_detector_setup,
-    include_ytvideo
+    track_page_visit,
 )
 
 
@@ -19,7 +20,7 @@ def make_introduction(text: Callable[[str], str]) -> None:
 
     # Introduction biotool
     st.markdown(text("STR_HEADLINE_USAGE"))
-    col1, col2 = st.columns((0.4,0.6))
+    col1, col2 = st.columns((0.4, 0.6))
     with col1:
         markdown_click("STR_USAGE", text)
     with col2:
@@ -40,7 +41,7 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
     markdown_click("STR_MODEL", text)
     markdown_click("STR_EXPERIMENT", text)
     markdown_click("STR_MEMORY", text)
-    
+
     # Explanation about "in vivo" etc
     if version == "4STEM":
         st.divider()
@@ -122,6 +123,7 @@ if __name__ == "__main__":
         ]
     )
     resetting_click_detector_setup()
+    track_page_visit("Start")
     make_introduction(text)
     make_chapters(text, version, language)
     make_literature(text, version, language)

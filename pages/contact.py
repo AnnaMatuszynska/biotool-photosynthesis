@@ -1,16 +1,18 @@
+import numpy as np
 import streamlit as st
 from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import centered_image, get_localised_text, make_prev_next_button
+from utils import centered_image, get_localised_text, make_prev_next_button, track_page_visit
+
 
 def make_page(text: Callable[[str], str], language: str, version: str):
     # Make balloons appear the first time the final page is visited
-    if "finished" not in st.session_state:
+    if st.session_state["visited_pages"].all() and "ballooned" not in st.session_state:
         st.balloons()
-        st.toast(":blue[Thank you for finishing our Biotool!]", icon='🎉')
-        st.session_state["finished"] = True
+        st.toast(":blue[Thank you for finishing our Biotool!]", icon="🎉")
+        st.session_state["ballooned"] = True
 
     st.header(":mailbox: Contact Us!")
 
@@ -21,7 +23,6 @@ def make_page(text: Callable[[str], str], language: str, version: str):
     st.markdown("### Sarah Philipps")
     st.markdown("- **Email:** sarah.philipps@rwth-aachen.de")
     st.markdown("- **Topics:** education, motivation behind the platform, and general inquiries")
-
 
     st.markdown("### Marvin van Aalst")
 
@@ -73,6 +74,7 @@ def make_page(text: Callable[[str], str], language: str, version: str):
     st.markdown("### Ressources")
     st.markdown(text("PROGRAMS_USED"))
 
+
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
@@ -81,8 +83,7 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
+    track_page_visit("contact")
     make_page(text, language, version)
     make_prev_next_button("take home messages", None)
     make_sidebar()
-
-    

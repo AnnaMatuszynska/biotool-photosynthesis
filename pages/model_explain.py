@@ -1,5 +1,8 @@
+import numpy as np
+import pandas as pd
 import streamlit as st
 from pages._sidebar import make_sidebar
+from pages.assets.FCvB.FCvB_functions import make_FvCB_plot, steady_state_photosynthesis
 from pages.assets.SIR_model.sir_utils import *
 from pathlib import Path
 from PIL import Image
@@ -12,10 +15,8 @@ from utils import (
     make_prev_next_button,
     markdown_click,
     resetting_click_detector_setup,
+    track_page_visit,
 )
-from pages.assets.FCvB.FCvB_functions import steady_state_photosynthesis, make_FvCB_plot
-import numpy as np
-import pandas as pd
 
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
@@ -38,10 +39,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     include_ytvideo("https://youtu.be/oVME5KIHrO8")
 
     st.markdown(text("MDL_EXAMPLE_MATHEMATICAL_MODEL"))
-    
+
     if version == "4Bio":
         tab1, tab2 = st.tabs([text("MDL_TAB_SIR"), " "])
-        
+
     if version == "4STEM":
         tab1, tab2, tab3 = st.tabs([text("MDL_TAB_SIR"), text("MDL_TAB_MANUAL"), text("MDL_TAB_MODELBASE")])
 
@@ -89,7 +90,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"), unsafe_allow_html=True)
 
-        if version == '4Bio':
+        if version == "4Bio":
             st.latex(
                 r"""
                 \begin{aligned}
@@ -101,7 +102,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         if version == "4Bio":
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_3"), unsafe_allow_html=True)
-            
+
             st.latex(
                 r"""
                 \begin{aligned}
@@ -114,7 +115,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"), unsafe_allow_html=True)
 
-# SIR Model
+        # SIR Model
         col1, col2 = st.columns(2)
 
         with col1:
@@ -229,7 +230,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     "old R": [sir_time, sir_results["R"]],
                 }
             )
-            
+
         markdown_click("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
 
     if version == "4STEM":
@@ -259,7 +260,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.markdown(f"{sir_v1_integ}")
 
             st.markdown(text("MDL_SIR_IMPLEMENTATION_MANUAL_1"))
-            
+
             include_image("pictures/SIR_manual.png", 0.5)
 
             st.markdown(f"{sir_v1_plot}")
@@ -284,7 +285,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_4"))
 
             include_image("pictures/SIR_modelbase.png", 0.5)
-            
+
             st.markdown(f"{sir_v2_simulation}")
 
             st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_5"))
@@ -294,18 +295,18 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_6"))
 
     st.markdown(text("MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"))
-    
+
     st.markdown(text("MDL_MODELS_OVERVIEW"))
 
     tab1, tab2, tab3 = st.tabs(["FvCB", "e-photosynthesis", "Bellassio"])
 
     with tab1:
         st.markdown(text("MDL_HEADLINE_FVCB"))
-        
+
         st.markdown(text("MDL_FVCB_1"), unsafe_allow_html=True)
 
         st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
-        
+
         if version == "4STEM":
             st.latex(
                 r"""
@@ -319,86 +320,67 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 \end{aligned}
                 """
             )
-        
+
         st.markdown(text("MDL_FVCB_3"), unsafe_allow_html=True)
-        
-        markdown_click("MDL_FVCB_4", text, unsafe_allow_html = True)
-        
+
+        markdown_click("MDL_FVCB_4", text, unsafe_allow_html=True)
+
         if version == "4STEM":
             st.markdown(text("MDL_FVCB_5"), unsafe_allow_html=True)
-        
+
         fcvb_sliders = st.container()
-        
+
         col1__, col2__, col3__, col4__ = st.columns([0.08, 0.3, 0.3, 0.32])
-        
+
         with col1__:
-            
             st.markdown(text("MDL_FVCB_SLIDERS_PRECISION"))
-            
+
         with col2__:
             precise_O = st.number_input(
-                label='Precise O',
-                min_value=100,
-                max_value=500,
-                value=210,
-                label_visibility='collapsed'
+                label="Precise O", min_value=100, max_value=500, value=210, label_visibility="collapsed"
             )
         with col3__:
             precise_J = st.number_input(
-                label='Precise J',
-                min_value=50,
-                max_value=300,
-                value=124,
-                label_visibility='collapsed'
+                label="Precise J", min_value=50, max_value=300, value=124, label_visibility="collapsed"
             )
         with col4__:
             precise_Tp = st.number_input(
-                label='Precise Tp',
-                min_value=100,
-                max_value=500,
-                value=300,
-                label_visibility='collapsed'
+                label="Precise Tp", min_value=100, max_value=500, value=300, label_visibility="collapsed"
             )
-        
+
         with fcvb_sliders:
             col1___, col2___, col3___, col4___ = st.columns([0.08, 0.3, 0.3, 0.32])
-            
+
             with col1___:
                 st.markdown(text("MDL_FVCB_SLIDERS_TEXT"))
             with col2___:
                 slider_O = st.slider(
-                    label=text("MDL_FVCB_SLIDERS_O"),
-                    min_value=100,
-                    max_value=500,
-                    value=precise_O
+                    label=text("MDL_FVCB_SLIDERS_O"), min_value=100, max_value=500, value=precise_O
                 )
             with col3___:
                 slider_J = st.slider(
-                    label=text("MDL_FVCB_SLIDERS_J"),
-                    min_value=50,
-                    max_value=300,
-                    value=precise_J
-                )    
+                    label=text("MDL_FVCB_SLIDERS_J"), min_value=50, max_value=300, value=precise_J
+                )
             with col4___:
                 slider_Tp = st.slider(
-                    label=text("MDL_FVCB_SLIDERS_Tp"),
-                    min_value=100,
-                    max_value=500,
-                    value=precise_Tp
+                    label=text("MDL_FVCB_SLIDERS_Tp"), min_value=100, max_value=500, value=precise_Tp
                 )
-                
-        col1____, col2____,= st.columns([0.3, 0.7])
-        
+
+        (
+            col1____,
+            col2____,
+        ) = st.columns([0.3, 0.7])
+
         with col1____:
             st.markdown(
-                f'''
+                f"""
                 <div align="center"><strong>{text("MDL_FVCB_DEFAULT_PARAMETERS")}</strong></div>
-                ''',
-                unsafe_allow_html=True
+                """,
+                unsafe_allow_html=True,
             )
 
             st.markdown(
-                f'''
+                f"""
                 |  | {text("MDL_FVCB_DEFAULT_PARAMETERS_VALUES")} | {text("MDL_FVCB_DEFAULT_PARAMETERS_UNITS")} |
                 | --- | --- | --- |
                 | V<sub>cmax</sub> | 80 | µmol m⁻² s⁻¹ |
@@ -406,14 +388,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 | K<sub>o</sub> | 179 | mbar |
                 | Γ<sub>*</sub> | 38.6 | µbar |
                 | R<sub>d</sub> | 1 | µmol m⁻² s⁻¹ |
-                ''',
-                unsafe_allow_html=True
+                """,
+                unsafe_allow_html=True,
             )
-        
+
         with col2____:
-            
             col1_____, col2_____, col3_____, col4_____ = st.columns(4)
-            
+
             with col1_____:
                 toggle_A = st.toggle(
                     label=f'{text("MDL_FVCB_TOGGLE")} A?',
@@ -434,43 +415,42 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                     label=f'{text("MDL_FVCB_TOGGLE")} Ap?',
                     value=False,
                 )
-                
+
             fcvb_results = steady_state_photosynthesis(
-                Ci=np.linspace(0, 700, num= 7000),
-                O = slider_O,
+                Ci=np.linspace(0, 700, num=7000),
+                O=slider_O,
                 J=slider_J,
                 Tp=slider_Tp,
-                rm = 0,
+                rm=0,
                 Kc=259,
                 Ko=179,
                 gamma_star=38.6,
-                Rd=1
+                Rd=1,
             )
-        
+
             fcvb_fig = make_FvCB_plot(
-                Ci = np.linspace(0, 700, num= 7000),
+                Ci=np.linspace(0, 700, num=7000),
                 results=fcvb_results,
-                display_bools = {
-                    'Ac': toggle_Ac,
-                    'Aj': toggle_Aj,
-                    'Ap': toggle_Ap,
-                    'A': toggle_A,
+                display_bools={
+                    "Ac": toggle_Ac,
+                    "Aj": toggle_Aj,
+                    "Ap": toggle_Ap,
+                    "A": toggle_A,
                 },
-                xlabel = text("MDL_FVCB_XLABEL"),
-                ylabel = text("MDL_FVCB_YLABEL"),
-                empty_label = text("MDL_FVCB_EMPTY"),
+                xlabel=text("MDL_FVCB_XLABEL"),
+                ylabel=text("MDL_FVCB_YLABEL"),
+                empty_label=text("MDL_FVCB_EMPTY"),
             )
-        
-            st.pyplot(fcvb_fig, transparent = True)
-                
+
+            st.pyplot(fcvb_fig, transparent=True)
 
     with tab2:
         st.markdown(text("MDL_HEADLINE_E_PHOTOSYNTHESIS"))
-        
+
         st.markdown(text("MDL_E_PHOTOSYNTHESIS_1"), unsafe_allow_html=True)
-        
+
         st.markdown(text("MDL_E_PHOTOSYNTHESIS_2"), unsafe_allow_html=True)
-        
+
         st.markdown(text("MDL_E_PHOTOSYNTHESIS_3"), unsafe_allow_html=True)
 
     with tab3:
@@ -479,9 +459,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MDL_BELLASIO_1"))
 
         st.markdown(text("MDL_BELLASIO_2"))
-        
+
         st.markdown(text("MDL_BELLASIO_3"))
-        
+
         st.markdown(text("MDL_BELLASIO_4"), unsafe_allow_html=True)
 
     with st.expander(text("MDL_EXPANDER_C3C4CAM")):
@@ -494,9 +474,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MDL_HEADLINE_CAM"), unsafe_allow_html=True)
         st.markdown(text("MDL_CAM_1"), unsafe_allow_html=True)
 
+
 def style_page():
     # Stop the table from overflowing
-    st.markdown('<style>table{width: 100%} .st-emotion-cache-nahz7x.e1nzilvr5{overflow-x: scroll}</style>', unsafe_allow_html=True)
+    st.markdown(
+        "<style>table{width: 100%} .st-emotion-cache-nahz7x.e1nzilvr5{overflow-x: scroll}</style>",
+        unsafe_allow_html=True,
+    )
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
@@ -542,6 +526,7 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
+    track_page_visit("model_explain")
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("measuring method", "experiments in silico")

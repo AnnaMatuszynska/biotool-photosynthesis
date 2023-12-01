@@ -3,11 +3,8 @@ from pages._sidebar import make_sidebar
 from pathlib import Path
 from PIL import Image
 from typing import Callable
-from utils import (
-    get_localised_text,
-    make_prev_next_button,
-    include_image
-)
+from utils import get_localised_text, include_image, make_prev_next_button, track_page_visit
+
 
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("CON_HEADLINE_CONCLUSION"))
@@ -27,6 +24,7 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
+    track_page_visit("conclusion")
     make_page(text, language, version)
     make_prev_next_button("plant light memory", "contact")
     make_sidebar()

@@ -13,6 +13,7 @@ from utils import (
     make_prev_next_button,
     markdown_click,
     resetting_click_detector_setup,
+    track_page_visit,
 )
 
 
@@ -540,6 +541,7 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
+    track_page_visit("first_analysis")
     see_interpr = make_page(text)
     make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")

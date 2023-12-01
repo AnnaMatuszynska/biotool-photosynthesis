@@ -10,6 +10,7 @@ from utils import (
     make_prev_next_button,
     markdown_click,
     resetting_click_detector_setup,
+    track_page_visit,
 )
 
 
@@ -103,6 +104,7 @@ if __name__ == "__main__":
 
     text = get_localised_text(version, language)
     resetting_click_detector_setup()
+    track_page_visit("photosynthesis")
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("start", "measuring method")
