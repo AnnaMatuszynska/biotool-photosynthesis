@@ -16,6 +16,9 @@ from utils import (
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     markdown_click("PHO_HEADLINE_PHOTOSYNTHESIS_PAGE", text)
 
+    # Learning objectives
+    st.info(text("PHO_LEARNING_OBJECTIVES"))
+
     markdown_click("PHO_HEADLINE_CLIMATE", text)
     markdown_click("PHO_INTRODUCTION_CLIMATE_CHANGE", text)
 

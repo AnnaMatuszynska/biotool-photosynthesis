@@ -225,6 +225,9 @@ msgstr "Wreszcie, poznasz pamięć światła roślin na stronie **pamięć świa
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
 msgstr ""
 
+msgid "PHO_LEARNING_OBJECTIVES"
+msgstr ""
+
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
 msgid "PHO_HEADLINE_CLIMATE"
@@ -348,6 +351,9 @@ msgstr "Poniższa literatura zawiera bardziej szczegółowe informacje na temat 
 msgid "MTH_HEADLINE_ONE"
 msgstr "# Metoda pomiaru"
 
+msgid "MTH_LEARNING_OBJECTIVES"
+msgstr ""
+
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
@@ -464,6 +470,9 @@ msgstr ""
 msgid "MDL_HEADLINE_COMPUTATIONAL_MODELS"
 msgstr ""
 
+msgid "MDL_LEARNING_OBJECTIVES"
+msgstr ""
+
 # Grammarly checked
 #: pages/model_explain.py:21
 msgid "MDL_HEADLINE_MODEL"
@@ -473,7 +482,6 @@ msgstr ""
 #: pages/model_explain.py:23
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"
 msgstr ""
-
 
 #: pages/model_explain.py:26
 msgid "MDL_CAPTION_MODELLING_PICTURE"

@@ -21,6 +21,9 @@ import pandas as pd
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("MDL_HEADLINE_COMPUTATIONAL_MODELS"))
 
+    # Learning objectives
+    st.info(text("MDL_LEARNING_OBJECTIVES"))
+
     st.markdown(text("MDL_HEADLINE_MODEL"))
 
     st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"))

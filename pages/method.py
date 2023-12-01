@@ -8,6 +8,10 @@ from utils import get_localised_text, make_prev_next_button, markdown_click, res
 # FIXME: language and version probably should be put into text here
 def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("MTH_HEADLINE_ONE"))
+
+    # Learning objectives
+    st.info(text("MTH_LEARNING_OBJECTIVES"))
+
     _, col2, _ = st.columns(3)
     with col2:
         st.image("pictures/Kurzvideo-Messmethode.gif")

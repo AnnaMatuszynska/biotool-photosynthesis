@@ -230,6 +230,16 @@ msgstr "Lastly, the **plant light memory page** will explain how the plant non-p
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
 msgstr "# Photosynthesis"
 
+msgid "PHO_LEARNING_OBJECTIVES"
+msgstr "### Learning objectives\n"
+"- You understand why climate change has an impact on plants and photosynthesis\n"
+"- You learn about the basic principle of photosynthesis and where it occurs\n"
+"- You understand the plants' problem with excessive light and how they protect themselves\n"
+"#### What you need to know:\n"
+"- Structure of a plant\n"
+"- Structure of a cell\n"
+"- Function of a cell membrane"
+
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
 msgid "PHO_HEADLINE_CLIMATE"
@@ -358,6 +368,15 @@ msgstr "The following literature provides more in-depth information on the subje
 msgid "MTH_HEADLINE_ONE"
 msgstr "# Measuring method"
 
+msgid "MTH_LEARNING_OBJECTIVES"
+msgstr "### Learning objectives\n"
+"- You understand why plants glow (fluoresce)\n"
+"- You learn about Pulse Amplitude Modulation (PAM) measurements\n"
+"- You can interpret the results of a PAM measurement\n"
+"#### What you need to know:\n"
+"- Colour spectrum of the light\n"
+"- Basic concept of energy conversion and conservation"
+
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
@@ -474,6 +493,15 @@ msgstr "This was a lot of theory for just a bit of shining, so try a measurement
 msgid "MDL_HEADLINE_COMPUTATIONAL_MODELS"
 msgstr "# Computational models"
 
+msgid "MDL_LEARNING_OBJECTIVES"
+msgstr "### Learning objectives\n"
+"- You understand the basics of mathematical modeling theory\n"
+"- You learn about the application of models in biology with common examples\n"
+"- You become familiar with implementing a mathematical model in the Python programming language\n"
+"#### What you need to know:\n"
+"- Basics of programming\n"
+"- Fundamentals of modeling"
+
 # Grammarly checked
 #: pages/model_explain.py:21
 msgid "MDL_HEADLINE_MODEL"
@@ -483,7 +511,6 @@ msgstr "## What are mathematical models?"
 #: pages/model_explain.py:23
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"
 msgstr "Mathematical modeling involves creating mathematical models for use in various fields of research and industry. It is beneficial when traditional testing methods are too expensive and time-consuming. The language of **mathematics** enables us to translate real processes, situations, and problems into general statements using equations. This translation is yet to be one-to-one and imposes a certain level of **simplification**. Therefore, models are never a precise description, including all levels of details, but a simplification created with rigid methods for a specific study. The problem described using mathematical terms is then solved using mathematical techniques, today enormously aided with **computational** programs. The resulting solution is then applied to the real-world problem and evaluated. If additional solutions are required, the mathematical model must be revised. That way, the model development process is often not linear but an iterative cycle, as presented in the figure below."
-
 
 #: pages/model_explain.py:26
 msgid "MDL_CAPTION_MODELLING_PICTURE"

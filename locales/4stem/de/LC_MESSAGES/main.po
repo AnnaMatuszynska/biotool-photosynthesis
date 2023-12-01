@@ -225,6 +225,9 @@ msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das 
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
 msgstr "# Fotosynthese"
 
+msgid "PHO_LEARNING_OBJECTIVES"
+msgstr "# Fotosynthese"
+
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
 msgid "PHO_HEADLINE_CLIMATE"
@@ -349,6 +352,9 @@ msgstr "Folgende Literatur vertieft das Thema PAM-Messungen, oder bietet die Mö
 #: pages/method.py:10
 msgid "MTH_HEADLINE_ONE"
 msgstr "# Die Messmethode"
+
+msgid "MTH_LEARNING_OBJECTIVES"
+msgstr "# Fotosynthese"
 
 # Grammarly checked
 #: pages/method.py:15
@@ -509,6 +515,9 @@ msgstr "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den
 msgid "MDL_HEADLINE_COMPUTATIONAL_MODELS"
 msgstr ""
 
+msgid "MDL_LEARNING_OBJECTIVES"
+msgstr "# Fotosynthese"
+
 # Grammarly checked
 #: pages/model_explain.py:21
 msgid "MDL_HEADLINE_MODEL"
@@ -518,7 +527,6 @@ msgstr "# "
 #: pages/model_explain.py:23
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"
 msgstr ""
-
 
 #: pages/model_explain.py:26
 msgid "MDL_CAPTION_MODELLING_PICTURE"
