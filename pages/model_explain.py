@@ -24,6 +24,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     # Learning objectives
     st.info(text("MDL_LEARNING_OBJECTIVES"))
+    make_prev_next_button("measuring method", "experiments in silico", key="mdl_learning_objectives")
 
     st.markdown(text("MDL_HEADLINE_MODEL"))
 
@@ -124,19 +125,19 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             sum = st.session_state.i_slider + st.session_state.r_slider
             st.session_state.i_slider = int(st.session_state.i_slider / sum * remain)
             st.session_state.r_slider = int(st.session_state.r_slider / sum * remain)
-            
+
         def i_slider_callback():
             remain = 1000 - st.session_state.i_slider
             sum = st.session_state.s_slider  + st.session_state.r_slider
             st.session_state.s_slider = int(st.session_state.s_slider / sum * remain)
             st.session_state.r_slider = int(st.session_state.r_slider / sum * remain)
-            
+
         def r_slider_callback():
             remain = 1000 - st.session_state.r_slider
             sum = st.session_state.s_slider + st.session_state.i_slider
             st.session_state.i_slider = int(st.session_state.i_slider / sum * remain)
             st.session_state.s_slider = int(st.session_state.s_slider / sum * remain)
-            
+
         if 's_slider' not in st.session_state:
             st.session_state['s_slider'] = 900
 
@@ -145,9 +146,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         if 'r_slider' not in st.session_state:
             st.session_state['r_slider'] = 0
-        
+
         col1_______, col2_______, col3_______ = st.columns(3)
-        
+
         with col1_______:
             st.markdown(
                 f'''
@@ -157,7 +158,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 ''',
                 unsafe_allow_html=True
             )
-            
+
             s_slider = st.slider(
                 label='S',
                 min_value=0,
@@ -175,7 +176,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 ''',
                 unsafe_allow_html=True
             )
-            
+
             i_slider = st.slider(
                 label='I',
                 min_value=0,
@@ -193,7 +194,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 ''',
                 unsafe_allow_html=True
             )
-            
+
             r_slider = st.slider(
                 label='R',
                 min_value=0,
@@ -265,9 +266,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         sir_fig = get_plot_SIRModel(st.session_state["SIR_model"])
 
         col1______, col2______, col3______ = st.columns([0.2, 0.6, 0.2])
-        
+
         with col2______:
-            
+
             st.pyplot(sir_fig, transparent=True)
 
         st.session_state["SIR_model"].update(

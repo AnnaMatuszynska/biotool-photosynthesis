@@ -22,6 +22,7 @@ def make_page(text: Callable[[str], str]) -> bool:
 
     # Learning objectives
     st.info(text("FAL_LEARNING_OBJECTIVES"))
+    make_prev_next_button("computational models", "plant light memory", key="fal_learning_objectives")
 
     st.markdown(text("FAL_HEADLINE_MODEL_CONSTRUCTION"))
 
