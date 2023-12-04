@@ -1,5 +1,5 @@
 import streamlit as st
-from pages._sidebar import make_sidebar
+from pages._sidebar import fill_sidebar, make_sidebar
 from PIL import Image
 from st_pages import Page, show_pages
 from typing import Callable
@@ -122,10 +122,11 @@ if __name__ == "__main__":
             ),
         ]
     )
-    make_sidebar()
+    placeholder_sidebar = make_sidebar()
     resetting_click_detector_setup()
     track_page_visit("Start")
     make_introduction(text)
     make_chapters(text, version, language)
     make_literature(text, version, language)
     make_prev_next_button(None, "photosynthesis")
+    fill_sidebar(placeholder_sidebar)

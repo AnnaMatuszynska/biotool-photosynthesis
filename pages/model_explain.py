@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-from pages._sidebar import make_sidebar
+from pages._sidebar import fill_sidebar, make_sidebar
 from pages.assets.FCvB.FCvB_functions import make_FvCB_plot, steady_state_photosynthesis
 from pages.assets.SIR_model.sir_utils import *
 from pathlib import Path
@@ -525,10 +525,11 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
-    make_sidebar()
+    placeholder_sidebar = make_sidebar()
     resetting_click_detector_setup()
     track_page_visit("model_explain")
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button("measuring method", "experiments in silico")
     style_page()
+    fill_sidebar(placeholder_sidebar)

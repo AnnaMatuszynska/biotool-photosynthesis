@@ -6,7 +6,7 @@ from matplotlib import patches
 from matplotlib import pyplot as plt
 from model import get_model
 from modelbase.ode import Simulator
-from pages._sidebar import make_sidebar
+from pages._sidebar import fill_sidebar, make_sidebar
 from pages.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model_memory
 from scipy.signal import find_peaks, peak_prominences
 from typing import Any, Callable
@@ -294,10 +294,11 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
-    make_sidebar()
+    placeholder_sidebar = make_sidebar()
     resetting_click_detector_setup()
     track_page_visit("plant_memory")
     see_interpr = make_page(text, version)
     make_literature(text, version, language)
     make_prev_next_button("experiments in silico", "take home messages")
     style_guinding_questions(see_interpr)
+    fill_sidebar(placeholder_sidebar)

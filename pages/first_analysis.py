@@ -1,7 +1,7 @@
 import numpy as np
 import streamlit as st
 import time
-from pages._sidebar import make_sidebar
+from pages._sidebar import fill_sidebar, make_sidebar
 from pages.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model
 from pathlib import Path
 from streamlit.components.v1 import html
@@ -540,10 +540,11 @@ if __name__ == "__main__":
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
-    make_sidebar()
+    placeholder_sidebar = make_sidebar()
     resetting_click_detector_setup()
     track_page_visit("first_analysis")
     see_interpr = make_page(text)
     make_literature(text, version, language)
     make_prev_next_button("computational models", "plant light memory")
     style_guinding_questions(see_interpr)
+    fill_sidebar(placeholder_sidebar)

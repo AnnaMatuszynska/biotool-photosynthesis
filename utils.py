@@ -173,7 +173,7 @@ def markdown_click(placeholder, text_obj, detector_key=None, unsafe_allow_html=F
     if re.search("<a href='#'", text):
         clicked = resetting_click_detector(text, placeholder if detector_key is None else detector_key)
         if re.search("<a href='#' id='4Math'|<a href='#' id='4Bio'", text) and clicked in ["4Math", "4Bio"]:
-            st.session_state.version = clicked
+            st.session_state["version"] = clicked
             st.rerun()
         return clicked
     else:
