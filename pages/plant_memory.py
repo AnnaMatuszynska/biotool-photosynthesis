@@ -191,10 +191,10 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     },
                 )
 
-                fig_4STEM = make_plot(
+                fig_4Math = make_plot(
                     values=plot_values,
                     variables=plot_variables,
-                    version="4STEM",
+                    version="4Math",
                     width=15,
                     height=3,
                     xlabel1=text("AXIS_TIME_S"),
@@ -215,7 +215,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                 )
 
                 st.session_state["memory_fig_4Bio"] = fig_4Bio
-                st.session_state["memory_fig_4STEM"] = fig_4STEM
+                st.session_state["memory_fig_4Math"] = fig_4Math
 
                 old_results = {}
                 for key, value in st.session_state["memory_model_results"].items():
@@ -227,11 +227,11 @@ def make_page(text: Callable[[str], str], version: str) -> None:
                     {"Old": {k: v for k, v in st.session_state["memory_model_variables"]["New"].items()}}
                 )
 
-        if "memory_fig_4Bio" in st.session_state and "memory_fig_4STEM" in st.session_state:
+        if "memory_fig_4Bio" in st.session_state and "memory_fig_4Math" in st.session_state:
             if version == "4Bio":
                 showed_fig = st.session_state["memory_fig_4Bio"]
             else:
-                showed_fig = st.session_state["memory_fig_4STEM"]
+                showed_fig = st.session_state["memory_fig_4Math"]
 
             st.pyplot(showed_fig, transparent=True)
     return see_interpr

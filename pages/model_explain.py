@@ -43,7 +43,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     if version == "4Bio":
         tab1, tab2 = st.tabs([text("MDL_TAB_SIR"), " "])
 
-    if version == "4STEM":
+    if version == "4Math":
         tab1, tab2, tab3 = st.tabs([text("MDL_TAB_SIR"), text("MDL_TAB_MANUAL"), text("MDL_TAB_MODELBASE")])
 
     with tab1:
@@ -233,7 +233,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         markdown_click("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
 
-    if version == "4STEM":
+    if version == "4Math":
         with open(Path(__file__).parent / "assets" / "SIR_model" / "sir_v1_integ.py") as fp:
             sir_v1_integ = f"\n```python\n{fp.read()}```\n\n"
 
@@ -307,7 +307,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         st.markdown(text("MDL_FVCB_2"), unsafe_allow_html=True)
 
-        if version == "4STEM":
+        if version == "4Math":
             st.latex(
                 r"""
                 \newcommand{\indexni}[2]{#1 _{\mathrm{#2}}}
@@ -325,7 +325,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         markdown_click("MDL_FVCB_4", text, unsafe_allow_html=True)
 
-        if version == "4STEM":
+        if version == "4Math":
             st.markdown(text("MDL_FVCB_5"), unsafe_allow_html=True)
 
         fcvb_sliders = st.container()
@@ -500,7 +500,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             10. Bellasio, C., Quirk, J., Buckley, T. N., & Beerling, D. J. (2017). A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C4 Photosynthesis. Plant Physiology, 175(1), 104–119. https://doi.org/10.1104/pp.17.00666
             """
 
-        if version == "4STEM":
+        if version == "4Math":
             """
             1. van Aalst, M., Ebenhöh, O., & Matuszyńska, A. (2021). Constructing and analysing dynamic models with modelbase v1.2.3: A software update. BMC Bioinformatics, 22(1), 1–15. https://doi.org/10.1186/s12859-021-04122-7
             2. Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231

@@ -43,7 +43,7 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
     markdown_click("STR_MEMORY", text)
 
     # Explanation about "in vivo" etc
-    if version == "4STEM":
+    if version == "4Math":
         st.divider()
         st.markdown(text("STR_DROP_BOX_INTRO"))
         with st.expander(text("STR_EXPANDER_IN")):

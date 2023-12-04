@@ -85,7 +85,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             - Nies, T., Niu, Y., Ebenhöh, O., Matsubara, S., & Matuszyńska, A. (2021). Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research (p. 2021.05.12.443801). bioRxiv. https://doi.org/10.1101/2021.05.12.443801
 
             """
-        elif version == "4STEM":
+        elif version == "4Math":
             if language == "German":
                 """
                 - https://link.springer.com/referenceworkentry/10.1007/978-3-662-53493-9_13-1

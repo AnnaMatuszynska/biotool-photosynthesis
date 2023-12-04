@@ -10,8 +10,8 @@ def make_sidebar() -> tuple[str, str]:
     language: str = st.session_state.language
     text = get_localised_text(version, language)
     # Versions selectbox
-    versions = ["4Bio", "4STEM"]
-    version_display = dict(zip(versions, [text("SDE_4BIO"), text("SDE_4STEM")]))
+    versions = ["4Bio", "4Math"]
+    version_display = dict(zip(versions, [text("SDE_4BIO"), text("SDE_4MATH")]))
     version_to_idx = dict(zip(versions, range(len(versions))))
 
     version = cast(
@@ -25,7 +25,7 @@ def make_sidebar() -> tuple[str, str]:
         ),
     )
     # language selectbox
-    languages = ["English", "German", "Polish"] #, "French", "Spanish"]
+    languages = ["English", "German", "Polish"]  # , "French", "Spanish"]
     language_to_idx = dict(zip(languages, range(len(languages))))
     language = cast(
         str,

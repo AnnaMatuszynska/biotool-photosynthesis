@@ -37,7 +37,7 @@ def make_page(text: Callable[[str], str]) -> bool:
     st.markdown(text("FAL_RATES_5"))
     st.markdown(text("FAL_RATES_6"), unsafe_allow_html=True)
 
-    if version == "4STEM":
+    if version == "4Math":
         st.markdown(text("FAL_HEADLINE_MODEL_EQUATIONS"))
         st.markdown(text("FAL_MODEL_EQUATIONS_INTRODUCTION"))
         st.latex(
@@ -86,7 +86,7 @@ def make_page(text: Callable[[str], str]) -> bool:
     if version == "4Bio":
         markdown_click("FAL_IMPLEMENTATION_TO_EXPERT", text)
 
-    if version == "4STEM":
+    if version == "4Math":
         with st.expander(text("FAL_MODEL_CODE_EXPANDER")):
             st.markdown(text("FAL_CONSTRUCTION_HEADER"))
             st.markdown(text("FAL_CONSTRUCTION_1"))
@@ -444,10 +444,10 @@ def make_page(text: Callable[[str], str]) -> bool:
                     old_label=text("OLD_LABEL"),
                 )
 
-                fig_4STEM = make_plot(
+                fig_4Math = make_plot(
                     values=plot_values,
                     variables=plot_variables,
-                    version="4STEM",
+                    version="4Math",
                     width=15,
                     height=3,
                     xlabel1=text("AXIS_TIME_S"),
@@ -460,7 +460,7 @@ def make_page(text: Callable[[str], str]) -> bool:
                 )
 
                 st.session_state["fig_4Bio"] = fig_4Bio
-                st.session_state["fig_4STEM"] = fig_4STEM
+                st.session_state["fig_4Math"] = fig_4Math
 
             old_results = {}
             for key, value in st.session_state["model_results"].items():
@@ -472,11 +472,11 @@ def make_page(text: Callable[[str], str]) -> bool:
                 {"Old": {k: v for k, v in st.session_state["model_variables"]["New"].items()}}
             )
 
-        if "fig_4Bio" in st.session_state and "fig_4STEM" in st.session_state:
+        if "fig_4Bio" in st.session_state and "fig_4Math" in st.session_state:
             if version == "4Bio":
                 showed_fig = st.session_state["fig_4Bio"]
             else:
-                showed_fig = st.session_state["fig_4STEM"]
+                showed_fig = st.session_state["fig_4Math"]
 
             st.pyplot(showed_fig, transparent=True)
 
