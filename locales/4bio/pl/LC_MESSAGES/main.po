@@ -117,8 +117,8 @@ msgid "SDE_4BIO"
 msgstr "4Bio"
 
 #: pages/_sidebar.py:14
-msgid "SDE_4STEM"
-msgstr "4STEM"
+msgid "SDE_4MATH"
+msgstr "4Math"
 
 
 
@@ -191,7 +191,7 @@ msgstr "## Streszczenia stron"
 # Grammarly checked
 #: Start.py:33
 msgid "STR_INTRODUCTION_PAGES"
-msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji <a href='#' id='4STEM'>4STEM</a> znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach 4STEM."
+msgstr "Poniżej przedstawiamy krótki przegląd tego, czego można się spodziewać na kolejnych stronach. W sekcji <a href='#' id='4Math'>4Math</a> znajdziesz przegląd dodatkowych informacji, które otrzymasz w wersjach 4Math."
 
 # Grammarly checked
 #: Start.py:34
@@ -206,12 +206,12 @@ msgstr "Abyśmy mogli zmierzyć wydajność fotosyntetyczną roślin, potrzebuje
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "Jak w samym tytule tej strony, pracujemy <i>in silico</i>, tj. z modelami matematycznymi. Na stronie <b>modele obliczeniowe</b> dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy. W wersji <a href='#' id='4STEM'>4STEM</a> można również dowiedzieć się o implementacji modelu matematycznego w jęyzku programowania Python."
+msgstr "Jak w samym tytule tej strony, pracujemy <i>in silico</i>, tj. z modelami matematycznymi. Na stronie <b>modele obliczeniowe</b> dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy. W wersji <a href='#' id='4Math'>4Math</a> można również dowiedzieć się o implementacji modelu matematycznego w jęyzku programowania Python."
 
 # Grammarly checked
 #: Start.py:37
 msgid "STR_EXPERIMENT"
-msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='4STEM'>4STEM</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
+msgstr "Na stronie <b>eksperymenty <i>in silico</i></b> poznasz stosowany przez nas model fotosyntezy opracowany wspólnie z Anną Matuszyńską (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Następnie możesz bezpośrednio użyć go do wykonania pierwszych pomiarów. W wersji <a href='#' id='4Math'>4Math</a> istnieje możliwość pracy z równaniami matematycznymi używanego modelu. Ponadto można ustawić dodatkowe parametry dla eksperymentów."
 
 # Grammarly checked
 #: Start.py:38

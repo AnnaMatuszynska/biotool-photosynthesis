@@ -117,8 +117,8 @@ msgid "SDE_4BIO"
 msgstr "4Bio"
 
 #: pages/_sidebar.py:14
-msgid "SDE_4STEM"
-msgstr "4STEM"
+msgid "SDE_4MATH"
+msgstr "4Math"
 
 
 
@@ -150,12 +150,12 @@ msgstr "## Nutzung dieser Website"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <i>4Bio</i>, wenn sie sich mit der Biologie sicherer fühlen, oder <a href='#' id='4STEM'>4STEM</a>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
+msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <i>4Bio</i>, wenn sie sich mit der Biologie sicherer fühlen, oder <a href='#' id='4Math'>4Math</a>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
 
 # Grammarly checked
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
-msgstr "Nehmen wir an, Sie wählen die <a href='#' id='4STEM'>4STEM</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
+msgstr "Nehmen wir an, Sie wählen die <a href='#' id='4Math'>4Math</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr ""
@@ -191,7 +191,7 @@ msgstr "## Zusammenfassung der Seiten"
 # Grammarly checked
 #: Start.py:33
 msgid "STR_INTRODUCTION_PAGES"
-msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie auf den folgenden Seiten erwartet. Unter <a href='#' id='4STEM'>4STEM</a> finden Sie die Übersicht, welche zusätzlichen Informationen Sie in den 4STEM-Versionen erhalten."
+msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie auf den folgenden Seiten erwartet. Unter <a href='#' id='4Math'>4Math</a> finden Sie die Übersicht, welche zusätzlichen Informationen Sie in den 4Math-Versionen erhalten."
 
 # Grammarly checked
 #: Start.py:34
@@ -206,12 +206,12 @@ msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "Wie die Headline bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Auf der Seite <b>Computermodelle</b> erfahren Sie etwas über mathematische Modelle im Allgemeinen sowie etwas über Photosynthesemodelle. In der <a href='#' id='4STEM'>4STEM</a>-Version können Sie auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
+msgstr "Wie die Headline bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Auf der Seite <b>Computermodelle</b> erfahren Sie etwas über mathematische Modelle im Allgemeinen sowie etwas über Photosynthesemodelle. In der <a href='#' id='4Math'>4Math</a>-Version können Sie auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
 
 # Grammarly checked
 #: Start.py:37
 msgid "STR_EXPERIMENT"
-msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der <a href='#' id='4STEM'>4STEM</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
+msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der <a href='#' id='4Math'>4Math</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
 
 # Grammarly checked
 #: Start.py:38
@@ -442,7 +442,7 @@ msgid "MTH_EXPLANATION_MEASUREMENT_1"
 msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
         können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn Sie sich dafür interessieren, wie das \
-        geschieht, schauen Sie sich den Abschnitt <a href='#' id='4STEM'>4STEM</a> an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
+        geschieht, schauen Sie sich den Abschnitt <a href='#' id='4Math'>4Math</a> an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
         Pflanze wirkt sich auch auf die Leuchtkraft aus."
 
 #: Explanation by Tobias
@@ -979,7 +979,7 @@ msgstr "Lichtintensität des Sättigungsimpulses (SP) in μmol m⁻² s⁻¹"
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74
 msgid "FAL_IMPLEMENTATION_TO_EXPERT"
-msgstr "Um die mathematische Beschreibung zu sehen, wechseln Sie in den <a href='#' id='4STEM'>4STEM</a>-Modus."
+msgstr "Um die mathematische Beschreibung zu sehen, wechseln Sie in den <a href='#' id='4Math'>4Math</a>-Modus."
 
 #: pages/first_analysis.py:77
 msgid "FAL_MODEL_CODE_EXPANDER"

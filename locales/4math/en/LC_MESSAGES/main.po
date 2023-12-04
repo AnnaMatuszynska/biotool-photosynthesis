@@ -117,8 +117,8 @@ msgid "SDE_4BIO"
 msgstr "4Bio"
 
 #: pages/_sidebar.py:14
-msgid "SDE_4STEM"
-msgstr "4STEM"
+msgid "SDE_4MATH"
+msgstr "4Math"
 
 
 
@@ -150,16 +150,16 @@ msgstr "## How to use this website"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr "We aimed at both curious newcomers and more advanced learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <a href='#' id='4Bio'><i>4Bio</i></a>, if you feel more comforable with biology, or <i>4STEM</i>, if you want to experience the mathematical background in more detail."
+msgstr "We aimed at both curious newcomers and more advanced learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <a href='#' id='4Bio'><i>4Bio</i></a>, if you feel more comforable with biology, or <i>4Math</i>, if you want to experience the mathematical background in more detail."
 
 # Grammarly checked
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
-msgstr "In this *4STEM* version, we will summarise the biological background you need to know to understand the models on this webpage. We will give you multiple examples of models that were developed to capture different aspects of photosynthesis to show how useful modelling can be for biology. We will also explain one model in detail, showing how it is mathematically defined and implemented in Python so you can try it out for yourself."
+msgstr "In this *4Math* version, we will summarise the biological background you need to know to understand the models on this webpage. We will give you multiple examples of models that were developed to capture different aspects of photosynthesis to show how useful modelling can be for biology. We will also explain one model in detail, showing how it is mathematically defined and implemented in Python so you can try it out for yourself."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr "### Learning objectives\n"
-        "What we hope you will learn by following the *4STEM* version:"
+        "What we hope you will learn by following the *4Math* version:"
 
 msgid "STR_LEARNING_OBJECTIVES"
 msgstr "- You can explain how mathematical models can be applied in biology\n"

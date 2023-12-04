@@ -117,8 +117,8 @@ msgid "SDE_4BIO"
 msgstr "4Bio"
 
 #: pages/_sidebar.py:14
-msgid "SDE_4STEM"
-msgstr "4STEM"
+msgid "SDE_4MATH"
+msgstr "4Math"
 
 
 
@@ -150,7 +150,7 @@ msgstr "## How to use this website"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr "We aimed at both curious newcomers and more advanced< learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <i>4Bio</i>, if you feel more comforable with biology, or <a href='#' id='4STEM'><i>4STEM</i></a>, if you want to experience the mathematical background in more detail."
+msgstr "We aimed at both curious newcomers and more advanced< learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <i>4Bio</i>, if you feel more comforable with biology, or <a href='#' id='4Math'><i>4Math</i></a>, if you want to experience the mathematical background in more detail."
 
 # Grammarly checked
 #: Start.py:20
@@ -195,7 +195,7 @@ msgstr "## Abstract of the pages"
 # Grammarly checked
 #: Start.py:33
 msgid "STR_INTRODUCTION_PAGES"
-msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In <a href='#' id='4STEM'>4STEM</a>, you will find the overview of what additional information you will get in the <a href='#' id='4STEM'>4STEM</a> versions."
+msgstr "In the following, we will give you a short overview of what you can expect on the following pages. In <a href='#' id='4Math'>4Math</a>, you will find the overview of what additional information you will get in the <a href='#' id='4Math'>4Math</a> versions."
 
 # Grammarly checked
 #: Start.py:34
@@ -210,12 +210,12 @@ msgstr "We need a specific measurement method to measure plants' photosynthetic 
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "As the headline already told you, we work <i>in silico</i>, i.e., with mathematical models. On the <b>computational models page</b> you will learn something about mathematical models in general, as well as something about photosynthesis models. In the <a href='#' id='4STEM'>4STEM</a> version you can also learn something about how to implement such a model in the programming language Python."
+msgstr "As the headline already told you, we work <i>in silico</i>, i.e., with mathematical models. On the <b>computational models page</b> you will learn something about mathematical models in general, as well as something about photosynthesis models. In the <a href='#' id='4Math'>4Math</a> version you can also learn something about how to implement such a model in the programming language Python."
 
 # Grammarly checked
 #: Start.py:37
 msgid "STR_EXPERIMENT"
-msgstr "On the page <b>experiments <i>in silico</i></b>, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Afterward, you can directly use it yourself to perform your first measurements. In the <a href='#' id='4STEM'>4STEM</a> version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
+msgstr "On the page <b>experiments <i>in silico</i></b>, you will learn the photosynthesis model used by us and co-developed by Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Afterward, you can directly use it yourself to perform your first measurements. In the <a href='#' id='4Math'>4Math</a> version, there is the possibility to deal with the mathematical equations of the used model. In addition, further parameters can be set for the experiments."
 
 # Grammarly checked
 #: Start.py:38
@@ -427,7 +427,7 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 # Grammarly checked
 #: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
-msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='4STEM'>4STEM</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the reemitted light signal."
+msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='4Math'>4Math</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the reemitted light signal."
 
 #: Explanation by Tobias
 # Grammarly checked
@@ -633,7 +633,7 @@ msgid "MDL_FVCB_3"
 msgstr "But this model is not useless. Due to its simplicity, it serves as the essential groundwork for several more complicated and complete models that focus on different aspects of plant life. For example, some models take upon the generalization of the FvCB model and focus on the mesophyll conductance&nbsp;[2] or inserting bicarbonate transporters at the chloroplast envelope&nbsp;[3]."
 
 msgid "MDL_FVCB_4"
-msgstr "To help you understand the simplicity of this model, we have depicted the complete set of only four equations. To see these equations in detail, please switch to the <a href='#' id='4STEM'>4STEM</a> mode. Additionally, we have created an interactive simulation for you to play with. While there are only four equations, these still use various parameters that must be set beforehand. To avoid overwhelming you, we are letting you play with the intercellular chloroplast O<sub>2</sub> partial pressure (O), the electron transport rate (J), and the inorganic phosphate supply rate (T<sub>p</sub>). These three parameters are the main differences between the As (A<sub>c</sub>, A<sub>j</sub>, and A<sub>p</sub>, respectively). Changing these parameters will change each A individually and impact the plant's total A. We have set the rest of the parameters to the values used in the review by S. von Caemmerer, from which we took these equations&nbsp;[4]."
+msgstr "To help you understand the simplicity of this model, we have depicted the complete set of only four equations. To see these equations in detail, please switch to the <a href='#' id='4Math'>4Math</a> mode. Additionally, we have created an interactive simulation for you to play with. While there are only four equations, these still use various parameters that must be set beforehand. To avoid overwhelming you, we are letting you play with the intercellular chloroplast O<sub>2</sub> partial pressure (O), the electron transport rate (J), and the inorganic phosphate supply rate (T<sub>p</sub>). These three parameters are the main differences between the As (A<sub>c</sub>, A<sub>j</sub>, and A<sub>p</sub>, respectively). Changing these parameters will change each A individually and impact the plant's total A. We have set the rest of the parameters to the values used in the review by S. von Caemmerer, from which we took these equations&nbsp;[4]."
 
 msgid "MDL_FVCB_5"
 msgstr ""
@@ -794,7 +794,7 @@ msgstr ""
 # Grammarly checked
 #: pages/model_explain.py:258
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
-msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. If you want to learn how to implement such a model computationally using Python as a programming language, please switch to the <a href='#' id='4STEM'>4STEM</a> mode."
+msgstr "We have now successfully implemented and used a model of epidemiology. Such a model has been recently used as a basis for numerous more complex models to track the expansion of a virus spread in multiple populations across the globe. If you want to learn how to implement such a model computationally using Python as a programming language, please switch to the <a href='#' id='4Math'>4Math</a> mode."
 
 
 
@@ -934,7 +934,7 @@ msgstr "Light intensity of saturating pulse (SP) in μmol m⁻² s⁻¹"
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74
 msgid "FAL_IMPLEMENTATION_TO_EXPERT"
-msgstr "To see the mathematical implementation of the model, including the differential equations derived to describe the dynamics of photoprotection, switch to the <a href='#' id='4STEM'>4STEM</a> mode."
+msgstr "To see the mathematical implementation of the model, including the differential equations derived to describe the dynamics of photoprotection, switch to the <a href='#' id='4Math'>4Math</a> mode."
 
 #: pages/first_analysis.py:77
 msgid "FAL_MODEL_CODE_EXPANDER"
@@ -1147,7 +1147,7 @@ msgstr "### Learning objectives\n"
 # Grammarly checked
 #: pages/plant_memory.py:387
 msgid "MEM_INTRODUCTION_BRAIN"
-msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='4STEM'>4STEM</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
+msgstr "Since you have found out how plants react to different light intensities, we have news for you! Plants can be actually <i>trained</i> to enhance their photoprotection. It has been observed experimentally that plants previously exposed to light react differently to light than those exposed to light for the first time! This phenomenon is sometimes called <b>short-term light memory</b>, and we know now which molecular mechanism causes this effect. We have used this knowledge to represent the behavior with a mathematical model. Now, you can perform your own <b>memory experiments</b>. Go ahead; you can simulate different scenarios using the five sliders below. Do you see how the fluorescence signal differs between different experiment phases? If you want to learn more about the molecular mechanism behind the process responsible for this short-term memory effect, switch to the <a href='#' id='4Math'>4Math</a> version on the left. You can also create your mutated version of the plant and see if you can <i>forget</i> the light sooner."
 
 #: pages/plant_memory.py:260
 msgid "MEM_SLIDER_TRAINING"

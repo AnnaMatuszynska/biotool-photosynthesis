@@ -117,8 +117,8 @@ msgid "SDE_4BIO"
 msgstr "4Bio"
 
 #: pages/_sidebar.py:14
-msgid "SDE_4STEM"
-msgstr "4STEM"
+msgid "SDE_4MATH"
+msgstr "4Math"
 
 
 
@@ -150,7 +150,7 @@ msgstr "## Nutzung dieser Website"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <a href='#' id='4Bio'><i>4Bio</i></a>, wenn sie sich mit der Biologie sicherer fühlen, oder <i>4STEM</i>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
+msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <a href='#' id='4Bio'><i>4Bio</i></a>, wenn sie sich mit der Biologie sicherer fühlen, oder <i>4Math</i>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
 
 # Grammarly checked
 #: Start.py:20
@@ -196,12 +196,12 @@ msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie a
 # Grammarly checked
 #: Start.py:34
 msgid "STR_PHOTOSYNTHESIS"
-msgstr "Auf der Seite **Photosynthese** erfahren Sie alles, was Sie über die Photosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können. In dieser 4STEM-Version gibt es ausführlichere Informationen über den Klimawandel sowie eine molekulare Beschreibung des Photoprotektionsmechanismus."
+msgstr "Auf der Seite **Photosynthese** erfahren Sie alles, was Sie über die Photosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können. In dieser 4Math-Version gibt es ausführlichere Informationen über den Klimawandel sowie eine molekulare Beschreibung des Photoprotektionsmechanismus."
 
 # Grammarly checked
 #: Start.py:35
 msgid "STR_METHOD"
-msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir eine spezielle Messmethode. Diese wird auf der Seite **Messmethode** vorgestellt. Darüber hinaus gehen wir darauf ein, wie wir unsere Messungen sichtbar machen können. In dieser 4STEM-Version bieten wir zusätzlich Links zu Fachliteratur, in der Sie mehr über die Fluoreszenzmessungen erfahren können."
+msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir eine spezielle Messmethode. Diese wird auf der Seite **Messmethode** vorgestellt. Darüber hinaus gehen wir darauf ein, wie wir unsere Messungen sichtbar machen können. In dieser 4Math-Version bieten wir zusätzlich Links zu Fachliteratur, in der Sie mehr über die Fluoreszenzmessungen erfahren können."
 
 # Grammarly checked
 #: Start.py:36

@@ -117,7 +117,7 @@ msgid "SDE_4BIO"
 msgstr ""
 
 #: pages/_sidebar.py:14
-msgid "SDE_4STEM"
+msgid "SDE_4MATH"
 msgstr ""
 
 
