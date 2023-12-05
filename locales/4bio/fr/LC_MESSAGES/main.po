@@ -120,6 +120,14 @@ msgstr ""
 msgid "SDE_4MATH"
 msgstr ""
 
+#: pages/_sidebar.py:14
+msgid "VIDEO_TRANSCRIPT_SWITCH"
+msgstr ""
+
+#: pages/_sidebar.py:14
+msgid "EXPANDER_VIDEO_TRANSCRIPT"
+msgstr ""
+
 
 
 #: This can be copied to add new text entries with translations
@@ -155,6 +163,9 @@ msgstr ""
 # Grammarly checked
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
+msgstr ""
+
+msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
 msgstr ""
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
@@ -305,6 +316,9 @@ msgstr ""
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
+msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
+msgstr ""
+
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
 msgstr ""
@@ -410,6 +424,9 @@ msgstr ""
 msgid "MTH_INTRODUCTION_PHI"
 msgstr ""
 
+msgid "MTH_VIDEO_TRANSCRIPT_PAM"
+msgstr ""
+
 #: Explanation by Tobias
 
 #: pages/method.py:40
@@ -490,6 +507,9 @@ msgstr ""
 
 #: pages/model_explain.py:29
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"
+msgstr ""
+
+msgid "MDL_VIDEO_TRANSCRIPT_MODELS"
 msgstr ""
 
 #: pages/model_explain.py:34
@@ -875,6 +895,9 @@ msgstr ""
 # Grammarly checked
 #: pages/first_analysis.py:275
 msgid "FAL_EXPLANATNION"
+msgstr ""
+
+msgid "FAL_VIDEO_TRANSCRIPT_SLIDERS"
 msgstr ""
 
 #: pages/first_analysis.py:277

@@ -36,7 +36,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"))
 
     # Making a model
-    include_ytvideo("https://youtu.be/oVME5KIHrO8")
+    include_ytvideo("https://youtu.be/oVME5KIHrO8", 0.9)
+    if st.session_state["show_video_transcripts"]:
+        with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):
+            st.write(text("MDL_VIDEO_TRANSCRIPT_MODELS"))
 
     st.markdown(text("MDL_EXAMPLE_MATHEMATICAL_MODEL"))
 

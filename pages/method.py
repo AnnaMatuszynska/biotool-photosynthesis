@@ -8,6 +8,7 @@ from utils import (
     markdown_click,
     resetting_click_detector_setup,
     track_page_visit,
+    include_ytvideo
 )
 
 
@@ -32,16 +33,18 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MTH_PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
         st.markdown(text("MTH_INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
 
-        _, col2, _ = st.columns(3)
-        with col2:
-            st.video("https://youtube.com/g3uTNWsDEdo")
+        include_ytvideo("https://youtube.com/g3uTNWsDEdo", 0.9)
 
         st.markdown(text("MTH_EXPLANATION_VIDEO"), unsafe_allow_html=True)
 
     with st.expander(text("MTH_MEASURING_FLUORESZENZ"), expanded=True):
         markdown_click("MTH_EXPLANATION_MEASUREMENT_1", text)
         st.markdown(text("MTH_INTRODUCTION_PHI"), unsafe_allow_html=True)
-        st.video("https://youtu.be/EwXkOlMBl3o")
+        include_ytvideo("https://youtu.be/EwXkOlMBl3o", 0.9)
+        
+    if st.session_state["show_video_transcripts"]:
+        with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):
+            st.write(text("MTH_VIDEO_TRANSCRIPT_PAM"))
 
     st.markdown(text("MTH_HEADLINE_PAM_MEASUREMENT"), unsafe_allow_html=True)
     st.markdown(text("MTH_INTRODUCTION_PAM_MEASUREMENT"), unsafe_allow_html=True)

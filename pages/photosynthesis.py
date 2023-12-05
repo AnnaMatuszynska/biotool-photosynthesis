@@ -11,6 +11,7 @@ from utils import (
     markdown_click,
     resetting_click_detector_setup,
     track_page_visit,
+    include_ytvideo
 )
 
 
@@ -67,7 +68,10 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     markdown_click("PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE", text)
 
     # Journey into leaf
-    st.video("https://youtu.be/hMCA0bBVoxE")
+    include_ytvideo("https://youtu.be/hMCA0bBVoxE", 0.9)
+    if st.session_state["show_video_transcripts"]:
+        with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):
+            st.write(text("PHO_VIDEO_TRANSCRIPT_JOURNEY"))
 
     markdown_click("PHO_HEADLINE_NPQ", text)
     markdown_click("PHO_NPQ_EXPLANATION", text)

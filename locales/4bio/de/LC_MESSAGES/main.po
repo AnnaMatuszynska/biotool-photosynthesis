@@ -120,6 +120,14 @@ msgstr "4Bio"
 msgid "SDE_4MATH"
 msgstr "4Math"
 
+#: pages/_sidebar.py:14
+msgid "VIDEO_TRANSCRIPT_SWITCH"
+msgstr "Video Transkripte anzeigen"
+
+#: pages/_sidebar.py:14
+msgid "EXPANDER_VIDEO_TRANSCRIPT"
+msgstr "Video Transkript"
+
 
 
 #: This can be copied to add new text entries with translations
@@ -156,6 +164,9 @@ msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschritte
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
 msgstr "Nehmen wir an, Sie wählen die <a href='#' id='4Math'>4Math</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
+
+msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
+msgstr ""
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr ""
@@ -317,6 +328,9 @@ msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese no
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
+msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
+msgstr ""
+
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
 msgstr ""
@@ -457,6 +471,9 @@ msgstr "Deshalb haben Wissenschaftler \
         Buchstaben 'Psi', und Sie werden ihn vielleicht in einigen der Diagramme sehen, die Sie später erstellen werden. \
         Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
 
+msgid "MTH_VIDEO_TRANSCRIPT_PAM"
+msgstr ""
+
 #: Explanation by Tobias
 
 #: pages/method.py:40
@@ -556,6 +573,9 @@ msgstr ""
 
 #: pages/model_explain.py:29
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"
+msgstr ""
+
+msgid "MDL_VIDEO_TRANSCRIPT_MODELS"
 msgstr ""
 
 #: pages/model_explain.py:34
@@ -953,6 +973,9 @@ msgid "FAL_EXPLANATNION"
 msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Dann starten Sie die \
         Berechnung, indem Sie auf den Start-Button klicken. Das berechnete Diagramm wird nach kurzer Zeit angezeigt. \
         Sobald Sie die Schieberegler wieder bewegen, verschwindet die Grafik und Sie können eine neue Grafik laden."
+
+msgid "FAL_VIDEO_TRANSCRIPT_SLIDERS"
+msgstr ""
 
 #: pages/first_analysis.py:277
 msgid "FAL_TIPP1"

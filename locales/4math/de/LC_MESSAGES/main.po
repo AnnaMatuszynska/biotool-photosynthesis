@@ -120,6 +120,14 @@ msgstr "4Bio"
 msgid "SDE_4MATH"
 msgstr "4Math"
 
+#: pages/_sidebar.py:14
+msgid "VIDEO_TRANSCRIPT_SWITCH"
+msgstr "Video Transkripte anzeigen"
+
+#: pages/_sidebar.py:14
+msgid "EXPANDER_VIDEO_TRANSCRIPT"
+msgstr "Video Transkript"
+
 
 
 #: This can be copied to add new text entries with translations
@@ -155,7 +163,10 @@ msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschritte
 # Grammarly checked
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
-msgstr "In dieser ."
+msgstr ""
+
+msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
+msgstr ""
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr ""
@@ -307,6 +318,9 @@ msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese no
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
+msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
+msgstr ""
+
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
 msgstr ""
@@ -437,6 +451,9 @@ msgstr ""
 msgid "MTH_INTRODUCTION_PHI"
 msgstr ""
 
+msgid "MTH_VIDEO_TRANSCRIPT_PAM"
+msgstr ""
+
 #: Explanation by Tobias
 
 #: pages/method.py:40
@@ -535,6 +552,9 @@ msgstr ""
 
 #: pages/model_explain.py:29
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"
+msgstr ""
+
+msgid "MDL_VIDEO_TRANSCRIPT_MODELS"
 msgstr ""
 
 #: pages/model_explain.py:34
@@ -935,6 +955,9 @@ msgid "FAL_EXPLANATNION"
 msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Starten Sie dann die \
         Berechnung, indem Sie auf die Schaltfläche klicken. Das berechnete Diagramm wird angezeigt. Sobald Sie die \
         Schieberegler erneut ändern, verschwindet die Grafik und Sie können eine neue Grafik laden."
+
+msgid "FAL_VIDEO_TRANSCRIPT_SLIDERS"
+msgstr ""
 
 #: pages/first_analysis.py:277
 msgid "FAL_TIPP1"
