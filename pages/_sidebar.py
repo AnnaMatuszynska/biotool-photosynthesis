@@ -15,6 +15,9 @@ def unkeep(key):
 
 
 def make_sidebar() -> tuple[str, str]:
+    version: str = st.session_state.version
+    language: str = st.session_state.language
+    text = get_localised_text(version, language)
     st.sidebar.write("## Settings :gear:")
 
     placeholder_sidebar = st.sidebar.empty()
@@ -31,6 +34,15 @@ def make_sidebar() -> tuple[str, str]:
             index=0,
         )
 
+    st.session_state.setdefault("show_video_transcripts", False)
+    unkeep("show_video_transcripts")
+    st.sidebar.checkbox(
+        label=text("VIDEO_TRANSCRIPT_SWITCH"),
+        value=False,
+        key="_show_video_transcripts",
+        on_change=keep,
+        args=["show_video_transcripts"],
+    )
     return placeholder_sidebar
 
 

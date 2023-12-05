@@ -25,6 +25,11 @@ def make_introduction(text: Callable[[str], str]) -> None:
         markdown_click("STR_USAGE", text)
     with col2:
         include_ytvideo("https://youtu.be/KvyjIWLD8rU", 0.9)
+
+    if st.session_state["show_video_transcripts"]:
+        with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):
+            st.write(text("STR_VIDEO_TRANSCRIPT_INTRODUCTION"))
+    
     markdown_click("STR_SPECIFIC_USE", text)
 
     # Learning objectives
