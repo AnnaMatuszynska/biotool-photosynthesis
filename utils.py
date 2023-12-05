@@ -10,16 +10,27 @@ from pathlib import Path
 from st_click_detector import click_detector
 from streamlit_extras.switch_page_button import switch_page
 from typing import Callable
+from functools import partial
 
+def _get_localised_text_warn(gettext, plc):
+    res = gettext(plc)
+    if res == plc or len(res)==0:
+        st.sidebar.warning(f"No valid text for placeholder {plc}")
+    return res
 
-def get_localised_text(version: str, language: str) -> Callable[[str], str]:
+def get_localised_text(version: str, language: str, do_warn:bool=False) -> Callable[[str], str]:
     version = version.lower()
     try:
         localizator = gettext.translation(
             "main", localedir=os.path.join("locales", version), languages=[language]
         )
         localizator.install()
-        return localizator.gettext
+
+        if do_warn:
+            return partial(_get_localised_text_warn, localizator.gettext)
+        else:
+            return localizator.gettext
+
     except:
         getLogger().warning(f"Could not find locale for language {language} and version {version}")
         return gettext.gettext
