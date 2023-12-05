@@ -158,7 +158,7 @@ msgstr "## Nutzung dieser Website"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <i>4Bio</i>, wenn sie sich mit der Biologie sicherer fühlen, oder <a href='#' id='4Math'>4Math</a>, wenn sie die mathematischen Hitergründe näher erkunden wollen."
+msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <i>4Bio</i>, wenn sie sich mit der Biologie sicherer fühlen, oder <a href='#' id='4Math'>4Math</a>, wenn sie die mathematischen Hintergründe näher erkunden wollen.<br>Auf dieser Webseite finden sie auch Videos. Falls sie die Video Transkripte ansehen möchten, wählen sie <i>Video Transkripte anzeigen</i> auf der linken Seite aus."
 
 # Grammarly checked
 #: Start.py:20
