@@ -158,12 +158,12 @@ msgstr "## How to use this website"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr "We aimed at both curious newcomers and more advanced learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <a href='#' id='4Bio'><i>4Bio</i></a>, if you feel more comforable with biology, or <i>4Math</i>, if you want to experience the mathematical background in more detail.<br>We also included videos on this website. If you would like to read the transcripts, select the <i>Show video transcripts</i> option on the left."
+msgstr "We aimed at both curious newcomers and more advanced learners in the fields of biology and modelling. You can chose on the left side panel one of two versions of this website from a drop-down menu (you can also click on the highlighted text): <a href='#' id='4Bio'><i>4Bio</i></a>, if you feel more comfortable with biology, or <i>4Math</i>, if you want to experience the mathematical background in more detail.<br>We also included videos on this website. If you would like to read the transcripts, select the <i>Show video transcripts</i> option on the left."
 
 # Grammarly checked
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
-msgstr "In this *4Math* version, we will summarise the biological background you need to know to understand the models on this webpage. We will give you multiple examples of models that were developed to capture different aspects of photosynthesis to show how useful modelling can be for biology. We will also explain one model in detail, showing how it is mathematically defined and implemented in Python so you can try it out for yourself."
+msgstr "In this *4Math* version, we will summarize the biological background you need to know to understand the models on this webpage. We will give you multiple examples of models that were developed to capture different aspects of photosynthesis to show how useful modelling can be for biology. We will also explain one model in detail, showing how it is mathematically defined and implemented in Python so you can try it out for yourself."
 
 msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
 msgstr "Photosynthesis is what makes this world go. From the air you breathe to the food you eat, in the end, it's all light driven by plants, algae, and smaller cells. Knowing this, you can understand how important it is to know how photosynthesis works. If we knew that exactly, we might be able to artificially improve this natural process and help with the production of food, fuel, and many other chemicals we need in our lives."
@@ -176,7 +176,7 @@ msgid "STR_LEARNING_OBJECTIVES"
 msgstr "- You can explain how mathematical models can be applied in biology\n"
             "- You can name some examples of biological mathematical model and explain how they are built\n"
             "- You can describe light protection in plants by non-photochemical quenching\n"
-            "- You can summarise how fluorescence can be used to measure photosynthesis\n"
+            "- You can summarize how fluorescence can be used to measure photosynthesis\n"
             "- You can produce photosynthesis simulations and explain their biological meaning"
 
 # Grammarly checked
@@ -222,7 +222,7 @@ msgstr "The **measuring method page** will explain a state-of-the-art method of 
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "Mathematical modelling therory and examples of popular models be presented on the **computational models page**. Additionally, we demonstrate the implementation of mathematical model in a programming language Python."
+msgstr "Mathematical modelling theory and examples of popular models be presented on the **computational models page**. Additionally, we demonstrate the implementation of mathematical model in a programming language Python."
 
 # Grammarly checked
 #: Start.py:37
@@ -302,7 +302,7 @@ msgstr "Fundamentally, photosynthesis is a multi-step process that uses the ener
 msgid "PHO_CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Simplified photosynthesis process"
 
-# Grmmarly checked
+# Grammarly checked
 #: pages/photosynthesis.py:45
 msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Schematic zoom into a leaf: The cross-section shows chloroplasts-containing mesophyll cells. The photosynthesis light reactions take place within the inner membrane system of chloroplasts. These thylakoid membranes form stacked structures that delimit an inner lumen from the chloroplast stroma. Within the membrane, a series of protein complexes and metabolic carriers use light energy to produce the energy equivalents ATP and NADPH, which fuel metabolism - mainly the fixation of CO₂ within the 'dark reaction'."
@@ -326,7 +326,7 @@ msgstr "Complexes within the thylakoid membrane, which are necessary for photosy
 # Grammarly checked
 #: pages/photosynthesis.py:52
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
-msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5 Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\nThe following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
+msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5-bisphosphate Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\nThe following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
 
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
 msgstr "Imagine going up to a tree. This tree has many parts: Roots, a stem, branches, leaves. All of which are important to the tree's function and there are researchers interested in understanding them.\n\nLet's focus for now on the leaf since this is where photosynthesis happens. Take a step towards the tree and look at the leaf. It has an intricate structure with a network of veins running through a sheet of green photosynthetic cells. And there are other cells: Plant hairs, gas-exchanging stomates, and more. Even in just a leaf, there are many different functioning sets that all warrant investigation.\n\nBut let's again focus on the green cells, the mesophyll, cells place of most photosynthesis. So imagine taking another step forward and looking inside the cell. You see it filled to the brim with again different parts with their own jobs: The vacuole, which gives the cell structure; the nucleus packing the genetic information; the chloroplast, where the light is being captured; and so many more organelles. And let's take another step towards the chloroplast to investigate how light gives energy to our cell.\n\nOn this level, you see how the light hits the millions of proteins that do their jobs within this confined space. Special ones among them, the photosystems, can take up that light, juggle with electrons, and pass them on. A whole miniature machinery is fueled by them, leading to the production and consumption of things. Many of them leave or enter the chloroplasts from other parts of the cell. Everything changes constantly! And in there, we sit and wonder: How does photosynthesis work?"
@@ -388,7 +388,7 @@ msgstr "### Learning objectives\n"
 "- You learn about Pulse Amplitude Modulation (PAM) measurements\n"
 "- You can interpret the results of a PAM measurement\n"
 "#### What you need to know:\n"
-"- Colour spectrum of the light\n"
+"- Color spectrum of the light\n"
 "- Basic concept of energy conversion and conservation"
 
 # Grammarly checked
@@ -588,7 +588,7 @@ msgstr "With this scheme, you have already successfully modeled your problem; yo
 #: pages/model_explain.py:236
 #: pages/model_explain.py:50
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
-msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be irradicated on its own. Here we also gave you the possibility to use an interactive version of the Model."
+msgstr "To effectively solve each ODE, it is crucial to consider the rates involved. With a predetermined scheme, one can determine which rate corresponds to removing or adding certain compounds. By using integration, one can calculate the amount of each compound at any given time and depict the change over time when doing so for multiple time points. Let's apply this method to the disease on Planet-X. According to the scientists, the infection rate is (β&nbsp;=&nbsp;2), and the recovery rate is (γ&nbsp;=&nbsp;0.2). With these values and starting populations of (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), we can solve our ODE system. The resulting graph shows that the disease on Planet-X will eventually be eradicated on its own. Here we also gave you the possibility to use an interactive version of the Model."
 
 # Grammarly checked
 #: pages/model_explain.py:251
@@ -728,7 +728,7 @@ msgstr "### The Bellasio model"
 # Grammarly checked
 #: pages/model_explain.py:395
 msgid "MDL_BELLASIO_1"
-msgstr "The Bellassio model was introduced in 2018 as a solution to the problem of oversimplified steady-state models and overly complex dynamic models [9]. It divides the leaf model into three compartments: the atmosphere, the space between the cells, and the mesophyll, where most of the plant's photosynthetic activity occurs. The model focuses on carbon assimilation processes, integrating light reactions and stomatal behaviour, which are the processes by which the plant captures carbon dioxide and releases water vapour during photosynthesis. The model's complexity is between the FvCB and *e*-photosynthesis models, as it takes inspiration from both to build its framework."
+msgstr "The Bellassio model was introduced in 2018 as a solution to the problem of oversimplified steady-state models and overly complex dynamic models [9]. It divides the leaf model into three compartments: the atmosphere, the space between the cells, and the mesophyll, where most of the plant's photosynthetic activity occurs. The model focuses on carbon assimilation processes, integrating light reactions and stomatal behavior, which are the processes by which the plant captures carbon dioxide and releases water vapour during photosynthesis. The model's complexity is between the FvCB and *e*-photosynthesis models, as it takes inspiration from both to build its framework."
 
 # Grammarly checked
 #: pages/model_explain.py:405
@@ -828,10 +828,10 @@ msgstr "# Experiments *in silico*"
 
 msgid "FAL_LEARNING_OBJECTIVES"
 msgstr "### Learning objectives\n"
-"- You learn to simulate a photosynthesis model and interprete the results\n"
+"- You learn to simulate a photosynthesis model and interpret the results\n"
 "- You understand the model's mathematical equations and how to implement it in the programming language Python\n"
 "#### What you need to know:\n"
-"- Reading and analysing graphs"
+"- Reading and analyzing graphs"
 
 #: pages/first_analysis.py:13
 msgid "FAL_HEADLINE_MODEL_CONSTRUCTION"
@@ -918,13 +918,13 @@ msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object-oriented language (OOL) Python using the modelbase package. The code containing differential equations, reaction rates, parameter space, and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel). In the dropdown below, you can also look at a step-by-step guide on implementing it yourself."
 
 #: pages/first_analysis.py:271
-msgid "FAL_HEADLINE_ANALYSE"
+msgid "FAL_HEADLINE_analyze"
 msgstr "## The data analysis"
 
 # Grammarly checked
 #: pages/first_analysis.py:272
 msgid "FAL_INTRODUKTION"
-msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors. In the following the model can be rerun with different parameters using the sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal. With the sliders, you can adjust the light instensity during the light phase, for how long the simulation will run, how far apart in time the saturation pulses will be, and how fast the activation and deactivation rates of the NPQ adaption process are."
+msgstr "Now that you have been introduced to the measurement method for checking NPQ on plants, we will carry out measurements with the model to estimate the influence of the abiotic influence factors. In the following the model can be rerun with different parameters using the sliders.\n\n The graph will display the fluorescence as an orange line during an initial dark phase (blue background) and a following light phase (orange background) with choosable intensity. Saturating light pulses are given at the beginning of the dark phase and in the light, which you can see as spikes in the fluorescence signal. With the sliders, you can adjust the light intensity during the light phase, for how long the simulation will run, how far apart in time the saturation pulses will be, and how fast the activation and deactivation rates of the NPQ adaption process are."
 
 #: pages/first_analysis.py:274
 msgid "FAL_HEADLINE_SLIDER"
@@ -990,7 +990,7 @@ msgstr "The defined model has integrated functions to add the parameters and com
 # Grammarly checked
 #: pages/first_analysis.py:109
 msgid "FAL_CONSTRUCTION_4"
-msgstr "This model also uses some **parameters** that are derived from other parameters. Furthermore, some information is hidden behind the connection between compounds, which cannot be summarised as parameters. However, `modelbase` has some tricks to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We must first define the calculations as functions and then add them to the model." 
+msgstr "This model also uses some **parameters** that are derived from other parameters. Furthermore, some information is hidden behind the connection between compounds, which cannot be summarized as parameters. However, `modelbase` has some tricks to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We must first define the calculations as functions and then add them to the model." 
 
 # Grammarly checked
 #: pages/first_analysis.py:125
@@ -1082,13 +1082,13 @@ msgstr "### Graphs with one result"
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_1"
 msgstr "We can look at the graph in three phases:\n"
-            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is 'F₀'. We then simulate a saturating light pulse which rapidly inceases the fluorescence up to the peak value 'Fₘ'. Fₘ should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. 'Fₜ', the fluorescence simulated outside of saturating pulses, shows the photosystems behaviour under the actinic light. We see that Fₜ decreases back to the F₀-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
+            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is 'F₀'. We then simulate a saturating light pulse which rapidly increases the fluorescence up to the peak value 'Fₘ'. Fₘ should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. 'Fₜ', the fluorescence simulated outside of saturating pulses, shows the photosystems behavior under the actinic light. We see that Fₜ decreases back to the F₀-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
             "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level (Fₘ') is the same as Fₘ, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F₀ which persists until the end of the experiment. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
             "3. Indeed, when we proceed to give another saturating pulse, we see that the new maximum fluorescence Fₘ' is noticeably lower than Fₘ, showing us that non-photochemical quenching has been activated and is funnelling excitation energy away from both fluorescence and photosynthesis. You can find this observation directly reflected in the formula to estimate NPQ:"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_2"
-msgstr  "The same way you can analyse simulation graphs with changed parameters and even more light phases. In general, observe how  Fₜ and Fₘ' behave over time, especially when the light condition is changed. Then, connect your oversations with your knowledge on NPQ. If you are interested, you could also use the calculated estimated of NPQ and and PSII efficiency in the <a href='#' id='4Bio'>4Bio</a> version."
+msgstr  "The same way you can analyze simulation graphs with changed parameters and even more light phases. In general, observe how  Fₜ and Fₘ' behave over time, especially when the light condition is changed. Then, connect your observations with your knowledge on NPQ. If you are interested, you could also use the calculated estimated of NPQ and and PSII efficiency in the <a href='#' id='4Bio'>4Bio</a> version."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_HEADER_DUO"
@@ -1096,7 +1096,7 @@ msgstr "### Graphs with old and new results"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_DUO"
-msgstr "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol m⁻² s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behaviour implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ's, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
+msgstr "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol m⁻² s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behavior implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ's, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_EXPANDER"
@@ -1161,7 +1161,7 @@ msgstr "### Learning objectives\n"
 "- You learn how plants can remember past light conditions\n"
 "- You can show the plants light memory effect using simulations\n"
 "#### What you need to know:\n"
-"- Reading and analysing graphs"
+"- Reading and analyzing graphs"
 
 # Grammarly checked
 #: pages/plant_memory.py:387
@@ -1216,7 +1216,7 @@ msgstr "**See our interpretation**"
 msgid "MEM_GUIDING_QUESTIONS"
 msgstr "With the default values, the simulation below shows a typical experiment depicting the plant light memory. To investigate it further, you could try the following:\n"
 "1. :blue[The light intensity and duration during the training phase determine the extend of the light memory. How does does the plant react, when you change it?]\n"
-"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behaviour?"
+"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?"
 "    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
 "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
 "2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
@@ -1230,17 +1230,16 @@ msgstr "With the default values, the simulation below shows a typical experiment
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
 "    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Whcih outputs have changed? Does that meet your expectations?\n"
+"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
 "    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
 "    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
 "4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 
 #: pages/first_analysis.py:262
-# TODO: Finish Answerss
 msgid "MEM_GUIDING_ANSWERS"
 msgstr "With the default values, the simulation below shows a typical experiment depicting the plant light memory. To investigate it further, you could try the following:\n"
 "1. :blue[The light intensity and duration during the training phase determine the extend of the light memory. How does does the plant react, when you change it?]\n"
-"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behaviour?"
+"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?"
 "    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
 "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
 "2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
@@ -1254,7 +1253,7 @@ msgstr "With the default values, the simulation below shows a typical experiment
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
 "    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Whcih outputs have changed? Does that meet your expectations?\n"
+"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
 "    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
 "    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
 "4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"

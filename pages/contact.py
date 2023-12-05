@@ -71,7 +71,7 @@ def make_page(text: Callable[[str], str], language: str, version: str):
 
     st.markdown("Thank you for your interest in our project!")
 
-    st.markdown("### Ressources")
+    st.markdown("### Resources")
     st.markdown(text("PROGRAMS_USED"))
 
 

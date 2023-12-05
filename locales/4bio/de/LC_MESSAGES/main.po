@@ -256,7 +256,7 @@ msgstr "Da Pflanzen **nicht** weglaufen können, müssen sie sich an die veränd
         Veränderungen Stress, haben aber einen *hochflexiblen Stoffwechsel* zur Anpassung. *Eine der ersten Reaktionen im \
         pflanzlichen Stoffwechsel ist die Photosynthese*, die **Energie** für die Aufrechterhaltung des Pflanzenlebens \
         liefert. Die Photosynthese selbst wird direkt und indirekt von veränderten Umweltbedingungen beeinflusst. Daher \
-        ist die Analyse der Photosynthese und der CO₂-Fixierung von Pflanzen ein wichtiges Maß für die allgemeine \
+        ist die analyze der Photosynthese und der CO₂-Fixierung von Pflanzen ein wichtiges Maß für die allgemeine \
         **Pflanzenfitness**, **Produktivität** und das **Überleben**. Folglich ist die Grundlagenforschung zur Photosynthese \
         und ihrer Effizienz unerlässlich, um unsere sich verändernde Welt zu beurteilen."
 
@@ -302,7 +302,7 @@ msgstr ""
 msgid "PHO_CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Photosynthese Ablauf"
 
-# Grmmarly checked
+# Grammarly checked
 #: pages/photosynthesis.py:45
 msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzellen, in denen sich die Organelle Chloroplasten befinden. Innerhalb des Membransystems der Chloroplasten - dem sogenannten Thylakoidsystem - findet die Lichtreaktion der Photosynthese statt. Die Lichtenergie wird hier in chemische Energie umgewandelt (ATP- und NADPH-Synthese), die für die Fixierung von CO₂ und die Zuckerproduktion verwendet wird."
@@ -360,7 +360,7 @@ msgstr "Wieso wird Arabidopsis thaliana als Modellorganismus bezeichnet?"
 # Grammarly checked
 #: pages/photosynthesis.py:69
 msgid "PHO_CAPTION_THAIANA_PICTURE"
-msgstr "Das Foto einer Pflanze des Wildtypes des Modellorganismus _Arabidopsis thaliana_."
+msgstr "Das Foto einer Pflanze des Wildtyps des Modellorganismus _Arabidopsis thaliana_."
 
 # Grammarly checked
 #: pages/photosynthesis.py:70
@@ -954,8 +954,8 @@ msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 msgstr "Das mathematische Modell der photosynthetischen Elektronentransportkette wurde in der objektorientierten Sprache (OOL) Python mit dem Paket modelbase implementiert. Der Code mit den Differentialgleichungen, Reaktionsraten, dem Parameterraum und den für die Simulationen verwendeten Anfangsbedingungen ist öffentlich zugänglich: [hier](www.github.com/QTB-HHU/npqmodel)."
 
 #: pages/first_analysis.py:271
-msgid "FAL_HEADLINE_ANALYSE"
-msgstr "## Die Daten-Analyse"
+msgid "FAL_HEADLINE_analyze"
+msgstr "## Die Daten-analyze"
 
 # Grammarly checked
 #: pages/first_analysis.py:272
@@ -979,7 +979,7 @@ msgstr ""
 
 #: pages/first_analysis.py:277
 msgid "FAL_TIPP1"
-msgstr "***Tipp 1:*** *Sollten Sie zwei Versuche vergleichen wollen, können die Graphen über die drei Punkte (obenrechts) \
+msgstr "***Tipp 1:*** *Sollten Sie zwei Versuche vergleichen wollen, können die Graphen über die drei Punkte (oben rechts) \
         herunterladen werden.*"
 
 #: pages/first_analysis.py:278
@@ -1229,14 +1229,13 @@ msgid "MEM_GUIDING_QUESTIONS"
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
 "    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Whcih outputs have changed? Does that meet your expectations?\n"
+"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
 "    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
 "    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
 "4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 msgstr ""
 
 #: pages/first_analysis.py:262
-# TODO: Finish Answerss
 msgid "MEM_GUIDING_ANSWERS"
 "    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
 "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
@@ -1251,7 +1250,7 @@ msgid "MEM_GUIDING_ANSWERS"
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
 "    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Whcih outputs have changed? Does that meet your expectations?\n"
+"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
 "    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
 "    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
 "4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"

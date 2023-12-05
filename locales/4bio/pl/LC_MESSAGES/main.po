@@ -290,7 +290,7 @@ msgstr ""
 msgid "PHO_CAPTION_FOTOSYNTHESE_PICTURE"
 msgstr "Proces fotosyntezy"
 
-# Grmmarly checked
+# Grammarly checked
 #: pages/photosynthesis.py:45
 msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
 msgstr "Przyjrzawszy się liściom w powiększeniu, na przekroju widać komórki mezofilu, w których znajdują się organelle chloroplastów. W systemie błonowym chloroplastów - zwanym systemem tylakoidów - zachodzi reakcja świetlna fotosyntezy. Energia świetlna jest tutaj przekształcana w energię chemiczną (synteza ATP i NADPH), która jest wykorzystywana do wiązania CO₂ i produkcji cukru."
@@ -884,7 +884,7 @@ msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 msgstr ""
 
 #: pages/first_analysis.py:271
-msgid "FAL_HEADLINE_ANALYSE"
+msgid "FAL_HEADLINE_analyze"
 msgstr ""
 
 # Grammarly checked
@@ -1152,14 +1152,13 @@ msgid "MEM_GUIDING_QUESTIONS"
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
 "    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Whcih outputs have changed? Does that meet your expectations?\n"
+"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
 "    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
 "    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
 "4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 msgstr ""
 
 #: pages/first_analysis.py:262
-# TODO: Finish Answerss
 msgid "MEM_GUIDING_ANSWERS"
 "    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
 "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
@@ -1174,7 +1173,7 @@ msgid "MEM_GUIDING_ANSWERS"
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
 "    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Whcih outputs have changed? Does that meet your expectations?\n"
+"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
 "    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
 "    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
 "4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
