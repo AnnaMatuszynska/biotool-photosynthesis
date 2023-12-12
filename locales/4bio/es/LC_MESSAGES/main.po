@@ -880,7 +880,7 @@ msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 msgstr ""
 
 #: pages/first_analysis.py:271
-msgid "FAL_HEADLINE_analyze"
+msgid "FAL_HEADLINE_ANALYSE"
 msgstr ""
 
 # Grammarly checked

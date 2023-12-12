@@ -914,7 +914,7 @@ msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 msgstr "The mathematical model of the photosynthetic electron transport chain was implemented in the object-oriented language (OOL) Python using the modelbase package. Our in-house developed package eases the construction of biological models, particularly models of biochemical networks. The code containing differential equations, reaction rates, parameter space, and initial conditions used for the simulations is publicly available from [here](www.github.com/QTB-HHU/npqmodel) from where you can download it and further investigate."
 
 #: pages/first_analysis.py:271
-msgid "FAL_HEADLINE_analyze"
+msgid "FAL_HEADLINE_ANALYSE"
 msgstr "## The data analysis"
 
 # Grammarly checked

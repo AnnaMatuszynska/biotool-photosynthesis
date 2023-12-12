@@ -2735,7 +2735,7 @@ msgid "FAL_IMPLEMENTATION_DESCRIPTION"
 4bio-es msgstr ""
 
 #: pages/first_analysis.py:271
-msgid "FAL_HEADLINE_analyze"
+msgid "FAL_HEADLINE_ANALYSE"
 4math-en msgstr "## The data analysis"
 4math-de msgstr "## Die Daten-analyze"
 4math-fr msgstr ""

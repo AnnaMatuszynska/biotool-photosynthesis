@@ -936,7 +936,7 @@ msgstr "Das mathematische Modell der fotosynthetischen Elektronentransportkette 
         [hier](www.github.com/QTB-HHU/npqmodel)."
 
 #: pages/first_analysis.py:271
-msgid "FAL_HEADLINE_analyze"
+msgid "FAL_HEADLINE_ANALYSE"
 msgstr "## Die Daten-analyze"
 
 # Grammarly checked
