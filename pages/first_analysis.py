@@ -297,7 +297,7 @@ def make_page(text: Callable[[str], str]) -> bool:
         include_image(str(Path("pictures/explanation_graph_oneresult.png")), img_width=1)
         st.markdown(text("FAL_GRAPH_EXPLANATION_1"))
         st.latex(r"NPQ = \frac{F_m - F_m'}{F_m'}")
-        st.markdown(text("FAL_GRAPH_EXPLANATION_2"))
+        markdown_click("FAL_GRAPH_EXPLANATION_2", text)
 
         st.markdown(text("FAL_GRAPH_EXPLANATION_HEADER_DUO"))
         include_image(str(Path("pictures/explanation_graph_tworesults.png")), img_width=1)

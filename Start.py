@@ -29,12 +29,13 @@ def make_introduction(text: Callable[[str], str]) -> None:
     if st.session_state["show_video_transcripts"]:
         with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):
             st.write(text("STR_VIDEO_TRANSCRIPT_INTRODUCTION"))
-    
+
     markdown_click("STR_SPECIFIC_USE", text)
 
     # Learning objectives
     st.markdown(text("STR_LEARNING_OBJECTIVES_HEADER"))
     st.info(text("STR_LEARNING_OBJECTIVES"))
+    st.markdown(text("STR_LINK_PLANTS_AND_PYTHON"))
 
 
 # FIXME: version and language should probably be replaced by text
@@ -69,6 +70,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
         st.markdown(
             "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
         )
+        st.markdown(text("LITERATURE_PLANTS_AND_PYTHON"))
 
 
 if __name__ == "__main__":

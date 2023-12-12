@@ -297,6 +297,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
             st.markdown(text("MDL_SIR_IMPLEMENTATION_MODELBASE_6"))
 
+    st.markdown(text("MDL_LINK_PLANTS_AND_PYTHON"))
+
     st.markdown(text("MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"))
 
     st.markdown(text("MDL_MODELS_OVERVIEW"))
@@ -518,6 +520,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             11. Bellasio, C., Quirk, J., Buckley, T. N., & Beerling, D. J. (2017). A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C4 Photosynthesis. Plant Physiology, 175(1), 104–119. https://doi.org/10.1104/pp.17.00666
             12. Taiz, L., Zeiger, E., Møller, I. M., & Murphy, A. S. (2018). Fundamentals of plant physiology (First edition). Published in the United States of America by Oxford University Press.
             """
+        st.markdown(text("LITERATURE_PLANTS_AND_PYTHON"))
 
 
 if __name__ == "__main__":
