@@ -526,7 +526,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
 def style_page():
     # Stop the table from overflowing
-    pass
     st.markdown(
         "<style>table{width: 100%} .st-emotion-cache-nahz7x.e1nzilvr5:has(table){overflow-x: scroll}</style>",
         unsafe_allow_html=True,

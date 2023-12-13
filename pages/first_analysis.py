@@ -37,6 +37,10 @@ def make_page(text: Callable[[str], str]) -> bool:
     st.markdown(text("FAL_RATES_5"))
     st.markdown(text("FAL_RATES_6"), unsafe_allow_html=True)
 
+    with st.expander(text("FAL_COMPONENTS_EXPLANATION_HEADER")):
+        st.markdown(text("FAL_MOLECULES_EXPLANATION_TABLE"))
+        st.markdown(text("FAL_ENZYMES_EXPLANATION_TABLE"))
+
     if version == "4Math":
         st.markdown(text("FAL_HEADLINE_MODEL_EQUATIONS"))
         st.markdown(text("FAL_MODEL_EQUATIONS_INTRODUCTION"))
@@ -302,9 +306,6 @@ def make_page(text: Callable[[str], str]) -> bool:
         st.markdown(text("FAL_GRAPH_EXPLANATION_HEADER_DUO"))
         include_image(str(Path("pictures/explanation_graph_tworesults.png")), img_width=1)
         st.markdown(text("FAL_GRAPH_EXPLANATION_DUO"))
-
-    # with st.expander("Do you need a reminder of the modelcules mentioned above? *Click here*"):
-    #     st.markdown("- Plastoquinone pool (PQ)\n")
 
     # Add guiding questions:
     with st.expander(text("FAL_GUIDING_EXPANDER")):

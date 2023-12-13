@@ -901,6 +901,27 @@ msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 msgid "FAL_RATES_6"
 msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>&midast;</sup>)."
 
+msgid "FAL_COMPONENTS_EXPLANATION_HEADER"
+msgstr "Do you need a reminder of the molecules and enzymes mentioned above? *Click here*"
+
+msgid "FAL_MOLECULES_EXPLANATION_TABLE"
+msgstr "#### Molecules\n"
+            "| Name | Description |\n"
+            "| --- | --- |\n"
+            "| Plastoquionone (PQ) | A small molecule that can transport two electrons; Can be oxidised (ox) or reduced (red) |\n"
+            "| Adenosine triphosphate (ATP) | A small molecule that can transfer chemical energy to drive reactions |\n"
+            "| Xantophyll | A group of large carotenoid pigments; includes viola and zeaxanthin |\n"
+
+msgid "FAL_ENZYMES_EXPLANATION_TABLE"
+msgstr "#### Enyzmes\n"
+            "| Name | Description |\n"
+            "| --- | --- |\n"
+            "| Photosystem II (PSII) | A light absorbing protein complex; Uses the excitation to split water and drive photosynthesis |\n"
+            "| Photosystem II subunit S (PsbS) | A quencher protein of PSII; Its activity depends on pH |\n"
+            "| Plastidial Terminal Oxidase (PTOX) | An oxigen reducing protein complex; Produces water to avoid PQ over-reduction;  |\n"
+            "| Cytochrome b6f complex (Cyt b6f) | A proton pumping protein complex |\n"
+            "| ATPSynthase (ATPase) | An ATP synthesizing protein complex; Uses the electro-chemical proton gradient |"
+
 #: Anna's explanation of the model
 #: pages/first_analysis.py:28
 msgid "FAL_HEADLINE_MODEL_EQUATIONS"
