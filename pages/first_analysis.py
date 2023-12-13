@@ -303,6 +303,9 @@ def make_page(text: Callable[[str], str]) -> bool:
         include_image(str(Path("pictures/explanation_graph_tworesults.png")), img_width=1)
         st.markdown(text("FAL_GRAPH_EXPLANATION_DUO"))
 
+    # with st.expander("Do you need a reminder of the modelcules mentioned above? *Click here*"):
+    #     st.markdown("- Plastoquinone pool (PQ)\n")
+
     # Add guiding questions:
     with st.expander(text("FAL_GUIDING_EXPANDER")):
         # The answers are hidden by default
@@ -497,39 +500,40 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 def style_guinding_questions(see_interpr: bool = False) -> None:
     # Remove the bullet point marker
+    target = "st-emotion-cache-1clstc5.eqpbllx1"
     st.markdown(
-        """<style>
-        .st-emotion-cache-0.eqpbllx5 ul{
+        f"""<style>
+        .{target} li ul{{
             list-style: none; /* Remove list bullets */
             padding: 0;
             margin: 0;
-        }
+        }}
         </style>""",
         unsafe_allow_html=True,
     )
     if see_interpr:
         # Replace the bullet point with a "A:"
         st.markdown(
-            """<style>
-            .st-emotion-cache-0.eqpbllx5 ul li:before{
+            f"""<style>
+            .{target} li ul li:before{{
                 content: 'A:';
                 padding-right: 10px;
                 font-weight: bold;
                 margin: 0 0 0 -25px;
-            }
+            }}
             </style>""",
             unsafe_allow_html=True,
         )
     else:
         # Replace the bullet point with a "Q:"
         st.markdown(
-            """<style>
-            .st-emotion-cache-0.eqpbllx5 ul li:before{
+            f"""<style>
+            .{target} li ul li:before{{
                 content: 'Q:';
                 padding-right: 10px;
                 font-weight: bold;
                 margin: 0 0 0 -27px;
-            }
+            }}
             </style>""",
             unsafe_allow_html=True,
         )
