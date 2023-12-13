@@ -44,7 +44,7 @@ msgstr ""
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
-msgstr "Lichtintensität der Lichtphase (LP) in μmol m⁻² s⁻¹"
+msgstr "Lichtintensität der Lichtphase (AL) in μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
