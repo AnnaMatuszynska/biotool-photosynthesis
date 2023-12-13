@@ -600,9 +600,17 @@ msgstr ""
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"
 msgstr ""
 
-#: pages/model_explain.py:80
-msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
-msgstr "Initial amounts of S, I, and R"
+#: pages/model_explain.py:155
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SUSCEPTIBLE"
+msgstr "Susceptible"
+
+#: pages/model_explain.py:173
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_INFECTED"
+msgstr "Infected"
+
+#: pages/model_explain.py:191
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_RECOVERED"
+msgstr "Recovered"
 
 #: pages/model_explain.py:123
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"

@@ -119,120 +119,164 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.markdown(text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"), unsafe_allow_html=True)
 
         # SIR Model
-        col1, col2 = st.columns(2)
+        def s_slider_callback():
+            remain = 1000 - st.session_state.s_slider
+            sum = st.session_state.i_slider + st.session_state.r_slider
+            st.session_state.i_slider = int(st.session_state.i_slider / sum * remain)
+            st.session_state.r_slider = int(st.session_state.r_slider / sum * remain)
+            
+        def i_slider_callback():
+            remain = 1000 - st.session_state.i_slider
+            sum = st.session_state.s_slider  + st.session_state.r_slider
+            st.session_state.s_slider = int(st.session_state.s_slider / sum * remain)
+            st.session_state.r_slider = int(st.session_state.r_slider / sum * remain)
+            
+        def r_slider_callback():
+            remain = 1000 - st.session_state.r_slider
+            sum = st.session_state.s_slider + st.session_state.i_slider
+            st.session_state.i_slider = int(st.session_state.i_slider / sum * remain)
+            st.session_state.s_slider = int(st.session_state.s_slider / sum * remain)
+            
+        if 's_slider' not in st.session_state:
+            st.session_state['s_slider'] = 900
 
-        with col1:
-            sir_slider_start, sir_slider_end = st.slider(
-                label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"),
+        if 'i_slider' not in st.session_state:
+            st.session_state['i_slider'] = 100
+
+        if 'r_slider' not in st.session_state:
+            st.session_state['r_slider'] = 0
+        
+        col1_______, col2_______, col3_______ = st.columns(3)
+        
+        with col1_______:
+            st.markdown(
+                f'''
+                <div style="background-color: rgb(249,165,27); padding: 2px; border: 5px solid rgb(253,207,140); border-radius: 0px; text-align: center; color: black">
+                    {text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SUSCEPTIBLE")} (S)
+                </div>
+                ''',
+                unsafe_allow_html=True
+            )
+            
+            s_slider = st.slider(
+                label='S',
                 min_value=0,
                 max_value=1000,
-                value=(900, 1000),
-                step=1,
-                key="SIRSLIDER",
+                on_change=s_slider_callback,
+                key='s_slider',
+                label_visibility='collapsed'
+            )
+        with col2_______:
+            st.markdown(
+                f'''
+                <div style="background-color: rgb(209,35,42); padding: 2px; border: 5px solid rgb(229,146,121); border-radius: 0px; text-align: center; color: black">
+                    {text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_INFECTED")} (I)
+                </div>
+                ''',
+                unsafe_allow_html=True
+            )
+            
+            i_slider = st.slider(
+                label='I',
+                min_value=0,
+                max_value=1000,
+                on_change=i_slider_callback,
+                key='i_slider',
+                label_visibility='collapsed'
+            )
+        with col3_______:
+            st.markdown(
+                f'''
+                <div style="background-color: #1062ef; padding: 2px; border: 5px solid #87b0f7; border-radius: 0px; text-align: center; color: black">
+                    {text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_RECOVERED")} (R)
+                </div>
+                ''',
+                unsafe_allow_html=True
+            )
+            
+            r_slider = st.slider(
+                label='R',
+                min_value=0,
+                max_value=1000,
+                on_change=r_slider_callback,
+                key='r_slider',
+                label_visibility='collapsed'
             )
 
-            S_initial = sir_slider_start
-            I_initial = sir_slider_end - sir_slider_start
-            R_initial = 1000 - sir_slider_end
+        col1_, col2_, col3_ = st.columns([1.5, 1, 1])
 
-            st.components.v1.html(
-                f"""
-                    <div style=
-                    "display: flex;
-                    flex-direction: row;
-                    margin: 0;
-                    padding: 0;"
-                    >
-                        <div style="background-color: rgb(249,165,27); padding: 10px; border: 5px solid rgb(253,207,140); border-radius: 0px; text-align: center; flex-grow: {S_initial/1000}; ">
-                        S: {S_initial}
-                        </div>
-                        
-                        
-                        
-                        <div style="background-color: rgb(209,35,42); padding: 10px; border: 5px solid rgb(229,146,121); border-radius: 0px; text-align: center; flex-grow: {I_initial/1000}; ">
-                        I: {I_initial}
-                        </div>
-                        
-                        <div style="background-color: #1062ef; padding: 10px; border: 5px solid #87b0f7; border-radius: 0px; text-align: center; flex-grow: {R_initial/1000}; ">
-                        R: {R_initial}
-                        </div>
-                        
-                    </div>
-                """,
-                height=55,
+        with col1_:
+            sir_time_slider = st.slider(
+                label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"),
+                min_value=5,
+                max_value=36,
+                value=20,
+                key="SIR_TIME_SLIDER",
             )
 
-            col1_, col2_, col3_ = st.columns([1.5, 1, 1])
-
-            with col1_:
-                sir_time_slider = st.slider(
-                    label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"),
-                    min_value=5,
-                    max_value=36,
-                    value=20,
-                    key="SIR_TIME_SLIDER",
-                )
-
-            with col2_:
-                sir_beta_slider = st.slider(
-                    label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"),
-                    min_value=0.0,
-                    max_value=5.0,
-                    value=2.0,
-                    key="SIR_BETA_SLIDER",
-                )
-
-            with col3_:
-                sir_gamma_slider = st.slider(
-                    label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"),
-                    min_value=0.0,
-                    max_value=2.0,
-                    value=0.2,
-                    key="SIR_GAMMA_SLIDER",
-                )
-
-            def reset_graph():
-                st.session_state["SIR_model"] = {}
-
-            st.button(label="Reset Graph", use_container_width=True, on_click=reset_graph)
-
-        with col2:
-            sir_time, sir_results = get_results_dict_SIRModel(
-                beta_param=sir_beta_slider,
-                gamma_param=sir_gamma_slider,
-                S_initial=S_initial,
-                I_initial=I_initial,
-                R_initial=R_initial,
-                time_end=sir_time_slider,
+        with col2_:
+            sir_beta_slider = st.slider(
+                label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"),
+                min_value=0.0,
+                max_value=5.0,
+                value=2.0,
+                key="SIR_BETA_SLIDER",
             )
 
-            if "SIR_model" not in st.session_state:
-                st.session_state["SIR_model"] = {
+        with col3_:
+            sir_gamma_slider = st.slider(
+                label=text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"),
+                min_value=0.0,
+                max_value=2.0,
+                value=0.2,
+                key="SIR_GAMMA_SLIDER",
+            )
+
+        def reset_graph():
+            st.session_state["SIR_model"] = {}
+
+        st.button(label="Reset Graph", use_container_width=True, on_click=reset_graph)
+
+        sir_time, sir_results = get_results_dict_SIRModel(
+            beta_param=sir_beta_slider,
+            gamma_param=sir_gamma_slider,
+            S_initial=s_slider,
+            I_initial=i_slider,
+            R_initial=r_slider,
+            time_end=sir_time_slider,
+        )
+
+        if "SIR_model" not in st.session_state:
+            st.session_state["SIR_model"] = {
+                "S": [sir_time, sir_results["S"]],
+                "I": [sir_time, sir_results["I"]],
+                "R": [sir_time, sir_results["R"]],
+            }
+
+        else:
+            st.session_state["SIR_model"].update(
+                {
                     "S": [sir_time, sir_results["S"]],
                     "I": [sir_time, sir_results["I"]],
                     "R": [sir_time, sir_results["R"]],
                 }
+            )
 
-            else:
-                st.session_state["SIR_model"].update(
-                    {
-                        "S": [sir_time, sir_results["S"]],
-                        "I": [sir_time, sir_results["I"]],
-                        "R": [sir_time, sir_results["R"]],
-                    }
-                )
+        sir_fig = get_plot_SIRModel(st.session_state["SIR_model"])
 
-            sir_fig = get_plot_SIRModel(st.session_state["SIR_model"])
-
+        col1______, col2______, col3______ = st.columns([0.2, 0.6, 0.2])
+        
+        with col2______:
+            
             st.pyplot(sir_fig, transparent=True)
 
-            st.session_state["SIR_model"].update(
-                {
-                    "old S": [sir_time, sir_results["S"]],
-                    "old I": [sir_time, sir_results["I"]],
-                    "old R": [sir_time, sir_results["R"]],
-                }
-            )
+        st.session_state["SIR_model"].update(
+            {
+                "old S": [sir_time, sir_results["S"]],
+                "old I": [sir_time, sir_results["I"]],
+                "old R": [sir_time, sir_results["R"]],
+            }
+        )
 
         markdown_click("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE", text)
 
@@ -501,6 +545,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
             8. Bellasio, C. (2019). A generalised dynamic model of leaf-level C3 photosynthesis combining light and dark reactions with stomatal behaviour. Photosynthesis Research, 141(1), 99–118. https://doi.org/10.1007/s11120-018-0601-1
             9. Yin, X., Van Oijen, M., & Schapendonk, A. H. C. M. (2004). Extension of a biochemical model for the generalized stoichiometry of electron transport limited C3 photosynthesis. Plant, Cell & Environment, 27(10), 1211–1222. https://doi.org/10.1111/j.1365-3040.2004.01224.x
             10. Bellasio, C., Quirk, J., Buckley, T. N., & Beerling, D. J. (2017). A Dynamic Hydro-Mechanical and Biochemical Model of Stomatal Conductance for C4 Photosynthesis. Plant Physiology, 175(1), 104–119. https://doi.org/10.1104/pp.17.00666
+            11. Taiz, L., Zeiger, E., Møller, I. M., & Murphy, A. S. (2018). Fundamentals of plant physiology (First edition). Published in the United States of America by Oxford University Press.
             """
 
         if version == "4Math":

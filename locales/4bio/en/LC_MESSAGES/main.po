@@ -601,9 +601,17 @@ msgstr "These rates show us the speed at which the amounts of S, I and R are cha
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_4"
 msgstr "The rates get appointed a negative factor when they remove from a quantity and a positive one when they add to it. For example, I gets more as much as (v<sub>1</sub>) allows it to, but at the same time gets less due to (v<sub>2</sub>). Now, we could calculate the change over time for each quantity on paper. Still, because we love our graphs and having as much information as possible, we will use computers to do our work. Below, you will find an interactive model that lets you change all the parameters and the starting conditions of our populations."
 
-#: pages/model_explain.py:80
-msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIRSLIDER"
-msgstr "Initial amounts of S, I, and R"
+#: pages/model_explain.py:155
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SUSCEPTIBLE"
+msgstr "Susceptible"
+
+#: pages/model_explain.py:173
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_INFECTED"
+msgstr "Infected"
+
+#: pages/model_explain.py:191
+msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_RECOVERED"
+msgstr "Recovered"
 
 #: pages/model_explain.py:123
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
