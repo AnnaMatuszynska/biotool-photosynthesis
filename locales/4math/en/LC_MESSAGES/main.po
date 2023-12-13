@@ -38,6 +38,11 @@ msgstr "Literature"
 msgid "LITERATURE_ONPAGE"
 msgstr "References on this page:"
 
+msgid "LITERATURE_PLANTS_AND_PYTHON"
+msgstr "Also check out *Plants and Python*, a python course for Biologists:\n"
+            "- Plants & Python: A series of lessons in coding, plant biology, computation, and bioinformatics. (2022). The Plant Cell, 34(7), e1. https://doi.org/10.1093/plcell/koac187\n"
+            "- Official Website: https://plantsandpython.github.io/PlantsAndPython"
+
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
@@ -178,6 +183,9 @@ msgstr "- You can explain how mathematical models can be applied in biology\n"
             "- You can describe light protection in plants by non-photochemical quenching\n"
             "- You can summarize how fluorescence can be used to measure photosynthesis\n"
             "- You can produce photosynthesis simulations and explain their biological meaning"
+
+msgid "STR_LINK_PLANTS_AND_PYTHON"
+msgstr "This website and all our models are written in the programming language Python. If you are interested in how to use Python yourself, take a look at [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), a programming course for biologists."
 
 # Grammarly checked
 #: Start.py:26
@@ -822,6 +830,9 @@ msgstr "The approach's strength lies in its simplicity of extending models. For 
 #: pages/model_explain.py:350
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
 msgstr "Which would have been a lot more cumbersome with the manual approach."
+
+msgid "MDL_LINK_PLANTS_AND_PYTHON"
+msgstr "*If you are not familiar with Python yet, take a look at [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), where you can learn Python and how it is used in science.*"
 
 # Grammarly checked
 #: pages/model_explain.py:258

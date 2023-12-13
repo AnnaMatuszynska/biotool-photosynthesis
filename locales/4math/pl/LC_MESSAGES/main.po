@@ -38,6 +38,9 @@ msgstr "Literatura"
 msgid "LITERATURE_ONPAGE"
 msgstr "Referencje na tej stronie:"
 
+msgid "LITERATURE_PLANTS_AND_PYTHON"
+msgstr ""
+
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
@@ -172,6 +175,9 @@ msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr ""
 
 msgid "STR_LEARNING_OBJECTIVES"
+msgstr ""
+
+msgid "STR_LINK_PLANTS_AND_PYTHON"
 msgstr ""
 
 # Grammarly checked
@@ -787,6 +793,9 @@ msgstr ""
 
 #: pages/model_explain.py:350
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
+msgstr ""
+
+msgid "MDL_LINK_PLANTS_AND_PYTHON"
 msgstr ""
 
 # Grammarly checked
