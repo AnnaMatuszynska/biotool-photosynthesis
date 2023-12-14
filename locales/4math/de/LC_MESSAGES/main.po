@@ -480,29 +480,28 @@ msgstr "Deshalb haben Wissenschaftler \
         Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
 
 msgid "MTH_VIDEO_TRANSCRIPT_PAM"
-msgstr ""
+msgstr "Hast du dich jemals gefragt, wie Wissenschaftler die photosynthetische Aktivität von Pflanzen messen? Eine Möglichkeit ist eine PAM-Messung. PAM steht für Pulse Amplitude Modulation und misst die Fluoreszenz von Chlorophyllmolekülen in einem Blatt. Wir werden dieses PAM-Fluorometer verwenden, um die Fluoreszenz des Chlorophylls in einer Pflanze zu messen. Zunächst müssen wir sicherstellen, dass die Pflanze mindestens 12 Stunden lang an die Dunkelheit angepasst ist. Dann klemmen wir diese Sonde auf das Blatt und blitzen es mit einem kurzen Lichtimpuls. Die Chlorophyllmoleküle absorbieren das Licht und geben einen Fluoreszenzstoß ab, den wir mit dem Detektor messen können.\n\n Nun beginnen wir mit der Messung, die uns ein Diagramm der von den Chlorophyllmolekülen abgegebenen Fluoreszenz über die Zeit liefert. Dieses Diagramm kann uns Aufschluss über den photosynthetischen Stress der Pflanze geben. Das Diagramm enthält mehrere Parameter, darunter F₀, das anfängliche Fluoreszenzniveau vor dem Lichtimpuls, und Fₘ, das maximale Fluoreszenzniveau. Das Verhältnis von Fᵥ zu Fₘ gibt die maximale Quantum-Effizienz des zweiten Photosystems an, was ein Indikator für den allgemeinen Gesundheitszustand der Pflanze ist. Durch PAM-Messungen können Wissenschaftler Einblicke in die photosynthetische Gesundheit von Pflanzen gewinnen, was bei der Pflanzenbewirtschaftung und der Erforschung des Klimawandels hilfreich sein kann."
 
 #: Explanation by Tobias
 
 #: pages/method.py:40
 msgid "MTH_MEASURING_LIGHT_FLUORESCENCE"
-msgstr "Messung von Licht und Fluoreszenz"
+msgstr "Grundprinzipien der Messung der Chlorophyllfluoreszenz mit PAM"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:41
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
-msgstr "Wir bestrahlen die Pflanze mit einer Reihe von kurzen und schwachen Lichtblitzen, über tausend pro Sekunde! Mit \
-        diesem Blitzen messen wir die Leistung der Pflanze und nennen es 'Messlicht'. Das Messlicht ist zu schwach, um \
-        für die Fotosynthese genutzt zu werden, aber stark genug, um die Pflanze zum Fluoreszieren zu bringen. Und da \
-        wir mit jedem Blitz Fluoreszenz erzeugen, ist das resultierende Signal genau wie das Messlicht gemustert (moduliert)."
+msgstr "In dieser einen Abbildung werden die Grundprinzipien des Fluoreszenz- und des PAM-Experiments erläutert. Im unteren Feld findest du die Ergebnisse der PAM-Experimente. Sieh es dir gut an, denn in wenigen Minuten wirst du ähnliche Ergebnisse erzielen, nicht mit Hilfe eines Fluorometers, sondern mit deinem Computer! Was sehen wir also in diesem Diagramm? Es ist das Ergebnis eines einzigartigen Beleuchtungsprotokolls, bei dem eine dunkeladaptierte Pflanze sehr schwachem aktinischen Licht (AL, weißer Bereich im Lichtbalken, L) ausgesetzt wird, gefolgt von einer dunklen Erholungsphase, in der das Licht vollständig abgeschaltet wird (schwarzer Bereich in L). Mehrere sättigende Lichtblitze (Sättigungspulse, SP) werden vor, während und nach der aktinischen Beleuchtung eingesetzt, um die maximale Fluoreszenz Fₘ, Fₘ' bzw. Fₘ'' zu messen. Anhand dieser Fluoreszenzmerkmale können wir die Werte für die Quantifizierung der Photosynthese berechnen, z. B. die Menge an NPQ.\n\n"
+                "Warum sehen wir dann überhaupt einen Effekt? Dies wird durch das Schema oben links erklärt. Die Absorption von Lichtenergie bringt Chlorophyllmoleküle in den ersten angeregten Zustand (S1 im linken Diagramm, einem vereinfachten 'Jablonsky-Diagramm'). Damit die Chlorophylle in den Grundzustand (S₀) zurückkehren, kann die absorbierte Energie für die Ladungstrennung und die Photosynthese verwendet werden (photochemisches Quenching, qP), als Wärme abgeleitet werden (nicht-photochemisches Quenching, NPQ) oder als Fluoreszenz wieder emittiert werden. Und nun der entscheidende Teil: Die Emissionsspektren der Fluoreszenz sind gegenüber den Absorptionsspektren rotverschoben. Das bedeutet, dass das Fluoreszenzlicht röter ist (bei höheren Wellenlängen auf der linken Achse) als das absorbierte Licht (oberes Feld auf der rechten Seite). Das wiederum bedeutet, dass die Fluoreszenz mit Fluorometern mit entsprechenden optischen Filtern nachgewiesen werden kann und ihr Signal nicht mit dem Licht, das wir auf die Pflanzen strahlen, verwechselt wird. Das emittierte Fluoreszenzsignal wird mit Tastenanzeigen aufgezeichnet, wie in der unteren Abbildung zu sehen ist. Es hat uns viel Zeit gekostet, alles in einer einzigen Abbildung zusammenzufassen, und diese Abbildung stammt aus unserer früheren Arbeit (Nies et al. 2021)."
+                "In der oberen Hälfte der Abbildung wird das Fluoreszenzverhalten von Chlorophyll näher erläutert: Die Absorption von Lichtenergie bringt Chlorophyllmoleküle in den ersten angeregten Zustand (S1, siehe das vereinfachte Jablonsky-Diagramm im oberen Feld links). Damit die Chlorophylle in den Grundzustand (S₀) zurückkehren, kann die absorbierte Energie für die Ladungstrennung und die Photosynthese verwendet werden (photochemisches Quenching, qP), als Wärme abgeleitet werden (nicht-photochemisches Quenching, NPQ) oder als Fluoreszenz wieder emittiert werden. Die Fluoreszenz-Emissionsspektren sind gegenüber den Absorptionsspektren rotverschoben (obere Tafel rechts). Daher kann die Fluoreszenz mit Fluorometern mit entsprechenden optischen Filtern nachgewiesen werden, und ihr Signal wird nicht mit dem eingestrahlten Licht verwechselt. Das emittierte Fluoreszenzsignal wird mit Tastenanzeigen aufgezeichnet, wie die untere Tafel zeigt. Diese zusammenfassende Abbildung ist aus Nies et al. (2021) entnommen."
 
 # Grammarly checked
 #: pages/method.py:44
 #: pages/method.py:58
 #: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
-msgstr ""
+msgstr "Oben: Schematische Darstellung der Hauptprinzipien der Chlorophyll-a-Fluoreszenz und des PAM-Experiments.\n\n Unten: Beispielgrafik einer PAM-Messung"
 
 # Grammarly checked
 #: pages/method.py:37
@@ -513,7 +512,7 @@ msgstr "### PAM Experimente"
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
 
-msgstr ""
+msgstr "Hier wollen wir dir von einem spannenden Experiment erzählen, mit dem Forscher die Photosynthese messen. Die Grundlage dafür ist die Fluoreszenz, von der du schon gehört hast. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz 'PAM'. Aus dem Namen können Sie ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der Lichtblitze 'modulieren' (steuern)."
 
 #: Explanation by Tobias
 #: pages/method.py:48
@@ -542,95 +541,98 @@ msgstr "## Die Abbildungen"
 # Grammarly checked
 #: pages/method.py:52
 msgid "MTH_EXPLANATION_ILLUSTRATION_UNITS"
-msgstr "Auf der Y-Achse der Abbildungen ist die Fluoreszenz aufgetragen. Diese ist angegeben in F´ₘ /Fₘ . Also wie \
-            viel Prozent der Lichtenergie für die Fotosynthese verwendet werden kann."
+msgstr "Das Fluoreszenzsignal (y-Achse) wird gegen die Zeit (x-Achse) aufgetragen. Die sichtbaren Spitzen sind die als Reaktion auf den sättigenden Lichtimpuls emittierte Fluoreszenz. Jeder Peak wird als Fₘ' bezeichnet, wobei der erste im Dunkeln als Fₘ gemessen wird."
 
 # Grammarly checked
 #: pages/method.py:53
 msgid "MTH_EXPLANATION_ILLUSTRATION"
-msgstr "Die Experimente starten immer mit einer Beleuchtungsphase, welche in den Abbildungen blau gekennzeichnet ist \
-            (siehe Abbildung 1), diese ist, wie bereits erwähnt, Voraussetzung für die PAM-Messung. Zu diesem Zeitpunkt \
-            können wir Fₘ messen."
+msgstr "Das war viel Theorie für ein bisschen Glanz, also probiere selbst eine Messung auf der Seite **Experiments *in silico*** aus!"
 
 
 
 #: pages/model_explain.py:19
 msgid "MDL_HEADLINE_COMPUTATIONAL_MODELS"
-msgstr ""
+msgstr "# Computergestützte Modelle"
 
 msgid "MDL_LEARNING_OBJECTIVES"
-msgstr "# Fotosynthese"
+msgstr "### Lernziele\n"
+"- Du verstehst die Grundlagen der mathematischen Modellierungstheorie\n"
+"- Du lernst die Anwendung von Modellen in der Biologie anhand gängiger Beispiele kennen\n"
+"- Du wirst mit der Implementierung eines mathematischen Modells in der Programmiersprache Python vertraut\n"
+"#### Was du wissen musst:\n"
+"- Grundlagen der Programmierung\n"
+"- Grundlagen der Modellierung"
 
 # Grammarly checked
 #: pages/model_explain.py:21
 msgid "MDL_HEADLINE_MODEL"
-msgstr "# "
+msgstr "## Was sind mathematische Modelle?"
 
 # Grammarly checked
 #: pages/model_explain.py:23
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"
-msgstr ""
+msgstr "Bei der mathematischen Modellierung geht es um die Erstellung mathematischer Modelle zur Verwendung in verschiedenen Bereichen der Forschung und Industrie. Sie ist von Vorteil, wenn traditionelle Testmethoden zu teuer und zeitaufwendig sind. Die Sprache der **Mathematik** ermöglicht es uns, reale Prozesse, Situationen und Probleme mit Hilfe von Gleichungen in allgemeine Aussagen zu übersetzen. Diese Übersetzung ist jedoch nicht eins-zu-eins und erzwingt ein gewisses Maß an **Vereinfachung**. Daher sind Modelle nie eine genaue Beschreibung, die alle Details umfassen, sondern eine Vereinfachung, die mit starren Methoden für eine bestimmte Untersuchung erstellt wird. Das mit mathematischen Begriffen beschriebene Problem wird dann mit mathematischen Techniken gelöst, die heute durch **Rechenprogramme** enorm unterstützt werden. Die resultierende Lösung wird dann auf das reale Problem angewandt und bewertet. Wenn zusätzliche Lösungen erforderlich sind, muss das mathematische Modell überarbeitet werden. Auf diese Weise ist der Modellentwicklungsprozess oft nicht linear, sondern ein iterativer Zyklus, wie in der Abbildung unten dargestellt."
 
 #: pages/model_explain.py:26
 msgid "MDL_CAPTION_MODELLING_PICTURE"
-msgstr ""
+msgstr "Der Zyklus der Modellierung. Der Entwickler muss oft mehrere Iterationen durchlaufen, um von einem anfänglichen Problem zu einem kuratierten mathematischen Modell zu gelangen."
 
 
 #: pages/model_explain.py:29
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"
-msgstr ""
+msgstr "Im folgenden Video erfährst du mehr über die Erstellung und Verwendung mathematischer Modelle in der Biologie."
 
 msgid "MDL_VIDEO_TRANSCRIPT_MODELS"
-msgstr ""
+msgstr "Das bedeutet, dass man verstehen muss, was im Inneren des Systems vor sich geht, einige Teile vereinfachen und andere ignorieren muss. Das Ergebnis ist ein Konzept dafür, wie das System im Kern funktioniert. Als Nächstes hilft uns die mathematische Sprache dabei, dieses Konzept in eine greifbare, erforschbare Sache zu verwandeln. Wir verwandeln die Proteine, Moleküle, Reaktionen und alles andere in Zahlen und Gleichungen. Je nachdem, woran man interessiert ist, gibt es viele Möglichkeiten, dies zu tun, und oft muss man eine Menge Zeit und Daten in sein Modell stecken, damit es funktioniert. Aber diese Arbeit zahlt sich aus, denn jetzt muss man nicht mehr darüber nachdenken, was passiert, sondern man kann es berechnen und simulieren. Und das ist der Teil, der die Modellierung so besonders macht: Was du simulierst, bleibt dir überlassen. Man kann am Modell ändern, was man will, und herausfinden, was das bewirkt. Probiere zum Beispiel ein neues Protein und eine neue Reaktion an der Zelle aus; verändere das Licht und die Umgebung und sieh, wie sich deine Zelle dort verhält; und wenn du Daten gemessen hast, sieh nach, ob sich dein Modell genauso verhält. Du könntest sogar versuchen, herauszufinden, was die Zelle daran hindert, viel Zucker zu produzieren! Es gibt so viele Möglichkeiten. Wenn du es programmieren kannst, kannst du es auch ausprobieren. Denn heute wird diese Forschung digital durchgeführt. Du kannst das ganze Modell programmieren und den Computer die Fragen beantworten lassen, die du stellst."
 
 #: pages/model_explain.py:34
 msgid "MDL_EXAMPLE_MATHEMATICAL_MODEL"
-msgstr ""
+msgstr "### Ein Beispiel für ein mathematisches Modell"
 
 #: pages/model_explain.py:210
 #: pages/model_explain.py:37
 msgid "MDL_TAB_SIR"
-msgstr ""
+msgstr "Das SIR-Modell"
 
 #: pages/model_explain.py:210
 msgid "MDL_TAB_MANUAL"
-msgstr ""
+msgstr "Manuelle Implementierung"
 
 #: pages/model_explain.py:210
 msgid "MDL_TAB_MODELBASE"
-msgstr ""
+msgstr "Implementierung von Modelbase"
 
 #: pages/model_explain.py:213
 #: pages/model_explain.py:40
 msgid "MDL_HEADLINE_SIR"
-msgstr ""
+msgstr "#### Das SIR-Modell"
 
 #: pages/model_explain.py:286
 msgid "MDL_HEADLINE_MANUAL"
-msgstr ""
+msgstr "#### Manuelle Implementierung"
 
 #: pages/model_explain.py:312
 msgid "MDL_HEADLINE_MODELBASE"
-msgstr ""
+msgstr "#### Modelbase-Implementierung [1]"
 
 # Grammarly checked
 #: pages/model_explain.py:215
 #: pages/model_explain.py:42
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE"
-msgstr ""
+msgstr "Nehmen wir ein Szenario an, in dem eine neue, hoch ansteckende, aber im Großen und Ganzen harmlose Krankheit in eine Population von Außerirdischen auf Planet-X eingeschleppt wird. Diese Krankheit hat die Menschen auf Planet-X so überrascht, dass sie ihre Bevölkerung in drei Kategorien unterteilt haben: diejenigen, die für die Krankheit anfällig sind und jederzeit erkranken können (S), diejenigen, die sich von der Infektion erholt haben (R), und die aktuell Infizierten (I). Um den Übergang zwischen den einzelnen Kategorien zu modellieren, bestimmen wir die Infektionsrate (v<sub>1</sub>) in Abhängigkeit von der Anzahl der S und I in der Gesamtbevölkerung (N) und ihre Genesungsrate (v<sub>2</sub>) ausschließlich in Abhängigkeit von den I. Sie entdeckten auch, dass die R vollständige Immunität erlangen, aber die Menschen sind zu gestresst, um ihre Bevölkerung zu vergrößern. Um zu wissen, wie ihre Bevölkerung in ein paar Monaten aussehen wird, probieren sie eine neue Methode aus, von der sie auf der Erde gehört haben, nämlich **mathematische Modellierung**. Zu Beginn sollten Sie ein Schema für Ihr Problem erstellen; in diesem Fall werden die S zu I mit einer Rate von v<sub>1</sub> und die I zu R mit einer Rate von v<sub>2</sub>. Die Rate v<sub>1</sub> ist abhängig von der Infektionsrate der Krankheit (β), der Anzahl der S und I im Verhältnis zu den N. Andererseits ist die Rate v<sub>2</sub> nur abhängig von der Anzahl der I und ihrer Erholungsrate (γ)."
 
 # Grammarly checked
 #: pages/model_explain.py:219
 #: pages/model_explain.py:46
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"
-msgstr ""
+msgstr "Mit diesem Schema hast du dein Problem bereits erfolgreich modelliert; jetzt musst du es nur noch anwenden können. Dazu muss man sich überlegen, welche Informationen man aus dem Modell gewinnen will, in diesem Fall die Veränderung der Population in Abhängigkeit von der Zeit. Ein praktisches mathematisches Hilfsmittel, um die Veränderung eines Wertes in Abhängigkeit von der Veränderung eines anderen Wertes darzustellen, ist die so genannte gewöhnliche Differentialgleichung (ODE). Mit Hilfe von Differentialgleichungen kann man die Beziehung zwischen der Zeit und der Veränderung der Anzahl der Personen in jeder Kategorie beschreiben, so dass es insgesamt drei Gleichungen gibt. Dieser Satz von drei Gleichungen wird als System von ODEs bezeichnet und mit Hilfe eines Integrators numerisch gelöst. Wenden wir also diese Methode auf unser Beispiel von Planet-X an, indem wir zunächst das ODE-System erstellen:"
 
 
 # Grammarly checked
 #: pages/model_explain.py:236
 #: pages/model_explain.py:50
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
-msgstr ""
+msgstr "Um jede ODE effektiv zu lösen, ist es entscheidend, die beteiligten Raten zu berücksichtigen. Mit einem vorgegebenen Schema kann man bestimmen, welche Rate dem Entfernen oder Hinzufügen bestimmter Verbindungen entspricht. Mit Hilfe der Integration kann man die Menge jeder Verbindung zu einem bestimmten Zeitpunkt berechnen und die Veränderung im Laufe der Zeit darstellen, wenn man dies für mehrere Zeitpunkte tut. Wenden wir diese Methode nun auf die Krankheit auf Planet-X an. Nach Angaben der Wissenschaftler beträgt die Infektionsrate (β&nbsp;=&nbsp;2) und die Erholungsrate (γ&nbsp;=&nbsp;0,2). Mit diesen Werten und Ausgangspopulationen von (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0) und (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000) können wir unser ODE-System lösen. Das sich daraus ergebende Diagramm zeigt, dass die Krankheit auf Planet-X schließlich von selbst ausgerottet wird. Hier haben wir Ihnen auch die Möglichkeit gegeben, eine interaktive Version des Modells zu verwenden."
 
 # Grammarly checked
 #: pages/model_explain.py:251
@@ -644,32 +646,32 @@ msgstr ""
 
 #: pages/model_explain.py:155
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SUSCEPTIBLE"
-msgstr ""
+msgstr "Anfällig"
 
 #: pages/model_explain.py:173
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_INFECTED"
-msgstr ""
+msgstr "Infiziert"
 
 #: pages/model_explain.py:191
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_RECOVERED"
-msgstr ""
+msgstr "Genesen"
 
 #: pages/model_explain.py:123
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
-msgstr ""
+msgstr "Simulationszeit in Monaten"
 
 #: pages/model_explain.py:132
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
-msgstr ""
+msgstr "Infektionsrate β"
 
 #: pages/model_explain.py:141
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
-msgstr ""
+msgstr "Erholungsrate γ"
 
 # Grammarly checked
 #: pages/model_explain.py:254
 msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
-msgstr ""
+msgstr "Die Veränderung der Bevölkerung von Planet-X unter Verwendung des von den Wissenschaftlern der Erde übernommenen SIR-Modells ist dargestellt. Die Infektionsrate wird auf (β&nbsp;=&nbsp;2) und die Erholungsrate auf (γ&nbsp;=&nbsp;0,2) gesetzt. Die Ausgangspopulationen sind: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), und (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 
 # Grammarly checked
 #: pages/model_explain.py:261
@@ -678,31 +680,31 @@ msgstr ""
 
 #: pages/model_explain.py:352
 msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
-msgstr ""
+msgstr "## Modelle der Photosynthese"
 
 #: pages/model_explain.py:357
 msgid "MDL_MODELS_OVERVIEW"
-msgstr ""
+msgstr "Bei der Modellierung sollte der erste Schritt immer die Suche nach dem Problem sein, denn vielleicht findest du deine Antworten bereits in der weiten Welt der Forschung. Manchmal findet man ein Modell, das die eigenen Bedürfnisse vollständig abdeckt oder zumindest eines, auf dem man aufbauen kann. Der Austausch von Forschungsergebnissen ist die Grundlage jeder Wissenschaft, und das ist bei der Computermodellierung nicht anders. In diesem Abschnitt werden wir drei andere Modelle der Photosynthese kurz zusammenfassen, bevor du mit unserem eigenen Modell spielen kannst. Obwohl es sich bei allen um mechanistische Modelle handelt, haben sie unterschiedliche Ansätze und Ziele. Sie unterscheiden sich in ihrer Komplexität, Popularität und Methode, versuchen aber alle, dasselbe zu simulieren: Die Kohlenstoffassimilation (A) der Photosynthese."
 
 #: pages/model_explain.py:357
 msgid "MDL_HEADLINE_FVCB"
-msgstr ""
+msgstr "### Das Modell von Farquhar, von Caemmerer und Berry"
 
 # Grammarly checked
 #: pages/model_explain.py:359
 msgid "MDL_FVCB_1"
-msgstr ""
+msgstr "Das FvCB-Modell, das auch als Farquhar-, von Caemmerer- und Berry-Modell bekannt ist, ist ein weit verbreitetes theoretisches Rahmenwerk in der Pflanzenbiologie, das erstmals 1980 konzipiert wurde[2]. Während die Photosynthese im Großen und Ganzen in drei Phasen zusammengefasst werden kann: Lichtabsorption, Lichtreaktionen und Kohlenstofffixierung, konzentriert sich dieses Modell nur auf die letztere. Es bietet einen vereinfachten Überblick über die C<sub>3</sub> Photosynthese und ist nach seinen Hauptverfassern benannt: Graham D. Farquhar, Susanne von Caemmerer und Joseph A. Berry. Wenn Sie mit der C<sub>3</sub> Photosynthese nicht vertraut sind, sollten Sie sich die Dropbox unten ansehen, um mehr über die verschiedenen Arten der Photosynthese zu erfahren."
 
 #: pages/model_explain.py:318
 msgid "MDL_FVCB_2"
-msgstr ""
+msgstr "Das Hauptziel des FvCB-Modells ist die Beschreibung der Kohlenstoffassimilation (A), d. h. des Prozesses, bei dem Pflanzen und andere photosynthetische Organismen Kohlendioxid aus der Atmosphäre in organische Verbindungen umwandeln. Dieses Ziel findet sich in vielen Photosynthesemodellen, da es ein entscheidender Faktor für das Wohlergehen der Pflanze ist, denn je höher A ist, desto gesünder ist die Pflanze. Wie alles in der Biologie ist es komplexer, aber in einem vereinfachten Sinn ist dies eine gängige Sichtweise. Das FvCB-Modell verwendet rein mathematische Gleichungen zur Berechnung von A. Außerdem wird es als das Minimum von drei verschiedenen begrenzten As beschrieben: der begrenzten RuBisCO-Rate (A<sub>c</sub>), der begrenzten Elektronentransportrate (A<sub>j</sub>) und der begrenzten Triphosphatrate (A<sub>p</sub>). Mithilfe dieses Modells lässt sich A anhand einer Reihe von vordefinierten und größtenteils messbaren Parametern und Gleichungen leicht berechnen, wie unten dargestellt:"
 
 #: pages/model_explain.py:320
 msgid "MDL_FVCB_3"
-msgstr ""
+msgstr "Das Modell verwendet den CO<sub>2</sub>-Partialdruck des Chloroplasten (C<sub>c</sub>), den O<sub>2</sub>-Partialdruck des Chloroplasten (O), den C<sub>c</sub>-Wert mit A = −R<sub>d</sub> (Γ<sub>&midast;</sub>), die maximale Carboxylierungsrate (V<sub>cmax</sub>), die Michaelis-Menten-Konstanten der Carboxylierung und der Oxygenierung (K<sub>c</sub> bzw. K<sub>o</sub>), die potenzielle Elektronentransportrate (J) und die Rate der Versorgung des Chloroplasten mit anorganischem Phosphat (T<sub>p</sub>) zur Berechnung der drei Raten. Die Tagesatmung (R<sub>d</sub>) wird subtrahiert, um die jeweiligen Assimilationsraten darzustellen. Es ist zu beachten, dass dieses Modell auf ein C<sub>c</sub> beschränkt ist, das größer als Γ<sub>&midast;</sub>. ist."
 
 msgid "MDL_FVCB_4"
-msgstr ""
+msgstr "Die Berechnung von A mit diesen Gleichungen ist relativ einfach, aber das Modell hat einen entscheidenden Nachteil. Es bezieht die Zeit nicht mit ein und beschränkt sich auf einen konstanten, stationären Zustand. Pflanzen können zwar einen stationären Zustand erreichen, doch ist dies in der Außenwelt aufgrund der ständig schwankenden Umwelt nicht typisch für sie. Hier sind dynamische Modelle, wie das SIR-Modell oder andere Photosynthesemodelle, besonders gut geeignet."
 
 msgid "MDL_FVCB_5"
 msgstr ""

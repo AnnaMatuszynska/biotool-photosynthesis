@@ -453,6 +453,7 @@ msgstr ""
 # Grammarly checked
 #: pages/method.py:41
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
+                "In der oberen Hälfte der Abbildung wird das Fluoreszenzverhalten von Chlorophyll näher erläutert: Die Absorption von Lichtenergie bringt Chlorophyllmoleküle in den ersten angeregten Zustand (S1, siehe das vereinfachte Jablonsky-Diagramm im oberen Feld links). Damit die Chlorophylle in den Grundzustand (S₀) zurückkehren, kann die absorbierte Energie für die Ladungstrennung und die Photosynthese verwendet werden (photochemisches Quenching, qP), als Wärme abgeleitet werden (nicht-photochemisches Quenching, NPQ) oder als Fluoreszenz wieder emittiert werden. Die Fluoreszenz-Emissionsspektren sind gegenüber den Absorptionsspektren rotverschoben (obere Tafel rechts). Daher kann die Fluoreszenz mit Fluorometern mit entsprechenden optischen Filtern nachgewiesen werden, und ihr Signal wird nicht mit dem eingestrahlten Licht verwechselt. Das emittierte Fluoreszenzsignal wird mit Tastenanzeigen aufgezeichnet, wie die untere Tafel zeigt. Diese zusammenfassende Abbildung ist aus Nies et al. (2021) entnommen."
 msgstr ""
 
 # Grammarly checked
