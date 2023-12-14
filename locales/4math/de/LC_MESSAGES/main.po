@@ -449,13 +449,23 @@ msgstr "Messung der Fotosynthese mit Fluoreszenz"
 # Grammarly checked
 #: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
-msgstr ""
+msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
+        können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
+        beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn Sie sich dafür interessieren, wie das \
+        geschieht, schauen Sie sich den Abschnitt <a href='#' id='4Math'>4Math</a> an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
+        Pflanze wirkt sich auch auf die Leuchtkraft aus."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:33
 msgid "MTH_INTRODUCTION_PHI"
-msgstr ""
+msgstr "Deshalb haben Wissenschaftler \
+        eine Methode erfunden, um diese Fluoreszenz zu messen und zu verfolgen, wie sie sich im Laufe der Zeit verändert \
+        (Sie werden später von dieser 'PAM' hören). Mit ein paar cleveren mathematischen Tricks können sie dann viele \
+        Dinge berechnen, die uns interessieren könnten: Wie gesund das Blatt ist, wie sehr es sich vor dem Licht schützt \
+        und vor allem, wie es Fotosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
+        Buchstaben 'Psi', und Sie werden ihn vielleicht in einigen der Diagramme sehen, die Sie später erstellen werden. \
+        Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
 
 msgid "MTH_VIDEO_TRANSCRIPT_PAM"
 msgstr ""

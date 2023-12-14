@@ -412,31 +412,31 @@ msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, 
 #: Explanation by Tobias
 #: pages/method.py:20
 msgid "MTH_GROWING_PLANTS_1"
-msgstr "Chlorophyll fluorescence"
+msgstr "Plants shine!"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:21
 msgid "MTH_INTRODUCTION_GLOWING"
-msgstr "Fluorescence measurements of plants are based on the properties of excited chlorophyll. While a significant fraction of light energy is used for photochemistry, excitations can also be dissipated as heat or fluorescence in the red wavelength spectrum."
+msgstr "Here is where a specialty of plants comes into play: They can re-emit light and, in proper conditions, shine! When light shines on leaves, they use most of the light to run complex photochemical reactions of photosynthesis. Still, a small part of the absorbed light is re-emitted. Something similar happens when your white T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, this is called 'fluorescence'. And the plant's fluorescence shine is red."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:22
 msgid "MTH_PLANT_ARE_SHINING_RED"
-msgstr "Stray environmental light, especially the green fraction reflected by the leaf, usually masks the fluorescence from observation.  Therefore, one way to overcome this limitation is by inducing strong fluorescence and reducing the stray light."
+msgstr "You might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. Plants don't absorb green light but reflect it, which we see as their primary color. Their red shine, however, is much fainter than that, and with stronger light coming into our eyes from all directions, we can't see it."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:23
 msgid "MTH_INTRODUCTION_EXPERIMENT"
-msgstr "We used a powerful UV light source for chlorophyll excitation in the following example. We covered the camera with a red-pass filter to limit light detection to the fluorescence range. We also initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
+msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker with the RWTH letters and will now shine an intense light on it. The camera's red filter helps us ignore distracting light and focus on the red fluorescence. Now watch what happens:"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:29
 msgid "MTH_EXPLANATION_VIDEO"
-msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. However, upon removal of the sticker, the covered tissue without induced light protection received intense illumination, producing a solid fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualizes chlorophyll fluorescence and the leaf adaption to light."
+msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals acting as 'sunscreen' within the cells. After a few seconds, these cells were protected and received less light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to it, vanishing the picture on the leaf."
 
 #: Explanation by Tobias
 #: pages/method.py:31
@@ -447,13 +447,13 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 # Grammarly checked
 #: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
-msgstr "The above experiment also visualized the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centers where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads to a buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
+msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='4Math'>4Math</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the re-emitted light signal."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:33
 msgid "MTH_INTRODUCTION_PHI"
-msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalized to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). Photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified by relating measurements within a PAM protocol and observing the fluorescence dynamics."
+msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you will hear about this 'PAM' later). With some clever maths behind it, they can then calculate many things we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the Greek letter 'Psi'; you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant does photosynthesis more efficiently."
 
 msgid "MTH_VIDEO_TRANSCRIPT_PAM"
 msgstr "Have you ever wondered how scientists measure the photosynthetic activity of plants? One way is through a PAM measurement. PAM stands for Pulse Amplitude Modulation, and it measures the fluorescence of chlorophyll molecules within a leaf. We are going to be using this PAM fluorometer to measure the fluorescence of chlorophyll in a plant. First, we need to make sure that the plant is dark-adapted for at least 12 hours. Next, we will clip this probe onto the leaf and flash it with a brief pulse of light. The chlorophyll molecules will absorb the light and emit a burst of fluorescence, which we can measure with the detector.\n\nWe start the measurement that gives us a graph of the fluorescence emitted by the chlorophyll molecules over time. This graph can tell us about the photosynthetic stress of the plant. The graph has several parameters, including F0, which is the initial fluorescence level before the pulse of light, and Fm, which is the maximum fluorescence level. The ratio of Fv to Fm gives us a maximum Quantum efficiency of the photosystem two, which is an indicator of the plant's overall health. Through PAM measurements, scientists can gain insights into the photosynthetic health of plants, which can help with crop management and climate change research. "
@@ -468,7 +468,7 @@ msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 # Grammarly checked
 #: pages/method.py:41
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
-msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualizes the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behavior of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as the lower panel shows. This summary figure is reproduced from Nies et al. (2021)."
+msgstr "In this one figure, the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel, you see the results of the PAM experiments. Take a good look because, in a few minutes, you will produce similar results, not with the help of a fluorometer but with your computer! So, what do we see in this graph? It results from a unique light protocol, where a dark-adapted plant is exposed to very weak actinic light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. We can use these fluorescence features to calculate the values quantifying photosynthesis, e.g., the amount of NPQ.\n\n So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1 in the left diagram, a simplified 'Jablonsky diagram'). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most crucial part: the fluorescence emission spectra are red-shifted from the absorption spectra. That means the fluorescence light is redder (at higher wavelengths in the left axis) than the light absorbed (upper panel on the right). This, in turn, means that the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the light that we shine on the plants. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. It took us a long time to summarize everything on one figure only, and this figure originates from our previous work (Nies et al. 2021)."
 
 # Grammarly checked
 #: pages/method.py:44
@@ -485,7 +485,7 @@ msgstr "### PAM Experiments"
 # Grammarly checked
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
-msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For a more in-depth overview, please consider the literature at the bottom of the page."
+msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
 
 #: Explanation by Tobias
 #: pages/method.py:48
@@ -510,7 +510,7 @@ msgstr "The fluorescence signal (y-axis) is plotted against time (x-axis). Visib
 # Grammarly checked
 #: pages/method.py:53
 msgid "MTH_EXPLANATION_ILLUSTRATION"
-msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the **Experiments *in silico* ** page!"
+msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the **Experiments *in silico*** page!"
 
 
 
