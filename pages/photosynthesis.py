@@ -7,11 +7,11 @@ from utils import (
     centered_image,
     get_localised_text,
     include_image,
+    include_ytvideo,
     make_prev_next_button,
     markdown_click,
     resetting_click_detector_setup,
     track_page_visit,
-    include_ytvideo
 )
 
 
@@ -75,6 +75,11 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     markdown_click("PHO_HEADLINE_NPQ", text)
     markdown_click("PHO_NPQ_EXPLANATION", text)
+
+    # Explanation of NPQ
+    st.info(text("PHO_NPQ_EXPLANATION_DETAILED"))
+
+    markdown_click("PHO_NPQ_EXPLANATION_CONTINUED", text)
 
     include_image("pictures/Violaxanthin Scheme-4.png", 0.8, text("PHO_CAPTION_NPQ"))
 

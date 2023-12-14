@@ -336,6 +336,12 @@ msgstr ""
 msgid "PHO_NPQ_EXPLANATION"
 msgstr ""
 
+msgid "PHO_NPQ_EXPLANATION_DETAILED"
+msgstr ""
+
+msgid "PHO_NPQ_EXPLANATION_CONTINUED"
+msgstr ""
+
 msgid "PHO_CAPTION_NPQ"
 msgstr ""
 
