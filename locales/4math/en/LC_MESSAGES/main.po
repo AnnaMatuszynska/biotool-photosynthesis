@@ -177,6 +177,7 @@ msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr "### Learning objectives\n"
         "What we hope you will learn by following the *4Math* version:"
 
+
 msgid "STR_LEARNING_OBJECTIVES"
 msgstr "- You can explain how mathematical models can be applied in biology\n"
             "- You can name some examples of biological mathematical model and explain how they are built\n"
@@ -251,13 +252,13 @@ msgstr "# Photosynthesis"
 
 msgid "PHO_LEARNING_OBJECTIVES"
 msgstr "### Learning objectives\n"
-"- You understand why climate change has an impact on plants and photosynthesis\n"
-"- You learn about the basic principle of photosynthesis and where it occurs\n"
-"- You understand the plants' problem with excessive light and how they protect themselves\n"
-"#### What you need to know:\n"
-"- Structure of a plant\n"
-"- Structure of a cell\n"
-"- Function of a cell membrane"
+    "- You understand why climate change has an impact on plants and photosynthesis\n"
+    "- You learn about the basic principle of photosynthesis and where it occurs\n"
+    "- You understand the plants' problem with excessive light and how they protect themselves\n"
+    "#### What you need to know:\n"
+    "- Structure of a plant\n"
+    "- Structure of a cell\n"
+    "- Function of a cell membrane"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
@@ -410,6 +411,7 @@ msgstr "### Learning objectives\n"
 msgid "MTH_INTRODUCTION_MEASUREMENT"
 msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
 
+
 # Grammarly checked
 #: pages/method.py:18
 msgid "MTH_CAPTION_ABB1"
@@ -491,6 +493,7 @@ msgstr "### PAM Experiments"
 # Grammarly checked
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
+
 msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
 
 #: Explanation by Tobias
@@ -794,7 +797,7 @@ msgstr "### CAM Plants"
 # Grammarly checked
 #: pages/model_explain.py:415
 msgid "MDL_CAM_1"
-msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
+msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO<sub>2</sub> from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
 
 # Grammarly checked
 #: pages/model_explain.py:289
