@@ -61,7 +61,7 @@ def make_chapters(text: Callable[[str], str], version: str, language: str) -> No
     # Make About section
     with st.expander(text("STR_EXPANDER_ABOUT")):
         markdown_click("STR_EXPLANATION_ABOUT", text)
-        st.markdown(text("STR_PROGRAMS_USED"))
+        st.markdown(text("PROGRAMS_USED"))
 
 
 def make_literature(text: Callable[[str], str], language: str, version: str) -> None:
