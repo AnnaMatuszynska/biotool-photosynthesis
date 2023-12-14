@@ -537,7 +537,7 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
         st.markdown(text("LITERATURE_ONPAGE"))
         if version == "4Bio":
             """
-            1. Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO2 assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
+            1. Farquhar, G. D., von Caemmerer, S., & Berry, J. A. (1980). A biochemical model of photosynthetic CO₂ assimilation in leaves of C3 species. Planta, 149(1), 78–90. https://doi.org/10.1007/BF00386231
             2. Evans, J., &amp; Von Caemmerer, S. (2012). Temperature response of carbon isotope discrimination and mesophyll conductance in tobacco. Plant, Cell &amp;amp; Environment, 36(4), 745–756. https://doi.org/10.1111/j.1365-3040.2012.02591.x
             3. Price, G. D., Badger, M. R., & Von Caemmerer, S. (2010). The prospect of using cyanobacterial bicarbonate transporters to improve leaf photosynthesis in C3 crop plants. Plant Physiology, 155(1), 20–26. https://doi.org/10.1104/pp.110.164681
             4. Von Caemmerer, S. (2013). Steady-state models of photosynthesis. Plant, Cell & Environment, 36(9), 1617–1630. https://doi.org/10.1111/pce.12098
