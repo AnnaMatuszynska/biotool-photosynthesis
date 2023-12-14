@@ -324,6 +324,8 @@ msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
+                "Aber konzentrieren wir uns wieder auf die grünen Zellen, das Mesophyll, die Zellen, in denen die meiste Photosynthese stattfindet. Stell dir vor, du gehst einen Schritt weiter und schaust ins Innere der Zelle. Du siehst die Zelle bis zum Rand gefüllt mit verschiedenen Teilen, die ihre eigenen Aufgaben haben: Die Vakuole, die der Zelle ihre Struktur verleiht; der Zellkern, der die genetische Information enthält; der Chloroplast, in dem das Licht eingefangen wird; und viele weitere Organellen. Und lassen Sie uns einen weiteren Schritt in Richtung des Chloroplasten machen, um zu untersuchen, wie das Licht unserer Zelle Energie gibt.\n\n"
+                "Auf dieser Ebene sieht man, wie das Licht auf die Millionen von Proteinen trifft, die in diesem begrenzten Raum ihre Arbeit verrichten. Spezielle unter ihnen, die Photosysteme, können das Licht aufnehmen, mit Elektronen jonglieren und sie weitergeben. Eine ganze Miniaturmaschinerie wird von ihnen angetrieben, die für die Produktion und den Verbrauch von Dingen sorgt. Viele von ihnen verlassen oder betreten die Chloroplasten aus anderen Teilen der Zelle. Alles verändert sich ständig! Und da drinnen sitzen wir und fragen uns: Wie funktioniert die Photosynthese?"
 msgstr ""
 
 #: pages/photosynthesis.py:57

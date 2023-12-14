@@ -40,7 +40,7 @@ msgstr "Referenzen auf dieser Seite:"
 
 msgid "LITERATURE_PLANTS_AND_PYTHON"
 msgstr "Schaue dir auch *Plants and Python* an, ein Python-Kurs für Biologen:\n"
-            "- Plants & Python: Eine Reihe von Lektionen in Programmierung, Pflanzenbiologie, Berechnungen und Bioinformatik. (2022). The Plant Cell, 34(7), e1. https://doi.org/10.1093/plcell/koac187\n"
+            "- Plants & Python: A series of lessons in coding, plant biology, computation, and bioinformatics. (2022). The Plant Cell, 34(7), e1. https://doi.org/10.1093/plcell/koac187\n"
             "- Offizielle Website: https://plantsandpython.github.io/PlantsAndPython"
 
 #: pages/first_analysis.py:345
@@ -241,7 +241,7 @@ msgstr "Auf der Seite **Experiments *in silico*** lernst du das von uns verwende
 # Grammarly checked
 #: Start.py:38
 msgid "STR_MEMORY"
-msgstr "Nicht zuletzt lernst du auf der Seite **Plant Light Memory** das pflanzliche Lichtgedächtnis kennen und können dessen Existenz selbständig mit Experimenten nachweisen."
+msgstr "Nicht zuletzt lernst du auf der Seite **Plant Light Memory** das pflanzliche Lichtgedächtnis kennen und kannst dessen Existenz selbständig mit Experimenten nachweisen."
 
 
 
@@ -321,12 +321,12 @@ msgstr "Wenn man in ein Blatt hineinzoomt, sieht man im Querschnitt Mesophyllzel
 # Grammarly checked
 #: pages/photosynthesis.py:43
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_LOCATION"
-msgstr ""
+msgstr "## Ort der Photosynthese"
 
 # Grammarly checked
 #: pages/photosynthesis.py:44
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-msgstr ""
+msgstr "Die Photosynthese findet in den Zellen der vorwiegend grünen Bestandteile der Pflanzen statt, hauptsächlich in den Mesophyllzellen. Die Chloroplasten in diesen Zellen wandeln die Lichtenergie in chemische Energieäquivalente um, was gemeinhin als 'Lichtreaktion' bezeichnet wird. Innerhalb der Reihe von Proteinkomplexen, die für diese Energieumwandlung verwendet werden, gibt es zwei Arten von Photosystemen. Beide enthalten Chlorophyll-Reaktionszentren, die bei Lichtabsorption Verbindungen mit hohem Redoxpotenzial (z. B. H₂O) oxidieren und Akzeptoren mit niedrigem Redoxpotenzial (z. B. NADP⁺) reduzieren können. Das Photosystem II (PSII), das die Energie des Lichts nutzt, um Wasser in Sauerstoff und Protonen zu spalten, ist für uns von besonderem Interesse."
 
 # Grammarly checked
 #: pages/photosynthesis.py:48
@@ -337,37 +337,39 @@ msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese no
 # Grammarly checked
 #: pages/photosynthesis.py:52
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
-msgstr ""
+msgstr "Nachdem der Chloroplast das Licht aufgenommen hat, wird die eingefangene Energie im Zytoplasma genutzt, um CO₂ zu binden und das Hauptprodukt, 3-Phosphoglycerat, zu erzeugen, das in andere Kohlenhydrate und Verbindungen umgewandelt wird. Dies ist ein mehrstufiger Prozess, der als Calvin-Zyklus bezeichnet wird, wobei der Komplex Ribulose-1,5-Bisphosphat-Carboxylase-Oxygenase (RuBisCO) den ersten CO₂-Fixierungsschritt katalysiert.\n\n Das folgende Video veranschaulicht die verschiedenen makromolekularen Skalen der Photosynthese auf sehr vereinfachte Weise:"
 
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
-msgstr ""
+msgstr "Stell dir sich vor, du gehst auf einen Baum zu. Dieser Baum hat viele Teile: Wurzeln, einen Stamm, Äste, Blätter. Alle sind wichtig für die Funktion des Baumes, und es gibt Forscher, die daran interessiert sind, sie zu verstehen.\n\n Konzentrieren wir uns zunächst auf das Blatt, denn dort findet die Photosynthese statt. Geh einen Schritt auf den Baum zu und sieh dir das Blatt an. Es hat eine komplizierte Struktur mit einem Netz von Adern, die sich durch ein Blatt aus grünen, photosynthetischen Zellen ziehen. Und es gibt noch andere Zellen: Pflanzenhaare, gasaustauschende Spaltöffnungen und vieles mehr. Selbst in einem einzigen Blatt gibt es viele verschiedene Funktionsweisen, die alle untersucht werden sollten.Aber konzentrieren wir uns wieder auf die grünen Zellen, das Mesophyll, die Zellen, in denen die meiste Photosynthese stattfindet. Stell dir vor, du gehst einen Schritt weiter und schaust ins Innere der Zelle. Du siehst die Zelle bis zum Rand gefüllt mit verschiedenen Teilen, die ihre eigenen Aufgaben haben: Die Vakuole, die der Zelle ihre Struktur verleiht; der Zellkern, der die genetische Information enthält; der Chloroplast, in dem das Licht eingefangen wird; und viele weitere Organellen. Und lassen Sie uns einen weiteren Schritt in Richtung des Chloroplasten machen, um zu untersuchen, wie das Licht unserer Zelle Energie gibt.\n\n Auf dieser Ebene sieht man, wie das Licht auf die Millionen von Proteinen trifft, die in diesem begrenzten Raum ihre Arbeit verrichten. Spezielle unter ihnen, die Photosysteme, können das Licht aufnehmen, mit Elektronen jonglieren und sie weitergeben. Eine ganze Miniaturmaschinerie wird von ihnen angetrieben, die für die Produktion und den Verbrauch von Dingen sorgt. Viele von ihnen verlassen oder betreten die Chloroplasten aus anderen Teilen der Zelle. Alles verändert sich ständig! Und da drinnen sitzen wir und fragen uns: Wie funktioniert die Photosynthese?"
+                "Aber konzentrieren wir uns wieder auf die grünen Zellen, das Mesophyll, die Zellen, in denen die meiste Photosynthese stattfindet. Stell dir vor, du gehst einen Schritt weiter und schaust ins Innere der Zelle. Du siehst die Zelle bis zum Rand gefüllt mit verschiedenen Teilen, die ihre eigenen Aufgaben haben: Die Vakuole, die der Zelle ihre Struktur verleiht; der Zellkern, der die genetische Information enthält; der Chloroplast, in dem das Licht eingefangen wird; und viele weitere Organellen. Und lassen Sie uns einen weiteren Schritt in Richtung des Chloroplasten machen, um zu untersuchen, wie das Licht unserer Zelle Energie gibt.\n\n"
+                "Auf dieser Ebene sieht man, wie das Licht auf die Millionen von Proteinen trifft, die in diesem begrenzten Raum ihre Arbeit verrichten. Spezielle unter ihnen, die Photosysteme, können das Licht aufnehmen, mit Elektronen jonglieren und sie weitergeben. Eine ganze Miniaturmaschinerie wird von ihnen angetrieben, die für die Produktion und den Verbrauch von Dingen sorgt. Viele von ihnen verlassen oder betreten die Chloroplasten aus anderen Teilen der Zelle. Alles verändert sich ständig! Und da drinnen sitzen wir und fragen uns: Wie funktioniert die Photosynthese?"
 
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
-msgstr ""
+msgstr "## Wie geht man mit zu viel Licht um?"
 
 # Grammarly checked
 #: pages/photosynthesis.py:58
 msgid "PHO_NPQ_EXPLANATION"
-msgstr ""
+msgstr "Was passiert, wenn zu viel Licht und damit zu viel Energie auf das Photosystem II trifft? Bricht es zusammen und muss dann von der Zelle erneuert werden? Zum Glück nicht! Stattdessen kann die überschüssige Energie als Wärme freigesetzt oder für die ATP-Synthese verwendet werden. Auf diese Weise kann die Zelle geschützt werden. Die beiden nicht-photochemischen Schutzmechanismen werden als NPQ bezeichnet."
 
 msgid "PHO_NPQ_EXPLANATION_DETAILED"
-msgstr ""
+msgstr "**Nicht-photochemisches Quenching (NPQ)** ist ein Schutzmechanismus, den photosynthetische Organismen anwenden, um eine Schädigung ihrer Photosysteme durch einen Überschuss an Lichtenergie zu vermeiden. NPQ umfasst sowohl schnelle als auch langsame Mechanismen, die reversibel sind und zu einer Verringerung der Effizienz des photosynthetischen Prozesses unter Bedingungen von Lichtüberschuss führen. Diese Verringerung der Effizienz wird dadurch erreicht, dass die überschüssige Lichtenergie als Wärme abgeleitet wird, anstatt sie für die Photosynthese zu nutzen. Obwohl NPQ die Umwandlungsrate reduziert, wirkt es daher als Sicherheitsventil, das den Photosyntheseapparat vor möglichen Schäden schützt."
 
 msgid "PHO_NPQ_EXPLANATION_CONTINUED"
-msgstr ""
+msgstr "Unten sieht man ein besonderes Beispiel für NPQ, den 'Xantophyll-Zyklus'. Das Modell, das wir auf den folgenden Seiten verwenden, untersucht, wie dieser Zyklus als Teil der Lichtanpassung der Pflanzen abläuft."
 
 msgid "PHO_CAPTION_NPQ"
-msgstr ""
+msgstr "Der an NPQ beteiligte 'Xanthophyll-Zyklus'. In einer Reihe von zwei reversiblen Schritten wird das Carotinoid Violaxanthin in die NPQ-aktive Form Zeaxanthin umgewandelt. Zeaxanthin kann Lichtenergie absorbieren und Wärme abgeben und schützt so den Photosyntheseapparat. Die Umwandlungsschritte werden durch den pH-Wert reguliert, der stark auf die Lichtintensität reagiert."
 
 #: pages/photosynthesis.py:60
 msgid "PHO_HEADER_MODEL_ORGANISMEN"
-msgstr ""
+msgstr "## Eine Pflanze für alle Fälle"
 
 # Grammarly checked
 #: pages/photosynthesis.py:61
 msgid "PHO_MODEL_ORGANISMEN_EXPLANATION"
-msgstr ""
+msgstr "Die vorgestellten Methoden und Modelle lassen sich zwar auf viele Pflanzen anwenden, die meisten wurden jedoch für die Modellpflanze *Arabidopsis thaliana* entwickelt."
 
 # Grammarly checked
 #: pages/photosynthesis.py:63
@@ -382,7 +384,12 @@ msgstr "Das Foto einer Pflanze des Wildtyps des Modellorganismus _Arabidopsis th
 # Grammarly checked
 #: pages/photosynthesis.py:70
 msgid "PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"
-msgstr ""
+msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) wird als Modellorganismus bezeichnet, da sie häufig als Modellsystem in der Pflanzenbiologie verwendet wird. Sie hat mehrere Eigenschaften, die sie für Laborstudien gut geeignet machen, darunter: \n"
+"1. klein und schneller Lebenszyklus: <em>Arabidopsis</em> hat einen kurzen Lebenszyklus, der es Forschern ermöglicht, mehrere Generationen in einem relativ kurzen Zeitraum zu untersuchen. \n"
+"2. einfache Anatomie: Die Struktur der Pflanze ist einfach und gut verstanden, was es den Forschern erleichtert, spezifische Entwicklungsprozesse zu untersuchen.\n"
+"3. Genom-Sequenzierung: Das vollständige Genom von <em>Arabidopsis</em> war das erste Pflanzengenom, das sequenziert wurde, was den Forschern eine Fülle von genetischen Informationen über die Pflanze geliefert hat. \n"
+"4. genetische und molekulare Hilfsmittel: Für <em>Arabidopsis</em> steht eine große Sammlung von genetischen und molekularen Werkzeugen zur Verfügung, die es den Forschern ermöglichen, die Entwicklung, das Wachstum und die Stressreaktionen der Pflanze auf zellulärer und molekularer Ebene zu untersuchen. \n"
+"\n All diese Faktoren haben <em>Arabidopsis</em> zu einem wichtigen Modellorganismus für die Untersuchung der grundlegenden Pflanzenbiologie gemacht, und ihre Erkenntnisse haben zu unserem Verständnis der Biologie aller Pflanzen beigetragen."
 
 
 
@@ -395,12 +402,18 @@ msgid "MTH_HEADLINE_ONE"
 msgstr "# Die Messmethode"
 
 msgid "MTH_LEARNING_OBJECTIVES"
-msgstr "# Fotosynthese"
+msgstr "### Lernziele\n"
+    "- Du verstehst, warum Pflanzen leuchten (fluoreszieren)\n"
+    "- Du lernst etwas über PAM-Messungen (Pulse Amplitude Modulation)\n"
+    "- Du kannst die Ergebnisse einer PAM-Messung interpretieren\n"
+    "#### Was man wissen muss:\n"
+    "- Farbspektrum des Lichts\n"
+    "- Grundlegendes Konzept der Energieumwandlung und -erhaltung"
 
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
-msgstr ""
+msgstr "Auf der vorherigen Seite hast du erfahren, wie wichtig die Photosynthese ist und wie sie funktioniert. Aber wie können wir wissen, wie **photosynthetisch aktiv** ein Organismus ist? Auf dieser Seite lernst du, wie wir die Dynamik der Photosynthese in Echtzeit mit Lichtmessgeräten (genauer gesagt Fluoreszenzmessgeräten) messen können. Da die Biologie immer mehr zu einer quantitativen Wissenschaft wird, gibt es zahlreiche Methoden zur Untersuchung der Photosynthese. Da Pflanzen zum Beispiel Sauerstoff produzieren und Kohlendioxid aufnehmen, kann die Photosynthese daran gemessen werden, wie schnell diese Gase produziert oder verbraucht werden. Die Messung von Gasen kann jedoch schwierig sein, vor allem, wenn man sie draußen an einem Baum oder auf einem Feld durchführen möchte. Daher ist ein wesentliches Merkmal photosynthetischer Organismen von entscheidender Bedeutung für die Bereitstellung alternativer Methoden zur Messung der Photosynthese *in vivo*!"
 
 
 # Grammarly checked
@@ -419,28 +432,25 @@ msgstr "Leuchtende Pflanzen?"
 # Grammarly checked
 #: pages/method.py:21
 msgid "MTH_INTRODUCTION_GLOWING"
-msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchten! Wenn Licht auf sie fällt, betreiben \
-        sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
-        passiert, wenn dein weißes T-Shirt im Schwarzlicht einer Disco lila leuchtet. Wenn etwas bei Beleuchtung in \
-        einer anderen Lichtfarbe leuchtet, nennt man das 'Fluoreszenz'. Und das Fluoreszenzlicht der Pflanze ist rot."
+msgstr "Fluoreszenzmessungen bei Pflanzen beruhen auf den Eigenschaften des angeregten Chlorophylls. Während ein erheblicher Teil der Lichtenergie für die Photochemie verwendet wird, können die Anregungen auch als Wärme oder Fluoreszenz im roten Wellenlängenbereich abgeleitet werden."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:22
 msgid "MTH_PLANT_ARE_SHINING_RED"
-msgstr ""
+msgstr "Sie werden vielleicht denken: 'Aber Pflanzen sind doch grün, und ich habe noch nie eine fluoreszierende Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren es, was wir als ihre Grundfarbe sehen. Ihr rotes Leuchten ist jedoch viel schwächer, und da aus allen Richtungen stärkeres Licht in unsere Augen fällt, können wir es nicht sehen."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:23
 msgid "MTH_INTRODUCTION_EXPERIMENT"
-msgstr ""
+msgstr "Deshalb haben wir ein kleines Experiment für euch vorbereitet: Hier haben wir einen kleinen Teil des Blattes einer Pflanze mit einem Aufkleber mit den RWTH-Buchstaben beklebt und werden ihn nun mit intensivem Licht bestrahlen. Der Rotfilter der Kamera hilft uns, störendes Licht auszublenden und uns auf die rote Fluoreszenz zu konzentrieren. Beobachte nun, was passiert:"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:29
 msgid "MTH_EXPLANATION_VIDEO"
-msgstr ""
+msgstr "Hast du das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Du hast gerade die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre Umgebung anpassen. Auf die Teile des Blattes, die nicht von dem Aufkleber bedeckt sind, fällt sehr viel Licht. Da dieses Licht schädlich sein könnte, produzierte die Pflanze schnell einige Chemikalien, die als 'Sonnenschutz' in den Zellen wirken. Nach ein paar Sekunden waren diese Zellen geschützt und empfingen weniger Licht und fluoreszierten weniger. Doch als wir den Aufkleber abnahmen, hatten die Zellen darunter keinen Sonnenschutz produziert. Sie sahen das intensive Licht und fluoreszierten mit voller Kraft - direkt neben ihren geschützten Nachbarn. Diesen deutlichen Unterschied in der Fluoreszenz sah man als Nachbild des Aufklebers. Und als wir die Lampe weiter bestrahlten, passten sich alle Zellen dem Licht an und das Bild auf dem Blatt verschwand."
 
 #: Explanation by Tobias
 #: pages/method.py:31
@@ -517,7 +527,7 @@ msgid "MTH_EXPLANATION_ATTEMPTS"
 msgstr "Du musst noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
         paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
         Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute \
-        'Fm'. Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fm nicht der \
+        'Fₘ'. Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fₘ nicht der \
         Fall. Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb \
         der Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
         verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
