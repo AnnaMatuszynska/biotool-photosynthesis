@@ -39,7 +39,9 @@ msgid "LITERATURE_ONPAGE"
 msgstr "Referenzen auf dieser Seite:"
 
 msgid "LITERATURE_PLANTS_AND_PYTHON"
-msgstr ""
+msgstr "Schaue dir auch *Plants and Python* an, ein Python-Kurs für Biologen:\n"
+            "- Plants & Python: Eine Reihe von Lektionen in Programmierung, Pflanzenbiologie, Berechnungen und Bioinformatik. (2022). The Plant Cell, 34(7), e1. https://doi.org/10.1093/plcell/koac187\n"
+            "- Offizielle Website: https://plantsandpython.github.io/PlantsAndPython"
 
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
@@ -72,7 +74,7 @@ msgstr "Diese Webseite wurde erstellt mit **Streamlit**: https://streamlit.io/.\
 #: pages/first_analysis.py:402
 #: pages/plant_memory.py:297
 msgid "SPINNER"
-msgstr "Ich rechne kurz für Sie :computer:"
+msgstr "Ich rechne kurz für dich :computer:"
 
 #: pages/first_analysis.py:420
 #: pages/first_analysis.py:432
@@ -108,11 +110,11 @@ msgstr "Φ(PSII)"
 
 #: pages/first_analysis.py:489
 msgid "NEW_LABEL"
-msgstr ""
+msgstr "Neu"
 
 #: pages/first_analysis.py:489
 msgid "OLD_LABEL"
-msgstr ""
+msgstr "Alt"
 
 # SIDEBAR
 #: pages/_sidebar.py:14
@@ -141,7 +143,7 @@ msgstr "Über diese Webseite"
 # Grammarly checked
 #: Start.py:13
 msgid "STR_EXPLANATION_ABOUT"
-msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs finden Sie in der Datei 'README.md' auf GitHub."
+msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs findest du in der Datei 'README.md' auf GitHub."
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
@@ -151,7 +153,7 @@ msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung
 # Grammarly checked
 #: Start.py:10
 msgid "STR_INTRO"
-msgstr ""
+msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen, Deutschland. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
 
 # Grammarly checked
 #: Start.py:18
@@ -161,29 +163,34 @@ msgstr "## Nutzung dieser Website"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite können sie aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <i>4Bio</i>, wenn sie sich mit der Biologie sicherer fühlen, oder <a href='#' id='4Math'>4Math</a>, wenn sie die mathematischen Hintergründe näher erkunden wollen.<br>Auf dieser Webseite finden sie auch Videos. Falls sie die Video Transkripte ansehen möchten, wählen sie <i>Video Transkripte anzeigen</i> auf der linken Seite aus."
+msgstr "Wir richten uns sowohl an neugierige Neulinge als auch an Fortgeschrittene Lernende. Auf der linken Seite kannst du aus einer Drop-down Liste zwischen zwei Versionen dieser Website wählen: <i>4Bio</i>, wenn du dich mit der Biologie sicherer fühlst, oder <a href='#' id='4Math'>4Math</a>, wenn du die mathematischen Hintergründe näher erkunden willst.<br>Auf dieser Webseite findest du auch Videos. Falls du die Video Transkripte ansehen möchtest, wähle <i>Video Transkripte anzeigen</i> auf der linken Seite aus."
 
 # Grammarly checked
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
-msgstr "Nehmen wir an, Sie wählen die <a href='#' id='4Math'>4Math</a>-Version. In diesem Fall lernen Sie nicht nur etwas über die Photosynthese als Prozess, sondern auch über Methoden zur Messung ihrer Dynamik und zur Berechnung ihrer Effizienz mithilfe eines Computers. Sie werden auch lernen, wie Sie Ihren photosynthetischen Organismus 'genetisch verändern' können, um eine neue Reihe von Experimenten durchzuführen, d. h. Sie werden eine digitale Mutante erzeugen. Wir nennen die am Computer durchgeführte Arbeit <i>in silico</i>."
+msgstr "In dieser *4Bio*-Version führen wir dich in das Konzept der Modellierung ein und erläutern, wie es in der Biologie eingesetzt werden kann. Zudem stellen wir eine experimentelle Methode zur Messung der Photosynthesedynamik und zur Berechnung der Photosyntheseparameter im Detail vor. Diese Methoden werden dann auf ein einfaches mathematisches Modell der pflanzlichen Lichtanpassung angewendet, mit der Möglichkeit, *in silico* Mutanten zu erzeugen und zu untersuchen. In dieser Version können mehr Parameter des mathematischen Modells geändert werden, was komplexere *in silico* Mutanten ermöglicht, und es werden mehr Ergebnisse erzeugt."
 
 msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
-msgstr ""
+msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu wissen, wie die Fotosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
-msgstr ""
+msgstr "### Lernziele\n"
+        "Was wir hoffen, dass du mit der *4Bio*-Version lernen wirst:"
+
 
 msgid "STR_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "- Du kannst erklären, was Modelle sind, wie sie in der Biologie nützlich sind, und einige Beispiele nennen\n"
+            "- Du kannst zusammenfassen, wie nicht-photochemisches Quenching funktioniert und wie es im Lichtschutz eingesetzt wird\n"
+            "- Du kannst zusammenfassen, wie die Fluoreszenz zur Messung der Photosynthese verwendet werden kann\n"
+            "- Du kannst Photosynthese-Simulationen erzeugen und deren biologische Bedeutung erklären."
 
 msgid "STR_LINK_PLANTS_AND_PYTHON"
-msgstr ""
+msgstr "Diese Website und alle unsere Modelle sind in der Programmiersprache Python geschrieben. Wenn du dich dafür interessierst, wie du Python selbst benutzen kannst, schau dir [Plants and Python](https://plantsandpython.github.io/PlantsAndPython) an, ein Programmierkurs für Biologen."
 
 # Grammarly checked
 #: Start.py:26
 msgid "STR_DROP_BOX_INTRO"
-msgstr "Wenn Sie den Unterschied zwischen *in vitro*, *in vivo* und *in silico* nicht kennen, öffnen Sie die Dropbox unten."
+msgstr "Wenn du den Unterschied zwischen *in vitro*, *in vivo* und *in silico* nicht kennen, öffne die Dropbox unten."
 
 #: Start.py:27
 msgid "STR_EXPANDER_IN"
@@ -208,12 +215,12 @@ msgstr "## Zusammenfassung der Seiten"
 # Grammarly checked
 #: Start.py:33
 msgid "STR_INTRODUCTION_PAGES"
-msgstr "Im Folgenden geben wir Ihnen einen kurzen Überblick darüber, was Sie auf den folgenden Seiten erwartet. Unter <a href='#' id='4Math'>4Math</a> finden Sie die Übersicht, welche zusätzlichen Informationen Sie in den 4Math-Versionen erhalten."
+msgstr "Im Folgenden geben wir dir einen kurzen Überblick darüber, was dich auf den folgenden Seiten erwartet. Unter <a href='#' id='4Math'>4Math</a> findest du die Übersicht, welche zusätzlichen Informationen dich in den 4Math-Versionen erhält."
 
 # Grammarly checked
 #: Start.py:34
 msgid "STR_PHOTOSYNTHESIS"
-msgstr "Auf der Seite **Fotosynthese** erfahren Sie alles, was Sie über die Fotosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können."
+msgstr "Auf der Seite **Fotosynthese** erfährst du alles, was du über die Fotosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können."
 
 # Grammarly checked
 #: Start.py:35
@@ -223,17 +230,17 @@ msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "Wie die Headline bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Auf der Seite <b>Computermodelle</b> erfahren Sie etwas über mathematische Modelle im Allgemeinen sowie etwas über Photosynthesemodelle. In der <a href='#' id='4Math'>4Math</a>-Version können Sie auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
+msgstr "Wie die Headline bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Auf der Seite <b>Computational Models</b> erfährst du etwas über mathematische Modelle im Allgemeinen sowie etwas über Photosynthesemodelle. In der <a href='#' id='4Math'>4Math</a>-Version kannst du auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
 
 # Grammarly checked
 #: Start.py:37
 msgid "STR_EXPERIMENT"
-msgstr "Auf der Seite <b>Experimente <i>in silico</i></b> lernen Sie das von uns verwendete und von Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>) mitentwickelte Photosynthesemodell kennen. Danach können Sie es direkt selbst verwenden, um Ihre ersten Messungen durchzuführen. In der <a href='#' id='4Math'>4Math</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
+msgstr "Auf der Seite <b>Experiments <i>in silico</i></b> lernst du das von uns verwendete und von Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>) mitentwickelte Photosynthesemodell kennen. Danach kannst du es direkt selbst verwenden, um deine ersten Messungen durchzuführen. In der <a href='#' id='4Math'>4Math</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
 
 # Grammarly checked
 #: Start.py:38
 msgid "STR_MEMORY"
-msgstr "Nicht zuletzt lernen Sie auf der Seite **Pflanzenlichtgedächtnis** das pflanzliche Lichtgedächtnis kennen und können dessen Existenz selbständig mit Experimenten nachweisen."
+msgstr "Nicht zuletzt lernst du auf der Seite **Plant Light Memory** das pflanzliche Lichtgedächtnis kennen und können dessen Existenz selbständig mit Experimenten nachweisen."
 
 
 
@@ -243,7 +250,17 @@ msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
 msgstr "# Fotosynthese"
 
 msgid "PHO_LEARNING_OBJECTIVES"
-msgstr "# Fotosynthese"
+msgstr "### Lernziele\n"
+    "- Du verstehst, warum der Klimawandel Auswirkungen auf Pflanzen und die Photosynthese hat\n"
+    "- Du erinnerst dich an das Grundprinzip der Photosynthese und wo sie stattfindet\n"
+    "- Du verstehst die Probleme der Pflanzen, die durch zu viel Licht entstehen\n"
+    "- Du lernst den Lichtschutzmechanismus der Pflanze im molekularen Detail kennen\n"
+    "#### Was Sie wissen müssen:\n"
+    "- Aufbau einer Pflanze\n"
+    "- Aufbau einer Zelle\n"
+    "- Funktion der Zellmembran\n"
+    "- Das Prinzip der Pflanzenautotrophie\n"
+    "- Grundlegende Prinzipien des Klimawandels"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
@@ -274,7 +291,7 @@ msgstr "- Plattentektonik und Vulkanismus"
 #: Lisa's introduction
 #: pages/photosynthesis.py:17
 msgid "PHO_POINT_2"
-msgstr "- Erdumlaufbahnübergänge"
+msgstr "- Übergänge in der Erdumlaufbahn"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:18
@@ -291,17 +308,17 @@ msgstr "In der Geschichte der Erde kam es mehrmals zu Klimaveränderungen. Im Ja
 
 #: pages/photosynthesis.py:34
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS"
-msgstr ""
+msgstr "## Prozess der Photosynthese"
 
 # Grammarly checked
 #: pages/photosynthesis.py:35
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_1"
-msgstr ""
+msgstr "Genau wie der Mensch brauchen Pflanzen Nährstoffe für ihr Wachstum. Die wichtigsten sind Wasser und Mineralien, aber Pflanzen brauchen auch Fette, Kohlenhydrate und Proteine. Die meisten dieser Nährstoffe können Pflanzen über ihre Wurzeln aus dem Boden aufnehmen, aber nicht alle. Wie bereits erwähnt, sind Pflanzen Produzenten und können daher Nährstoffe selbst herstellen. Zu diesen Nährstoffen gehören vor allem Kohlenhydrate, die bei der Photosynthese entstehen."
 
 # Grammarly checked
 #: pages/photosynthesis.py:36
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr ""
+msgstr "Bei der Photosynthese produzieren Pflanzen Biomasse in Form von Glukose. Dazu benötigen sie CO₂, H₂O und Energie in Form von Licht."
 
 #: pages/photosynthesis.py:39
 #: pages/photosynthesis.py:41
@@ -395,13 +412,8 @@ msgstr "# Fotosynthese"
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
-msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
-        mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
-        Zahlen und das Messen von Dingen. Deshalb haben Forscher viele Methoden erfunden, um zu bestimmen, wie viel \
-        Fotosynthese eine Pflanze betreibt. Du hast zum Beispiel gehört, dass Pflanzen Sauerstoff produzieren und \
-        Kohlendioxid aufnehmen. Daher kann die Fotosynthese daran gemessen werden, wie schnell diese Gase produziert \
-        oder verbraucht werden. Die Messung von Gasen kann jedoch schwierig sein, vor allem, wenn man sie draußen an \
-        einem Baum oder auf einem Feld durchführen will."
+msgstr ""
+
 
 # Grammarly checked
 #: pages/method.py:18
@@ -428,33 +440,19 @@ msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchte
 # Grammarly checked
 #: pages/method.py:22
 msgid "MTH_PLANT_ARE_SHINING_RED"
-msgstr "Jetzt werden Sie vielleicht denken: 'Aber Pflanzen sind doch grün, und ich habe noch nie eine fluoreszierende \
-        Pflanze gesehen!'. Und das ist natürlich richtig. Pflanzen absorbieren kein grünes Licht, sondern reflektieren \
-        es, was wir als ihre Grundfarbe sehen. Ihr rotes Leuchten ist jedoch viel schwächer, und da aus allen Richtungen \
-        stärkeres Licht in unsere Augen fällt, können wir es einfach nicht sehen."
+msgstr ""
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:23
 msgid "MTH_INTRODUCTION_EXPERIMENT"
-msgstr "Deshalb haben wir ein kleines Experiment für Sie vorbereitet: Hier haben wir einen kleinen Teil des Blattes \
-        einer Pflanze mit einem Aufkleber abgedeckt und werden ihn nun mit starkem Licht bestrahlen. Der Rotfilter der \
-        Kamera hilft uns, ablenkendes Licht zu ignorieren und uns auf die rote Fluoreszenz zu konzentrieren. Beobachten \
-        Sie nun, was passiert:"
+msgstr ""
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:29
 msgid "MTH_EXPLANATION_VIDEO"
-msgstr "Haben Sie das rote Leuchten und den geisterhaften Abdruck des Aufklebers auf dem Blatt gesehen? Sie haben gerade \
-        die Anpassung der Pflanze in Aktion gesehen. Da sich die Pflanze nicht bewegen kann, muss sie sich an ihre \
-        Umgebung anpassen. Auf die Teile des Blattes, die nicht von dem Aufkleber bedeckt sind, fällt sehr viel Licht. \
-        Da dieses Licht schädlich sein könnte, produzierte die Pflanze schnell einige Chemikalien, die als eine Art \
-        Sonnenschutzmittel in den Zellen wirken. Nach ein paar Sekunden waren diese Zellen geschützt und empfingen \
-        weniger Licht und fluoreszierten weniger. Doch als wir den Aufkleber abnahmen, hatten die Zellen darunter keinen \
-        Sonnenschutz produziert. Sie sahen das intensive Licht und fluoreszierten mit voller Kraft - direkt neben ihren \
-        geschützten Nachbarn. Diesen deutlichen Unterschied in der Fluoreszenz sahen Sie als Nachbild des Aufklebers. \
-        Als wir die Lampe weiter bestrahlten, passten sich alle Zellen dem Licht an und das Bild auf dem Blatt verschwand."
+msgstr ""
 
 #: Explanation by Tobias
 #: pages/method.py:31
@@ -506,10 +504,8 @@ msgstr "### PAM Experimente"
 # Grammarly checked
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
-msgstr "Hier erzählen wir Ihnen von einem spannenden Experiment, mit dem Forscher die Fotosynthese messen. Die \
-        Grundlage dafür haben Sie schon gehört: Fluoreszenz. Dieses Experiment heißt 'Puls-Amplituden-Modulation', kurz \
-        'PAM'. Aus dem Namen können Sie schon ableiten, dass wir als Experimentatoren die 'Amplitude' (Intensität) der \
-        Lichtblitze 'modulieren' (steuern)."
+
+msgstr ""
 
 #: Explanation by Tobias
 #: pages/method.py:48
@@ -520,14 +516,14 @@ msgstr "Sättigungsimpulse"
 # Grammarly checked
 #: pages/method.py:49
 msgid "MTH_EXPLANATION_ATTEMPTS"
-msgstr "Sie müssen noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
+msgstr "Du musst noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
         paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
         Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute \
         'Fm'. Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fm nicht der \
         Fall. Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb \
         der Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
         verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
-        Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass Sie verstehen, dass wir vergleichen, welcher \
+        Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass du verstehst, dass wir vergleichen, welcher \
         Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen über die \
         Zeit und die Bedingungen verändern."
 
@@ -982,7 +978,7 @@ msgstr "## Die Daten-analyze"
 # Grammarly checked
 #: pages/first_analysis.py:272
 msgid "FAL_INTRODUKTION"
-msgstr "Nachdem Sie die Messmethode zur Überprüfung von NPQ an Pflanzen kennenlernen durftet, werden wir nun Messungen \
+msgstr "Nachdem du die Messmethode zur Überprüfung von NPQ an Pflanzen kennenlernen durftest, werden wir nun Messungen \
         mit dem Model durchführen, um den Einfluss der abiotischen Einfluss-Faktoren abzuschätzen."
 
 #: pages/first_analysis.py:274
@@ -992,16 +988,16 @@ msgstr "##### Verwendung der Schieberegler:"
 # Grammarly checked
 #: pages/first_analysis.py:275
 msgid "FAL_EXPLANATNION"
-msgstr "Ändern Sie zunächst die Schieberegler entsprechend dem Test, den Sie simulieren möchten. Dann starten Sie die \
-        Berechnung, indem Sie auf den Start-Button klicken. Das berechnete Diagramm wird nach kurzer Zeit angezeigt. \
-        Sobald Sie die Schieberegler wieder bewegen, verschwindet die Grafik und Sie können eine neue Grafik laden."
+msgstr "Ändere zunächst die Schieberegler entsprechend dem Test, den du simulieren möchten. Dann starte die \
+        Berechnung, indem du auf den Start-Button klickst. Das berechnete Diagramm wird nach kurzer Zeit angezeigt. \
+        Sobald du die Schieberegler wieder bewegst, verschwindet die Grafik und du kannst eine neue Grafik laden."
 
 msgid "FAL_VIDEO_TRANSCRIPT_SLIDERS"
 msgstr ""
 
 #: pages/first_analysis.py:277
 msgid "FAL_TIPP1"
-msgstr "***Tipp 1:*** *Sollten Sie zwei Versuche vergleichen wollen, können die Graphen über die drei Punkte (oben rechts) \
+msgstr "***Tipp 1:*** *Solltest du zwei Versuche vergleichen wollen, können die Graphen über die drei Punkte (oben rechts) \
         herunterladen werden.*"
 
 #: pages/first_analysis.py:278
@@ -1024,7 +1020,7 @@ msgstr "Lichtintensität des Sättigungsimpulses (SP) in μmol m⁻² s⁻¹"
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74
 msgid "FAL_IMPLEMENTATION_TO_EXPERT"
-msgstr "Um die mathematische Beschreibung zu sehen, wechseln Sie in den <a href='#' id='4Math'>4Math</a>-Modus."
+msgstr "Um die mathematische Beschreibung zu sehen, wechsel in den <a href='#' id='4Math'>4Math</a>-Modus."
 
 #: pages/first_analysis.py:77
 msgid "FAL_MODEL_CODE_EXPANDER"
@@ -1188,9 +1184,9 @@ msgstr ""
 # Grammarly checked
 #: pages/plant_memory.py:387
 msgid "MEM_INTRODUCTION_BRAIN"
-msgstr "Nachdem Sie herausgefunden haben, wie Pflanzen auf unterschiedliche Lichtintensitäten reagieren. Sie können \
-        sich nun mit dem Gedächtnis der Pflanzen beschäftigen. Dies ist eine interessante Tatsache, die sich mit dem \
-        Modell sehr schön modellieren lässt. Mit den beiden Schiebereglern können Sie verschiedene Szenarien simulieren."
+msgstr "Nachdem du herausgefunden hast, wie Pflanzen auf unterschiedliche Lichtintensitäten reagieren. Du kannst \
+        dich nun mit dem Gedächtnis der Pflanzen beschäftigen. Dies ist eine interessante Tatsache, die sich mit dem \
+        Modell sehr schön modellieren lässt. Mit den beiden Schiebereglern kannst du verschiedene Szenarien simulieren."
 
 #: pages/plant_memory.py:260
 msgid "MEM_SLIDER_TRAINING"
@@ -1218,11 +1214,11 @@ msgstr ""
 
 #: pages/plant_memory.py:393
 msgid "MEM_TIP1"
-msgstr "***Tipp 1:*** *Wenn Sie zwei Experimente vergleichen möchten, können Sie die Diagramme herunterladen, indem Sie auf die drei Punkte klicken.*"
+msgstr "***Tipp 1:*** *Wenn du zwei Experimente vergleichen möchten, kannst du die Diagramme herunterladen, indem du auf die drei Punkte klickst.*"
 
 #: pages/plant_memory.py:395
 msgid "MEM_TIP2"
-msgstr "***Tipp 2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke können Sie den Berechnungsvorgang abbrechen.*"
+msgstr "***Tipp 2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke kannst du den Berechnungsvorgang abbrechen.*"
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_EXPANDER"
