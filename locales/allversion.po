@@ -1111,7 +1111,7 @@ msgid "MTH_LEARNING_OBJECTIVES"
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
-4math-en msgstr "To quantitatively measure the photosynthetic activity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are challenging to perform in the field, fluorescence measurements can be performed on plants of various sizes and in multiple environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the European Space Agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
+4math-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
 4math-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
         mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
         Zahlen und das Messen von Dingen. Deshalb haben Forscher viele Methoden erfunden, um zu bestimmen, wie viel \
@@ -1122,7 +1122,7 @@ msgid "MTH_INTRODUCTION_MEASUREMENT"
 4math-fr msgstr ""
 4math-pl msgstr ""
 4math-es msgstr ""
-4bio-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
+4bio-en msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? To quantitatively measure the photosynthetic activity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are challenging to perform in the field, fluorescence measurements can be performed on plants of various sizes and in multiple environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the European Space Agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
 4bio-de msgstr "Auf der vorigen Seite haben Sie erfahren, wie wichtig die Fotosynthese ist, wie sie funktioniert und wie wir \
         mithilfe von Modellen mehr über sie erfahren können. Aber Biologen mögen nicht nur Wissen. Sie mögen auch \
         Zahlen und das Messen von Dingen. Deshalb haben Forscher viele Methoden erfunden, um zu bestimmen, wie viel \
@@ -2717,7 +2717,7 @@ msgid "FAL_MOLECULES_EXPLANATION_TABLE"
             "| --- | --- |\n"
             "| Plastoquionone (PQ) | A small molecule that can transport two electrons; Can be oxidised (ox) or reduced (red) |\n"
             "| Adenosine triphosphate (ATP) | A small molecule that can transfer chemical energy to drive reactions |\n"
-            "| Xantophyll | A group of large carotenoid pigments; includes viola and zeaxanthin |\n"
+            "| Xantophyll | A group of large carotenoid pigments; includes viola and zeaxanthin |"
 4math-de msgstr ""
 4math-fr msgstr ""
 4math-pl msgstr ""
@@ -2727,7 +2727,7 @@ msgid "FAL_MOLECULES_EXPLANATION_TABLE"
             "| --- | --- |\n"
             "| Plastoquionone (PQ) | A small molecule that can transport two electrons; Can be oxidised (ox) or reduced (red) |\n"
             "| Adenosine triphosphate (ATP) | A small molecule that can transfer chemical energy to drive reactions |\n"
-            "| Xantophyll | A group of large carotenoid pigments; includes viola and zeaxanthin |\n"
+            "| Xantophyll | A group of large carotenoid pigments; includes viola and zeaxanthin |"
 4bio-de msgstr ""
 4bio-fr msgstr ""
 4bio-pl msgstr ""

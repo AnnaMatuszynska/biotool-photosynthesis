@@ -404,7 +404,7 @@ msgstr "### Learning objectives\n"
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
-msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
+msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? To quantitatively measure the photosynthetic activity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are challenging to perform in the field, fluorescence measurements can be performed on plants of various sizes and in multiple environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the European Space Agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
 
 # Grammarly checked
 #: pages/method.py:18
@@ -906,7 +906,7 @@ msgstr "#### Molecules\n"
             "| --- | --- |\n"
             "| Plastoquionone (PQ) | A small molecule that can transport two electrons; Can be oxidised (ox) or reduced (red) |\n"
             "| Adenosine triphosphate (ATP) | A small molecule that can transfer chemical energy to drive reactions |\n"
-            "| Xantophyll | A group of large carotenoid pigments; includes viola and zeaxanthin |\n"
+            "| Xantophyll | A group of large carotenoid pigments; includes viola and zeaxanthin |"
 
 msgid "FAL_ENZYMES_EXPLANATION_TABLE"
 msgstr "#### Enyzmes\n"
