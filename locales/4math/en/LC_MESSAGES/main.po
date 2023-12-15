@@ -189,6 +189,7 @@ msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr "### Learning objectives\n"
         "What we hope you will learn by following the *4Math* version:"
 
+
 msgid "STR_LEARNING_OBJECTIVES"
 msgstr "- You can explain how mathematical models can be applied in biology\n"
             "- You can name some examples of biological mathematical model and explain how they are built\n"
@@ -263,13 +264,13 @@ msgstr "# Photosynthesis"
 
 msgid "PHO_LEARNING_OBJECTIVES"
 msgstr "### Learning objectives\n"
-"- You understand why climate change has an impact on plants and photosynthesis\n"
-"- You learn about the basic principle of photosynthesis and where it occurs\n"
-"- You understand the plants' problem with excessive light and how they protect themselves\n"
-"#### What you need to know:\n"
-"- Structure of a plant\n"
-"- Structure of a cell\n"
-"- Function of a cell membrane"
+    "- You understand why climate change has an impact on plants and photosynthesis\n"
+    "- You learn about the basic principle of photosynthesis and where it occurs\n"
+    "- You understand the plants' problem with excessive light and how they protect themselves\n"
+    "#### What you need to know:\n"
+    "- Structure of a plant\n"
+    "- Structure of a cell\n"
+    "- Function of a cell membrane"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
@@ -346,10 +347,10 @@ msgstr "Complexes within the thylakoid membrane, which are necessary for photosy
 # Grammarly checked
 #: pages/photosynthesis.py:52
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
-msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5-bisphosphate Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\nThe following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
+msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5-bisphosphate Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\n\n The following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
 
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
-msgstr "Imagine going up to a tree. This tree has many parts: Roots, a stem, branches, leaves. All of which are important to the tree's function and there are researchers interested in understanding them.\n\nLet's focus for now on the leaf since this is where photosynthesis happens. Take a step towards the tree and look at the leaf. It has an intricate structure with a network of veins running through a sheet of green photosynthetic cells. And there are other cells: Plant hairs, gas-exchanging stomates, and more. Even in just a leaf, there are many different functioning sets that all warrant investigation.\n\nBut let's again focus on the green cells, the mesophyll, cells place of most photosynthesis. So imagine taking another step forward and looking inside the cell. You see it filled to the brim with again different parts with their own jobs: The vacuole, which gives the cell structure; the nucleus packing the genetic information; the chloroplast, where the light is being captured; and so many more organelles. And let's take another step towards the chloroplast to investigate how light gives energy to our cell.\n\nOn this level, you see how the light hits the millions of proteins that do their jobs within this confined space. Special ones among them, the photosystems, can take up that light, juggle with electrons, and pass them on. A whole miniature machinery is fueled by them, leading to the production and consumption of things. Many of them leave or enter the chloroplasts from other parts of the cell. Everything changes constantly! And in there, we sit and wonder: How does photosynthesis work?"
+msgstr "Imagine going up to a tree. This tree has many parts: Roots, a stem, branches, leaves. All of which are important to the tree's function and there are researchers interested in understanding them.\n\n Let's focus for now on the leaf since this is where photosynthesis happens. Take a step towards the tree and look at the leaf. It has an intricate structure with a network of veins running through a sheet of green photosynthetic cells. And there are other cells: Plant hairs, gas-exchanging stomates, and more. Even in just a leaf, there are many different functioning sets that all warrant investigation.\n\nBut let's again focus on the green cells, the mesophyll, cells place of most photosynthesis. So imagine taking another step forward and looking inside the cell. You see it filled to the brim with again different parts with their own jobs: The vacuole, which gives the cell structure; the nucleus packing the genetic information; the chloroplast, where the light is being captured; and so many more organelles. And let's take another step towards the chloroplast to investigate how light gives energy to our cell.\n\nOn this level, you see how the light hits the millions of proteins that do their jobs within this confined space. Special ones among them, the photosystems, can take up that light, juggle with electrons, and pass them on. A whole miniature machinery is fueled by them, leading to the production and consumption of things. Many of them leave or enter the chloroplasts from other parts of the cell. Everything changes constantly! And in there, we sit and wonder: How does photosynthesis work?"
 
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
@@ -358,7 +359,13 @@ msgstr "## How to deal with too much light?"
 # Grammarly checked
 #: pages/photosynthesis.py:58
 msgid "PHO_NPQ_EXPLANATION"
-msgstr "What happens when too much light and, thus, excess energy hits Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released as heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ. Below, you can see the processes that are involved in NPQ and when they are activated."
+msgstr "What happens when too much light and, thus, excess energy hits Photosystem II? Does it break down and then have to be renewed by the cell? Fortunately not! Instead, the excess energy can be released as heat or used for ATP synthesis. In this way, the cell can be protected. The two non-photochemical protective mechanisms are referred to as NPQ."
+
+msgid "PHO_NPQ_EXPLANATION_DETAILED"
+msgstr "**Non-photochemical quenching (NPQ)** is a protective mechanism employed by photosynthetic organisms to avoid damage of their photosystems by an excess of light energy. NPQ involves both rapid and slower mechanisms that are reversible and lead to a reduction in the efficiency of the photosynthetic process under conditions of excess light. This reduction in efficiency is achieved by dissipating the excess light energy as heat, rather than using it for photosynthesis. NPQ therefore although reducing the conversion rate acts as a safety valve, helping to protect the photosynthetic apparatus from potential damage."
+
+msgid "PHO_NPQ_EXPLANATION_CONTINUED"
+msgstr "Below, you can see a particular example of NPQ, the 'Xantophyll cycle'. The model we use on the following pages investigates how includes this cycle as part of the plants light adaption."
 
 msgid "PHO_CAPTION_NPQ"
 msgstr "The 'Xanthophyll cycle' involved in NPQ. In a series of two reversible steps, the carotenoid Violaxanthin is converted to the NPQ-active form Zeaxanthin. Zeaxanthin can absorb light energy and emit it heat, protecting the photosynthetic machinery. The conversion steps are regulated by the pH which is strongly reactive to the light intensity."
@@ -386,11 +393,11 @@ msgstr "A photograph of a plant of the wild type of the model organism _Arabidop
 #: pages/photosynthesis.py:70
 msgid "PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"
 msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a model organism because it is often used as a model system in plant biology. It has several characteristics that make it well-suited for laboratory studies, including:\n"
-"1. Small size and fast life cycle: <em>Arabidopsis thaliana</em> has a short life cycle that allows researchers to study multiple generations in a relatively short period of time.\n"
+"1. Small size and fast life cycle: <em>Arabidopsis</em> has a short life cycle that allows researchers to study multiple generations in a relatively short period of time.\n"
 "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to study specific developmental processes.\n"
-"3. Genome sequencing: The complete genome of <em>Arabidopsis thaliana</em> was the first plant genome to be sequenced, which has provided researchers with a wealth of genetic information about the plant.\n"
-"4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis thaliana</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
-"\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
+"3. Genome sequencing: The complete genome of <em>Arabidopsis</em> was the first plant genome to be sequenced, which has provided researchers with a wealth of genetic information about the plant.\n"
+"4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n\n"
+"All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
 
 
 
@@ -404,17 +411,18 @@ msgstr "# Measuring method"
 
 msgid "MTH_LEARNING_OBJECTIVES"
 msgstr "### Learning objectives\n"
-"- You understand why plants glow (fluoresce)\n"
-"- You learn about Pulse Amplitude Modulation (PAM) measurements\n"
-"- You can interpret the results of a PAM measurement\n"
-"#### What you need to know:\n"
-"- Color spectrum of the light\n"
-"- Basic concept of energy conversion and conservation"
+    "- You understand why plants glow (fluoresce)\n"
+    "- You learn about Pulse Amplitude Modulation (PAM) measurements\n"
+    "- You can interpret the results of a PAM measurement\n"
+    "#### What you need to know:\n"
+    "- Color spectrum of the light\n"
+    "- Basic concept of energy conversion and conservation"
 
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
-msgstr "To quantitatively measure the photosynthetic activity of plants, non-invasive fluorescence-based methods have been developed. While gas measurements are challenging to perform in the field, fluorescence measurements can be performed on plants of various sizes and in multiple environments and allow for real-time evaluation of *in vivo* photosynthesis dynamics. Indeed, the currently developed FLEX project of the European Space Agency aims at performing photosynthesis measurements on a global scale using satellite-driven fluorescence metering (https://earth.esa.int/eogateway/missions/flex)."
+msgstr "On the previous page, you learned about the importance of photosynthesis and how it works. But how do we know how **photosynthetically active** an organism is? On this page, you will learn how we can measure the dynamics of photosynthesis in real time using light (precisely fluorescence) measuring devices. As biology is continuously becoming a more quantitative science, numerous methods to probe photosynthesis exist. For example, as plants produce oxygen and take up carbon dioxide, photosynthesis can be measured by how fast these gasses are produced or consumed. However, metering gasses can be tricky, especially if you want to do it outside on a tree or field. Therefore, a significant characteristic of photosynthetic organisms is essential in providing alternative methods of measuring photosynthesis *in vivo*!"
+
 
 # Grammarly checked
 #: pages/method.py:18
@@ -424,31 +432,31 @@ msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, 
 #: Explanation by Tobias
 #: pages/method.py:20
 msgid "MTH_GROWING_PLANTS_1"
-msgstr "Chlorophyll fluorescence"
+msgstr "Plants shine!"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:21
 msgid "MTH_INTRODUCTION_GLOWING"
-msgstr "Fluorescence measurements of plants are based on the properties of excited chlorophyll. While a significant fraction of light energy is used for photochemistry, excitations can also be dissipated as heat or fluorescence in the red wavelength spectrum."
+msgstr "Here is where a specialty of plants comes into play: They can re-emit light and, in proper conditions, shine! When light shines on leaves, they use most of the light to run complex photochemical reactions of photosynthesis. Still, a small part of the absorbed light is re-emitted. Something similar happens when your white T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, this is called 'fluorescence'. And the plant's fluorescence shine is red."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:22
 msgid "MTH_PLANT_ARE_SHINING_RED"
-msgstr "Stray environmental light, especially the green fraction reflected by the leaf, usually masks the fluorescence from observation.  Therefore, one way to overcome this limitation is by inducing strong fluorescence and reducing the stray light."
+msgstr "You might think: 'But plants are green, and I have never seen one fluoresce!'. And, of course, this is right. Plants don't absorb green light but reflect it, which we see as their primary color. Their red shine, however, is much fainter than that, and with stronger light coming into our eyes from all directions, we can't see it."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:23
 msgid "MTH_INTRODUCTION_EXPERIMENT"
-msgstr "We used a powerful UV light source for chlorophyll excitation in the following example. We covered the camera with a red-pass filter to limit light detection to the fluorescence range. We also initially covered part of the leaf with a sticker to restrict the high light adaption to the non-covered tissue."
+msgstr "We, therefore, prepared a small experiment for you: Here, we covered a small portion of a plant's leaf with a sticker with the RWTH letters and will now shine an intense light on it. The camera's red filter helps us ignore distracting light and focus on the red fluorescence. Now watch what happens:"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:29
 msgid "MTH_EXPLANATION_VIDEO"
-msgstr "The covered parts of the leaf reduced the energy transfer onto the photosystems by inducing NPQ and, therefore, lessened (quenched) the fluorescence output. However, upon removal of the sticker, the covered tissue without induced light protection received intense illumination, producing a solid fluorescence response. As the edge of the sticker forms a sharp border region between high and low fluorescence regions, the after-image of the sticker is clearly visible. As the previously covered tissue induces a high light response, the after-image fades over time.\n Therefore, this experiment visualizes chlorophyll fluorescence and the leaf adaption to light."
+msgstr "Did you see the red shine and the sticker's ghostly imprint on the leaf? You just saw the plant's adaptation in action. Because the plant cannot move, it must adjust to its surroundings. A lot of light arrived at the leaf's parts not covered by the sticker. Because that light could be harmful, the plant quickly produced some chemicals acting as 'sunscreen' within the cells. After a few seconds, these cells were protected and received less light and fluoresced less. But, when we lifted the sticker, the cells below had not produced sunscreen. They saw the intense light and fluoresced at full force - right next to their protected neighbors. This sharp difference in fluorescence you saw as the stickers after-image. And as we continued shining the lamp, all cells adapted to it, vanishing the picture on the leaf."
 
 #: Explanation by Tobias
 #: pages/method.py:31
@@ -459,16 +467,16 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 # Grammarly checked
 #: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
-msgstr "The above experiment also visualized the inverse relationship between fluorescence and the remaining dissipation modes of chlorophyll excitation. By measuring fluorescence, therefore, NPQ and photochemical quenching can also be metered. Additionally, high-light saturating light pulses lead to a 'closing' of PSII reaction centers where the electron donation to the following electron acceptor plastoquinone is much slower than the rate of incoming, exciting photons. This output limitation leads to a buildup of electrons inside the photosystem and, ultimately, a blockage of photochemical quenching. Therefore, quantifying the fluorescence of closed photosystems allows for inferring non-photochemical quenching."
+msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='4Math'>4Math</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the re-emitted light signal."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:33
 msgid "MTH_INTRODUCTION_PHI"
-msgstr "However, the fluorescence intensity is also proportional to the intensity of the incoming light. Therefore, the signal must be normalized to obtain the fraction of incoming energy dissipated as fluorescence, deemed the fluorescence yield. Pulse Amplitude Modulation (PAM, illustrated below) is one method to quantify this yield. PAM allows fluorescence yield measurements over time and under changing light conditions (dark, light, saturating, and others). Photosynthetic parameters like the photosynthetic efficiency 'ΦPSII' and NPQ can be quantified by relating measurements within a PAM protocol and observing the fluorescence dynamics."
+msgstr "So scientists invented a way to measure this fluorescence and track how it changes over time (you will hear about this 'PAM' later). With some clever maths behind it, they can then calculate many things we might be interested in: How healthy the leaf is, how much it protects itself from the light, and, most importantly, how it is doing photosynthesis. We name this last measurement 'ΦPSII', with the Greek letter 'Psi'; you might see it along some of the graphs you will produce later. The higher it is, the better, as the plant does photosynthesis more efficiently."
 
 msgid "MTH_VIDEO_TRANSCRIPT_PAM"
-msgstr "Have you ever wondered how scientists measure the photosynthetic activity of plants? One way is through a PAM measurement. PAM stands for Pulse Amplitude Modulation, and it measures the fluorescence of chlorophyll molecules within a leaf. We are going to be using this PAM fluorometer to measure the fluorescence of chlorophyll in a plant. First, we need to make sure that the plant is dark-adapted for at least 12 hours. Next, we will clip this probe onto the leaf and flash it with a brief pulse of light. The chlorophyll molecules will absorb the light and emit a burst of fluorescence, which we can measure with the detector.\n\nWe start the measurement that gives us a graph of the fluorescence emitted by the chlorophyll molecules over time. This graph can tell us about the photosynthetic stress of the plant. The graph has several parameters, including F0, which is the initial fluorescence level before the pulse of light, and Fm, which is the maximum fluorescence level. The ratio of Fv to Fm gives us a maximum Quantum efficiency of the photosystem two, which is an indicator of the plant's overall health. Through PAM measurements, scientists can gain insights into the photosynthetic health of plants, which can help with crop management and climate change research. "
+msgstr "Have you ever wondered how scientists measure the photosynthetic activity of plants? One way is through a PAM measurement. PAM stands for Pulse Amplitude Modulation, and it measures the fluorescence of chlorophyll molecules within a leaf. We are going to be using this PAM fluorometer to measure the fluorescence of chlorophyll in a plant. First, we need to make sure that the plant is dark-adapted for at least 12 hours. Next, we will clip this probe onto the leaf and flash it with a brief pulse of light. The chlorophyll molecules will absorb the light and emit a burst of fluorescence, which we can measure with the detector.\n\nWe start the measurement that gives us a graph of the fluorescence emitted by the chlorophyll molecules over time. This graph can tell us about the photosynthetic stress of the plant. The graph has several parameters, including F₀, which is the initial fluorescence level before the pulse of light, and Fₘ, which is the maximum fluorescence level. The ratio of Fᵥ to Fₘ gives us a maximum Quantum efficiency of the photosystem two, which is an indicator of the plant's overall health. Through PAM measurements, scientists can gain insights into the photosynthetic health of plants, which can help with crop management and climate change research. "
 
 #: Explanation by Tobias
 
@@ -480,14 +488,15 @@ msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 # Grammarly checked
 #: pages/method.py:41
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
-msgstr "PAM employs a series of high-frequency light pulses with weak constant intensity, the measuring light (ML), to quantify the fluorescence yield. The pulses are too weak to induce significant photosynthetic activity but induce measurable fluorescence. As the exact timing of these measuring pulses is known, signal amplification through a lock-in amplifier selectively measures the fluorescence response to the constant-intensity pulses, which is proportional to the fluorescence yield (Schreiber, 2004).\n\nThe following figure visualizes the explained principles. The fluorescence yield measured throughout a typical PAM experiment can be seen in the bottom panel. The protocol involves a dark-adapted plant being exposed to weak constant ('actinic') light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fm, Fm', Fm'', respectively. These fluorescence features are used in the quantification of fluorescence parameters.\nThe upper half of the figure explains in more detail the fluorescence behavior of chlorophyll: Light energy absorption brings chlorophyll molecules to the first excited state (S1, see the simplified Jablonsky diagram in the upper panel on the left). For chlorophylls to return to the ground state (S0), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. The fluorescence emission spectra are red-shifted from the absorption spectra (upper panel on the right). Therefore, the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the irradiant light. The emitted fluorescence signal is recorded with key readouts, as the lower panel shows. This summary figure is reproduced from Nies et al. (2021)."
+msgstr "In this one figure, the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel, you see the results of the PAM experiments. Take a good look because, in a few minutes, you will produce similar results, not with the help of a fluorometer but with your computer! So, what do we see in this graph? It results from a unique light protocol, where a dark-adapted plant is exposed to very weak actinic light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fₘ, Fₘ', Fₘ'', respectively. We can use these fluorescence features to calculate the values quantifying photosynthesis, e.g., the amount of NPQ.\n\n"
+                "So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1 in the left diagram, a simplified 'Jablonsky diagram'). For chlorophylls to return to the ground state (S₀), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most crucial part: the fluorescence emission spectra are red-shifted from the absorption spectra. That means the fluorescence light is redder (at higher wavelengths in the left axis) than the light absorbed (upper panel on the right). This, in turn, means that the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the light that we shine on the plants. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. It took us a long time to summarize everything on one figure only, and this figure originates from our previous work (Nies et al. 2021)."
 
 # Grammarly checked
 #: pages/method.py:44
 #: pages/method.py:58
 #: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
-msgstr "Top) Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n Bottom) Example Graph of a PAM measurement"
+msgstr "Top: Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n\n Bottom: Example Graph of a PAM measurement"
 
 # Grammarly checked
 #: pages/method.py:37
@@ -497,7 +506,8 @@ msgstr "### PAM Experiments"
 # Grammarly checked
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
-msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For a more in-depth overview, please consider the literature at the bottom of the page."
+
+msgstr "Here, we will tell you about an exciting experiment researchers use to measure photosynthesis. The basis for this you have already heard of is fluorescence. This experiment is called 'Pulse Amplitude Modulation', or 'PAM' for short. From the name, you can deduce that we, as experimenters, 'modulate' (control) the 'amplitude' (intensity) of light flashes."
 
 #: Explanation by Tobias
 #: pages/method.py:48
@@ -508,7 +518,7 @@ msgstr "Saturating Pulses"
 # Grammarly checked
 #: pages/method.py:49
 msgid "MTH_EXPLANATION_ATTEMPTS"
-msgstr "You need to know one more aspect of PAM: the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fm'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fm does not. So by comparing normal and maximal yield, we can tell apart changes in and outside photosynthesis, for example, the plant's light protection. When you also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
+msgstr "You need to know one more aspect of PAM: the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fₘ'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fₘ does not. So by comparing normal and maximal yield, we can tell apart changes in and outside photosynthesis, for example, the plant's light protection. When you also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
 
 #: pages/method.py:51
 msgid "MTH_HEADLINE_ILLUSTRATION"
@@ -517,12 +527,12 @@ msgstr "## Visualization of the results"
 # Grammarly checked
 #: pages/method.py:52
 msgid "MTH_EXPLANATION_ILLUSTRATION_UNITS"
-msgstr "The fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fm', with the first being measured in the dark as Fm."
+msgstr "The fluorescence signal (y-axis) is plotted against time (x-axis). Visible peaks are the fluorescence emitted in response to the saturating pulse of light. Each peak is referred to as Fₘ', with the first being measured in the dark as Fₘ."
 
 # Grammarly checked
 #: pages/method.py:53
 msgid "MTH_EXPLANATION_ILLUSTRATION"
-msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the **Experiments *in silico* ** page!"
+msgstr "This was a lot of theory for just a bit of shining, so try a measurement out for yourself on the **Experiments *in silico*** page!"
 
 
 
@@ -660,7 +670,7 @@ msgstr "## Models of photosynthesis"
 
 #: pages/model_explain.py:357
 msgid "MDL_MODELS_OVERVIEW"
-msgstr "When doing modelling, the first step you should always do is to search for your problem, as you may already find your answers in the broad world of research. Sometimes you can find a model that completely covers your needs or at least one you can build on. Sharing past research is the basis of any science, and it is no different in computational modeling. In this section, we will briefly summarize three other models of photosynthesis, before you will be able to play with our own. While they are all mechanistic models, they have different approaches and goals. They vary in complexity, popularity and method, but all try to simulate the same thing. The carbon assimilation (A) of photosynthesis"
+msgstr "When doing modelling, the first step you should always do is to search for your problem, as you may already find your answers in the broad world of research. Sometimes you can find a model that completely covers your needs or at least one you can build on. Sharing past research is the basis of any science, and it is no different in computational modeling. In this section, we will briefly summarize three other models of photosynthesis, before you will be able to play with our own. While they are all mechanistic models, they have different approaches and goals. They vary in complexity, popularity and method, but all try to simulate the same thing: The carbon assimilation (A) of photosynthesis."
 
 #: pages/model_explain.py:357
 msgid "MDL_HEADLINE_FVCB"
@@ -800,7 +810,7 @@ msgstr "### CAM Plants"
 # Grammarly checked
 #: pages/model_explain.py:415
 msgid "MDL_CAM_1"
-msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO2 from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
+msgstr "A specialized form of photosynthesis called CAM (Crassulacean Acid Metabolism) is found in plants adapted to arid and water-limited environments. These plants have a unique way of separating carbon fixation and the Calvin cycle, which involves opening their stomata at night to take in carbon dioxide and fixing it as a four-carbon organic acid, such as malate or malic acid, to store it in large vacuoles within their cells. During the day, they close their stomata to prevent water loss through transpiration and release the CO<sub>2</sub> from the malate into the chloroplasts to be used in the Calvin Cycle, similar to C<sub>3</sub> plants. The name of this photosynthetic pathway, \"Crassulacean Acid Metabolism,\" was derived from the Crassulaceae plant family, where it was first discovered. Still, it is also present in other plant families like succulents, cacti, bromeliads, and some orchids. These types of plants are commonly found in desert regions and other areas with limited water resources."
 
 # Grammarly checked
 #: pages/model_explain.py:289
@@ -831,8 +841,8 @@ msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying
 # Grammarly checked
 #: pages/model_explain.py:326
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
-msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
-"\n You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
+msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n\n"
+" You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
 
 # Grammarly checked
 #: pages/model_explain.py:346
@@ -912,6 +922,27 @@ msgstr "5) the fraction of violaxanthin in the total pool of xanthophylls (Vx),"
 #: pages/first_analysis.py:25
 msgid "FAL_RATES_6"
 msgstr "6) the fraction of active ATPase enzyme (ATPase<sup>&midast;</sup>)."
+
+msgid "FAL_COMPONENTS_EXPLANATION_HEADER"
+msgstr "Do you need a reminder of the molecules and protein complexes mentioned above? *Click here*"
+
+msgid "FAL_MOLECULES_EXPLANATION_TABLE"
+msgstr "#### Molecules\n"
+            "| Name | Description |\n"
+            "| --- | --- |\n"
+            "| Plastoquionone (PQ) | A molecule that can transport two electrons; Can be oxidised (ox) or reduced (red) |\n"
+            "| Adenosine triphosphate (ATP) | A molecule that can transfer chemical energy to drive reactions |\n"
+            "| Xantophyll | A group of carotenoid pigments; includes viola- and zeaxanthin |"
+
+msgid "FAL_ENZYMES_EXPLANATION_TABLE"
+msgstr "#### Protein complexes\n"
+            "| Name | Description |\n"
+            "| --- | --- |\n"
+            "| Photosystem II (PSII) | A light absorbing protein complex; Uses the excitation to split water and drive photosynthesis |\n"
+            "| Photosystem II subunit S (PsbS) | A quencher protein of PSII; Its activity depends on pH |\n"
+            "| Plastidial Terminal Oxidase (PTOX) | An oxigen reducing protein complex; Produces water to avoid PQ over-reduction;  |\n"
+            "| Cytochrome b6f complex (Cyt b6f) | A proton pumping protein complex |\n"
+            "| ATPSynthase (ATPase) | An ATP synthesizing protein complex; Uses the electro-chemical proton gradient |"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:28
@@ -1005,8 +1036,8 @@ msgstr "#### Model Construction"
 # Grammarly checked
 #: pages/first_analysis.py:79
 msgid "FAL_CONSTRUCTION_1"
-msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilizing a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n" 
-"\n If you want to follow along, you can copy each code block and paste them into a Python IDE. At the end, you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
+msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilizing a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n\n"
+"If you want to follow along, you can copy each code block and paste them into a Python IDE. At the end, you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
 
 # Grammarly checked
 #: pages/first_analysis.py:86
@@ -1060,10 +1091,10 @@ msgstr "We can begin the simulations now. Let's select a random time point for t
 #: pages/first_analysis.py:189
 msgid "FAL_SIMULATION_4"
 msgstr "We have successfully simulated our model and created a basic plot. However, the plot must include important details that we need to define. These aspects include:\n"
-"\n - Displaying changes in fluorescence over time\n"
-"\n - Including an initial dark phase followed by a light phase\n"
-"\n - Showing saturating light pulses at the beginning of each phase and at specific intervals during the light phase\n"
-"\n To address these issues, we will tackle each one individually. We recommend replacing the code at each new step that includes the `matplotlib` import at the top if you follow this guide. You will notice many similarities throughout the process." 
+        "\n - Displaying changes in fluorescence over time\n"
+        "\n - Including an initial dark phase followed by a light phase\n"
+        "\n - Showing saturating light pulses at the beginning of each phase and at specific intervals during the light phase\n"
+        "\n To address these issues, we will tackle each one individually. We recommend replacing the code at each new step that includes the `matplotlib` import at the top if you follow this guide. You will notice many similarities throughout the process."
 
 #: pages/first_analysis.py:190
 msgid "FAL_SIMULATION_FLOURESCENCE_HEADER"
@@ -1113,8 +1144,8 @@ msgstr "### Graphs with one result"
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_1"
 msgstr "We can look at the graph in three phases:\n"
-            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is 'F₀'. We then simulate a saturating light pulse which rapidly increases the fluorescence up to the peak value 'Fₘ'. Fₘ should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. 'Fₜ', the fluorescence simulated outside of saturating pulses, shows the photosystems behavior under the actinic light. We see that Fₜ decreases back to the F₀-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
-            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level (Fₘ') is the same as Fₘ, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F₀ which persists until the end of the experiment. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
+            "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is *F₀*. We then simulate a saturating light pulse which rapidly increases the fluorescence up to the peak value *Fₘ*. Fₘ should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. *Fₜ*, the fluorescence simulated outside of saturating pulses, shows the photosystems behavior under the actinic light. We see that Fₜ decreases back to the F₀-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
+            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level (*Fₘ'*) is the same as Fₘ, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F₀ which persists until the end of the experiment. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
             "3. Indeed, when we proceed to give another saturating pulse, we see that the new maximum fluorescence Fₘ' is noticeably lower than Fₘ, showing us that non-photochemical quenching has been activated and is funnelling excitation energy away from both fluorescence and photosynthesis. You can find this observation directly reflected in the formula to estimate NPQ:"
 
 #: pages/first_analysis.py:262
@@ -1127,7 +1158,7 @@ msgstr "### Graphs with old and new results"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_DUO"
-msgstr "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol m⁻² s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behavior implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ's, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
+msgstr "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol m⁻² s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behavior implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ' values, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_EXPANDER"
@@ -1144,17 +1175,17 @@ msgstr "**See our interpretation**"
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS"
 msgstr "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
-"1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
-"    - When the light is being turned on, how does the reaction differ to when you used 100 μmol m⁻² s⁻¹? What does that mean to the plant?\n"
-"    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
-"2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
-"    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
-"3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
-"    - Lower the time between the saturation pulses. What can you see?\n"
-"    - Does it seem like the saturation pulses affect the plant's photosynthesis?\n"
-"4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
-"    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
-"    - Does this depend on the other settings?"
+        "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
+        "    - When the light is being turned on, how does the reaction differ to when you used 100 μmol m⁻² s⁻¹? What does that mean to the plant?\n"
+        "    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
+        "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
+        "    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
+        "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
+        "    - Lower the time between the saturation pulses. What can you see?\n"
+        "    - Does it seem like the saturation pulses affect the plant's photosynthesis?\n"
+        "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
+        "    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
+        "    - Does this depend on the other settings?"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS_EXTEND"
@@ -1176,6 +1207,11 @@ msgstr "With the default values, the following simulation shows you a typical PA
 "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
 "    - With a light intensity of 500 to 900 μmol m⁻² s⁻¹ the NPQ adaption seems to be finished after three to four seconds. We should measure at least this long to capture the whole process.\n"
 "    - With lower light intensities this adaption process takes less time. So a shorter measurement might be feasible."
+" - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
+" - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol m-² s-¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
+"4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
+" - Bei einer Lichtintensität von 500 bis 900 μmol m-² s-¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
+" - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS_EXTEND"
@@ -1247,47 +1283,25 @@ msgstr "**See our interpretation**"
 msgid "MEM_GUIDING_QUESTIONS"
 msgstr "With the default values, the simulation below shows a typical experiment depicting the plant light memory. To investigate it further, you could try the following:\n"
 "1. :blue[The light intensity and duration during the training phase determine the extend of the light memory. How does does the plant react, when you change it?]\n"
-"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?"
+"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?\n"
 "    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
 "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
 "2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
 "    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
-"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
-"    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
-"    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
-"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_ANSWERS"
 msgstr "With the default values, the simulation below shows a typical experiment depicting the plant light memory. To investigate it further, you could try the following:\n"
 "1. :blue[The light intensity and duration during the training phase determine the extend of the light memory. How does does the plant react, when you change it?]\n"
-"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?"
+"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?\n"
 "    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
 "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
 "2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
 "    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
-"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
-"    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
-"    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
-"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 
 
 

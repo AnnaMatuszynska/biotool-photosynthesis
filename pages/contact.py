@@ -20,48 +20,45 @@ def make_page(text: Callable[[str], str], language: str, version: str):
         "We welcome your feedback and questions about our project! Here are the best ways to get in touch with our team members:"
     )
 
-    st.markdown("### Sarah Philipps")
-    st.markdown("- **Email:** sarah.philipps@rwth-aachen.de")
-    st.markdown("- **Topics:** education, motivation behind the platform, and general inquiries")
-
-    st.markdown("### Marvin van Aalst")
-
-    st.markdown("- **Email:** marvin.van.aalst@hhu.de")
-    st.markdown("- **Topics:** technical questions about the platform, programming and software development")
     st.markdown(
-        "- **Website:** [Heinrich Heine University Duesseldorf](https://www.qtb.hhu.de/qtb-team/qtb-team-details?tt_address%5Bfunktion%5D=26702&tt_address%5Bperson%5D=21874&cHash=9ebb911fc0f89ce42ec1fd253420bca6)"
+        "### Sarah Philipps\n"
+        "- **Email:** sarah.philipps@rwth-aachen.de\n"
+        "- **Topics:** education, motivation behind the platform, and general inquiries\n"
     )
 
-    st.markdown("### Tobias Pfennig")
-
-    st.markdown("- **Email:** tobias.pfennig@rwth-aachen.de")
-    st.markdown("- **Topics:** fluorescence measuring methods and modelling of photosynthesis")
     st.markdown(
-        "- **Website:** [RWTH Aachen](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljpm/Tobias-Pfennig/)"
+        "### Tobias Pfennig\n"
+        "- **Email:** tobias.pfennig@rwth-aachen.de\n"
+        "- **Topics:** fluorescence measuring methods and modelling of photosynthesis\n"
+        "- **Website:** [RWTH Aachen](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljpm/Tobias-Pfennig/)\n"
     )
 
-    st.markdown("### Elouën Corvest")
-
-    st.markdown("- **Email:** elouen.corvest@rwth-aachen.de")
-    st.markdown("- **Topics:** available computational models of photosynthesis")
     st.markdown(
-        "- **Website:** [RWTH Aachen](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljuk/Elouen-Corvest/lidx/1/)"
+        "### Elouën Corvest\n"
+        "- **Email:** elouen.corvest@rwth-aachen.de\n"
+        "- **Topics:** available computational models of photosynthesis"
+        "- **Website:** [RWTH Aachen](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~wljuk/Elouen-Corvest/lidx/1/)\n"
     )
 
-    st.markdown("### Lisa Fürtauer")
-
-    st.markdown("- **Email:** lisa.fuertauer@bio3.rwth-aachen.de")
-    st.markdown("- **Topics:** research on photosynthesis in the context of climat change")
     st.markdown(
-        "- **Website:** [RWTH Aachen](https://www.bio3.rwth-aachen.de/cms/BIO3/Das-Institut/~tcejj/Juniorprofessur-Molekulare-Systembiologi/)"
+        "### Marvin van Aalst\n"
+        "- **Email:** marvin.van.aalst@hhu.de\n"
+        "- **Topics:** technical questions about the platform, programming and software development\n"
+        "- **Website:** [Heinrich Heine University Duesseldorf](https://www.qtb.hhu.de/qtb-team/qtb-team-details?tt_address%5Bfunktion%5D=26702&tt_address%5Bperson%5D=21874&cHash=9ebb911fc0f89ce42ec1fd253420bca6)\n"
     )
 
-    st.markdown("### Anna Matuszyńska")
-
-    st.markdown("- **Email:** anna.matuszynska@rwth-aachen.de")
-    st.markdown("- **Topics:** general project inquiries, computational modelling, photosynthesis")
     st.markdown(
-        "- **Website:** [RWTH Aachen](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~ywkwc/Anna-Matuszy-324-ska/)"
+        "### Lisa Fürtauer\n"
+        "- **Email:** lisa.fuertauer@bio3.rwth-aachen.de\n"
+        "- **Topics:** research on photosynthesis in the context of climat change\n"
+        "- **Website:** [RWTH Aachen](https://www.bio3.rwth-aachen.de/cms/BIO3/Das-Institut/~tcejj/Juniorprofessur-Molekulare-Systembiologi/)\n"
+    )
+
+    st.markdown(
+        "### Anna Matuszyńska\n"
+        "- **Email:** anna.matuszynska@rwth-aachen.de\n"
+        "- **Topics:** general project inquiries, computational modelling, photosynthesis\n"
+        "- **Website:** [RWTH Aachen](https://www.cpbl.rwth-aachen.de/cms/CPBL/Die-Juniorprofessur/Unser/~ywkwc/Anna-Matuszy-324-ska/)\n"
     )
 
     st.markdown(
