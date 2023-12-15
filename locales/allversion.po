@@ -39,7 +39,57 @@ msgid "INSERT_PLACEHOLDER_HERE"
 4bio-pl msgstr ""
 4bio-es msgstr ""
 
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_EN"
+4math-en msgstr "English"
+4math-de msgstr "Englisch"
+4math-fr msgstr "Anglais"
+4math-pl msgstr "Angielski"
+4math-es msgstr ""
+4bio-en msgstr "English"
+4bio-de msgstr "Englisch"
+4bio-fr msgstr "Anglais"
+4bio-pl msgstr "Angielski"
+4bio-es msgstr ""
 
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_DE"
+4math-en msgstr "German"
+4math-de msgstr "Deutsch"
+4math-fr msgstr "Allemand"
+4math-pl msgstr "Niemiecki"
+4math-es msgstr ""
+4bio-en msgstr "German"
+4bio-de msgstr "Deutsch"
+4bio-fr msgstr "Allemand"
+4bio-pl msgstr "Niemiecki"
+4bio-es msgstr ""
+
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_PL"
+4math-en msgstr "Polish"
+4math-de msgstr "Polnisch"
+4math-fr msgstr "Polonais"
+4math-pl msgstr "Polski"
+4math-es msgstr ""
+4bio-en msgstr "Polish"
+4bio-de msgstr "Polnisch"
+4bio-fr msgstr "Polonais"
+4bio-pl msgstr "Polski"
+4bio-es msgstr ""
+
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_FR"
+4math-en msgstr "French"
+4math-de msgstr "Französisch"
+4math-fr msgstr "Français"
+4math-pl msgstr "Francuski"
+4math-es msgstr ""
+4bio-en msgstr "French"
+4bio-de msgstr "Französisch"
+4bio-fr msgstr "Français"
+4bio-pl msgstr "Francuski"
+4bio-es msgstr ""
 
 #: Start.py:41
 #: pages/first_analysis.py:459

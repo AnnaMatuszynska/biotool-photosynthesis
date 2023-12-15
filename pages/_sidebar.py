@@ -73,16 +73,20 @@ def fill_sidebar(placeholder_sidebar):
             ),
         )
         # language selectbox
-        languages = ["English", "German", "Polish"]  # , "French", "Spanish"]
-        language_to_idx = dict(zip(languages, range(len(languages))))
-        # with st.session_state["placeholder_languages"]:
+        languages = {
+            'English': '🇬🇧 ' + text('SDE_LANGUAGE_EN'),
+            'German': '🇩🇪 ' + text('SDE_LANGUAGE_DE'),
+            'Polish': '🇵🇱 ' + text('SDE_LANGUAGE_PL'),
+            'French': '🇫🇷 ' + text('SDE_LANGUAGE_FR'),
+        }
+
         unkeep("language")
         language = cast(
             str,
             st.selectbox(
                 label="⚙ Language 🌍💬",
-                options=languages,
-                # index=language_to_idx[st.session_state["language"]],
+                options=[i for i in languages.keys()],
+                format_func=lambda x: languages.get(x),
                 key="_language",
                 on_change=keep,
                 args=["language"],
