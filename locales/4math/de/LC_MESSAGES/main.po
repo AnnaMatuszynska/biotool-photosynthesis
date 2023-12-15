@@ -704,54 +704,54 @@ msgid "MDL_FVCB_4"
 msgstr "Die Berechnung von A mit diesen Gleichungen ist relativ einfach, aber das Modell hat einen entscheidenden Nachteil. Es bezieht die Zeit nicht mit ein und beschränkt sich auf einen konstanten, stationären Zustand. Pflanzen können zwar einen stationären Zustand erreichen, doch ist dies in der Außenwelt aufgrund der ständig schwankenden Umwelt nicht typisch für sie. Hier sind dynamische Modelle, wie das SIR-Modell oder andere Photosynthesemodelle, besonders gut geeignet."
 
 msgid "MDL_FVCB_5"
-msgstr ""
+msgstr "Trotz dieses erheblichen Nachteils wurde das FvCB-Modell weithin gelobt. Vor allem wegen seiner Einfachheit kann es leicht in andere, komplexere Modelle integriert werden, die sich zum Beispiel mit der Mesophyll-Leitfähigkeit&nbsp;[3] oder dem Einsatz von Bikarbonat-Transportern an der Chloroplastenhülle&nbsp;[4] beschäftigen. Wir haben eine interaktive Simulation mit den vier obigen Gleichungen erstellt, um dir diese Einfachheit zu zeigen. Um dich nicht zu überfordern, kannst du O, J und T<sub>p</sub> ändern, die jeweils nur die verschiedenen As (A<sub>c</sub>, A<sub>c</sub> und A<sub>c</sub>) ändern. Die übrigen Parameter wurden auf die Werte gesetzt, die in der Übersicht von S. von Caemmerer verwendet wurden, aus der wir diese Gleichungen entnommen haben&nbsp;[5]."
 
 msgid "MDL_FVCB_SLIDERS_PRECISION"
-msgstr ""
+msgstr "Präzision"
 
 msgid "MDL_FVCB_SLIDERS_TEXT"
-msgstr ""
+msgstr "Schieberegler"
 
 msgid "MDL_FVCB_SLIDERS_O"
-msgstr ""
+msgstr "Chloroplasten-O₂-Partialdruck [mbar]"
 
 msgid "MDL_FVCB_SLIDERS_J"
-msgstr ""
+msgstr "Elektronentransport-Rate (J) [µmol m-² s-¹]"
 
 msgid "MDL_FVCB_SLIDERS_Tp"
-msgstr ""
+msgstr "Rate der anorganischen Phosphatversorgung (Tₚ) [µmol m-² s-¹]"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS"
-msgstr ""
+msgstr "Verwendete Standardparameter"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_VARIABLES"
-msgstr ""
+msgstr "Variablen"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_VALUES"
-msgstr ""
+msgstr "Werte"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_UNITS"
-msgstr ""
+msgstr "Einheiten"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_TOGGLE"
-msgstr ""
+msgstr "Anzeige"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_XLABEL"
-msgstr ""
+msgstr "Interzellulär"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_YLABEL"
-msgstr ""
+msgstr "Assimilation [µmol m-² s-¹]"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_EMPTY"
-msgstr ""
+msgstr "Hier gibt's nichts zu sehen"
 
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
@@ -760,77 +760,77 @@ msgstr "### Das *e*-Photosynthesemodell"
 # Grammarly checked
 #: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
-msgstr ""
+msgstr "2012 entwickelten Xin-Guang Zhu, Yu Wang, Donald R. Ort und Stephen P. Long das *e*-Photosynthesemodell, um eine realistische Darstellung der Photosynthese zu ermöglichen [6]. Das Modell ist komplex und dynamisch und umfasst die meisten Komponenten der C<sub>3</sub>-Photosynthese, vereinfacht aber nur dort, wo es nötig ist. Es umfasst Reaktionen der Lichtabsorption, Lichtreaktionen und Kohlenstoffassimilation und baut auf den früheren Arbeiten von Zhu et al. auf, einschließlich ihres Fluoreszenzmodells [7] und ihres Kohlenstoffstoffwechselmodells [8]. Wenn du mit der C<sub>3</sub>-Fotosynthese nicht vertraut bist, kannst du in der unten verlinkten Dropbox mehr über die verschiedenen Arten der Fotosynthese erfahren."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
-msgstr ""
+msgstr "Das e-Photosynthesemodell ist wie das SIR-Modell, aber in einem viel größeren Maßstab. Es verwendet ein ODE-System mit insgesamt 294 Gleichungen, von denen 113 die ODEs beschreiben. Mit Hilfe verschiedener biochemischer Parameter kann es die kleinsten Aspekte der Photosynthese berechnen, ohne dass ein bestimmtes Ziel für die Berechnung vorgegeben ist, wie z. B. die Kohlenstoffassimilation durch die FvCB. Das macht das Modell zu einem sehr allgemein gehaltenen Photosynthesemodell."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_3"
-msgstr ""
+msgstr "Das e-Photosynthesemodell wird jedoch vor allem wegen seiner Komplexität noch nicht viel genutzt. Damit es auch für andere Parameter als die, die bei seiner Erstellung verwendet wurden, funktioniert, müssen viele gemessene biochemische Parameter einbezogen werden. Oft müssen die Forscher diese Parameter selbst finden, da sie noch nicht veröffentlicht wurden. Das macht das Modell kompliziert und unpraktisch für die konkrete Forschung."
 
 #: pages/model_explain.py:393
 msgid "MDL_HEADLINE_BELLASIO"
-msgstr ""
+msgstr "### Das Bellasio-Modell"
 
 # Grammarly checked
 #: pages/model_explain.py:395
 msgid "MDL_BELLASIO_1"
-msgstr ""
+msgstr "Das Bellassio-Modell wurde 2018 als Lösung für das Problem der zu vereinfachten stationären Modelle und zu komplexen dynamischen Modelle eingeführt [9]. Es unterteilt das Blattmodell in drei Kompartimente: die Atmosphäre, den Raum zwischen den Zellen und das Mesophyll, in dem der Großteil der photosynthetischen Aktivität der Pflanze stattfindet. Das Modell konzentriert sich auf die Prozesse der Kohlenstoffassimilation und integriert die Lichtreaktionen und das Verhalten der Stomata, d. h. die Prozesse, durch die die Pflanze während der Photosynthese Kohlendioxid aufnimmt und Wasserdampf abgibt. Die Komplexität des Modells liegt zwischen dem FvCB- und dem *e*-Photosynthesemodell, da es sich von beiden Modellen inspirieren lässt, um seinen Rahmen zu bilden."
 
 # Grammarly checked
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_2"
-msgstr ""
+msgstr "Um das Modell zu erstellen, baute der Autor auf drei Hauptmodelle auf. Die Gleichungen von Yin et al. [10] für die Lichtreaktionen wurden modifiziert, das Kohlenstoff-Stoffwechselmodell von Zhu et al. [8] wurde für die Simulation der Kohlenstoffassimilation verwendet und ein hydro-mechanisches Stomata-Leitfähigkeitsmodell wurde unter Verwendung des früheren Modells des Autors [11] eingeführt. Die Endkohlenstoffassimilation wird mit Teilen des FvCB-Modells [2] berechnet."
 
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_3"
-msgstr ""
+msgstr "Um das Modell einem breiteren Nutzerkreis zugänglich zu machen, hat der Autor einige Vereinfachungen eingeführt, die die Rechenanforderungen reduzieren. Dadurch konnte das Modell mit einem Tabellenkalkulationsprogramm wie Microsoft Excel simuliert werden, so dass es auch für Personen mit begrenzter Rechenerfahrung zugänglich ist."
 
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_4"
-msgstr ""
+msgstr "Die Parameter des Modells basieren auf gemittelten Literaturwerten, die aus Originalgleichungen abgeleitet oder mit plausiblen Werten belegt wurden. So entsteht ein komplettes, vereinfachtes Paket der C<sub>3</sub>-Photosynthese auf Blattebene, das die rechnergestützte Modellierung für Pflanzenbiologen leichter zugänglich macht."
 
 #: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
-msgstr ""
+msgstr "Der Unterschied zwischen C3-, C4- und CAM-Pflanzen [12]"
 
 #: pages/model_explain.py:408
 msgid "MDL_HEADLINE_C3"
-msgstr ""
+msgstr "### C<sub>3</sub> Plants"
 
 # Grammarly checked
 #: pages/model_explain.py:409
 msgid "MDL_C3_1"
-msgstr ""
+msgstr "Die meisten Pflanzen sind C<sub>3</sub>-Pflanzen, das heißt, die erste stabile Verbindung, die bei der Kohlenstofffixierung entsteht, ist ein Drei-Kohlenstoff-Molekül namens 3-Posphoglycerat (3-PGA). Dieser Prozess findet in den Mesophyllzellen der Pflanzenblätter statt und beinhaltet eine Kette von biochemischen Reaktionen, die Kohlendioxid (CO<sub>2</sub>) in Kohlenhydrate wie Glukose umwandeln."
 
 #: pages/model_explain.py:411
 msgid "MDL_HEADLINE_C4"
-msgstr ""
+msgstr "### C<sub>4</sub> Pflanzen"
 
 # Grammarly checked
 #: pages/model_explain.py:412
 msgid "MDL_C4_1"
-msgstr ""
+msgstr "Bei bestimmten Pflanzen ist die C<sub>4</sub>-Photosynthese ein alternativer Prozess, der sich entwickelt hat, um sich an heiße und trockene Umgebungen anzupassen. Im Gegensatz zur C<sub>3</sub>-Photosynthese steigert die C<sub>4</sub>-Photosynthese die Effizienz der Kohlenstofffixierung, indem sie CO<sub>2</sub> in der Nähe von RuBisCO in den Bündelscheidenzellen konzentriert. Diese Trennung verringert die Photorespiration, ein verschwenderischer Prozess, der in C<sub>3</sub>-Pflanzen bei hohen Temperaturen und niedrigen CO<sub>2</sub>-Konzentrationen auftreten kann. Die C<sub>4</sub>-Photosynthese kommt in verschiedenen Pflanzenfamilien vor, z. B. bei Gräsern (z. B. Mais, Zuckerrohr) und bestimmten dikotylen Pflanzen (z. B. Amaranthaceae, Chenopodiaceae). Sie ist eine Anpassung, die es den Pflanzen ermöglicht, in Umgebungen mit hohen Temperaturen, intensiver Sonneneinstrahlung und begrenzter Wasserverfügbarkeit zu gedeihen."
 
 #: pages/model_explain.py:414
 msgid "MDL_HEADLINE_CAM"
-msgstr ""
+msgstr "### CAM-Pflanzen"
 
 # Grammarly checked
 #: pages/model_explain.py:415
 msgid "MDL_CAM_1"
-msgstr ""
+msgstr "Eine spezielle Form der Photosynthese, die CAM (Crassulacean Acid Metabolism) genannt wird, findet sich in Pflanzen, die an trockene und wasserarme Umgebungen angepasst sind. Diese Pflanzen verfügen über eine einzigartige Methode zur Trennung von Kohlenstofffixierung und Calvin-Zyklus, bei der sie nachts ihre Spaltöffnungen öffnen, um Kohlendioxid aufzunehmen und es als organische Säure mit vier Kohlenstoffatomen, wie Malat oder Apfelsäure, zu fixieren und in großen Vakuolen in ihren Zellen zu speichern. Tagsüber schließen sie ihre Spaltöffnungen, um den Wasserverlust durch Transpiration zu verhindern, und geben das CO<sub>2</sub> aus dem Malat in die Chloroplasten ab, um es im Calvin-Zyklus zu verwenden, ähnlich wie C<sub>3</sub>-Pflanzen. Der Name dieses Photosynthesewegs, \"Crassulaceen-Säurestoffwechsel,\", wurde von der Pflanzenfamilie der Crassulaceae abgeleitet, wo er zuerst entdeckt wurde. Er kommt aber auch in anderen Pflanzenfamilien wie Sukkulenten, Kakteen, Bromelien und einigen Orchideen vor. Diese Pflanzenarten sind häufig in Wüstenregionen und anderen Gebieten mit begrenzten Wasserressourcen zu finden."
 
 # Grammarly checked
 #: pages/model_explain.py:289
 msgid "MDL_SIR_IMPLEMENTATION_MANUAL_1"
-msgstr ""
+msgstr "Es muss darauf geachtet werden, dass der Vektor 'y0' mit den ausgepackten Variablennamen und den entsprechenden Differentialgleichungen übereinstimmt. Das Gleiche gilt für die Reihenfolge der Parameter `beta` und `gamma`. Trotzdem erhalten wir ein ähnliches Ergebnis, wenn wir es mit dem folgenden Code aufzeichnen:"
 
 #: pages/model_explain.py:309
 msgid "MDL_SIR_IMPLEMENTATION_MANUAL_2"
-msgstr ""
+msgstr "Es ist klar, dass diese Art, Modelle zu schreiben, sehr fehleranfällig und schwer zu modularisieren ist. Deshalb können wir die Situation verbessern, indem wir `modelbase` verwenden."
 
 #: pages/model_explain.py:314
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_1"
@@ -838,17 +838,22 @@ msgstr "Zunächst werden wir die Ratenfunktionen `Infektion` und `Erholung` als 
 
 #: pages/model_explain.py:318
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_2"
-msgstr ""
+msgstr "Als nächstes können wir das Modell erstellen. Dazu geben wir alle Systemvariablen mit `add_compounds` und die Parameter als Wörterbuch mit `add_parameters` an"
 
 # Grammarly checked
 #: pages/model_explain.py:322
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_3"
-msgstr ""
+msgstr "Zum Schluss fügen wir die Übergänge mit `add_reaction_from_args` hinzu und liefern:\n"
+"1. einen Namen für den Übergang\n"
+"2. einen Verweis auf die Ratenfunktion\n"
+"3. die Stöchiometrie, die angibt, wie sich die Rate auf die Systemvariablen auswirkt\n"
+"4. die Argumente für die Ratenfunktion"
 
 # Grammarly checked
 #: pages/model_explain.py:326
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
-msgstr ""
+msgstr "Daraus stellt modelbase automatisch ein System von ODEs zusammen, das untersucht werden kann. Um kleinere Fehler zu vermeiden, prüft modelbase während dieses Prozesses auf typische Inkonsistenzen und zeigt entsprechende Warnungen an.\n\n"
+" Du kannst das System dann ganz einfach simulieren und aufzeichnen, wie unten abgebildet, was dir die Grafik liefert, die du vielleicht schon gesehen hast:"
 
 # Grammarly checked
 #: pages/model_explain.py:346

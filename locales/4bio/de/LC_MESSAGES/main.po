@@ -715,51 +715,51 @@ msgid "MDL_FVCB_5"
 msgstr ""
 
 msgid "MDL_FVCB_SLIDERS_PRECISION"
-msgstr ""
+msgstr "Präzision"
 
 msgid "MDL_FVCB_SLIDERS_TEXT"
-msgstr ""
+msgstr "Schieberegler"
 
 msgid "MDL_FVCB_SLIDERS_O"
-msgstr ""
+msgstr "Chloroplasten-O₂-Partialdruck [mbar]"
 
 msgid "MDL_FVCB_SLIDERS_J"
-msgstr ""
+msgstr "Elektronentransport-Rate (J) [µmol m-² s-¹]"
 
 msgid "MDL_FVCB_SLIDERS_Tp"
-msgstr ""
+msgstr "Rate der anorganischen Phosphatversorgung (Tₚ) [µmol m-² s-¹]"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS"
-msgstr ""
+msgstr "Verwendete Standardparameter"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_VARIABLES"
-msgstr ""
+msgstr "Variablen"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_VALUES"
-msgstr ""
+msgstr "Werte"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_UNITS"
-msgstr ""
+msgstr "Einheiten"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_TOGGLE"
-msgstr ""
+msgstr "Anzeige"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_XLABEL"
-msgstr ""
+msgstr "Interzellulär"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_YLABEL"
-msgstr ""
+msgstr "Assimilation [µmol m-² s-¹]"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_EMPTY"
-msgstr ""
+msgstr "Hier gibt's nichts zu sehen"
 
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
@@ -768,68 +768,68 @@ msgstr "### Das *e*-Photosynthesemodell"
 # Grammarly checked
 #: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
-msgstr ""
+msgstr "Im Jahr 2012 entwickelten Xin-Guang Zhu, Yu Wang, Donald R. Ort und Stephen P. Long das *e*-Photosynthesemodell, um die Photosynthese realistisch darzustellen[5]. Das Modell ist komplex und dynamisch und umfasst die meisten Komponenten der Photosynthese, vereinfacht aber nur dort, wo es nötig ist."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
-msgstr ""
+msgstr "Das Modell bezieht frühere Arbeiten von Zhu et al. mit ein, indem es Reaktionen einbezieht, die mit der Lichtabsorption, der Übertragung von Anregungsenergie, der Ladungstrennung und der Elektronenübertragung um PSII aus ihrem Fluoreszenzmodell&nbsp;[6] verbunden sind. Analoge Reaktionen werden auch für PSI eingeführt, zusammen mit Reaktionen aus ihrem Kohlenstoff-Stoffwechselmodell&nbsp;[7], wie z.B. Reaktionen, die am C<sub>3</sub>-Zyklus, der Saccharose- und Stärkesynthese und der Photorespiration beteiligt sind. Das Modell berücksichtigt den Ionentransfer zwischen Lumen und Stroma, die ATP- und NADPH-Synthese, die RuBisCO-Aktivierung durch die RuBisCO-Aktivase, NPQ durch den luminalen pH-Wert und den Xanthophyll-Zyklus sowie die Regulierung der Enzymaktivitäten durch das Ferredoxin (Fd)-Thioredoxin-System."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_3"
-msgstr ""
+msgstr "Das e-Photosynthesemodell ist ein massives und komplexes dynamisches Modell, das insgesamt 294 Gleichungen verwendet. Es berechnet die zeitliche Veränderung von 113 verschiedenen Verbindungen in Form von Raten, ähnlich wie das SIR-Modell. Diese Komplexität hat seine Nutzung eingeschränkt. Der Aufbau des Modells ist kompliziert, und die Anpassung an andere Anlagen oder Simulationsideen, abgesehen von den Standardwerten, erfordert eine langwierige und mühsame Parametrisierung. Deshalb können wir es hier nicht für dich simulieren."
 
 #: pages/model_explain.py:393
 msgid "MDL_HEADLINE_BELLASIO"
-msgstr ""
+msgstr "### Das Bellasio-Modell"
 
 # Grammarly checked
 #: pages/model_explain.py:395
 msgid "MDL_BELLASIO_1"
-msgstr ""
+msgstr "Das Bellassio-Modell wurde 2018 entwickelt, um die Lücke zwischen vereinfachten, unrealistischen Steady-State-Modellen und komplexeren, vollständigen dynamischen Modellen zu schließen&nbsp;[8]. Es unterteilt das Blattmodell in drei Kompartimente: die Atmosphäre, den Interzellularraum und das Mesophyll. Dieses Modell konzentriert sich auf die Prozesse der Kohlenstoffassimilation und integriert Lichtreaktionen und das Verhalten der Stomata, um ein umfassenderes Blatt- und Pflanzenmodell zu erstellen. Es kann zwischen dem FvCB- und dem *e*-Photosynthesemodell eingeordnet werden, da es sich von beiden inspirieren lässt und einige Aspekte beider Modelle nutzt, um seinen Rahmen aufzubauen."
 
 # Grammarly checked
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_2"
-msgstr ""
+msgstr "Um dieses Modell zu erstellen, haben die Autoren auf drei Hauptmodelle aufgebaut. Sie modifizierten die Gleichungen von Yin et al.&nbsp;[9] für die Lichtreaktionen, nutzten das Kohlenstoff-Stoffwechselmodell von Zhu et al.&nbsp;[7], um den Kohlenstoff-Assimilationsprozess zu simulieren, und führten den stomatären Leitwert mit ihrem früheren Modell&nbsp;[10] ein. Die endgültige Kohlenstoffassimilation wird mit Teilen des FvCB-Modells&nbsp;[1] berechnet."
 
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_3"
-msgstr ""
+msgstr "Um das Modell einem breiteren Nutzerkreis zugänglich zu machen, hat der Autor Vereinfachungen eingeführt, wie z. B. die Annahme der Gleichförmigkeit zwischen den interzellulären Zellen ohne interne Konzentrationsgradienten. Das Modell wurde außerdem so konzipiert, dass es mit Microsoft Excel funktioniert, so dass es auch von unerfahrenen Biologen verwendet werden kann."
 
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_4"
-msgstr ""
+msgstr "Die Parameter des Modells basieren auf gemittelten Literaturwerten, die aus den ursprünglichen Gleichungen abgeleitet oder mit plausiblen Werten belegt wurden. So entsteht ein komplettes, vereinfachtes Paket der C<sub>3</sub>-Photosynthese auf Blattebene, mit dem mehr Pflanzenbiologen in die Computermodellierung eingeführt werden können."
 
 #: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
-msgstr ""
+msgstr "Der Unterschied zwischen C3-, C4- und CAM-Pflanzen [12]"
 
 #: pages/model_explain.py:408
 msgid "MDL_HEADLINE_C3"
-msgstr ""
+msgstr "### C<sub>3</sub> Plants"
 
 # Grammarly checked
 #: pages/model_explain.py:409
 msgid "MDL_C3_1"
-msgstr ""
+msgstr "Die meisten Pflanzen sind C<sub>3</sub>-Pflanzen, das heißt, die erste stabile Verbindung, die bei der Kohlenstofffixierung entsteht, ist ein Drei-Kohlenstoff-Molekül namens 3-Posphoglycerat (3-PGA). Dieser Prozess findet in den Mesophyllzellen der Pflanzenblätter statt und beinhaltet eine Kette von biochemischen Reaktionen, die Kohlendioxid (CO<sub>2</sub>) in Kohlenhydrate wie Glukose umwandeln."
 
 #: pages/model_explain.py:411
 msgid "MDL_HEADLINE_C4"
-msgstr ""
+msgstr "### C<sub>4</sub> Pflanzen"
 
 # Grammarly checked
 #: pages/model_explain.py:412
 msgid "MDL_C4_1"
-msgstr ""
+msgstr "Bei bestimmten Pflanzen ist die C<sub>4</sub>-Photosynthese ein alternativer Prozess, der sich entwickelt hat, um sich an heiße und trockene Umgebungen anzupassen. Im Gegensatz zur C<sub>3</sub>-Photosynthese steigert die C<sub>4</sub>-Photosynthese die Effizienz der Kohlenstofffixierung, indem sie CO<sub>2</sub> in der Nähe von RuBisCO in den Bündelscheidenzellen konzentriert. Diese Trennung verringert die Photorespiration, ein verschwenderischer Prozess, der in C<sub>3</sub>-Pflanzen bei hohen Temperaturen und niedrigen CO<sub>2</sub>-Konzentrationen auftreten kann. Die C<sub>4</sub>-Photosynthese kommt in verschiedenen Pflanzenfamilien vor, z. B. bei Gräsern (z. B. Mais, Zuckerrohr) und bestimmten dikotylen Pflanzen (z. B. Amaranthaceae, Chenopodiaceae). Sie ist eine Anpassung, die es den Pflanzen ermöglicht, in Umgebungen mit hohen Temperaturen, intensiver Sonneneinstrahlung und begrenzter Wasserverfügbarkeit zu gedeihen."
 
 #: pages/model_explain.py:414
 msgid "MDL_HEADLINE_CAM"
-msgstr ""
+msgstr "### CAM-Pflanzen"
 
 # Grammarly checked
 #: pages/model_explain.py:415
 msgid "MDL_CAM_1"
-msgstr ""
+msgstr "Eine spezielle Form der Photosynthese, die CAM (Crassulacean Acid Metabolism) genannt wird, findet sich in Pflanzen, die an trockene und wasserarme Umgebungen angepasst sind. Diese Pflanzen verfügen über eine einzigartige Methode zur Trennung von Kohlenstofffixierung und Calvin-Zyklus, bei der sie nachts ihre Spaltöffnungen öffnen, um Kohlendioxid aufzunehmen und es als organische Säure mit vier Kohlenstoffatomen, wie Malat oder Apfelsäure, zu fixieren und in großen Vakuolen in ihren Zellen zu speichern. Tagsüber schließen sie ihre Spaltöffnungen, um den Wasserverlust durch Transpiration zu verhindern, und geben das CO<sub>2</sub> aus dem Malat in die Chloroplasten ab, um es im Calvin-Zyklus zu verwenden, ähnlich wie C<sub>3</sub>-Pflanzen. Der Name dieses Photosynthesewegs, \"Crassulaceen-Säurestoffwechsel,\", wurde von der Pflanzenfamilie der Crassulaceae abgeleitet, wo er zuerst entdeckt wurde. Er kommt aber auch in anderen Pflanzenfamilien wie Sukkulenten, Kakteen, Bromelien und einigen Orchideen vor. Diese Pflanzenarten sind häufig in Wüstenregionen und anderen Gebieten mit begrenzten Wasserressourcen zu finden."
 
 # Grammarly checked
 #: pages/model_explain.py:289
@@ -969,7 +969,7 @@ msgstr "#### Proteinkomplexe\n"
 #: Anna's explanation of the model
 #: pages/first_analysis.py:28
 msgid "FAL_HEADLINE_MODEL_EQUATIONS"
-msgstr "### Mathematische Gleichungen"
+msgstr ""
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:29
@@ -1364,4 +1364,4 @@ msgstr "Wir hoffen, dass du auf dieser Website eine gründliche Einführung in d
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Pflanzen können sich an frühere Lichteinwirkungen erinnern und ihre Photosyntheseraten entsprechend anpassen. Dieses Kurzzeitgedächtnis ermöglicht es ihnen, Lichtenergie zu absorbieren und sich effizient an verschiedene Umweltbedingungen anzupassen.\n"
 " - Wir glauben, dass die Messung von PAM eine spannende und effektive Methode ist, um mehr über die komplizierten Mechanismen zu erfahren, die dem Wachstum und der Entwicklung von Pflanzen zugrunde liegen.\n"
-"\n Abschließend möchten wir dich bitten, über diese Ergebnisse und ihre weiterreichenden Auswirkungen auf unser Verständnis der natürlichen Welt nachzudenken. Dadurch wirst du in der Lage sein, die bemerkenswerte Komplexität und Großartigkeit des Pflanzenreichs zu erkennen und zu bewundern.\n\n Computermodelle gibt es für fast alle wissenschaftlichen Disziplinen, und selbst wenn wir nur Photosynthesemodelle betrachten, haben wir kaum an der Oberfläche dessen gekratzt, was es gibt. Hoffentlich hat dir dieser kleine Kurs gezeigt, wie interessant und nützlich die Modellierung sein kann. Bei einem Problem in der Zukunft wirst du denken: '*Könnte mir ein Modell dabei helfen*?'.\n\n **Aber vor allem hoffen wir, dass du Spaß an unserem Kurs hattest. Wenn du möchtest, gib uns ein Feedback und erzähle anderen von deinen Erfahrungen. Wir wünschen Ihnen einen schönen Tag!"
+"\n Abschließend möchten wir dich bitten, über diese Ergebnisse und ihre weiterreichenden Auswirkungen auf unser Verständnis der natürlichen Welt nachzudenken. Dadurch wirst du in der Lage sein, die bemerkenswerte Komplexität und Großartigkeit des Pflanzenreichs zu erkennen und zu bewundern.\n\n Computermodelle gibt es für fast alle wissenschaftlichen Disziplinen, und selbst wenn wir nur Photosynthesemodelle betrachten, haben wir kaum an der Oberfläche dessen gekratzt, was es gibt. Hoffentlich hat dir dieser kleine Kurs gezeigt, wie interessant und nützlich die Modellierung sein kann. Bei einem Problem in der Zukunft wirst du denken: '*Könnte mir ein Modell dabei helfen*?'.\n\n **Aber vor allem hoffen wir, dass du Spaß an unserem Kurs hattest. Wenn du möchtest, gib uns ein Feedback und erzähle anderen von deinen Erfahrungen. Wir wünschen Ihnen einen schönen Tag!**"
