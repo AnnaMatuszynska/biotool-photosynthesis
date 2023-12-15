@@ -19,7 +19,21 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_EN"
+msgstr "Anglais"
 
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_DE"
+msgstr "Allemand"
+
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_PL"
+msgstr "Polonais"
+
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_FR"
+msgstr "Français"
 
 #: Start.py:41
 #: pages/first_analysis.py:459
@@ -28,7 +42,7 @@ msgstr ""
 #: pages/photosynthesis.py:74
 #: pages/plant_memory.py:401
 msgid "LITERATURE"
-msgstr ""
+msgstr "Références"
 
 #: Start.py:42
 #: pages/first_analysis.py:460
@@ -36,30 +50,32 @@ msgstr ""
 #: pages/photosynthesis.py:75
 #: pages/plant_memory.py:402
 msgid "LITERATURE_ONPAGE"
-msgstr ""
+msgstr "Références sur cette page :"
 
 msgid "LITERATURE_PLANTS_AND_PYTHON"
-msgstr ""
+msgstr "Consultez également *Plants and Python*, un cours de python pour les biologistes:\n"
+            "- Plants & Python: A series of lessons in coding, plant biology, computation, and bioinformatics. (2022). The Plant Cell, 34(7), e1. https://doi.org/10.1093/plcell/koac187\n"
+            "- Site officiel: https://plantsandpython.github.io/PlantsAndPython"
 
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
-msgstr ""
+msgstr "Intensité de lumière de la phase lumineuse (AL) en μmol m⁻² s⁻¹"
 
 #: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
 msgid "SLIDER_PULSES"
-msgstr ""
+msgstr "Secondes entre les impulsions de saturation pendant la phase lumineuse"
 
 #: pages/first_analysis.py:371
 #: pages/plant_memory.py:272
 msgid "SLIDER_ACTIVATION"
-msgstr ""
+msgstr "Taux de conversion en zéaxanthine (CtZ) en pourcentage de la valeur par défaut"
 
 #: pages/first_analysis.py:380
 #: pages/plant_memory.py:278
 msgid "SLIDER_DEACTIVATION"
-msgstr ""
+msgstr "Taux de conversion en violaxanthine (CtV) en pourcentage de la valeur par défaut"
 
 # Grammarly checked
 #: Start.py:14
@@ -67,12 +83,12 @@ msgstr ""
 #: Start.py:14
 #: pages/contact.py:68
 msgid "PROGRAMS_USED"
-msgstr ""
+msgstr "Ce site web a été réalisé à l'aide de **Streamlit** : https://streamlit.io/. Certaines figures ont été crées à l'aide de **BioRender** : https://biorender.com."
 
 #: pages/first_analysis.py:402
 #: pages/plant_memory.py:297
 msgid "SPINNER"
-msgstr ""
+msgstr "Je fais un petit calcul pour vous :computer:"
 
 #: pages/first_analysis.py:420
 #: pages/first_analysis.py:432
@@ -80,7 +96,7 @@ msgstr ""
 #: pages/plant_memory.py:344
 #: pages/plant_memory.py:359
 msgid "AXIS_TIME_MIN"
-msgstr ""
+msgstr "Temps [min]"
 
 #: pages/first_analysis.py:419
 #: pages/first_analysis.py:431
@@ -88,88 +104,86 @@ msgstr ""
 #: pages/plant_memory.py:343
 #: pages/plant_memory.py:358
 msgid "AXIS_TIME_S"
-msgstr ""
+msgstr "Temps [s]"
 
 #: pages/first_analysis.py:421
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:316
 msgid "FLUO"
-msgstr ""
+msgstr "Fluorescence rel. (F/Fₘ) [u.a.]"
 
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:345
 msgid "AXIS_NPQ"
-msgstr ""
+msgstr "NPQ [u.a.]"
 
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:360
 msgid "AXIS_PHIPSII"
-msgstr ""
+msgstr "Φ(PSII)"
 
 #: pages/first_analysis.py:489
 msgid "NEW_LABEL"
-msgstr ""
+msgstr "Nouveau"
 
 #: pages/first_analysis.py:489
 msgid "OLD_LABEL"
-msgstr ""
+msgstr "Vieux"
 
 # SIDEBAR
 #: pages/_sidebar.py:14
 msgid "SDE_4BIO"
-msgstr ""
+msgstr "4Bio"
 
 #: pages/_sidebar.py:14
 msgid "SDE_4MATH"
-msgstr ""
+msgstr "4Math"
 
 #: pages/_sidebar.py:14
 msgid "VIDEO_TRANSCRIPT_SWITCH"
-msgstr ""
+msgstr "Afficher les transcriptions des vidéos"
 
 #: pages/_sidebar.py:14
 msgid "EXPANDER_VIDEO_TRANSCRIPT"
-msgstr ""
+msgstr "Transcription vidéo"
 
 
-
-#: This can be copied to add new text entries with translations
 #: Start.py:12
 msgid "STR_EXPANDER_ABOUT"
-msgstr ""
+msgstr "À propos de ce site"
 
 # Grammarly checked
 #: Start.py:13
 msgid "STR_EXPLANATION_ABOUT"
-msgstr ""
+msgstr "Ce site est disponible en ligne et directement utilisable à l'adresse <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. De plus, tout le code source peut être téléchargé via GitHub à l'adresse <https://github.com/AnnaMatuszynska/biotool-photosynthesis> et exécuté (hors ligne) localement. Pour plus d'informations sur le téléchargement et l'exécution du notebook, veuillez vous référer au fichier `README.md` sur GitHub."
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
-msgstr ""
+msgstr "# Photosynthèse *in silico* : un tableau de bord interactif pour étudier la photosynthèse à l'aide d'un modèle computationnel"
 
 #: Intro by Anna
 # Grammarly checked
 #: Start.py:10
 msgid "STR_INTRO"
-msgstr ""
+msgstr "Bienvenue sur le site d'un outil d'enseignement de la biologie, un projet lancé par le **Computational Life Science Lab** de l'université RWTH d'Aix-la-Chapelle, en Allemagne. Notre objectif est de fournir un outil d'enseignement adapté aux besoins des étudiants du 21e siècle. Nous voulons montrer comment la modélisation computationnelle soutient la recherche actuelle dans l'amélioration de notre compréhension du fonctionnement du monde. Nous avons choisi la photosynthèse comme LE processus pour le démontrer. En fin de compte, la photosynthèse est sans doute le processus le plus important sur Terre ! Pourquoi ne pas commencer votre aventure avec ce tableau de bord interactif en écoutant le processus de la photosynthèse."
 
 # Grammarly checked
 #: Start.py:18
 msgid "STR_HEADLINE_USAGE"
-msgstr ""
+msgstr "## Comment utiliser ce site"
 
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr ""
+msgstr "Nous nous adressons à la fois aux débutants curieux et aux apprenants plus avancés dans les domaines de la biologie et de la modélisation. Vous pouvez choisir dans le panneau latéral gauche l'une des deux versions de ce site à partir d'un menu déroulant (vous pouvez également cliquer sur le texte en surbrillance): <i>4Bio</i>, si vous vous sentez plus à l'aise avec la biologie, ou <a href='#' id='4Math'><i>4Math</i></a>, si vous voulez découvrir le contexte mathématique plus en détail. Nous avons également inclus des vidéos sur ce site. Si vous souhaitez lire les transcriptions, sélectionnez l'option <i>Afficher les transcriptions des vidéos</i> à gauche."
 
 # Grammarly checked
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
-msgstr ""
+msgstr "Dans cette version *4Bio*, nous vous présenterons le concept de modélisation et comment il peut être utilisé en biologie. Nous expliquerons également une méthode expérimentale pour mesurer la dynamique de la photosynthèse et calculer les paramètres photosynthétiques en détail. Ces méthodes seront ensuite utilisées sur un modèle mathématique simple d'adaptation à la lumière des plantes avec la possibilité de créer et d'étudier des mutants *in silico*. Dans cette version, plus de paramètres du modèle mathématique peuvent être modifiés, ce qui permet de créer des mutants *in silico* plus complexes, et plus de résultats seront générés."
 
 msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
-msgstr ""
+msgstr "La photosynthèse est le moteur de ce monde. De l'air que vous respirez à la nourriture que vous mangez, en fin de compte, c'est la lumière qui est à l'origine des plantes, des algues et des cellules plus petites. Sachant cela, vous pouvez comprendre à quel point il est important de connaître le fonctionnement de la photosynthèse. Si nous le savions exactement, nous pourrions être en mesure d'améliorer artificiellement ce processus naturel et de contribuer à la production de nourriture, de carburant et de nombreux autres produits chimiques dont nous avons besoin dans notre vie."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr ""

@@ -19,7 +19,21 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_EN"
+msgstr "Englisch"
 
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_DE"
+msgstr "Deutsch"
+
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_PL"
+msgstr "Polnisch"
+
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_FR"
+msgstr "Französisch"
 
 #: Start.py:41
 #: pages/first_analysis.py:459
@@ -132,8 +146,6 @@ msgid "EXPANDER_VIDEO_TRANSCRIPT"
 msgstr "Video Transkript"
 
 
-
-#: This can be copied to add new text entries with translations
 #: Start.py:12
 msgid "STR_EXPANDER_ABOUT"
 msgstr "Über diese Webseite"

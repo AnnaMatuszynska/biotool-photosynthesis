@@ -19,7 +19,21 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_EN"
+msgstr "English"
 
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_DE"
+msgstr "German"
+
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_PL"
+msgstr "Polish"
+
+#: pages/_sidebar.py:77
+msgid "SDE_LANGUAGE_FR"
+msgstr "French"
 
 #: Start.py:41
 #: pages/first_analysis.py:459
@@ -96,7 +110,7 @@ msgstr "Time [s]"
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:316
 msgid "FLUO"
-msgstr "Rel. Fluorescence (F/Fₘ) [a.u.]"
+msgstr "Fluorescence relative (F/Fₘ) [u.a.]"
 
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:345
@@ -134,8 +148,6 @@ msgid "EXPANDER_VIDEO_TRANSCRIPT"
 msgstr "Video transcript"
 
 
-
-#: This can be copied to add new text entries with translations
 #: Start.py:12
 msgid "STR_EXPANDER_ABOUT"
 msgstr "About this Website"
