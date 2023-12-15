@@ -339,8 +339,6 @@ msgstr "After the chloroplast takes up light, the captured energy is used in the
 
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
 msgstr "Imagine going up to a tree. This tree has many parts: Roots, a stem, branches, leaves. All of which are important to the tree's function and there are researchers interested in understanding them.\n\n Let's focus for now on the leaf since this is where photosynthesis happens. Take a step towards the tree and look at the leaf. It has an intricate structure with a network of veins running through a sheet of green photosynthetic cells. And there are other cells: Plant hairs, gas-exchanging stomates, and more. Even in just a leaf, there are many different functioning sets that all warrant investigation.\n\nBut let's again focus on the green cells, the mesophyll, cells place of most photosynthesis. So imagine taking another step forward and looking inside the cell. You see it filled to the brim with again different parts with their own jobs: The vacuole, which gives the cell structure; the nucleus packing the genetic information; the chloroplast, where the light is being captured; and so many more organelles. And let's take another step towards the chloroplast to investigate how light gives energy to our cell.\n\nOn this level, you see how the light hits the millions of proteins that do their jobs within this confined space. Special ones among them, the photosystems, can take up that light, juggle with electrons, and pass them on. A whole miniature machinery is fueled by them, leading to the production and consumption of things. Many of them leave or enter the chloroplasts from other parts of the cell. Everything changes constantly! And in there, we sit and wonder: How does photosynthesis work?"
-                "Aber konzentrieren wir uns wieder auf die grünen Zellen, das Mesophyll, die Zellen, in denen die meiste Photosynthese stattfindet. Stell dir vor, du gehst einen Schritt weiter und schaust ins Innere der Zelle. Du siehst die Zelle bis zum Rand gefüllt mit verschiedenen Teilen, die ihre eigenen Aufgaben haben: Die Vakuole, die der Zelle ihre Struktur verleiht; der Zellkern, der die genetische Information enthält; der Chloroplast, in dem das Licht eingefangen wird; und viele weitere Organellen. Und lassen Sie uns einen weiteren Schritt in Richtung des Chloroplasten machen, um zu untersuchen, wie das Licht unserer Zelle Energie gibt.\n\n"
-                "Auf dieser Ebene sieht man, wie das Licht auf die Millionen von Proteinen trifft, die in diesem begrenzten Raum ihre Arbeit verrichten. Spezielle unter ihnen, die Photosysteme, können das Licht aufnehmen, mit Elektronen jonglieren und sie weitergeben. Eine ganze Miniaturmaschinerie wird von ihnen angetrieben, die für die Produktion und den Verbrauch von Dingen sorgt. Viele von ihnen verlassen oder betreten die Chloroplasten aus anderen Teilen der Zelle. Alles verändert sich ständig! Und da drinnen sitzen wir und fragen uns: Wie funktioniert die Photosynthese?"
 
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
@@ -386,8 +384,8 @@ msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) is referred to as a
 "1. Small size and fast life cycle: <em>Arabidopsis</em> has a short life cycle that allows researchers to study multiple generations in a relatively short period of time.\n"
 "2. Simple anatomy: The structure of the plant is simple and well-understood, making it easier for researchers to study specific developmental processes.\n"
 "3. Genome sequencing: The complete genome of <em>Arabidopsis</em> was the first plant genome to be sequenced, which has provided researchers with a wealth of genetic information about the plant.\n"
-"4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n"
-"\n All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
+"4. Genetic and molecular tools: A large collection of genetic and molecular tools are available for <em>Arabidopsis</em>, which enables researchers to study plant development, growth, and stress responses at the cellular and molecular levels. \n\n"
+"All these factors have made <em>Arabidopsis thaliana</em> an important model organism for studying basic plant biology, and its insights have contributed to our understanding of the biology of all plants."
 
 
 
@@ -480,7 +478,6 @@ msgstr "Basic principles of measuring chlorophyll fluorescence with PAM"
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
 msgstr "In this one figure, the basic principles behind the fluorescence and PAM experiment are explained. In the bottom panel, you see the results of the PAM experiments. Take a good look because, in a few minutes, you will produce similar results, not with the help of a fluorometer but with your computer! So, what do we see in this graph? It results from a unique light protocol, where a dark-adapted plant is exposed to very weak actinic light (AL, white area shown in the light bar, L), followed by dark recovery, where the light is switched off completely (black area in L). Multiple saturating light flashes (saturation pulses, SP) are applied before, during, and after the actinic illumination to measure the maximal fluorescence Fₘ, Fₘ', Fₘ'', respectively. We can use these fluorescence features to calculate the values quantifying photosynthesis, e.g., the amount of NPQ.\n\n"
                 "So why do we exactly see any effect? This is explained with the upper left scheme. Light energy absorption brings chlorophyll molecules to the first excited state (S1 in the left diagram, a simplified 'Jablonsky diagram'). For chlorophylls to return to the ground state (S₀), the absorbed energy can be used for charge separation and photosynthesis (photochemical quenching, qP), dissipated as heat (non-photochemical quenching, NPQ), or re-emitted as fluorescence. And now, the most crucial part: the fluorescence emission spectra are red-shifted from the absorption spectra. That means the fluorescence light is redder (at higher wavelengths in the left axis) than the light absorbed (upper panel on the right). This, in turn, means that the fluorescence can be detected using fluorometers with corresponding optical filters, and their signal will not be mistaken for the light that we shine on the plants. The emitted fluorescence signal is recorded with key readouts, as shown in the lower panel. It took us a long time to summarize everything on one figure only, and this figure originates from our previous work (Nies et al. 2021)."
-                "In der oberen Hälfte der Abbildung wird das Fluoreszenzverhalten von Chlorophyll näher erläutert: Die Absorption von Lichtenergie bringt Chlorophyllmoleküle in den ersten angeregten Zustand (S1, siehe das vereinfachte Jablonsky-Diagramm im oberen Feld links). Damit die Chlorophylle in den Grundzustand (S₀) zurückkehren, kann die absorbierte Energie für die Ladungstrennung und die Photosynthese verwendet werden (photochemisches Quenching, qP), als Wärme abgeleitet werden (nicht-photochemisches Quenching, NPQ) oder als Fluoreszenz wieder emittiert werden. Die Fluoreszenz-Emissionsspektren sind gegenüber den Absorptionsspektren rotverschoben (obere Tafel rechts). Daher kann die Fluoreszenz mit Fluorometern mit entsprechenden optischen Filtern nachgewiesen werden, und ihr Signal wird nicht mit dem eingestrahlten Licht verwechselt. Das emittierte Fluoreszenzsignal wird mit Tastenanzeigen aufgezeichnet, wie die untere Tafel zeigt. Diese zusammenfassende Abbildung ist aus Nies et al. (2021) entnommen."
 
 # Grammarly checked
 #: pages/method.py:44
@@ -832,8 +829,8 @@ msgstr "Lastly, we add the transitions using `add_reaction_from_args`, supplying
 # Grammarly checked
 #: pages/model_explain.py:326
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
-msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n"
-"\n You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
+msgstr "From this, modelbase will automatically assemble a system of ODEs ready to be studied. To help minimize minor oversights, modelbase will check for typical inconsistencies during this process and display appropriate warnings.\n\n"
+" You can then easily simulate and plot the system like below, which will give you the graph you may have seen beforehand:"
 
 # Grammarly checked
 #: pages/model_explain.py:346
@@ -1027,8 +1024,8 @@ msgstr "#### Model Construction"
 # Grammarly checked
 #: pages/first_analysis.py:79
 msgid "FAL_CONSTRUCTION_1"
-msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilizing a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n" 
-"\n If you want to follow along, you can copy each code block and paste them into a Python IDE. At the end, you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
+msgstr "Here, you can read a step-by-step guide on implementing the model used on this website. We will use the package `modelbase`, as it will make everything simpler than utilizing a Python integrator from scratch. To see the difference, go back to the **Computational Models** page, where you will see the same model being built using both methods.\n\n"
+"If you want to follow along, you can copy each code block and paste them into a Python IDE. At the end, you will have a complete model. The first thing we need to do with the `modelbase` package is define our model with the `Model()` class:"
 
 # Grammarly checked
 #: pages/first_analysis.py:86
@@ -1082,10 +1079,10 @@ msgstr "We can begin the simulations now. Let's select a random time point for t
 #: pages/first_analysis.py:189
 msgid "FAL_SIMULATION_4"
 msgstr "We have successfully simulated our model and created a basic plot. However, the plot must include important details that we need to define. These aspects include:\n"
-"\n - Displaying changes in fluorescence over time\n"
-"\n - Including an initial dark phase followed by a light phase\n"
-"\n - Showing saturating light pulses at the beginning of each phase and at specific intervals during the light phase\n"
-"\n To address these issues, we will tackle each one individually. We recommend replacing the code at each new step that includes the `matplotlib` import at the top if you follow this guide. You will notice many similarities throughout the process." 
+        "\n - Displaying changes in fluorescence over time\n"
+        "\n - Including an initial dark phase followed by a light phase\n"
+        "\n - Showing saturating light pulses at the beginning of each phase and at specific intervals during the light phase\n"
+        "\n To address these issues, we will tackle each one individually. We recommend replacing the code at each new step that includes the `matplotlib` import at the top if you follow this guide. You will notice many similarities throughout the process."
 
 #: pages/first_analysis.py:190
 msgid "FAL_SIMULATION_FLOURESCENCE_HEADER"
@@ -1166,17 +1163,17 @@ msgstr "**See our interpretation**"
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS"
 msgstr "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
-"1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
-"    - When the light is being turned on, how does the reaction differ to when you used 100 μmol m⁻² s⁻¹? What does that mean to the plant?\n"
-"    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
-"2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
-"    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
-"3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
-"    - Lower the time between the saturation pulses. What can you see?\n"
-"    - Does it seem like the saturation pulses affect the plant's photosynthesis?\n"
-"4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
-"    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
-"    - Does this depend on the other settings?"
+        "1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
+        "    - When the light is being turned on, how does the reaction differ to when you used 100 μmol m⁻² s⁻¹? What does that mean to the plant?\n"
+        "    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
+        "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
+        "    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
+        "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
+        "    - Lower the time between the saturation pulses. What can you see?\n"
+        "    - Does it seem like the saturation pulses affect the plant's photosynthesis?\n"
+        "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
+        "    - Would it be useful to reduce the measuring time in our case? Why or why not?\n"
+        "    - Does this depend on the other settings?"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS_EXTEND"
@@ -1198,6 +1195,11 @@ msgstr "With the default values, the following simulation shows you a typical PA
 "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
 "    - With a light intensity of 500 to 900 μmol m⁻² s⁻¹ the NPQ adaption seems to be finished after three to four seconds. We should measure at least this long to capture the whole process.\n"
 "    - With lower light intensities this adaption process takes less time. So a shorter measurement might be feasible."
+" - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
+" - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol m-² s-¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
+"4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
+" - Bei einer Lichtintensität von 500 bis 900 μmol m-² s-¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
+" - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS_EXTEND"
@@ -1269,47 +1271,25 @@ msgstr "**See our interpretation**"
 msgid "MEM_GUIDING_QUESTIONS"
 msgstr "With the default values, the simulation below shows a typical experiment depicting the plant light memory. To investigate it further, you could try the following:\n"
 "1. :blue[The light intensity and duration during the training phase determine the extend of the light memory. How does does the plant react, when you change it?]\n"
-"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?"
+"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?\n"
 "    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
 "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
 "2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
 "    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
-"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
-"    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
-"    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
-"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_ANSWERS"
 msgstr "With the default values, the simulation below shows a typical experiment depicting the plant light memory. To investigate it further, you could try the following:\n"
 "1. :blue[The light intensity and duration during the training phase determine the extend of the light memory. How does does the plant react, when you change it?]\n"
-"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?"
+"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?\n"
 "    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
 "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
 "2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
 "    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
 "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
 "3. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
-"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
-"    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
-"    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
-"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 
 
 

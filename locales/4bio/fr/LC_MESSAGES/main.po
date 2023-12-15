@@ -324,8 +324,6 @@ msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
-                "Aber konzentrieren wir uns wieder auf die grünen Zellen, das Mesophyll, die Zellen, in denen die meiste Photosynthese stattfindet. Stell dir vor, du gehst einen Schritt weiter und schaust ins Innere der Zelle. Du siehst die Zelle bis zum Rand gefüllt mit verschiedenen Teilen, die ihre eigenen Aufgaben haben: Die Vakuole, die der Zelle ihre Struktur verleiht; der Zellkern, der die genetische Information enthält; der Chloroplast, in dem das Licht eingefangen wird; und viele weitere Organellen. Und lassen Sie uns einen weiteren Schritt in Richtung des Chloroplasten machen, um zu untersuchen, wie das Licht unserer Zelle Energie gibt.\n\n"
-                "Auf dieser Ebene sieht man, wie das Licht auf die Millionen von Proteinen trifft, die in diesem begrenzten Raum ihre Arbeit verrichten. Spezielle unter ihnen, die Photosysteme, können das Licht aufnehmen, mit Elektronen jonglieren und sie weitergeben. Eine ganze Miniaturmaschinerie wird von ihnen angetrieben, die für die Produktion und den Verbrauch von Dingen sorgt. Viele von ihnen verlassen oder betreten die Chloroplasten aus anderen Teilen der Zelle. Alles verändert sich ständig! Und da drinnen sitzen wir und fragen uns: Wie funktioniert die Photosynthese?"
 msgstr ""
 
 #: pages/photosynthesis.py:57
@@ -453,7 +451,6 @@ msgstr ""
 # Grammarly checked
 #: pages/method.py:41
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
-                "In der oberen Hälfte der Abbildung wird das Fluoreszenzverhalten von Chlorophyll näher erläutert: Die Absorption von Lichtenergie bringt Chlorophyllmoleküle in den ersten angeregten Zustand (S1, siehe das vereinfachte Jablonsky-Diagramm im oberen Feld links). Damit die Chlorophylle in den Grundzustand (S₀) zurückkehren, kann die absorbierte Energie für die Ladungstrennung und die Photosynthese verwendet werden (photochemisches Quenching, qP), als Wärme abgeleitet werden (nicht-photochemisches Quenching, NPQ) oder als Fluoreszenz wieder emittiert werden. Die Fluoreszenz-Emissionsspektren sind gegenüber den Absorptionsspektren rotverschoben (obere Tafel rechts). Daher kann die Fluoreszenz mit Fluorometern mit entsprechenden optischen Filtern nachgewiesen werden, und ihr Signal wird nicht mit dem eingestrahlten Licht verwechselt. Das emittierte Fluoreszenzsignal wird mit Tastenanzeigen aufgezeichnet, wie die untere Tafel zeigt. Diese zusammenfassende Abbildung ist aus Nies et al. (2021) entnommen."
 msgstr ""
 
 # Grammarly checked
@@ -1107,6 +1104,11 @@ msgstr ""
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS"
+" - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
+" - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol m-² s-¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
+"4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
+" - Bei einer Lichtintensität von 500 bis 900 μmol m-² s-¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
+" - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
 msgstr ""
 
 #: pages/first_analysis.py:262
@@ -1173,44 +1175,10 @@ msgstr ""
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_QUESTIONS"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
-"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
-"    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
-"    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
-"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 msgstr ""
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_ANSWERS"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' it's previous stress. Imagine how changing it's duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
-"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
-"    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?"
-"    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?"
-"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 msgstr ""
 
 
