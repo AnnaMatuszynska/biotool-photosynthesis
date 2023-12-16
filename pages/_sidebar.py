@@ -1,7 +1,8 @@
 import streamlit as st
 import time
 from typing import cast
-from utils import get_localised_text
+from utils import get_localised_text, icons
+from st_pages import Page, show_pages
 
 
 def keep(key):
@@ -58,6 +59,51 @@ def fill_sidebar(placeholder_sidebar):
         version_display = dict(zip(versions, [text("SDE_4BIO"), text("SDE_4MATH")]))
         version_to_idx = dict(zip(versions, range(len(versions))))
 
+        show_pages(
+            [
+                Page(
+                    "Start.py",
+                    text("SDE_PAGENAMES_START"),
+                    icons["house"],
+                ),
+                Page(
+                    "pages/photosynthesis.py",
+                    text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
+                    icons["leaves"],
+                ),
+                Page(
+                    "pages/method.py",
+                    text("SDE_PAGENAMES_MEASURINGMETHOD"),
+                    icons["books"],
+                ),
+                Page(
+                    "pages/model_explain.py",
+                    text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
+                    icons["computer"],
+                ),
+                Page(
+                    "pages/first_analysis.py",
+                    text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
+                    icons["bar_chart"],
+                ),
+                Page(
+                    "pages/plant_memory.py",
+                    text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
+                    icons["chart_with_upwards_trend"],
+                ),
+                Page(
+                    "pages/conclusion.py",
+                    text("SDE_PAGENAMES_CONCLUSION"),
+                    icons["heavy_check_mark"],
+                ),
+                Page(
+                    "pages/contact.py",
+                    text("SDE_PAGENAMES_CONTACT"),
+                    icons["phone"],
+                ),
+            ]
+        )
+        
         # with st.session_state["placeholder_version"]:
         unkeep("version")
         version = cast(

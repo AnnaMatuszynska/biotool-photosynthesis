@@ -1,11 +1,9 @@
 import streamlit as st
 from pages._sidebar import fill_sidebar, make_sidebar
 from PIL import Image
-from st_pages import Page, show_pages
 from typing import Callable
 from utils import (
     get_localised_text,
-    icons,
     include_ytvideo,
     make_prev_next_button,
     markdown_click,
@@ -83,52 +81,6 @@ if __name__ == "__main__":
 
     text = get_localised_text(version, language)
 
-    # NOTE: this belongs with the sidebar, but works globally
-    # so I'd prefer to put it here
-    show_pages(
-        [
-            Page(
-                "Start.py",
-                "Start",
-                icons["house"],
-            ),
-            Page(
-                "pages/photosynthesis.py",
-                "Photosynthesis",
-                icons["leaves"],
-            ),
-            Page(
-                "pages/method.py",
-                "Measuring Method",
-                icons["books"],
-            ),
-            Page(
-                "pages/model_explain.py",
-                "Computational Models",
-                icons["computer"],
-            ),
-            Page(
-                "pages/first_analysis.py",
-                "Experiments in silico",
-                icons["bar_chart"],
-            ),
-            Page(
-                "pages/plant_memory.py",
-                "Plant Light Memory",
-                icons["chart_with_upwards_trend"],
-            ),
-            Page(
-                "pages/conclusion.py",
-                "Take Home Messages",
-                icons["heavy_check_mark"],
-            ),
-            Page(
-                "pages/contact.py",
-                "Contact",
-                icons["phone"],
-            ),
-        ]
-    )
     placeholder_sidebar = make_sidebar()
     resetting_click_detector_setup()
     track_page_visit("Start")
