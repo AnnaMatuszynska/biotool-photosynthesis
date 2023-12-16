@@ -19,6 +19,38 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+#: Start.py:92
+msgid "SDE_PAGENAMES_START"
+msgstr "Start"
+
+#: Start.py:97
+msgid "SDE_PAGENAMES_PHOTOSYNTHESIS"
+msgstr "Fotosynteza"
+
+#: Start.py:102
+msgid "SDE_PAGENAMES_MEASURINGMETHOD"
+msgstr "Metoda pomiaru"
+
+#: Start.py:107
+msgid "SDE_PAGENAMES_COMPUTATIONALMODELS"
+msgstr "Modele obliczeniowe"
+
+#: Start.py:112
+msgid "SDE_PAGENAMES_EXPERIMENTSINSILICO"
+msgstr "Eksperymenty in silico"
+
+#: Start.py:117
+msgid "SDE_PAGENAMES_PLANTLIGHTMEMORY"
+msgstr "Pamięć światła roślin"
+
+#: Start.py:122
+msgid "SDE_PAGENAMES_CONCLUSION"
+msgstr "Wiadomości na wynos"
+
+#: Start.py:117
+msgid "SDE_PAGENAMES_CONTACT"
+msgstr "Kontakt"
+
 #: pages/_sidebar.py:77
 msgid "SDE_LANGUAGE_EN"
 msgstr "Angielski"

@@ -19,6 +19,38 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+#: Start.py:92
+msgid "SDE_PAGENAMES_START"
+msgstr "Début"
+
+#: Start.py:97
+msgid "SDE_PAGENAMES_PHOTOSYNTHESIS"
+msgstr "Photosynthèse"
+
+#: Start.py:102
+msgid "SDE_PAGENAMES_MEASURINGMETHOD"
+msgstr "Méthode de mesure"
+
+#: Start.py:107
+msgid "SDE_PAGENAMES_COMPUTATIONALMODELS"
+msgstr "Modélisations computationnelles"
+
+#: Start.py:112
+msgid "SDE_PAGENAMES_EXPERIMENTSINSILICO"
+msgstr "Experimentations in silico"
+
+#: Start.py:117
+msgid "SDE_PAGENAMES_PLANTLIGHTMEMORY"
+msgstr "Mémoire de la lumière des plantes"
+
+#: Start.py:122
+msgid "SDE_PAGENAMES_CONCLUSION"
+msgstr "Messages à retenir"
+
+#: Start.py:117
+msgid "SDE_PAGENAMES_CONTACT"
+msgstr "Contact"
+
 #: pages/_sidebar.py:77
 msgid "SDE_LANGUAGE_EN"
 msgstr "Anglais"
@@ -186,59 +218,64 @@ msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
 msgstr "La photosynthèse est le moteur de ce monde. De l'air que vous respirez à la nourriture que vous mangez, en fin de compte, c'est la lumière qui est à l'origine des plantes, des algues et des cellules plus petites. Sachant cela, vous pouvez comprendre à quel point il est important de connaître le fonctionnement de la photosynthèse. Si nous le savions exactement, nous pourrions être en mesure d'améliorer artificiellement ce processus naturel et de contribuer à la production de nourriture, de carburant et de nombreux autres produits chimiques dont nous avons besoin dans notre vie."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
-msgstr ""
+msgstr "### Objectifs pédagogiques\n"
+        "Ce que nous espérons que vous apprendrez en suivant la version *4Math*:"
 
 
 msgid "STR_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "Vous pouvez expliquer comment les modèles mathématiques peuvent être appliqués en biologie.\n"
+            "Vous pouvez citer quelques exemples de modèles mathématiques biologiques et expliquer comment ils sont construits.\n"
+            "Vous pouvez décrire la protection contre la lumière dans les plantes par la neutralisation non photochimique.\n"
+            "- Vous pouvez résumer comment la fluorescence peut être utilisée pour mesurer la photosynthèse.\n"
+            "- Vous pouvez produire des simulations de photosynthèse et expliquer leur signification biologique."
 
 msgid "STR_LINK_PLANTS_AND_PYTHON"
-msgstr ""
+msgstr "Ce site et tous nos modèles sont écrits dans le langage de programmation Python. Si vous souhaitez apprendre à utiliser Python vous-même, jetez un coup d'œil à [Plants and Python] (https://plantsandpython.github.io/PlantsAndPython), un cours de programmation destiné aux biologistes."
 
 # Grammarly checked
 #: Start.py:26
 msgid "STR_DROP_BOX_INTRO"
-msgstr ""
+msgstr "Si vous avez besoin d'apprendre la différence entre *in vitro*, *in vivo* et *in silico*, ouvrez la drop-box ci-dessous."
 
 #: Start.py:27
 msgid "STR_EXPANDER_IN"
-msgstr ""
+msgstr "Différences entre _in vitro_, _in vivo_ et _in silico_"
 
 #: Start.py:28
 msgid "STR_EXPLANATION_IN_VITRO"
-msgstr ""
+msgstr "L'expression *in vitro* fait référence à des expérimentations menées à l'extérieur d'un organisme vivant, dans un environnement de laboratoire contrôlé."
 
 #: Start.py:29
 msgid "STR_EXPLANATION_IN_VIVO"
-msgstr ""
+msgstr "Le terme *in vivo* fait référence aux expériences menées à l'intérieur d'un organisme vivant, généralement un animal ou un être humain."
 
 #: Start.py:30
 msgid "STR_EXPLANATION_IN_SILICO"
-msgstr ""
+msgstr "Le terme *In silico* fait référence aux expériences et simulations computationnelles réalisées à l'aide de modèles et d'algorithmes informatiques."
 
 #: Start.py:32
 msgid "STR_HEADLINE_PAGES"
-msgstr ""
+msgstr "## Sommaire des pages"
 
 # Grammarly checked
 #: Start.py:33
 msgid "STR_INTRODUCTION_PAGES"
-msgstr ""
+msgstr "Dans ce qui suit, nous vous donnons un bref aperçu de ce à quoi vous pouvez vous attendre dans les pages suivantes."
 
 # Grammarly checked
 #: Start.py:34
 msgid "STR_PHOTOSYNTHESIS"
-msgstr ""
+msgstr "La page **photosynthèse** résumera les mécanismes fondamentaux de la photosynthèse, des informations approfondies sur le changement climatique et une description moléculaire du mécanisme de photoprotection."
 
 # Grammarly checked
 #: Start.py:35
 msgid "STR_METHOD"
-msgstr ""
+msgstr "La page **méthode de mesure** explique une méthode pour mesurer les paramètres photosynthétiques à l'aide de la fluorescence non invasive. De la lecture complémentaire est également proposée."
 
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr ""
+msgstr "La théorie de la modélisation mathématique et des exemples de modèles populaires sont présentés sur la page **modélisation computationnelle**. De plus, nous démontrons l'implémentation d'un modèle mathématique dans le langage de programmation Python."
 
 # Grammarly checked
 #: Start.py:37
