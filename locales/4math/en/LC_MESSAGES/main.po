@@ -287,8 +287,6 @@ msgstr "On the page **experiments** ***in silico***, we introduce a photosynthes
 msgid "STR_MEMORY"
 msgstr "Lastly, the **plant light memory page** will explain how the plant non-photochemical quenching mechanism leads to a memory effect of light conditions and how the mathematical model can be used for investigation."
 
-
-
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
@@ -381,8 +379,9 @@ msgstr "Complexes within the thylakoid membrane, which are necessary for photosy
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr "After the chloroplast takes up light, the captured energy is used in the cytoplasm to fix CO₂ and produce the primary product, 3-phosphoglycerate, which is metabolized into other carbohydrates and compounds. This is a multi-step process called the Calvin cycle whereby the complex Ribulose 1,5-bisphosphate Carboxylase Oxygenase (RuBisCO) catalyzes the first CO₂-fixation step.\n\n The following video visualizes the different macromolecular scales of photosynthesis in a very simplified manner:"
 
+# Grammarly checked
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
-msgstr "Imagine going up to a tree. This tree has many parts: Roots, a stem, branches, leaves. All of which are important to the tree's function and there are researchers interested in understanding them.\n\n Let's focus for now on the leaf since this is where photosynthesis happens. Take a step towards the tree and look at the leaf. It has an intricate structure with a network of veins running through a sheet of green photosynthetic cells. And there are other cells: Plant hairs, gas-exchanging stomates, and more. Even in just a leaf, there are many different functioning sets that all warrant investigation.\n\nBut let's again focus on the green cells, the mesophyll, cells place of most photosynthesis. So imagine taking another step forward and looking inside the cell. You see it filled to the brim with again different parts with their own jobs: The vacuole, which gives the cell structure; the nucleus packing the genetic information; the chloroplast, where the light is being captured; and so many more organelles. And let's take another step towards the chloroplast to investigate how light gives energy to our cell.\n\nOn this level, you see how the light hits the millions of proteins that do their jobs within this confined space. Special ones among them, the photosystems, can take up that light, juggle with electrons, and pass them on. A whole miniature machinery is fueled by them, leading to the production and consumption of things. Many of them leave or enter the chloroplasts from other parts of the cell. Everything changes constantly! And in there, we sit and wonder: How does photosynthesis work?"
+msgstr "Imagine going up to a tree. This tree has many parts: Roots, a trunk, branches, and leaves. These are important to the tree's function, and researchers are interested in understanding them.\n\n Let's focus for now on the leaf since this is where photosynthesis happens. Take a step towards the tree and look at the leaf. It has an intricate structure with a network of veins running through a sheet of green photosynthetic cells. And there are other cells: Plant hairs, gas-exchanging stomates, and more. Even in just a leaf, there are many different functioning sets that all warrant investigation.\n\nBut let's again focus on the green cells, the mesophyll, cells place of most photosynthesis. So imagine taking another step forward and looking inside the cell. You see it filled to the brim with different parts with their own jobs: The vacuole, which gives the cell structure; the nucleus packing the genetic information; the chloroplast, where the light is being captured; and many more organelles. And let's take another step towards the chloroplast to investigate how light gives energy to our cells.\n\nOn this level, you see how the light hits the millions of proteins that do their jobs within this confined space. Special ones among them, the photosystems, can take up that light, juggle with electrons, and pass them on. They fuel miniature machinery, leading to the production and consumption of things. Many leave or enter the chloroplasts from other parts of the cell. Everything changes constantly! And in there, we sit and wonder: How does photosynthesis work?"
 
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
@@ -419,7 +418,7 @@ msgstr "Why is Arabidopsis thaliana a model organism?"
 # Grammarly checked
 #: pages/photosynthesis.py:69
 msgid "PHO_CAPTION_THAIANA_PICTURE"
-msgstr "A photograph of a plant of the wild type of the model organism _Arabidopsis thaliana_."
+msgstr "A photograph of a plant of the wild type of the model organism *Arabidopsis thaliana*."
 
 # Grammarly checked
 #: pages/photosynthesis.py:70
@@ -459,7 +458,7 @@ msgstr "On the previous page, you learned about the importance of photosynthesis
 # Grammarly checked
 #: pages/method.py:18
 msgid "MTH_CAPTION_ABB1"
-msgstr "Photo of a plant of a plant (_Spathiphyllum_): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
+msgstr "Photo of a plant of a plant (*Spathiphyllum*): On the left in daylight, in the middle illuminated by a commercial UV5 lamp, on the right also illuminated by a UV5 lamp, but through a filter which filters all wavelengths except for the red light."
 
 #: Explanation by Tobias
 #: pages/method.py:20
@@ -499,7 +498,7 @@ msgstr "Measuring Photosynthesis with Fluorescence"
 # Grammarly checked
 #: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
-msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='4Math'>4Math</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the re-emitted light signal."
+msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='4Bio'>4Bio</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the re-emitted light signal."
 
 #: Explanation by Tobias
 # Grammarly checked

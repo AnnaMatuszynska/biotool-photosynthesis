@@ -229,7 +229,7 @@ msgstr "Vous pouvez expliquer ce que sont les modèles, comment ils sont utiles 
         "- Vous pouvez produire des simulations de photosynthèse et expliquer leur signification biologique."
 
 msgid "STR_LINK_PLANTS_AND_PYTHON"
-msgstr "Ce site et tous nos modèles sont écrits dans le langage de programmation Python. Si vous souhaitez apprendre à utiliser Python vous-même, jetez un coup d'œil à [Plants and Python] (https://plantsandpython.github.io/PlantsAndPython), un cours de programmation destiné aux biologistes."
+msgstr "Ce site et tous nos modèles sont écrits dans le langage de programmation Python. Si vous souhaitez apprendre à utiliser Python vous-même, jetez un coup d'œil à [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), un cours de programmation destiné aux biologistes."
 
 # Grammarly checked
 #: Start.py:26
@@ -274,213 +274,233 @@ msgstr "Nous avons besoin d'une méthode de mesure spécifique pour mesurer la p
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "As the headline already told you, we work *in silico*, i.e., with mathematical models. Sur la page **modélisation computationnelle**, vous apprendrez quelque chose sur les modèles mathématiques en général, ainsi que sur les modèles de photosynthèse. Dans la version <a href='#' id='4Math'>4Math</a> vous pouvez également apprendre comment implémenter un tel modèle dans le langage de programmation Python."
+msgstr "Comme le titre l'indique, nous travaillons <i>in silico</i>, c'est-à-dire avec des modèles mathématiques. Sur la page <b>modélisation computationnelle</b>, vous apprendrez quelque chose sur les modèles mathématiques en général, ainsi que sur les modèles de photosynthèse. Dans la version <a href='#' id='4Math'>4Math</a> vous pouvez également apprendre comment implémenter un tel modèle dans le langage de programmation Python."
 
 # Grammarly checked
 #: Start.py:37
 msgid "STR_EXPERIMENT"
-msgstr ""
+msgstr "Sur la page <b>experiments <i>in silico</i></b>, vous apprendrez le modèle de photosynthèse que nous utilisons et qui a été co-développé par Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>). Par la suite, vous pouvez l'utiliser directement pour effectuer vos premières mesures. Dans la version <a href='#' id='4Math'>4Math</a>, il est possible de consulter les équations mathématiques du modèle utilisé. En outre, d'autres paramètres peuvent être définis pour les expériences."
 
 # Grammarly checked
 #: Start.py:38
 msgid "STR_MEMORY"
-msgstr ""
-
-
+msgstr "Enfin, vous apprendrez à connaître la mémoire de la lumière des plantes sur la page de la **mémoire de la lumière des plantes** et pourrez prouver son existence de manière indépendante par des expérimentations."
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
-msgstr ""
+msgstr "# Photosynthèse"
 
 msgid "PHO_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "### Objectifs éducatifs\n"
+        "Vous comprenez pourquoi le changement climatique a un impact sur les plantes et la photosynthèse.\n"
+        "- Vous vous souvenez du principe de base de la photosynthèse et de l'endroit où elle se produit.\n"
+        "- Vous comprenez le problème que pose aux plantes l'excès de lumière.\n"
+        "- Vous apprenez le mécanisme de photoprotection de la plante au niveau moléculaire.\n"
+        "#### Ce qu'il faut savoir:\n"
+        "- La structure d'une plante\n"
+        "- Structure d'une cellule\n"
+        "- Fonction de la membrane cellulaire\n"
+        "- Le principe de l'autotrophie des plantes\n" 
+        "- Les principes de base du changement climatique"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
 msgid "PHO_HEADLINE_CLIMATE"
-msgstr ""
+msgstr "## Changement climatique"
 
 #: Lisa's introduction
 # Grammarly checked
 #: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
-msgstr ""
+msgstr "Comme les plantes ne peuvent pas s'enfuir, elles doivent s'adapter aux nouvelles conditions environnementales. Les plantes sont la base de la vie sur Terre (Fig. gauche), et leur adaptation est cruciale pour le bon fonctionnement du monde. Des conditions variées, par exemple des changements de température (chaleur et froid), des inondations et des sécheresses, peuvent provoquer des événements stressants chez les plantes. Comme le résume la figure de droite, ces facteurs peuvent avoir divers effets à court et à long terme sur les plantes. Néanmoins, les plantes subissent un stress en cas de changements soudains, mais elles disposent d'un *métabolisme très flexible* pour s'adapter. *L'une des premières réactions du métabolisme des plantes est la photosynthèse*, qui **fournit l'énergie** nécessaire à la vie de la plante. La photosynthèse elle-même est directement et indirectement affectée par les changements des conditions environnementales. Par conséquent, l'analyse de la photosynthèse et de la fixation du CO₂ par les plantes est une mesure essentielle de la **fonctionnalité**, de la **productivité** et de la **survie** des plantes. Par conséquence, la recherche fondamentale sur la photosynthèse et son efficacité est vitale pour évaluer notre monde en mutation."
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16
 msgid "PHO_POINT_1"
-msgstr ""
+msgstr "- la tectonique des plaques et le vulcanisme"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:17
 msgid "PHO_POINT_2"
-msgstr ""
+msgstr "- transitions de l'orbite terrestre"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:18
 msgid "PHO_POINT_3"
-msgstr ""
+msgstr "- les émissions de gaz qui retiennent la chaleur"
 
 #: Lisa's introduction
 # Grammarly checked
 #: pages/photosynthesis.py:19
 msgid "PHO_END_OF_INTRODUCTION"
-msgstr ""
+msgstr "Au cours de l'histoire de la Terre, des changements climatiques se sont produits à plusieurs reprises. En 2016, *97 % des chercheurs en climatologie* s'accordent à dire que nous sommes actuellement en présence d'un réchauffement climatique d'origine humaine (Cook et al., 2016). Des recherches sont nécessaires pour comprendre l'impact de l'augmentation soudaine de la température de la Terre."
 
 #: pages/photosynthesis.py:34
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS"
-msgstr ""
+msgstr "## Processus de la photosynthèse"
 
 # Grammarly checked
 #: pages/photosynthesis.py:35
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_1"
-msgstr ""
+msgstr "Tout comme les humains, les plantes ont besoin de nutriments pour leur croissance. Les plus essentiels sont l'eau et les minéraux, mais les plantes ont également besoin de graisses, d'hydrates de carbone et de protéines. La plupart de ces nutriments peuvent être absorbés par les plantes à partir du sol par leurs racines, mais pas tous. Comme nous l'avons déjà mentionné, les plantes sont des producteurs et peuvent donc fabriquer des nutriments. Ces nutriments comprennent notamment les hydrates de carbone, qui sont produits au cours de la photosynthèse."
 
 # Grammarly checked
 #: pages/photosynthesis.py:36
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr ""
+msgstr "Au cours de la photosynthèse, les plantes produisent de la biomasse sous forme de glucose. Pour ce faire, elles ont besoin de CO₂, de H₂O et d'énergie sous forme de lumière."
 
 #: pages/photosynthesis.py:39
 #: pages/photosynthesis.py:41
 msgid "PHO_CAPTION_FOTOSYNTHESE_PICTURE"
-msgstr ""
+msgstr "Processus de photosynthèse"
 
 # Grammarly checked
 #: pages/photosynthesis.py:45
 msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-msgstr ""
+msgstr "En zoomant sur une feuille, la coupe transversale montre des cellules mésophylles dans lesquelles se trouvent les organites que sont les chloroplastes. C'est à l'intérieur du système membranaire des chloroplastes - appelé système thylakoïde - que se produit la réaction lumineuse de la photosynthèse. L'énergie lumineuse y est convertie en énergie chimique (synthèse d'ATP et de NADPH), utilisée pour la fixation du CO₂ et la production de sucre."
 
 # Grammarly checked
 #: pages/photosynthesis.py:43
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_LOCATION"
-msgstr ""
+msgstr "## Lieu de la photosynthèse"
 
 # Grammarly checked
 #: pages/photosynthesis.py:44
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-msgstr ""
+msgstr "La photosynthèse a lieu dans les cellules des composants principalement verts des plantes. Dans ces cellules se trouvent des organites spécialisés, les chloroplastes. C'est là que se déroule la partie de la photosynthèse appelée réaction à la lumière. Les photosystèmes sont situés dans la membrane. Le photosystème II (PSII), qui utilise l'énergie de la lumière pour séparer l'eau en oxygène et en protons, nous intéresse particulièrement."
 
 # Grammarly checked
 #: pages/photosynthesis.py:48
 #: pages/photosynthesis.py:50
 msgid "PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
-msgstr ""
+msgstr "Complexes à l'intérieur de la membrane thylakoïde, nécessaires à la photosynthèse."
 
 # Grammarly checked
 #: pages/photosynthesis.py:52
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
-msgstr ""
+msgstr "Après que le chloroplaste a absorbé la lumière, l'énergie capturée est utilisée dans le cytoplasme pour fixer le CO₂ et produire du sucre. Il s'agit d'un processus en plusieurs étapes appelé cycle de Calvin, dont l'acteur principal est une protéine : RuBisCO.\n\n Si vous voulez voir ce voyage dans le chloroplaste plus en détail, nous avons créé une courte vidéo pour vous:"
 
+# Grammarly checked
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
-msgstr ""
+msgstr "Imaginez que vous montiez sur un arbre. Cet arbre a de nombreuses parties : Les racines, le tronc, les branches et les feuilles. Ces éléments sont importants pour le fonctionnement de l'arbre et les chercheurs souhaitent les comprendre.\n\nPour l'instant, concentrons-nous sur la feuille, car c'est là que se produit la photosynthèse. Faites un pas vers l'arbre et regardez la feuille. Elle présente une structure complexe avec un réseau de nervures qui traverse une série de cellules vertes photosynthétiques. Et il y a d'autres cellules : Les poils de la plante, les stomates qui échangent les gaz, et bien d'autres choses encore. Même dans une simple feuille, il existe de nombreux ensembles fonctionnels différents qui méritent tous d'être étudiés.\n\nMais concentrons-nous à nouveau sur les cellules vertes, le mésophylle, les cellules où se déroule la majeure partie de la photosynthèse. Imaginez que vous fassiez un pas en avant et que vous regardiez à l'intérieur de la cellule. Vous la voyez remplie à ras bord de différentes parties qui ont chacune leur rôle à jouer : La vacuole, qui donne sa structure à la cellule ; le noyau, qui contient l'information génétique ; le chloroplaste, qui capte la lumière ; et bien d'autres organites encore. Faisons un pas de plus vers le chloroplaste pour étudier comment la lumière fournit de l'énergie à nos cellules.\n\n À ce niveau, vous voyez comment la lumière frappe les millions de protéines qui font leur travail dans cet espace confiné. Certaines d'entre elles, les photosystèmes, peuvent capter cette lumière, jongler avec les électrons et les transmettre. Ils alimentent une machinerie miniature qui permet la production et la consommation d'éléments. Beaucoup d'entre eux quittent ou entrent dans les chloroplastes depuis d'autres parties de la cellule. Tout change en permanence! Et là, nous nous posons des questions: Comment fonctionne la photosynthèse?"
 
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
-msgstr ""
+msgstr "## Comment gérer un excès de lumière ?"
 
 # Grammarly checked
 #: pages/photosynthesis.py:58
 msgid "PHO_NPQ_EXPLANATION"
-msgstr ""
+msgstr "Si les photosystèmes absorbent trop d'énergie lumineuse, il peut s'ensuivre une dégradation des protéines et des dommages cellulaires par la production d'espèces radicales d'oxygène. C'est pourquoi il existe de multiples mécanismes préventifs pour réduire les dommages causés par la lumière, allant de l'adaptation des photosystèmes au mouvement des chloroplastes et des feuilles entières. Les processus à l'échelle des photosystèmes sont les plus rapides et se traduisent généralement par l'émission directe d'énergie lumineuse sous forme de chaleur. Ces processus sont collectivement appelés quenching non-photochimique (NPQ)."
 
 msgid "PHO_NPQ_EXPLANATION_DETAILED"
-msgstr ""
+msgstr "**L'extinction non photochimique (NPQ)** est un mécanisme de protection utilisé par les organismes photosynthétiques pour éviter que leurs photosystèmes ne soient endommagés par un excès d'énergie lumineuse. La NPQ implique des mécanismes à la fois rapides et lents qui sont réversibles et conduisent à une réduction de l'efficacité du processus photosynthétique dans des conditions d'excès de lumière. Cette réduction de l'efficacité est obtenue en dissipant l'énergie lumineuse excédentaire sous forme de chaleur, au lieu de l'utiliser pour la photosynthèse. Par conséquence, même si elle réduit le taux de conversion, la NPQ agit comme une soupape de sécurité, contribuant à protéger l'appareil photosynthétique d'éventuels dommages."
 
 msgid "PHO_NPQ_EXPLANATION_CONTINUED"
-msgstr ""
+msgstr "Les pages suivantes présentent un modèle de la photosynthèse de la plante, y compris la NPQ par le 'cycle de la xanthophylle' (illustré ci-dessous). Le cycle de la xanthophylle décrit l'interconversion enzymatique des caroténoïdes qui conduit à un système dont l'absorption de la lumière peut être réglée pour être dissipée sous forme de chaleur."
 
 msgid "PHO_CAPTION_NPQ"
-msgstr ""
+msgstr "Le 'cycle de la xanthophylle' impliqué dans la NPQ. Au cours d'une série de deux étapes réversibles, le caroténoïde violaxanthine est converti en zéaxanthine, forme active de la NPQ. La zéaxanthine peut absorber les photons et émettre l'énergie d'excitation sous forme de chaleur, protégeant ainsi les photosystèmes d'une surexcitation. La désépoxydation rapide vers la zéaxanthine est catalysée par la violaxanthine désépoxydase, qui est activée par le faible pH thylakoïdal en cas de forte luminosité. Inversement, l'époxydation lente de la zéaxanthine se produit de préférence à des pH plus élevés en cas de faible luminosité."
 
 #: pages/photosynthesis.py:60
 msgid "PHO_HEADER_MODEL_ORGANISMEN"
-msgstr ""
+msgstr "## Une plante pour les dominer toutes"
 
 # Grammarly checked
 #: pages/photosynthesis.py:61
 msgid "PHO_MODEL_ORGANISMEN_EXPLANATION"
-msgstr ""
+msgstr "Souvent, lorsque vous essayez de découvrir quelque chose sur les plantes en général, comme le fonctionnement de la photosynthèse, les expérimentations sont réalisées sur l'espèce *Arabidopsis thaliana*, un 'organisme modèle'."
 
 # Grammarly checked
 #: pages/photosynthesis.py:63
 msgid "PHO_EXPANDER_MODEL_ORGANISMEN"
-msgstr ""
+msgstr "Pourquoi Arabidopsis thaliana est-elle un organisme modèle ?"
 
 # Grammarly checked
 #: pages/photosynthesis.py:69
 msgid "PHO_CAPTION_THAIANA_PICTURE"
-msgstr ""
+msgstr "Photographie d'une plante de type sauvage de l'organisme modèle *Arabidopsis thaliana*."
 
 # Grammarly checked
 #: pages/photosynthesis.py:70
 msgid "PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"
-msgstr ""
+msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) est considéré comme un organisme modèle parce qu'il est souvent utilisé comme système modèle en biologie végétale. Il présente plusieurs caractéristiques qui le rendent bien adapté aux études en laboratoire, notamment :\n"
+        "1. Une petite taille et un cycle de vie rapide: <em>Arabidopsis</em> a un cycle de vie court qui permet aux chercheurs d'étudier plusieurs générations dans un laps de temps relativement court.\n"
+        "2. Anatomie simple: la structure de la plante est simple et bien comprise, ce qui permet aux chercheurs d'étudier plus facilement des processus de développement spécifiques.\n"
+        "3. Séquençage du génome: Le génome complet <em>d'Arabidopsis</em> a été le premier génome végétal à être séquencé, ce qui a permis aux chercheurs d'obtenir une grande quantité d'informations génétiques sur la plante.\n"
+        "4. Outils génétiques et moléculaires: Une vaste collection d'outils génétiques et moléculaires est disponible pour <em>Arabidopsis</em>, ce qui permet aux chercheurs d'étudier le développement, la croissance et les réponses au stress de la plante aux niveaux cellulaire et moléculaire.\n\n"
+        "Tous ces facteurs ont fait de <em>Arabidopsis thaliana</em> un organisme modèle important pour l'étude de la biologie végétale fondamentale, et ses connaissances ont contribué à notre compréhension de la biologie de toutes les plantes."
 
 
 
 #: pages/method.py:70
 msgid "MTH_LITERATURE_DECLARATION"
-msgstr ""
+msgstr "Les références suivantes fournissent des informations plus approfondies sur les mesures PAM ou permettent de se familiariser avec les principes de base."
 
 #: pages/method.py:10
 msgid "MTH_HEADLINE_ONE"
-msgstr ""
+msgstr "# Méthode de mesure"
 
 msgid "MTH_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "Objectifs éducatifs.\n"
+        "- Vous comprenez pourquoi les plantes sont fluorescentes.\n"
+        "- Vous connaissez les mesures de modulation d'amplitude d'impulsion (PAM) et leurs avantages.\n"
+        "Vous pouvez interpréter les résultats d'une mesure PAM.\n"
+        "#### Ce que vous devez savoir:\n" 
+        "- Le spectre des couleurs de la lumière\n"
+        "- Les concepts de base de la conversion et de la conservation de l'énergie"
 
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
-msgstr ""
+msgstr "Sur la page précédente, vous avez appris l'importance de la photosynthèse et son fonctionnement. Mais comment savoir si un organisme est **photosynthétiquement actif**? Pour mesurer quantitativement l'activité photosynthétique des plantes, des méthodes non invasives basées sur la fluorescence ont été développées. Alors que les mesures de gaz sont difficiles à réaliser sur le terrain, les mesures de fluorescence peuvent être effectuées sur des plantes de différentes tailles et dans de multiples environnements et permettent une évaluation en temps réel de la dynamique de la photosynthèse *in vivo*. En effet, le projet [FLEX](https://earth.esa.int/eogateway/missions/flex) actuellement développé par l'Agence spatiale européenne vise à effectuer des mesures de la photosynthèse à l'échelle mondiale à l'aide d'un système de mesure de la fluorescence piloté par satellite."
 
 
 # Grammarly checked
 #: pages/method.py:18
 msgid "MTH_CAPTION_ABB1"
-msgstr ""
+msgstr "Photo d'une plante d'une plante (*Spathiphyllum*) : A gauche à la lumière du jour, au milieu éclairée par une lampe UV5 commerciale, à droite également éclairée par une lampe UV5, mais à travers un filtre qui filtre toutes les longueurs du spectre à l'exception de la lumière rouge."
 
 #: Explanation by Tobias
 #: pages/method.py:20
 msgid "MTH_GROWING_PLANTS_1"
-msgstr ""
+msgstr "Fluorescence de la chlorophylle"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:21
 msgid "MTH_INTRODUCTION_GLOWING"
-msgstr ""
+msgstr "Les mesures de fluorescence des plantes sont basées sur les propriétés de la chlorophylle excitée. Alors qu'une fraction importante de l'énergie lumineuse est utilisée pour la photochimie, les excitations peuvent également être dissipées sous forme de chaleur ou de fluorescence dans le spectre des longueurs du rouge."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:22
 msgid "MTH_PLANT_ARE_SHINING_RED"
-msgstr ""
+msgstr "La lumière perturbante de l'environnement, en particulier la fraction verte réfléchie par la feuille, masque généralement la fluorescence lors de l'observation.  Par conséquence, une façon de surmonter cette limitation est d'induire une forte fluorescence et de réduire la lumière perturbatrice."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:23
 msgid "MTH_INTRODUCTION_EXPERIMENT"
-msgstr ""
+msgstr "Dans l'exemple suivant, nous avons utilisé une puissante source de lumière UV pour l'excitation de la chlorophylle. Nous avons recouvert la caméra d'un filtre passe-rouge pour limiter la détection de la lumière à la partie fluorescente. Nous avons également recouvert une partie de la feuille d'un autocollant afin de limiter l'adaptation à la lumière intense au tissu non recouvert."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:29
 msgid "MTH_EXPLANATION_VIDEO"
-msgstr ""
+msgstr "Les parties couvertes de la feuille ont réduit le transfert d'énergie sur les photosystèmes en induisant la NPQ et, par conséquent, ont diminué ('quenched') l'émission de fluorescence. Cependant, lorsque l'autocollant est retiré, le feuillage couvert sans protection induite contre la lumière reçoit une illumination intense, ce qui produit une réponse de fluorescence solide. Comme le bord de l'autocollant forme une frontière nette entre les régions à forte et à faible fluorescence, l'image rémanente de l'autocollant est clairement visible. Comme le feuillage précédemment couvert induit une réponse lumineuse élevée, l'image rémanente disparaît avec le temps.\n Cette expérimentation permet donc de visualiser la fluorescence de la chlorophylle et l'adaptation de la feuille à la lumière."
 
 #: Explanation by Tobias
 #: pages/method.py:31
 msgid "MTH_MEASURING_FLUORESZENZ"
-msgstr ""
+msgstr "Mesurer la photosynthèse par fluorescence"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
-msgstr ""
+msgstr "L'expérimentation ci-dessus a également permis de visualiser la relation inverse entre la fluorescence et les autres modes de dissipation de l'excitation chlorophyllienne. En mesurant la fluorescence, il est donc possible de mesurer la NPQ et l'extinction photochimique. En plus, les impulsions lumineuses saturantes entraînent une 'fermeture' des centres de réaction PSII, où le don d'électrons à l'accepteur d'électrons suivant, la plastoquinone, est beaucoup plus lent que le taux de photons excitants entrants. Cette limitation de la production entraîne une accumulation d'électrons à l'intérieur du photosystème et, en fin de compte, un blocage de l'extinction photochimique. Par conséquent, la quantification de la fluorescence des photosystèmes fermés permet de déduire l'extinction non photochimique."
 
 #: Explanation by Tobias
 # Grammarly checked

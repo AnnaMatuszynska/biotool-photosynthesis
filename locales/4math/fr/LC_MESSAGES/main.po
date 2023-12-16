@@ -230,7 +230,7 @@ msgstr "Vous pouvez expliquer comment les modèles mathématiques peuvent être 
             "- Vous pouvez produire des simulations de photosynthèse et expliquer leur signification biologique."
 
 msgid "STR_LINK_PLANTS_AND_PYTHON"
-msgstr "Ce site et tous nos modèles sont écrits dans le langage de programmation Python. Si vous souhaitez apprendre à utiliser Python vous-même, jetez un coup d'œil à [Plants and Python] (https://plantsandpython.github.io/PlantsAndPython), un cours de programmation destiné aux biologistes."
+msgstr "Ce site et tous nos modèles sont écrits dans le langage de programmation Python. Si vous souhaitez apprendre à utiliser Python vous-même, jetez un coup d'œil à [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), un cours de programmation destiné aux biologistes."
 
 # Grammarly checked
 #: Start.py:26
@@ -280,33 +280,38 @@ msgstr "La théorie de la modélisation mathématique et des exemples de modèle
 # Grammarly checked
 #: Start.py:37
 msgid "STR_EXPERIMENT"
-msgstr ""
+msgstr "Sur la page **expérimentations** ***in silico***, nous présentons un modèle de photosynthèse co-développé par Anna Matuszyńska ([2016](https://doi.org/10.1016/j.bbabio.2016.09.003) ) qui servira d'exemple pour la modification et l'évaluation des modèles mathématiques. La définition mathématique du modèle sera expliquée et des simulations simples seront exécutées, y compris l'édition des paramètres du modèle."
 
 # Grammarly checked
 #: Start.py:38
 msgid "STR_MEMORY"
-msgstr ""
-
-
+msgstr "Enfin, la page **Mémoire de la lumière des plantes** expliquera comment le mécanisme d'extinction non photochimique des plantes conduit à un effet de mémoire des conditions lumineuses et comment le modèle mathématique peut être utilisé étudier cela."
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
-msgstr ""
+msgstr "# Photosynthèse"
 
 msgid "PHO_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "### Objectifs éducatifs\n"
+        "- Vous comprenez pourquoi le changement climatique a un impact sur les plantes et la photosynthèse.\n"
+        "- Vous apprenez le principe de base de la photosynthèse et où elle se produit.\n"
+        "- Vous comprenez le problème des plantes face à l'excès de lumière et la façon dont elles se protègent.\n"
+        "#### Ce qu'il faut savoir:\n"
+        "- Structure d'une plante\n"
+        "- Structure d'une cellule\n"
+        "- Fonction de la membrane cellulaire"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
 msgid "PHO_HEADLINE_CLIMATE"
-msgstr ""
+msgstr "## Changement climatique"
 
 #: Lisa's introduction
 # Grammarly checked
 #: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
-msgstr ""
+msgstr "Le *climat* est défini comme la moyenne des mesures statistiques du temps sur une longue période dans un lieu spécifique. Le *changement climatique* est défini comme une modification du climat à l'échelle mondiale. Trois catégories principales peuvent induire un changement climatique:"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16
@@ -331,157 +336,169 @@ msgstr ""
 
 #: pages/photosynthesis.py:34
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS"
-msgstr ""
+msgstr "## Processus de la photosynthèse"
 
 # Grammarly checked
 #: pages/photosynthesis.py:35
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_1"
-msgstr ""
+msgstr "Les plantes sont autotrophes et peuvent donc produire des composés organiques complexes tels que des sucres, des lipides et des protéines à partir de nutriments simples."
 
 # Grammarly checked
 #: pages/photosynthesis.py:36
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr ""
+msgstr "Fondamentalement, la photosynthèse est un processus en plusieurs étapes qui utilise l'énergie transportée par les photons et absorbée par les pigments pour fixer le CO₂ en hydrates de carbone, qui sont ensuite métabolisés en d'autres composés organiques. La stœchiométrie nette de la photosynthèse est la suivante : [red] 6 CO₂ + 6 H₂O + *énergie de lumière* -> C₆H₁₂O₆ + 6 O₂, produisant ainsi de l'oxygène moléculaire."
 
 #: pages/photosynthesis.py:39
 #: pages/photosynthesis.py:41
 msgid "PHO_CAPTION_FOTOSYNTHESE_PICTURE"
-msgstr ""
+msgstr "Processus simplifié de la photosynthèse"
 
 # Grammarly checked
 #: pages/photosynthesis.py:45
 msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-msgstr ""
+msgstr "Zoom schématique sur une feuille : La coupe transversale montre des cellules mésophylles contenant des chloroplastes. Les réactions lumineuses de la photosynthèse ont lieu dans le système membranaire interne des chloroplastes. Ces membranes thylakoïdes forment des structures empilées qui délimitent une lumière interne du stroma du chloroplaste. À l'intérieur de la membrane, une série de complexes protéiques et de transporteurs métaboliques utilisent l'énergie lumineuse pour produire les équivalents énergétiques ATP et NADPH, qui alimentent le métabolisme - principalement la fixation du CO₂ dans la 'réaction d'obscurité'."
 
 # Grammarly checked
 #: pages/photosynthesis.py:43
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_LOCATION"
-msgstr ""
+msgstr "## Lieu de la photosynthèse"
 
 # Grammarly checked
 #: pages/photosynthesis.py:44
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
-msgstr ""
+msgstr "La photosynthèse se produit dans les cellules des composants essentiellement verts des plantes, principalement dans les cellules du mésophylle. Les organites chloroplastiques de ces cellules effectuent la conversion de l'énergie lumineuse en équivalents d'énergie chimique, communément appelée 'réaction lumineuse'. Il existe deux types de photosystèmes dans la série de complexes protéiques utilisés pour cette conversion d'énergie. Tous deux contiennent des centres de réaction chlorophylliens qui, lors de l'absorption de la lumière, peuvent oxyder des composés à fort potentiel d'oxydoréduction (par exemple H₂O) et réduire des accepteurs à faible potentiel d'oxydoréduction (par exemple NADP⁺). Le photosystème II (PSII), qui utilise l'énergie de la lumière pour séparer l'eau en oxygène et en protons, nous intéresse particulièrement."
 
 # Grammarly checked
 #: pages/photosynthesis.py:48
 #: pages/photosynthesis.py:50
 msgid "PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
-msgstr ""
+msgstr "Complexes à l'intérieur de la membrane thylakoïde, nécessaires à la photosynthèse."
 
 # Grammarly checked
 #: pages/photosynthesis.py:52
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
-msgstr ""
+msgstr "Après que le chloroplaste a absorbé la lumière, l'énergie capturée est utilisée dans le cytoplasme pour fixer le CO₂ et produire le produit primaire, le 3-phosphoglycérate, qui est métabolisé en d'autres hydrates et composés de carbon. Il s'agit d'un processus en plusieurs étapes appelé cycle de Calvin, dans lequel le complexe Ribulose 1,5-bisphosphate Carboxylase Oxygenase (RuBisCO) catalyse la première étape de fixation du CO₂.\n\n La vidéo suivante visualise les différentes échelles macromoléculaires de la photosynthèse de manière très simplifiée:"
 
+# Grammarly checked
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
-msgstr ""
+msgstr "Imaginez que vous montiez sur un arbre. Cet arbre a de nombreuses parties : Les racines, le tronc, les branches, les feuilles. Toutes ces parties sont importantes pour le fonctionnement de l'arbre et des chercheurs s'intéressent à leur compréhension.\n\nNous allons nous concentrer pour l'instant sur la feuille car c'est là que se produit la photosynthèse. Faites un pas vers l'arbre et regardez la feuille. Elle a une structure complexe avec un réseau de veines qui traverse une série de cellules vertes photosynthétiques. Et il y a d'autres cellules : Les poils de la plante, les stomates qui échangent les gaz, et bien d'autres choses encore. Même dans une simple feuille, il existe de nombreux ensembles fonctionnels différents qui méritent tous d'être étudiés."
 
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
-msgstr ""
+msgstr "## Comment gérer un excès de lumière ?"
 
 # Grammarly checked
 #: pages/photosynthesis.py:58
 msgid "PHO_NPQ_EXPLANATION"
-msgstr ""
+msgstr "Que se passe-t-il lorsqu'une trop grande quantité de lumière, et donc d'énergie, frappe le photosystème II? Se décompose-t-il et doit-il être renouvelé par la cellule? Heureusement non! Au contraire, l'énergie excédentaire peut être libérée sous forme de chaleur ou utilisée pour la synthèse d'ATP. La cellule peut ainsi être protégée. Les deux mécanismes de protection non photochimiques sont appelés NPQ."
 
 msgid "PHO_NPQ_EXPLANATION_DETAILED"
-msgstr ""
+msgstr "**L'extinction non photochimique (NPQ)** est un mécanisme de protection utilisé par les organismes photosynthétiques pour éviter que leurs photosystèmes ne soient endommagés par un excès d'énergie lumineuse. La NPQ implique des mécanismes à la fois rapides et lents qui sont réversibles et conduisent à une réduction de l'efficacité du processus photosynthétique dans des conditions d'excès de lumière. Cette réduction de l'efficacité est obtenue en dissipant l'énergie lumineuse excédentaire sous forme de chaleur, au lieu de l'utiliser pour la photosynthèse. Par conséquent, bien qu'elle réduise le taux de conversion, la NPQ agit comme une soupape de sécurité, contribuant à protéger l'appareil photosynthétique d'éventuels dommages."
 
 msgid "PHO_NPQ_EXPLANATION_CONTINUED"
-msgstr ""
+msgstr "Ci-dessous, vous pouvez voir un exemple particulier de NPQ, le 'cycle de la xantophylle'. Le modèle que nous utilisons dans les pages suivantes étudie comment ce cycle fait partie de l'adaptation des plantes à la lumière."
 
 msgid "PHO_CAPTION_NPQ"
-msgstr ""
+msgstr "Le 'cycle de la xanthophylle' impliqué dans la NPQ. Au cours d'une série de deux étapes réversibles, le caroténoïde violaxanthine est converti en zéaxanthine, forme active de la NPQ. La zéaxanthine peut absorber l'énergie lumineuse et émettre de la chaleur, protégeant ainsi la machinerie photosynthétique. Les étapes de conversion sont régulées par le pH qui réagit fortement à l'intensité lumineuse."
 
 #: pages/photosynthesis.py:60
 msgid "PHO_HEADER_MODEL_ORGANISMEN"
-msgstr ""
+msgstr "## Une plante pour les dominer toutes"
 
 # Grammarly checked
 #: pages/photosynthesis.py:61
 msgid "PHO_MODEL_ORGANISMEN_EXPLANATION"
-msgstr ""
+msgstr "Bien que les méthodes et modèles présentés s'appliquent à de nombreuses plantes, la plupart ont été développés pour la plante modèle *Arabidopsis thaliana*."
 
 # Grammarly checked
 #: pages/photosynthesis.py:63
 msgid "PHO_EXPANDER_MODEL_ORGANISMEN"
-msgstr ""
+msgstr "Pourquoi Arabidopsis thaliana est-elle un organisme modèle ?"
 
 # Grammarly checked
 #: pages/photosynthesis.py:69
 msgid "PHO_CAPTION_THAIANA_PICTURE"
-msgstr ""
+msgstr "Photographie d'une plante de type sauvage de l'organisme modèle *Arabidopsis thaliana*."
 
 # Grammarly checked
 #: pages/photosynthesis.py:70
 msgid "PHO_EXPANDER_MODEL_ORGANISM_EXPLANATION"
-msgstr ""
+msgstr "<em>Arabidopsis</em> (<em>Arabidopsis thaliana</em>) est considéré comme un organisme modèle parce qu'il est souvent utilisé comme système modèle en biologie végétale. Il présente plusieurs caractéristiques qui le rendent bien adapté aux études en laboratoire, notamment :\n"
+        "1. Une petite taille et un cycle de vie rapide: <em>Arabidopsis</em> a un cycle de vie court qui permet aux chercheurs d'étudier plusieurs générations dans un laps de temps relativement court.\n"
+        "2. Anatomie simple: la structure de la plante est simple et bien comprise, ce qui permet aux chercheurs d'étudier plus facilement des processus de développement spécifiques.\n"
+        "3. Séquençage du génome: Le génome complet <em>d'Arabidopsis</em> a été le premier génome végétal à être séquencé, ce qui a permis aux chercheurs d'obtenir une grande quantité d'informations génétiques sur la plante.\n"
+        "4. Outils génétiques et moléculaires: Une vaste collection d'outils génétiques et moléculaires est disponible pour <em>Arabidopsis</em>, ce qui permet aux chercheurs d'étudier le développement, la croissance et les réponses au stress de la plante aux niveaux cellulaire et moléculaire.\n\n"
+        "Tous ces facteurs ont fait de <em>Arabidopsis thaliana</em> un organisme modèle important pour l'étude de la biologie végétale fondamentale, et ses connaissances ont contribué à notre compréhension de la biologie de toutes les plantes."
 
 
 
 #: pages/method.py:70
 msgid "MTH_LITERATURE_DECLARATION"
-msgstr ""
+msgstr "Les références suivantes fournissent des informations plus approfondies sur les mesures PAM ou permettent de se familiariser avec les principes de base."
 
 #: pages/method.py:10
 msgid "MTH_HEADLINE_ONE"
-msgstr ""
+msgstr "# Méthode de mesure"
 
 msgid "MTH_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "### Objectifs éducatifs\n"
+        "- Vous comprenez pourquoi les plantes brillent (sont fluorescentes)?\n"
+        "- Vous connaissez les mesures de modulation d'amplitude d'impulsion (PAM).\n"
+        "- Vous pouvez interpréter les résultats d'une mesure PAM.\n"
+        "#### Ce qu'il faut savoir:\n"
+        "- Le spectre des couleurs de la lumière\n"
+        "- Les concepts de base de la conversion et de la conservation de l'énergie"
 
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
-msgstr ""
+msgstr "Sur la page précédente, vous avez appris l'importance de la photosynthèse et son fonctionnement. Mais comment savoir si un organisme est **photosynthétiquement actif**? Sur cette page, vous apprendrez comment nous pouvons mesurer la dynamique de la photosynthèse en temps réel à l'aide d'appareils de mesure de la lumière (précisément de la fluorescence). La biologie devenant de plus en plus une science quantitative, il existe de nombreuses méthodes pour étudier la photosynthèse. Par exemple, comme les plantes produisent de l'oxygène et absorbent du dioxyde de carbone, la photosynthèse peut être mesurée en fonction de la vitesse à laquelle ces gaz sont produits ou consommés. Cependant, la mesure des gaz peut s'avérer délicate, surtout si elle est effectuée à l'extérieur, sur un arbre ou dans un champ. Par conséquent, une caractéristique importante des organismes photosynthétiques est essentielle pour fournir des méthodes alternatives de mesure de la photosynthèse *in vivo*!"
 
 
 # Grammarly checked
 #: pages/method.py:18
 msgid "MTH_CAPTION_ABB1"
-msgstr ""
+msgstr "Photo d'une plante d'une plante (*Spathiphyllum*) : A gauche à la lumière du jour, au milieu éclairée par une lampe UV5 commerciale, à droite également éclairée par une lampe UV5, mais à travers un filtre qui filtre toutes les longueurs du spectre à l'exception de la lumière rouge."
 
 #: Explanation by Tobias
 #: pages/method.py:20
 msgid "MTH_GROWING_PLANTS_1"
-msgstr ""
+msgstr "Les plantes brillent !"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:21
 msgid "MTH_INTRODUCTION_GLOWING"
-msgstr ""
+msgstr "C'est là que la spécialité des plantes entre en jeu: Elles peuvent réémettre de la lumière et, dans des conditions adéquates, briller! Lorsque les feuilles sont éclairées, elles utilisent la majeure partie de la lumière pour effectuer les réactions photochimiques complexes de la photosynthèse. Toutefois, une petite partie de la lumière absorbée est réémise. Il se passe la même chose lorsque votre T-shirt blanc brille en violet sous la lumière noire d'une discothèque. Lorsqu'un objet brille d'une couleur différente lorsqu'il est éclairé, on parle de 'fluorescence'. L'éclat de fluorescence de la plante est rouge."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:22
 msgid "MTH_PLANT_ARE_SHINING_RED"
-msgstr ""
+msgstr "Vous vous dites peut-être: 'Mais les plantes sont vertes et je n'en ai jamais vu une devenir fluorescente!' Et, bien sûr, c'est vrai. Les plantes n'absorbent pas la lumière verte, mais la réfléchissent, ce qui constitue leur couleur primaire. En revanche, leur éclat rouge est beaucoup plus faible et nous ne pouvons pas le voir car la lumière qui nous parvient de toutes parts est plus forte."
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:23
 msgid "MTH_INTRODUCTION_EXPERIMENT"
-msgstr ""
+msgstr "Nous avons donc préparé une petite expérimentation pour vous: Nous avons recouvert une petite partie de la feuille d'une plante d'un autocollant portant les lettres RWTH, puis nous l'avons éclairée d'une lumière intense. Le filtre rouge de l'appareil photo nous permet d'ignorer la lumière perturbatrice et de nous concentrer sur la fluorescence rouge. Observez maintenant ce qui se passe:"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:29
 msgid "MTH_EXPLANATION_VIDEO"
-msgstr ""
+msgstr "Avez-vous vu l'éclat rouge et l'empreinte fantôme de l'autocollant sur la feuille? Vous venez de voir l'adaptation de la plante en action. Comme la plante ne peut pas bouger, elle doit s'adapter à son environnement. Beaucoup de lumière est arrivée sur les parties de la feuille non couvertes par l'autocollant. Comme cette lumière pourrait être nocive, la plante a rapidement produit des substances chimiques agissant comme un 'pare-soleil' à l'intérieur des cellules. Après quelques secondes, ces cellules ont été protégées et ont reçu moins de lumière et ont été moins fluorescentes. Mais lorsque nous avons soulevé l'autocollant, les cellules situées en dessous n'avaient pas produit de pare-soleil. Elles ont vu la lumière intense et sont devenues fluorescentes à pleine puissance, juste à côté de leurs voisines protégées. Cette différence nette de fluorescence est l'image rémanente de l'autocollant. Lorsque nous avons continué à éclairer la lampe, toutes les cellules se sont adaptées, faisant disparaître l'image sur la feuille."
 
 #: Explanation by Tobias
 #: pages/method.py:31
 msgid "MTH_MEASURING_FLUORESZENZ"
-msgstr ""
+msgstr "Mesurer la photosynthèse par fluorescence"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
-msgstr ""
+msgstr "Cette expérimentation vous a montré l'éclat des plantes et leur étonnante capacité à s'adapter à la lumière. Mais en quoi cela peut-il vous aider à tester la photosynthèse? Beaucoup, car non seulement la 'protection solaire' affecte la fluorescence des feuilles, mais de nombreux autres facteurs le font également. Si vous souhaitez savoir comment cela se produit, consultez la section <a href='#' id='4Bio'>4Bio</a>. Disons pour l'instant que l'intensité de la photosynthèse de la plante influe également sur l'intensité du signal lumineux réémis."
 
 #: Explanation by Tobias
 # Grammarly checked

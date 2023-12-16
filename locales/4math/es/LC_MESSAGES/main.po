@@ -280,8 +280,6 @@ msgstr ""
 msgid "STR_MEMORY"
 msgstr ""
 
-
-
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
@@ -367,6 +365,7 @@ msgstr ""
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
+# Grammarly checked
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
 msgstr ""
 

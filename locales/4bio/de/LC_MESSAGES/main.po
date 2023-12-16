@@ -286,8 +286,6 @@ msgstr "Auf der Seite <b>Experiments <i>in silico</i></b> lernst du das von uns 
 msgid "STR_MEMORY"
 msgstr "Nicht zuletzt lernst du auf der Seite **Plant Light Memory** das pflanzliche Lichtgedächtnis kennen und kannst dessen Existenz selbständig mit Experimenten nachweisen."
 
-
-
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
@@ -395,6 +393,7 @@ msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese no
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr "Nachdem der Chloroplast das Licht aufgenommen hat, wird die eingefangene Energie im Zytoplasma genutzt, um CO₂ zu binden und Zucker zu produzieren. Dies ist ein mehrstufiger Prozess, der Calvin-Zyklus genannt wird und dessen Hauptakteur ein Protein ist: RuBisCO. \n\n Wenn Sie diese Reise in den Chloroplasten genauer sehen möchten, haben wir ein kurzes Video für Sie erstellt:"
 
+# Grammarly checked
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
 msgstr "Stell dir sich vor, du gehst auf einen Baum zu. Dieser Baum hat viele Teile: Wurzeln, einen Stamm, Äste, Blätter. Alle sind wichtig für die Funktion des Baumes, und es gibt Forscher, die daran interessiert sind, sie zu verstehen.\n\n"
                 "Konzentrieren wir uns zunächst auf das Blatt, denn dort findet die Photosynthese statt. Geh einen Schritt auf den Baum zu und sieh dir das Blatt an. Es hat eine komplizierte Struktur mit einem Netz von Adern, die sich durch ein Blatt aus grünen, photosynthetischen Zellen ziehen. Und es gibt noch andere Zellen: Pflanzenhaare, gasaustauschende Spaltöffnungen und vieles mehr. Selbst in einem einzigen Blatt gibt es viele verschiedene Funktionsweisen, die alle untersucht werden sollten.\n\n"
@@ -470,7 +469,7 @@ msgstr "### Lernziele\n"
 # Grammarly checked
 #: pages/method.py:15
 msgid "MTH_INTRODUCTION_MEASUREMENT"
-msgstr "Auf der vorherigen Seite hast du erfahren, wie wichtig die Photosynthese ist und wie sie funktioniert. Aber wie können wir wissen, wie **photosynthetisch aktiv** ein Organismus ist? Um die photosynthetische Aktivität von Pflanzen quantitativ zu messen, wurden nicht-invasive, auf Fluoreszenz basierende Methoden entwickelt. Während Gasmessungen vor Ort schwierig durchzuführen sind, können Fluoreszenzmessungen an Pflanzen unterschiedlicher Größe und in verschiedenen Umgebungen durchgeführt werden und ermöglichen eine Echtzeitbewertung der Photosynthesedynamik *in vivo*. Das derzeit entwickelte FLEX-Projekt der Europäischen Weltraumorganisation zielt darauf ab, Photosynthesemessungen auf globaler Ebene mit Hilfe von satellitengestützter Fluoreszenzmessung durchzuführen (https://earth.esa.int/eogateway/missions/flex)."
+msgstr "Auf der vorherigen Seite hast du erfahren, wie wichtig die Photosynthese ist und wie sie funktioniert. Aber wie können wir wissen, wie **photosynthetisch aktiv** ein Organismus ist? Um die photosynthetische Aktivität von Pflanzen quantitativ zu messen, wurden nicht-invasive, auf Fluoreszenz basierende Methoden entwickelt. Während Gasmessungen vor Ort schwierig durchzuführen sind, können Fluoreszenzmessungen an Pflanzen unterschiedlicher Größe und in verschiedenen Umgebungen durchgeführt werden und ermöglichen eine Echtzeitbewertung der Photosynthesedynamik *in vivo*. Das derzeit entwickelte [FLEX-Projekt](https://earth.esa.int/eogateway/missions/flex) der Europäischen Weltraumorganisation zielt darauf ab, Photosynthesemessungen auf globaler Ebene mit Hilfe von satellitengestützter Fluoreszenzmessung durchzuführen."
 
 
 # Grammarly checked
@@ -912,7 +911,7 @@ msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
 msgstr ""
 
 msgid "MDL_LINK_PLANTS_AND_PYTHON"
-msgstr "*Wenn Sie mit Python noch nicht vertraut sind, werfen Sie einen Blick auf [Plants and Python] (https://plantsandpython.github.io/PlantsAndPython), wo Sie Python lernen können und wie es in der Wissenschaft verwendet wird."
+msgstr "*Wenn Sie mit Python noch nicht vertraut sind, werfen Sie einen Blick auf [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), wo Sie Python lernen können und wie es in der Wissenschaft verwendet wird."
 
 # Grammarly checked
 #: pages/model_explain.py:258

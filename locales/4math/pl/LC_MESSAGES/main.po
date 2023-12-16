@@ -280,8 +280,6 @@ msgstr "Na stronie **eksperymenty *in silico*** poznasz stosowany przez nas mode
 msgid "STR_MEMORY"
 msgstr "Wreszcie, poznasz pamięć światła roślin na stronie **pamięć światła roślin** i możesz udowodnić jej istnienie niezależnie za pomocą eksperymentów."
 
-
-
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
@@ -367,6 +365,7 @@ msgstr ""
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr ""
 
+# Grammarly checked
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
 msgstr ""
 

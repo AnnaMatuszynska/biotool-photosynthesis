@@ -275,7 +275,7 @@ msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "Wie die Überschrift schon sagt, arbeiten wir *in silico*, d.h. mit mathematischen Modellen. Auf der Seite **Computational Models** erfährst du etwas über mathematische Modelle im Allgemeinen und etwas über Photosynthesemodelle."
+msgstr "Wie die Überschrift schon sagt, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Auf der Seite **Computational Models** erfährst du etwas über mathematische Modelle im Allgemeinen und etwas über Photosynthesemodelle."
 
 # Grammarly checked
 #: Start.py:37
@@ -286,8 +286,6 @@ msgstr "Auf der Seite **Experiments *in silico*** lernst du das von uns verwende
 #: Start.py:38
 msgid "STR_MEMORY"
 msgstr "Nicht zuletzt lernst du auf der Seite **Plant Light Memory** das pflanzliche Lichtgedächtnis kennen und kannst dessen Existenz selbständig mit Experimenten nachweisen."
-
-
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
@@ -383,6 +381,7 @@ msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese no
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
 msgstr "Nachdem der Chloroplast das Licht aufgenommen hat, wird die eingefangene Energie im Zytoplasma genutzt, um CO₂ zu binden und das Hauptprodukt, 3-Phosphoglycerat, zu erzeugen, das in andere Kohlenhydrate und Verbindungen umgewandelt wird. Dies ist ein mehrstufiger Prozess, der als Calvin-Zyklus bezeichnet wird, wobei der Komplex Ribulose-1,5-Bisphosphat-Carboxylase-Oxygenase (RuBisCO) den ersten CO₂-Fixierungsschritt katalysiert.\n\n Das folgende Video veranschaulicht die verschiedenen makromolekularen Skalen der Photosynthese auf sehr vereinfachte Weise:"
 
+# Grammarly checked
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
 msgstr "Stell dir sich vor, du gehst auf einen Baum zu. Dieser Baum hat viele Teile: Wurzeln, einen Stamm, Äste, Blätter. Alle sind wichtig für die Funktion des Baumes, und es gibt Forscher, die daran interessiert sind, sie zu verstehen.\n\n Konzentrieren wir uns zunächst auf das Blatt, denn dort findet die Photosynthese statt. Geh einen Schritt auf den Baum zu und sieh dir das Blatt an. Es hat eine komplizierte Struktur mit einem Netz von Adern, die sich durch ein Blatt aus grünen, photosynthetischen Zellen ziehen. Und es gibt noch andere Zellen: Pflanzenhaare, gasaustauschende Spaltöffnungen und vieles mehr. Selbst in einem einzigen Blatt gibt es viele verschiedene Funktionsweisen, die alle untersucht werden sollten.Aber konzentrieren wir uns wieder auf die grünen Zellen, das Mesophyll, die Zellen, in denen die meiste Photosynthese stattfindet. Stell dir vor, du gehst einen Schritt weiter und schaust ins Innere der Zelle. Du siehst die Zelle bis zum Rand gefüllt mit verschiedenen Teilen, die ihre eigenen Aufgaben haben: Die Vakuole, die der Zelle ihre Struktur verleiht; der Zellkern, der die genetische Information enthält; der Chloroplast, in dem das Licht eingefangen wird; und viele weitere Organellen. Und lassen Sie uns einen weiteren Schritt in Richtung des Chloroplasten machen, um zu untersuchen, wie das Licht unserer Zelle Energie gibt.\n\n Auf dieser Ebene sieht man, wie das Licht auf die Millionen von Proteinen trifft, die in diesem begrenzten Raum ihre Arbeit verrichten. Spezielle unter ihnen, die Photosysteme, können das Licht aufnehmen, mit Elektronen jonglieren und sie weitergeben. Eine ganze Miniaturmaschinerie wird von ihnen angetrieben, die für die Produktion und den Verbrauch von Dingen sorgt. Viele von ihnen verlassen oder betreten die Chloroplasten aus anderen Teilen der Zelle. Alles verändert sich ständig! Und da drinnen sitzen wir und fragen uns: Wie funktioniert die Photosynthese?"
 
@@ -461,7 +460,7 @@ msgstr "Auf der vorherigen Seite hast du erfahren, wie wichtig die Photosynthese
 # Grammarly checked
 #: pages/method.py:18
 msgid "MTH_CAPTION_ABB1"
-msgstr "Foto einer Pflanze der Art Spathiphyllum, in drei verschiedenen Beleuchtungssituationen: Links in Tageslicht, \
+msgstr "Foto einer Pflanze der Art *Spathiphyllum*, in drei verschiedenen Beleuchtungssituationen: Links in Tageslicht, \
         in der Mitte beleuchtet von einer handelsüblichen UV5-Lampe, Rechts ebenfalls beleuchtet mit einer UV5-Lampe, \
         jedoch durch einen Filter, welcher alle Wellenlängen, bis auf die des roten Lichtes filtert."
 
@@ -506,7 +505,7 @@ msgid "MTH_EXPLANATION_MEASUREMENT_1"
 msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
         können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn du dich dafür interessierst, wie das \
-        geschieht, schaue dir den Abschnitt <a href='#' id='4Math'>4Math</a> an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
+        geschieht, schaue dir den Abschnitt <a href='#' id='4Bio'>4Bio</a> an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
         Pflanze wirkt sich auch auf die Leuchtkraft aus."
 
 #: Explanation by Tobias
@@ -909,7 +908,7 @@ msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
 msgstr "Das wäre bei der manuellen Vorgehensweise sehr viel mühsamer gewesen."
 
 msgid "MDL_LINK_PLANTS_AND_PYTHON"
-msgstr "*Wenn Sie mit Python noch nicht vertraut sind, werfen Sie einen Blick auf [Plants and Python] (https://plantsandpython.github.io/PlantsAndPython), wo Sie Python lernen können und wie es in der Wissenschaft verwendet wird."
+msgstr "*Wenn Sie mit Python noch nicht vertraut sind, werfen Sie einen Blick auf [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), wo Sie Python lernen können und wie es in der Wissenschaft verwendet wird."
 
 # Grammarly checked
 #: pages/model_explain.py:258
