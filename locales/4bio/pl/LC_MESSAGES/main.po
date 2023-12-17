@@ -511,7 +511,6 @@ msgstr ""
 # Grammarly checked
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
-
 msgstr ""
 
 #: Explanation by Tobias
@@ -656,11 +655,6 @@ msgstr ""
 # Grammarly checked
 #: pages/model_explain.py:254
 msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
-msgstr ""
-
-# Grammarly checked
-#: pages/model_explain.py:261
-msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
 msgstr ""
 
 #: pages/model_explain.py:352
@@ -982,14 +976,6 @@ msgstr ""
 msgid "FAL_VIDEO_TRANSCRIPT_SLIDERS"
 msgstr ""
 
-#: pages/first_analysis.py:277
-msgid "FAL_TIPP1"
-msgstr ""
-
-#: pages/first_analysis.py:278
-msgid "FAL_TIPP2"
-msgstr ""
-
 #: pages/first_analysis.py:354
 msgid "FAL_SLIDER_TIME"
 msgstr ""
@@ -1149,20 +1135,13 @@ msgstr ""
 msgid "FAL_GUIDING_QUESTIONS_EXTEND"
 msgstr ""
 
-#: pages/first_analysis.py:262
+#: pages/first_analysis.py:321
 msgid "FAL_GUIDING_ANSWERS"
-" - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
-" - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol m-² s-¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
-"4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
-" - Bei einer Lichtintensität von 500 bis 900 μmol m-² s-¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
-" - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
 msgstr ""
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS_EXTEND"
 msgstr ""
-
-
 
 #: pages/plant_memory.py:380
 msgid "MEM_HEADLINE_BRAIN"
@@ -1198,14 +1177,6 @@ msgstr ""
 
 #: pages/plant_memory.py:113
 msgid "MEM_ANNO_MEMORY"
-msgstr ""
-
-#: pages/plant_memory.py:393
-msgid "MEM_TIP1"
-msgstr ""
-
-#: pages/plant_memory.py:395
-msgid "MEM_TIP2"
 msgstr ""
 
 #: pages/first_analysis.py:262

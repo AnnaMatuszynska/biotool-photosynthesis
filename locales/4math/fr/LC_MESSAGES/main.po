@@ -82,17 +82,17 @@ msgstr "Références"
 #: pages/photosynthesis.py:75
 #: pages/plant_memory.py:402
 msgid "LITERATURE_ONPAGE"
-msgstr "Références sur cette page :"
+msgstr "Références sur cette page&nbsp;:"
 
 msgid "LITERATURE_PLANTS_AND_PYTHON"
-msgstr "Consultez également *Plants and Python*, un cours de python pour les biologistes:\n"
+msgstr "Consultez également *Plants and Python*, un cours de python pour les biologistes&nbsp;:\n"
             "- Plants & Python: A series of lessons in coding, plant biology, computation, and bioinformatics. (2022). The Plant Cell, 34(7), e1. https://doi.org/10.1093/plcell/koac187\n"
-            "- Site officiel: https://plantsandpython.github.io/PlantsAndPython"
+            "- Site officiel&nbsp;: https://plantsandpython.github.io/PlantsAndPython"
 
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
-msgstr "Intensité de lumière de la phase lumineuse (AL) en μmol m⁻² s⁻¹"
+msgstr "Intensité de lumière de la phase lumineuse (AL) en μmol&nbsp;m⁻²&nbsp;s⁻¹"
 
 #: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
@@ -115,7 +115,7 @@ msgstr "Taux de conversion en violaxanthine (CtV) en pourcentage de la valeur pa
 #: Start.py:14
 #: pages/contact.py:68
 msgid "PROGRAMS_USED"
-msgstr "Ce site web a été réalisé à l'aide de **Streamlit** : https://streamlit.io/. Certaines figures ont été crées à l'aide de **BioRender** : https://biorender.com."
+msgstr "Ce site web a été réalisé à l'aide de **Streamlit**&nbsp;:https://streamlit.io/. Certaines figures ont été crées à l'aide de **BioRender**&nbsp;:https://biorender.com."
 
 #: pages/first_analysis.py:402
 #: pages/plant_memory.py:297
@@ -191,7 +191,7 @@ msgstr "Ce site est disponible en ligne et directement utilisable à l'adresse <
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
-msgstr "# Photosynthèse *in silico* : un tableau de bord interactif pour étudier la photosynthèse à l'aide d'un modèle computationnel"
+msgstr "# Photosynthèse *in silico*&nbsp;:un tableau de bord interactif pour étudier la photosynthèse à l'aide d'un modèle computationnel"
 
 #: Intro by Anna
 # Grammarly checked
@@ -207,7 +207,7 @@ msgstr "## Comment utiliser ce site"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr "Nous nous adressons à la fois aux débutants curieux et aux apprenants plus avancés dans les domaines de la biologie et de la modélisation. Vous pouvez choisir dans le panneau latéral gauche l'une des deux versions de ce site à partir d'un menu déroulant (vous pouvez également cliquer sur le texte en surbrillance): <a href='#' id='4Bio'><i>4Bio</i></a>, si vous vous sentez plus à l'aise avec la biologie, ou <i>4Math</i>, si vous voulez découvrir le contexte mathématique plus en détail. Nous avons également inclus des vidéos sur ce site. Si vous souhaitez lire les transcriptions, sélectionnez l'option <i>Afficher les transcriptions des vidéos</i> à gauche."
+msgstr "Nous nous adressons à la fois aux débutants curieux et aux apprenants plus avancés dans les domaines de la biologie et de la modélisation. Vous pouvez choisir dans le panneau latéral gauche l'une des deux versions de ce site à partir d'un menu déroulant (vous pouvez également cliquer sur le texte en surbrillance)&nbsp;: <a href='#' id='4Bio'><i>4Bio</i></a>, si vous vous sentez plus à l'aise avec la biologie, ou <i>4Math</i>, si vous voulez découvrir le contexte mathématique plus en détail. Nous avons également inclus des vidéos sur ce site. Si vous souhaitez lire les transcriptions, sélectionnez l'option <i>Afficher les transcriptions des vidéos</i> à gauche."
 
 # Grammarly checked
 #: Start.py:20
@@ -219,7 +219,7 @@ msgstr "La photosynthèse est le moteur de ce monde. De l'air que vous respirez 
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr "### Objectifs pédagogiques\n"
-        "Ce que nous espérons que vous apprendrez en suivant la version *4Math*:"
+        "Ce que nous espérons que vous apprendrez en suivant la version *4Math*&nbsp;:"
 
 
 msgid "STR_LEARNING_OBJECTIVES"
@@ -297,7 +297,7 @@ msgstr "### Objectifs éducatifs\n"
         "- Vous comprenez pourquoi le changement climatique a un impact sur les plantes et la photosynthèse.\n"
         "- Vous apprenez le principe de base de la photosynthèse et où elle se produit.\n"
         "- Vous comprenez le problème des plantes face à l'excès de lumière et la façon dont elles se protègent.\n"
-        "#### Ce qu'il faut savoir:\n"
+        "#### Ce qu'il faut savoir&nbsp;:\n"
         "- Structure d'une plante\n"
         "- Structure d'une cellule\n"
         "- Fonction de la membrane cellulaire"
@@ -311,7 +311,7 @@ msgstr "## Changement climatique"
 # Grammarly checked
 #: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
-msgstr "Le *climat* est défini comme la moyenne des mesures statistiques du temps sur une longue période dans un lieu spécifique. Le *changement climatique* est défini comme une modification du climat à l'échelle mondiale. Trois catégories principales peuvent induire un changement climatique:"
+msgstr "Le *climat* est défini comme la moyenne des mesures statistiques du temps sur une longue période dans un lieu spécifique. Le *changement climatique* est défini comme une modification du climat à l'échelle mondiale. Trois catégories principales peuvent induire un changement climatique&nbsp;:"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16
@@ -346,7 +346,7 @@ msgstr "Les plantes sont autotrophes et peuvent donc produire des composés orga
 # Grammarly checked
 #: pages/photosynthesis.py:36
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr "Fondamentalement, la photosynthèse est un processus en plusieurs étapes qui utilise l'énergie transportée par les photons et absorbée par les pigments pour fixer le CO₂ en hydrates de carbone, qui sont ensuite métabolisés en d'autres composés organiques. La stœchiométrie nette de la photosynthèse est la suivante : [red] 6 CO₂ + 6 H₂O + *énergie de lumière* -> C₆H₁₂O₆ + 6 O₂, produisant ainsi de l'oxygène moléculaire."
+msgstr "Fondamentalement, la photosynthèse est un processus en plusieurs étapes qui utilise l'énergie transportée par les photons et absorbée par les pigments pour fixer le CO₂ en hydrates de carbone, qui sont ensuite métabolisés en d'autres composés organiques. La stœchiométrie nette de la photosynthèse est la suivante&nbsp;:[red] 6 CO₂ + 6 H₂O + *énergie de lumière* -> C₆H₁₂O₆ + 6 O₂, produisant ainsi de l'oxygène moléculaire."
 
 #: pages/photosynthesis.py:39
 #: pages/photosynthesis.py:41
@@ -356,7 +356,7 @@ msgstr "Processus simplifié de la photosynthèse"
 # Grammarly checked
 #: pages/photosynthesis.py:45
 msgid "PHO_CAPTION_FOTOSYNTHESE_LEAF_ZOOM"
-msgstr "Zoom schématique sur une feuille : La coupe transversale montre des cellules mésophylles contenant des chloroplastes. Les réactions lumineuses de la photosynthèse ont lieu dans le système membranaire interne des chloroplastes. Ces membranes thylakoïdes forment des structures empilées qui délimitent une lumière interne du stroma du chloroplaste. À l'intérieur de la membrane, une série de complexes protéiques et de transporteurs métaboliques utilisent l'énergie lumineuse pour produire les équivalents énergétiques ATP et NADPH, qui alimentent le métabolisme - principalement la fixation du CO₂ dans la 'réaction d'obscurité'."
+msgstr "Zoom schématique sur une feuille&nbsp;:La coupe transversale montre des cellules mésophylles contenant des chloroplastes. Les réactions lumineuses de la photosynthèse ont lieu dans le système membranaire interne des chloroplastes. Ces membranes thylakoïdes forment des structures empilées qui délimitent une lumière interne du stroma du chloroplaste. À l'intérieur de la membrane, une série de complexes protéiques et de transporteurs métaboliques utilisent l'énergie lumineuse pour produire les équivalents énergétiques ATP et NADPH, qui alimentent le métabolisme - principalement la fixation du CO₂ dans la 'réaction d'obscurité'."
 
 # Grammarly checked
 #: pages/photosynthesis.py:43
@@ -377,11 +377,11 @@ msgstr "Complexes à l'intérieur de la membrane thylakoïde, nécessaires à la
 # Grammarly checked
 #: pages/photosynthesis.py:52
 msgid "PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE"
-msgstr "Après que le chloroplaste a absorbé la lumière, l'énergie capturée est utilisée dans le cytoplasme pour fixer le CO₂ et produire le produit primaire, le 3-phosphoglycérate, qui est métabolisé en d'autres hydrates et composés de carbon. Il s'agit d'un processus en plusieurs étapes appelé cycle de Calvin, dans lequel le complexe Ribulose 1,5-bisphosphate Carboxylase Oxygenase (RuBisCO) catalyse la première étape de fixation du CO₂.\n\n La vidéo suivante visualise les différentes échelles macromoléculaires de la photosynthèse de manière très simplifiée:"
+msgstr "Après que le chloroplaste a absorbé la lumière, l'énergie capturée est utilisée dans le cytoplasme pour fixer le CO₂ et produire le produit primaire, le 3-phosphoglycérate, qui est métabolisé en d'autres hydrates et composés de carbon. Il s'agit d'un processus en plusieurs étapes appelé cycle de Calvin, dans lequel le complexe Ribulose 1,5-bisphosphate Carboxylase Oxygenase (RuBisCO) catalyse la première étape de fixation du CO₂.\n\n La vidéo suivante visualise les différentes échelles macromoléculaires de la photosynthèse de manière très simplifiée&nbsp;:"
 
 # Grammarly checked
 msgid "PHO_VIDEO_TRANSCRIPT_JOURNEY"
-msgstr "Imaginez que vous montiez sur un arbre. Cet arbre a de nombreuses parties : Les racines, le tronc, les branches, les feuilles. Toutes ces parties sont importantes pour le fonctionnement de l'arbre et des chercheurs s'intéressent à leur compréhension.\n\nNous allons nous concentrer pour l'instant sur la feuille car c'est là que se produit la photosynthèse. Faites un pas vers l'arbre et regardez la feuille. Elle a une structure complexe avec un réseau de veines qui traverse une série de cellules vertes photosynthétiques. Et il y a d'autres cellules : Les poils de la plante, les stomates qui échangent les gaz, et bien d'autres choses encore. Même dans une simple feuille, il existe de nombreux ensembles fonctionnels différents qui méritent tous d'être étudiés."
+msgstr "Imaginez que vous montiez sur un arbre. Cet arbre a de nombreuses parties&nbsp;:Les racines, le tronc, les branches, les feuilles. Toutes ces parties sont importantes pour le fonctionnement de l'arbre et des chercheurs s'intéressent à leur compréhension.\n\nNous allons nous concentrer pour l'instant sur la feuille car c'est là que se produit la photosynthèse. Faites un pas vers l'arbre et regardez la feuille. Elle a une structure complexe avec un réseau de veines qui traverse une série de cellules vertes photosynthétiques. Et il y a d'autres cellules&nbsp;:Les poils de la plante, les stomates qui échangent les gaz, et bien d'autres choses encore. Même dans une simple feuille, il existe de nombreux ensembles fonctionnels différents qui méritent tous d'être étudiés."
 
 #: pages/photosynthesis.py:57
 msgid "PHO_HEADLINE_NPQ"
@@ -458,7 +458,7 @@ msgstr "Sur la page précédente, vous avez appris l'importance de la photosynth
 # Grammarly checked
 #: pages/method.py:18
 msgid "MTH_CAPTION_ABB1"
-msgstr "Photo d'une plante d'une plante (*Spathiphyllum*) : A gauche à la lumière du jour, au milieu éclairée par une lampe UV5 commerciale, à droite également éclairée par une lampe UV5, mais à travers un filtre qui filtre toutes les longueurs du spectre à l'exception de la lumière rouge."
+msgstr "Photo d'une plante d'une plante (*Spathiphyllum*)&nbsp;:A gauche à la lumière du jour, au milieu éclairée par une lampe UV5 commerciale, à droite également éclairée par une lampe UV5, mais à travers un filtre qui filtre toutes les longueurs du spectre à l'exception de la lumière rouge."
 
 #: Explanation by Tobias
 #: pages/method.py:20
@@ -504,145 +504,151 @@ msgstr "Cette expérimentation vous a montré l'éclat des plantes et leur éton
 # Grammarly checked
 #: pages/method.py:33
 msgid "MTH_INTRODUCTION_PHI"
-msgstr ""
+msgstr "Les chercheurs ont donc inventé un moyen de mesurer cette fluorescence et de suivre son évolution dans le temps (vous entendrez parler de cette 'PAM' plus tard). Grâce à de brillants calculs, ils peuvent ensuite calculer de nombreuses choses qui nous intéressent: L'état de santé de la feuille, la mesure dans laquelle elle se protège de la lumière et, plus important encore, la manière dont elle réalise la photosynthèse. Nous appelons cette dernière mesure 'ΦPSII', avec la lettre grecque 'Psi'; vous la verrez peut-être sur certains des graphiques que vous produirez plus tard. Plus elle est élevée, mieux c'est, car la plante réalise la photosynthèse de manière plus efficace."
 
 msgid "MTH_VIDEO_TRANSCRIPT_PAM"
-msgstr ""
+msgstr "Vous êtes-vous déjà demandé comment les chercheurs mesurent l'activité photosynthétique des plantes? L'une des méthodes consiste à mesurer la PAM. PAM signifie Pulse Amplitude Modulation (modulation d'amplitude d'impulsion) et mesure la fluorescence des molécules de chlorophylle à l'intérieur d'une feuille. Nous allons utiliser ce fluorimètre PAM pour mesurer la fluorescence de la chlorophylle dans une plante. Tout d'abord, nous devons nous assurer que la plante est adaptée à l'obscurité depuis au moins 12 heures. Ensuite, nous fixerons cette sonde sur la feuille et lui enverrons une brève impulsion lumineuse. Les molécules de chlorophylle absorbent la lumière et émettent une bouffée de fluorescence, que nous pouvons mesurer à l'aide du détecteur.\n\n Nous commençons la mesure qui nous donne un graphique de la fluorescence émise par les molécules de chlorophylle en fonction du temps. Ce graphique peut nous renseigner sur le stress photosynthétique de la plante. Le graphique comporte plusieurs paramètres, dont F₀, qui est le niveau de fluorescence initial avant l'impulsion lumineuse, et Fₘ, qui est le niveau de fluorescence maximal. Le rapport entre Fᵥ et Fₘ nous donne l'efficacité quantique maximale du photosystème deux, qui est un indicateur de la santé générale de la plante. Grâce aux mesures PAM, les chercheurs peuvent obtenir des informations sur la santé photosynthétique des plantes, ce qui peut contribuer à la gestion des cultures et à la recherche sur le changement climatique."
 
 #: Explanation by Tobias
 
 #: pages/method.py:40
 msgid "MTH_MEASURING_LIGHT_FLUORESCENCE"
-msgstr ""
+msgstr "Principes de base de la mesure de la fluorescence de la chlorophylle avec PAM"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:41
 msgid "MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"
-msgstr ""
+msgstr "Cette figure explique les principes de base de la fluorescence et de l'expérimentation PAM. Dans le panneau du bas, vous voyez les résultats des expérimentations PAM. Regardez bien car, dans quelques minutes, vous obtiendrez des résultats similaires, non pas à l'aide d'un fluorimètre mais avec votre ordinateur! Que voit-on dans ce graphique? Il résulte d'un protocole lumineux unique, dans lequel une plante adaptée à l'obscurité est exposée à une très faible lumière actinique (AL, zone blanche représentée dans la barre lumineuse, L), suivie d'une récupération dans l'obscurité, où la lumière est complètement éteinte (zone noire dans L). Plusieurs flashs lumineux saturants (impulsions de saturation, SP) sont appliqués avant, pendant et après l'illumination actinique pour mesurer la fluorescence maximale Fₘ, Fₘ', Fₘ'', respectivement. Nous pouvons utiliser ces caractéristiques de fluorescence pour calculer les valeurs quantifiant la photosynthèse, par exemple la quantité de NPQ.\n\n"
+                "Alors pourquoi voyons-nous exactement un effet ? C'est ce qu'explique le schéma en haut à gauche. L'absorption de l'énergie lumineuse amène les molécules de chlorophylle au premier état excité (S1 dans le diagramme de gauche, un 'diagramme de Jablonsky' simplifié). Pour que les chlorophylles retournent à l'état fondamental (S₀), l'énergie absorbée peut être utilisée pour la séparation des charges et la photosynthèse ('quenching' photochimique, qP), dissipée sous forme de chaleur ('quenching' non photochimique, NPQ) ou réémise sous forme de fluorescence. Et maintenant, la partie la plus cruciale: les spectres d'émission de fluorescence sont décalés vers le rouge par rapport aux spectres d'absorption. Cela signifie que la lumière de fluorescence est plus rouge (à des longueurs du spectre plus élevées sur l'axe de gauche) que la lumière absorbée (panneau supérieur sur la droite). Cela signifie que la fluorescence peut être détectée à l'aide de fluoromètres munis des filtres optiques correspondants et que leur signal ne sera pas confondu avec la lumière que nous projetons sur les plantes. Le signal de fluorescence émis est enregistré à l'aide de clés de lecture, comme le montre le panneau inférieur. Il nous a fallu beaucoup de temps pour tout résumer sur une seule figure, et cette figure provient de notre travail précédent (Nies et al. 2021)."
 
 # Grammarly checked
 #: pages/method.py:44
 #: pages/method.py:58
 #: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
-msgstr ""
+msgstr "En haut: Représentation schématique des grands principes qui sous-tendent la fluorescence de la chlorophylle a et l'expérimentation PAM.\n\n En bas: Exemple de graphique d'une mesure PAM"
 
 # Grammarly checked
 #: pages/method.py:37
 msgid "MTH_HEADLINE_PAM_MEASUREMENT"
-msgstr ""
+msgstr "### Expérimentations PAM"
 
 # Grammarly checked
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
-
-msgstr ""
+msgstr "Nous allons vous parler ici d'une expérimentation passionnante que les chercheurs utilisent pour mesurer la photosynthèse. La base de cette expérience, dont vous avez déjà entendu parler, est la fluorescence. Cette expérimentation est appelée 'modulation d'amplitude d'impulsion', ou 'PAM' en abrégé. D'après le nom, vous pouvez déduire que les expérimentateurs 'modulent' (contrôlent) l''amplitude' (l'intensité) des flashs lumineux."
 
 #: Explanation by Tobias
 #: pages/method.py:48
 msgid "MTH_SATURATING_PULSES"
-msgstr ""
+msgstr "Impulsions de saturation"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:49
 msgid "MTH_EXPLANATION_ATTEMPTS"
-msgstr ""
+msgstr "Vous devez connaître un autre aspect de la PAM: les impulsions saturantes. Notre machine donne à la plante une impulsion lumineuse très intense toutes les quelques secondes, surchargeant ainsi sa machinerie photosynthétique. Dans cet état, la lumière de mesure est entièrement convertie en fluorescence, et nous mesurons le rendement maximal de fluorescence 'Fₘ'. Alors que le rendement de fluorescence standard dépend de la photosynthèse de la plante, le Fₘ n'en dépend pas. Ainsi, en comparant le rendement normal et le rendement maximal, nous pouvons distinguer les changements dans et en dehors de la photosynthèse, par exemple, la protection de la plante contre la lumière. Lorsque vous appliquez également des protocoles de lumières de couleurs différentes, vous pouvez calculer les valeurs ΦPSII, NPQ et bien d'autres mentionnées précédemment. Mais la façon de procéder va beaucoup trop loin. Le plus important est que vous compreniez que nous comparons quelle fraction de la lumière est actuellement transformée en fluorescence, combien au maximum, et comment ces mesures changent avec le temps et les conditions."
 
 #: pages/method.py:51
 msgid "MTH_HEADLINE_ILLUSTRATION"
-msgstr ""
+msgstr "## Visualisation des résultats"
 
 # Grammarly checked
 #: pages/method.py:52
 msgid "MTH_EXPLANATION_ILLUSTRATION_UNITS"
-msgstr ""
+msgstr "Le signal de fluorescence (axe des y) est tracé en fonction du temps (axe des x). Les pics visibles correspondent à la fluorescence émise en réponse à l'impulsion lumineuse saturante. Chaque pic est appelé Fₘ', le premier étant mesuré dans l'obscurité comme Fₘ."
 
 # Grammarly checked
 #: pages/method.py:53
 msgid "MTH_EXPLANATION_ILLUSTRATION"
-msgstr ""
+msgstr "C'était beaucoup de théorie pour seulement un peu d'éclat, alors essayez une mesure par vous-même sur la page **Expériences *in silico***!"
 
 
 
 #: pages/model_explain.py:19
 msgid "MDL_HEADLINE_COMPUTATIONAL_MODELS"
-msgstr ""
+msgstr "# Modèles computationnels"
 
 msgid "MDL_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "### Objectifs éducatifs\n"
+        "- Vous comprenez les bases de la théorie de la modélisation mathématique.\n"
+        "- Vous apprenez l'application des modèles en biologie à l'aide d'exemples courants.\n"
+        "- Vous vous familiarisez avec la mise en œuvre d'un modèle mathématique dans le langage de programmation Python.\n"
+        "#### Ce que vous devez savoir:\n"
+        "- Les bases de la programmation\n"
+        "- Les bases de la modélisation"
 
 # Grammarly checked
 #: pages/model_explain.py:21
 msgid "MDL_HEADLINE_MODEL"
-msgstr ""
+msgstr "## Que sont les modèles mathématiques ?"
 
 # Grammarly checked
 #: pages/model_explain.py:23
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1"
-msgstr ""
+msgstr "La modélisation mathématique consiste à créer des modèles mathématiques destinés à être utilisés dans divers domaines de la recherche et de l'industrie. Elle est utile lorsque les méthodes d'essai traditionnelles sont trop coûteuses et prennent trop de temps. Le langage des **mathématiques** nous permet de traduire des processus, des situations et des problèmes réels en énoncés généraux à l'aide de formules. Cette traduction n'est pas encore univoque et impose un certain niveau de **simplification**. Par conséquence, les modèles ne sont jamais une description précise, incluant tous les niveaux de détails, mais une simplification créée à l'aide de méthodes rigides pour une étude spécifique. Le problème décrit en termes mathématiques est ensuite résolu à l'aide de techniques mathématiques, aujourd'hui considérablement facilitées par les programmes **computationnels**. La solution obtenue est ensuite appliquée au problème réel et évaluée. Si des solutions supplémentaires sont nécessaires, le modèle mathématique doit être révisé. Ainsi, le processus de développement du modèle n'est souvent pas linéaire, mais constitue un cycle itératif, comme le montre la figure ci-dessous."
 
 #: pages/model_explain.py:26
 msgid "MDL_CAPTION_MODELLING_PICTURE"
-msgstr ""
+msgstr "Le cycle de la modélisation. Le développeur doit souvent passer par plusieurs itérations pour passer d'un problème initial à un modèle mathématique validé."
 
 
 #: pages/model_explain.py:29
 msgid "MDL_MATHEMATICAL_MODELLING_EXPLANATION_1b"
-msgstr ""
+msgstr "Dans la vidéo ci-dessous, vous pouvez en savoir plus sur la construction et l'utilisation de modèles mathématiques en biologie."
 
 msgid "MDL_VIDEO_TRANSCRIPT_MODELS"
-msgstr ""
+msgstr "Cela signifie qu'il faut comprendre ce qui se passe à l'intérieur, simplifier certaines parties et en ignorer d'autres. Vous obtenez ainsi un concept de fonctionnement du système dans son essence. Ensuite, le langage mathématique nous aide à transformer ce concept en quelque chose de tangible, qui peut faire l'objet de recherches. Transformez les protéines, les molécules, les réactions et tout le reste en nombres et en formules. En fonction de ce qui vous intéresse, il existe de nombreuses façons de procéder et, souvent, vous devrez investir beaucoup de temps et de données dans votre modèle pour qu'il fonctionne. Mais ce travail est payant, car vous n'avez plus à réfléchir à ce qui se passe, mais vous pouvez le calculer et le simuler. C'est ce qui fait la spécificité de la modélisation: Ce que vous simulez dépend de vous. Vous pouvez modifier le modèle à votre guise et découvrir ce que cela donne. Par exemple, essayez une nouvelle protéine et une nouvelle réaction sur la cellule; changez la lumière et l'environnement et voyez comment se comporte votre cellule; et si vous avez mesuré des données, voyez si votre modèle se comporte de la même manière. Vous pourriez même essayer de découvrir ce qui empêche la cellule de produire beaucoup de sucre! Il y a tellement de possibilités. Si vous pouvez le programmer, vous pouvez l'essayer. Car aujourd'hui, cette recherche se fait numériquement. Vous pouvez programmer l'ensemble du modèle et demander à l'ordinateur de répondre aux questions que vous lui posez."
 
 #: pages/model_explain.py:34
 msgid "MDL_EXAMPLE_MATHEMATICAL_MODEL"
-msgstr ""
+msgstr "### Un exemple de modèle mathématique"
 
 #: pages/model_explain.py:210
 #: pages/model_explain.py:37
 msgid "MDL_TAB_SIR"
-msgstr ""
+msgstr "Le modèle SIR"
 
 #: pages/model_explain.py:210
 msgid "MDL_TAB_MANUAL"
-msgstr ""
+msgstr "Mise en œuvre manuelle"
 
 #: pages/model_explain.py:210
 msgid "MDL_TAB_MODELBASE"
-msgstr ""
+msgstr "Mise en œuvre par modelbase"
 
 #: pages/model_explain.py:213
 #: pages/model_explain.py:40
 msgid "MDL_HEADLINE_SIR"
-msgstr ""
+msgstr "#### Le modèle SIR"
 
 #: pages/model_explain.py:286
 msgid "MDL_HEADLINE_MANUAL"
-msgstr ""
+msgstr "#### Mise en œuvre manuelle"
 
 #: pages/model_explain.py:312
 msgid "MDL_HEADLINE_MODELBASE"
-msgstr ""
+msgstr "#### Mise en œuvre par modelbase [1]"
 
 # Grammarly checked
 #: pages/model_explain.py:215
 #: pages/model_explain.py:42
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE"
-msgstr ""
+msgstr "Cette maladie a surpris les habitants de la planète X au point qu'ils ont séparé leur population en trois catégories: ceux qui sont sensibles à la maladie et peuvent tomber malades à tout moment (S), ceux qui ont guéri de l'infection (R), et ceux qui sont actuellement infectés (I). Pour modéliser la transition entre chaque catégorie, nous déterminons le taux d'infection (v<sub>1</sub>) en fonction du nombre de S et de I dans la population totale (N) et leur taux de guérison (v<sub>2</sub>) uniquement en fonction des I. Ils ont également découvert que les R acquièrent une immunité complète, mais que les gens sont trop stressés pour accroître leur population. Pour savoir à quoi ressemblera leur population dans quelques mois, ils essaient une nouvelle méthode dont ils ont entendu parler sur Terre, à savoir la **modélisation mathématique**. Pour commencer, vous devez créer un schéma pour votre problème; dans ce cas, le S deviendra I à un taux de v<sub>1</sub>, et le I deviendra R à un taux de v<sub>2</sub>. Le taux v<sub>1</sub> dépend du taux d'infection de la maladie (β), du nombre de S et de I par rapport au N. En revanche, le taux v<sub>2</sub> ne dépend que du nombre de I et de leur taux de guérison (γ)."
 
 # Grammarly checked
 #: pages/model_explain.py:219
 #: pages/model_explain.py:46
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_1"
-msgstr ""
+msgstr "Avec ce schéma, vous avez déjà réussi à modéliser votre problème, il ne vous reste plus qu'à pouvoir l'utiliser. Pour le faire, vous devez déterminer les informations que vous souhaitez recueillir à partir de votre modèle, à savoir, dans le cas présent, la variation de la population en fonction du temps. L'équation différentielle ordinaire&nbsp;(EDO) est un outil mathématique pratique pour décrire le changement d'une valeur en fonction du changement d'une autre valeur spécifique. À l'aide des formules différentielles, vous pouvez décrire la relation entre le temps et la variation du nombre de personnes dans chaque catégorie, ce qui donne au total trois formules. Cet ensemble de trois formules s'appelle un système d'EDO et sera résolu numériquement à l'aide d'un intégrateur. Appliquons donc cette méthode à notre exemple de Planet-X, en commençant par créer le système d'EDO:"
 
 
 # Grammarly checked
 #: pages/model_explain.py:236
 #: pages/model_explain.py:50
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
-msgstr ""
+msgstr "Pour résoudre efficacement chaque EDO, il est essentiel de prendre en compte les taux impliqués. Grâce à un schéma prédéterminé, il est possible de déterminer quel taux correspond à la suppression ou à l'ajout de certains éléments. En utilisant l'intégration, on peut calculer la quantité de chaque élément à un moment donné et représenter le changement au fil du temps lorsque l'on procède ainsi pour plusieurs points dans le temps. Appliquons cette méthode à la maladie de la planète X. Selon les chercheurs, le taux d'infection est de (β&nbsp;=&nbsp;2), et le taux de guérison est de (γ&nbsp;=&nbsp;0,2). Avec ces valeurs et des populations de départ de (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), et (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000), nous pouvons résoudre notre système d'EDO. Le graphique qui en résulte montre que la maladie sur la planète X finira par être éradiquée d'elle-même. Nous vous avons également donné la possibilité d'utiliser une version interactive du modèle."
 
 # Grammarly checked
 #: pages/model_explain.py:251
@@ -656,372 +662,379 @@ msgstr ""
 
 #: pages/model_explain.py:155
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SUSCEPTIBLE"
-msgstr ""
+msgstr "Susceptible"
 
 #: pages/model_explain.py:173
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_INFECTED"
-msgstr ""
+msgstr "Infecté"
 
 #: pages/model_explain.py:191
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_RECOVERED"
-msgstr ""
+msgstr "Récupérés"
 
 #: pages/model_explain.py:123
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_TIMESLIDER"
-msgstr ""
+msgstr "Durée de la simulation en mois"
 
 #: pages/model_explain.py:132
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_BETASLIDER"
-msgstr ""
+msgstr "Taux d'infection β"
 
 #: pages/model_explain.py:141
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIR_GAMMASLIDER"
-msgstr ""
+msgstr "Taux de récupération γ"
 
 # Grammarly checked
 #: pages/model_explain.py:254
 msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
-msgstr ""
-
-# Grammarly checked
-#: pages/model_explain.py:261
-msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
-msgstr ""
+msgstr "L'évolution de la population de la Planète-X à l'aide du modèle SIR repris par les chercheurs de la Terre est représentée. Le taux d'infection est fixé à (β&nbsp;=&nbsp;2) et le taux de guérison à (γ&nbsp;=&nbsp;0,2). Les populations de départ sont: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), et (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)."
 
 #: pages/model_explain.py:352
 msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
-msgstr ""
+msgstr "## Modèles de photosynthèse"
 
 #: pages/model_explain.py:357
 msgid "MDL_MODELS_OVERVIEW"
-msgstr ""
+msgstr "Lorsque vous faites de la modélisation, la première chose à faire est toujours de rechercher votre problème, car vous pouvez déjà trouver vos réponses dans le vaste monde de la recherche. Parfois, vous pouvez trouver un modèle qui couvre entièrement vos besoins ou au moins un modèle sur lequel vous pouvez vous appuyer. Le partage des recherches passées est la base de toute science, et il n'en va pas autrement pour la modélisation computationnelle. Dans cette section, nous résumerons brièvement trois autres modèles de photosynthèse, avant que vous ne puissiez jouer avec le nôtre. Bien qu'il s'agisse de modèles mécanistes, ils ont des approches et des objectifs différents. Ils varient en complexité, en popularité et en méthode, mais tous essaient de simuler la même chose: l'assimilation du carbone (A) de la photosynthèse."
 
 #: pages/model_explain.py:357
 msgid "MDL_HEADLINE_FVCB"
-msgstr ""
+msgstr "### Le modèle de Farquhar, von Caemmerer et Berry"
 
 # Grammarly checked
 #: pages/model_explain.py:359
 msgid "MDL_FVCB_1"
-msgstr ""
+msgstr "Le modèle FvCB, également connu sous le nom de modèle de Farquhar, von Caemmerer et Berry, est un cadre théorique largement utilisé en biologie végétale, conceptualisé pour la première fois en 1980&nbsp;[2]. Alors que la photosynthèse peut être résumée en trois étapes&nbsp;:l'absorption de la lumière, les réactions à la lumière et la fixation du carbone, ce modèle ne se concentre que sur cette dernière. Il fournit une vue simplifiée de la photosynthèse C<sub>3</sub> et porte le nom de ses principaux contributeurs&nbsp;: Graham D. Farquhar, Susanne von Caemmerer et Joseph A. Berry. Si vous n'êtes pas familier avec la photosynthèse C<sub>3</sub>, vous pouvez consulter la Dropbox ci-dessous pour en savoir plus sur les différents types de photosynthèse."
 
 #: pages/model_explain.py:318
 msgid "MDL_FVCB_2"
-msgstr ""
+msgstr "L'objectif principal du modèle FvCB est de décrire l'assimilation du carbone (A), c'est-à-dire le processus par lequel les plantes et autres organismes photosynthétiques incorporent le dioxyde de carbone de l'atmosphère dans des éléments organiques. Cet objectif se retrouve dans de nombreux modèles de photosynthèse, car il s'agit d'un facteur critique pour le bien-être de la plante, puisque plus l'A est élevé, plus la plante est en bonne santé. Comme pour tout ce qui concerne la biologie, les choses sont plus complexes, mais dans un sens simpliste, il s'agit d'une façon courante de voir les choses. Le modèle FvCB utilise des formules purement mathématiques pour calculer l'A. En outre, il le décrit comme le minimum de trois As limités différents: le taux limité de RuBisCO (A<sub>c</sub>), le taux limité de transport d'électrons (A<sub>j</sub>) et le taux limité de triphosphate (A<sub>p</sub>). À l'aide de ce modèle, vous pouvez facilement calculer A à l'aide d'un ensemble de paramètres et d'équations prédéfinis et pour la plupart mesurables, comme indiqué ci-dessous&nbsp;:"
 
 #: pages/model_explain.py:320
 msgid "MDL_FVCB_3"
-msgstr ""
+msgstr "Le modèle utilise la pression partielle de CO<sub>2</sub> du chloroplaste (C<sub>c</sub>), la pression partielle de O<sub>2</sub> du chloroplaste (O), la C<sub>c</sub> où A = -R<sub>d</sub> (Γ<sub>&midast ; </sub>), le taux maximal de carboxylation (V<sub>cmax</sub>), les constantes de Michaelis-Menten de la carboxylation et de l'oxygénation (K<sub>c</sub> et K<sub>o</sub> respectivement), le taux de transport potentiel des électrons (J) et le taux d'apport de phosphate inorganique au chloroplaste (T<sub>p</sub>) pour calculer les trois taux. La respiration diurne (R<sub>d</sub>) est déduite pour représenter les taux d'assimilation respectifs. Il est à noter que ce modèle est limité à un C<sub>c</sub> qui est plus grand que Γ<sub>&midast;</sub>."
 
 msgid "MDL_FVCB_4"
-msgstr ""
+msgstr "Le calcul de A à l'aide de ces formules est relativement simple, mais le modèle présente un inconvénient important. Il n'intègre pas le temps, ce qui le limite à un état d'équilibre constant. Alors même que les plantes peuvent atteindre un état stable, ce n'est pas typique pour elles dans le monde extérieur en raison d'un environnement en constante fluctuation. C'est là que les modèles dynamiques excellent, comme le modèle SIR ou d'autres modèles de photosynthèse."
 
 msgid "MDL_FVCB_5"
-msgstr ""
+msgstr "Malgré cet inconvénient majeur, le modèle FvCB a été largement apprécié. Principalement en raison de sa simplicité, il peut facilement être incorporé dans d'autres modèles plus complexes se concentrant, par exemple, sur la conductance du mésophylle&nbsp;[3] ou sur l'insertion de transporteurs de bicarbonate dans l'enveloppe du chloroplaste&nbsp;[4]. Nous avons créé une simulation interactive à l'aide des quatre formules ci-dessus pour vous montrer cette simplicité. Pour ne pas vous submerger, vous pouvez modifier les paramètres O, J et T<sub>p</sub>, qui ne changent que les différents As (A<sub>c</sub>, A<sub>c</sub> et A<sub>c</sub> respectivement. Les autres paramètres ont été fixés aux valeurs utilisées dans la revue de S. von Caemmerer, d'où nous avons tiré ces formules&nbsp;[5]."
 
 msgid "MDL_FVCB_SLIDERS_PRECISION"
-msgstr ""
+msgstr "Précision"
 
 msgid "MDL_FVCB_SLIDERS_TEXT"
-msgstr ""
+msgstr "Curseurs"
 
 msgid "MDL_FVCB_SLIDERS_O"
-msgstr ""
+msgstr "Pression partielle d'O₂ du chloroplaste [mbar]"
 
 msgid "MDL_FVCB_SLIDERS_J"
-msgstr ""
+msgstr "Taux de transport des électrons (J) [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 msgid "MDL_FVCB_SLIDERS_Tp"
-msgstr ""
+msgstr "Taux d'apport de phosphate inorganique (Tₚ) [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS"
-msgstr ""
+msgstr "Défaut Paramètres utilisés"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_VARIABLES"
-msgstr ""
+msgstr "Variables"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_VALUES"
-msgstr ""
+msgstr "Valeurs"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS_UNITS"
-msgstr ""
+msgstr "Unités"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_TOGGLE"
-msgstr ""
+msgstr "Afficher"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_XLABEL"
-msgstr ""
+msgstr "Intercellulaire"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_YLABEL"
-msgstr ""
+msgstr "Assimilation [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_EMPTY"
-msgstr ""
+msgstr "Rien à voir ici"
 
 #: pages/model_explain.py:378
 msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
-msgstr ""
+msgstr "### Le modèle *e*-photosynthesis"
 
 # Grammarly checked
 #: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
-msgstr ""
+msgstr "En 2012, Xin-Guang Zhu, Yu Wang, Donald R. Ort et Stephen P. Long ont développé le modèle *e*-photosynthesis pour fournir une représentation réaliste de la photosynthèse [6]. Le modèle est complexe et dynamique, comprenant la plupart des composants de la photosynthèse C<sub>3</sub> alors qu'il ne simplifie que là où c'est nécessaire. Il inclut les réactions d'absorption de la lumière, les réactions à la lumière et l'assimilation du carbone, en s'appuyant sur les travaux précédents de Zhu et al., y compris leur modèle de fluorescence [7] et leur modèle de métabolisme du carbone [8]. Si vous n'êtes pas familier avec la photosynthèse C<sub>3</sub>, vous pouvez en apprendre davantage sur les différents types de photosynthèse dans la Dropbox ci-dessous."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
-msgstr ""
+msgstr "Le modèle *e*-photosynthesis est semblable au modèle SIR, mais à une échelle beaucoup plus grande. Il utilise un système d'EDO avec un total de 294 formules, dont 113 décrivent les EDO. En utilisant divers paramètres biochimiques, il peut calculer les aspects les plus infimes de la photosynthèse sans objectif de calcul final défini, comme l'assimilation du carbone par le FvCB. Cela fait de ce modèle un modèle de photosynthèse très généralisé."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_3"
-msgstr ""
+msgstr "Cependant, le modèle *e*-photosynthesis n'a pas encore été beaucoup utilisé, principalement en raison de sa complexité. Pour qu'il fonctionne pour d'autres paramètres que ceux utilisés lors de sa création, de nombreux paramètres biochimiques mesurés doivent être inclus. Souvent, les chercheurs doivent trouver ces paramètres eux-mêmes, car ils n'ont pas encore été publiés. Cela rend le modèle compliqué et peu pratique pour des recherches spécifiques."
 
 #: pages/model_explain.py:393
 msgid "MDL_HEADLINE_BELLASIO"
-msgstr ""
+msgstr "### Le modèle Bellasio"
 
 # Grammarly checked
 #: pages/model_explain.py:395
 msgid "MDL_BELLASIO_1"
-msgstr ""
+msgstr "Le modèle de Bellassio a été introduit en 2018 pour résoudre le problème des modèles d'état stable trop simples et des modèles dynamiques trop complexes [9]. Il divise le modèle de feuille en trois compartiments: l'atmosphère, l'espace entre les cellules et le mésophylle, où se produit la majeure partie de l'activité photosynthétique de la plante. Le modèle se concentre sur les processus d'assimilation du carbone, en intégrant les réactions de la lumière et le comportement des stomates, qui sont les processus par lesquels la plante capture le dioxyde de carbone et libère la vapeur d'eau pendant la photosynthèse. La complexité du modèle se situe entre les modèles FvCB et *e*-photosynthesis, car il s'inspire des deux pour construire son cadre."
 
 # Grammarly checked
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_2"
-msgstr ""
+msgstr "Pour créer ce modèle, l'auteur s'est inspiré de trois modèles principaux. Les formules de Yin et al [10] pour les réactions à la lumière ont été modifiées, le modèle de métabolisme du carbone de Zhu et al [8] a été utilisé pour simuler l'assimilation du carbone, et un modèle de conductance stomatique hydromécanique a été introduit en utilisant le modèle précédent de l'auteur [11]. L'assimilation finale du carbone est calculée en utilisant des parties du modèle FvCB [2]."
 
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_3"
-msgstr ""
+msgstr "Pour rendre le modèle accessible à un plus grand nombre d'utilisateurs, l'auteur a introduit plusieurs simplifications qui ont réduit les exigences en matière de calcul. Cela a permis de simuler le modèle à l'aide d'un programme de feuille de calcul tel que Microsoft Excel, le rendant accessible même aux personnes ayant une expérience limitée en matière d'informatique."
 
 #: pages/model_explain.py:405
 msgid "MDL_BELLASIO_4"
-msgstr ""
+msgstr "Les paramètres du modèle sont basés sur les valeurs moyennes de la littérature dérivées des formules originales ou sur des valeurs plausibles assignées. On obtient ainsi un ensemble complet et simpliste de la C<sub>3</sub>-photosynthèse au niveau de la feuille, ce qui rend la modélisation computationnelle plus accessible aux biologistes des plantes."
 
 #: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
-msgstr ""
+msgstr "La différence entre les plantes C3, C4 et CAM [12]"
 
 #: pages/model_explain.py:408
 msgid "MDL_HEADLINE_C3"
-msgstr ""
+msgstr "### Plantes C<sub>3</sub>"
 
 # Grammarly checked
 #: pages/model_explain.py:409
 msgid "MDL_C3_1"
-msgstr ""
+msgstr "La plupart des plantes sont des plantes C<sub>3</sub>, ce qui signifie que le premier élément stable produit lors de la fixation du carbone est une molécule à trois carbones appelée 3-phosphoglycérate (3-PGA). Ce processus se déroule dans les cellules mésophylles des feuilles et implique une chaîne de réactions biochimiques qui transforment le dioxyde de carbone (CO<sub>2</sub>) en hydrates de carbone tels que le glucose."
 
 #: pages/model_explain.py:411
 msgid "MDL_HEADLINE_C4"
-msgstr ""
+msgstr "### Plantes C<sub>4</sub>"
 
 # Grammarly checked
 #: pages/model_explain.py:412
 msgid "MDL_C4_1"
-msgstr ""
+msgstr "Chez certaines plantes, la photosynthèse C<sub>4</sub> est un processus alternatif qui s'est développé pour s'adapter aux environnements chauds et secs. Contrairement à la photosynthèse C<sub>3</sub>, la photosynthèse C<sub>4</sub> augmente l'efficacité de la fixation du carbone en concentrant le CO<sub>2</sub> près du RuBisCO dans les cellules de la gaine du faisceau. Cette séparation réduit la photorespiration, un processus de gaspillage qui peut se produire dans les plantes C<sub>3</sub> à des températures élevées et à de faibles concentrations de CO<sub>2</sub>. La photosynthèse C<sub>4</sub> est présente dans diverses familles de plantes, telles que les graminées (maïs, canne à sucre) et certaines dicotylédones (Amaranthaceae, Chenopodiaceae). Il s'agit d'une adaptation qui permet aux plantes de prospérer dans des environnements où les températures sont élevées, la lumière du soleil intense et la disponibilité en eau limitée."
 
 #: pages/model_explain.py:414
 msgid "MDL_HEADLINE_CAM"
-msgstr ""
+msgstr "### Plantes CAM"
 
 # Grammarly checked
 #: pages/model_explain.py:415
 msgid "MDL_CAM_1"
-msgstr ""
+msgstr "Une forme spécialisée de photosynthèse appelée CAM (Crassulacean Acid Metabolism) se trouve dans les plantes adaptées aux environnements arides et limités en eau. Ces plantes ont une façon unique de séparer la fixation du carbone et le cycle de Calvin, qui consiste à ouvrir leurs stomates la nuit pour absorber le dioxyde de carbone et le fixer sous la forme d'un acide organique à quatre carbones, tel que le malate ou l'acide malique, pour le stocker dans de grandes vacuoles à l'intérieur de leurs cellules. Pendant la journée, elles ferment leurs stomates pour empêcher la perte d'eau par transpiration et libèrent le CO<sub>2</sub> du malate dans les chloroplastes pour l'utiliser dans le cycle de Calvin, comme les plantes à C<sub>3</sub>. Le nom de cette voie photosynthétique, 'Crassulacean Acid Metabolism', est dérivé de la famille de plantes Crassulaceae, où elle a été découverte pour la première fois. Cependant, elle est également présente dans d'autres familles de plantes comme les succulentes, les cactus, les broméliacées et certaines orchidées. Ces types de plantes se trouvent généralement dans les régions désertiques et dans d'autres zones où les ressources en eau sont limitées."
 
 # Grammarly checked
 #: pages/model_explain.py:289
 msgid "MDL_SIR_IMPLEMENTATION_MANUAL_1"
-msgstr ""
+msgstr "Il faut faire très attention à ce que le vecteur `y0` soit aligné avec les noms des variables décompressées et les formules différentielles correspondantes. Il en va de même pour l'ordre des paramètres `beta` et `gamma`. Mais nous obtenons toujours un résultat similaire lorsque nous le traçons à l'aide du code ci-dessous&nbsp;:"
 
 #: pages/model_explain.py:309
 msgid "MDL_SIR_IMPLEMENTATION_MANUAL_2"
-msgstr ""
+msgstr "Il est clair que cette façon d'écrire des modèles est très sensible aux erreurs et difficile à modulariser. C'est pourquoi nous pouvons améliorer la situation en utilisant `modelbase`."
 
 #: pages/model_explain.py:314
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_1"
-msgstr ""
+msgstr "Tout d'abord, nous allons factoriser les fonctions de taux `infection` et `récupération` en fonctions Python."
 
 #: pages/model_explain.py:318
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_2"
-msgstr ""
+msgstr "Ensuite, nous pouvons construire le modèle. Pour cela, nous fournissons toutes nos variables système en utilisant `add_compounds` et les paramètres sous forme de dictionnaire en utilisant `add_parameters`"
 
 # Grammarly checked
 #: pages/model_explain.py:322
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_3"
-msgstr ""
+msgstr "Enfin, nous ajoutons les transitions en utilisant `add_reaction_from_args`, en indiquant:\n"
+        "1. Un nom pour la transition\n"
+        "2. Une référence à la fonction de vitesse\n"
+        "3. Des stœchiométries, indiquant comment le taux affecte les variables du système.\n"
+        "4. Les arguments de la fonction de taux."
 
 # Grammarly checked
 #: pages/model_explain.py:326
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_4"
-msgstr ""
+msgstr "A partir de cela, modelbase assemblera automatiquement un système d'EDO prêt à être étudié. Pour aider à minimiser les oublis mineurs, modelbase vérifiera les incohérences typiques au cours de ce processus et affichera les avertissements appropriés.\n\n Vous pouvez alors facilement simuler et tracer le système comme ci-dessous, ce qui vous donnera le graphique que vous avez peut-être vu auparavant:"
 
 # Grammarly checked
 #: pages/model_explain.py:346
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_5"
-msgstr ""
+msgstr "La force de l'approche réside dans la simplicité de l'extension des modèles. Par exemple, nous pouvons ajouter un compartiment pour les individus décédés au modèle SIR, également connu sous le nom de modèle SIRD, en introduisant une nouvelle variable, un nouveau paramètre et une nouvelle réaction:"
 
 #: pages/model_explain.py:350
 msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
-msgstr ""
+msgstr "Ce qui aurait été beaucoup plus compliqué avec l'approche manuelle."
 
 msgid "MDL_LINK_PLANTS_AND_PYTHON"
-msgstr ""
+msgstr "*Si vous ne connaissez pas encore Python, jetez un coup d'œil à [Plantes et Python](https://plantsandpython.github.io/PlantsAndPython), où vous pourrez apprendre Python et son utilisation dans le domaine scientifique.*"
 
 # Grammarly checked
 #: pages/model_explain.py:258
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_SIMPLE"
-msgstr ""
+msgstr "Nous avons maintenant réussi à mettre en œuvre et à utiliser un modèle d'épidémiologie. Un tel modèle a été récemment utilisé comme base pour de nombreux modèles plus complexes afin de suivre l'expansion d'un virus répandu dans plusieurs populations à travers le monde. La simplicité de notre exemple d'utilisation permet de le résoudre à l'aide d'un stylo et d'un papier. Cependant, nous avons utilisé Python pour nous faciliter la vie. Vous pouvez le trouver dans les autres rubriques de cette section."
 
 
 
 #: pages/first_analysis.py:11
 msgid "FAL_HEADLINE_EXPERIMENTS"
-msgstr ""
+msgstr "# Expérimentations *in silico*"
 
 msgid "FAL_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "### Objectifs éducatifs\n"
+        "- Vous apprenez à simuler un modèle de photosynthèse et à interpréter les résultats.\n"
+        "- Vous comprenez les formules mathématiques du modèle et comment l'implémenter dans le langage de programmation Python.\n"
+        "#### Ce que vous devez savoir:\n" 
+        "- Lire et analyser des graphiques"
 
 #: pages/first_analysis.py:13
 msgid "FAL_HEADLINE_MODEL_CONSTRUCTION"
-msgstr ""
+msgstr "## Construction du modèle"
 
 #: Grammarly checked
 #: pages/first_analysis.py:15
 msgid "FAL_CONSTRUCTION_EXPLANATION_1"
-msgstr ""
+msgstr "La photosynthèse est un processus complexe impliquant de nombreux acteurs: protéines, enzymes, transporteurs d'électrons, pompes à protons, canaux ioniques, et bien d'autres encore. Bien que chacun joue un rôle essentiel dans le processus global, nous avons cherché à réduire au maximum la complexité du modèle pour l'étude de la mémoire de la lumière. Par conséquence, nous nous sommes concentrés uniquement sur les processus non photochimiques régulés par le pH et associés au photosystème II. Nous n'avons inclus que les processus qui affectent ou régulent directement l'étendue de la NPQ, comme le montre le schéma ci-dessous (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 
 # Grammarly checked
 #: pages/first_analysis.py:17
 msgid "FAL_CAPTION_MODEL_NPQ"
-msgstr ""
+msgstr "Schéma des composants inclus dans le modèle mathématique simplifié utilisé sur ce site. Le modèle a été développé en 2016 et contient une description détaillée des processus internes se produisant à l'intérieur du photosystème II (PSII), y compris les processus affectant la dynamique du quencher (Psbs et zéaxanthine)."
 
 #: Grammarly checked
 #: pages/first_analysis.py:19
 msgid "FAL_CONSTRUCTION_EXPLANATION_2"
-msgstr ""
+msgstr "Ainsi, au lieu de modéliser l'ensemble de la plante ou du chloroplaste, nous avons appliqué un cycle de réduction (voir la figure) basé sur une approche réductionniste stricte et nous avons réussi à représenter le modèle comme un système de seulement six équations différentielles ordinaires! Chacune de ces formules représente le taux de changement dynamique de&nbsp;:"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:20
 msgid "FAL_RATES_1"
-msgstr ""
+msgstr "1) la fraction réduite du pool de plastoquinone (PQH<sub>2</sub>),"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:21
 msgid "FAL_RATES_2"
-msgstr ""
+msgstr "2) la concentration stromale d'ATP (ATP),"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:22
 msgid "FAL_RATES_3"
-msgstr ""
+msgstr "3) la concentration luminale de protons (H),"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:23
 msgid "FAL_RATES_4"
-msgstr ""
+msgstr "4) la fraction des protéines non protonées (PsbS),"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:24
 msgid "FAL_RATES_5"
-msgstr ""
+msgstr "5) la fraction de violaxanthine dans le pool total de xanthophylles (Vx),"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:25
 msgid "FAL_RATES_6"
-msgstr ""
+msgstr "6) la fraction d'enzyme ATPase active (ATPase<sup>&midast;</sup>)."
 
 msgid "FAL_COMPONENTS_EXPLANATION_HEADER"
-msgstr ""
+msgstr "Avez-vous besoin d'un rappel des molécules et des complexes protéiques mentionnés ci-dessus ? *Cliquez ici"
 
 msgid "FAL_MOLECULES_EXPLANATION_TABLE"
-msgstr ""
+msgstr "#### Molécules\n"
+        "| Nom | Description |\n"
+        "| --- | --- |\n"
+        "| Plastoquionone (PQ) | Molécule capable de transporter deux électrons; peut être oxydée (ox) ou réduite (red) |\n"
+        "| Adénosine triphosphate (ATP) | Molécule capable de transférer de l'énergie chimique pour entraîner des réactions |\n"
+        "| Xantophylle | Groupe de pigments caroténoïdes; comprend la viola- et la zéaxanthine |"
 
 msgid "FAL_ENZYMES_EXPLANATION_TABLE"
-msgstr ""
+msgstr "#### Complexes protéiques\n"
+        "| Nom | Description |\n"
+        "| --- | --- |\n"
+        "| Photosystem II (PSII) | Complexe protéique absorbant la lumière; utilise l'excitation pour diviser l'eau et conduire la photosynthèse |\n"
+        "| Sous-unité S du photosystème II (PsbS) | Protéine d'extinction du PSII; son activité dépend du pH |\n"
+        "| Oxydase terminale plastidiale (PTOX) | Complexe protéique réducteur d'oxygènes; produit de l'eau pour éviter une sur-réduction de la PQ; |\n"
+        "| Complexe du cytochrome b6f (Cyt b6f) | Complexe protéique de pompage de protons |\n"
+        "| ATPSynthase (ATPase) | Complexe protéique synthétisant l'ATP; utilise le gradient électrochimique de protons |"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:28
 msgid "FAL_HEADLINE_MODEL_EQUATIONS"
-msgstr ""
+msgstr "### Formules mathématiques"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:29
 msgid "FAL_MODEL_EQUATIONS_INTRODUCTION"
-msgstr ""
+msgstr "Les six formules différentielles ordinaires couplées (ODE)"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:43
 msgid "FAL_REACTION_RATES"
-msgstr ""
+msgstr "Taux de réaction"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:44
 msgid "FAL_RATES_DYNAMIC"
-msgstr ""
+msgstr "###### Taux de réaction utilisés dans la description dynamique du système"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:58
 msgid "FAL_RATE_QUENCHER"
-msgstr ""
+msgstr "###### Taux de réaction pour calculer l'activité du quencher et le taux global"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:69
 msgid "FAL_HEADLINE_IMPLEMENTATION"
-msgstr ""
+msgstr "### Mise en œuvre"
 
 #: Grammarly checked
 #: pages/first_analysis.py:71
 msgid "FAL_IMPLEMENTATION_DESCRIPTION"
-msgstr ""
+msgstr "Le modèle mathématique de la chaîne de transport d'électrons photosynthétique a été implémenté dans le langage orienté objet (OOL) Python à l'aide du package modelbase. Le code contenant les formules différentielles, les taux de réaction, l'espace des paramètres et les conditions initiales utilisées pour les simulations est accessible au public à partir de [ici](www.github.com/QTB-HHU/npqmodel). Dans le Dropdown ci-dessous, vous pouvez également consulter un guide étape par étape pour le mettre en œuvre vous-même."
 
 #: pages/first_analysis.py:271
 msgid "FAL_HEADLINE_ANALYSE"
-msgstr ""
+msgstr "## L'analyse des données"
 
 # Grammarly checked
 #: pages/first_analysis.py:272
 msgid "FAL_INTRODUKTION"
-msgstr ""
+msgstr "Maintenant que vous avez été initié à la méthode de mesure pour vérifier la NPQ sur les plantes, nous allons effectuer des mesures avec le modèle pour estimer l'influence des facteurs d'influence abiotiques. Dans ce qui suit, le modèle peut être réexécuté avec différents paramètres à l'aide des curseurs.\n\n Le graphique affiche la fluorescence sous la forme d'une ligne orange pendant une phase initiale d'obscurité (fond bleu) et une phase suivante de lumière (fond orange) dont l'intensité peut être choisie. Des impulsions lumineuses saturantes sont données au début de la phase d'obscurité et à la lumière, ce qui se traduit par des pics dans le signal de fluorescence. Les curseurs vous permettent de régler l'intensité de la lumière pendant la phase lumineuse, la durée de la simulation, l'intervalle de temps entre les impulsions de saturation et la vitesse d'activation et de désactivation du processus d'adaptation de la NPQ."
 
 #: pages/first_analysis.py:274
 msgid "FAL_HEADLINE_SLIDER"
-msgstr ""
+msgstr "##### Utilisation des curseurs&nbsp;:"
 
 # Grammarly checked
 #: pages/first_analysis.py:275
 msgid "FAL_EXPLANATNION"
-msgstr ""
+msgstr "Modifiez d'abord les curseurs en fonction du test que vous souhaitez simuler. Ensuite, lancez le calcul en cliquant sur le bouton. Le graphique calculé s'affiche. Lorsque vous modifiez à nouveau les curseurs, le graphique disparaît et vous pouvez en charger un nouveau."
 
 msgid "FAL_VIDEO_TRANSCRIPT_SLIDERS"
-msgstr ""
-
-#: pages/first_analysis.py:277
-msgid "FAL_TIPP1"
-msgstr ""
-
-#: pages/first_analysis.py:278
-msgid "FAL_TIPP2"
-msgstr ""
+msgstr "Dans cette vidéo, vous obtiendrez des informations importantes sur l'utilisation des curseurs et l'analyse des graphiques. Vous avez déjà appris à quoi ressemblent les graphiques et qu'ils peuvent être calculés et créés par notre propre modèle informatique. Maintenant, vous pouvez ajuster les paramètres PAM à l'aide des curseurs pour créer votre scénario de test individuel et cliquer sur le bouton pour voir le graphique qui en résulte.\n\n Mais comment analyser le graphique ? Cela dépend de ce que vous recherchez. La fluorescence est représentée sur l'axe des ordonnées et les durées sur l'axe des abscisses. Pour la fluorescence, la fluorescence maximale à l'impulsion de saturation a d'abord été mesurée. Ensuite, la fluorescence mesurée a été représentée par la fluorescence maximale. Pour voir l'augmentation ou la diminution du stress de la plante sur une période donnée, nous pouvons relier les pics des impulsions et examiner la progression. Enfin, j'aimerais vous donner deux conseils&nbsp;: Premièrement, si vous souhaitez comparer deux tests PAM, vous pouvez télécharger les graphiques en cliquant sur les trois points dans le coin supérieur droit. Deuxièmement, si vous souhaitez annuler le processus de calcul, vous devez cliquer sur le bouton 'Stop' dans le coin supérieur droit de l'application PAM. Maintenant, amusez-vous et analysez par vous-même le graphique que vous avez créé."
 
 #: pages/first_analysis.py:354
 msgid "FAL_SLIDER_TIME"
-msgstr ""
+msgstr "Durée du test en minutes"
 
 #: pages/first_analysis.py:376
 msgid "FAL_SLIDER_DARKLENGTH"
-msgstr ""
+msgstr "Durée de la phase d'obscurité en secondes"
 
 #: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
-msgstr ""
+msgstr "Intensité lumineuse de l'impulsion saturante (SP) en μmol&nbsp;m⁻²&nbsp;s⁻¹"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74
@@ -1030,238 +1043,283 @@ msgstr ""
 
 #: pages/first_analysis.py:77
 msgid "FAL_MODEL_CODE_EXPANDER"
-msgstr ""
+msgstr "Guide de mise en œuvre étape par étape"
 
 #: pages/first_analysis.py:78
 msgid "FAL_CONSTRUCTION_HEADER"
-msgstr ""
+msgstr "#### Construction du modèle"
 
 # Grammarly checked
 #: pages/first_analysis.py:79
 msgid "FAL_CONSTRUCTION_1"
-msgstr ""
+msgstr "Ici, vous pouvez lire un guide étape par étape sur l'implémentation du modèle utilisé sur ce site. Nous utiliserons le package `modelbase`, car il rendra tout plus simple que l'utilisation d'un intégrateur Python à partir de zéro. Pour voir la différence, retournez à la page **Computational Models**, où vous verrez le même modèle construit en utilisant les deux méthodes.\n\n Si vous voulez suivre, vous pouvez copier chaque bloc de code et les mettre dans un IDE Python. À la fin, vous aurez un modèle complet. La première chose que nous devons faire avec le package `modelbase` est de définir notre modèle avec la classe `Model()`:"
 
 # Grammarly checked
 #: pages/first_analysis.py:86
 msgid "FAL_CONSTRUCTION_2"
-msgstr ""
+msgstr "Nous devons examiner les **taux de réaction** et les **ODE** que nous voulons mettre en œuvre dans notre modèle. Avec eux, nous pouvons décider quels **paramètres** et **éléments** nous avons besoin. Nous devons les définir dans un `dict` et une `list`, respectivement. Il est également recommandé d'utiliser des commentaires après chaque valeur pour expliquer brièvement ce que la variable représente et l'unité."
 
 # Grammarly checked
 #: pages/first_analysis.py:102
 msgid "FAL_CONSTRUCTION_3"
-msgstr ""
+msgstr "Le modèle défini dispose de fonctions intégrées permettant d'ajouter facilement les paramètres et les éléments:"
 
 # Grammarly checked
 #: pages/first_analysis.py:109
 msgid "FAL_CONSTRUCTION_4"
-msgstr ""
+msgstr "Ce modèle utilise également certains **paramètres** qui sont dérivés d'autres paramètres. De plus, certaines informations sont cachées derrière la connexion entre les éléments, qui ne peuvent pas être résumées en tant que paramètres. Néanmoins, `modelbase` dispose de quelques astuces pour surmonter ces deux problèmes, `derived_parameteres` et `algebraic_modules` respectivement. Nous devons d'abord définir les calculs en tant que fonctions, puis les ajouter au modèle."
 
 # Grammarly checked
 #: pages/first_analysis.py:125
 msgid "FAL_CONSTRUCTION_5"
-msgstr ""
+msgstr "Nous avons donné au modèle tous les éléments de base dont il a besoin, mais il doit savoir ce qu'il doit en faire. Pour cela, il a besoin d'instructions. Nous devons traduire les taux de réaction en `fonctions` pour donner ces instructions. Vous verrez que certaines de ces fonctions appellent également d'autres fonctions. Il s'agit uniquement de rendre le code plus lisible ou d'éliminer les mêmes calculs."
 
 # Grammarly checked
 #: pages/first_analysis.py:141
 msgid "FAL_CONSTRUCTION_6"
-msgstr ""
+msgstr "Le modèle comporte tous les composants et instructions nécessaires. Cependant, nous devons spécifier quel bloc de construction correspond à chaque instruction et comment ils sont connectés. Pour ce faire, nous devons examiner les EDO et établir la stœchiométrie."
 
 # Grammarly checked
 #: pages/first_analysis.py:148
 msgid "FAL_CONSTRUCTION_7"
-msgstr ""
+msgstr "Nous avons maintenant réussi à créer un modèle fonctionnel. Cependant, pour le tester, nous devons le simuler. Cette section vous guidera pas à pas dans le processus de génération du tracé à l'aide des valeurs par défaut indiquées au bas de cette page. Cette partie peut s'avérer plus compliquée que la partie relative à la modélisation et nécessiter quelques vérifications par tâtonnement. Nous expliquerons notre processus de réflexion afin que vous puissiez suivre. Nous vous conseillons néanmoins de lire attentivement cette section afin de créer le tracé avec succès."
 
 #: pages/first_analysis.py:150
 msgid "FAL_SIMULATION_HEADER"
-msgstr ""
+msgstr "#### Modèle de simulation"
 
 #: pages/first_analysis.py:152
 msgid "FAL_SIMULATION_1"
-msgstr ""
+msgstr "Tout d'abord, vérifions que notre graphe est fonctionnel. Pour cela, nous allons générer un objet `simulator` en utilisant la classe `Simulator()` de `modelbase`."
 
 # Grammarly checked
 #: pages/first_analysis.py:159
 msgid "FAL_SIMULATION_2"
-msgstr ""
+msgstr "Le modèle a besoin d'un point de départ pour ses calculs. Les paramètres ayant été définis lors de la création du modèle, nous devons maintenant spécifier les concentrations ou quantités initiales des éléments."
 
 # Grammarly checked
 #: pages/first_analysis.py:166
 msgid "FAL_SIMULATION_3"
-msgstr ""
+msgstr "Nous pouvons maintenant commencer les simulations. Sélectionnons un point temporel au hasard pour que le modèle simule jusqu'à. Nous pouvons visualiser les résultats après la simulation et vérifier les erreurs d'implémentation. Ce test est simple, car un graphique vide ou inexistant indique un problème. Notre outil de traçage préféré est `matplotlib`, qui est également intégré dans `modelbase`."
 
 # Grammarly checked
 #: pages/first_analysis.py:189
 msgid "FAL_SIMULATION_4"
-msgstr ""
+msgstr "Nous avons réussi à simuler notre modèle et à créer un tracé de base. Néanmoins, le tracé doit inclure des détails importants que nous devons définir. Ces aspects sont les suivants:\n"
+        "- Afficher les changements de fluorescence au fil du temps.\n"
+        "- Incluant une phase initiale d'obscurité suivie d'une phase de lumière.\n"
+        "- Montrer des impulsions lumineuses saturantes au début de chaque phase et à des intervalles spécifiques pendant la phase lumineuse.\n"
+        "Pour résoudre ces problèmes, nous allons nous attaquer à chacun d'entre eux individuellement. Si vous suivez ce guide, nous vous recommandons de remplacer le code à chaque nouvelle étape qui inclut l'importation `matplotlib` en haut. Vous remarquerez de nombreuses similitudes tout au long du processus."
 
 #: pages/first_analysis.py:190
 msgid "FAL_SIMULATION_FLOURESCENCE_HEADER"
-msgstr ""
+msgstr "##### Montrant la fluorescence"
 
 # Grammarly checked
 #: pages/first_analysis.py:191
 msgid "FAL_SIMULATION_FLOURESCENCE_1"
-msgstr ""
+msgstr "Lorsque vous utilisez `modelbase` pour des simulations, il a tendance à afficher les éléments dans les tracés par défaut. Cependant, dans notre situation, nous avons besoin de montrer le changement de Fluorescence, que nous n'avons pas incorporé en tant qu'élément mais en tant que module algébrique. Nous devons donc choisir cette modification de manière spécifique."
 
 # Grammarly checked
 #: pages/first_analysis.py:214
 msgid "FAL_SIMULATION_FLOURESCENCE_2"
-msgstr ""
+msgstr "Pour simplifier la lecture des graphiques, nous relativiserons les valeurs de fluorescence à leur maximum. Malheureusement, cela se traduira par un code plus complexe. Nous montrerons comment y parvenir en extrayant les données de simulation de `modelbase`. Cependant, il existe plusieurs méthodes pour y parvenir. Il est intéressant de noter que le graphique apparaîtra légèrement différent car `modelbase` modifie certains aspects du tracé pour un traitement plus rapide. Néanmoins, nous nous assurerons que le diagramme est esthétiquement plaisant à la fin."
 
 #: pages/first_analysis.py:237
 msgid "FAL_SIMULATION_PHASES_HEADER"
-msgstr ""
+msgstr "##### Phases différentes et impulsions de saturation"
 
 # Grammarly checked
 #: pages/first_analysis.py:238
 msgid "FAL_SIMULATION_PHASES_1"
-msgstr ""
+msgstr "Nous pouvons résoudre les deux derniers problèmes en un seul code en commençant chaque phase par une impulsion de saturation. Cependant, nous devons prendre certaines décisions concernant:\n"
+        "- La durée de notre simulation\n"
+        "- Le niveau de luminosité des phases d'obscurité et de lumière, ainsi que les impulsions de saturation.\n"
+        "- La durée de la phase d'obscurité\n"
+        "- Le nombre d'impulsions saturantes que nous voulons pendant la phase lumineuse.\n"
+        "Le code ci-dessous affiche les valeurs que nous avons sélectionnées, mais n'hésitez pas à utiliser les valeurs de votre choix et observez les résultats. C'est ce que ce site vous propose également en bas de page."
 
 #: pages/first_analysis.py:261
 msgid "FAL_SIMULATION_PRETTY_HEADER"
-msgstr ""
+msgstr "##### Rendre les choses jolies"
 
 # Grammarly checked
 #: pages/first_analysis.py:262
 msgid "FAL_SIMULATION_PRETTY_1"
-msgstr ""
+msgstr "La simulation affiche actuellement toutes les informations souhaitées. Pour améliorer son aspect visuel et sa compréhension, nous pouvons utiliser la bibliothèque `matplotlib` pour créer un graphique soigné ressemblant à celui qui se trouve au bas de la page. Alors que nous ne fournirons pas de description détaillée, vous pouvez toujours voir le code que nous avons utilisé."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_EXPANDER"
-msgstr ""
+msgstr "Voir comment interpréter les résultats de votre modélisation"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_HEADER_SINGLE"
-msgstr ""
+msgstr "### Graphiques avec un seul résultat"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_1"
-msgstr ""
+msgstr "Nous pouvons examiner le graphique en trois phases:\n"
+        "1. La première phase se déroule dans l'obscurité et, par conséquent, notre fluorescence initiale modélisée est *F₀*. Nous simulons ensuite une impulsion lumineuse saturante qui augmente rapidement la fluorescence jusqu'à la valeur maximale *Fₘ*. Fₘ devrait être la fluorescence maximale globale que la plante peut produire, c'est pourquoi nous comparons généralement les autres signaux de fluorescence à cette valeur. *Fₜ*, la fluorescence simulée en dehors des impulsions saturantes, montre le comportement des photosystèmes sous la lumière actinique. Nous constatons que Fₜ diminue pour revenir au niveau de F₀ par la suite, ce qui signifie que la plante se remet de la saturation de ses photosystèmes.\n"
+        "2. Nous entamons la phase suivante avec une autre impulsion saturante. Comme ce pic de fluorescence (*Fₘ'*) est identique à Fₘ, la plante ne semble pas avoir encore activé de protection contre la lumière. Cependant, au lieu de retourner à l'obscurité, nous allumons maintenant la lumière (actinique) à 100 μmol&nbsp;m⁻²&nbsp;s⁻¹. La fluorescence diminue alors beaucoup plus rapidement après l'impulsion saturante et atteint un niveau légèrement supérieur à F₀ qui persiste jusqu'à la fin de l'expérimentation. L'augmentation du rendement de fluorescence nous montre que la plante perd maintenant une plus grande quantité d'énergie d'excitation en fluorescence, ce qui implique qu'elle est plus stressée qu'elle ne l'était dans l'obscurité.\n"
+        "3. En effet, lorsque nous procédons à une autre impulsion saturante, nous constatons que le nouveau maximum de fluorescence Fₘ' est sensiblement inférieur à Fₘ, ce qui nous montre que l'extinction non photochimique a été activée et qu'elle détourne l'énergie d'excitation à la fois de la fluorescence et de la photosynthèse. Cette observation se retrouve directement dans la formule d'estimation de la NPQ&nbsp;:"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_2"
-msgstr ""
+msgstr "De la même manière, vous pouvez analyser les graphiques de simulation avec des paramètres modifiés et encore plus de phases lumineuses. En général, observez comment Fₜ et Fₘ' se comportent au fil du temps, en particulier lorsque les conditions d'éclairage sont modifiées. Reliez ensuite vos observations à vos connaissances sur la NPQ. Si cela vous intéresse, vous pouvez également utiliser les estimations calculées de NPQ et de l'efficacité PSII dans la version <a href='#' id='4Bio'>4Bio</a>."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_HEADER_DUO"
-msgstr ""
+msgstr "### Graphiques avec les vieux et les nouveaux résultats"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_DUO"
-msgstr ""
+msgstr "Lorsque vous modifiez les paramètres du modèle et que vous effectuez une autre simulation, l'ancien graphique de simulation s'affiche sous la forme d'une ligne pointillée en arrière-plan du nouveau graphique. Ainsi, vous pouvez facilement comparer les deux et étudier les effets de votre modification.\n\n Dans le cas illustré, nous avons augmenté l'intensité de la lumière actinique de 100 (ancienne) à 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ (nouvelle). La phase d'obscurité étant la même dans toutes les simulations, il n'y a pas de différence dans la première phase. Après l'impulsion saturante de la phase deux, la fluorescence (Fₜ₋₅₀₀) de l'intensité lumineuse la plus élevée est fortement augmentée et prend beaucoup plus de temps à diminuer. Ce comportement implique que le photosystème subit un stress lumineux beaucoup plus important et nécessite plus de temps pour activer suffisamment la NPQ. La phase trois valide cette hypothèse, puisque nous simulons des valeurs de Fₘ' fortement réduites, ce qui se traduit par une augmentation de la NPQ estimée selon la formule précédente. Enfin, nous constatons que la plante atteint une fluorescence finale similaire à celle obtenue avec la lumière actinique plus faible, ce qui implique que par la forte activation de la NPQ, un niveau de stress également faible est atteint."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_EXPANDER"
-msgstr ""
+msgstr "Vous n'arrivez pas à relier les résultats de la simulation à la biologie ? Essayez nos **questions guides**"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_HEADER"
-msgstr ""
+msgstr "### Questions guides"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_TOGGLE"
-msgstr ""
+msgstr "**Voyez notre interprétation**"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS"
-msgstr ""
+msgstr "Avec les valeurs par défaut, la simulation suivante vous montre une expérimentation PAM typique. Lorsque vous testez les curseurs, vous pouvez essayer ce qui suit:\n"
+        "1. :blue[Vous trouverez une intensité lumineuse de 100 μmol&nbsp;m⁻²&nbsp;s⁻¹ tôt le matin ou par temps nuageux, donc assez faible. Lors d'une journée douce, le soleil peut briller avec 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ de photons - essayez plutôt cela :]\n"
+        "    - Lorsque la lumière est allumée, en quoi la réaction diffère-t-elle de celle observée lorsque vous avez utilisé 100 μmol&nbsp;m⁻²&nbsp;s⁻¹ ? Qu'est-ce que cela signifie pour la plante?\n"
+        "    - Comment les signaux d'impulsion de saturation diffèrent-ils entre l'intensité la plus faible et la plus élevée ?\n"
+        "2. :blue[Par une journée chaude et ensoleillée, des intensités plus élevées de plus de 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ de lumière actinique peuvent être atteintes. Essayez ceci dans une simulation et voyez si vos précédentes observations sont également valables ici.]\n"
+        "    - Comparez la fluorescence à la toute fin de la simulation entre la lumière par défaut et la lumière élevée - y a-t-il une différence? \n"
+        "3. :blue[À cette intensité, nous pouvons voir beaucoup mieux comment les pics de fluorescence pendant les impulsions de saturation diminuent avec le temps. Mais il semble se passer beaucoup de choses que nous ne pouvons pas voir au cours des deux premières minutes.]\n"
+        "    - Réduisez le temps entre les impulsions de saturation. Que voyez-vous?\n"
+        "    - Semble-t-il que les impulsions de saturation affectent la photosynthèse de la plante?\n"
+        "4. :blue[Plus une expérimentation est longue, plus le travail de l'expérimentateur est important. Essayez de réduire le temps de mesure à 1 min, puis augmentez-le à 10 min.]\n"
+        "    - Serait-il utile de réduire le temps de mesure dans notre cas? Pourquoi ou pourquoi pas?\n"
+        "    - Cela dépend-il des autres paramètres?"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS_EXTEND"
 msgstr ""
 
-#: pages/first_analysis.py:262
+#: pages/first_analysis.py:321
 msgid "FAL_GUIDING_ANSWERS"
-" - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
-" - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol m-² s-¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
-"4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
-" - Bei einer Lichtintensität von 500 bis 900 μmol m-² s-¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
-" - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
-msgstr ""
+msgstr "Avec les valeurs par défaut, la simulation suivante vous montre une expérimentation PAM typique. Lorsque vous testez les curseurs, vous pouvez essayer ce qui suit:\n"
+        "1. :blue[Vous trouverez une intensité lumineuse de 100 μmol&nbsp;m⁻²&nbsp;s⁻¹ tôt le matin ou par temps nuageux, c'est donc assez faible. Par temps doux, le soleil peut briller avec 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ de photons - essayez plutôt cela&nbsp;:]\n"
+        "    - Le signal de fluorescence après l'allumage de la lumière, peu après le pic, est beaucoup plus élevé. Cela s'explique par le fait que la chlorophylle reçoit beaucoup plus d'énergie, ce qui investit la plante dans un stress lumineux.\n"
+        "    - Les impulsions de saturation ultérieures, après environ deux minutes, sont plus courtes que celles observées en cas de faible luminosité. Par conséquent, la plante a augmenté l'extinction de la chaleur, alias NPQ, en tant que mécanisme de protection contre la lumière. \n"
+        "2. :blue[Par une journée chaude et ensoleillée, des intensités plus élevées de plus de 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ de lumière actinique peuvent être atteintes. Essayez ceci dans une simulation et voyez si vos précédentes observations sont également valables ici.]\n"
+        "    - Pour cette intensité lumineuse plus élevée, nous pouvons également observer l'augmentation de la fluorescence après l'allumage et la diminution de la fluorescence pendant les impulsions.\n"
+        "    - La fluorescence à la toute fin de la phase d'intensité lumineuse très élevée est accrue par rapport à la simulation de faible intensité lumineuse. Par conséquent, même après l'activation complète de son mécanisme NPQ, la plante est encore plus stressée. Il est probable que le potentiel d'extinction du processus NPQ de la plante soit épuisé et qu'une lumière plus intense puisse endommager la plante.\n"
+        "3. :blue[À cette intensité, on voit beaucoup mieux comment les pics de fluorescence pendant les impulsions de saturation diminuent avec le temps. Mais il semble se passer beaucoup de choses dans les deux premières minutes que nous ne pouvons pas voir.]\n"
+        "    - Avec des impulsions plus fréquentes, nous pouvons voir plus clairement la chute du pic de fluorescence. Par conséquent, nous voyons l'activation de la NPQ avec une résolution plus élevée et nous pourrions essayer d'ajuster une fonction pour estimer le taux d'activation.\n"
+        "    - Normalement, nous présumons que les impulsions n'affectent pas la photosynthèse. Après une impulsion, le signal revient au niveau précédent et la hauteur du pic semble diminuer toujours de la même manière.\n"
+        "    - Cependant, si nous donnons des impulsions en succession rapide sous une faible lumière, les impulsions de saturation peuvent avoir un effet semblable à celui de la lumière actinique. Vous pouvez le constater si vous essayez une intensité lumineuse de 50 μmol&nbsp;m⁻²&nbsp;s⁻¹ avec des impulsions toutes les 5 s. Là, la hauteur du pic diminue davantage qu'avec moins d'impulsions. \n"
+        "4. :blue[Plus une expérimentation est longue, plus elle représente un travail pour l'expérimentateur. Essayez de réduire le temps de mesure à 1 min, puis augmentez-le à 10 min.]\n"
+        "    - Avec une intensité lumineuse de 500 à 900 μmol&nbsp;m⁻²&nbsp;s⁻¹, l'adaptation de la NPQ semble être terminée au bout de trois à quatre secondes. Nous devrions mesurer au moins cette durée pour saisir l'ensemble du processus.\n"
+        "    - Avec des intensités lumineuses plus faibles, ce processus d'adaptation prend moins de temps. Une mesure plus courte pourrait donc être possible."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS_EXTEND"
 msgstr ""
 
-
-
 #: pages/plant_memory.py:380
 msgid "MEM_HEADLINE_BRAIN"
-msgstr ""
+msgstr "# Mémoire de la lumière des plantes"
 
 msgid "MEM_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "### Objectifs éducatifs\n"
+        "- Vous apprenez comment les plantes peuvent se souvenir des conditions lumineuses précédentes.\n"
+        "- Vous pouvez montrer aux plantes l'effet de la mémoire de la lumière à l'aide de simulations.\n"
+        "#### Ce que vous devez savoir:\n"
+        "- Lire et analyser des graphiques"
 
 # Grammarly checked
 #: pages/plant_memory.py:387
 msgid "MEM_INTRODUCTION_BRAIN"
-msgstr ""
+msgstr "Puisque vous avez découvert comment les plantes réagissent à différentes intensités lumineuses, nous avons une nouvelle pour vous! Les plantes peuvent être *entraînées* à améliorer leur photoprotection. Il a été observé expérimentalement que les plantes déjà exposées à la lumière réagissent différemment à la lumière que celles qui y sont exposées pour la première fois! Ce phénomène est parfois appelé **mémoire de la lumière à court terme**, et nous savons maintenant quel mécanisme moléculaire est à l'origine de cet effet. Nous avons utilisé ces connaissances pour représenter ce comportement à l'aide d'un modèle mathématique. Vous pouvez maintenant réaliser vos propres **expérimentations de mémoire**. Allez-y, vous pouvez simuler différents scénarios à l'aide des sept curseurs ci-dessous. Voyez-vous comment le signal de fluorescence diffère entre les différentes phases de l'expérimentation? En modifiant les taux de conversion en zéaxanthine et en violaxanthine, vous pouvez également jouer avec une version mutée de la plante, dans laquelle vous pouvez modifier la mémoire de la plante."
 
 #: pages/plant_memory.py:260
 msgid "MEM_SLIDER_TRAINING"
-msgstr ""
+msgstr "Phase d'entraînement en minutes"
 
 #: pages/plant_memory.py:262
 msgid "MEM_SLIDER_RELAXATION"
-msgstr ""
+msgstr "Phase de relaxation en minutes"
 
 #: pages/plant_memory.py:264
 msgid "MEM_SLIDER_MEMORY"
-msgstr ""
+msgstr "Phase de mémoire en minutes"
 
 #: pages/plant_memory.py:113
 msgid "MEM_ANNO_TRAINING"
-msgstr ""
+msgstr "Entrainement"
 
 #: pages/plant_memory.py:113
 msgid "MEM_ANNO_RELAXATION"
-msgstr ""
+msgstr "Relaxation"
 
 #: pages/plant_memory.py:113
 msgid "MEM_ANNO_MEMORY"
-msgstr ""
-
-#: pages/plant_memory.py:393
-msgid "MEM_TIP1"
-msgstr ""
-
-#: pages/plant_memory.py:395
-msgid "MEM_TIP2"
-msgstr ""
+msgstr "Mémoire"
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_EXPANDER"
-msgstr ""
+msgstr "Vous n'arrivez pas à relier les résultats de la simulation à la biologie? Essayez nos **questions guides**"
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_HEADER"
-msgstr ""
+msgstr "### Questions guides"
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_TOGGLE"
-msgstr ""
+msgstr "**Voyez notre interprétation**"
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_QUESTIONS"
-msgstr ""
+msgstr "Avec les valeurs par défaut, la simulation ci-dessous montre une expérimentation typique décrivant la mémoire de la lumière des plantes. Pour l'étudier plus en détail, vous pouvez essayer ce qui suit:\n"
+        "1. :blue[L'intensité et la durée de la lumière pendant la phase d'entrainement déterminent l'étendue de la mémoire de la lumière. Comment la plante réagit-elle lorsque vous les modifiez ?]\n"
+        "    - Modifiez la durée de la phase d'entrainement d'abord à 1 minute, puis à 5 minutes. Cela affecte-t-il le comportement ultérieur de la plante?\n"
+        "    - Réglez maintenant l'intensité lumineuse à 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ ? Constatez-vous un changement dans la phase de mémorisation? \n"
+        "    - De nouveau, réduisez la durée de la phase d'entrainement par incréments jusqu'à 1 minute. Comment expliquez-vous ce que vous observez?\n"
+        "2. :blue[La phase de relaxation permet à la plante d''oublier' le stress précédent. Imaginez comment la modification de sa durée affecterait la phase de mémoire ultérieure.]\n"
+        "    - Fixez la durée de la phase de relaxation à zéro minute. Qu'est-ce que cela signifie pour la plante ?\n"
+        "    - Augmentez maintenant progressivement la durée de la phase de relaxation. Qu'est-ce qui change ? Comment l'expliquez-vous ?\n"
+        "3. :blue[Avec les connaissances que vous avez rassemblées jusqu'à présent, simulez une expérimentation qui illustre au mieux l'effet de mémoire de la plante. Gardez à l'esprit qu'en laboratoire, vous préférerez peut-être des expérimentations plus courtes et moins coûteuses en temps]."
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_ANSWERS"
-msgstr ""
+msgstr "Avec les valeurs par défaut, la simulation ci-dessous montre une expérimentation typique décrivant la mémoire de la lumière des plantes. Pour l'étudier plus avant, vous pouvez essayer ce qui suit:\n"
+        "1. :blue[L'intensité et la durée de la lumière pendant la phase d'entrainement déterminent l'étendue de la mémoire de la lumière. Comment la plante réagit-elle lorsque vous les modifiez ?]\n"
+        "    - Modifiez la durée de la phase d'entrainement d'abord à 1 minute, puis à 5 minutes. Cela affecte-t-il le comportement ultérieur de la plante ?\n"
+        "    - Réglez maintenant l'intensité lumineuse à 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ ? Constatez-vous un changement dans la phase de mémorisation ? \n"
+        "    - De nouveau, réduisez la durée de la phase d'entrainement par incréments jusqu'à 1 minute. Comment expliquez-vous ce que vous observez ?\n"
+        "2. :blue[La phase de relaxation permet à la plante d''oublier' le stress précédent. Imaginez comment la modification de sa durée affecterait la phase de mémoire ultérieure.]\n"
+        "    - Fixez la durée de la phase de relaxation à zéro minute. Qu'est-ce que cela signifie pour la plante ?\n"
+        "    - Augmentez maintenant progressivement la durée de la phase de relaxation. Qu'est-ce qui change ? Comment l'expliquez-vous ?\n"
+        "3. :blue[Avec les connaissances que vous avez rassemblées jusqu'à présent, simulez une expérimentation qui illustre au mieux l'effet de mémoire de la plante. Gardez à l'esprit qu'en laboratoire, vous préférerez peut-être des expérimentations plus courtes et moins coûteuses en temps]."
 
 
 
 #: Conclusion
 #: pages/conclusion.py:13
 msgid "CON_HEADLINE_CONCLUSION"
-msgstr ""
+msgstr "# Messages à retenir"
 
 # Grammarly checked
 #: pages/conclusion.py:15
 msgid "CON_CONCLUSION_TEXT_ONE"
-msgstr ""
+msgstr "Nous espérons que ce site vous a permis de vous familiariser avec le domaine captivant de la biologie des plantes (computationnelle). En examinant des diagrammes réalisés à l'aide de modèles informatiques, vous avez acquis des connaissances sur l'impact de l'intensité lumineuse sur la photosynthèse et vous avez approfondi le sujet de la mémoire à court terme des plantes. Nous espérons avoir pu vous montrer ce qui suit:\n"
+        "- L'intensité lumineuse affecte de manière significative le taux de photosynthèse chez les plantes. Lorsque l'intensité lumineuse augmente, le taux de photosynthèse augmente dans une certaine mesure.\n"
+        "La relation entre l'intensité lumineuse et le taux de photosynthèse n'est pas linéaire. Elle suit plutôt une courbe qui culmine à un certain point de saturation, comme dans la figure ci-dessous."
 
 # Grammarly checked     
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
-msgstr ""
+msgstr "- Les plantes peuvent se souvenir d'une exposition précédente à la lumière et ajuster leur taux de photosynthèse en conséquence. Cette mémoire à court terme leur permet d'absorber l'énergie lumineuse et de s'adapter efficacement à diverses conditions environnementales.\n"
+        "- Nous pensons que la mesure de la PAM est une méthode passionnante et efficace pour comprendre les mécanismes complexes qui sous-tendent la croissance et le développement des plantes.\n"
+        "Enfin, veuillez considérer ces résultats et leurs implications plus larges pour notre compréhension du monde naturel. Ce faisant, vous serez en mesure de reconnaître et d'admirer la complexité et la magnificence remarquables du règne végétal.\n\n Les modèles computationnels existent pour presque toutes les disciplines scientifiques, et même en ne considérant que les modèles de photosynthèse, nous avons à peine effleuré la surface de ce qui existe. Nous espérons que ce petit cours vous a montré à quel point la modélisation peut être intéressante et utile. À l'avenir, lorsque vous serez confronté à un problème, vous vous direz&nbsp;:'Un modèle pourrait-il m'aider à résoudre ce problème ?'.\n\n **Mais surtout, nous espérons que notre cours vous a amusé. Si vous le souhaitez, faites-nous part de vos commentaires et racontez votre expérience à d'autres personnes. Bonne journée!**"

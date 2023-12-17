@@ -92,7 +92,7 @@ msgstr "Schaue dir auch *Plants and Python* an, ein Python-Kurs für Biologen:\n
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
-msgstr "Lichtintensität der Lichtphase (AL) in μmol m⁻² s⁻¹"
+msgstr "Lichtintensität der Lichtphase (AL) in μmol&nbsp;m⁻²&nbsp;s⁻¹"
 
 #: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
@@ -560,7 +560,6 @@ msgstr "### PAM Experimente"
 # Grammarly checked
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
-
 msgstr "Im Folgenden wird die Methode der Pulsamplitudenmodulation zur Quantifizierung der Photosynthese kurz erläutert. Für einen ausführlicheren Überblick beachten Sie bitte die Literatur am Ende der Seite."
 
 #: Explanation by Tobias
@@ -721,11 +720,6 @@ msgstr "Erholungsrate γ"
 msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
 msgstr "Die Veränderung der Bevölkerung von Planet-X unter Verwendung des von den Wissenschaftlern der Erde übernommenen SIR-Modells ist dargestellt. Die Infektionsrate wird auf (β&nbsp;=&nbsp;2) und die Erholungsrate auf (γ&nbsp;=&nbsp;0,2) gesetzt. Die Ausgangspopulationen sind: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), und (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 
-# Grammarly checked
-#: pages/model_explain.py:261
-msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
-msgstr ""
-
 #: pages/model_explain.py:352
 msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
 msgstr "## Modelle der Photosynthese"
@@ -767,10 +761,10 @@ msgid "MDL_FVCB_SLIDERS_O"
 msgstr "Chloroplasten-O₂-Partialdruck [mbar]"
 
 msgid "MDL_FVCB_SLIDERS_J"
-msgstr "Elektronentransport-Rate (J) [µmol m-² s-¹]"
+msgstr "Elektronentransport-Rate (J) [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 msgid "MDL_FVCB_SLIDERS_Tp"
-msgstr "Rate der anorganischen Phosphatversorgung (Tₚ) [µmol m-² s-¹]"
+msgstr "Rate der anorganischen Phosphatversorgung (Tₚ) [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS"
@@ -790,7 +784,7 @@ msgstr "Einheiten"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_TOGGLE"
-msgstr "Anzeige"
+msgstr "Anzeigen"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_XLABEL"
@@ -798,7 +792,7 @@ msgstr "Interzellulär"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_YLABEL"
-msgstr "Assimilation [µmol m-² s-¹]"
+msgstr "Assimilation [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_EMPTY"
@@ -845,11 +839,11 @@ msgstr "Die Parameter des Modells basieren auf gemittelten Literaturwerten, die 
 
 #: pages/model_explain.py:407
 msgid "MDL_EXPANDER_C3C4CAM"
-msgstr "Der Unterschied zwischen C3-, C4- und CAM-Pflanzen [12]"
+msgstr "Der Unterschied zwischen C3-, C4- und CAM-Pflanzen [11]"
 
 #: pages/model_explain.py:408
 msgid "MDL_HEADLINE_C3"
-msgstr "### C<sub>3</sub> Plants"
+msgstr "### C<sub>3</sub> Pflanzen"
 
 # Grammarly checked
 #: pages/model_explain.py:409
@@ -1067,16 +1061,6 @@ msgstr "Ändere zunächst die Schieberegler entsprechend dem Test, den du simuli
 msgid "FAL_VIDEO_TRANSCRIPT_SLIDERS"
 msgstr "In diesem Video erhältst du wichtige Informationen über die Verwendung der Schieberegler und die Analyse der Diagramme. Du hast bereits gelernt, wie die Graphen aussehen werden und dass sie von unserem eigenen Computermodell berechnet und erstellt werden können. Jetzt kannst du die PAM-Parameter mit den Schiebereglern anpassen, um dein individuelles Testszenario zu erstellen, und auf die Schaltfläche klicken, um die resultierende Grafik zu sehen.\n\nAber wie analysieren wir die Grafik? Nun, das hängt davon ab, wonach man sucht. Die Fluoreszenz wird auf der y-Achse und die Zeiten auf der x-Achse aufgetragen. Für die Fluoreszenz wurde zunächst die maximale Fluoreszenz beim Sättigungsimpuls gemessen. Dann wurde die gemessene Fluoreszenz durch die maximale Fluoreszenz aufgetragen. Um zu sehen, wie der Stress der Pflanze über einen bestimmten Zeitraum hinweg zu- oder abnimmt, können wir die Spitzen der Pulse miteinander verbinden und die Progression betrachten. Zum Schluss möchten wir noch zwei Tipps mit dir teilen: Erstens: Wenn du zwei PAM-Tests vergleichen möchtest, kannst du die Diagramme herunterladen, indem du auf die drei Punkte in der oberen rechten Ecke klickst. Zweitens: Wenn du den Berechnungsprozess abbrechen möchtest, musst du auf 'Stop' in der oberen rechten Ecke der PAM-App klicken. Und nun viel Spaß beim Analysieren des von dir selbst erstellten Diagramms."
 
-#: pages/first_analysis.py:277
-msgid "FAL_TIPP1"
-msgstr "***Tipp 1:*** *Solltest du zwei Versuche vergleichen wollen, können die Graphen über die drei Punkte (oben rechts) \
-        herunterladen werden.*"
-
-#: pages/first_analysis.py:278
-msgid "FAL_TIPP2"
-msgstr "***Tipp 2:*** *Durch einen Klick auf das Stopp oben rechts, neben dem Ladesymbol, kann der Berechnungs-Prozess \
-        jederzeit abgebrochen werden.*"
-
 #: pages/first_analysis.py:354
 msgid "FAL_SLIDER_TIME"
 msgstr "Versuchsdauer in Minuten"
@@ -1087,7 +1071,7 @@ msgstr "Dauer der Dunkelphase in Sekunden"
 
 #: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
-msgstr "Lichtintensität des Sättigungsimpulses (SP) in μmol m⁻² s⁻¹"
+msgstr "Lichtintensität des Sättigungsimpulses (SP) in μmol&nbsp;m⁻²&nbsp;s⁻¹"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74
@@ -1204,7 +1188,7 @@ msgstr "### Graphen mit einem Ergebnis"
 msgid "FAL_GRAPH_EXPLANATION_1"
 msgstr "Wir können das Diagramm in drei Phasen betrachten:\n"
             "1. Die erste Phase findet in der Dunkelheit statt, so dass unsere anfängliche modellierte Fluoreszenz *F₀* beträgt. Dann simulieren wir einen sättigenden Lichtpuls, der die Fluoreszenz schnell bis zum Spitzenwert *Fₘ* ansteigen lässt. Fₘ sollte die maximale Fluoreszenz sein, die die Pflanze insgesamt erzeugen kann, so dass wir normalerweise die anderen Fluoreszenzsignale damit vergleichen. *Fₜ*, die außerhalb der Sättigungspulse simulierte Fluoreszenz, zeigt das Verhalten des Photosystems unter aktinischem Licht. Wir sehen, dass Fₜ danach wieder auf das F₀-Niveau abfällt, was bedeutet, dass sich die Pflanze von der Sättigung ihrer Photosysteme erholt.\n"
-            "2. Wir leiten die folgende Phase mit einem weiteren Sättigungspuls ein. Da dieser Spitzenwert der Fluoreszenz (*Fₘ'*) der gleiche ist wie Fₘ, scheint die Pflanze noch keinen Lichtschutz aktiviert zu haben. Anstatt jedoch in die Dunkelheit zurückzukehren, schalten wir nun das (aktinische) Licht auf 100 μmol m-² s-¹ ein. Dies führt dazu, dass die Fluoreszenz nach dem Sättigungspuls viel schneller abnimmt und auf ein etwas höheres Niveau als F₀ fällt, das bis zum Ende des Experiments anhält. Die erhöhte Fluoreszenzausbeute zeigt uns, dass die Pflanze jetzt eine größere Menge an Anregungsenergie in Fluoreszenz verliert, was bedeutet, dass sie stärker gestresst ist als im Dunkeln.\n"
+            "2. Wir leiten die folgende Phase mit einem weiteren Sättigungspuls ein. Da dieser Spitzenwert der Fluoreszenz (*Fₘ'*) der gleiche ist wie Fₘ, scheint die Pflanze noch keinen Lichtschutz aktiviert zu haben. Anstatt jedoch in die Dunkelheit zurückzukehren, schalten wir nun das (aktinische) Licht auf 100 μmol&nbsp;m⁻²&nbsp;s⁻¹ ein. Dies führt dazu, dass die Fluoreszenz nach dem Sättigungspuls viel schneller abnimmt und auf ein etwas höheres Niveau als F₀ fällt, das bis zum Ende des Experiments anhält. Die erhöhte Fluoreszenzausbeute zeigt uns, dass die Pflanze jetzt eine größere Menge an Anregungsenergie in Fluoreszenz verliert, was bedeutet, dass sie stärker gestresst ist als im Dunkeln.\n"
             "3. Wenn wir einen weiteren Sättigungsimpuls geben, sehen wir, dass das neue Fluoreszenzmaximum Fₘ' deutlich niedriger ist als Fₘ, was uns zeigt, dass das nicht-photochemische Quenching aktiviert wurde und die Anregungsenergie sowohl von der Fluoreszenz als auch von der Photosynthese abzieht. Diese Beobachtung spiegelt sich direkt in der Formel zur Schätzung von NPQ wider:"
 
 #: pages/first_analysis.py:262
@@ -1217,7 +1201,7 @@ msgstr "### Grafiken mit alten und neuen Ergebnissen"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_DUO"
-msgstr "Wenn man die Modellparameter ändert und eine weitere Simulation durchführt, wird das alte Simulationsdiagramm als gestrichelte Linie im Hintergrund des neuen Diagramms angezeigt. Auf diese Weise lassen sich die beiden Diagramme leicht vergleichen und die Auswirkungen der Änderungen untersuchen. Im gezeigten Fall haben wir die aktinische Lichtintensität von 100 (alt) auf 500 μmol m-² s-¹ (neu) erhöht. Da die Dunkelphase in allen Simulationen gleich ist, gibt es keinen Unterschied in Phase eins. Nach dem Sättigungsimpuls in Phase zwei ist die Fluoreszenz (Fₜ₋₅₀₀) bei der höheren Lichtintensität stark erhöht und braucht viel länger, um abzunehmen. Dieses Verhalten deutet darauf hin, dass das Photosystem viel mehr Lichtstress ausgesetzt ist und mehr Zeit benötigt, um das NPQ ausreichend zu aktivieren. Phase drei bestätigt diese Hypothese, da wir stark reduzierte Fₘ'-Werte simulieren, was zu einer erhöhten geschätzten NPQ gemäß der vorherigen Formel führt. Schließlich sehen wir, dass die Pflanze eine ähnliche Endfluoreszenz erreicht wie mit dem schwächeren aktinischen Licht, was bedeutet, dass durch die starke NPQ-Aktivierung ein ähnlich niedriges Stressniveau erreicht wird."
+msgstr "Wenn man die Modellparameter ändert und eine weitere Simulation durchführt, wird das alte Simulationsdiagramm als gestrichelte Linie im Hintergrund des neuen Diagramms angezeigt. Auf diese Weise lassen sich die beiden Diagramme leicht vergleichen und die Auswirkungen der Änderungen untersuchen. Im gezeigten Fall haben wir die aktinische Lichtintensität von 100 (alt) auf 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ (neu) erhöht. Da die Dunkelphase in allen Simulationen gleich ist, gibt es keinen Unterschied in Phase eins. Nach dem Sättigungsimpuls in Phase zwei ist die Fluoreszenz (Fₜ₋₅₀₀) bei der höheren Lichtintensität stark erhöht und braucht viel länger, um abzunehmen. Dieses Verhalten deutet darauf hin, dass das Photosystem viel mehr Lichtstress ausgesetzt ist und mehr Zeit benötigt, um das NPQ ausreichend zu aktivieren. Phase drei bestätigt diese Hypothese, da wir stark reduzierte Fₘ'-Werte simulieren, was zu einer erhöhten geschätzten NPQ gemäß der vorherigen Formel führt. Schließlich sehen wir, dass die Pflanze eine ähnliche Endfluoreszenz erreicht wie mit dem schwächeren aktinischen Licht, was bedeutet, dass durch die starke NPQ-Aktivierung ein ähnlich niedriges Stressniveau erreicht wird."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_EXPANDER"
@@ -1234,10 +1218,10 @@ msgstr "**Siehe unsere Interpretation**"
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS"
 msgstr "Mit den Standardwerten zeigt dir die folgende Simulation ein typisches PAM-Experiment. Wenn du die Schieberegler ausprobierst, könntest du Folgendes versuchen:\n"
-        "1. :blue[Am frühen Morgen oder an einem bewölkten Tag findet man eine Lichtintensität von 100 μmol m-² s-¹, sie ist also recht niedrig. An einem milden Tag könnte die Sonne mit 500 μmol m-² s-¹ an Photonen scheinen - versuche das mal:]\n"
-        " - Wie unterscheidet sich die Reaktion beim Einschalten des Lichts von der Reaktion bei 100 μmol m-² s-¹? Was bedeutet das für die Pflanze?\n"
+        "1. :blue[Am frühen Morgen oder an einem bewölkten Tag findet man eine Lichtintensität von 100 μmol&nbsp;m⁻²&nbsp;s⁻¹, sie ist also recht niedrig. An einem milden Tag könnte die Sonne mit 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ an Photonen scheinen - versuche das mal:]\n"
+        " - Wie unterscheidet sich die Reaktion beim Einschalten des Lichts von der Reaktion bei 100 μmol&nbsp;m⁻²&nbsp;s⁻¹? Was bedeutet das für die Pflanze?\n"
         " - Wie unterscheiden sich die Sättigungsimpulssignale zwischen der niedrigeren und der höheren Intensität?\n"
-        "2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol m-² s-¹ aktinisches Licht erreicht werden. Probiere dies in einer Simulation aus und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.\n"
+        "2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ aktinisches Licht erreicht werden. Probiere dies in einer Simulation aus und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.\n"
         " - Vergleiche die Fluoreszenz ganz am Ende der Simulation zwischen Standard- und Starklicht - gibt es einen Unterschied?\n"
         "3. :blue[Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungspulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.\n"
         " - Verringere die Zeit zwischen den Sättigungsimpulsen. Was kannst du sehen?\n"
@@ -1258,27 +1242,22 @@ msgstr "5. :blue[Die Umwandlungsraten in Zeaxanthin und Violaxanthin stellen die
 "   - Verringere allmählich die Intensität des Sättigungsimpulses. Wann scheinen sie nicht mehr zu sättigen? Was passiert mit unseren Messungen?\n"
 "   - Da das Modell davon ausgeht, dass die Sättigungsimpulse nicht zu niedrig sind, kann es zu Fehlern in der Simulation oder Analyse kommen, wenn du die Intensität weiter verringerst. Lass dich davon nicht abschrecken! Probiere stattdessen aus, wie das Modell auf unsere Eingaben reagiert und wie du es sonst noch brechen kannst."
 
-#: pages/first_analysis.py:262
+#: pages/first_analysis.py:321
 msgid "FAL_GUIDING_ANSWERS"
-" - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
-" - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol m-² s-¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
-"4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
-" - Bei einer Lichtintensität von 500 bis 900 μmol m-² s-¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
-" - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
 msgstr "Mit den Standardwerten wird in der folgenden Simulation ein typisches PAM-Experiment durchgeführt. Wenn du die Schieberegler ausprobierst, könntest du Folgendes versuchen:\n"
-"1. :blue[Am frühen Morgen oder an einem bewölkten Tag findet man eine Lichtintensität von 100 μmol m-² s-¹, sie ist also recht niedrig. An einem milden Tag könnte die Sonne mit 500 μmol m-² s-¹ Photonen scheinen - versuche es stattdessen:]\n"
-" - Das Fluoreszenzsignal nach dem Einschalten des Lichts, kurz nach dem Peak, ist sehr viel höher. Das liegt daran, dass das Chlorophyll viel mehr Energie erhält, wodurch die Pflanze unter Lichtstress gerät.\n"
-" - Die späteren Sättigungsimpulse, nach ca. zwei Minuten, sind kürzer als die bei schwachem Licht. Daher hat die Pflanze die Wärmeabschreckung, auch NPQ genannt, als Lichtschutzmechanismus erhöht.\n"
-"2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol m-² s-¹ aktinisches Licht erreicht werden. Versuche dies in einer Simulation und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.\n"
-" - Bei dieser höheren Lichtintensität können wir auch die erhöhte Fluoreszenz nach dem Einschalten und die weiter abnehmende Fluoreszenz während der Pulse sehen.\n"
-" - Die Fluoreszenz am Ende der sehr hohen Lichtphase ist im Vergleich zur niedrigen Lichtsimulation erhöht. Daher ist die Pflanze selbst nach der vollständigen Aktivierung ihres NPQ-Mechanismus noch stärker gestresst. Wahrscheinlich ist das Löschpotenzial des NPQ-Prozesses der Pflanze erschöpft, und eine höhere Lichtintensität könnte die Pflanze schädigen.\n"
-" 3. Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungsimpulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.\n"
-" - Mit häufigeren Pulsen können wir die abfallende Spitzenfluoreszenz deutlicher sehen. Daher sehen wir die NPQ-Aktivierung in einer höheren Auflösung und können versuchen, eine Funktion zur Schätzung der Aktivierungsrate zu erstellen. \n"
-" - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
-" - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol m-² s-¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
-"4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
-" - Bei einer Lichtintensität von 500 bis 900 μmol m-² s-¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
-" - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
+        "1. :blue[Am frühen Morgen oder an einem bewölkten Tag findet man eine Lichtintensität von 100 μmol&nbsp;m⁻²&nbsp;s⁻¹, sie ist also recht niedrig. An einem milden Tag könnte die Sonne mit 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ Photonen scheinen - versuche es stattdessen:]\n"
+        "    - Das Fluoreszenzsignal nach dem Einschalten des Lichts, kurz nach dem Peak, ist sehr viel höher. Das liegt daran, dass das Chlorophyll viel mehr Energie erhält, wodurch die Pflanze unter Lichtstress gerät.\n"
+        "    - Die späteren Sättigungsimpulse, nach ca. zwei Minuten, sind kürzer als die bei schwachem Licht. Daher hat die Pflanze die Wärmeabschreckung, auch NPQ genannt, als Lichtschutzmechanismus erhöht.\n"
+        "2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ aktinisches Licht erreicht werden. Versuche dies in einer Simulation und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.\n"
+        "    - Bei dieser höheren Lichtintensität können wir auch die erhöhte Fluoreszenz nach dem Einschalten und die weiter abnehmende Fluoreszenz während der Pulse sehen.\n"
+        "    - Die Fluoreszenz am Ende der sehr hohen Lichtphase ist im Vergleich zur niedrigen Lichtsimulation erhöht. Daher ist die Pflanze selbst nach der vollständigen Aktivierung ihres NPQ-Mechanismus noch stärker gestresst. Wahrscheinlich ist das Löschpotenzial des NPQ-Prozesses der Pflanze erschöpft, und eine höhere Lichtintensität könnte die Pflanze schädigen.\n"
+        "3. Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungsimpulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.\n"
+        "    - Mit häufigeren Pulsen können wir die abfallende Spitzenfluoreszenz deutlicher sehen. Daher sehen wir die NPQ-Aktivierung in einer höheren Auflösung und können versuchen, eine Funktion zur Schätzung der Aktivierungsrate zu erstellen. \n"
+        "    - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
+        "    - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol&nbsp;m⁻²&nbsp;s⁻¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
+        "4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
+        "    - Bei einer Lichtintensität von 500 bis 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
+        "    - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS_EXTEND"
@@ -1291,9 +1270,7 @@ msgstr "5. :blue[Die Umwandlungsraten in Zeaxanthin und Violaxanthin stellen die
 " - Wenn wir die Dunkelphase auf weniger als 10-15 Sekunden verkürzen, ist die Entspannung nach dem dunklen Sättigungsimpuls noch nicht abgeschlossen. Wenn wir das aktinische Licht einschalten, überschätzen wir daher zunächst die Fluoreszenz und das geschätzte Stressniveau.\n"
 "7. :blue[Es ist sehr wichtig, dass die Sättigungspulse tatsächlich sättigen, um aussagekräftige Ergebnisse zu erhalten. Was passiert, wenn dies nicht der Fall ist?]\n"
 " - Die Fluoreszenzsimulation ändert sich nur minimal, wenn der Sättigungspuls auf maximale Intensität erhöht wird. Je höher die Lichtintensität \n"
-" - Unterhalb von ca. 2000 μmol m-² s-¹ ist der Peakhöhenunterschied deutlich spürbar. Von dort an scheint der Fₜ-Pegel generell erhöht zu sein, da die Fluoreszenz auf das untersättigte Fₘ normalisiert wird. Beide Faktoren führen zu einer starken Überschätzung der NPQ und einer Unterschätzung von Φ(PSII)."
-
-
+" - Unterhalb von ca. 2000 μmol&nbsp;m⁻²&nbsp;s⁻¹ ist der Peakhöhenunterschied deutlich spürbar. Von dort an scheint der Fₜ-Pegel generell erhöht zu sein, da die Fluoreszenz auf das untersättigte Fₘ normalisiert wird. Beide Faktoren führen zu einer starken Überschätzung der NPQ und einer Unterschätzung von Φ(PSII)."
 
 #: pages/plant_memory.py:380
 msgid "MEM_HEADLINE_BRAIN"
@@ -1336,14 +1313,6 @@ msgstr "Erholung"
 msgid "MEM_ANNO_MEMORY"
 msgstr "Gedächtnis"
 
-#: pages/plant_memory.py:393
-msgid "MEM_TIP1"
-msgstr "***Tipp 1:*** *Wenn du zwei Experimente vergleichen möchten, kannst du die Diagramme herunterladen, indem du auf die drei Punkte klickst.*"
-
-#: pages/plant_memory.py:395
-msgid "MEM_TIP2"
-msgstr "***Tipp 2:*** *Durch Klicken auf den Stopp-Button in der oberen rechten Ecke kannst du den Berechnungsvorgang abbrechen.*"
-
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_EXPANDER"
 msgstr "Hast du Schwierigkeiten, die Simulationsergebnisse mit der Biologie zu verbinden? Versuche es mit unseren **Leitfragen**."
@@ -1360,14 +1329,14 @@ msgstr "**Siehe unsere Interpretation**"
 msgid "MEM_GUIDING_QUESTIONS"
 msgstr "1. :blue[Die aktinische Lichtintensität (AL) und die Dauer während der Trainingsphase bestimmen die Länge des Lichtgedächtnisses. Wie reagiert die Pflanze, wenn man sie verändert?]\n"
 " - Ändere die Dauer der Trainingsphase zunächst auf 1 Minute und dann auf 5 Minuten. Wirkt sich das auf das spätere Verhalten aus?\n"
-" - Stelle nun die Lichtintensität auf 500 μmol m-² s-¹? Siehst du eine Veränderung in der Gedächtnisphase? \n"
+" - Stelle nun die Lichtintensität auf 500 μmol&nbsp;m⁻²&nbsp;s⁻¹? Siehst du eine Veränderung in der Gedächtnisphase? \n"
 " - Verringere die Zeit der Trainingsphase wieder schrittweise auf 1 Minute. Wie erklärst du dir, was du siehst?\n"
 "2. :blue[Die Entspannungsphase ermöglicht es der Pflanze, den vorherigen Stress zu 'vergessen'. Stell dir vor, wie sich eine Änderung ihrer Dauer auf die spätere Gedächtnisphase auswirken würde.]\n"
 " - Stelle die Dauer der Entspannungsphase auf null Minuten ein. Was bedeutet das für die Pflanze?\n"
 " - Erhöhe nun schrittweise die Dauer der Entspannungsphase. Was ändert sich? Wie erklärst du dir das?\n"
 "3. :blue[Der Memory-Effekt beruht auf der Aktivierung und Deaktivierung von NPQ. Daher kann man ihn modulieren, indem man die entsprechenden Raten ändert.\n"
 " - Beachte, dass Zeaxanthin die aktive Verbindung ist. Stelle eine Hypothese auf, wie sich jeder der Schieberegler für die Umwandlungsrate auf das Gedächtnis der Pflanze auswirkt.\n"
-" - Setze bei AL=500 μmol m-² s-¹ die Umwandlungsrate in Violaxanthin (CtV) auf 1 % des Standardwerts. Vergleiche das Ergebnis mit einer Simulation, bei der CtV auf 10000% eingestellt ist. Welche Ergebnisse haben sich geändert? Entspricht das deinen Erwartungen?\n"
+" - Setze bei AL=500 μmol&nbsp;m⁻²&nbsp;s⁻¹ die Umwandlungsrate in Violaxanthin (CtV) auf 1 % des Standardwerts. Vergleiche das Ergebnis mit einer Simulation, bei der CtV auf 10000% eingestellt ist. Welche Ergebnisse haben sich geändert? Entspricht das deinen Erwartungen?\n"
 " - Versuche dasselbe Experiment mit anderen AL-Werten. Wann ist die Wirkung der Änderung von CtV am stärksten?\n"
 " - Ändere nun auch CtZ unter verschiedenen Lichtbedingungen. Kannst du dir Umweltbedingungen vorstellen, bei denen eine Pflanze mit veränderter NPQ-Kinetik von Vorteil sein könnte?\n"
 "4. :blue[Simuliere mit deinem bisherigen Wissen ein Experiment, das den Gedächtniseffekt der Pflanze am besten zeigt. Bedenke, dass du im Labor möglicherweise zeitsparende, kürzere Experimente bevorzugst.]"
@@ -1375,18 +1344,18 @@ msgstr "1. :blue[Die aktinische Lichtintensität (AL) und die Dauer während der
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_ANSWERS"
 msgstr "1. :blue[Die aktinische Lichtintensität (AL) und die Dauer während der Trainingsphase bestimmen die Länge des Lichtgedächtnisses. Wie reagiert die Pflanze, wenn man sie verändert?]\n"
-" - Ändere die Dauer der Trainingsphase zunächst auf 1 Minute und dann auf 5 Minuten. Wirkt sich das auf das spätere Verhalten aus?\n"
-" - Stelle nun die Lichtintensität auf 500 μmol m-² s-¹? Siehst du eine Veränderung in der Gedächtnisphase? \n"
-" - Verringere die Zeit der Trainingsphase wieder schrittweise auf 1 Minute. Wie erklärst du dir, was du siehst?\n"
-"2. :blue[Die Entspannungsphase ermöglicht es der Pflanze, den vorherigen Stress zu 'vergessen'. Stell dir vor, wie sich eine Änderung ihrer Dauer auf die spätere Gedächtnisphase auswirken würde.]\n"
-" - Stelle die Dauer der Entspannungsphase auf null Minuten ein. Was bedeutet das für die Pflanze?\n"
-" - Erhöhe nun schrittweise die Dauer der Entspannungsphase. Was ändert sich? Wie erklärst du dir das?\n"
-"3. :blue[Der Memory-Effekt beruht auf der Aktivierung und Deaktivierung von NPQ. Daher kann man ihn modulieren, indem man die entsprechenden Raten ändert.\n"
-" - Beachte, dass Zeaxanthin die aktive Verbindung ist. Stelle eine Hypothese auf, wie sich jeder der Schieberegler für die Umwandlungsrate auf das Gedächtnis der Pflanze auswirkt.\n"
-" - Setze bei AL=500 μmol m-² s-¹ die Umwandlungsrate in Violaxanthin (CtV) auf 1 % des Standardwerts. Vergleiche das Ergebnis mit einer Simulation, bei der CtV auf 10000% eingestellt ist. Welche Ergebnisse haben sich geändert? Entspricht das deinen Erwartungen?\n"
-" - Versuche dasselbe Experiment mit anderen AL-Werten. Wann ist die Wirkung der Änderung von CtV am stärksten?\n"
-" - Ändere nun auch CtZ unter verschiedenen Lichtbedingungen. Kannst du dir Umweltbedingungen vorstellen, bei denen eine Pflanze mit veränderter NPQ-Kinetik von Vorteil sein könnte?\n"
-"4. :blue[Simuliere mit deinem bisherigen Wissen ein Experiment, das den Gedächtniseffekt der Pflanze am besten zeigt. Bedenke, dass du im Labor möglicherweise zeitsparende, kürzere Experimente bevorzugst.]"
+        " - Ändere die Dauer der Trainingsphase zunächst auf 1 Minute und dann auf 5 Minuten. Wirkt sich das auf das spätere Verhalten aus?\n"
+        " - Stelle nun die Lichtintensität auf 500 μmol&nbsp;m⁻²&nbsp;s⁻¹? Siehst du eine Veränderung in der Gedächtnisphase? \n"
+        " - Verringere die Zeit der Trainingsphase wieder schrittweise auf 1 Minute. Wie erklärst du dir, was du siehst?\n"
+        "2. :blue[Die Entspannungsphase ermöglicht es der Pflanze, den vorherigen Stress zu 'vergessen'. Stell dir vor, wie sich eine Änderung ihrer Dauer auf die spätere Gedächtnisphase auswirken würde.]\n"
+        " - Stelle die Dauer der Entspannungsphase auf null Minuten ein. Was bedeutet das für die Pflanze?\n"
+        " - Erhöhe nun schrittweise die Dauer der Entspannungsphase. Was ändert sich? Wie erklärst du dir das?\n"
+        "3. :blue[Der Memory-Effekt beruht auf der Aktivierung und Deaktivierung von NPQ. Daher kann man ihn modulieren, indem man die entsprechenden Raten ändert.\n"
+        " - Beachte, dass Zeaxanthin die aktive Verbindung ist. Stelle eine Hypothese auf, wie sich jeder der Schieberegler für die Umwandlungsrate auf das Gedächtnis der Pflanze auswirkt.\n"
+        " - Setze bei AL=500 μmol&nbsp;m⁻²&nbsp;s⁻¹ die Umwandlungsrate in Violaxanthin (CtV) auf 1 % des Standardwerts. Vergleiche das Ergebnis mit einer Simulation, bei der CtV auf 10000% eingestellt ist. Welche Ergebnisse haben sich geändert? Entspricht das deinen Erwartungen?\n"
+        " - Versuche dasselbe Experiment mit anderen AL-Werten. Wann ist die Wirkung der Änderung von CtV am stärksten?\n"
+        " - Ändere nun auch CtZ unter verschiedenen Lichtbedingungen. Kannst du dir Umweltbedingungen vorstellen, bei denen eine Pflanze mit veränderter NPQ-Kinetik von Vorteil sein könnte?\n"
+        "4. :blue[Simuliere mit deinem bisherigen Wissen ein Experiment, das den Gedächtniseffekt der Pflanze am besten zeigt. Bedenke, dass du im Labor möglicherweise zeitsparende, kürzere Experimente bevorzugst.]"
 
 
 

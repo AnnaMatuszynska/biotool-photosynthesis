@@ -92,7 +92,7 @@ msgstr "Also check out *Plants and Python*, a python course for Biologists:\n"
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
-msgstr "Light intensity of light phase (AL) in μmol m⁻² s⁻¹"
+msgstr "Light intensity of light phase (AL) in μmol&nbsp;m⁻²&nbsp;s⁻¹"
 
 #: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
@@ -540,7 +540,6 @@ msgstr "### PAM Experiments"
 # Grammarly checked
 #: pages/method.py:38
 msgid "MTH_INTRODUCTION_PAM_MEASUREMENT"
-
 msgstr "In the following, we will give a short explanation of the Pulse Amplitude Modulation method for the quantification of photosynthesis. For a more in-depth overview, please consider the literature at the bottom of the page."
 
 #: Explanation by Tobias
@@ -692,11 +691,6 @@ msgstr "Recovery rate γ"
 msgid "MDL_CAPTION_SIR_RESULTS_PICTURE"
 msgstr "The change in the population of Planet-X using the SIR model taken from Earth's scientists is depicted. The infection rate is set to (β&nbsp;=&nbsp;2) and the recovery rate to (γ&nbsp;=&nbsp;0.2). The starting populations are: (S&nbsp;=&nbsp;900), (I&nbsp;=&nbsp;100), (R&nbsp;=&nbsp;0), and (N&nbsp;=&nbsp;S&nbsp;+&nbsp;I&nbsp;+&nbsp;R&nbsp;=&nbsp;1000)"
 
-# Grammarly checked
-#: pages/model_explain.py:261
-msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_EXPERT"
-msgstr ""
-
 #: pages/model_explain.py:352
 msgid "MDL_HEADLINE_MODEL_PHOTOSYNTHESIS"
 msgstr "## Models of photosynthesis"
@@ -738,10 +732,10 @@ msgid "MDL_FVCB_SLIDERS_O"
 msgstr "Chloroplast O₂ partial pressure [mbar]"
 
 msgid "MDL_FVCB_SLIDERS_J"
-msgstr "Electron transport rate (J) [µmol m⁻² s⁻¹]"
+msgstr "Electron transport rate (J) [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 msgid "MDL_FVCB_SLIDERS_Tp"
-msgstr "Inorganic phosphate supply rate (Tₚ) [µmol m⁻² s⁻¹]"
+msgstr "Inorganic phosphate supply rate (Tₚ) [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 #: pages/model_explain.py:384
 msgid "MDL_FVCB_DEFAULT_PARAMETERS"
@@ -769,7 +763,7 @@ msgstr "Intercellular"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_YLABEL"
-msgstr "assimilation [µmol m⁻² s⁻¹]"
+msgstr "Assimilation [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_EMPTY"
@@ -924,7 +918,7 @@ msgstr "So, instead of modeling the whole plant or chloroplast, we applied a cyc
 #: Anna's explanation of the model
 #: pages/first_analysis.py:20
 msgid "FAL_RATES_1"
-msgstr "1) the reduced fraction of the plastoquinone pool (PQH<sub>2</sub>)"
+msgstr "1) the reduced fraction of the plastoquinone pool (PQH<sub>2</sub>),"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:21
@@ -1026,15 +1020,7 @@ msgid "FAL_EXPLANATNION"
 msgstr "First, change the sliders according to the test you want to simulate. Then, start the calculation by clicking on the button. The calculated graph will be displayed. When you change the sliders again, the graph disappears, and you can load a new graph."
 
 msgid "FAL_VIDEO_TRANSCRIPT_SLIDERS"
-msgstr "In this video, you will get important information about using the sliders and analyzing the graphs. You have already learned what the graphs will look like and that they can be calculated and created by our own computer model. Now, you can adjust the PAM parameters with the sliders to create your individual test scenario and click the button to see the resulting graph.\n\nBut how do we analyze the graph? Well, that depends on what you are looking for. The fluorescence is plotted on the y-axis, and the times are plotted on the x-axis. For the fluorescent, the maximum fluorescence at the saturation pulse was measured first. Then, the measured fluorescence was plotted by the maximum fluorescence. To see the increase or decrease of the stress of the plant over a period of time, we could connect the peaks of the pulses and look at the progression. Finally, I want to share two tips with you: First, if you want to compare two PAM tests, you can download the graphs by clicking the three dots in the top right corner. Second, if you want to cancel the calculation process, you need to click on the 'Stop' in the upper right corner of the PAM app. Now, have fun and analyze the graph you have created on your own."
-
-#: pages/first_analysis.py:277
-msgid "FAL_TIPP1"
-msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by right clicking on them.*"
-
-#: pages/first_analysis.py:278
-msgid "FAL_TIPP2"
-msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
+msgstr "In this video, you will get important information about using the sliders and analyzing the graphs. You have already learned what the graphs will look like and that they can be calculated and created by our own computer model. Now, you can adjust the PAM parameters with the sliders to create your individual test scenario and click the button to see the resulting graph.\n\n But how do we analyze the graph? Well, that depends on what you are looking for. The fluorescence is plotted on the y-axis, and the times are plotted on the x-axis. For the fluorescent, the maximum fluorescence at the saturation pulse was measured first. Then, the measured fluorescence was plotted by the maximum fluorescence. To see the increase or decrease of the stress of the plant over a period of time, we could connect the peaks of the pulses and look at the progression. Finally, I want to share two tips with you: First, if you want to compare two PAM tests, you can download the graphs by clicking the three dots in the top right corner. Second, if you want to cancel the calculation process, you need to click on the 'Stop' in the upper right corner of the PAM app. Now, have fun and analyze the graph you have created on your own."
 
 #: pages/first_analysis.py:354
 msgid "FAL_SLIDER_TIME"
@@ -1046,7 +1032,7 @@ msgstr "Length of the dark phase in seconds"
 
 #: pages/first_analysis.py:385
 msgid "FAL_SLIDER_SATURATE"
-msgstr "Light intensity of saturating pulse (SP) in μmol m⁻² s⁻¹"
+msgstr "Light intensity of saturating pulse (SP) in μmol&nbsp;m⁻²&nbsp;s⁻¹"
 
 #: Anna's explanation of the model
 #: pages/first_analysis.py:74
@@ -1163,7 +1149,7 @@ msgstr "### Graphs with one result"
 msgid "FAL_GRAPH_EXPLANATION_1"
 msgstr "We can look at the graph in three phases:\n"
             "1. The first phase happens in darkness and, therefore, our initial modelled fluorescence is *F₀*. We then simulate a saturating light pulse which rapidly increases the fluorescence up to the peak value *Fₘ*. Fₘ should be the overall maximal fluorescence the plant can produce so we usually compare the other fluorescence signals to it. *Fₜ*, the fluorescence simulated outside of saturating pulses, shows the photosystems behavior under the actinic light. We see that Fₜ decreases back to the F₀-level afterwards, meaning that the plant recovers from having its photosystems saturated.\n"
-            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level (*Fₘ'*) is the same as Fₘ, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol m⁻² s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F₀ which persists until the end of the experiment. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
+            "2. We initiate the following phase with another saturating pulse. Since this peak fluorescence level (*Fₘ'*) is the same as Fₘ, the plant doesn't seem to have activated any light protection yet. However, now, instead of returning to dark, we turn on the (actinic) light to 100 μmol&nbsp;m⁻²&nbsp;s⁻¹. This leads to the fluorescence decreasing much more quickly after the saturating pulse and to a slightly higher level than F₀ which persists until the end of the experiment. The increased fluorescence yield shows us that the plant loses a larger amount of excitation energy to fluorescence now, implying that it is more stressed than it was in the dark.\n"
             "3. Indeed, when we proceed to give another saturating pulse, we see that the new maximum fluorescence Fₘ' is noticeably lower than Fₘ, showing us that non-photochemical quenching has been activated and is funnelling excitation energy away from both fluorescence and photosynthesis. You can find this observation directly reflected in the formula to estimate NPQ:"
 
 #: pages/first_analysis.py:262
@@ -1176,7 +1162,7 @@ msgstr "### Graphs with old and new results"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_DUO"
-msgstr "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol m⁻² s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behavior implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ' values, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
+msgstr "When changing the model parameters and doing another simulation, the old simulation graph will be displayed as a dashed line in the background of the new plot. This way, you can easily compare the two and investigate the effects of your change.\n\nIn the case shown, we increased the actinic light intensity from 100 (old) to 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ (new). Because the dark phase is the same in all simulations, there is no difference in phase one. After the saturating pulse in phase two, the higher light intensity's fluorescence (Fₜ₋₅₀₀) is strongly raised takes much longer to decrease. This behavior implies that the photosystem is under much more light stress and  requires more time to sufficiently activate the NPQ. Phase three validates this hypothesis, as we simulate strongly reduced Fₘ' values, resulting in increased estimated NPQ according to the previous formula. Lastly, we see that the plant reaches a similar final fluorescence as with the weaker actinic light, implying that by the strong NPQ activation a similarly low stress level is reached."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_EXPANDER"
@@ -1193,10 +1179,10 @@ msgstr "**See our interpretation**"
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS"
 msgstr "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
-"1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
-"    - When the light is being turned on, how does the reaction differ to when you used 100 μmol m⁻² s⁻¹? What does that mean to the plant?\n"
+"1. :blue[You will find a light intensity of 100 μmol&nbsp;m⁻²&nbsp;s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ of photons - try that instead:]\n"
+"    - When the light is being turned on, how does the reaction differ to when you used 100 μmol&nbsp;m⁻²&nbsp;s⁻¹? What does that mean to the plant?\n"
 "    - How do the saturation pulse signals differ between the lower and higher intensity?\n"
-"2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
+"2. :blue[On a hot and sunny day, higher intensities of over 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
 "    - Compare the fluorescence at the very end of the simulation between default and high light - is there a difference?\n"
 "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
 "    - Lower the time between the saturation pulses. What can you see?\n"
@@ -1217,27 +1203,22 @@ msgstr "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent t
 "    - Gradually reduce the saturating pulse intensity. When do they not seem to saturate anymore? What happens to our measurements?\n"
 "    - Because the model assumes that the saturation pulses aren't too low, if you keep decreasing the intensity, you might experience errors in simulation or analysis. Don't let this deter you! Instead try out how the model reacts to our inputs and how else you can break it."
 
-#: pages/first_analysis.py:262
+#: pages/first_analysis.py:321
 msgid "FAL_GUIDING_ANSWERS"
-" - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
-" - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol m-² s-¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
-"4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuche, die Messzeit auf 1 min zu senken und dann auf 10 min zu erhöhen.]\n"
-" - Bei einer Lichtintensität von 500 bis 900 μmol m-² s-¹ scheint die NPQ-Anpassung nach drei bis vier Sekunden abgeschlossen zu sein. Wir sollten mindestens so lange messen, um den gesamten Prozess zu erfassen.\n"
-" - Bei niedrigeren Lichtintensitäten dauert dieser Anpassungsprozess weniger lang. Daher könnte eine kürzere Messung machbar sein."
 msgstr "With the default values, the following simulation shows you a typical PAM experiment. When testing out the sliders you could try the following:\n"
-"1. :blue[You will find a light intensity of 100 μmol m⁻² s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol m⁻² s⁻¹ of photons - try that instead:]\n"
-"    - The fluorescence signal after turning on the light, shortly after the peak, is a lot higher. This is because chlorophyll receives much more energy which puts the plant under light stress.\n"
-"    - The later saturation pulses, after ca. two minutes, are shorter than those under low light. Therefore the plant has increased the heat quenching, aka NPQ, as a light protection mechanism.\n"
-"2. :blue[On a hot and sunny day, higher intensities of over 900 μmol m⁻² s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
-"    - For this higher light intensity we can see as well the increased fluorescence after light-on and the further decreasing fluorescence during the pulses.\n"
-"    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full activation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhausted and higher light might damage the plant.\n"
-"3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
-"    - With more frequent pulses, we can see the dropping peak fluorescence more clearly. Therefore, we see the NPQ activation in a higher resolution and could try to fit a function to estimate the activation rate.\n"
-"    - Normally we assume that the pulses don't affect the photosynthesis. After a pulse the signal returns to the previous level and the peak height seems to decrease always the same.\n"
-"    - However, if we give pulses in rapid succession under low light, the saturation pulses can have an effect like actinic light. You can see this if you try a light intensity of 50 μmol m⁻² s⁻¹ with pulses every 5 s. There, the peak height decreases more than with fewer pulses. \n"
-"4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
-"    - With a light intensity of 500 to 900 μmol m⁻² s⁻¹ the NPQ adaption seems to be finished after three to four seconds. We should measure at least this long to capture the whole process.\n"
-"    - With lower light intensities this adaption process takes less time. So a shorter measurement might be feasible."
+        "1. :blue[You will find a light intensity of 100 μmol&nbsp;m⁻²&nbsp;s⁻¹ in the early morning or on a cloudy day, so it is quite low. On a mild day, the sun might shine with 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ of photons - try that instead:]\n"
+        "    - The fluorescence signal after turning on the light, shortly after the peak, is a lot higher. This is because chlorophyll receives much more energy which puts the plant under light stress.\n"
+        "    - The later saturation pulses, after ca. two minutes, are shorter than those under low light. Therefore the plant has increased the heat quenching, aka NPQ, as a light protection mechanism.\n"
+        "2. :blue[On a hot and sunny day, higher intensities of over 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ actinic light can be reached. Try this in a simulation and see if you previous observations also hold here.]\n"
+        "    - For this higher light intensity we can see as well the increased fluorescence after light-on and the further decreasing fluorescence during the pulses.\n"
+        "    - The fluorescence at the very end of the very high light phase is increased compared to the low light simulation. Therefore, even after full activation of it's NPQ mechanism, the plant is still more stressed. Likely, the quenching potential of the plant's NPQ process is exhausted and higher light might damage the plant.\n"
+        "3. :blue[At this intensity, we can see much better how the fluorescence peaks during the saturation pulses lower over time. But a lot seems to happen in the first two minutes that we cannot see.]\n"
+        "    - With more frequent pulses, we can see the dropping peak fluorescence more clearly. Therefore, we see the NPQ activation in a higher resolution and could try to fit a function to estimate the activation rate.\n"
+        "    - Normally we assume that the pulses don't affect the photosynthesis. After a pulse the signal returns to the previous level and the peak height seems to decrease always the same.\n"
+        "    - However, if we give pulses in rapid succession under low light, the saturation pulses can have an effect like actinic light. You can see this if you try a light intensity of 50 μmol&nbsp;m⁻²&nbsp;s⁻¹ with pulses every 5 s. There, the peak height decreases more than with fewer pulses. \n"
+        "4. :blue[The longer an experiment takes, the more work it is for the experimenter. Try lowering the measuring time to 1 min, then increase it to 10 min.]\n"
+        "    - With a light intensity of 500 to 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ the NPQ adaption seems to be finished after three to four seconds. We should measure at least this long to capture the whole process.\n"
+        "    - With lower light intensities this adaption process takes less time. So a shorter measurement might be feasible."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_ANSWERS_EXTEND"
@@ -1250,9 +1231,7 @@ msgstr "5. :blue[The conversion rates to Zeaxanthin and Violaxanthin represent t
 "    - When we shorten the dark phase to less than 10-15 seconds, the relaxation after the dark saturation pulse isn't completed yet. Therefore, when we turn on the actinic light, we initially overestimate the fluorescence and the perceived stress level.\n"
 "7. :blue[It is very important, that the saturating pulses are actually saturating to get meaningful results. What happens if they are not?]\n"
 "    - The fluorescence simulation minimally changes when increasing the saturation pulse to maximum intensity. The higher light intensity seems to minorly increase the height of all peaks. Since we normalize fluorescence to Fₘ, it also appears as if Fₜ is lowered, even though it should remain unchanged.\n"
-"    - Below ca. 2000 μmol m⁻² s⁻¹ the peak height difference is clearly noticeable. From there, the Fₜ level seems generally increased as the fluorescence is normalized to the undersaturated Fₘ. Both factors lead to a strong overestimation of NPQ and an underestimated Φ(PSII)."
-
-
+"    - Below ca. 2000 μmol&nbsp;m⁻²&nbsp;s⁻¹ the peak height difference is clearly noticeable. From there, the Fₜ level seems generally increased as the fluorescence is normalized to the undersaturated Fₘ. Both factors lead to a strong overestimation of NPQ and an underestimated Φ(PSII)."
 
 #: pages/plant_memory.py:380
 msgid "MEM_HEADLINE_BRAIN"
@@ -1295,14 +1274,6 @@ msgstr "Relaxation"
 msgid "MEM_ANNO_MEMORY"
 msgstr "Memory"
 
-#: pages/plant_memory.py:393
-msgid "MEM_TIP1"
-msgstr "***Tip 1:*** *If you want to compare two experiments, you can download the graphs by clicking on the three dots.*"
-
-#: pages/plant_memory.py:395
-msgid "MEM_TIP2"
-msgstr "***Tip 2:*** *By clicking on the stop in the upper right corner, you can cancel the calculation process.*"
-
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_EXPANDER"
 msgstr "Having trouble connecting the simulation results to biology? Try our **guiding questions**"
@@ -1318,34 +1289,34 @@ msgstr "**See our interpretation**"
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_QUESTIONS"
 msgstr "1. :blue[The actinic light intensity (AL) and duration during the training phase determine the extend of the light memory. How does does the plant react, when you change it?]\n"
-"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?\n"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
-"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
-"    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?\n"
-"    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?\n"
-"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
+        "    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?\n"
+        "    - Now set the light intensity to 500 μmol&nbsp;m⁻²&nbsp;s⁻¹? Do you see a change in the memory phase? \n"
+        "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
+        "2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
+        "    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
+        "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
+        "3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
+        "    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
+        "    - With AL=500 μmol&nbsp;m⁻²&nbsp;s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
+        "    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?\n"
+        "    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?\n"
+        "4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 
 #: pages/first_analysis.py:262
 msgid "MEM_GUIDING_ANSWERS"
 msgstr "1. :blue[The actinic light intensity (AL) and duration during the training phase determine the extend of the light memory. How does does the plant react, when you change it?]\n"
-"    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?\n"
-"    - Now set the light intensity to 500 μmol m⁻² s⁻¹? Do you see a change in the memory phase? \n"
-"    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
-"2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
-"    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
-"    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
-"3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
-"    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
-"    -  With AL=500 μmol m⁻² s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
-"    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?\n"
-"    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?\n"
-"4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
+        "    - Change the duration of the training phase first to 1 minute and then to 5 minutes. Does this affect the later behavior?\n"
+        "    - Now set the light intensity to 500 μmol&nbsp;m⁻²&nbsp;s⁻¹? Do you see a change in the memory phase? \n"
+        "    - Again, reduce the time of the training phase in increments to 1 minute. How do you explain what you see?\n"
+        "2. :blue[The relaxation phase allows the plant to 'forget' its previous stress. Imagine how changing its duration would affect the later memory phase.]\n"
+        "    - Set the duration of the relaxation phase to zero minutes. What does this mean for the plant?\n"
+        "    - Now gradually increase the duration of the relaxation phase. What changes? How do you explain it?\n"
+        "3. :blue[The memory effect is based on the activation and deactivation of NPQ. Therefore, you can modulate it by changing the corresponding rates.]\n"
+        "    - Keep in mind that Zeaxanthin is the active compound. Hypothesize how each of the 'Conversion rate' sliders affects the plant memory.\n"
+        "    -  With AL=500 μmol&nbsp;m⁻²&nbsp;s⁻¹, set the conversion rate to Violaxanthin (CtV) to 1% of the default value. Compare the result with a simulation of CtV set to 10000%. Which outputs have changed? Does that meet your expectations?\n"
+        "    - Try the same experiment different AL values. When is the effect of changing CtV the strongest?\n"
+        "    - Now also change CtZ under different light conditions. Can you imagine environmental conditions where a plant with altered NPQ kinetics could be advantageous?\n"
+        "4. :blue[With the knowledge you have gathered until now, simulate an experiment that best shows the plant memory effect. Keep in mind that in the lab you might prefer time efficient,shorter experiments.]"
 
 
 
@@ -1358,12 +1329,12 @@ msgstr "# Take Home Messages"
 #: pages/conclusion.py:15
 msgid "CON_CONCLUSION_TEXT_ONE"
 msgstr "We hope you have received a thorough introduction to the captivating realm of plant biology through this website. By examining diagrams made with computer models, you have gained knowledge about the impact of light intensity on photosynthesis and delved into the subject of plant short-term memory. Consequently, you should have arrived at the following conclusions:\n"
-"- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
-"- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point."
+        "- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
+        "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point."
 
 # Grammarly checked     
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
-"- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
-"\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
+        "- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
+        "\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
