@@ -24,13 +24,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     markdown_click("PHO_HEADLINE_CLIMATE", text)
     markdown_click("PHO_INTRODUCTION_CLIMATE_CHANGE", text)
 
-    if version == "4Bio":
-        markdown_click("PHO_POINT_1", text)
-        markdown_click("PHO_POINT_2", text)
-        markdown_click("PHO_POINT_3", text)
-        markdown_click("PHO_END_OF_INTRODUCTION", text)
+    if version == "4Math":
 
-    else:
         col1, col2 = st.columns(2)
         with col1:
             if language == "German":
@@ -42,6 +37,13 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 centered_image("pictures/pflanzen_stress.jpeg")
             if language == "English":
                 centered_image("pictures/plants_stress.jpeg")
+
+    else:
+        markdown_click("PHO_POINT_1", text)
+        markdown_click("PHO_POINT_2", text)
+        markdown_click("PHO_POINT_3", text)
+        markdown_click("PHO_END_OF_INTRODUCTION", text)
+
 
     markdown_click("PHO_HEADLINE_PHOTOSYNTHESIS", text)
     markdown_click("PHO_PHOTOSYNTHESIS_EXPLANATION_1", text)

@@ -187,7 +187,7 @@ msgstr "Über diese Webseite"
 # Grammarly checked
 #: Start.py:13
 msgid "STR_EXPLANATION_ABOUT"
-msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs findest du in der Datei 'README.md' auf GitHub."
+msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Programms findest du in der Datei 'README.md' auf GitHub."
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
@@ -197,7 +197,7 @@ msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung
 # Grammarly checked
 #: Start.py:10
 msgid "STR_INTRO"
-msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen, Deutschland. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
+msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler:innen des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
 
 # Grammarly checked
 #: Start.py:18
@@ -215,7 +215,7 @@ msgid "STR_SPECIFIC_USE"
 msgstr "In dieser *4Math*-Version fassen wir den biologischen Hintergrund zusammen, den du kennen musst, um die Modelle auf dieser Webseite zu verstehen. Wir werden dir mehrere Beispiele von Modellen geben, die entwickelt wurden, um verschiedene Aspekte der Photosynthese zu erfassen, um zu zeigen, wie nützlich die Modellierung für die Biologie sein kann. Wir werden auch ein Modell im Detail erklären und zeigen, wie es mathematisch definiert und in Python implementiert ist, damit du es selbst ausprobieren kannst."
 
 msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
-msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu wissen, wie die Fotosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
+msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu begreifen, wie die Fotosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr "### Lernziele\n"
@@ -265,7 +265,7 @@ msgstr "Im Folgenden geben wir dir einen kurzen Überblick darüber, was dich au
 # Grammarly checked
 #: Start.py:34
 msgid "STR_PHOTOSYNTHESIS"
-msgstr "Auf der Seite **Photosynthese** erfährst du alles, was du über die Photosynthese wissen musst, um die folgenden Seiten vollständig nutzen zu können. In dieser 4Math-Version gibt es ausführlichere Informationen über den Klimawandel sowie eine molekulare Beschreibung des Photoprotektions-Mechanismus."
+msgstr "Auf der Seite **Photosynthese** erfährst du alles, was du über die Photosynthese wissen musst, um die folgenden Seiten vollständig nutzen zu können. In dieser 4Math-Version gibt es ausführlichere Informationen über den Klimawandel sowie eine molekulare Beschreibung des Lichtschutzmechanismus."
 
 # Grammarly checked
 #: Start.py:35
@@ -275,7 +275,7 @@ msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "Wie die Überschrift schon sagt, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Auf der Seite **Computational Models** erfährst du etwas über mathematische Modelle im Allgemeinen und etwas über Photosynthesemodelle."
+msgstr "Wie die Überschrift bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Mehr über mathematische Modelle im Allgemeinen und über Fotosynthesemodelle erfährst du auf der Seite <b>Computermodelle</b>."
 
 # Grammarly checked
 #: Start.py:37
@@ -311,9 +311,17 @@ msgstr "## Klimawandel"
 # Grammarly checked
 #: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
-msgstr "Das *Klima* selbst ist definiert als die durchschnittlichen statistischen Messungen des Wetters über einen langen \
-        Zeitraum an einem bestimmten Ort. *Klimawandel* ist definiert als eine weltweite Veränderung des Klimas. Drei \
-        Hauptkategorien können eine Veränderung des Klimas bewirken:"
+msgstr "Da Pflanzen **nicht** weglaufen können, müssen sie sich an die veränderten Umweltbedingungen anpassen. Pflanzen \
+        sind die Grundlage des Lebens auf der Erde (Abb. links), und die Anpassung der Pflanzen ist entscheidend für eine \
+        funktionierende Welt. Veränderte Bedingungen, wie z. B. veränderte Temperaturen (Hitze und Kälte), Überschwemmungen \
+        und Trockenheit, können bei Pflanzen zu Stress führen. Diese Faktoren können verschiedene kurz- und langfristige \
+        Auswirkungen auf Pflanzen haben, die in Abb. rechts zusammengefasst sind. Dennoch empfinden Pflanzen bei plötzlichen \
+        Veränderungen Stress, haben aber einen *hochflexiblen Stoffwechsel* zur Anpassung. *Eine der ersten Reaktionen im \
+        pflanzlichen Stoffwechsel ist die Photosynthese*, die **Energie** für die Aufrechterhaltung des Pflanzenlebens \
+        liefert. Die Photosynthese selbst wird direkt und indirekt von veränderten Umweltbedingungen beeinflusst. Daher \
+        ist die analyze der Photosynthese und der CO₂-Fixierung von Pflanzen ein wichtiges Maß für die allgemeine \
+        **Pflanzenfitness**, **Produktivität** und das **Überleben**. Folglich ist die Grundlagenforschung zur Photosynthese \
+        und ihrer Effizienz unerlässlich, um unsere sich verändernde Welt zu beurteilen."
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16

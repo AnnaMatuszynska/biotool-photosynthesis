@@ -313,7 +313,7 @@ msgstr "## Changement climatique"
 # Grammarly checked
 #: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
-msgstr "Comme les plantes ne peuvent pas s'enfuir, elles doivent s'adapter aux nouvelles conditions environnementales. Les plantes sont la base de la vie sur Terre (Fig. gauche), et leur adaptation est cruciale pour le bon fonctionnement du monde. Des conditions variées, par exemple des changements de température (chaleur et froid), des inondations et des sécheresses, peuvent provoquer des événements stressants chez les plantes. Comme le résume la figure de droite, ces facteurs peuvent avoir divers effets à court et à long terme sur les plantes. Néanmoins, les plantes subissent un stress en cas de changements soudains, mais elles disposent d'un *métabolisme très flexible* pour s'adapter. *L'une des premières réactions du métabolisme des plantes est la photosynthèse*, qui **fournit l'énergie** nécessaire à la vie de la plante. La photosynthèse elle-même est directement et indirectement affectée par les changements des conditions environnementales. Par conséquent, l'analyse de la photosynthèse et de la fixation du CO₂ par les plantes est une mesure essentielle de la **fonctionnalité**, de la **productivité** et de la **survie** des plantes. Par conséquence, la recherche fondamentale sur la photosynthèse et son efficacité est vitale pour évaluer notre monde en mutation."
+msgstr "Le *climat* est défini comme la moyenne des mesures statistiques du temps sur une longue période dans un lieu spécifique. Le *changement climatique* est défini comme une modification du climat à l'échelle mondiale. Trois catégories principales peuvent induire un changement climatique&nbsp;: "
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16
