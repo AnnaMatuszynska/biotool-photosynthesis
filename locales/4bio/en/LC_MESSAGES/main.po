@@ -313,7 +313,7 @@ msgstr "## Climate Change"
 # Grammarly checked
 #: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
-msgstr "As plants **cannot run** away, they must adapt to their changed environmental conditions. Plants are the basis of life on Earth (Fig. left), and plant adaptation is crucial for a functioning world. Varied conditions, e.g., changed temperatures (heat and cold), flooding events, and drought, can lead to stressful events in plants. As summarized in the Figure on the right, those factors can have various short- and long-term effects on plants. Nevertheless, plants experience stress upon sudden changes but have a *highly flexible metabolism* for adaptation. *One of the first reactions in plant metabolism is photosynthesis*, which **delivers energy** to sustain plant life. Photosynthesis itself is directly and indirectly affected by changed environmental conditions. Therefore, the analysis of photosynthesis and the fixation of CO₂ by plants is an essential measure of overall **plant fitness**, **productivity**, and **survival**. Consequently, basic research on photosynthesis and its efficiency is vital to assess our changing world."
+msgstr "*Climate* is defined as the average statistical measurements of the weather over a long period in a specific place. *Climate change* is defined as a worldwide change in the climate. Three main categories can induce a change in the climate:"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16

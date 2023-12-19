@@ -187,7 +187,7 @@ msgstr "Über diese Webseite"
 # Grammarly checked
 #: Start.py:13
 msgid "STR_EXPLANATION_ABOUT"
-msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Notizbuchs findest du in der Datei 'README.md' auf GitHub."
+msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/>. Außerdem kann der gesamte Quellcode von GitHub unter <https://github.com/AnnaMatuszynska/biotool-photosynthesis> heruntergeladen und (offline) lokal ausgeführt werden. Informationen zum Herunterladen und Ausführen des Programms findest du in der Datei 'README.md' auf GitHub."
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
@@ -197,7 +197,7 @@ msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung
 # Grammarly checked
 #: Start.py:10
 msgid "STR_INTRO"
-msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen, Deutschland. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
+msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen, Deutschland. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler:innen des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
 
 # Grammarly checked
 #: Start.py:18
@@ -215,7 +215,7 @@ msgid "STR_SPECIFIC_USE"
 msgstr "In dieser *4Bio*-Version führen wir dich in das Konzept der Modellierung ein und erläutern, wie es in der Biologie eingesetzt werden kann. Zudem stellen wir eine experimentelle Methode zur Messung der Photosynthesedynamik und zur Berechnung der Photosyntheseparameter im Detail vor. Diese Methoden werden dann auf ein einfaches mathematisches Modell der pflanzlichen Lichtanpassung angewendet, mit der Möglichkeit, *in silico* Mutanten zu erzeugen und zu untersuchen. In dieser Version können mehr Parameter des mathematischen Modells geändert werden, was komplexere *in silico* Mutanten ermöglicht, und es werden mehr Ergebnisse erzeugt."
 
 msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
-msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu wissen, wie die Fotosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
+msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu begreifen, wie die Fotosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr "### Lernziele\n"
@@ -223,7 +223,7 @@ msgstr "### Lernziele\n"
 
 
 msgid "STR_LEARNING_OBJECTIVES"
-msgstr "- Du kannst erklären, was Modelle sind, wie sie in der Biologie nützlich sind, und einige Beispiele nennen\n"
+msgstr "- Du kannst erklären, was Modelle sind, wie sie in der Biologie nützlich sind und einige Beispiele nennen\n"
             "- Du kannst zusammenfassen, wie nicht-photochemisches Quenching funktioniert und wie es im Lichtschutz eingesetzt wird\n"
             "- Du kannst zusammenfassen, wie die Fluoreszenz zur Messung der Photosynthese verwendet werden kann\n"
             "- Du kannst Photosynthese-Simulationen erzeugen und deren biologische Bedeutung erklären."
@@ -259,12 +259,12 @@ msgstr "## Zusammenfassung der Seiten"
 # Grammarly checked
 #: Start.py:33
 msgid "STR_INTRODUCTION_PAGES"
-msgstr "Im Folgenden geben wir dir einen kurzen Überblick darüber, was dich auf den folgenden Seiten erwartet. Unter <a href='#' id='4Math'>4Math</a> findest du die Übersicht, welche zusätzlichen Informationen dich in den 4Math-Versionen erhält."
+msgstr "Im Folgenden geben wir dir einen kurzen Überblick darüber, was dich auf den folgenden Seiten erwartet. Unter <a href='#' id='4Math'>4Math</a> findest du einen Überblick über die zusätzlichen Informationen, die du in den 4Math-Versionen erhalten wirst."
 
 # Grammarly checked
 #: Start.py:34
 msgid "STR_PHOTOSYNTHESIS"
-msgstr "Auf der Seite **Fotosynthese** erfährst du alles, was du über die Fotosynthese wissen müssen, um die folgenden Seiten vollständig nutzen zu können."
+msgstr "Auf der Seite **Fotosynthese** erfährst du alles, was du über die Fotosynthese wissen musst, um die folgenden Seiten vollständig nutzen zu können."
 
 # Grammarly checked
 #: Start.py:35
@@ -274,12 +274,12 @@ msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "Wie die Headline bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Auf der Seite <b>Computational Models</b> erfährst du etwas über mathematische Modelle im Allgemeinen sowie etwas über Photosynthesemodelle. In der <a href='#' id='4Math'>4Math</a>-Version kannst du auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
+msgstr "Wie die Überschrift bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Mehr über mathematische Modelle im Allgemeinen und über Fotosynthesemodelle erfährst du auf der Seite <b>Computermodelle</b>. In der <a href='#' id='4Math'>4Math</a>-Version kannst du auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
 
 # Grammarly checked
 #: Start.py:37
 msgid "STR_EXPERIMENT"
-msgstr "Auf der Seite <b>Experiments <i>in silico</i></b> lernst du das von uns verwendete und von Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>) mitentwickelte Photosynthesemodell kennen. Danach kannst du es direkt selbst verwenden, um deine ersten Messungen durchzuführen. In der <a href='#' id='4Math'>4Math</a>-Version besteht die Möglichkeit, sich mit den mathematischen Gleichungen des verwendeten Modells zu beschäftigen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
+msgstr "Auf der Seite <b>Experiments <i>in silico</i></b> lernst du das von uns verwendete und von Anna Matuszyńska (<a href='https://doi.org/10.1016/j.bbabio.2016.09.003' target='_blank'>2016</a>) mitentwickelte Photosynthesemodell kennen. Danach kannst du es direkt selbst verwenden, um deine ersten Messungen durchzuführen. In der <a href='#' id='4Math'>4Math</a>-Version ist es möglich, die mathematischen Gleichungen des verwendeten Modells kennenzulernen. Darüber hinaus können weitere Parameter für die Experimente eingestellt werden."
 
 # Grammarly checked
 #: Start.py:38
@@ -313,17 +313,9 @@ msgstr "## Klimawandel"
 # Grammarly checked
 #: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
-msgstr "Da Pflanzen **nicht** weglaufen können, müssen sie sich an die veränderten Umweltbedingungen anpassen. Pflanzen \
-        sind die Grundlage des Lebens auf der Erde (Abb. links), und die Anpassung der Pflanzen ist entscheidend für eine \
-        funktionierende Welt. Veränderte Bedingungen, wie z. B. veränderte Temperaturen (Hitze und Kälte), Überschwemmungen \
-        und Trockenheit, können bei Pflanzen zu Stress führen. Diese Faktoren können verschiedene kurz- und langfristige \
-        Auswirkungen auf Pflanzen haben, die in Abb. rechts zusammengefasst sind. Dennoch empfinden Pflanzen bei plötzlichen \
-        Veränderungen Stress, haben aber einen *hochflexiblen Stoffwechsel* zur Anpassung. *Eine der ersten Reaktionen im \
-        pflanzlichen Stoffwechsel ist die Photosynthese*, die **Energie** für die Aufrechterhaltung des Pflanzenlebens \
-        liefert. Die Photosynthese selbst wird direkt und indirekt von veränderten Umweltbedingungen beeinflusst. Daher \
-        ist die analyze der Photosynthese und der CO₂-Fixierung von Pflanzen ein wichtiges Maß für die allgemeine \
-        **Pflanzenfitness**, **Produktivität** und das **Überleben**. Folglich ist die Grundlagenforschung zur Photosynthese \
-        und ihrer Effizienz unerlässlich, um unsere sich verändernde Welt zu beurteilen."
+msgstr "Das *Klima* selbst ist definiert als die durchschnittlichen statistischen Messungen des Wetters über einen langen \
+        Zeitraum an einem bestimmten Ort. *Klimawandel* ist definiert als eine weltweite Veränderung des Klimas. Drei \
+        Hauptkategorien können eine Veränderung des Klimas bewirken:"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16
