@@ -910,7 +910,7 @@ msgid "MDL_SIR_IMPLEMENTATION_MODELBASE_6"
 msgstr "Das wäre bei der manuellen Vorgehensweise sehr viel mühsamer gewesen."
 
 msgid "MDL_LINK_PLANTS_AND_PYTHON"
-msgstr "*Wenn Sie mit Python noch nicht vertraut sind, werfen Sie einen Blick auf [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), wo Sie Python lernen können und wie es in der Wissenschaft verwendet wird."
+msgstr "*Wenn Sie mit Python noch nicht vertraut sind, werfen Sie einen Blick auf [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), wo Sie Python lernen können und wie es in der Wissenschaft verwendet wird.*"
 
 # Grammarly checked
 #: pages/model_explain.py:258
@@ -1048,7 +1048,7 @@ msgstr "Das mathematische Modell der fotosynthetischen Elektronentransportkette 
 
 #: pages/first_analysis.py:271
 msgid "FAL_HEADLINE_ANALYSE"
-msgstr "## Die Daten-analyze"
+msgstr "## Die Datenanalyse"
 
 # Grammarly checked
 #: pages/first_analysis.py:272
@@ -1237,16 +1237,16 @@ msgstr "**Siehe unsere Interpretation**"
 msgid "FAL_GUIDING_QUESTIONS"
 msgstr "Mit den Standardwerten zeigt dir die folgende Simulation ein typisches PAM-Experiment. Wenn du die Schieberegler ausprobierst, könntest du Folgendes versuchen:\n"
         "1. :blue[Am frühen Morgen oder an einem bewölkten Tag findet man eine Lichtintensität von 100 μmol&nbsp;m⁻²&nbsp;s⁻¹, sie ist also recht niedrig. An einem milden Tag könnte die Sonne mit 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ an Photonen scheinen - versuche das mal:]\n"
-        " - Wie unterscheidet sich die Reaktion beim Einschalten des Lichts von der Reaktion bei 100 μmol&nbsp;m⁻²&nbsp;s⁻¹? Was bedeutet das für die Pflanze?\n"
+        "   - Wie unterscheidet sich die Reaktion beim Einschalten des Lichts von der Reaktion bei 100 μmol&nbsp;m⁻²&nbsp;s⁻¹? Was bedeutet das für die Pflanze?\n"
         "Wie unterscheiden sich die Sättigungsimpulssignale zwischen der niedrigeren und der höheren Intensität?\n"
-        "2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ aktinisches Licht erreicht werden. Probiere dies in einer Simulation aus und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.\n"
-        " - Vergleiche die Fluoreszenz ganz am Ende der Simulation zwischen Standard- und Starklicht - gibt es einen Unterschied?\n"
-        "3. :blue[Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungspulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.\n"
+        "2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol&nbsp;m⁻²&nbsp;s⁻¹ aktinisches Licht erreicht werden. Probiere dies in einer Simulation aus und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.]\n"
+        "   - Vergleiche die Fluoreszenz ganz am Ende der Simulation zwischen Standard- und Starklicht - gibt es einen Unterschied?\n"
+        "3. :blue[Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungspulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.]\n"
         " Verringere die Zeit zwischen den Sättigungsimpulsen. Was kannst du sehen?\n"
-        " - Scheint es, als ob die Sättigungsimpulse die Photosynthese der Pflanze beeinflussen?\n"
-        "4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuchen Sie, die Messzeit auf 1 Minute zu senken und dann auf 10 Minuten zu erhöhen.\n"
-        " - Wäre es in unserem Fall sinnvoll, die Messzeit zu verkürzen? Warum oder warum nicht?\n"
-        " - Hängt dies von den anderen Einstellungen ab?"
+        "   - Scheint es, als ob die Sättigungsimpulse die Photosynthese der Pflanze beeinflussen?\n"
+        "4. :blue[Je länger ein Experiment dauert, desto mehr Arbeit bedeutet es für den Experimentator. Versuchen Sie, die Messzeit auf 1 Minute zu senken und dann auf 10 Minuten zu erhöhen.]\n"
+        "   - Wäre es in unserem Fall sinnvoll, die Messzeit zu verkürzen? Warum oder warum nicht?\n"
+        "   - Hängt dies von den anderen Einstellungen ab?"
 
 #: pages/first_analysis.py:262
 msgid "FAL_GUIDING_QUESTIONS_EXTEND"
@@ -1258,10 +1258,10 @@ msgstr "Mit den Standardwerten wird in der folgenden Simulation ein typisches PA
         "1. :blue[Am frühen Morgen oder an einem bewölkten Tag findet man eine Lichtintensität von 100 μmol&nbsp;m⁻²&nbsp;s⁻¹, sie ist also recht niedrig. An einem milden Tag könnte die Sonne mit 500 μmol&nbsp;m⁻²&nbsp;s⁻¹ Photonen scheinen - versuche es stattdessen:]\n"
         "    - Das Fluoreszenzsignal nach dem Einschalten des Lichts, kurz nach dem Peak, ist sehr viel höher. Das liegt daran, dass das Chlorophyll viel mehr Energie erhält, wodurch die Pflanze unter Lichtstress gerät.\n"
         "    - Die späteren Sättigungsimpulse, nach ca. zwei Minuten, sind kürzer als die bei schwachem Licht. Daher hat die Pflanze die Wärmeabschreckung, auch NPQ genannt, als Lichtschutzmechanismus erhöht.\n"
-        "2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol &nbsp;m⁻²&nbsp;s⁻¹ aktinisches Licht erreicht werden. Versuche dies in einer Simulation und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.\n"
+        "2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol &nbsp;m⁻²&nbsp;s⁻¹ aktinisches Licht erreicht werden. Versuche dies in einer Simulation und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.]\n"
         "    - Bei dieser höheren Lichtintensität können wir auch die erhöhte Fluoreszenz nach dem Einschalten und die weiter abnehmende Fluoreszenz während der Pulse sehen.\n"
         "    - Die Fluoreszenz am Ende der sehr hohen Lichtphase ist im Vergleich zur niedrigen Lichtsimulation erhöht. Daher ist die Pflanze selbst nach der vollständigen Aktivierung ihres NPQ-Mechanismus noch stärker gestresst. Wahrscheinlich ist das Löschpotenzial des NPQ-Prozesses der Pflanze erschöpft, und eine höhere Lichtintensität könnte die Pflanze schädigen.\n"
-        "3. Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungsimpulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.\n"
+        "3. Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungsimpulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.]\n"
         "    - Mit häufigeren Pulsen können wir die abfallende Spitzenfluoreszenz deutlicher sehen. Daher sehen wir die NPQ-Aktivierung in einer höheren Auflösung und können versuchen, eine Funktion zur Schätzung der Aktivierungsrate zu erstellen \n"
         "    - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
         "    - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol &nbsp;m⁻²&nbsp;s⁻¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
@@ -1341,12 +1341,12 @@ msgstr "Mit den Standardwerten zeigt die nachstehende Simulation ein typisches E
 msgid "MEM_GUIDING_ANSWERS"
 msgstr "Mit den Standardwerten zeigt die nachstehende Simulation ein typisches Experiment, das das Lichtgedächtnis der Pflanze darstellt. Um es weiter zu untersuchen, könnten Sie Folgendes versuchen:\n"
 "1. :blue[Die Lichtintensität und -dauer während der Trainingsphase bestimmen den Umfang des Lichtgedächtnisses. Wie reagiert die Pflanze, wenn man sie verändert?\n"
-" - Ändere die Dauer der Trainingsphase zunächst auf 1 Minute und dann auf 5 Minuten. Wirkt sich das auf das spätere Verhalten aus?\n"
-" - Setzen Sie nun die Lichtintensität auf 500 μmol&nbsp;m⁻²&nbsp;s⁻¹? Siehst du eine Veränderung in der Gedächtnisphase? \n"
-" - Verringere die Zeit der Trainingsphase wieder schrittweise auf 1 Minute. Wie erklärst du dir, was du siehst?\n"
+"   - Ändere die Dauer der Trainingsphase zunächst auf 1 Minute und dann auf 5 Minuten. Wirkt sich das auf das spätere Verhalten aus?\n"
+"   - Setzen Sie nun die Lichtintensität auf 500 μmol&nbsp;m⁻²&nbsp;s⁻¹? Siehst du eine Veränderung in der Gedächtnisphase? \n"
+"   - Verringere die Zeit der Trainingsphase wieder schrittweise auf 1 Minute. Wie erklärst du dir, was du siehst?\n"
 "2. :blue[Die Entspannungsphase ermöglicht es der Pflanze, den vorherigen Stress zu 'vergessen'. Stelle dir vor, wie sich eine Änderung ihrer Dauer auf die spätere Gedächtnisphase auswirken würde.\n"
-" - Setze die Dauer der Entspannungsphase auf null Minuten. Was bedeutet das für die Pflanze?\n"
-" - Erhöhe nun schrittweise die Dauer der Entspannungsphase. Was ändert sich? Wie erklärst du dir das?\n"
+"   - Setze die Dauer der Entspannungsphase auf null Minuten. Was bedeutet das für die Pflanze?\n"
+"   - Erhöhe nun schrittweise die Dauer der Entspannungsphase. Was ändert sich? Wie erklärst du dir das?\n"
 "3. :blue[Simuliere mit deinem bisherigen Wissen ein Experiment, das den Gedächtniseffekt der Pflanze am besten zeigt. Denke daran, dass du im Labor möglicherweise zeitsparende, kürzere Experimente vorziehst]."
 
 
