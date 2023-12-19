@@ -8,7 +8,8 @@ from utils import (
     markdown_click,
     resetting_click_detector_setup,
     track_page_visit,
-    include_ytvideo
+    include_ytvideo,
+    include_image
 )
 
 
@@ -51,9 +52,11 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     with st.expander(text("MTH_MEASURING_LIGHT_FLUORESCENCE"), expanded=True):
         st.markdown(text("MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"))
-        st.image(
-            Image.open("pictures/PAMbasics.png"),
+        include_image(
+            "pictures/PAMbasics.png",
+            img_width=1,
             caption=text("MTH_CAPTION_ABB2"),
+            center_caption=True
         )
 
     # if version == "4Bio":
@@ -65,14 +68,18 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.markdown(text("MTH_EXPLANATION_ILLUSTRATION"), unsafe_allow_html=True)
 
     if language == "German":
-        st.image(
-            Image.open("pictures/Beispielabbildung_de.png"),
+        include_image(
+            "pictures/Beispielabbildung_de.png",
+            img_width=1,
             caption=text("MTH_CAPTION_ABB2"),
+            center_caption=True
         )
     else:
-        st.image(
-            Image.open("pictures/Beispielabbildung_en.png"),
+        include_image(
+            "pictures/Beispielabbildung_en.png",
+            img_width=1,
             caption=text("MTH_CAPTION_ABB2"),
+            center_caption=True
         )
 
 

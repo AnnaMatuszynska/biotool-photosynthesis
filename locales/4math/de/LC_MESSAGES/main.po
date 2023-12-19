@@ -348,7 +348,7 @@ msgstr "Pflanzen sind autotroph und können daher komplexe organische Verbindung
 # Grammarly checked
 #: pages/photosynthesis.py:36
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr "Grundsätzlich ist die Photosynthese ein mehrstufiger Prozess, bei dem die von Photonen übertragene und von Pigmenten absorbierte Energie genutzt wird, um CO₂ in Kohlenhydrate zu binden, die dann in weitere organische Verbindungen umgewandelt werden. Die Netto-Stöchiometrie der Photosynthese ist: [rot] 6 CO₂ + 6 H₂O + *Lichtenergie* -> C₆H₁₂O₆ + 6 O₂, wodurch molekularer Sauerstoff entsteht."
+msgstr "Grundsätzlich ist die Photosynthese ein mehrstufiger Prozess, bei dem die von Photonen übertragene und von Pigmenten absorbierte Energie genutzt wird, um CO₂ in Kohlenhydrate zu binden, die dann in weitere organische Verbindungen umgewandelt werden. Die Netto-Stöchiometrie der Photosynthese ist <span style='color:red'>6&nbsp;CO₂&nbsp;+&nbsp;6&nbsp;H₂O&nbsp;+&nbsp;*Lichtenergie*&nbsp;-&nbsp;>&nbsp;C₆H₁₂O₆&nbsp;+&nbsp;6&nbsp;O₂</span>, wodurch molekularer Sauerstoff entsteht."
 
 #: pages/photosynthesis.py:39
 #: pages/photosynthesis.py:41
@@ -541,7 +541,7 @@ msgstr "In dieser einen Abbildung werden die Grundprinzipien des Fluoreszenz- un
 #: pages/method.py:58
 #: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
-msgstr "Oben: Schematische Darstellung der Hauptprinzipien der Chlorophyll-a-Fluoreszenz und des PAM-Experiments.\n\n Unten: Beispielgrafik einer PAM-Messung"
+msgstr "Oben: Schematische Darstellung der Hauptprinzipien der Chlorophyll-a-Fluoreszenz und des PAM-Experiments. Unten: Beispielgrafik einer PAM-Messung"
 
 # Grammarly checked
 #: pages/method.py:37

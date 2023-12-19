@@ -530,7 +530,7 @@ msgstr "PAM employs a series of high-frequency light pulses with weak constant i
 #: pages/method.py:58
 #: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
-msgstr "Top: Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n\n Bottom: Example Graph of a PAM measurement"
+msgstr "Top: Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment. Bottom: Example Graph of a PAM measurement"
 
 # Grammarly checked
 #: pages/method.py:37

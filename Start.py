@@ -89,3 +89,7 @@ if __name__ == "__main__":
     make_literature(text, version, language)
     make_prev_next_button(None, "photosynthesis")
     fill_sidebar(placeholder_sidebar)
+
+
+# «&nbsp;
+# &nbsp;»

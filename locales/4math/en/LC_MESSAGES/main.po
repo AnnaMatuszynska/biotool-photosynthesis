@@ -346,7 +346,7 @@ msgstr "Plants are autotrophic and can thus produce complex organic compounds li
 # Grammarly checked
 #: pages/photosynthesis.py:36
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_2"
-msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolized into further organic compounds. The net stoichiometry of photosynthesis is :[red] 6 CO₂ + 6 H₂O + *light energy* -> C₆H₁₂O₆ + 6 O₂, thus producing molecular oxygen."
+msgstr "Fundamentally, photosynthesis is a multi-step process that uses the energy carried by photons and absorbed by pigments to fix CO₂ into carbohydrates, which are then metabolized into further organic compounds. The net stoichiometry of photosynthesis is <span style='color:red'>6&nbsp;CO₂&nbsp;+&nbsp;6&nbsp;H₂O&nbsp;+&nbsp;*light&nbsp;energy*&nbsp;-&nbsp;>&nbsp;C₆H₁₂O₆&nbsp;+&nbsp;6&nbsp;O₂</span>, thus producing molecular oxygen."
 
 #: pages/photosynthesis.py:39
 #: pages/photosynthesis.py:41
@@ -527,7 +527,7 @@ msgstr "In this one figure, the basic principles behind the fluorescence and PAM
 #: pages/method.py:58
 #: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
-msgstr "Top: Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment.\n\n Bottom: Example Graph of a PAM measurement"
+msgstr "Top: Schematic representation of the main principles behind chlorophyll a fluorescence and PAM experiment. Bottom: Example Graph of a PAM measurement"
 
 # Grammarly checked
 #: pages/method.py:37

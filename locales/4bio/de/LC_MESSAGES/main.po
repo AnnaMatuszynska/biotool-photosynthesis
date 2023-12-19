@@ -550,7 +550,7 @@ msgstr "PAM verwendet eine Reihe hochfrequenter Lichtpulse mit schwacher konstan
 #: pages/method.py:58
 #: pages/method.py:63
 msgid "MTH_CAPTION_ABB2"
-msgstr "Oben: Schematische Darstellung der Hauptprinzipien der Chlorophyll-a-Fluoreszenz und des PAM-Experiments.\n\n Unten: Beispielgrafik einer PAM-Messung"
+msgstr "Oben: Schematische Darstellung der Hauptprinzipien der Chlorophyll-a-Fluoreszenz und des PAM-Experiments. Unten: Beispielgrafik einer PAM-Messung"
 
 # Grammarly checked
 #: pages/method.py:37

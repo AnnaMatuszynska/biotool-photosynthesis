@@ -45,7 +45,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     markdown_click("PHO_HEADLINE_PHOTOSYNTHESIS", text)
     markdown_click("PHO_PHOTOSYNTHESIS_EXPLANATION_1", text)
-    markdown_click("PHO_PHOTOSYNTHESIS_EXPLANATION_2", text)
+    markdown_click("PHO_PHOTOSYNTHESIS_EXPLANATION_2", text, unsafe_allow_html=True)
 
     if language == "German":
         include_image("pictures/Fotosynthese.jpg", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_PICTURE"), True)
