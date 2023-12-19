@@ -122,5 +122,5 @@ if __name__ == "__main__":
     track_page_visit("method")
     make_page(text, language, version)
     make_literature(text, language, version)
-    make_prev_next_button("photosynthesis", "computational models")
+    make_prev_next_button(text("SDE_PAGENAMES_PHOTOSYNTHESIS"), text("SDE_PAGENAMES_COMPUTATIONALMODELS"))
     fill_sidebar(placeholder_sidebar)

@@ -554,6 +554,6 @@ if __name__ == "__main__":
     track_page_visit("first_analysis")
     see_interpr = make_page(text)
     make_literature(text, version, language)
-    make_prev_next_button("computational models", "plant light memory")
+    make_prev_next_button(text("SDE_PAGENAMES_COMPUTATIONALMODELS"), text("SDE_PAGENAMES_PLANTLIGHTMEMORY"))
     style_guinding_questions(see_interpr)
     fill_sidebar(placeholder_sidebar)

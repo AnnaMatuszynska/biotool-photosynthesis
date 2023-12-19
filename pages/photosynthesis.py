@@ -119,5 +119,5 @@ if __name__ == "__main__":
     track_page_visit("photosynthesis")
     make_page(text, language, version)
     make_literature(text, language, version)
-    make_prev_next_button("start", "measuring method")
+    make_prev_next_button(text("SDE_PAGENAMES_START"), text("SDE_PAGENAMES_MEASURINGMETHOD"))
     fill_sidebar(placeholder_sidebar)

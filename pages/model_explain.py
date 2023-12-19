@@ -581,6 +581,6 @@ if __name__ == "__main__":
     track_page_visit("model_explain")
     make_page(text, language, version)
     make_literature(text, language, version)
-    make_prev_next_button("measuring method", "experiments in silico")
+    make_prev_next_button(text("SDE_PAGENAMES_MEASURINGMETHOD"), text("SDE_PAGENAMES_EXPERIMENTSINSILICO"))
     style_page()
     fill_sidebar(placeholder_sidebar)

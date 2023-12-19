@@ -299,6 +299,6 @@ if __name__ == "__main__":
     track_page_visit("plant_memory")
     see_interpr = make_page(text, version)
     make_literature(text, version, language)
-    make_prev_next_button("experiments in silico", "take home messages")
+    make_prev_next_button(text("SDE_PAGENAMES_EXPERIMENTSINSILICO"), text("SDE_PAGENAMES_CONCLUSION"))
     style_guinding_questions(see_interpr)
     fill_sidebar(placeholder_sidebar)
