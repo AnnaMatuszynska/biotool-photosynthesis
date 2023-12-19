@@ -1211,3 +1211,61 @@ msgstr ""
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr ""
+
+#: pages/contact.py:17
+msgid "CONT_HEADER"
+msgstr "Proszę się z nami skontaktować!"
+
+#: pages/contact.py:19
+msgid "CONT_SUBHEADER"
+msgstr "Czekamy na Państwa opinie i pytania dotyczące naszego projektu! Oto najlepsze sposoby skontaktowania się z członkami naszego zespołu:"
+
+#: pages/contact.py:23
+#: pages/contact.py:29
+msgid "CONT_EMAIL"
+msgstr "Email:"
+
+#: pages/contact.py:24
+#: pages/contact.py:30
+msgid "CONT_TOPICS"
+msgstr "Tematy:"
+
+#: pages/contact.py:31
+msgid "CONT_WEBSITE"
+msgstr "Strona internetowa:"
+
+#: pages/contact.py:24
+msgid "CONT_TOPICS_SARAH"
+msgstr "Edukacja, motywacja stojąca za platformą i ogólne pytania"
+
+#: pages/contact.py:24
+msgid "CONT_TOPICS_TOBIAS"
+msgstr "Metody pomiaru fluorescencji i modelowanie fotosyntezy"
+
+#: pages/contact.py:37
+msgid "CONT_TOPICS_ELOUEN"
+msgstr "Dostępne modele obliczeniowe fotosyntezy, model SIR, tłumaczenie na język francuski i projektowanie wykresów"
+
+#: pages/contact.py:44
+msgid "CONT_TOPICS_MARVIN"
+msgstr "Pytania techniczne dotyczące platformy, programowania i rozwoju oprogramowania"
+
+#: pages/contact.py:51
+msgid "CONT_TOPICS_LISA"
+msgstr "Badania nad fotosyntezą w kontekście zmian klimatu"
+
+#: pages/contact.py:58
+msgid "CONT_TOPICS_ANNA"
+msgstr "Ogólne pytania dotyczące projektu, modelowanie obliczeniowe i fotosynteza"
+
+#: pages/contact.py:62
+msgid "CONT_HOURS"
+msgstr "Proszę pamiętać, że członkowie naszego zespołu mogą mieć różne czasy odpowiedzi ze względu na ich harmonogramy i obowiązki. Dołożymy wszelkich starań, aby odpowiedzieć na Państwa wiadomości tak szybko, jak to możliwe."
+
+#: pages/contact.py:64
+msgid "CONT_THANKS"
+msgstr "Dziękujemy za Państwa zainteresowanie naszym projektem!"
+
+#: pages/contact.py:66
+msgid "CONT_RESOURCES"
+msgstr "### Zasoby"

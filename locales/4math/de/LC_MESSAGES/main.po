@@ -1361,3 +1361,61 @@ msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Pflanzen können sich an frühere Lichteinwirkungen erinnern und ihre Photosyntheseraten entsprechend anpassen. Dieses Kurzzeitgedächtnis ermöglicht es ihnen, Lichtenergie zu absorbieren und sich effizient an verschiedene Umweltbedingungen anzupassen.\n"
 " - Wir glauben, dass die Messung von PAM eine spannende und effektive Methode ist, um mehr über die komplizierten Mechanismen zu erfahren, die dem Wachstum und der Entwicklung von Pflanzen zugrunde liegen.\n"
 "\n Abschließend möchten wir dich bitten, über diese Ergebnisse und ihre weiterreichenden Auswirkungen auf unser Verständnis der natürlichen Welt nachzudenken. Dadurch wirst du in der Lage sein, die bemerkenswerte Komplexität und Großartigkeit des Pflanzenreichs zu erkennen und zu bewundern.\n\n Computermodelle gibt es für fast alle wissenschaftlichen Disziplinen, und selbst wenn wir nur Photosynthesemodelle betrachten, haben wir kaum an der Oberfläche dessen gekratzt, was es gibt. Hoffentlich hat Ihnen dieser kleine Kurs gezeigt, wie interessant und nützlich die Modellierung sein kann. Bei einem Problem in der Zukunft wirst du denken: '*Könnte mir ein Modell dabei helfen*?'.\n\n **Aber vor allem hoffen wir, dass du Spaß an unserem Kurs hattest. Wenn du möchtest, gib uns ein Feedback und erzähle anderen von deinen Erfahrungen. Wir wünschen dir einen schönen Tag!**"
+
+#: pages/contact.py:17
+msgid "CONT_HEADER"
+msgstr "Kontaktiere uns!"
+
+#: pages/contact.py:19
+msgid "CONT_SUBHEADER"
+msgstr "Wir freuen uns über dein Feedback und deine Fragen zu unserem Projekt! Hier sind die besten Möglichkeiten, mit unseren Teammitgliedern in Kontakt zu treten:"
+
+#: pages/contact.py:23
+#: pages/contact.py:29
+msgid "CONT_EMAIL"
+msgstr "Email:"
+
+#: pages/contact.py:24
+#: pages/contact.py:30
+msgid "CONT_TOPICS"
+msgstr "Themen:"
+
+#: pages/contact.py:31
+msgid "CONT_WEBSITE"
+msgstr "Website:"
+
+#: pages/contact.py:24
+msgid "CONT_TOPICS_SARAH"
+msgstr "Bildung, Motivation hinter der Plattform und allgemeine Anliegen"
+
+#: pages/contact.py:24
+msgid "CONT_TOPICS_TOBIAS"
+msgstr "Fluoreszenzmessmethoden und Modellierung der Photosynthese"
+
+#: pages/contact.py:37
+msgid "CONT_TOPICS_ELOUEN"
+msgstr "Verfügbare Computermodelle der Photosynthese, SIR-Modell, französische Übersetzung und Graphdesign"
+
+#: pages/contact.py:44
+msgid "CONT_TOPICS_MARVIN"
+msgstr "Technische Fragen zur Plattform, Programmierung und Softwareentwicklung"
+
+#: pages/contact.py:51
+msgid "CONT_TOPICS_LISA"
+msgstr "Forschung zur Photosynthese im Kontext des Klimawandels"
+
+#: pages/contact.py:58
+msgid "CONT_TOPICS_ANNA"
+msgstr "Allgemeine Projektanfragen, computergestützte Modellierung und Photosynthese"
+
+#: pages/contact.py:62
+msgid "CONT_HOURS"
+msgstr "Bitte beachte, dass unsere Teammitglieder aufgrund ihrer Zeitpläne und Verantwortlichkeiten unterschiedliche Antwortzeiten haben können. Wir werden unser Bestes tun, um deine Nachrichten so schnell wie möglich zu beantworten."
+
+#: pages/contact.py:64
+msgid "CONT_THANKS"
+msgstr "Vielen Dank für dein Interesse an unserem Projekt!"
+
+#: pages/contact.py:66
+msgid "CONT_RESOURCES"
+msgstr "### Ressourcen"
