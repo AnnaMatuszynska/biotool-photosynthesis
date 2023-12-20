@@ -21,6 +21,8 @@ def make_sidebar() -> DeltaGenerator:
     text = get_localised_text(version, language)
     st.session_state.setdefault("show_video_transcripts", False)
 
+    st.sidebar.write(f"## {text('SDE_SIDEBAR_SETTINGS')} :gear:")
+
     show_pages(
         [
             Page(
@@ -80,10 +82,14 @@ def make_sidebar() -> DeltaGenerator:
             index=0,
         )
 
-        st.checkbox(
-            label="Video transcript",
-            value=False,
-        )
+    unkeep("show_video_transcripts")
+    st.sidebar.checkbox(
+        label=text("VIDEO_TRANSCRIPT_SWITCH"),
+        value=False,
+        key="_show_video_transcripts",
+        on_change=keep,
+        args=["show_video_transcripts"],
+    )
 
     return placeholder_sidebar
 
@@ -129,8 +135,6 @@ def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
         versions = ["4Bio", "4Math"]
         version_display = dict(zip(versions, [text("SDE_4BIO"), text("SDE_4MATH")]))
 
-        st.write(f"## {text('SDE_SIDEBAR_SETTINGS')} :gear:")
-
         unkeep("version")
         version = cast(
             str,
@@ -145,10 +149,10 @@ def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
         )
         # language selectbox
         languages = {
-            "English": "🇬🇧 " + text("SDE_LANGUAGE_EN"),
-            "German": "🇩🇪 " + text("SDE_LANGUAGE_DE"),
-            "Polish": "🇵🇱 " + text("SDE_LANGUAGE_PL"),
-            "French": "🇫🇷 " + text("SDE_LANGUAGE_FR"),
+            "English": "🇬🇧  " + text("SDE_LANGUAGE_EN"),
+            "German": "🇩🇪  " + text("SDE_LANGUAGE_DE"),
+            # "Polish": "🇵🇱  " + text("SDE_LANGUAGE_PL"),
+            "French": "🇫🇷  " + text("SDE_LANGUAGE_FR"),
         }
 
         unkeep("language")
@@ -162,15 +166,6 @@ def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
                 on_change=keep,
                 args=["language"],
             ),
-        )
-
-        unkeep("show_video_transcripts")
-        st.checkbox(
-            label=text("VIDEO_TRANSCRIPT_SWITCH"),
-            value=False,
-            key="_show_video_transcripts",
-            on_change=keep,
-            args=["show_video_transcripts"],
         )
 
 
