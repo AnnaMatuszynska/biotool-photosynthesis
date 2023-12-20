@@ -81,7 +81,7 @@ def make_sidebar() -> DeltaGenerator:
         )
 
         st.checkbox(
-            label="⚙ Video transcript",
+            label="Video transcript",
             value=False,
         )
 
