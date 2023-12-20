@@ -1,5 +1,5 @@
 import streamlit as st
-import time
+from streamlit.delta_generator import DeltaGenerator
 from typing import cast
 from utils import get_localised_text, icons
 from st_pages import Page, show_pages
@@ -15,25 +15,12 @@ def unkeep(key):
     st.session_state["_" + key] = st.session_state[key]
 
 
-def make_sidebar() -> tuple[str, str]:
+def make_sidebar() -> DeltaGenerator:
     version: str = st.session_state.version
     language: str = st.session_state.language
     text = get_localised_text(version, language)
-    st.sidebar.write("## Settings :gear:")
 
-    placeholder_sidebar = st.sidebar.empty()
-    with placeholder_sidebar.container():
-        st.selectbox(
-            label="⚙ Version 👩‍🎓👩🏼‍🔬",
-            options=["Loading page..."],
-            index=0,
-        )
-
-        st.selectbox(
-            label="⚙ Language 🌍💬",
-            options=["Loading page..."],
-            index=0,
-        )
+    placeholder_sidebar = st.sidebar.container()
 
     st.session_state.setdefault("show_video_transcripts", False)
     unkeep("show_video_transcripts")
