@@ -458,7 +458,7 @@ msgid "MTH_HEADLINE_ONE"
 msgstr "# Méthode de mesure"
 
 msgid "MTH_LEARNING_OBJECTIVES"
-msgstr "Objectifs éducatifs.\n"
+msgstr "### Objectifs éducatifs.\n"
         "- Vous comprenez pourquoi les plantes sont fluorescentes.\n"
         "- Vous connaissez les mesures de modulation d'amplitude d'impulsion (PAM) et leurs avantages.\n"
         "Vous pouvez interpréter les résultats d'une mesure PAM.\n"
