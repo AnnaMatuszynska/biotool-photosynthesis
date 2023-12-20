@@ -19,6 +19,15 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+msgid "SDE_SIDEBAR_SETTINGS"
+msgstr "Ajustes"
+
+msgid "SDE_SIDEBAR_VERSION"
+msgstr "Versión"
+
+msgid "SDE_SIDEBAR_LANGUAGE"
+msgstr "Idioma"
+
 #: Start.py:92
 msgid "SDE_PAGENAMES_START"
 msgstr ""
@@ -1207,7 +1216,7 @@ msgstr ""
 msgid "CON_CONCLUSION_TEXT_ONE"
 msgstr ""
 
-# Grammarly checked     
+# Grammarly checked
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr ""

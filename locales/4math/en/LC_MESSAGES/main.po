@@ -19,6 +19,15 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+msgid "SDE_SIDEBAR_SETTINGS"
+msgstr "Settings"
+
+msgid "SDE_SIDEBAR_VERSION"
+msgstr "Version"
+
+msgid "SDE_SIDEBAR_LANGUAGE"
+msgstr "Language"
+
 #: Start.py:92
 msgid "SDE_PAGENAMES_START"
 msgstr "Start"
@@ -1058,50 +1067,50 @@ msgstr "Here, you can read a step-by-step guide on implementing the model used o
 # Grammarly checked
 #: pages/first_analysis.py:86
 msgid "FAL_CONSTRUCTION_2"
-msgstr "We must look at the **reaction rates** and the **ODEs** we want to implement into our model. With them, we can decide which **parameters** and **compounds** we need. We must define them in a `dict` and `list`, respectively. It is also good practice to use comments after each value to briefly explain what that variable represents and, if present, the unit." 
+msgstr "We must look at the **reaction rates** and the **ODEs** we want to implement into our model. With them, we can decide which **parameters** and **compounds** we need. We must define them in a `dict` and `list`, respectively. It is also good practice to use comments after each value to briefly explain what that variable represents and, if present, the unit."
 
 # Grammarly checked
 #: pages/first_analysis.py:102
 msgid "FAL_CONSTRUCTION_3"
-msgstr "The defined model has integrated functions to add the parameters and compounds easily:" 
+msgstr "The defined model has integrated functions to add the parameters and compounds easily:"
 
 # Grammarly checked
 #: pages/first_analysis.py:109
 msgid "FAL_CONSTRUCTION_4"
-msgstr "This model also uses some **parameters** that are derived from other parameters. Furthermore, some information is hidden behind the connection between compounds, which cannot be summarized as parameters. However, `modelbase` has some tricks to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We must first define the calculations as functions and then add them to the model." 
+msgstr "This model also uses some **parameters** that are derived from other parameters. Furthermore, some information is hidden behind the connection between compounds, which cannot be summarized as parameters. However, `modelbase` has some tricks to overcome these two problems, `derived_parameters` and `algebraic_modules` respectively. We must first define the calculations as functions and then add them to the model."
 
 # Grammarly checked
 #: pages/first_analysis.py:125
 msgid "FAL_CONSTRUCTION_5"
-msgstr "We now have given the model all the building blocks it needs, but it needs to know what to do with them. For that, it needs instructions. We must translate the reaction rates into `functions` to make these instructions. You will see that some of these functions also call other functions. These are only to make the code more legible or to eliminate the same calculations." 
+msgstr "We now have given the model all the building blocks it needs, but it needs to know what to do with them. For that, it needs instructions. We must translate the reaction rates into `functions` to make these instructions. You will see that some of these functions also call other functions. These are only to make the code more legible or to eliminate the same calculations."
 
 # Grammarly checked
 #: pages/first_analysis.py:141
 msgid "FAL_CONSTRUCTION_6"
-msgstr "The model has all the necessary components and instructions. Still, we must specify which building block corresponds to each instruction and how they are connected. We need to examine the ODEs and establish the stoichiometry to accomplish this." 
+msgstr "The model has all the necessary components and instructions. Still, we must specify which building block corresponds to each instruction and how they are connected. We need to examine the ODEs and establish the stoichiometry to accomplish this."
 
 # Grammarly checked
 #: pages/first_analysis.py:148
 msgid "FAL_CONSTRUCTION_7"
-msgstr "We have now successfully created a functional model. However, to test it, we need to simulate it. This section will guide you through the step-by-step process of generating the plot with the default values listed at the bottom of this page. This part may be more complicated than the modeling part, requiring some trial and error. We will explain our thought process so that you can follow along. Still, we suggest you carefully read this section to create the plot successfully." 
+msgstr "We have now successfully created a functional model. However, to test it, we need to simulate it. This section will guide you through the step-by-step process of generating the plot with the default values listed at the bottom of this page. This part may be more complicated than the modeling part, requiring some trial and error. We will explain our thought process so that you can follow along. Still, we suggest you carefully read this section to create the plot successfully."
 
 #: pages/first_analysis.py:150
 msgid "FAL_SIMULATION_HEADER"
-msgstr "#### Model Simulation" 
+msgstr "#### Model Simulation"
 
 #: pages/first_analysis.py:152
 msgid "FAL_SIMULATION_1"
-msgstr "First, let's check if our plot is functional. To do so, we will generate a `simulator` object by utilizing the `Simulator()` class from `modelbase`." 
+msgstr "First, let's check if our plot is functional. To do so, we will generate a `simulator` object by utilizing the `Simulator()` class from `modelbase`."
 
 # Grammarly checked
 #: pages/first_analysis.py:159
 msgid "FAL_SIMULATION_2"
-msgstr "The model requires a starting point for its calculations. The parameters have been defined during the model creation, so we now need to specify the initial concentrations or quantities of the compounds." 
+msgstr "The model requires a starting point for its calculations. The parameters have been defined during the model creation, so we now need to specify the initial concentrations or quantities of the compounds."
 
 # Grammarly checked
 #: pages/first_analysis.py:166
 msgid "FAL_SIMULATION_3"
-msgstr "We can begin the simulations now. Let's select a random time point for the model to simulate to. We can visualize the results after the simulation and check for implementation errors. This test is straightforward, as an empty or non-existent plot indicates a problem. Our preferred plotting tool is `matplotlib`, which is also integrated into `modelbase`." 
+msgstr "We can begin the simulations now. Let's select a random time point for the model to simulate to. We can visualize the results after the simulation and check for implementation errors. This test is straightforward, as an empty or non-existent plot indicates a problem. Our preferred plotting tool is `matplotlib`, which is also integrated into `modelbase`."
 
 # Grammarly checked
 #: pages/first_analysis.py:189
@@ -1114,21 +1123,21 @@ msgstr "We have successfully simulated our model and created a basic plot. Howev
 
 #: pages/first_analysis.py:190
 msgid "FAL_SIMULATION_FLOURESCENCE_HEADER"
-msgstr "##### Showing Fluorescence" 
+msgstr "##### Showing Fluorescence"
 
 # Grammarly checked
 #: pages/first_analysis.py:191
 msgid "FAL_SIMULATION_FLOURESCENCE_1"
-msgstr "When using `modelbase` for simulations, it tends to display the compounds in the default plots. However, in our situation, we need to showcase the change of Fluorescence, which we did not incorporate as a compound but as an algebraic module. Hence, we must choose that change specifically." 
+msgstr "When using `modelbase` for simulations, it tends to display the compounds in the default plots. However, in our situation, we need to showcase the change of Fluorescence, which we did not incorporate as a compound but as an algebraic module. Hence, we must choose that change specifically."
 
 # Grammarly checked
 #: pages/first_analysis.py:214
 msgid "FAL_SIMULATION_FLOURESCENCE_2"
-msgstr "To simplify the chart reading process, we will relativize the fluorescence values to their maximum. Unfortunately, this will result in a more complex code. We will demonstrate how to achieve this by extracting the simulation data from `modelbase`. However, there are several methods to accomplish this. It is worth noting that the graph will appear slightly different due to `modelbase` modifying certain plot aspects for faster processing. Nonetheless, we will ensure the diagram is aesthetically pleasing in the end." 
+msgstr "To simplify the chart reading process, we will relativize the fluorescence values to their maximum. Unfortunately, this will result in a more complex code. We will demonstrate how to achieve this by extracting the simulation data from `modelbase`. However, there are several methods to accomplish this. It is worth noting that the graph will appear slightly different due to `modelbase` modifying certain plot aspects for faster processing. Nonetheless, we will ensure the diagram is aesthetically pleasing in the end."
 
 #: pages/first_analysis.py:237
 msgid "FAL_SIMULATION_PHASES_HEADER"
-msgstr "##### Different Phases and Saturating Pulses" 
+msgstr "##### Different Phases and Saturating Pulses"
 
 # Grammarly checked
 #: pages/first_analysis.py:238
@@ -1138,16 +1147,16 @@ msgstr "We can address the last two issues in one code by starting each phase wi
         "- The brightness level of the dark and light phases, as well as the saturating pulses\n"
         "- The length of the dark phase\n"
         "- The number of saturating pulses we want during the light phase.\n"
-        "The code below displays our selected values, but feel free to use your preferred values and observe the outcome. This is what this website also makes more straightforward for you at the bottom of the page." 
+        "The code below displays our selected values, but feel free to use your preferred values and observe the outcome. This is what this website also makes more straightforward for you at the bottom of the page."
 
 #: pages/first_analysis.py:261
 msgid "FAL_SIMULATION_PRETTY_HEADER"
-msgstr "##### Making It Pretty" 
+msgstr "##### Making It Pretty"
 
 # Grammarly checked
 #: pages/first_analysis.py:262
 msgid "FAL_SIMULATION_PRETTY_1"
-msgstr "The simulation currently displays all the desired information. To enhance its visual appeal and comprehension, we can utilize the `matplotlib` library to create a polished graph resembling the one at the bottom of the page. While we won't provide a detailed walkthrough, you can still view the code we used." 
+msgstr "The simulation currently displays all the desired information. To enhance its visual appeal and comprehension, we can utilize the `matplotlib` library to create a polished graph resembling the one at the bottom of the page. While we won't provide a detailed walkthrough, you can still view the code we used."
 
 #: pages/first_analysis.py:262
 msgid "FAL_GRAPH_EXPLANATION_EXPANDER"
@@ -1318,11 +1327,11 @@ msgstr "We hope you have received a thorough introduction to the captivating rea
         "- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
         "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point, like in the figure below."
 
-# Grammarly checked     
+# Grammarly checked
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
-        "- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
+        "- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n"
         "\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
 
 #: pages/contact.py:17

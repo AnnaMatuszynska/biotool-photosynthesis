@@ -19,6 +19,15 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+msgid "SDE_SIDEBAR_SETTINGS"
+msgstr "Ustawienia"
+
+msgid "SDE_SIDEBAR_VERSION"
+msgstr "Wersja"
+
+msgid "SDE_SIDEBAR_LANGUAGE"
+msgstr "Język"
+
 #: Start.py:92
 msgid "SDE_PAGENAMES_START"
 msgstr "Start"
@@ -171,7 +180,7 @@ msgstr "4Math"
 
 #: pages/_sidebar.py:14
 msgid "VIDEO_TRANSCRIPT_SWITCH"
-msgstr ""
+msgstr "Pokaż transkrypcje wideo"
 
 #: pages/_sidebar.py:14
 msgid "EXPANDER_VIDEO_TRANSCRIPT"
@@ -1211,7 +1220,7 @@ msgstr "# Podsumowanie"
 msgid "CON_CONCLUSION_TEXT_ONE"
 msgstr ""
 
-# Grammarly checked     
+# Grammarly checked
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Rośliny mogą przypomnieć sobie poprzednią ekspozycję na światło i odpowiednio dostosować swoje tempo fotosyntezy. Ta krótkotrwała pamięć pozwala im efektywnie zużywać energię i dostosowywać się do różnych warunków środowiskowych. \n"

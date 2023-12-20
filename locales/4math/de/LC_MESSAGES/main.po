@@ -19,6 +19,15 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+msgid "SDE_SIDEBAR_SETTINGS"
+msgstr "Einstellungen"
+
+msgid "SDE_SIDEBAR_VERSION"
+msgstr "Version"
+
+msgid "SDE_SIDEBAR_LANGUAGE"
+msgstr "Sprache"
+
 #: Start.py:92
 msgid "SDE_PAGENAMES_START"
 msgstr "Start"
@@ -1261,7 +1270,7 @@ msgstr "Mit den Standardwerten wird in der folgenden Simulation ein typisches PA
         "2. :blue[An einem heißen und sonnigen Tag können höhere Intensitäten von über 900 μmol &nbsp;m⁻²&nbsp;s⁻¹ aktinisches Licht erreicht werden. Versuche dies in einer Simulation und prüfe, ob deine bisherigen Beobachtungen auch hier zutreffen.]\n"
         "    - Bei dieser höheren Lichtintensität können wir auch die erhöhte Fluoreszenz nach dem Einschalten und die weiter abnehmende Fluoreszenz während der Pulse sehen.\n"
         "    - Die Fluoreszenz am Ende der sehr hohen Lichtphase ist im Vergleich zur niedrigen Lichtsimulation erhöht. Daher ist die Pflanze selbst nach der vollständigen Aktivierung ihres NPQ-Mechanismus noch stärker gestresst. Wahrscheinlich ist das Löschpotenzial des NPQ-Prozesses der Pflanze erschöpft, und eine höhere Lichtintensität könnte die Pflanze schädigen.\n"
-        "3. Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungsimpulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.]\n"
+        "3. :blue[Bei dieser Intensität können wir viel besser sehen, wie die Fluoreszenzspitzen während der Sättigungsimpulse mit der Zeit abnehmen. Aber in den ersten zwei Minuten scheint viel zu passieren, was wir nicht sehen können.]\n"
         "    - Mit häufigeren Pulsen können wir die abfallende Spitzenfluoreszenz deutlicher sehen. Daher sehen wir die NPQ-Aktivierung in einer höheren Auflösung und können versuchen, eine Funktion zur Schätzung der Aktivierungsrate zu erstellen \n"
         "    - Normalerweise gehen wir davon aus, dass die Impulse keinen Einfluss auf die Photosynthese haben. Nach einem Impuls kehrt das Signal auf das vorherige Niveau zurück, und die Spitzenhöhe scheint immer gleich abzunehmen. \n"
         "    - Wenn wir jedoch bei schwachem Licht Impulse in schneller Folge geben, können die Sättigungsimpulse eine Wirkung wie aktinisches Licht haben. Das kann man sehen, wenn man eine Lichtintensität von 50 μmol &nbsp;m⁻²&nbsp;s⁻¹ mit Impulsen alle 5 s ausprobiert. Hier nimmt die Peakhöhe stärker ab als bei weniger Impulsen. \n"
@@ -1363,7 +1372,7 @@ msgstr "Wir hoffen, dass du auf dieser Website eine gründliche Einführung in d
 "- Die Lichtintensität hat einen erheblichen Einfluss auf die Photosyntheserate von Pflanzen. Mit zunehmender Lichtintensität nimmt die Photosyntheserate bis zu einem gewissen Grad zu.\n"
 "- Die Beziehung zwischen Lichtintensität und Photosyntheserate ist nicht linear. Vielmehr folgt sie einer Kurve, die an einem bestimmten Sättigungspunkt ihren Höhepunkt erreicht, wie in der Abbildung unten dargestellt."
 
-# Grammarly checked     
+# Grammarly checked
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Pflanzen können sich an frühere Lichteinwirkungen erinnern und ihre Photosyntheseraten entsprechend anpassen. Dieses Kurzzeitgedächtnis ermöglicht es ihnen, Lichtenergie zu absorbieren und sich effizient an verschiedene Umweltbedingungen anzupassen.\n"

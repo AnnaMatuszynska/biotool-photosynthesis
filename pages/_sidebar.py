@@ -1,8 +1,8 @@
 import streamlit as st
-import time
+from st_pages import Page, show_pages
+from streamlit.delta_generator import DeltaGenerator
 from typing import cast
 from utils import get_localised_text, icons
-from st_pages import Page, show_pages
 
 
 def keep(key):
@@ -15,25 +15,12 @@ def unkeep(key):
     st.session_state["_" + key] = st.session_state[key]
 
 
-def make_sidebar() -> tuple[str, str]:
+def make_sidebar() -> DeltaGenerator:
     version: str = st.session_state.version
     language: str = st.session_state.language
     text = get_localised_text(version, language)
-    st.sidebar.write("## Settings :gear:")
 
-    placeholder_sidebar = st.sidebar.empty()
-    with placeholder_sidebar.container():
-        st.selectbox(
-            label="⚙ Version 👩‍🎓👩🏼‍🔬",
-            options=["Loading page..."],
-            index=0,
-        )
-
-        st.selectbox(
-            label="⚙ Language 🌍💬",
-            options=["Loading page..."],
-            index=0,
-        )
+    placeholder_sidebar = st.sidebar.container()
 
     st.session_state.setdefault("show_video_transcripts", False)
     unkeep("show_video_transcripts")
@@ -47,17 +34,15 @@ def make_sidebar() -> tuple[str, str]:
     return placeholder_sidebar
 
 
-def fill_sidebar(placeholder_sidebar):
+def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
     version: str = st.session_state.version
     language: str = st.session_state.language
     text = get_localised_text(version, language)
 
     # Versions selectbox
-    placeholder_sidebar.empty()
     with placeholder_sidebar.container():
         versions = ["4Bio", "4Math"]
         version_display = dict(zip(versions, [text("SDE_4BIO"), text("SDE_4MATH")]))
-        version_to_idx = dict(zip(versions, range(len(versions))))
 
         show_pages(
             [
@@ -103,16 +88,16 @@ def fill_sidebar(placeholder_sidebar):
                 ),
             ]
         )
-        
-        # with st.session_state["placeholder_version"]:
+
+        st.write(f"## {text('SDE_SIDEBAR_SETTINGS')} :gear:")
+
         unkeep("version")
         version = cast(
             str,
             st.selectbox(
-                label="⚙ Version 👩‍🎓👩🏼‍🔬",
+                label=f"⚙ {text('SDE_SIDEBAR_VERSION')} 👩‍🎓👩🏼‍🔬",
                 options=versions,
                 format_func=lambda x: version_display[x],
-                # index=version_to_idx[st.session_state["version"]],
                 key="_version",
                 on_change=keep,
                 args=["version"],
@@ -130,7 +115,7 @@ def fill_sidebar(placeholder_sidebar):
         language = cast(
             str,
             st.selectbox(
-                label="⚙ Language 🌍💬",
+                label=f"⚙ {text('SDE_SIDEBAR_LANGUAGE')} 🌍💬",
                 options=[i for i in languages.keys()],
                 format_func=lambda x: languages.get(x),
                 key="_language",
@@ -141,4 +126,4 @@ def fill_sidebar(placeholder_sidebar):
 
 
 if __name__ == "__main__":
-    placeholder_sidebar = make_sidebar()
+    make_sidebar()
