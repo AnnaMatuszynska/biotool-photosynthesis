@@ -70,7 +70,7 @@ def make_sidebar() -> DeltaGenerator:
 
 
 def rename_pages(text: Callable[[str], str]):
-    from streamlit.source_util import get_pages
+    from streamlit.source_util import _cached_pages, _on_pages_changed, _pages_cache_lock, get_pages
 
     # FIXME: this depends on the order of the dict
     # and list being the same, which isn't guaranteed
@@ -85,8 +85,13 @@ def rename_pages(text: Callable[[str], str]):
         text("SDE_PAGENAMES_CONCLUSION"),
         text("SDE_PAGENAMES_CONTACT"),
     ]
-    for page, new_name in zip(get_pages("").values(), new_names):
+
+    pages = get_pages("")
+    for page, new_name in zip(pages.values(), new_names):
         page["page_name"] = new_name
+
+    with _pages_cache_lock:
+        _cached_pages.update(pages)
 
 
 def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
