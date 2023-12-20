@@ -20,6 +20,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     # Learning objectives
     st.info(text("PHO_LEARNING_OBJECTIVES"))
+    make_prev_next_button("start", "measuring method", key="pho_learning_objectives")
 
     markdown_click("PHO_HEADLINE_CLIMATE", text)
     markdown_click("PHO_INTRODUCTION_CLIMATE_CHANGE", text)

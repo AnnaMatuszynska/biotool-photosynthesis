@@ -24,6 +24,7 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
     # Learning objectives
     st.info(text("MEM_LEARNING_OBJECTIVES"))
+    make_prev_next_button("experiments in silico", "take home messages", key="mem_learning_objectives")
 
     col1, col2, _ = st.columns(3)
     with col2:

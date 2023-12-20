@@ -9,7 +9,7 @@ from logging import getLogger
 from pathlib import Path
 from st_click_detector import click_detector
 from streamlit_extras.switch_page_button import switch_page
-from typing import Callable
+from typing import Any, Callable
 from functools import partial
 
 def _get_localised_text_warn(gettext, plc):
@@ -36,12 +36,17 @@ def get_localised_text(version: str, language: str, do_warn:bool=False) -> Calla
         return gettext.gettext
 
 
-def make_prev_next_button(prev: str | None, next: str | None) -> None:
+def make_prev_next_button(
+    prev: str | None,
+    next: str | None,
+    key: str | None = None,
+) -> tuple[Any, Any]:
     col1, col2 = st.columns([1, 1])
     with col1:
         if st.button(
             "Previous",
             disabled=True if prev is None else False,
+            key=key + "_prev" if key is not None else key,
             use_container_width=True,
         ):
             if prev is not None:
@@ -50,10 +55,12 @@ def make_prev_next_button(prev: str | None, next: str | None) -> None:
         if st.button(
             "Next",
             disabled=True if next is None else False,
+            key=key + "_next" if key is not None else key,
             use_container_width=True,
         ):
             if next is not None:
                 switch_page(next)
+    return col1, col2
 
 
 def centered_image(img_path: str) -> None:
