@@ -66,7 +66,26 @@ def make_sidebar() -> DeltaGenerator:
         ]
     )
 
-    return st.sidebar.container()
+    placeholder_sidebar = st.sidebar.empty()  # clear any previous remnants
+    with placeholder_sidebar.container():
+        st.selectbox(
+            label="⚙ Version 👩‍🎓👩🏼‍🔬",
+            options=["Loading page..."],
+            index=0,
+        )
+
+        st.selectbox(
+            label="⚙ Language 🌍💬",
+            options=["Loading page..."],
+            index=0,
+        )
+
+        st.checkbox(
+            label="⚙ Video transcript",
+            value=False,
+        )
+
+    return placeholder_sidebar
 
 
 def rename_pages(text: Callable[[str], str]):
@@ -105,6 +124,7 @@ def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
     rename_pages(text)
 
     # Versions selectbox
+    placeholder_sidebar.empty()  # clear temp sidebar
     with placeholder_sidebar.container():
         versions = ["4Bio", "4Math"]
         version_display = dict(zip(versions, [text("SDE_4BIO"), text("SDE_4MATH")]))
