@@ -665,7 +665,7 @@ msgstr "To know how their population will look in a few months, they try a new m
 #: pages/model_explain.py:236
 #: pages/model_explain.py:50
 msgid "MDL_MATHEMATICAL_MODELLING_EXAMPLE_2"
-msgstr "We now have to determine how these reaction rates look like mathematically. The infection rate (v<sub>1</sub>) depends on the probability of infection (β) and the relative amount of S and I to the total population (N), as the recovered gain complete immunity. On the other hand the recovery rate (v<sub>2</sub>) is only dependent on the probability of recovery (γ) and the amount of I. This gives us the following equations:"
+msgstr "We now have to determine how these reaction rates look like mathematically. The infection rate (v<sub>1</sub>) depends on the probability of infection (β) and the relative amount of S and I to the total population (N), as the recovered gain complete immunity. On the other hand the recovery rate (v<sub>2</sub>) is only dependent on the probability of recovery (γ) and the amount of I. This gives us the following equations:" 
 
 # Grammarly checked
 #: pages/model_explain.py:251
@@ -1347,11 +1347,11 @@ msgstr "We hope you have received a thorough introduction to the captivating rea
         "- Light intensity significantly affects the rate of photosynthesis in plants. As light intensity increases, the rate of photosynthesis increases to some degree.\n"
         "- The relationship between light intensity and photosynthetic rate is not linear. Rather, it follows a curve that peaks at a certain saturation point."
 
-# Grammarly checked
+# Grammarly checked     
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Plants can recall previous exposure to light and adjust their photosynthetic rates accordingly. This short-term memory enables them to absorb light energy and adapt to various environmental conditions efficiently.\n"
-        "- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n"
+        "- We believe that the measurement of PAM is an exciting and effective method to learn about the intricate mechanisms underlying plant growth and development.\n" 
         "\n Finally, please consider these findings and their broader implications for our comprehension of the natural world. By doing so, you will be able to recognize and admire the remarkable intricacy and magnificence of the plant kingdom.\n\n Computational models exist for almost all scientific disciplines, and even considering only photosynthesis models, we have barely scratched the surface of what is out there. Hopefully, this small course has shown you how interesting and useful modeling can be. For a problem in the future, you will think, '*Could a model help me with this*?'.\n\n **But most of all, we hope you had fun with our course. If you want, give us feedback and tell others about your experience. Have a great day!**"
 
 #: pages/contact.py:17

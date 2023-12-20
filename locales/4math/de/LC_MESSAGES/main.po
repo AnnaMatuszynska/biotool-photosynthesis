@@ -1378,7 +1378,7 @@ msgstr "Wir hoffen, dass du auf dieser Website eine gründliche Einführung in d
 "- Die Lichtintensität hat einen erheblichen Einfluss auf die Photosyntheserate von Pflanzen. Mit zunehmender Lichtintensität nimmt die Photosyntheserate bis zu einem gewissen Grad zu.\n"
 "- Die Beziehung zwischen Lichtintensität und Photosyntheserate ist nicht linear. Vielmehr folgt sie einer Kurve, die an einem bestimmten Sättigungspunkt ihren Höhepunkt erreicht, wie in der Abbildung unten dargestellt."
 
-# Grammarly checked
+# Grammarly checked     
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Pflanzen können sich an frühere Lichteinwirkungen erinnern und ihre Photosyntheseraten entsprechend anpassen. Dieses Kurzzeitgedächtnis ermöglicht es ihnen, Lichtenergie zu absorbieren und sich effizient an verschiedene Umweltbedingungen anzupassen.\n"

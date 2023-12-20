@@ -316,7 +316,7 @@ msgstr "### Objectifs éducatifs\n"
         "- La structure d'une plante\n"
         "- Structure d'une cellule\n"
         "- Fonction de la membrane cellulaire\n"
-        "- Le principe de l'autotrophie des plantes\n"
+        "- Le principe de l'autotrophie des plantes\n" 
         "- Les principes de base du changement climatique"
 
 #: Lisa's introduction
@@ -462,7 +462,7 @@ msgstr "### Objectifs éducatifs.\n"
         "- Vous comprenez pourquoi les plantes sont fluorescentes.\n"
         "- Vous connaissez les mesures de modulation d'amplitude d'impulsion (PAM) et leurs avantages.\n"
         "Vous pouvez interpréter les résultats d'une mesure PAM.\n"
-        "#### Ce que vous devez savoir&nbsp;: \n"
+        "#### Ce que vous devez savoir&nbsp;: \n" 
         "- Le spectre des couleurs de la lumière\n"
         "- Les concepts de base de la conversion et de la conservation de l'énergie"
 
@@ -908,7 +908,7 @@ msgid "FAL_LEARNING_OBJECTIVES"
 msgstr "### Objectifs éducatifs\n"
         "- Vous apprenez à simuler un modèle de photosynthèse et à interpréter les résultats.\n"
         "- Vous comprenez comment simuler des changements d'intérêt, par exemple des mutations.\n"
-        "#### Ce que vous devez savoir&nbsp;: \n"
+        "#### Ce que vous devez savoir&nbsp;: \n" 
         "- Lire et analyser des graphiques"
 
 #: pages/first_analysis.py:13
@@ -1347,7 +1347,7 @@ msgstr "Nous espérons que ce site vous a permis de vous familiariser avec le do
         "L'intensité lumineuse affecte de manière significative le taux de photosynthèse chez les plantes. Lorsque l'intensité lumineuse augmente, le taux de photosynthèse augmente dans une certaine mesure.\n"
         "La relation entre l'intensité lumineuse et le taux de photosynthèse n'est pas linéaire. Elle suit plutôt une courbe qui culmine à un certain point de saturation."
 
-# Grammarly checked
+# Grammarly checked     
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr "- Les plantes peuvent se souvenir d'une exposition précédente à la lumière et ajuster leur taux de photosynthèse en conséquence. Cette mémoire à court terme leur permet d'absorber l'énergie lumineuse et de s'adapter efficacement à diverses conditions environnementales.\n"

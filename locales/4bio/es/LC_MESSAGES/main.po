@@ -1222,7 +1222,7 @@ msgstr ""
 msgid "CON_CONCLUSION_TEXT_ONE"
 msgstr ""
 
-# Grammarly checked
+# Grammarly checked     
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr ""

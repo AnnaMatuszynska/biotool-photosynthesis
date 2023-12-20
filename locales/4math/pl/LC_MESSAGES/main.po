@@ -56,11 +56,11 @@ msgstr "Eksperymenty in silico"
 
 #: Start.py:117
 msgid "SDE_PAGENAMES_PLANTLIGHTMEMORY"
-msgstr "Pamięć światła roślin"
+msgstr "Rośliny i ich pamięć światła"
 
 #: Start.py:122
 msgid "SDE_PAGENAMES_CONCLUSION"
-msgstr "Wiadomości na wynos"
+msgstr "Wnioski końcowe"
 
 #: Start.py:117
 msgid "SDE_PAGENAMES_CONTACT"
@@ -100,27 +100,29 @@ msgid "LITERATURE_ONPAGE"
 msgstr "Referencje na tej stronie:"
 
 msgid "LITERATURE_PLANTS_AND_PYTHON"
-msgstr ""
+msgstr "Sprawdź również *Plants and Python*, kurs Pythona dla biologów (materiał dostępny w języku angielskim):\n"
+            "- Plants & Python: A series of lessons in coding, plant biology, computation, and bioinformatics. (2022). The Plant Cell, 34(7), e1. https://doi.org/10.1093/plcell/koac187\n"
+            "- Oficjalna strona internetowa: https://plantsandpython.github.io/PlantsAndPython"
 
 #: pages/first_analysis.py:345
 #: pages/plant_memory.py:249
 msgid "SLIDER_LIGHT"
-msgstr ""
+msgstr "Natężenie światła fazy świetlnej (AL) w μmol&nbsp;m-²&nbsp;s-¹"
 
 #: pages/first_analysis.py:361
 #: pages/plant_memory.py:255
 msgid "SLIDER_PULSES"
-msgstr ""
+msgstr "Czas (w sekundach) pomiędzy impulsami światła wysycającego podczas fazy naświetlania"
 
 #: pages/first_analysis.py:371
 #: pages/plant_memory.py:272
 msgid "SLIDER_ACTIVATION"
-msgstr ""
+msgstr "Szybkość reakcji konwersji do zeaksantyny (CtZ) wyrażona w procentach wartości początkowej"
 
 #: pages/first_analysis.py:380
 #: pages/plant_memory.py:278
 msgid "SLIDER_DEACTIVATION"
-msgstr ""
+msgstr "Szybkość reakcji konwersji do wiolaksantyny (CtV) wyrażona w procentach względem wartości początkowej"
 
 # Grammarly checked
 #: Start.py:14
@@ -128,12 +130,12 @@ msgstr ""
 #: Start.py:14
 #: pages/contact.py:68
 msgid "PROGRAMS_USED"
-msgstr "Do stworzenia strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."
+msgstr "Do stworzenia tej strony internetowej użyto **Streamlit**: https://streamlit.io/.\n\nNiektóre rysunki zostały stworzone przy użyciu **BioRender**: https://biorender.com."
 
 #: pages/first_analysis.py:402
 #: pages/plant_memory.py:297
 msgid "SPINNER"
-msgstr ""
+msgstr "Policzę teraz wszystko dla Ciebie :computer:"
 
 #: pages/first_analysis.py:420
 #: pages/first_analysis.py:432
@@ -141,7 +143,7 @@ msgstr ""
 #: pages/plant_memory.py:344
 #: pages/plant_memory.py:359
 msgid "AXIS_TIME_MIN"
-msgstr ""
+msgstr "Czas [min]"
 
 #: pages/first_analysis.py:419
 #: pages/first_analysis.py:431
@@ -149,31 +151,31 @@ msgstr ""
 #: pages/plant_memory.py:343
 #: pages/plant_memory.py:358
 msgid "AXIS_TIME_S"
-msgstr ""
+msgstr "Czas [min]"
 
 #: pages/first_analysis.py:421
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:316
 msgid "FLUO"
-msgstr ""
+msgstr "Fluorescencja (F/Fₘ) [jedn. wygl.]"
 
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:345
 msgid "AXIS_NPQ"
-msgstr ""
+msgstr "NPQ [jedn. wygl.]"
 
 #: pages/first_analysis.py:433
 #: pages/plant_memory.py:360
 msgid "AXIS_PHIPSII"
-msgstr ""
+msgstr "Φ(PSII)"
 
 #: pages/first_analysis.py:489
 msgid "NEW_LABEL"
-msgstr ""
+msgstr "Nowy"
 
 #: pages/first_analysis.py:489
 msgid "OLD_LABEL"
-msgstr ""
+msgstr "Poprzedni"
 
 # SIDEBAR
 #: pages/_sidebar.py:14
@@ -186,11 +188,11 @@ msgstr "4Math"
 
 #: pages/_sidebar.py:14
 msgid "VIDEO_TRANSCRIPT_SWITCH"
-msgstr "Pokaż transkrypcje wideo"
+msgstr "Wyświetl transkrypcje wideo"
 
 #: pages/_sidebar.py:14
 msgid "EXPANDER_VIDEO_TRANSCRIPT"
-msgstr ""
+msgstr "Transkrypcje wideo"
 
 
 #: Start.py:12
@@ -204,13 +206,13 @@ msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
-msgstr "# Fotosynteza *in silico*: interaktywny panel do badania fotosyntezy przy użyciu modelu obliczeniowego i symulacji komputerowych."
+msgstr "# Fotosynteza *in silico*: platforma edukacyjna do badania fotosyntezy poprzez symulacje komputerowe"
 
 #: Intro by Anna
 # Grammarly checked
 #: Start.py:10
 msgid "STR_INTRO"
-msgstr "To jest narzędzie do nauczania biologii, projekt uruchomiony przez **Computational Life Science Lab** na Politechnice w Akwizgranie, w Niemczech. Naszym celem jest dostarczenie narzędzia dydaktycznego dostosowanego do potrzeb uczniów XXI wieku. Naszym celem jest pokazać w jaki sposób modelowanie komputerowe wspiera obecne badania naukowe zwiększając nasz stopień zrozumienia otaczającego nas świata. Wybraliśmy fotosyntezę jako proces, aby to zademonstrować. W końcu fotosynteza jest prawdopodobnie najważniejszym procesem na Ziemi! Proponujemy, żeby Twoja przygoda z tą stroną zaczęła się od obejrzenia krótkiego filmiku o fotosyntezie."
+msgstr "To jest narzędzie do nauczania biologii, projekt uruchomiony przez **Computational Life Science Lab** na Politechnice w Akwizgranie, w Niemczech. Naszym celem jest dostarczenie narzędzia dydaktycznego dostosowanego do potrzeb uczniów XXI wieku. Pragniemy pokazać w jaki sposób modelowanie komputerowe wspiera obecne badania naukowe zwiększając nasz stopień zrozumienia otaczającego nas świata. Wybraliśmy fotosyntezę jako proces, aby to zademonstrować. W końcu fotosynteza jest prawdopodobnie najważniejszym procesem na Ziemi! Proponujemy, żeby Twoja przygoda z tą stroną zaczęła się od obejrzenia krótkiego filmiku o fotosyntezie."
 
 # Grammarly checked
 #: Start.py:18
@@ -220,25 +222,30 @@ msgstr "## Jak używać tej strony?"
 # Grammarly checked
 #: Start.py:19
 msgid "STR_USAGE"
-msgstr ""
+msgstr "Materiał na tej stronie skierowany jest zarówno do ciekawskich nowicjuszy, jak i bardziej zaawansowanych osób uczących się w dziedzinie biologii i modelowania. W panelu bocznem znajdującym się po lewej stronie można wybrać jedną z dwóch wersji tej strony (można również kliknąć podświetlony tekst): <a href='#' id='4Bio'><i>4Bio</i></a>, jeśli czujesz się bardziej komfortowo z biologią lub <i>4Math</i>, jeśli chcesz dowiedzieć się więcej szczegółów matematycznych. <br> Na stronie zamieściliśmy również wiele filmików edukacyjnych. Jeśli chcesz mieć dostęp do transkrypcji, wybież <Wyświetl transkrypcje wideo> po lewej stronie."
 
 # Grammarly checked
 #: Start.py:20
 msgid "STR_SPECIFIC_USE"
-msgstr ""
+msgstr "W wersji *4Math* podsumujemy wiedzę biologiczną niezbędną do zrozumienia zastowoania modeli zamieszczonych na tej stronie. Podamy wiele przykładów modeli, które zostały opracowane w celu uchwycenia różnych aspektów fotosyntezy, aby pokazać, jak przydatne może być modelowanie w biologii. Wyjaśnimy również szczegółowo jeden model, pokazując, jak jest on zdefiniowany matematycznie i zaimplementowany w Pythonie, aby ułatwić Twoj mógł wypróbować go samodzielnie."
 
 msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
-msgstr ""
+msgstr "Fotosynteza jest tym, co napędza ten świat. Od powietrza, którym oddychasz, po jedzenie, które spożywasz, wszystko to jest napędzane światłem używanim przez rośliny, algi i mniejsze komórki. Zdając sobię z tego sprawę, można zrozumieć, jak ważne jest dokładne poznanie działania fotosyntezy. Dzięki tej wiedzy moglibyśmy sztucznie ulepszyć ten naturalny proces i pomóc w produkcji żywności, paliwa i wielu innych substancji chemicznych, których potrzebujemy w naszym życiu."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
-msgstr ""
+msgstr "### Cele nauki\n"
+        "Mamy nadzieję, że dzięki wersji *4Math* nauczysz się:"
 
 
 msgid "STR_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "- Potrafisz wyjaśnić, w jaki sposób modele matematyczne mogą być stosowane w biologii\n"
+            "- Potrafisz wymienić kilka przykładów biologicznych modeli matematycznych i wyjaśnić, w jaki sposób są one zbudowane\n"
+            "- Potrafisz opisać ochronę roślin przed światłem poprzez niefotochemiczne wygaszanie\n"
+            "- Potrafisz podsumować, w jaki sposób fluorescencja może być wykorzystywana do pomiaru fotosyntezy.\n"
+            "- Potrafisz tworzyć symulacje fotosyntezy i wyjaśniać ich biologiczne znaczenie"
 
 msgid "STR_LINK_PLANTS_AND_PYTHON"
-msgstr ""
+msgstr "Ta strona i wszystkie nasze modele są napisane w języku programowania Python. Jeśli jesteś zainteresowany samodzielnym korzystaniem z Pythona, zapoznaj się z [Plants and Python](https://plantsandpython.github.io/PlantsAndPython), kursem programowania dla biologów."
 
 # Grammarly checked
 #: Start.py:26
@@ -298,21 +305,28 @@ msgstr "Wreszcie, poznasz pamięć światła roślin na stronie **pamięć świa
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
-msgstr ""
+msgstr "# Fotosynteza"
 
 msgid "PHO_LEARNING_OBJECTIVES"
-msgstr ""
+msgstr "Cele dydaktyczne\n"
+    "- Zrozumiesz, dlaczego zmiany klimatu mają wpływ na rośliny i fotosyntezę.\n"
+    "- Poznasz podstawową zasadę fotosyntezy i dowiesz się, gdzie ona zachodzi.\n"
+    "- Zrozumiesz problem roślin z nadmiarem światła i dowiesz się, jak się przed nim chronią.\n"
+    "#### Co musisz wiedzieć: \n"
+    "- Struktura rośliny\n"
+    "- Struktura komórki\n"
+    "- Funkcja błony komórkowej"
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:12
 msgid "PHO_HEADLINE_CLIMATE"
-msgstr ""
+msgstr "## Zmiany klimatyczne"
 
 #: Lisa's introduction
 # Grammarly checked
 #: pages/photosynthesis.py:13
 msgid "PHO_INTRODUCTION_CLIMATE_CHANGE"
-msgstr ""
+msgstr "Ponieważ rośliny **nie mogą uciec**, muszą przystosować się do zmienionych warunków środowiskowych. Rośliny są podstawą życia na Ziemi (rys. po lewej), a ich adaptacja jest kluczowa dla funkcjonowania świata. Zmienne warunki, np. zmienne temperatury (ciepło i zimno), powodzie i susze, mogą prowadzić do stresujących zdarzeń u roślin. Jak podsumowano na rysunku po prawej stronie, czynniki te mogą mieć różne krótko- i długoterminowe skutki dla roślin. Niemniej jednak, rośliny doświadczają stresu przy nagłych zmianach, ale mają *bardzo elastyczny metabolizm* do adaptacji. *Jedną z pierwszych reakcji w metabolizmie roślin jest fotosynteza, która **dostarcza energii** do podtrzymania życia roślin. Sama fotosynteza jest bezpośrednio i pośrednio zależna od zmienionych warunków środowiskowych. Dlatego też analiza fotosyntezy i wiązania CO₂ przez rośliny jest istotną miarą ogólnej **zdolności roślin**, **produktywności** i **przeżycia**. W związku z tym podstawowe badania nad fotosyntezą i jej wydajnością są niezbędne do oceny naszego zmieniającego się świata."
 
 #: Lisa's introduction
 #: pages/photosynthesis.py:16
@@ -342,7 +356,7 @@ msgstr "## Proces fotosyntezy"
 # Grammarly checked
 #: pages/photosynthesis.py:35
 msgid "PHO_PHOTOSYNTHESIS_EXPLANATION_1"
-msgstr ""
+msgstr "Rośliny są autotroficzne i mogą wytwarzać złożone związki organiczne, takie jak cukry, lipidy i białka z prostych składników odżywczych."
 
 # Grammarly checked
 #: pages/photosynthesis.py:36
@@ -1222,7 +1236,7 @@ msgstr "# Podsumowanie"
 msgid "CON_CONCLUSION_TEXT_ONE"
 msgstr ""
 
-# Grammarly checked
+# Grammarly checked     
 #: pages/conclusion.py:19
 msgid "CON_CONCLUSION_TEXT_TWO"
 msgstr ""
