@@ -5,7 +5,7 @@ This is a Teaching Tool in Biology: an ongoing project launched by Sarah Philipp
 Here, we created an interactive dashboard, aimed at both curious newcomers and more advanced learners. The user can first read basic information about photosynthesis and photoprotection, learn about fluorescence measurements and finally, perform their own experiments using their _in silico_, varying light conditions and creating _in silico_ synthetic strains that, maybe, can produce more oxygen.
 With this tool we want to provide an insight into how photosynthesis works and can be described in mathematical terms. Most importantly, we hope you will have fun by playing with it.
 
-You can check out the online version [here](https://annamatuszynska-biotool-photosynthesis-start-wrd4lw.streamlit.app/).
+You can check out the online version [here](https://comphot-biotool.streamlit.app//).
 
 ### Setting up
 
@@ -14,7 +14,7 @@ We recommend setting up a virtual environment of your choice, e.g. with conda, a
 ```bash
 conda create -n biotoolenvironment python==3.11 pip
 conda activate biotoolenvironment
-pip install -r requirements.txt 
+pip install -r requirements.txt
 ```
 
 ### Run the web page
