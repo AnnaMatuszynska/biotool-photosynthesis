@@ -4,12 +4,12 @@ from PIL import Image
 from typing import Callable
 from utils import (
     get_localised_text,
+    include_image,
+    include_ytvideo,
     make_prev_next_button,
     markdown_click,
     resetting_click_detector_setup,
     track_page_visit,
-    include_ytvideo,
-    include_image
 )
 
 
@@ -19,7 +19,12 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     # Learning objectives
     st.info(text("MTH_LEARNING_OBJECTIVES"))
-    make_prev_next_button("photosynthesis", "computational models", key="mth_learning_objectives")
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
+        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
+        key="mth_learning_objectives",
+    )
 
     _, col2, _ = st.columns(3)
     with col2:
@@ -43,7 +48,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         markdown_click("MTH_EXPLANATION_MEASUREMENT_1", text)
         st.markdown(text("MTH_INTRODUCTION_PHI"), unsafe_allow_html=True)
         include_ytvideo("https://youtu.be/EwXkOlMBl3o", 0.9)
-        
+
     if st.session_state["show_video_transcripts"]:
         with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):
             st.write(text("MTH_VIDEO_TRANSCRIPT_PAM"))
@@ -54,10 +59,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     with st.expander(text("MTH_MEASURING_LIGHT_FLUORESCENCE"), expanded=True):
         st.markdown(text("MTH_EXPLANATION_INTRODUCTION_ATTEMPTS"))
         include_image(
-            "pictures/PAMbasics.png",
-            img_width=1,
-            caption=text("MTH_CAPTION_ABB2"),
-            center_caption=True
+            "pictures/PAMbasics.png", img_width=1, caption=text("MTH_CAPTION_ABB2"), center_caption=True
         )
 
     # if version == "4Bio":
@@ -73,14 +75,14 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             "pictures/Beispielabbildung_de.png",
             img_width=1,
             caption=text("MTH_CAPTION_ABB2"),
-            center_caption=True
+            center_caption=True,
         )
     else:
         include_image(
             "pictures/Beispielabbildung_en.png",
             img_width=1,
             caption=text("MTH_CAPTION_ABB2"),
-            center_caption=True
+            center_caption=True,
         )
 
 
@@ -123,5 +125,9 @@ if __name__ == "__main__":
     track_page_visit("method")
     make_page(text, language, version)
     make_literature(text, language, version)
-    make_prev_next_button(text("SDE_PAGENAMES_PHOTOSYNTHESIS"), text("SDE_PAGENAMES_COMPUTATIONALMODELS"))
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
+        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
+    )
     fill_sidebar(placeholder_sidebar)

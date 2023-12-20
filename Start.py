@@ -87,7 +87,11 @@ if __name__ == "__main__":
     make_introduction(text)
     make_chapters(text, version, language)
     make_literature(text, version, language)
-    make_prev_next_button(None, text("SDE_PAGENAMES_PHOTOSYNTHESIS"))
+    make_prev_next_button(
+        text,
+        None,
+        text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
+    )
     fill_sidebar(placeholder_sidebar)
 
 

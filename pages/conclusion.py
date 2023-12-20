@@ -27,5 +27,9 @@ if __name__ == "__main__":
     placeholder_sidebar = make_sidebar()
     track_page_visit("conclusion")
     make_page(text, language, version)
-    make_prev_next_button(text("SDE_PAGENAMES_PLANTLIGHTMEMORY"), text("SDE_PAGENAMES_CONTACT"))
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
+        text("SDE_PAGENAMES_CONTACT"),
+    )
     fill_sidebar(placeholder_sidebar)

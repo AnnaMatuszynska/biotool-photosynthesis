@@ -19,6 +19,12 @@ msgstr ""
 msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
+msgid "SDE_PREVIOUS"
+msgstr "Dos"
+
+msgid "SDE_NEXT"
+msgstr "Plus loin"
+
 msgid "SDE_SIDEBAR_SETTINGS"
 msgstr "Paramètres"
 

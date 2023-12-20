@@ -20,13 +20,17 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     # Learning objectives
     st.info(text("PHO_LEARNING_OBJECTIVES"))
-    make_prev_next_button("start", "measuring method", key="pho_learning_objectives")
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_START"),
+        text("SDE_PAGENAMES_MEASURINGMETHOD"),
+        key="pho_learning_objectives",
+    )
 
     markdown_click("PHO_HEADLINE_CLIMATE", text)
     markdown_click("PHO_INTRODUCTION_CLIMATE_CHANGE", text)
 
     if version == "4Math":
-
         col1, col2 = st.columns(2)
         with col1:
             if language == "German":
@@ -44,7 +48,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         markdown_click("PHO_POINT_2", text)
         markdown_click("PHO_POINT_3", text)
         markdown_click("PHO_END_OF_INTRODUCTION", text)
-
 
     markdown_click("PHO_HEADLINE_PHOTOSYNTHESIS", text)
     markdown_click("PHO_PHOTOSYNTHESIS_EXPLANATION_1", text)
@@ -120,5 +123,9 @@ if __name__ == "__main__":
     track_page_visit("photosynthesis")
     make_page(text, language, version)
     make_literature(text, language, version)
-    make_prev_next_button(text("SDE_PAGENAMES_START"), text("SDE_PAGENAMES_MEASURINGMETHOD"))
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_START"),
+        text("SDE_PAGENAMES_MEASURINGMETHOD"),
+    )
     fill_sidebar(placeholder_sidebar)
