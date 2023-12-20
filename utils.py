@@ -9,7 +9,7 @@ from logging import getLogger
 from pathlib import Path
 from st_click_detector import click_detector
 from streamlit_extras.switch_page_button import switch_page
-from typing import Callable
+from typing import Any, Callable
 from functools import partial
 
 def _get_localised_text_warn(gettext, plc):
