@@ -227,7 +227,7 @@ msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
 msgstr "La photosynthèse est le moteur de ce monde. De l'air que vous respirez à la nourriture que vous mangez, en fin de compte, c'est la lumière qui est à l'origine des plantes, des algues et des cellules plus petites. Sachant cela, vous pouvez comprendre à quel point il est important de connaître le fonctionnement de la photosynthèse. Si nous le savions exactement, nous pourrions être en mesure d'améliorer artificiellement ce processus naturel et de contribuer à la production de nourriture, de carburant et de nombreux autres produits chimiques dont nous avons besoin dans notre vie."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
-msgstr "### Objectifs pédagogiques\n"
+msgstr "### Objectifs éducatifs\n"
         "Ce que nous espérons que vous apprendrez en suivant la version *4Bio*&nbsp;: "
 
 
