@@ -20,10 +20,10 @@ msgid "INSERT_PLACEHOLDER_HERE"
 msgstr ""
 
 msgid "SDE_PREVIOUS"
-msgstr "Atrás"
+msgstr "Página precedente"
 
 msgid "SDE_NEXT"
-msgstr "Más"
+msgstr "Página siguiente"
 
 msgid "SDE_SIDEBAR_SETTINGS"
 msgstr "Ajustes"
