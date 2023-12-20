@@ -5,20 +5,22 @@ import os
 import pandas as pd
 import re
 import streamlit as st
+from functools import partial
 from logging import getLogger
 from pathlib import Path
 from st_click_detector import click_detector
 from streamlit_extras.switch_page_button import switch_page
 from typing import Any, Callable
-from functools import partial
+
 
 def _get_localised_text_warn(gettext, plc):
     res = gettext(plc)
-    if res == plc or len(res)==0:
+    if res == plc or len(res) == 0:
         st.sidebar.warning(f"No valid text for placeholder {plc}")
     return res
 
-def get_localised_text(version: str, language: str, do_warn:bool=False) -> Callable[[str], str]:
+
+def get_localised_text(version: str, language: str, do_warn: bool = False) -> Callable[[str], str]:
     version = version.lower()
     try:
         localizator = gettext.translation(
@@ -37,6 +39,7 @@ def get_localised_text(version: str, language: str, do_warn:bool=False) -> Calla
 
 
 def make_prev_next_button(
+    text: Callable[[str], str],
     prev: str | None,
     next: str | None,
     key: str | None = None,
@@ -44,7 +47,7 @@ def make_prev_next_button(
     col1, col2 = st.columns([1, 1])
     with col1:
         if st.button(
-            "Previous",
+            text("SDE_PREVIOUS"),
             disabled=True if prev is None else False,
             key=key + "_prev" if key is not None else key,
             use_container_width=True,
@@ -53,7 +56,7 @@ def make_prev_next_button(
                 switch_page(prev)
     with col2:
         if st.button(
-            "Next",
+            text("SDE_NEXT"),
             disabled=True if next is None else False,
             key=key + "_next" if key is not None else key,
             use_container_width=True,

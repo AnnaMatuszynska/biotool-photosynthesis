@@ -24,7 +24,12 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     # Learning objectives
     st.info(text("MDL_LEARNING_OBJECTIVES"))
-    make_prev_next_button("measuring method", "experiments in silico", key="mdl_learning_objectives")
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_MEASURINGMETHOD"),
+        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
+        key="mdl_learning_objectives",
+    )
 
     st.markdown(text("MDL_HEADLINE_MODEL"))
 
@@ -128,7 +133,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
         def i_slider_callback():
             remain = 1000 - st.session_state.i_slider
-            sum = st.session_state.s_slider  + st.session_state.r_slider
+            sum = st.session_state.s_slider + st.session_state.r_slider
             st.session_state.s_slider = int(st.session_state.s_slider / sum * remain)
             st.session_state.r_slider = int(st.session_state.r_slider / sum * remain)
 
@@ -138,70 +143,70 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             st.session_state.i_slider = int(st.session_state.i_slider / sum * remain)
             st.session_state.s_slider = int(st.session_state.s_slider / sum * remain)
 
-        if 's_slider' not in st.session_state:
-            st.session_state['s_slider'] = 900
+        if "s_slider" not in st.session_state:
+            st.session_state["s_slider"] = 900
 
-        if 'i_slider' not in st.session_state:
-            st.session_state['i_slider'] = 100
+        if "i_slider" not in st.session_state:
+            st.session_state["i_slider"] = 100
 
-        if 'r_slider' not in st.session_state:
-            st.session_state['r_slider'] = 0
+        if "r_slider" not in st.session_state:
+            st.session_state["r_slider"] = 0
 
         col1_______, col2_______, col3_______ = st.columns(3)
 
         with col1_______:
             st.markdown(
-                f'''
+                f"""
                 <div style="background-color: rgb(249,165,27); padding: 2px; border: 5px solid rgb(253,207,140); border-radius: 0px; text-align: center; color: black">
                     {text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_SUSCEPTIBLE")} (S)
                 </div>
-                ''',
-                unsafe_allow_html=True
+                """,
+                unsafe_allow_html=True,
             )
 
             s_slider = st.slider(
-                label='S',
+                label="S",
                 min_value=0,
                 max_value=1000,
                 on_change=s_slider_callback,
-                key='s_slider',
-                label_visibility='collapsed'
+                key="s_slider",
+                label_visibility="collapsed",
             )
         with col2_______:
             st.markdown(
-                f'''
+                f"""
                 <div style="background-color: rgb(209,35,42); padding: 2px; border: 5px solid rgb(229,146,121); border-radius: 0px; text-align: center; color: black">
                     {text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_INFECTED")} (I)
                 </div>
-                ''',
-                unsafe_allow_html=True
+                """,
+                unsafe_allow_html=True,
             )
 
             i_slider = st.slider(
-                label='I',
+                label="I",
                 min_value=0,
                 max_value=1000,
                 on_change=i_slider_callback,
-                key='i_slider',
-                label_visibility='collapsed'
+                key="i_slider",
+                label_visibility="collapsed",
             )
         with col3_______:
             st.markdown(
-                f'''
+                f"""
                 <div style="background-color: #1062ef; padding: 2px; border: 5px solid #87b0f7; border-radius: 0px; text-align: center; color: black">
                     {text("MDL_MATHEMATICAL_MODELLING_EXAMPLE_RECOVERED")} (R)
                 </div>
-                ''',
-                unsafe_allow_html=True
+                """,
+                unsafe_allow_html=True,
             )
 
             r_slider = st.slider(
-                label='R',
+                label="R",
                 min_value=0,
                 max_value=1000,
                 on_change=r_slider_callback,
-                key='r_slider',
-                label_visibility='collapsed'
+                key="r_slider",
+                label_visibility="collapsed",
             )
 
         col1_, col2_, col3_ = st.columns([1.5, 1, 1])
@@ -268,7 +273,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         col1______, col2______, col3______ = st.columns([0.2, 0.6, 0.2])
 
         with col2______:
-
             st.pyplot(sir_fig, transparent=True)
 
         st.session_state["SIR_model"].update(
@@ -582,6 +586,10 @@ if __name__ == "__main__":
     track_page_visit("model_explain")
     make_page(text, language, version)
     make_literature(text, language, version)
-    make_prev_next_button(text("SDE_PAGENAMES_MEASURINGMETHOD"), text("SDE_PAGENAMES_EXPERIMENTSINSILICO"))
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_MEASURINGMETHOD"),
+        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
+    )
     style_page()
     fill_sidebar(placeholder_sidebar)

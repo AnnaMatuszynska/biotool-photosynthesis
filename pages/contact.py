@@ -17,7 +17,7 @@ def make_page(text: Callable[[str], str], language: str, version: str):
     st.header(":mailbox: " + text("CONT_HEADER"))
 
     st.markdown(text("CONT_SUBHEADER"))
-    
+
     st.markdown(
         "### Sarah Philipps\n"
         f"- **{text('CONT_EMAIL')}** sarah.philipps@rwth-aachen.de\n"
@@ -78,5 +78,5 @@ if __name__ == "__main__":
     placeholder_sidebar = make_sidebar()
     track_page_visit("contact")
     make_page(text, language, version)
-    make_prev_next_button(text("SDE_PAGENAMES_CONCLUSION"), None)
+    make_prev_next_button(text, text("SDE_PAGENAMES_CONCLUSION"), None)
     fill_sidebar(placeholder_sidebar)

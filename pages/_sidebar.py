@@ -1,7 +1,7 @@
 import streamlit as st
 from st_pages import Page, show_pages
 from streamlit.delta_generator import DeltaGenerator
-from typing import cast
+from typing import Callable, cast
 from utils import get_localised_text, icons
 
 
@@ -19,19 +19,74 @@ def make_sidebar() -> DeltaGenerator:
     version: str = st.session_state.version
     language: str = st.session_state.language
     text = get_localised_text(version, language)
-
-    placeholder_sidebar = st.sidebar.container()
-
     st.session_state.setdefault("show_video_transcripts", False)
-    unkeep("show_video_transcripts")
-    st.sidebar.checkbox(
-        label=text("VIDEO_TRANSCRIPT_SWITCH"),
-        value=False,
-        key="_show_video_transcripts",
-        on_change=keep,
-        args=["show_video_transcripts"],
+
+    show_pages(
+        [
+            Page(
+                "Start.py",
+                text("SDE_PAGENAMES_START"),
+                icons["house"],
+            ),
+            Page(
+                "pages/photosynthesis.py",
+                text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
+                icons["leaves"],
+            ),
+            Page(
+                "pages/method.py",
+                text("SDE_PAGENAMES_MEASURINGMETHOD"),
+                icons["books"],
+            ),
+            Page(
+                "pages/model_explain.py",
+                text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
+                icons["computer"],
+            ),
+            Page(
+                "pages/first_analysis.py",
+                text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
+                icons["bar_chart"],
+            ),
+            Page(
+                "pages/plant_memory.py",
+                text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
+                icons["chart_with_upwards_trend"],
+            ),
+            Page(
+                "pages/conclusion.py",
+                text("SDE_PAGENAMES_CONCLUSION"),
+                icons["heavy_check_mark"],
+            ),
+            Page(
+                "pages/contact.py",
+                text("SDE_PAGENAMES_CONTACT"),
+                icons["phone"],
+            ),
+        ]
     )
-    return placeholder_sidebar
+
+    return st.sidebar.container()
+
+
+def rename_pages(text: Callable[[str], str]):
+    from streamlit.source_util import get_pages
+
+    # FIXME: this depends on the order of the dict
+    # and list being the same, which isn't guaranteed
+
+    new_names = [
+        text("SDE_PAGENAMES_START"),
+        text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
+        text("SDE_PAGENAMES_MEASURINGMETHOD"),
+        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
+        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
+        text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
+        text("SDE_PAGENAMES_CONCLUSION"),
+        text("SDE_PAGENAMES_CONTACT"),
+    ]
+    for page, new_name in zip(get_pages("").values(), new_names):
+        page["page_name"] = new_name
 
 
 def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
@@ -39,55 +94,13 @@ def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
     language: str = st.session_state.language
     text = get_localised_text(version, language)
 
+    # Pages
+    rename_pages(text)
+
     # Versions selectbox
     with placeholder_sidebar.container():
         versions = ["4Bio", "4Math"]
         version_display = dict(zip(versions, [text("SDE_4BIO"), text("SDE_4MATH")]))
-
-        show_pages(
-            [
-                Page(
-                    "Start.py",
-                    text("SDE_PAGENAMES_START"),
-                    icons["house"],
-                ),
-                Page(
-                    "pages/photosynthesis.py",
-                    text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
-                    icons["leaves"],
-                ),
-                Page(
-                    "pages/method.py",
-                    text("SDE_PAGENAMES_MEASURINGMETHOD"),
-                    icons["books"],
-                ),
-                Page(
-                    "pages/model_explain.py",
-                    text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
-                    icons["computer"],
-                ),
-                Page(
-                    "pages/first_analysis.py",
-                    text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
-                    icons["bar_chart"],
-                ),
-                Page(
-                    "pages/plant_memory.py",
-                    text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
-                    icons["chart_with_upwards_trend"],
-                ),
-                Page(
-                    "pages/conclusion.py",
-                    text("SDE_PAGENAMES_CONCLUSION"),
-                    icons["heavy_check_mark"],
-                ),
-                Page(
-                    "pages/contact.py",
-                    text("SDE_PAGENAMES_CONTACT"),
-                    icons["phone"],
-                ),
-            ]
-        )
 
         st.write(f"## {text('SDE_SIDEBAR_SETTINGS')} :gear:")
 
@@ -105,10 +118,10 @@ def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
         )
         # language selectbox
         languages = {
-            'English': '🇬🇧 ' + text('SDE_LANGUAGE_EN'),
-            'German': '🇩🇪 ' + text('SDE_LANGUAGE_DE'),
-            'Polish': '🇵🇱 ' + text('SDE_LANGUAGE_PL'),
-            'French': '🇫🇷 ' + text('SDE_LANGUAGE_FR'),
+            "English": "🇬🇧 " + text("SDE_LANGUAGE_EN"),
+            "German": "🇩🇪 " + text("SDE_LANGUAGE_DE"),
+            "Polish": "🇵🇱 " + text("SDE_LANGUAGE_PL"),
+            "French": "🇫🇷 " + text("SDE_LANGUAGE_FR"),
         }
 
         unkeep("language")
@@ -122,6 +135,15 @@ def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
                 on_change=keep,
                 args=["language"],
             ),
+        )
+
+        unkeep("show_video_transcripts")
+        st.checkbox(
+            label=text("VIDEO_TRANSCRIPT_SWITCH"),
+            value=False,
+            key="_show_video_transcripts",
+            on_change=keep,
+            args=["show_video_transcripts"],
         )
 
 

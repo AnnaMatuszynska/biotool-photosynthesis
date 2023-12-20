@@ -22,7 +22,12 @@ def make_page(text: Callable[[str], str]) -> bool:
 
     # Learning objectives
     st.info(text("FAL_LEARNING_OBJECTIVES"))
-    make_prev_next_button("computational models", "plant light memory", key="fal_learning_objectives")
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
+        text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
+        key="fal_learning_objectives",
+    )
 
     st.markdown(text("FAL_HEADLINE_MODEL_CONSTRUCTION"))
 
@@ -555,6 +560,10 @@ if __name__ == "__main__":
     track_page_visit("first_analysis")
     see_interpr = make_page(text)
     make_literature(text, version, language)
-    make_prev_next_button(text("SDE_PAGENAMES_COMPUTATIONALMODELS"), text("SDE_PAGENAMES_PLANTLIGHTMEMORY"))
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
+        text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
+    )
     style_guinding_questions(see_interpr)
     fill_sidebar(placeholder_sidebar)

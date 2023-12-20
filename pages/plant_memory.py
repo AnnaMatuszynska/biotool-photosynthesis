@@ -24,7 +24,12 @@ def make_page(text: Callable[[str], str], version: str) -> None:
 
     # Learning objectives
     st.info(text("MEM_LEARNING_OBJECTIVES"))
-    make_prev_next_button("experiments in silico", "take home messages", key="mem_learning_objectives")
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
+        text("SDE_PAGENAMES_CONCLUSION"),
+        key="mem_learning_objectives",
+    )
 
     col1, col2, _ = st.columns(3)
     with col2:
@@ -300,6 +305,10 @@ if __name__ == "__main__":
     track_page_visit("plant_memory")
     see_interpr = make_page(text, version)
     make_literature(text, version, language)
-    make_prev_next_button(text("SDE_PAGENAMES_EXPERIMENTSINSILICO"), text("SDE_PAGENAMES_CONCLUSION"))
+    make_prev_next_button(
+        text,
+        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
+        text("SDE_PAGENAMES_CONCLUSION"),
+    )
     style_guinding_questions(see_interpr)
     fill_sidebar(placeholder_sidebar)
