@@ -74,7 +74,6 @@ def rename_pages(text: Callable[[str], str]):
 
     # FIXME: this depends on the order of the dict
     # and list being the same, which isn't guaranteed
-
     new_names = [
         text("SDE_PAGENAMES_START"),
         text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
@@ -90,8 +89,11 @@ def rename_pages(text: Callable[[str], str]):
     for page, new_name in zip(pages.values(), new_names):
         page["page_name"] = new_name
 
+    # FIXME: update cache. This one might be dangerous
     with _pages_cache_lock:
         _cached_pages.update(pages)
+
+    _on_pages_changed.send()
 
 
 def fill_sidebar(placeholder_sidebar: DeltaGenerator) -> None:
