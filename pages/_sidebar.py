@@ -1,8 +1,8 @@
 import streamlit as st
+from st_pages import Page, show_pages
 from streamlit.delta_generator import DeltaGenerator
 from typing import cast
 from utils import get_localised_text, icons
-from st_pages import Page, show_pages
 
 
 def keep(key):
