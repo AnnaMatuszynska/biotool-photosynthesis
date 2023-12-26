@@ -206,7 +206,7 @@ msgstr "Strona ta jest dostępna online i można z niej bezpośrednio korzystać
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
-msgstr "# Fotosynteza *in silico*: platforma edukacyjna do badania fotosyntezy poprzez symulacje komputerowe"
+msgstr "# Fotosynteza obliczeniowa (ComPhot): Symulacyjna platforma edukacyjna do badania fotosyntezy"
 
 #: Intro by Anna
 # Grammarly checked

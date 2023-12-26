@@ -607,12 +607,12 @@ msgid "STR_HEADLINE_MAIN"
 #: Start.py:10
 msgid "STR_INTRO"
 4math-en msgstr "Welcome to a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of 21st-century students. We want to show how computational modeling supports the current research in increasing our understanding of how the world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening to the process of photosynthesis."
-4math-de msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler:innen des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
+4math-de msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler:innen des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Photosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
 4math-fr msgstr "Bienvenue sur le site d'un outil d'enseignement de la biologie, un projet lancé par le **Computational Life Science Lab** de l'université RWTH d'Aix-la-Chapelle, en Allemagne. Notre objectif est de fournir un outil d'enseignement adapté aux besoins des étudiants du 21e siècle. Nous voulons montrer comment la modélisation computationnelle soutient la recherche actuelle dans l'amélioration de notre compréhension du fonctionnement du monde. Nous avons choisi la photosynthèse comme LE processus pour le démontrer. En fin de compte, la photosynthèse est sans doute le processus le plus important sur Terre ! Pourquoi ne pas commencer votre aventure avec ce tableau de bord interactif en écoutant le processus de la photosynthèse."
 4math-pl msgstr "To jest narzędzie do nauczania biologii, projekt uruchomiony przez **Computational Life Science Lab** na Politechnice w Akwizgranie, w Niemczech. Naszym celem jest dostarczenie narzędzia dydaktycznego dostosowanego do potrzeb uczniów XXI wieku. Pragniemy pokazać w jaki sposób modelowanie komputerowe wspiera obecne badania naukowe zwiększając nasz stopień zrozumienia otaczającego nas świata. Wybraliśmy fotosyntezę jako proces, aby to zademonstrować. W końcu fotosynteza jest prawdopodobnie najważniejszym procesem na Ziemi! Proponujemy, żeby Twoja przygoda z tą stroną zaczęła się od obejrzenia krótkiego filmiku o fotosyntezie."
 4math-es msgstr ""
 4bio-en msgstr "Welcome to a Teaching Tool in Biology, a project launched by the **Computational Life Science Lab** at the RWTH Aachen University, Germany. Our goal is to provide a teaching tool applicable to the needs of 21st-century students. We want to show how computational modeling supports the current research in increasing our understanding of how the world works. We have selected photosynthesis as THE process to demonstrate it. In the end, photosynthesis is arguably the most important process on Earth! Why don't you start your adventure with this interactive dashboard by listening to the process of photosynthesis."
-4bio-de msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen, Deutschland. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler:innen des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
+4bio-de msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen, Deutschland. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler:innen des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Photosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
 4bio-fr msgstr "Bienvenue sur le site d'un outil d'enseignement de la biologie, un projet lancé par le **Computational Life Science Lab** de l'université RWTH d'Aix-la-Chapelle, en Allemagne. Notre objectif est de fournir un outil d'enseignement adapté aux besoins des étudiants du 21e siècle. Nous voulons montrer comment la modélisation computationnelle soutient la recherche actuelle dans l'amélioration de notre compréhension du fonctionnement du monde. Nous avons choisi la photosynthèse comme LE processus pour le démontrer. En fin de compte, la photosynthèse est sans doute le processus le plus important sur Terre ! Pourquoi ne pas commencer votre aventure avec ce tableau de bord interactif en écoutant le processus de la photosynthèse."
 4bio-pl msgstr "To jest narzędzie do nauczania biologii, projekt uruchomiony przez **Computational Life Science Lab** na Politechnice w Akwizgranie, w Niemczech. Naszym celem jest dostarczenie narzędzia dydaktycznego dostosowanego do potrzeb uczniów XXI wieku. Pragniemy pokazać w jaki sposób modelowanie komputerowe wspiera obecne badania naukowe zwiększając nasz stopień zrozumienia otaczającego nas świata. Wybraliśmy fotosyntezę jako proces, aby to zademonstrować. W końcu fotosynteza jest prawdopodobnie najważniejszym procesem na Ziemi! Proponujemy, żeby Twoja przygoda z tą stroną zaczęła się od obejrzenia krótkiego filmiku o fotosyntezie."
 4bio-es msgstr ""
@@ -661,12 +661,12 @@ msgid "STR_SPECIFIC_USE"
 
 msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
 4math-en msgstr "Photosynthesis is what makes this world go. From the air you breathe to the food you eat, in the end, it's all light driven by plants, algae, and smaller cells. Knowing this, you can understand how important it is to know how photosynthesis works. If we knew that exactly, we might be able to artificially improve this natural process and help with the production of food, fuel, and many other chemicals we need in our lives."
-4math-de msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu begreifen, wie die Fotosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
+4math-de msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu begreifen, wie die Photosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
 4math-fr msgstr "La photosynthèse est le moteur de ce monde. De l'air que vous respirez à la nourriture que vous mangez, en fin de compte, c'est la lumière qui est à l'origine des plantes, des algues et des cellules plus petites. Sachant cela, vous pouvez comprendre à quel point il est important de connaître le fonctionnement de la photosynthèse. Si nous le savions exactement, nous pourrions être en mesure d'améliorer artificiellement ce processus naturel et de contribuer à la production de nourriture, de carburant et de nombreux autres produits chimiques dont nous avons besoin dans notre vie."
 4math-pl msgstr "Fotosynteza jest tym, co napędza ten świat. Od powietrza, którym oddychasz, po jedzenie, które spożywasz, wszystko to jest napędzane światłem używanim przez rośliny, algi i mniejsze komórki. Zdając sobię z tego sprawę, można zrozumieć, jak ważne jest dokładne poznanie działania fotosyntezy. Dzięki tej wiedzy moglibyśmy sztucznie ulepszyć ten naturalny proces i pomóc w produkcji żywności, paliwa i wielu innych substancji chemicznych, których potrzebujemy w naszym życiu."
 4math-es msgstr ""
 4bio-en msgstr "Photosynthesis is what makes this world go. From the air you breathe to the food you eat, in the end, it's all light driven by plants, algae, and smaller cells. Knowing this, you can understand how important it is to know how photosynthesis works. If we knew that exactly, we might be able to artificially improve this natural process and help with the production of food, fuel, and many other chemicals we need in our lives."
-4bio-de msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu begreifen, wie die Fotosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
+4bio-de msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu begreifen, wie die Photosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
 4bio-fr msgstr "La photosynthèse est le moteur de ce monde. De l'air que vous respirez à la nourriture que vous mangez, en fin de compte, c'est la lumière qui est à l'origine des plantes, des algues et des cellules plus petites. Sachant cela, vous pouvez comprendre à quel point il est important de connaître le fonctionnement de la photosynthèse. Si nous le savions exactement, nous pourrions être en mesure d'améliorer artificiellement ce processus naturel et de contribuer à la production de nourriture, de carburant et de nombreux autres produits chimiques dont nous avons besoin dans notre vie."
 4bio-pl msgstr "Fotosynteza jest tym, co napędza ten świat. Od powietrza, którym oddychasz, po jedzenie, które spożywasz, wszystko to jest napędzane światłem używanim przez rośliny, algi i mniejsze komórki. Zdając sobię z tego sprawę, można zrozumieć, jak ważne jest dokładne poznanie działania fotosyntezy. Dzięki tej wiedzy moglibyśmy sztucznie ulepszyć ten naturalny proces i pomóc w produkcji żywności, paliwa i wielu innych substancji chemicznych, których potrzebujemy w naszym życiu."
 4bio-es msgstr ""
@@ -846,7 +846,7 @@ msgid "STR_PHOTOSYNTHESIS"
 4math-pl msgstr "Na stronie **fotosynteza** dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony. W tej wersji 4Math znajduje się więcej szczegółowych informacji na temat zmian klimatycznych, a także molekularny opis mechanizmu fotoprotekcji."
 4math-es msgstr ""
 4bio-en msgstr "On the **photosynthesis page**, you will learn everything you need to know about photosynthesis to use the following pages fully."
-4bio-de msgstr "Auf der Seite **Fotosynthese** erfährst du alles, was du über die Fotosynthese wissen musst, um die folgenden Seiten vollständig nutzen zu können."
+4bio-de msgstr "Auf der Seite **Photosynthese** erfährst du alles, was du über die Photosynthese wissen musst, um die folgenden Seiten vollständig nutzen zu können."
 4bio-fr msgstr "Sur la page **photosynthèse**, vous apprendrez tout ce qu'il faut savoir sur la photosynthèse pour utiliser au mieux les pages suivantes."
 4bio-pl msgstr "W zakładce **fotosynteza** dowiesz się wszystkiego, co musisz wiedzieć o fotosyntezie, aby w pełni wykorzystać kolejne strony."
 4bio-es msgstr ""
@@ -869,12 +869,12 @@ msgid "STR_METHOD"
 #: Start.py:36
 msgid "STR_MODEL"
 4math-en msgstr "Mathematical modelling theory and examples of popular models be presented on the **computational models page**. Additionally, we demonstrate the implementation of mathematical model in a programming language Python."
-4math-de msgstr "Wie die Überschrift bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Mehr über mathematische Modelle im Allgemeinen und über Fotosynthesemodelle erfährst du auf der Seite <b>Computermodelle</b>."
+4math-de msgstr "Wie die Überschrift bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Mehr über mathematische Modelle im Allgemeinen und über Photosynthesemodelle erfährst du auf der Seite <b>Computermodelle</b>."
 4math-fr msgstr "La théorie de la modélisation mathématique et des exemples de modèles populaires sont présentés sur la page **modélisation computationnelle**. De plus, nous démontrons l'implémentation d'un modèle mathématique dans le langage de programmation Python."
 4math-pl msgstr "Jak już powiedziano w nagłówku, pracujemy *in silico*, tj. z modelami matematycznymi. Na stronie **modele obliczeniowe** dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy."
 4math-es msgstr ""
 4bio-en msgstr "As the headline already told you, we work <i>in silico</i>, i.e., with mathematical models. On the <b>computational models page</b> you will learn something about mathematical models in general, as well as something about photosynthesis models. In the <a href='#' id='4Math'>4Math</a> version you can also learn something about how to implement such a model in the programming language Python."
-4bio-de msgstr "Wie die Überschrift bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Mehr über mathematische Modelle im Allgemeinen und über Fotosynthesemodelle erfährst du auf der Seite <b>Computermodelle</b>. In der <a href='#' id='4Math'>4Math</a>-Version kannst du auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
+4bio-de msgstr "Wie die Überschrift bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Mehr über mathematische Modelle im Allgemeinen und über Photosynthesemodelle erfährst du auf der Seite <b>Computermodelle</b>. In der <a href='#' id='4Math'>4Math</a>-Version kannst du auch etwas über die Implementierung eines mathematischen Modells in der Programmiersprache Python lernen."
 4bio-fr msgstr "Comme le titre l'indique, nous travaillons <i>in silico</i>, c'est-à-dire avec des modèles mathématiques. Sur la page <b>modélisation computationnelle</b>, vous apprendrez quelque chose sur les modèles mathématiques en général, ainsi que sur les modèles de photosynthèse. Dans la version <a href='#' id='4Math'>4Math</a> vous pouvez également apprendre comment implémenter un tel modèle dans le langage de programmation Python."
 4bio-pl msgstr "Jak w samym tytule tej strony, pracujemy <i>in silico</i>, tj. z modelami matematycznymi. Na stronie <b>modele obliczeniowe</b> dowiesz się czegoś o modelach matematycznych w ogóle, a także o modelach fotosyntezy. W wersji <a href='#' id='4Math'>4Math</a> można również dowiedzieć się o implementacji modelu matematycznego w jęyzku programowania Python."
 4bio-es msgstr ""
@@ -911,12 +911,12 @@ msgid "STR_MEMORY"
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
 4math-en msgstr "# Photosynthesis"
-4math-de msgstr "# Fotosynthese"
+4math-de msgstr "# Photosynthese"
 4math-fr msgstr "# Photosynthèse"
 4math-pl msgstr "# Fotosynteza"
 4math-es msgstr ""
 4bio-en msgstr "# Photosynthesis"
-4bio-de msgstr "# Fotosynthese"
+4bio-de msgstr "# Photosynthese"
 4bio-fr msgstr "# Photosynthèse"
 4bio-pl msgstr "# Fotosynteza"
 4bio-es msgstr ""
@@ -1203,12 +1203,12 @@ msgid "PHO_PHOTOSYNTHESIS_LOCATION_EXPLANATION"
 #: pages/photosynthesis.py:50
 msgid "PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
 4math-en msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
-4math-de msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
+4math-de msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Photosynthese notwendig sind."
 4math-fr msgstr "Complexes à l'intérieur de la membrane thylakoïde, nécessaires à la photosynthèse."
 4math-pl msgstr ""
 4math-es msgstr ""
 4bio-en msgstr "Complexes within the thylakoid membrane, which are necessary for photosynthesis."
-4bio-de msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
+4bio-de msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Photosynthese notwendig sind."
 4bio-fr msgstr "Complexes à l'intérieur de la membrane thylakoïde, nécessaires à la photosynthèse."
 4bio-pl msgstr ""
 4bio-es msgstr ""
@@ -1534,7 +1534,7 @@ msgid "MTH_GROWING_PLANTS_1"
 msgid "MTH_INTRODUCTION_GLOWING"
 4math-en msgstr "Here is where a specialty of plants comes into play: They can re-emit light and, in proper conditions, shine! When light shines on leaves, they use most of the light to run complex photochemical reactions of photosynthesis. Still, a small part of the absorbed light is re-emitted. Something similar happens when your white T-shirt shines purple in a disco's black light. When something shines in a different light color when illuminated, this is called 'fluorescence'. And the plant's fluorescence shine is red."
 4bio-de msgstr "Hier kommt eine Besonderheit der Pflanzen ins Spiel: Sie können leuchten! Wenn Licht auf sie fällt, betreiben \
-        sie nicht nur Fotosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
+        sie nicht nur Photosynthese, sondern geben auch einen kleinen Teil des absorbierten Lichts ab. Etwas Ähnliches \
         passiert, wenn dein weißes T-Shirt im Schwarzlicht einer Disco lila leuchtet. Wenn etwas bei Beleuchtung in \
         einer anderen Lichtfarbe leuchtet, nennt man das 'Fluoreszenz'. Und das Fluoreszenzlicht der Pflanze ist rot."
 4math-fr msgstr "C'est là que la spécialité des plantes entre en jeu&nbsp;: Elles peuvent réémettre de la lumière et, dans des conditions adéquates, briller&nbsp;! Lorsque les feuilles sont éclairées, elles utilisent la majeure partie de la lumière pour effectuer les réactions photochimiques complexes de la photosynthèse. Toutefois, une petite partie de la lumière absorbée est réémise. Il se passe la même chose lorsque votre T-shirt blanc brille en violet sous la lumière noire d'une discothèque. Lorsqu'un objet brille d'une couleur différente lorsqu'il est éclairé, on parle de «&nbsp;fluorescence&nbsp;». L'éclat de fluorescence de la plante est rouge."
@@ -1595,12 +1595,12 @@ msgid "MTH_EXPLANATION_VIDEO"
 #: pages/method.py:31
 msgid "MTH_MEASURING_FLUORESZENZ"
 4math-en msgstr "Measuring Photosynthesis with Fluorescence"
-4math-de msgstr "Messung der Fotosynthese mit Fluoreszenz"
+4math-de msgstr "Messung der Photosynthese mit Fluoreszenz"
 4math-fr msgstr "Mesurer la photosynthèse par fluorescence"
 4math-pl msgstr ""
 4math-es msgstr ""
 4bio-en msgstr "Measuring Photosynthesis with Fluorescence"
-4bio-de msgstr "Messung der Fotosynthese mit Fluoreszenz"
+4bio-de msgstr "Messung der Photosynthese mit Fluoreszenz"
 4bio-fr msgstr "Mesurer la photosynthèse par fluorescence"
 4bio-pl msgstr ""
 4bio-es msgstr ""
@@ -1611,9 +1611,9 @@ msgid "MTH_MEASURING_FLUORESZENZ"
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
 4math-en msgstr "This experiment showed you the shine of plants and how amazingly they can adjust to the light. But how can this help with testing photosynthesis? A lot, because not only does the 'sunscreen' affect leaf fluorescence, but many other factors do, too. If you are interested in how this happens, look into the <a href='#' id='4Bio'>4Bio</a> section. Let's say for now how strongly the plant photosynthesizes also affects the strength of the re-emitted light signal."
 4math-de msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
-        können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
+        können. Aber wie kann das beim Testen der Photosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn du dich dafür interessierst, wie das \
-        geschieht, schaue dir den Abschnitt <a href='#' id='4Bio'>4Bio</a> an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
+        geschieht, schaue dir den Abschnitt <a href='#' id='4Bio'>4Bio</a> an. Nehmen wir einmal an, die Stärke der Photosynthese der \
         Pflanze wirkt sich auch auf die Leuchtkraft aus."
 4math-fr msgstr "Cette expérimentation vous a montré l'éclat des plantes et leur étonnante capacité à s'adapter à la lumière. Mais en quoi cela peut-il vous aider à tester la photosynthèse&nbsp;? Beaucoup, car non seulement la 'protection solaire' affecte la fluorescence des feuilles, mais de nombreux autres facteurs le font également. Si vous souhaitez savoir comment cela se produit, consultez la section <a href='#' id='4Bio'>4Bio</a>. Disons pour l'instant que l'intensité de la photosynthèse de la plante influe également sur l'intensité du signal lumineux réémis."
 4math-pl msgstr ""
@@ -1633,9 +1633,9 @@ msgid "MTH_INTRODUCTION_PHI"
         eine Methode erfunden, um diese Fluoreszenz zu messen und zu verfolgen, wie sie sich im Laufe der Zeit verändert \
         (Du wirst später von dieser 'PAM' hören). Mit ein paar cleveren mathematischen Tricks kannst du dann viele \
         Dinge berechnen, die uns interessieren könnten: Wie gesund das Blatt ist, wie sehr es sich vor dem Licht schützt \
-        und vor allem, wie es Fotosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
+        und vor allem, wie es Photosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
         Buchstaben 'Psi', und du wirst ihn vielleicht in einigen der Diagramme sehen, die du später erstellen wirst. \
-        Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
+        Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Photosynthese betreibt."
 4math-fr msgstr "Les chercheurs ont donc inventé un moyen de mesurer cette fluorescence et de suivre son évolution dans le temps (vous entendrez parler de cette «&nbsp;PAM&nbsp;» plus tard). Grâce à de brillants calculs, ils peuvent ensuite calculer de nombreuses choses qui nous intéressent&nbsp;: L'état de santé de la feuille, la mesure dans laquelle elle se protège de la lumière et, plus important encore, la manière dont elle réalise la photosynthèse. Nous appelons cette dernière mesure «&nbsp;ΦPSII&nbsp;», avec la lettre grecque «&nbsp;Psi&nbsp;»; vous la verrez peut-être sur certains des graphiques que vous produirez plus tard. Plus elle est élevée, mieux c'est, car la plante réalise la photosynthèse de manière plus efficace."
 4math-pl msgstr ""
 4math-es msgstr ""
@@ -1760,11 +1760,11 @@ msgid "MTH_SATURATING_PULSES"
 msgid "MTH_EXPLANATION_ATTEMPTS"
 4math-en msgstr "You need to know one more aspect of PAM: the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fₘ'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fₘ does not. So by comparing normal and maximal yield, we can tell apart changes in and outside photosynthesis, for example, the plant's light protection. When you also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
 4math-de msgstr "Du musst noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
-        paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
+        paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Photosynthesemaschinerie überlastet wird. In diesem \
         Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute \
-        'Fₘ'. Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fₘ nicht der \
+        'Fₘ'. Während die normale Fluoreszenzausbeute von der Photosynthese der Pflanze abhängt, ist dies bei Fₘ nicht der \
         Fall. Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb \
-        der Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
+        der Photosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
         verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
         Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass du verstehst, dass wir vergleichen, welcher \
         Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen über die \
@@ -1774,11 +1774,11 @@ msgid "MTH_EXPLANATION_ATTEMPTS"
 4math-es msgstr ""
 4bio-en msgstr "You need to know one more aspect of PAM: the saturating pulses. Our machine gives the plant a very intense light pulse every few seconds, overloading its photosynthetic machinery. In this state, the measuring light is fully converted into fluorescence, and we measure the maximal fluorescence yield 'Fₘ'. While the standard fluorescence yield depends on the plant's photosynthesis, the Fₘ does not. So by comparing normal and maximal yield, we can tell apart changes in and outside photosynthesis, for example, the plant's light protection. When you also apply protocols of differently colored lights, you can calculate the previously mentioned ΦPSII, NPQ, and many other values. But how that is done goes much too far. Most important is that you understand that we compare what fraction of light is currently turned to fluorescence, how much at maximum, and how these measurements change over time and conditions."
 4bio-de msgstr "Du musst noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
-        paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
+        paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Photosynthesemaschinerie überlastet wird. In diesem \
         Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute \
-        'Fₘ'. Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fₘ nicht der \
+        'Fₘ'. Während die normale Fluoreszenzausbeute von der Photosynthese der Pflanze abhängt, ist dies bei Fₘ nicht der \
         Fall. Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb \
-        der Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
+        der Photosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
         verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
         Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass du verstehst, dass wir vergleichen, welcher \
         Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen über die \
@@ -2498,7 +2498,7 @@ msgid "MDL_HEADLINE_E_PHOTOSYNTHESIS"
 #: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
 4math-en msgstr "In 2012, Xin-Guang Zhu, Yu Wang, Donald R. Ort, and Stephen P. Long developed the *e*-photosynthesis model to provide a realistic representation of photosynthesis [6]. The model is complex and dynamic, encompassing most components of C<sub>3</sub> photosynthesis while only simplifying where necessary. It includes reactions of light absorption, light reactions, and carbon assimilation, building on top of Zhu et al.'s previous works, including their fluorescence model [7] and carbon metabolism model [8]. If you're not familiar with C<sub>3</sub> photosynthesis, you can learn more about the different types of photosynthesis in the Dropbox below."
-4math-de msgstr "2012 entwickelten Xin-Guang Zhu, Yu Wang, Donald R. Ort und Stephen P. Long das *e*-Photosynthesemodell, um eine realistische Darstellung der Photosynthese zu ermöglichen [6]. Das Modell ist komplex und dynamisch und umfasst die meisten Komponenten der C<sub>3</sub>-Photosynthese, vereinfacht aber nur dort, wo es nötig ist. Es umfasst Reaktionen der Lichtabsorption, Lichtreaktionen und Kohlenstoffassimilation und baut auf den früheren Arbeiten von Zhu et al. auf, einschließlich ihres Fluoreszenzmodells [7] und ihres Kohlenstoffstoffwechselmodells [8]. Wenn du mit der C<sub>3</sub>-Fotosynthese nicht vertraut bist, kannst du in der unteren Dropbox mehr über die verschiedenen Arten der Fotosynthese erfahren."
+4math-de msgstr "2012 entwickelten Xin-Guang Zhu, Yu Wang, Donald R. Ort und Stephen P. Long das *e*-Photosynthesemodell, um eine realistische Darstellung der Photosynthese zu ermöglichen [6]. Das Modell ist komplex und dynamisch und umfasst die meisten Komponenten der C<sub>3</sub>-Photosynthese, vereinfacht aber nur dort, wo es nötig ist. Es umfasst Reaktionen der Lichtabsorption, Lichtreaktionen und Kohlenstoffassimilation und baut auf den früheren Arbeiten von Zhu et al. auf, einschließlich ihres Fluoreszenzmodells [7] und ihres Kohlenstoffstoffwechselmodells [8]. Wenn du mit der C<sub>3</sub>-Photosynthese nicht vertraut bist, kannst du in der unteren Dropbox mehr über die verschiedenen Arten der Photosynthese erfahren."
 4math-fr msgstr "En 2012, Xin-Guang Zhu, Yu Wang, Donald R. Ort et Stephen P. Long ont développé le modèle *e*-photosynthesis pour fournir une représentation réaliste de la photosynthèse [6]. Le modèle est complexe et dynamique, comprenant la plupart des composants de la photosynthèse C<sub>3</sub> alors qu'il ne simplifie que là où c'est nécessaire. Il inclut les réactions d'absorption de la lumière, les réactions à la lumière et l'assimilation du carbone, en s'appuyant sur les travaux précédents de Zhu et al., y compris leur modèle de fluorescence [7] et leur modèle de métabolisme du carbone [8]. Si vous n'êtes pas familier avec la photosynthèse C<sub>3</sub>, vous pouvez en apprendre davantage sur les différents types de photosynthèse dans la Dropbox ci-dessous."
 4math-pl msgstr ""
 4math-es msgstr ""
@@ -2911,7 +2911,7 @@ msgid "FAL_HEADLINE_MODEL_CONSTRUCTION"
 #: pages/first_analysis.py:15
 msgid "FAL_CONSTRUCTION_EXPLANATION_1"
 4math-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown in the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
-4math-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
+4math-de msgstr "Die Photosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
         Elektronenträger, Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im \
         Gesamtprozess spielt, haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität \
         angestrebt. Wir haben uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang \
@@ -2921,7 +2921,7 @@ msgid "FAL_CONSTRUCTION_EXPLANATION_1"
 4math-pl msgstr "Fotosynteza jest złożonym procesem, w który zaangażowanych jest wiele podmiotów: białka, enzymy, nośniki elektronów, pompy protonowe, kanały jonowe i wiele innych. Chociaż każdy z nich odgrywa istotną rolę w całym procesie, naszym celem było maksymalne zmniejszenie złożoności modelu do badania pamięci światła. Dlatego skupiliśmy się wyłącznie na regulowanych przez pH, niefotochemicznych procesach związanych z fotosystemem II. Uwzględniliśmy tylko te procesy, które bezpośrednio wpływają lub regulują zakres NPQ, jak pokazano na poniższym schemacie (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
 4math-es msgstr ""
 4bio-en msgstr "Photosynthesis is a complex process involving numerous players: proteins, enzymes, electron carriers, proton pumps, ion channels, and many more. Although each plays an essential role in the overall process, we aimed at maximal reduction of the model complexity for the light-memory study. Therefore, we have focused solely on the pH-regulated, non-photochemical processes associated with photosystem II. We included only those processes that directly affect or regulate the extent of NPQ, as shown in the scheme below (Matuszyńska et al., [2016](https://doi.org/10.1016/j.bbabio.2016.09.003))."
-4bio-de msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, Elektronenträger, \
+4bio-de msgstr "Die Photosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, Elektronenträger, \
         Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im Gesamtprozess spielt, \
         haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität angestrebt. Wir haben \
         uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang mit dem Fotosystem II \

@@ -206,13 +206,13 @@ msgstr "Diese Website ist online verfügbar und direkt nutzbar unter <https://an
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
-msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung der Photosynthese anhand eines Computermodells."
+msgstr "# Computergestützte Photosynthese (ComPhot): Simulationsgestützte Lernplattform zum Studieren der Photosynthese"
 
 #: Intro by Anna
 # Grammarly checked
 #: Start.py:10
 msgid "STR_INTRO"
-msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler:innen des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Fotosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
+msgstr "Willkommen zu unserem Teaching Tool für den Biologieunterricht, einem Projekt des **Computational Life Science Lab** an der RWTH Aachen. Unser Ziel ist es, ein Lehrmaterial zur Verfügung zu stellen, das den Bedürfnissen der Schüler:innen des 21. Jahrhunderts entspricht. Wir wollen zeigen, wie computergestützte Modellierung die aktuelle Forschung unterstützt, um unser Verständnis für die Funktionsweise der Welt zu verbessern. Wir haben die Photosynthese als DEN Prozess ausgewählt, um dies zu demonstrieren. Schließlich ist die Photosynthese der wohl wichtigste Prozess auf der Erde! Beginne dein Abenteuer mit diesem interaktiven Dashboard, indem du dir den Prozess der Photosynthese anhörst."
 
 # Grammarly checked
 #: Start.py:18
@@ -230,7 +230,7 @@ msgid "STR_SPECIFIC_USE"
 msgstr "In dieser *4Math*-Version fassen wir den biologischen Hintergrund zusammen, den du kennen musst, um die Modelle auf dieser Webseite zu verstehen. Wir werden dir mehrere Beispiele von Modellen geben, die entwickelt wurden, um verschiedene Aspekte der Photosynthese zu erfassen, um zu zeigen, wie nützlich die Modellierung für die Biologie sein kann. Wir werden auch ein Modell im Detail erklären und zeigen, wie es mathematisch definiert und in Python implementiert ist, damit du es selbst ausprobieren kannst."
 
 msgid "STR_VIDEO_TRANSCRIPT_INTRODUCTION"
-msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu begreifen, wie die Fotosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
+msgstr "Die Photosynthese ist das, was diese Welt am Laufen hält. Von der Luft, die du atmest, bis zu den Lebensmitteln, die du isst, ist letztlich alles dank Licht von Pflanzen, Algen und kleineren Zellen erzeugt worden. Wenn man das weiß, versteht man, wie wichtig es ist, zu begreifen, wie die Photosynthese funktioniert. Wenn wir diesen Prozess genau kennen würden, könnten wir ihn künstlich verbessern und bei der Produktion von Lebensmitteln, Treibstoff und vielen anderen Chemikalien helfen, die wir in unserem Leben brauchen."
 
 msgid "STR_LEARNING_OBJECTIVES_HEADER"
 msgstr "### Lernziele\n"
@@ -290,7 +290,7 @@ msgstr "Um die photosynthetische Leistung von Pflanzen zu messen, benötigen wir
 # Grammarly checked
 #: Start.py:36
 msgid "STR_MODEL"
-msgstr "Wie die Überschrift bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Mehr über mathematische Modelle im Allgemeinen und über Fotosynthesemodelle erfährst du auf der Seite <b>Computermodelle</b>."
+msgstr "Wie die Überschrift bereits verrät, arbeiten wir <i>in silico</i>, d.h. mit mathematischen Modellen. Mehr über mathematische Modelle im Allgemeinen und über Photosynthesemodelle erfährst du auf der Seite <b>Computermodelle</b>."
 
 # Grammarly checked
 #: Start.py:37
@@ -305,7 +305,7 @@ msgstr "Nicht zuletzt lernst du auf der Seite **Plant Light Memory** das pflanzl
 #: Lisa's introduction
 #: pages/photosynthesis.py:10
 msgid "PHO_HEADLINE_PHOTOSYNTHESIS_PAGE"
-msgstr "# Fotosynthese"
+msgstr "# Photosynthese"
 
 msgid "PHO_LEARNING_OBJECTIVES"
 msgstr "### Lernziele\n"
@@ -397,7 +397,7 @@ msgstr "Die Photosynthese findet in den Zellen der vorwiegend grünen Bestandtei
 #: pages/photosynthesis.py:48
 #: pages/photosynthesis.py:50
 msgid "PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"
-msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Fotosynthese notwendig sind."
+msgstr "Komplexe innerhalb der Thylakoidmembran, welche für die Photosynthese notwendig sind."
 
 # Grammarly checked
 #: pages/photosynthesis.py:52
@@ -519,16 +519,16 @@ msgstr "Hast du das rote Leuchten und den geisterhaften Abdruck des Aufklebers a
 #: Explanation by Tobias
 #: pages/method.py:31
 msgid "MTH_MEASURING_FLUORESZENZ"
-msgstr "Messung der Fotosynthese mit Fluoreszenz"
+msgstr "Messung der Photosynthese mit Fluoreszenz"
 
 #: Explanation by Tobias
 # Grammarly checked
 #: pages/method.py:32
 msgid "MTH_EXPLANATION_MEASUREMENT_1"
 msgstr "Dieses Experiment hat dir gezeigt, wie Pflanzen leuchten und wie erstaunlich sie sich an das Licht anpassen \
-        können. Aber wie kann das beim Testen der Fotosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
+        können. Aber wie kann das beim Testen der Photosynthese helfen? Sehr viel sogar. Denn nicht nur der 'Sonnenschutz' \
         beeinflusst die Blattfluoreszenz, sondern auch viele andere Faktoren. Wenn du dich dafür interessierst, wie das \
-        geschieht, schaue dir den Abschnitt <a href='#' id='4Bio'>4Bio</a> an. Nehmen wir einmal an, die Stärke der Fotosynthese der \
+        geschieht, schaue dir den Abschnitt <a href='#' id='4Bio'>4Bio</a> an. Nehmen wir einmal an, die Stärke der Photosynthese der \
         Pflanze wirkt sich auch auf die Leuchtkraft aus."
 
 #: Explanation by Tobias
@@ -539,9 +539,9 @@ msgstr "Deshalb haben Wissenschaftler \
         eine Methode erfunden, um diese Fluoreszenz zu messen und zu verfolgen, wie sie sich im Laufe der Zeit verändert \
         (Du wirst später von dieser 'PAM' hören). Mit ein paar cleveren mathematischen Tricks kannst du dann viele \
         Dinge berechnen, die uns interessieren könnten: Wie gesund das Blatt ist, wie sehr es sich vor dem Licht schützt \
-        und vor allem, wie es Fotosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
+        und vor allem, wie es Photosynthese betreibt. Wir nennen diesen letzten Messwert 'ΦPSII', mit dem griechischen \
         Buchstaben 'Psi', und du wirst ihn vielleicht in einigen der Diagramme sehen, die du später erstellen wirst. \
-        Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Fotosynthese betreibt."
+        Je höher dieser Wert ist, desto besser, da die Pflanze dann effizienter Photosynthese betreibt."
 
 msgid "MTH_VIDEO_TRANSCRIPT_PAM"
 msgstr "Hast du dich jemals gefragt, wie Wissenschaftler die photosynthetische Aktivität von Pflanzen messen? Eine Möglichkeit ist eine PAM-Messung. PAM steht für Pulse Amplitude Modulation und misst die Fluoreszenz von Chlorophyllmolekülen in einem Blatt. Wir werden dieses PAM-Fluorometer verwenden, um die Fluoreszenz des Chlorophylls in einer Pflanze zu messen. Zunächst müssen wir sicherstellen, dass die Pflanze mindestens 12 Stunden lang an die Dunkelheit angepasst ist. Dann klemmen wir diese Sonde auf das Blatt und blitzen es mit einem kurzen Lichtimpuls. Die Chlorophyllmoleküle absorbieren das Licht und geben einen Fluoreszenzstoß ab, den wir mit dem Detektor messen können.\n\n Nun beginnen wir mit der Messung, die uns ein Diagramm der von den Chlorophyllmolekülen abgegebenen Fluoreszenz über die Zeit liefert. Dieses Diagramm kann uns Aufschluss über den photosynthetischen Stress der Pflanze geben. Das Diagramm enthält mehrere Parameter, darunter F₀, das anfängliche Fluoreszenzniveau vor dem Lichtimpuls, und Fₘ, das maximale Fluoreszenzniveau. Das Verhältnis von Fᵥ zu Fₘ gibt die maximale Quantum-Effizienz des zweiten Photosystems an, was ein Indikator für den allgemeinen Gesundheitszustand der Pflanze ist. Durch PAM-Messungen können Wissenschaftler Einblicke in die photosynthetische Gesundheit von Pflanzen gewinnen, was bei der Pflanzenbewirtschaftung und der Erforschung des Klimawandels hilfreich sein kann."
@@ -586,11 +586,11 @@ msgstr "Sättigungsimpulse"
 #: pages/method.py:49
 msgid "MTH_EXPLANATION_ATTEMPTS"
 msgstr "Du musst noch einen weiteren Aspekt von PAM kennen: die Sättigungsimpulse. Unser Gerät gibt der Pflanze alle \
-        paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Fotosynthesemaschinerie überlastet wird. In diesem \
+        paar Sekunden einen sehr intensiven Lichtimpuls, wodurch ihre Photosynthesemaschinerie überlastet wird. In diesem \
         Zustand wird das Messlicht vollständig in Fluoreszenz umgewandelt, und wir messen die maximale Fluoreszenzausbeute \
-        'Fₘ'. Während die normale Fluoreszenzausbeute von der Fotosynthese der Pflanze abhängt, ist dies bei Fₘ nicht der \
+        'Fₘ'. Während die normale Fluoreszenzausbeute von der Photosynthese der Pflanze abhängt, ist dies bei Fₘ nicht der \
         Fall. Durch den Vergleich von normaler und maximaler Ausbeute können wir also Veränderungen innerhalb und außerhalb \
-        der Fotosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
+        der Photosynthese unterscheiden, zum Beispiel den Lichtschutz der Pflanze. Wenn man dann noch Protokolle mit \
         verschiedenfarbigem Licht anwendet, kann man die bereits erwähnten ΦPSII-, NPQ- und viele andere Werte berechnen. \
         Aber wie das gemacht wird, geht viel zu weit. Am wichtigsten ist, dass du verstehst, dass wir vergleichen, welcher \
         Anteil des Lichts gerade in Fluoreszenz umgewandelt wird, wie viel maximal, und wie sich diese Messungen über die \
@@ -820,7 +820,7 @@ msgstr "### Das *e*-Photosynthesemodell"
 # Grammarly checked
 #: pages/model_explain.py:380
 msgid "MDL_E_PHOTOSYNTHESIS_1"
-msgstr "2012 entwickelten Xin-Guang Zhu, Yu Wang, Donald R. Ort und Stephen P. Long das *e*-Photosynthesemodell, um eine realistische Darstellung der Photosynthese zu ermöglichen [6]. Das Modell ist komplex und dynamisch und umfasst die meisten Komponenten der C<sub>3</sub>-Photosynthese, vereinfacht aber nur dort, wo es nötig ist. Es umfasst Reaktionen der Lichtabsorption, Lichtreaktionen und Kohlenstoffassimilation und baut auf den früheren Arbeiten von Zhu et al. auf, einschließlich ihres Fluoreszenzmodells [7] und ihres Kohlenstoffstoffwechselmodells [8]. Wenn du mit der C<sub>3</sub>-Fotosynthese nicht vertraut bist, kannst du in der unteren Dropbox mehr über die verschiedenen Arten der Fotosynthese erfahren."
+msgstr "2012 entwickelten Xin-Guang Zhu, Yu Wang, Donald R. Ort und Stephen P. Long das *e*-Photosynthesemodell, um eine realistische Darstellung der Photosynthese zu ermöglichen [6]. Das Modell ist komplex und dynamisch und umfasst die meisten Komponenten der C<sub>3</sub>-Photosynthese, vereinfacht aber nur dort, wo es nötig ist. Es umfasst Reaktionen der Lichtabsorption, Lichtreaktionen und Kohlenstoffassimilation und baut auf den früheren Arbeiten von Zhu et al. auf, einschließlich ihres Fluoreszenzmodells [7] und ihres Kohlenstoffstoffwechselmodells [8]. Wenn du mit der C<sub>3</sub>-Photosynthese nicht vertraut bist, kannst du in der unteren Dropbox mehr über die verschiedenen Arten der Photosynthese erfahren."
 
 #: pages/model_explain.py:390
 msgid "MDL_E_PHOTOSYNTHESIS_2"
@@ -952,7 +952,7 @@ msgstr "## Konstruktion des Modells"
 #: Grammarly checked
 #: pages/first_analysis.py:15
 msgid "FAL_CONSTRUCTION_EXPLANATION_1"
-msgstr "Die Fotosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
+msgstr "Die Photosynthese ist ein komplexer Prozess, an dem zahlreiche Akteure beteiligt sind: Proteine, Enzyme, \
         Elektronenträger, Protonenpumpen, Ionenkanäle und viele mehr. Obwohl jeder von ihnen eine wichtige Rolle im \
         Gesamtprozess spielt, haben wir für die Studie zum Lichtspeicher eine maximale Reduzierung der Modellkomplexität \
         angestrebt. Wir haben uns daher ausschließlich auf die pH-regulierten, nicht-fotochemischen Prozesse im Zusammenhang \

@@ -206,7 +206,7 @@ msgstr "Ce site est disponible en ligne et directement utilisable à l'adresse <
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
-msgstr "# Photosynthèse *in silico*&nbsp;: un tableau de bord interactif pour étudier la photosynthèse à l'aide d'un modèle computationnel"
+msgstr "# Photosynthèse computationnelle (ComPhot) : Plate-forme éducative basée sur la simulation pour l'étude de la photosynthèse"
 
 #: Intro by Anna
 # Grammarly checked

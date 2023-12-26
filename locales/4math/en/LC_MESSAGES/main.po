@@ -206,7 +206,7 @@ msgstr "This website is available online and directly usable at <https://annamat
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
-msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
+msgstr "# Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis"
 
 #: Intro by Anna
 # Grammarly checked
