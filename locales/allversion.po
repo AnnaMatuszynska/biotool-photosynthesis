@@ -591,15 +591,15 @@ msgid "STR_EXPLANATION_ABOUT"
 
 #: Start.py:9
 msgid "STR_HEADLINE_MAIN"
-4math-en msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
-4math-de msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung der Photosynthese anhand eines Computermodells."
-4math-fr msgstr "# Photosynthèse *in silico*&nbsp;: un tableau de bord interactif pour étudier la photosynthèse à l'aide d'un modèle computationnel"
-4math-pl msgstr "# Fotosynteza *in silico*: platforma edukacyjna do badania fotosyntezy poprzez symulacje komputerowe"
+4math-en msgstr "# Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis"
+4math-de msgstr "# Computergestützte Photosynthese (ComPhot): Simulationsgestützte Lernplattform zum Studieren der Photosynthese"
+4math-fr msgstr "# Photosynthèse computationnelle (ComPhot) : Plate-forme éducative basée sur la simulation pour l'étude de la photosynthèse"
+4math-pl msgstr "# Fotosynteza obliczeniowa (ComPhot): Symulacyjna platforma edukacyjna do badania fotosyntezy"
 4math-es msgstr ""
-4bio-en msgstr "# Photosynthesis *in silico*: an Interactive Dashboard to Study Photosynthesis using a Computational Model"
-4bio-de msgstr "# Photosynthese *in silico*: ein interaktives Dashboard zur Untersuchung der Photosynthese anhand eines Computermodells."
-4bio-fr msgstr "# Photosynthèse *in silico*&nbsp;: un tableau de bord interactif pour étudier la photosynthèse à l'aide d'un modèle computationnel"
-4bio-pl msgstr "# Fotosynteza *in silico*: platforma edukacyjna do badania fotosyntezy poprzez symulacje komputerowe"
+4bio-en msgstr "# Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis"
+4bio-de msgstr "# Computergestützte Photosynthese (ComPhot): Simulationsgestützte Lernplattform zum Studieren der Photosynthese"
+4bio-fr msgstr "# Photosynthèse computationnelle (ComPhot) : Plate-forme éducative basée sur la simulation pour l'étude de la photosynthèse"
+4bio-pl msgstr "# Fotosynteza obliczeniowa (ComPhot): Symulacyjna platforma edukacyjna do badania fotosyntezy"
 4bio-es msgstr ""
 
 #: Intro by Anna
