@@ -4653,6 +4653,32 @@ msgid "CONT_THANKS"
 4bio-es msgstr ""
 
 #: pages/contact.py:66
+msgid "CONT_CITE"
+4math-en msgstr "How to cite us"
+4math-de msgstr "Wie man uns zitiert"
+4math-fr msgstr "Comment nous citer"
+4math-pl msgstr "Jak nas cytować"
+4math-es msgstr ""
+4bio-en msgstr "How to cite us"
+4bio-de msgstr "Wie man uns zitiert"
+4bio-fr msgstr "Comment nous citer"
+4bio-pl msgstr "Jak nas cytować"
+4bio-es msgstr ""
+
+#: pages/contact.py:68
+msgid "CONT_STYLE"
+4math-en msgstr "Citation Format"
+4math-de msgstr "Zitierformat"
+4math-fr msgstr "Format de la citation"
+4math-pl msgstr "Format cytowania"
+4math-es msgstr ""
+4bio-en msgstr "Citation Format"
+4bio-de msgstr "Zitierformat"
+4bio-fr msgstr "Format de la citation"
+4bio-pl msgstr "Format cytowania"
+4bio-es msgstr ""
+
+#: pages/contact.py:66
 msgid "CONT_RESOURCES"
 4math-en msgstr "### Resources"
 4math-de msgstr "### Ressourcen"

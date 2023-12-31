@@ -1394,5 +1394,13 @@ msgid "CONT_THANKS"
 msgstr "Nous vous remercions de l'intérêt que vous portez à notre projet !"
 
 #: pages/contact.py:66
+msgid "CONT_CITE"
+msgstr "Comment nous citer"
+
+#: pages/contact.py:68
+msgid "CONT_STYLE"
+msgstr "Format de la citation"
+
+#: pages/contact.py:66
 msgid "CONT_RESOURCES"
 msgstr "### Ressources"

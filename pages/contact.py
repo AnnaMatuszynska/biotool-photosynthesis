@@ -62,6 +62,52 @@ def make_page(text: Callable[[str], str], language: str, version: str):
     st.markdown(text("CONT_HOURS"))
 
     st.markdown(text("CONT_THANKS"))
+    
+    with st.expander(label=text("CONT_CITE")):
+        style_select = st.selectbox(
+            label=text("CONT_STYLE"),
+            options = ['BibTeX', 'RIS', 'EndNote'],
+            index=None
+        )
+        
+        if style_select == 'BibTeX':
+            with open("cite_files/ComPhot.bib", "r") as file:
+                start_flag = False
+                data = ''''''
+                for line in file:
+                    if line[0] == '@' or start_flag:
+                        start_flag = True
+                        data += line
+                download_cite = st.download_button(
+                        label="Download BibTeX",
+                        data=file,
+                        file_name="ComPhot.bib"
+                    )
+                st.code(data)
+        
+        elif style_select == 'RIS':
+            with open("cite_files/ComPhot.ris", "r") as file:
+                data = ''''''
+                for line in file:
+                    data += line
+                download_cite = st.download_button(
+                        label="Download RIS",
+                        data=file,
+                        file_name="ComPhot.ris"
+                    )
+                st.code(data)
+                
+        elif style_select == 'EndNote':
+            with open("cite_files/ComPhot.enw", "r") as file:
+                data = ''''''
+                for line in file:
+                    data += line
+                download_cite = st.download_button(
+                        label="Download EndNote Format",
+                        data=file,
+                        file_name="ComPhot.enw"
+                    )
+                st.code(data)
 
     st.markdown(text("CONT_RESOURCES"))
     st.markdown(text("PROGRAMS_USED"))
