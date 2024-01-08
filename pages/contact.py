@@ -64,6 +64,7 @@ def make_page(text: Callable[[str], str], language: str, version: str):
     st.markdown(text("CONT_THANKS"))
     
     with st.expander(label=text("CONT_CITE")):
+        st.markdown('Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis, The Plant Cell, 2024')
         style_select = st.selectbox(
             label=text("CONT_STYLE"),
             options = ['BibTeX', 'RIS', 'EndNote'],
@@ -75,9 +76,7 @@ def make_page(text: Callable[[str], str], language: str, version: str):
                 start_flag = False
                 data = ''''''
                 for line in file:
-                    if line[0] == '@' or start_flag:
-                        start_flag = True
-                        data += line
+                    data += line
                 download_cite = st.download_button(
                         label="Download BibTeX",
                         data=file,
