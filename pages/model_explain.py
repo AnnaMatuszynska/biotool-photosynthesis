@@ -136,7 +136,6 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
                 st.session_state.r_slider = int(st.session_state.r_slider / sum * remain)
 
         def i_slider_callback():
-            print('I', st.session_state.i_slider)
             remain = 1000 - st.session_state.i_slider
             sum = st.session_state.s_slider + st.session_state.r_slider
             if sum == 0:
