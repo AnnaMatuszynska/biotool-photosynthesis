@@ -778,7 +778,7 @@ msgstr "Intercellulaire"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_YLABEL"
-msgstr "Assimilation [µmol&nbsp;m⁻²&nbsp;s⁻¹]"
+msgstr "Assimilation [µmol m⁻² s⁻¹]"
 
 #: pages/model_explain.py:408
 msgid "MDL_FVCB_EMPTY"
