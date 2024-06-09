@@ -40,7 +40,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MTH_PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
         st.markdown(text("MTH_INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
 
-        include_ytvideo("https://youtube.com/g3uTNWsDEdo", 0.9)
+        include_ytvideo("https://youtu.be/g3uTNWsDEdo", 0.9)
 
         st.markdown(text("MTH_EXPLANATION_VIDEO"), unsafe_allow_html=True)
 
