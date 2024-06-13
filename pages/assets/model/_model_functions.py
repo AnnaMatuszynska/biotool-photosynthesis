@@ -82,7 +82,7 @@ def calculate_results_to_plot(time, sim_results):
 
 def plot_stylings():
     
-    text_color = "#727682"
+    text_color = "black"
     
     stylings_dict = {
         "axes.spines.right": False,
@@ -270,7 +270,7 @@ def make_plot(
         plot_mosaic.append(['B' if i < 5 else 'C' for i in range(0, 10)])
     
     with plt.rc_context(plot_style):
-        fig, axs = plt.subplot_mosaic(mosaic=plot_mosaic, constrained_layout=True)
+        fig, axs = plt.subplot_mosaic(mosaic=plot_mosaic, constrained_layout=True, figsize = (15,5.18))
         
         #Create fake legend
         axs['D'].set_axis_off()
