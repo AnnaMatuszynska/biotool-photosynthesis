@@ -1,0 +1,52 @@
+#### Installing Termux ####
+Go to F-Droid website
+Search for Termux
+Download only APK
+Install App by using APK, you may need to give Permissions
+Open App
+type: yes | pkg upgrade
+yes | pkg install git
+
+#### Installing Andronix ####
+Search for Andronix in Google Play Store
+Open App
+On Adnroid 12+ You need to fix some process_killing issues that are internal in android. Follow the guides given by the Android docs.
+Click on Linux Distribution
+Click on Ubuntu
+Click on Ubuntu 20.04
+Click on CLI Only
+Paste script in Termux
+Press Enter #This process will take a long time and you may need to give permissions
+
+#### Giving Access to Internal Storage ####
+Exit out of distro by typing:
+exit
+Give Termux storage access by typing:
+termux-setup-storage
+Change start file of distro:
+nano start-ubuntu20.sh
+Uncomment "#command+=" -b /data/data/com.termux/files/home:/root"
+ctrl+X
+y
+enter
+
+#### Clone Repo ####
+Go to directory where you want to clone repo with bash. 'storage/shared/' is where the internal storage is
+git clone https://github.com/AnnaMatuszynska/biotool-photosynthesis.git
+
+#### Install ComPhot ####
+./start-ubuntu20.sh
+apt update -y && apt upgrade -y
+apt install software-properties-common curl -y
+add-apt-repository ppa:deadsnakes/ppa
+apt install python3.10 -y
+curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+Go to directory with ComPhot repo with bash controls:
+cd /
+cd sdcard #For internal phone storage
+cd Documents
+cd biotool-photosynthesis
+pip install -r requirements.txt
+
+#### Run Streamlit ####
+streamlit run Start.py
