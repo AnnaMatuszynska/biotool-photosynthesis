@@ -40,14 +40,14 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
         st.markdown(text("MTH_PLANT_ARE_SHINING_RED"), unsafe_allow_html=True)
         st.markdown(text("MTH_INTRODUCTION_EXPERIMENT"), unsafe_allow_html=True)
 
-        include_ytvideo("https://youtu.be/g3uTNWsDEdo", 0.9)
+        include_ytvideo("videos/Shining_Plant.mp4", 0.3)
 
         st.markdown(text("MTH_EXPLANATION_VIDEO"), unsafe_allow_html=True)
 
     with st.expander(text("MTH_MEASURING_FLUORESZENZ"), expanded=True):
         markdown_click("MTH_EXPLANATION_MEASUREMENT_1", text)
         st.markdown(text("MTH_INTRODUCTION_PHI"), unsafe_allow_html=True)
-        include_ytvideo("https://youtu.be/EwXkOlMBl3o", 0.9)
+        include_ytvideo("videos/PAM_Measurement_explained_by_Sarah_Philipps.mp4", 0.9)
 
     if st.session_state["show_video_transcripts"]:
         with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):

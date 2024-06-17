@@ -297,7 +297,7 @@ def make_page(text: Callable[[str], str]) -> bool:
     st.markdown(text("FAL_HEADLINE_SLIDER"))
     st.markdown(text("FAL_EXPLANATNION"))
 
-    include_ytvideo("https://youtu.be/zxGZKeopEDw", 0.9)
+    include_ytvideo("videos/Slider_usage.mp4", 0.9)
     if st.session_state["show_video_transcripts"]:
         with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):
             st.write(text("FAL_VIDEO_TRANSCRIPT_SLIDERS"))

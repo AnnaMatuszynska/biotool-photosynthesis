@@ -22,7 +22,7 @@ def make_introduction(text: Callable[[str], str]) -> None:
     with col1:
         markdown_click("STR_USAGE", text)
     with col2:
-        include_ytvideo("https://youtu.be/KvyjIWLD8rU", 0.9)
+        include_ytvideo("videos/Introduction_Biotool.mp4", 0.9)
 
     if st.session_state["show_video_transcripts"]:
         with st.expander(text("EXPANDER_VIDEO_TRANSCRIPT")):
