@@ -164,7 +164,7 @@ def make_FvCB_plot(Ci, results, display_bools, xlabel, ylabel, empty_label):
     
     style_dict = {
         'A': {
-            'color': '#45D689',
+            'color': '#85B404',
             'alpha': 1,
             'linestyle': 'solid',
             'label': 'A'
@@ -176,7 +176,7 @@ def make_FvCB_plot(Ci, results, display_bools, xlabel, ylabel, empty_label):
             'label': '$\mathbf{A}_{\mathbf{c}}$'
         },
         'Aj': {
-            'color': '#FAD64A',
+            'color': '#BC69AA',
             'alpha': 1,
             'linestyle': 'solid',
             'label': '${\mathbf{A}_{\mathbf{j}}}$'
@@ -193,12 +193,12 @@ def make_FvCB_plot(Ci, results, display_bools, xlabel, ylabel, empty_label):
     style_plot.update({
         "axes.spines.top": False,
         "figure.figsize" : (7, 3),
-        "font.size": 10.0,
+        "font.size": 10,
     })
     
     with plt.rc_context(style_plot):
         
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize = (5,4))
         
         for key, value in display_bools.items():
             if value:
@@ -223,8 +223,8 @@ def make_FvCB_plot(Ci, results, display_bools, xlabel, ylabel, empty_label):
     plt.xlim(0)
     plt.ylim(0)
     
-    plt.xlabel(xlabel + " CO$\mathbf{_2}$ [µbar]", weight= 'bold', size=8)
-    plt.ylabel("CO$\mathbf{_2}$ " + ylabel, weight= 'bold', size=8)
+    plt.xlabel(xlabel + " CO$\mathbf{_2}$ [µbar]", weight= 'bold', size=12)
+    plt.ylabel("CO$\mathbf{_2}$ " + ylabel, weight= 'bold', size=12)
     
     if True in display_bools.values():
         plt.legend(loc = 'best', frameon = False, labelcolor = 'linecolor', fontsize = 10, prop = {'weight':'bold'})

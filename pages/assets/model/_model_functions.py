@@ -249,13 +249,13 @@ def make_plot(
     
     style_dict = {
         'Old': {
-            'color': '#FF4B4B',
+            'color': '#2D3047',
             'alpha': alpha_old,
             'linestyle': 'dashdot',
             'label': old_label
         },
         'New': {
-            'color': '#FF4B4B',
+            'color': '#2D3047',
             'alpha': 1,
             'linestyle': 'solid',
             'label': new_label
@@ -270,7 +270,7 @@ def make_plot(
         plot_mosaic.append(['B' if i < 5 else 'C' for i in range(0, 10)])
     
     with plt.rc_context(plot_style):
-        fig, axs = plt.subplot_mosaic(mosaic=plot_mosaic, constrained_layout=True, figsize = (15,5.18))
+        fig, axs = plt.subplot_mosaic(mosaic=plot_mosaic, constrained_layout=True, figsize = (15,15/2.3))
         
         #Create fake legend
         axs['D'].set_axis_off()
@@ -346,9 +346,9 @@ def make_plot(
             ax_top = axs[letter].secondary_xaxis("top", functions=(lambda x: x / 60, lambda x: x * 60))
             
             # Add labels
-            axs[letter].set_xlabel(xlabel1, weight = 'bold', size = 12)
-            axs[letter].set_ylabel(ylabel[graph], weight = 'bold', size = 12)
-            ax_top.set_xlabel(xlabel2, weight = 'bold', size = 12)
+            axs[letter].set_xlabel(xlabel1, weight = 'bold', size = 14)
+            axs[letter].set_ylabel(ylabel[graph], weight = 'bold', size = 14)
+            ax_top.set_xlabel(xlabel2, weight = 'bold', size = 14)
 
             default_xticks = axs[letter].get_xticks()
             new_xticks = []
