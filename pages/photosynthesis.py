@@ -67,9 +67,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             "pictures/Fotosynthese-Apparat.jpg", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True
         )
     else:
-        include_image(
-            "pictures/BioTool-photosynthesis.png", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True
-        )
+        include_image("pictures/NPQphotosynthesis.png", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
 
     markdown_click("PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE", text)
 
