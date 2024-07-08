@@ -9,7 +9,9 @@ from utils import (
     markdown_click,
     resetting_click_detector_setup,
     track_page_visit,
+    include_image
 )
+import base64
 
 
 def make_introduction(text: Callable[[str], str]) -> None:
@@ -86,6 +88,20 @@ if __name__ == "__main__":
     track_page_visit("Start")
     make_introduction(text)
     make_chapters(text, version, language)
+    
+    with st.expander(text("APPEARANCES")):
+        st.markdown(text("APPEARANCE_EXPLANATION"))
+        st.markdown(text("EPS2_CONFERENCE_TITLE"), unsafe_allow_html = True)
+        st.markdown(text("EPS2_CONFERENCE_1"), unsafe_allow_html = True)
+        st.markdown(text("EPS2_CONFERENCE_2"), unsafe_allow_html = True)
+        st.markdown(text("EPS2_CONFERENCE_3"), unsafe_allow_html = True)
+        col1, col2 = st.columns((0.5, 0.5))
+        with col1:
+            include_image('pictures/Poster.png', img_width=0.6)
+        with col2:
+            include_image('pictures/Editable/Elouen_Poster.svg', img_width=0.6)
+            
+    
     make_literature(text, version, language)
     make_prev_next_button(
         text,

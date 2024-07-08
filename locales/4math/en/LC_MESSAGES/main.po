@@ -91,6 +91,30 @@ msgstr "French"
 msgid "LITERATURE"
 msgstr "Literature"
 
+#: Start.py:90
+msgid "APPEARANCES"
+msgstr "Appearances"
+
+#: Start.py:91
+msgid "APPEARANCE_EXPLANATION"
+msgstr "This section will contain small reports on our tool's significant appearances in the scientific world. From our work to other significant mentions, we will keep updating this section to give you an idea of the reach this tool has amassed."
+
+#: Start.py:90
+msgid "EPS2_CONFERENCE_TITLE"
+msgstr "#### EPS2 conference"
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_1"
+msgstr "On the 25<sup>th</sup> to 28<sup>th</sup> of June 2024, the second European Congress on Photosynthesis Research took place in Padova, Italy. Elouen Corvest, one of the authors of this tool, could present the ComPhot tool to a wide range of experts in the field of natural and artificial photosynthesis. At the conference were many renowned photosynthetic scientists, such as David Kramer from the Jan IngenHousz Institute and Oliver Ebenhöh from the Heinrich-Heine-University of Düsseldorf. Between several exciting talks and time-filling social interactions with researchers from the entire world, Elouen had to present the ComPhot in one of two poster sessions. There were approximately 239 posters, ranging from specific protein-protein interactions of photosynthesis to modern methods for examining photosynthesis."
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_2"
+msgstr "Elouen had one goal in mind for this opportunity. This was the first time this tool was presented directly to the scientific community. Therefore, making a good impression and enhancing the tool's popularity was crucial. This is important, especially for Elouen, as the tool is based on an open-source concept that allows anyone to make improvements to the tool. We genuinely believe in this tool and its possible applications to bringing computational modelling closer to the common biological student. However, spreading the word about a new teaching tool of computational modelling may be challenging at a purely photosynthetic conference."
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_3"
+msgstr "To spread the word, Elouen needed to stand out. One advantage of computational work is that your 'lab' is a computer. With the increasing power of computing devices, it's now feasible to have a portable 'lab'. Taking advantage of this, Elouen installed a local version of the ComPhot tool on a low-cost Android tablet. He then designed the poster around this aspect, showcasing the tool's power and ease at the conference. This drew much interest to the poster, allowing Elouen to demonstrate the tool multiple times. Due to this and his simple but effective design, the conference committee awarded Elouen one of the five poster awards. We are delighted with this outcome and hope our tool has reached a broader audience."
+
 #: Start.py:42
 #: pages/first_analysis.py:460
 #: pages/model_explain.py:420

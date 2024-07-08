@@ -91,6 +91,30 @@ msgstr "Français"
 msgid "LITERATURE"
 msgstr "Références"
 
+#: Start.py:90
+msgid "APPEARANCES"
+msgstr "Apparitions"
+
+#: Start.py:91
+msgid "APPEARANCE_EXPLANATION"
+msgstr "Cette section contiendra de petits rapports sur les apparitions significatives de notre outil dans le monde scientifique. De notre travail à d'autres mentions significatives, nous mettrons régulièrement à jour cette section pour vous donner une idée de la portée de cet outil."
+
+#: Start.py:90
+msgid "EPS2_CONFERENCE_TITLE"
+msgstr ""
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_1"
+msgstr "Du 25 au 28 juin 2024, le deuxième congrès européen sur la recherche en photosynthèse s'est tenu à Padoue, en Italie. Elouen Corvest, l'un des auteurs de cet outil, a pu présenter l'outil ComPhot à un large éventail d'experts dans le domaine de la photosynthèse naturelle et artificielle. De nombreux scientifiques renommés dans le domaine de la photosynthèse, tels que David Kramer de l'Institut Jan IngenHousz et Oliver Ebenhöh de l'Université Heinrich-Heine de Düsseldorf, ont participé à la conférence. Entre plusieurs exposés passionnants et des interactions sociales enrichissantes avec des chercheurs du monde entier, Elouen a dû présenter ComPhot dans l'une des deux sessions de posters. Il y avait environ 239 posters, couvrant aussi bien les interactions protéine-protéine spécifiques de la photosynthèse que les méthodes modernes pour étudier la photosynthèse."
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_2"
+msgstr "Elouen avait un objectif en tête pour cette opportunité. C'était la première fois que cet outil était présenté directement à la communauté scientifique. Il était donc essentiel de faire bonne impression et de renforcer la popularité de l'outil. C'est important, surtout pour Elouen, car l'outil est basé sur un concept de code source ouvert qui permet à quiconque d'apporter des améliorations à l'outil. Nous croyons sincèrement en cet outil et en ses applications possibles pour rapprocher la modélisation informatique aux étudiants de biologie. Cependant, faire connaître un nouvel outil d'enseignement de la modélisation informatique peut s'avérer difficile lors d'une conférence purement photosynthétique."
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_3"
+msgstr "Pour faire passer le message, Elouen devait se distinguer. L'un des avantages du travail informatique est que le \"laboratoire\" est un ordinateur. Avec l'augmentation de la puissance des appareils électroniques, il est désormais possible de posséder un \"laboratoire\" portable. Elouen a donc installé une version locale de l'outil ComPhot sur une tablette Android pas chère. Il a ensuite conçu l'affiche autour de cet aspect, mettant en valeur la puissance et la facilité de l'outil lors de la conférence. L'affiche a suscité beaucoup d'intérêt, ce qui a permis à Elouen de faire plusieurs démonstrations de l'outil. Grâce à cela et à sa conception simple mais efficace, le comité de la conférence a décerné à Elouen l'un des cinq prix de poster. Nous sommes ravis de ce résultat et espérons que notre outil a atteint un public plus large."
+
 #: Start.py:42
 #: pages/first_analysis.py:460
 #: pages/model_explain.py:420

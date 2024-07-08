@@ -91,6 +91,30 @@ msgstr "Francuski"
 msgid "LITERATURE"
 msgstr "Literatura"
 
+#: Start.py:90
+msgid "APPEARANCES"
+msgstr ""
+
+#: Start.py:91
+msgid "APPEARANCE_EXPLANATION"
+msgstr ""
+
+#: Start.py:90
+msgid "EPS2_CONFERENCE_TITLE"
+msgstr ""
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_1"
+msgstr ""
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_2"
+msgstr ""
+
+#: Start.py:91
+msgid "EPS2_CONFERENCE_3"
+msgstr ""
+
 #: Start.py:42
 #: pages/first_analysis.py:460
 #: pages/model_explain.py:420
