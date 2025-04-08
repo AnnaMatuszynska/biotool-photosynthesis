@@ -1,25 +1,18 @@
-[tool.black]
-line-length = 110
-target-version = ['py310']
-include = '\.pyi?$'
-exclude = '''
-(
-  /(
-      \.eggs         # exclude a few common directories in the
-    | \.git          # root of the project
-    | \.hg
-    | \.mypy_cache
-    | \.tox
-    | \.venv
-    | _build
-    | buck-out
-    | build
-    | dist
-  )/
-  | foo.py           # also separately exclude a file named foo.py in
-                     # the root of the project
-)
-'''
+[project]
+name = "biotool-photosynthesis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "appnope>=0.1.4",
+    "modelbase>=1.33.4",
+    "st-click-detector>=0.1.3",
+    "st-pages==0.5.0",
+    "streamlit==1.28.0",
+    "streamlit-extras>=0.6.0",
+    "tomli>=2.2.1",
+]
 
 [tool.ruff]
 # Enable Pyflakes `E` and `F` codes by default.
@@ -67,12 +60,6 @@ target-version = "py310"
 # Unlike Flake8, default to a complexity level of 10.
 max-complexity = 10
 
-[tool.isort]
-profile = "black"
-no_sections = true
-honor_noqa = true
-line_length = 110
-
 
 [tool.mypy]
 python_version = "3.10"
@@ -81,31 +68,4 @@ warn_unused_configs = true
 ignore_missing_imports = true
 disallow_untyped_defs = true
 plugins = ["numpy.typing.mypy_plugin"]
-
-
-
-[tool.pylint.messages_control]
-max-line-length = 120
-disable = [
-  "no-self-use",
-  "too-many-instance-attributes",
-  "too-many-arguments",
-  "too-many-locals",
-  "too-many-branches",
-  "too-many-public-methods",
-  "too-many-statements",
-  "too-many-ancestors",
-  "too-many-lines",
-  "super-init-not-called",
-  "non-parent-init-called",
-  "arguments-differ",
-  "invalid-name",
-  "import-outside-toplevel",
-  "unspecified-encoding",
-  "protected-access",
-  "wrong-import-order",
-  "inconsistent-return-statements",
-  "no-member",
-  "unused-argument",
-]
 

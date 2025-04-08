@@ -1,17 +1,17 @@
-import streamlit as st
-from pages._sidebar import fill_sidebar, make_sidebar
-from PIL import Image
 from typing import Callable
+
+import streamlit as st
+
+from pages._sidebar import fill_sidebar, make_sidebar
 from utils import (
     get_localised_text,
+    include_image,
     include_ytvideo,
     make_prev_next_button,
     markdown_click,
     resetting_click_detector_setup,
     track_page_visit,
-    include_image
 )
-import base64
 
 
 def make_introduction(text: Callable[[str], str]) -> None:
@@ -68,7 +68,9 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
     with st.expander(text("LITERATURE")):
         st.markdown(text("LITERATURE_ONPAGE"))
         st.markdown(
-            "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). A mathematical model of non-photochemical quenching to study short-term light memory in plants. Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
+            "- Matuszyńska, A., Heidari, S., Jahns, P., & Ebenhöh, O. (2016). "
+            "A mathematical model of non-photochemical quenching to study short-term light memory in plants. "
+            "Biochimica et Biophysica Acta (BBA) - Bioenergetics, 1857(12), 1860–1869. https://doi.org/10.1016/j.bbabio.2016.09.003"
         )
         st.markdown(text("LITERATURE_PLANTS_AND_PYTHON"))
 
@@ -88,20 +90,19 @@ if __name__ == "__main__":
     track_page_visit("Start")
     make_introduction(text)
     make_chapters(text, version, language)
-    
+
     with st.expander(text("APPEARANCES")):
         st.markdown(text("APPEARANCE_EXPLANATION"))
-        st.markdown(text("EPS2_CONFERENCE_TITLE"), unsafe_allow_html = True)
-        st.markdown(text("EPS2_CONFERENCE_1"), unsafe_allow_html = True)
-        st.markdown(text("EPS2_CONFERENCE_2"), unsafe_allow_html = True)
-        st.markdown(text("EPS2_CONFERENCE_3"), unsafe_allow_html = True)
+        st.markdown(text("EPS2_CONFERENCE_TITLE"), unsafe_allow_html=True)
+        st.markdown(text("EPS2_CONFERENCE_1"), unsafe_allow_html=True)
+        st.markdown(text("EPS2_CONFERENCE_2"), unsafe_allow_html=True)
+        st.markdown(text("EPS2_CONFERENCE_3"), unsafe_allow_html=True)
         col1, col2 = st.columns((0.5, 0.5))
         with col1:
-            include_image('pictures/Poster.png', img_width=0.6)
+            include_image("pictures/Poster.png", img_width=0.6)
         with col2:
-            include_image('pictures/Editable/Elouen_Poster.svg', img_width=0.6)
-            
-    
+            include_image("pictures/Editable/Elouen_Poster.svg", img_width=0.6)
+
     make_literature(text, version, language)
     make_prev_next_button(
         text,
