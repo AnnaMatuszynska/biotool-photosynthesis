@@ -1,11 +1,11 @@
+import time
+from pathlib import Path
+from typing import Callable
+
 import numpy as np
 import streamlit as st
-import time
-from pages._sidebar import fill_sidebar, make_sidebar
-from pages.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model
-from pathlib import Path
-from streamlit.components.v1 import html
-from typing import Callable
+
+from routes.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model
 from utils import (
     get_localised_text,
     include_image,
@@ -24,9 +24,9 @@ def make_page(text: Callable[[str], str]) -> bool:
     st.info(text("FAL_LEARNING_OBJECTIVES"))
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
-        text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
-        key="fal_learning_objectives",
+        "routes/model_explain.py",
+        "routes/plant_memory.py",
+        key="upper_nav_button",
     )
 
     st.markdown(text("FAL_HEADLINE_MODEL_CONSTRUCTION"))
@@ -548,22 +548,21 @@ def style_guinding_questions(see_interpr: bool = False) -> None:
 
 
 if __name__ == "__main__":
-    st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
-    placeholder_sidebar = make_sidebar()
+
     resetting_click_detector_setup()
     track_page_visit("first_analysis")
     see_interpr = make_page(text)
     make_literature(text, version, language)
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
-        text("SDE_PAGENAMES_PLANTLIGHTMEMORY"),
+        "routes/model_explain.py",
+        "routes/plant_memory.py",
+        key="lower_nav_button",
     )
     style_guinding_questions(see_interpr)
-    fill_sidebar(placeholder_sidebar)

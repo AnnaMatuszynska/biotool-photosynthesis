@@ -1,7 +1,8 @@
-import streamlit as st
-from pages._sidebar import fill_sidebar, make_sidebar
-from PIL import Image
 from typing import Callable
+
+import streamlit as st
+from PIL import Image
+
 from utils import (
     get_localised_text,
     include_image,
@@ -21,9 +22,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.info(text("MTH_LEARNING_OBJECTIVES"))
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
-        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
-        key="mth_learning_objectives",
+        "routes/photosynthesis.py",
+        "routes/model_explain.py",
+        key="upper_nav_button",
     )
 
     _, col2, _ = st.columns(3)
@@ -91,13 +92,14 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
     with st.expander(text("LITERATURE")):
         st.markdown(text("MTH_LITERATURE_DECLARATION"), unsafe_allow_html=True)
         if version == "4Bio":
-            """
-            - Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16
-            """
-            """
-            - Nies, T., Niu, Y., Ebenhöh, O., Matsubara, S., & Matuszyńska, A. (2021). Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research (p. 2021.05.12.443801). bioRxiv. https://doi.org/10.1101/2021.05.12.443801
+            "- Brooks, M. D., & Niyogi, K. K. (2011). Use of a pulse-amplitude modulated chlorophyll "
+            "fluorometer to study the efficiency of photosynthesis in Arabidopsis plants. "
+            "Chloroplast Research in Arabidopsis: Methods and Protocols, Volume II, 299-310. "
+            "https://link.springer.com/protocol/10.1007/978-1-61779-237-3_16\n"
+            "- Nies, T., Niu, Y., Ebenhöh, O., Matsubara, S., & Matuszyńska, A. (2021). "
+            "Chlorophyll fluorescence: How the quality of information about PAM instrument "
+            "parameters may affect our research (p. 2021.05.12.443801). bioRxiv. https://doi.org/10.1101/2021.05.12.443801\n"
 
-            """
         elif version == "4Math":
             if language == "German":
                 """
@@ -113,21 +115,20 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 
 if __name__ == "__main__":
-    st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
-    placeholder_sidebar = make_sidebar()
+
     resetting_click_detector_setup()
     track_page_visit("method")
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
-        text("SDE_PAGENAMES_COMPUTATIONALMODELS"),
+        "routes/photosynthesis.py",
+        "routes/model_explain.py",
+        key="lower_nav_button",
     )
-    fill_sidebar(placeholder_sidebar)

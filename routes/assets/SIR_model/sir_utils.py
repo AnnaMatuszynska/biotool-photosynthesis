@@ -1,0 +1,116 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from modelbase.ode import Model, Simulator
+from modelbase.typing import Array
+
+from routes.assets.model._model_functions import plot_stylings
+
+
+def infection(beta, s, i, r):
+    return beta * s * i / (s + i + r)
+
+
+def recovery(gamma, x):
+    return gamma * x
+
+
+def get_results_dict_SIRModel(
+    beta_param: float,
+    gamma_param: float,
+    S_initial: float,
+    I_initial: float,
+    R_initial: float,
+    time_end: float,
+) -> tuple[Array, dict[str, Array]]:
+    sir = Model()
+    sir.add_compounds(["S", "I", "R"])
+    sir.add_parameters({"beta": beta_param, "gamma": gamma_param})
+
+    sir.add_reaction_from_args("infection", infection, {"S": -1, "I": 1}, ["beta", "S", "I", "R"])
+    sir.add_reaction_from_args("recovery", recovery, {"I": -1, "R": 1}, ["gamma", "I"])
+
+    s = Simulator(sir)
+    s.initialise({"S": S_initial, "I": I_initial, "R": R_initial})
+    s.simulate(t_end=time_end)
+
+    sim_time = s.get_time()
+    if sim_time is None:
+        sim_time = np.linspace(0, time_end, 2)
+
+    sim_results = s.get_full_results_dict()
+    if sim_results is None:
+        sim_results = {k: np.zeros(2) for k in sir.get_compounds()}
+
+    return sim_time, sim_results
+
+
+def get_plot_SIRModel(values_dict):
+    alpha_old = 0.5
+
+    style_dict = {
+        "old S": {
+            "color": "#f9a51b",
+            "alpha": alpha_old,
+            "linestyle": "dashdot",
+        },
+        "old I": {
+            "color": "#d1232a",
+            "alpha": alpha_old,
+            "linestyle": "dashdot",
+        },
+        "old R": {
+            "color": "#1062ef",
+            "alpha": alpha_old,
+            "linestyle": "dashdot",
+        },
+        "S": {
+            "color": "#f9a51b",
+            "alpha": 1,
+            "linestyle": "solid",
+        },
+        "I": {
+            "color": "#d1232a",
+            "alpha": 1,
+            "linestyle": "solid",
+        },
+        "R": {
+            "color": "#1062ef",
+            "alpha": 1,
+            "linestyle": "solid",
+        },
+    }
+
+    style_plot = plot_stylings()
+    style_plot["axes.spines.top"] = False
+
+    with plt.rc_context(style_plot):
+        fig, ax = plt.subplots()
+
+        for key in ["old S", "old I", "old R", "S", "I", "R"]:
+            if values_dict.get(key):
+                ax.plot(
+                    values_dict[key][0],
+                    values_dict[key][1],
+                    color=style_dict[key]["color"],
+                    linestyle=style_dict[key]["linestyle"],
+                    alpha=style_dict[key]["alpha"],
+                    linewidth=5,
+                    label=key,
+                )
+
+    # Change the left and down limit
+    plt.xlim(0)
+    plt.xlabel("Time [Months]", weight="bold", size=12)
+    plt.ylim(0, 1000)
+    plt.ylabel("Population size [a.u.]", weight="bold", size=12)
+
+    # Create and center legend
+    plt.legend(
+        loc="center right", frameon=False, labelcolor="linecolor", fontsize=12, prop={"weight": "bold"}
+    )
+
+    # Show the plot
+
+    plt.tight_layout()
+
+    return fig

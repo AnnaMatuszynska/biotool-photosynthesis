@@ -1,10 +1,11 @@
 from __future__ import annotations
 
+from typing import Any, Dict, List, Optional, Tuple, cast
+
 import numpy as np
 import scipy.integrate as spi
 from modelbase.ode.integrators.int_scipy import _IntegratorScipy
 from modelbase.typing import ArrayLike
-from typing import Any, Dict, List, Optional, Tuple, cast
 
 
 def _simulate(
@@ -38,7 +39,7 @@ def _simulate(
         y0=self.y0,
         t_eval=t_array,
         method="Radau",  # RK45, RK23, DOP853, Radau, BDF, LSODA
-        **{**self.kwargs, **integrator_kwargs},
+        **{**self.kwargs, **integrator_kwargs},  # type: ignore
     )
     y = res.y.T
     self.t0 = t_array[-1]

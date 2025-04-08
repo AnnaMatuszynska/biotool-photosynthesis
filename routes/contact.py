@@ -1,10 +1,8 @@
-import numpy as np
-import streamlit as st
-from pages._sidebar import fill_sidebar, make_sidebar
-from pathlib import Path
-from PIL import Image
 from typing import Callable
-from utils import centered_image, get_localised_text, make_prev_next_button, track_page_visit
+
+import streamlit as st
+
+from utils import get_localised_text, make_prev_next_button, track_page_visit
 
 
 def make_page(text: Callable[[str], str], language: str, version: str):
@@ -15,6 +13,13 @@ def make_page(text: Callable[[str], str], language: str, version: str):
         st.session_state["ballooned"] = True
 
     st.header(":mailbox: " + text("CONT_HEADER"))
+
+    make_prev_next_button(
+        text,
+        "routes/conclusion.py",
+        None,
+        key="upper_nav_button",
+    )
 
     st.markdown(text("CONT_SUBHEADER"))
 
@@ -62,50 +67,38 @@ def make_page(text: Callable[[str], str], language: str, version: str):
     st.markdown(text("CONT_HOURS"))
 
     st.markdown(text("CONT_THANKS"))
-    
+
     with st.expander(label=text("CONT_CITE")):
-        st.markdown('Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis, The Plant Cell, 2024')
-        style_select = st.selectbox(
-            label=text("CONT_STYLE"),
-            options = ['BibTeX', 'RIS', 'EndNote'],
-            index=None
+        st.markdown(
+            "Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis, The Plant Cell, 2024"
         )
-        
-        if style_select == 'BibTeX':
+        style_select = st.selectbox(
+            label=text("CONT_STYLE"), options=["BibTeX", "RIS", "EndNote"], index=None
+        )
+
+        if style_select == "BibTeX":
             with open("cite_files/ComPhot.bib", "r") as file:
                 start_flag = False
-                data = ''''''
+                data = """"""
                 for line in file:
                     data += line
-                download_cite = st.download_button(
-                        label="Download BibTeX",
-                        data=file,
-                        file_name="ComPhot.bib"
-                    )
+                st.download_button(label="Download BibTeX", data=file, file_name="ComPhot.bib")
                 st.code(data)
-        
-        elif style_select == 'RIS':
+
+        elif style_select == "RIS":
             with open("cite_files/ComPhot.ris", "r") as file:
-                data = ''''''
+                data = """"""
                 for line in file:
                     data += line
-                download_cite = st.download_button(
-                        label="Download RIS",
-                        data=file,
-                        file_name="ComPhot.ris"
-                    )
+                st.download_button(label="Download RIS", data=file, file_name="ComPhot.ris")
                 st.code(data)
-                
-        elif style_select == 'EndNote':
+
+        elif style_select == "EndNote":
             with open("cite_files/ComPhot.enw", "r") as file:
-                data = ''''''
+                data = """"""
                 for line in file:
                     data += line
-                download_cite = st.download_button(
-                        label="Download EndNote Format",
-                        data=file,
-                        file_name="ComPhot.enw"
-                    )
+                st.download_button(label="Download EndNote Format", data=file, file_name="ComPhot.enw")
                 st.code(data)
 
     st.markdown(text("CONT_RESOURCES"))
@@ -113,15 +106,18 @@ def make_page(text: Callable[[str], str], language: str, version: str):
 
 
 if __name__ == "__main__":
-    st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
-    placeholder_sidebar = make_sidebar()
+
     track_page_visit("contact")
     make_page(text, language, version)
-    make_prev_next_button(text, text("SDE_PAGENAMES_CONCLUSION"), None)
-    fill_sidebar(placeholder_sidebar)
+    make_prev_next_button(
+        text,
+        "routes/conclusion.py",
+        None,
+        key="lower_nav_button",
+    )

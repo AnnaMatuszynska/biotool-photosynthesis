@@ -2,15 +2,15 @@ import base64
 import gettext
 import json
 import os
-import pandas as pd
 import re
-import streamlit as st
 from functools import partial
 from logging import getLogger
 from pathlib import Path
-from st_click_detector import click_detector
-from streamlit_extras.switch_page_button import switch_page
 from typing import Any, Callable
+
+import pandas as pd
+import streamlit as st
+from st_click_detector import click_detector
 
 
 def _get_localised_text_warn(gettext, plc):
@@ -42,7 +42,7 @@ def make_prev_next_button(
     text: Callable[[str], str],
     prev: str | None,
     next: str | None,
-    key: str | None = None,
+    key: str,
 ) -> tuple[Any, Any]:
     col1, col2 = st.columns([1, 1])
     with col1:
@@ -53,7 +53,7 @@ def make_prev_next_button(
             use_container_width=True,
         ):
             if prev is not None:
-                switch_page(prev)
+                st.switch_page(prev)
     with col2:
         if st.button(
             text("SDE_NEXT"),
@@ -62,7 +62,7 @@ def make_prev_next_button(
             use_container_width=True,
         ):
             if next is not None:
-                switch_page(next)
+                st.switch_page(next)
     return col1, col2
 
 
@@ -114,10 +114,10 @@ def include_image(
         _, col2, _ = st.columns([nonimg_width, img_width, nonimg_width])
 
         with col2:
-            st.image(path, use_column_width=True)
+            st.image(path, use_container_width=True)
 
             if caption is not None:
-                if center_caption == True:
+                if center_caption:
                     st.caption(
                         f"""
                         <p style='text-align: center'>
@@ -130,10 +130,10 @@ def include_image(
                     st.caption(caption, unsafe_allow_html=True)
 
     else:
-        st.image(path, use_column_width=True)
+        st.image(path, use_container_width=True)
 
         if caption is not None:
-            if center_caption == True:
+            if center_caption:
                 st.caption(
                     f"""
                         <p style='text-align: center'>
@@ -171,7 +171,7 @@ def resetting_click_detector_setup():
 
 
 def resetting_click_detector(content, key="_"):
-    old_key = f"_rcd_{key}_{st.session_state['_rcd#']-1}"
+    old_key = f"_rcd_{key}_{st.session_state['_rcd#'] - 1}"
     new_key = f"_rcd_{key}_{st.session_state['_rcd#']}"
     clicked = st.session_state.setdefault(old_key, "")
     del st.session_state[old_key]

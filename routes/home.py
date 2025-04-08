@@ -2,7 +2,6 @@ from typing import Callable
 
 import streamlit as st
 
-from pages._sidebar import fill_sidebar, make_sidebar
 from utils import (
     get_localised_text,
     include_image,
@@ -76,7 +75,6 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 
 if __name__ == "__main__":
-    st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
@@ -85,7 +83,6 @@ if __name__ == "__main__":
 
     text = get_localised_text(version, language)
 
-    placeholder_sidebar = make_sidebar()
     resetting_click_detector_setup()
     track_page_visit("Start")
     make_introduction(text)
@@ -107,10 +104,6 @@ if __name__ == "__main__":
     make_prev_next_button(
         text,
         None,
-        text("SDE_PAGENAMES_PHOTOSYNTHESIS"),
+        "routes/photosynthesis.py",
+        key="lower_nav_button",
     )
-    fill_sidebar(placeholder_sidebar)
-
-
-# «&nbsp;
-# &nbsp;»

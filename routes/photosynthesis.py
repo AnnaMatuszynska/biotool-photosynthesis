@@ -1,8 +1,7 @@
-import streamlit as st
-from pages._sidebar import fill_sidebar, make_sidebar
-from pathlib import Path
-from PIL import Image
 from typing import Callable
+
+import streamlit as st
+
 from utils import (
     centered_image,
     get_localised_text,
@@ -22,9 +21,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.info(text("PHO_LEARNING_OBJECTIVES"))
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_START"),
-        text("SDE_PAGENAMES_MEASURINGMETHOD"),
-        key="pho_learning_objectives",
+        "routes/home.py",
+        "routes/method.py",
+        key="upper_nav_button",
     )
 
     markdown_click("PHO_HEADLINE_CLIMATE", text)
@@ -67,7 +66,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             "pictures/Fotosynthese-Apparat.jpg", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True
         )
     else:
-        include_image("pictures/NPQphotosynthesis.png", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True)
+        include_image(
+            "pictures/NPQphotosynthesis.png", 0.6, text("PHO_CAPTION_FOTOSYNTHESE_APPARAT_PICTURE"), True
+        )
 
     markdown_click("PHO_PHOTOSYNTHESIS_LOCATION_CONTINUE", text)
 
@@ -108,7 +109,6 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 
 if __name__ == "__main__":
-    st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
@@ -116,14 +116,14 @@ if __name__ == "__main__":
     language: str = st.session_state.setdefault("language", "English")
 
     text = get_localised_text(version, language)
-    placeholder_sidebar = make_sidebar()
+
     resetting_click_detector_setup()
     track_page_visit("photosynthesis")
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_START"),
-        text("SDE_PAGENAMES_MEASURINGMETHOD"),
+        "routes/home.py",
+        "routes/method.py",
+        key="lower_nav_button",
     )
-    fill_sidebar(placeholder_sidebar)

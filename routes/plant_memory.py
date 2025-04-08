@@ -1,15 +1,10 @@
-import datetime
+import time
+from typing import Callable
+
 import numpy as np
 import streamlit as st
-import time
-from matplotlib import patches
-from matplotlib import pyplot as plt
-from model import get_model
-from modelbase.ode import Simulator
-from pages._sidebar import fill_sidebar, make_sidebar
-from pages.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model_memory
-from scipy.signal import find_peaks, peak_prominences
-from typing import Any, Callable
+
+from routes.assets.model._model_functions import calculate_results_to_plot, make_plot, sim_model_memory
 from utils import (
     get_localised_text,
     make_prev_next_button,
@@ -19,16 +14,16 @@ from utils import (
 )
 
 
-def make_page(text: Callable[[str], str], version: str) -> None:
+def make_page(text: Callable[[str], str], version: str) -> bool:
     st.markdown(text("MEM_HEADLINE_BRAIN"))
 
     # Learning objectives
     st.info(text("MEM_LEARNING_OBJECTIVES"))
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
-        text("SDE_PAGENAMES_CONCLUSION"),
-        key="mem_learning_objectives",
+        "routes/exp_in_silico.py",
+        "routes/conclusion.py",
+        key="upper_nav_button",
     )
 
     col1, col2, _ = st.columns(3)
@@ -293,22 +288,21 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 
 if __name__ == "__main__":
-    st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
-    placeholder_sidebar = make_sidebar()
+
     resetting_click_detector_setup()
     track_page_visit("plant_memory")
     see_interpr = make_page(text, version)
     make_literature(text, version, language)
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
-        text("SDE_PAGENAMES_CONCLUSION"),
+        "routes/exp_in_silico.py",
+        "routes/conclusion.py",
+        key="lower_nav_button",
     )
     style_guinding_questions(see_interpr)
-    fill_sidebar(placeholder_sidebar)

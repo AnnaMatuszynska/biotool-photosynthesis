@@ -1,14 +1,12 @@
-import numpy as np
-import pandas as pd
-import streamlit as st
-from pages._sidebar import fill_sidebar, make_sidebar
-from pages.assets.FCvB.FCvB_functions import make_FvCB_plot, steady_state_photosynthesis
-from pages.assets.SIR_model.sir_utils import *
 from pathlib import Path
-from PIL import Image
 from typing import Callable
+
+import numpy as np
+import streamlit as st
+
+from routes.assets.FCvB.FCvB_functions import make_FvCB_plot, steady_state_photosynthesis
+from routes.assets.SIR_model.sir_utils import get_plot_SIRModel, get_results_dict_SIRModel
 from utils import (
-    centered_image,
     get_localised_text,
     include_image,
     include_ytvideo,
@@ -26,9 +24,9 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
     st.info(text("MDL_LEARNING_OBJECTIVES"))
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_MEASURINGMETHOD"),
-        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
-        key="mdl_learning_objectives",
+        "routes/method.py",
+        "routes/exp_in_silico.py",
+        key="upper_nav_button",
     )
 
     st.markdown(text("MDL_HEADLINE_MODEL"))
@@ -51,8 +49,7 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
     if version == "4Bio":
         tab1, tab2 = st.tabs([text("MDL_TAB_SIR"), " "])
-
-    if version == "4Math":
+    else:
         tab1, tab2, tab3 = st.tabs([text("MDL_TAB_SIR"), text("MDL_TAB_MANUAL"), text("MDL_TAB_MODELBASE")])
 
     with tab1:
@@ -129,8 +126,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             remain = 1000 - st.session_state.s_slider
             sum = st.session_state.i_slider + st.session_state.r_slider
             if sum == 0:
-                st.session_state.i_slider = remain/2
-                st.session_state.r_slider = remain/2
+                st.session_state.i_slider = remain / 2
+                st.session_state.r_slider = remain / 2
             else:
                 st.session_state.i_slider = int(st.session_state.i_slider / sum * remain)
                 st.session_state.r_slider = int(st.session_state.r_slider / sum * remain)
@@ -139,8 +136,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             remain = 1000 - st.session_state.i_slider
             sum = st.session_state.s_slider + st.session_state.r_slider
             if sum == 0:
-                st.session_state.s_slider = remain/2
-                st.session_state.r_slider = remain/2
+                st.session_state.s_slider = remain / 2
+                st.session_state.r_slider = remain / 2
             else:
                 st.session_state.s_slider = int(st.session_state.s_slider / sum * remain)
                 st.session_state.r_slider = int(st.session_state.r_slider / sum * remain)
@@ -149,8 +146,8 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
             remain = 1000 - st.session_state.r_slider
             sum = st.session_state.s_slider + st.session_state.i_slider
             if sum == 0:
-                st.session_state.s_slider = remain/2
-                st.session_state.i_slider = remain/2
+                st.session_state.s_slider = remain / 2
+                st.session_state.i_slider = remain / 2
             else:
                 st.session_state.i_slider = int(st.session_state.i_slider / sum * remain)
                 st.session_state.s_slider = int(st.session_state.s_slider / sum * remain)
@@ -463,22 +460,22 @@ def make_page(text: Callable[[str], str], language: str, version: str) -> None:
 
             with col1_____:
                 toggle_A = st.toggle(
-                    label=f'{text("MDL_FVCB_TOGGLE")} A?',
+                    label=f"{text('MDL_FVCB_TOGGLE')} A?",
                     value=True,
                 )
             with col2_____:
                 toggle_Ac = st.toggle(
-                    label=f'{text("MDL_FVCB_TOGGLE")} Ac?',
+                    label=f"{text('MDL_FVCB_TOGGLE')} Ac?",
                     value=False,
                 )
             with col3_____:
                 toggle_Aj = st.toggle(
-                    label=f'{text("MDL_FVCB_TOGGLE")} Aj?',
+                    label=f"{text('MDL_FVCB_TOGGLE')} Aj?",
                     value=False,
                 )
             with col4_____:
                 toggle_Ap = st.toggle(
-                    label=f'{text("MDL_FVCB_TOGGLE")} Ap?',
+                    label=f"{text('MDL_FVCB_TOGGLE')} Ap?",
                     value=False,
                 )
 
@@ -586,22 +583,21 @@ def make_literature(text: Callable[[str], str], language: str, version: str) -> 
 
 
 if __name__ == "__main__":
-    st.set_page_config(layout="wide")
     with open("./.streamlit/custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     version: str = st.session_state.setdefault("version", "4Bio")
     language: str = st.session_state.setdefault("language", "English")
     text = get_localised_text(version, language)
-    placeholder_sidebar = make_sidebar()
+
     resetting_click_detector_setup()
     track_page_visit("model_explain")
     make_page(text, language, version)
     make_literature(text, language, version)
     make_prev_next_button(
         text,
-        text("SDE_PAGENAMES_MEASURINGMETHOD"),
-        text("SDE_PAGENAMES_EXPERIMENTSINSILICO"),
+        "routes/method.py",
+        "routes/exp_in_silico.py",
+        key="lower_nav_button",
     )
     style_page()
-    fill_sidebar(placeholder_sidebar)
